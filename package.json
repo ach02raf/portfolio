@@ -8,6 +8,14 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "author": "ach02raf",
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.1",
     "@types/negotiator": "^0.6.3",
