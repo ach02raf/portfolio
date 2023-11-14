@@ -1,0 +1,14 @@
+{
+  "serverComponent": {
+    "welcome": "googtin tag"
+  },
+  "counter": {
+    "increment": "Increment",
+    "decrement": "Decrement"
+  },
+  "slider": {
+    "salutation": "Hello",
+    "nom": "i'm Safa Chaabane",
+    "work": ["Freelance", "web developer", "full stack developer"]
+  }
+}
