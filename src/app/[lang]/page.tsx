@@ -1,6 +1,11 @@
 import { getDictionary } from "../../../get-dictionary";
 import { Locale } from "../../../i18n-config";
 import Header from "@/C/Header/Header";
+import { i18n } from "../../../i18n-config";
+
+export async function generateStaticParams() {
+  return i18n.locales.map((locale) => ({ lang: locale }));
+}
 export default async function IndexPage({
   params: { lang },
 }: {
@@ -16,22 +21,3 @@ export default async function IndexPage({
     </div>
   );
 }
-/*
-<section id="section">
-        <p>This is a simple Next.js landing page.</p>
-        <p>
-          Edit the content in <code>pages/index.js</code>.
-        </p>
-      </section>
-
-
-
-import { Suspense } from "react";
-<Suspense
-fallback={
-  <div className="container-fluid gx-0 d-flex justify-content-center align-items-center vh-100 contain">
-    <div className="loader"></div>
-  </div>
-}>
-<p>achraf</p>
-</Suspense>*/
