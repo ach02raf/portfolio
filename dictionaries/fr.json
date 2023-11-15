@@ -1,0 +1,14 @@
+{
+  "serverComponent": {
+    "welcome": "salut"
+  },
+  "counter": {
+    "increment": "Increment",
+    "decrement": "Decrement"
+  },
+  "slider": {
+    "salutation": "Bonjour",
+    "nom": "Je suis Safa Chaabane",
+    "work": ["Freelance", "web developer", "full stack developer"]
+  }
+}
