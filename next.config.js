@@ -6,8 +6,8 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ["ach02raf.com"],
-    loader: "akamai",
     path: "/",
+    unoptimized: true,
   },
 };
 
