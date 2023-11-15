@@ -1,14 +1,43 @@
 {
-    "serverComponent": {
-      "welcome": "Welcome"
+  "header": [
+    {
+      "id": 0,
+      "name": "Home",
+      "url": "Home"
     },
-    "counter": {
-      "increment": "Increment",
-      "decrement": "Decrement"
+    {
+      "id": 1,
+      "name": "About me",
+      "url": "About-me"
     },
-    "slider":{
-      "salutation":"Hello",
-      "nom":"i'm Safa Chaabane",
-      "work":["Freelance", "web developer", "full stack developer"]
+    {
+      "id": 2,
+      "name": "Services",
+      "url": "Services"
+    },
+    {
+      "id": 3,
+      "name": "My skills",
+      "url": "My-skills"
+    },
+    {
+      "id": 4,
+      "name": "My work",
+      "url": "My-work"
+    },
+    {
+      "id": 5,
+      "name": "Contact me",
+      "url": "Contact-me"
     }
+  ],
+  "counter": {
+    "increment": "Increment",
+    "decrement": "Decrement"
+  },
+  "slider": {
+    "salutation": "Hello",
+    "nom": "i'm Safa Chaabane",
+    "work": ["Freelance", "web developer", "full stack developer"]
   }
+}

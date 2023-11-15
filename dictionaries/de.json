@@ -1,7 +1,36 @@
 {
-  "serverComponent": {
-    "welcome": "googtin tag"
-  },
+  "header": [
+    {
+      "id": 0,
+      "name": "Startseite",
+      "url": "Startseite"
+    },
+    {
+      "id": 1,
+      "name": "Über mich",
+      "url": "Uber-mich"
+    },
+    {
+      "id": 2,
+      "name": "Dienstleistungen",
+      "url": "Dienstleistungen"
+    },
+    {
+      "id": 3,
+      "name": "Meine Fähigkeiten",
+      "url": "Meine-Fahigkeiten"
+    },
+    {
+      "id": 4,
+      "name": "Meine Arbeit",
+      "url": "Meine-Arbeit"
+    },
+    {
+      "id": 5,
+      "name": "Kontakt",
+      "url": "Kontakt"
+    }
+  ],
   "counter": {
     "increment": "Increment",
     "decrement": "Decrement"
