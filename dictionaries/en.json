@@ -31,9 +31,11 @@
       "url": "Contact-me"
     }
   ],
-  "counter": {
-    "increment": "Increment",
-    "decrement": "Decrement"
+  "firstSection": {
+    "title": "Hello , My Name is ",
+    "name": "BEN FREDJ Mohamed achraf",
+    "description": "I'am a Backend & Frontend developer",
+    "cv": "Download CV"
   },
   "slider": {
     "salutation": "Hello",

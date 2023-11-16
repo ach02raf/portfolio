@@ -2,6 +2,7 @@ import { getDictionary } from "../../../get-dictionary";
 import { Locale } from "../../../i18n-config";
 import Header from "@/C/Header/Header";
 import { i18n } from "../../../i18n-config";
+import FirstSection from "@/component/firstSection/FirstSection";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -14,10 +15,15 @@ export default async function IndexPage({
   const dictionary = await getDictionary(lang);
   return (
     <div className="container-fluid gx-0 contain">
+      <Header header={dictionary.header} />
       <section id={dictionary.header[0].url} className="vh-100">
-        <Header header={dictionary.header} />
+        <FirstSection firstSection={dictionary.firstSection} />
       </section>
       <section id={dictionary.header[1].url} className="vh-100"></section>
+      <section id={dictionary.header[2].url} className="vh-100"></section>
+      <section id={dictionary.header[3].url} className="vh-100"></section>
+      <section id={dictionary.header[4].url} className="vh-100"></section>
+      <section id={dictionary.header[5].url} className="vh-100"></section>
     </div>
   );
 }
