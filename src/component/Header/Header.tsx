@@ -1,9 +1,12 @@
+"use client";
 import Link from "next/link";
 import LocaleSwitcher from "../locale-switcher";
+import { useSearchParams } from "next/navigation";
 import "./Header.scss";
 function Header(props: {
   header: { id: number; name: string; url: string }[];
 }) {
+  const asPath = useSearchParams().get("Section");
   return (
     <div className="sticky-top header">
       <div className="row m-0 p-0 py-3">
@@ -19,8 +22,10 @@ function Header(props: {
             {props.header.map((item) => (
               <li className="px-2" key={item.id}>
                 <Link
-                  className="text-decoration-none header-link"
-                  href={`\#${item.url}`}>
+                  className={`text-decoration-none header-link ${
+                    asPath === item.url ? "header-active" : ""
+                  }`}
+                  href={`\?Section=${item.url}#${item.url}`}>
                   {item.name}
                 </Link>
               </li>
