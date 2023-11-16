@@ -1,4 +1,19 @@
 @import "@/A/global-variables.scss";
 .firstSection {
-  padding: 10%;
+  padding: 5%;
+  &-div {
+    width: 80%;
+  }
+  & h2 {
+    line-height: 2.5rem;
+  }
+  & img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  &-Typewriter {
+    span {
+      color: $white !important;
+    }
+  }
 }

@@ -1,5 +1,7 @@
 @import "@/A/global-variables.scss";
 .header {
+  background-color: $violet-light;
+  opacity: 0.8;
   &-link {
     font-size: 1rem;
     font-weight: 600;

@@ -5,8 +5,8 @@ function Header(props: {
   header: { id: number; name: string; url: string }[];
 }) {
   return (
-    <div className="sticky-top">
-      <div className="row m-0 p-0 py-2">
+    <div className="sticky-top header">
+      <div className="row m-0 p-0 py-3">
         <div className="col-2">
           <Link href={"/"} className="text-decoration-none">
             <h1 className="d-block m-auto header-title">

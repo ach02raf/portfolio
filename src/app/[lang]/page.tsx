@@ -16,7 +16,7 @@ export default async function IndexPage({
   return (
     <div className="container-fluid gx-0 contain">
       <Header header={dictionary.header} />
-      <section id={dictionary.header[0].url} className="vh-100">
+      <section id={dictionary.header[0].url}>
         <FirstSection firstSection={dictionary.firstSection} />
       </section>
       <section id={dictionary.header[1].url} className="vh-100"></section>
