@@ -19,11 +19,11 @@ export default async function IndexPage({
       <section id={dictionary.header[0].url}>
         <FirstSection firstSection={dictionary.firstSection} />
       </section>
-      <section id={dictionary.header[1].url} className="vh-100"></section>
-      <section id={dictionary.header[2].url} className="vh-100"></section>
-      <section id={dictionary.header[3].url} className="vh-100"></section>
-      <section id={dictionary.header[4].url} className="vh-100"></section>
-      <section id={dictionary.header[5].url} className="vh-100"></section>
+      <section id={dictionary.header[1].url}></section>
+      <section id={dictionary.header[2].url}></section>
+      <section id={dictionary.header[3].url}></section>
+      <section id={dictionary.header[4].url}></section>
+      <section id={dictionary.header[5].url}></section>
     </div>
   );
 }
