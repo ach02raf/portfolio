@@ -9,6 +9,7 @@ const nextConfig = {
     path: "/",
     unoptimized: true,
   },
+  
 };
 
 module.exports = nextConfig;
