@@ -17,4 +17,15 @@
       color: $white !important;
     }
   }
+  &-button {
+    background-color: $yellow;
+
+    border-radius: 25px;
+    a {
+      color: $violet-dark !important;
+      font-weight: 800 !important;
+      font-size: 1rem !important;
+      text-decoration: none !important;
+    }
+  }
 }

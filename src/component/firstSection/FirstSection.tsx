@@ -11,7 +11,6 @@ function FirstSection(props: {
   };
 }) {
   const name = props.firstSection.name.split(" ");
-
   return (
     <div className="row m-0 h-100 w-100 firstSection">
       <div className="col-lg-8 d-block m-auto ">
@@ -28,6 +27,11 @@ function FirstSection(props: {
               speed={250}
             />
           </h2>
+          <button className="firstSection-button mb-5 p-3">
+            <a href="/cv.pdf" download="cv">
+              {props.firstSection.cv}
+            </a>
+          </button>
         </div>
       </div>
       <div className="col-lg-4">
@@ -35,12 +39,11 @@ function FirstSection(props: {
           width={416}
           height={599}
           src={"/Images/profile.png"}
-          alt="ach02raf"
-          title="ach02raf"
+          alt="BEN FREDJ Mohamed Achraf"
+          title="BEN FREDJ Mohamed Achraf"
         />
       </div>
     </div>
   );
 }
-
 export default FirstSection;

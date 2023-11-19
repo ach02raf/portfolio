@@ -37,6 +37,10 @@
     "description": "I'am a Backend & Frontend developer",
     "cv": "Download CV"
   },
+  "secondSection": {
+    "title": "About me",
+    "description": "Je suis développeur Backend & Frontend"
+  },
   "slider": {
     "salutation": "Hello",
     "nom": "i'm Safa Chaabane",

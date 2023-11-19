@@ -34,8 +34,12 @@
   "firstSection": {
     "title": "Hallo, mein Name ist ",
     "name": "BEN FREDJ Mohamed Achraf",
-    "description": "Ich bin Backend- & Frontend-Entwickler",
-    "cv": "Lebenslauf herunterladen"
+    "description": "Ich bin Backend & Frontend Entwickler",
+    "cv": "CV herunterladen"
+  },
+  "secondSection": {
+    "title": "Über mich",
+    "description": "Je suis développeur Backend & Frontend"
   },
   "slider": {
     "salutation": "Hello",

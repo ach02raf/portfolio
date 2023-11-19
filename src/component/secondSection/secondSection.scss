@@ -1,0 +1,9 @@
+@import "@/A/global-variables.scss";
+.secondSection {
+  padding: 5%;
+  background-color: $violet-light;
+  & img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
