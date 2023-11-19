@@ -1,5 +1,8 @@
 @import "@/A/global-variables.scss";
 .firstSection {
+  span {
+    color: $yellow;
+  }
   padding: 5%;
   &-div {
     width: 80%;
