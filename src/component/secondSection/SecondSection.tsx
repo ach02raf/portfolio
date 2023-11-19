@@ -21,6 +21,7 @@ function SecondSection(props: {
           <div className="secondSection-illustre-double-part-1 h-50"></div>
           <div className="secondSection-illustre-double-part-2 h-25"></div>
         </div>
+        
         <div className="col-4  position-relative h-100   d-flex flex-column justify-content-center">
           <div className="secondSection-illustre-single "></div>
         </div>
