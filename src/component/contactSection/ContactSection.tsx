@@ -26,7 +26,8 @@ function ContactSection(props: {
         />
         <Link
           className="text-decoration-none"
-          href={`Mailto:${props.contactSection.email}`}>
+          href={`Mailto:${props.contactSection.email}`}
+          rel="preload">
           <p className="p-3">{props.contactSection.email}</p>
         </Link>
       </div>
@@ -41,7 +42,8 @@ function ContactSection(props: {
         <Link
           className="text-decoration-none"
           href={`https://maps.app.goo.gl/4SopmJdRtngpBhL68`}
-          target="_blank">
+          target="_blank"
+          rel="preload">
           <p className="p-3">{props.contactSection.location}</p>
         </Link>
       </div>
@@ -55,7 +57,8 @@ function ContactSection(props: {
         />
         <Link
           className="text-decoration-none"
-          href={`tel:${props.contactSection.phoneNumber}`}>
+          href={`tel:${props.contactSection.phoneNumber}`}
+          rel="preload">
           <p className="p-3">{props.contactSection.phoneNumber}</p>
         </Link>
       </div>
