@@ -4,7 +4,7 @@ import Header from "@/C/Header/Header";
 import { i18n } from "../../../i18n-config";
 import FirstSection from "@/C/firstSection/FirstSection";
 import SecondSection from "@/C/secondSection/SecondSection";
-import ContactSection from "@/component/contactSection/ContactSection";
+import ContactSection from "@/C/contactSection/ContactSection";
 import ScrollToTopButton from "@/C/ScrollToTopButton";
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
