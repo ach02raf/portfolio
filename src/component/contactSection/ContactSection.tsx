@@ -11,12 +11,15 @@ function ContactSection(props: {
 }) {
   const title = props.contactSection.title.split(" ");
   return (
-    <div className="row m-0 text-center contactSection">
+    <div className="row m-0 text-center contactSection align-items-end">
       <h2 className="pb-5">
         {title[0] + " "}
         <span>{title[1]}</span>
       </h2>
-      <div className="col-lg-4">
+      <div className="col-lg-4 contactSection-info">
+      <Link
+          className="text-decoration-none"
+          href={`Mailto:${props.contactSection.email}`}>
         <Image
           src={"/Images/Icons/mail.png"}
           alt="mail"
@@ -24,13 +27,15 @@ function ContactSection(props: {
           width={40}
           height={30}
         />
-        <Link
-          className="text-decoration-none"
-          href={`Mailto:${props.contactSection.email}`}>
+       
           <p className="p-3">{props.contactSection.email}</p>
         </Link>
       </div>
-      <div className="col-lg-4">
+      <div className="col-lg-4 contactSection-info">
+      <Link
+          className="text-decoration-none"
+          href={`https://maps.app.goo.gl/4SopmJdRtngpBhL68`}
+          target="_blank">
         <Image
           src={"/Images/Icons/pin.png"}
           alt="location"
@@ -38,14 +43,14 @@ function ContactSection(props: {
           width={25}
           height={34}
         />
-        <Link
-          className="text-decoration-none"
-          href={`https://maps.app.goo.gl/4SopmJdRtngpBhL68`}
-          target="_blank">
+
           <p className="p-3">{props.contactSection.location}</p>
         </Link>
       </div>
-      <div className="col-lg-4">
+      <div className="col-lg-4 contactSection-info">
+      <Link
+          className="text-decoration-none"
+          href={`tel:${props.contactSection.phoneNumber}`}>
         <Image
           src={"/Images/Icons/smartphone.png"}
           alt="smartphone"
@@ -53,9 +58,7 @@ function ContactSection(props: {
           width={20}
           height={40}
         />
-        <Link
-          className="text-decoration-none"
-          href={`tel:${props.contactSection.phoneNumber}`}>
+      
           <p className="p-3">{props.contactSection.phoneNumber}</p>
         </Link>
       </div>
