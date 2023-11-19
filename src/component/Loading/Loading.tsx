@@ -11,7 +11,7 @@ function Loading() {
       setLoading(true);
     }, 1500);
     if (loading === true) {
-      route.push("/fr?Section=Accueil#Accueil");
+      route.push("/fr");
     }
   }, [loading]);
   return <div className="loader"></div>;

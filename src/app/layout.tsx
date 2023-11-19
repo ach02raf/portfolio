@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 
-export const metadata = {
-  locale: "fr_FR",
-  type: "website",
+export const metadata: Metadata = {
   title: "ach02raf",
   description: "Full Stack Developer",
   keywords: [
@@ -21,13 +19,11 @@ export const metadata = {
     title: "ach02raf",
     description: "Full Stack Developer",
     images: `/Images/ach02raf1.png`,
-    metadataBase: new URL("https://ach02raf.com"),
     locale: "fr_FR",
     type: "website",
     url: "https://ach02raf.com",
   },
 };
-
 
 export default function RootLayout({
   children,

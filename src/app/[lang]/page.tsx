@@ -3,7 +3,6 @@ import { Locale } from "../../../i18n-config";
 import Header from "@/C/Header/Header";
 import { i18n } from "../../../i18n-config";
 import FirstSection from "@/component/firstSection/FirstSection";
-
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }

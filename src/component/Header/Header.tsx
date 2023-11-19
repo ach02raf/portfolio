@@ -1,20 +1,26 @@
 "use client";
 import Link from "next/link";
 import LocaleSwitcher from "../locale-switcher";
-import { useSearchParams } from "next/navigation";
 import "./Header.scss";
 import Image from "next/image";
+import { useState } from "react";
 function Header(props: {
   header: { id: number; name: string; url: string }[];
 }) {
-  const asPath = useSearchParams().get("Section");
+  const [active, setActive] = useState<number>();
   return (
     <div className="sticky-top header">
-      <div className="row m-0 p-0 py-3">
+      <div className="row m-0 p-0 py-2">
         <div className="col-lg-2 col-6">
           <Link href={"/"} className="text-decoration-none">
-
-            <Image width={150} height={65} className="header-logo d-block m-auto" src="/Images/logohorizentalwhite1.png" title="ACH02RAF" alt="logo ach02raf" />
+            <Image
+              width={150}
+              height={65}
+              className="header-logo d-block m-auto"
+              src="/Images/logohorizentalwhite1.png"
+              title="ACH02RAF"
+              alt="logo ach02raf"
+            />
           </Link>
         </div>
         <div className="col-8 d-block m-auto d-lg-block d-none">
@@ -23,9 +29,12 @@ function Header(props: {
               <li className="px-2" key={item.id}>
                 <Link
                   className={`text-decoration-none header-link ${
-                    asPath === item.url ? "header-active" : ""
+                    active === item.id ? "header-active" : ""
                   }`}
-                  href={`\?Section=${item.url}#${item.url}`}>
+                  href={`\#${item.url}`}
+                  onClick={() => {
+                    setActive(item.id);
+                  }}>
                   {item.name}
                 </Link>
               </li>
