@@ -6,6 +6,7 @@ import FirstSection from "@/C/firstSection/FirstSection";
 import SecondSection from "@/C/secondSection/SecondSection";
 import ContactSection from "@/C/contactSection/ContactSection";
 import ScrollToTopButton from "@/C/ScrollToTopButton";
+import Footer from "@/C/Footer/Footer";
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
@@ -30,6 +31,7 @@ export default async function IndexPage({
       <section id={dictionary.header[5].url}>
         <ContactSection contactSection={dictionary.contactSection} />
       </section>
+      <Footer Footer={dictionary.Footer} />
       <ScrollToTopButton />
     </div>
   );
