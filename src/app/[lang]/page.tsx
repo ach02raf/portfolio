@@ -5,6 +5,7 @@ import { i18n } from "../../../i18n-config";
 import FirstSection from "@/C/firstSection/FirstSection";
 import SecondSection from "@/C/secondSection/SecondSection";
 import ContactSection from "@/component/contactSection/ContactSection";
+import ScrollToTopButton from "@/C/ScrollToTopButton";
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
@@ -15,7 +16,7 @@ export default async function IndexPage({
 }) {
   const dictionary = await getDictionary(lang);
   return (
-    <div className="container-fluid gx-0 contain">
+    <div className="container-fluid gx-0 contain position-relative">
       <Header header={dictionary.header} />
       <section id={dictionary.header[0].url}>
         <FirstSection firstSection={dictionary.firstSection} />
@@ -29,6 +30,7 @@ export default async function IndexPage({
       <section id={dictionary.header[5].url}>
         <ContactSection contactSection={dictionary.contactSection} />
       </section>
+      <ScrollToTopButton />
     </div>
   );
 }
