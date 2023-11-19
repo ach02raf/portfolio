@@ -4,6 +4,7 @@ import Header from "@/C/Header/Header";
 import { i18n } from "../../../i18n-config";
 import FirstSection from "@/C/firstSection/FirstSection";
 import SecondSection from "@/C/secondSection/SecondSection";
+import ContactSection from "@/component/contactSection/ContactSection";
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
@@ -22,10 +23,12 @@ export default async function IndexPage({
       <section id={dictionary.header[1].url}>
         <SecondSection secondSection={dictionary.secondSection} />
       </section>
-      <section id={dictionary.header[2].url}></section>
+      <section id={dictionary.header[2].url} className="vh-100"></section>
       <section id={dictionary.header[3].url}></section>
       <section id={dictionary.header[4].url}></section>
-      <section id={dictionary.header[5].url}></section>
+      <section id={dictionary.header[5].url}>
+        <ContactSection contactSection={dictionary.contactSection} />
+      </section>
     </div>
   );
 }

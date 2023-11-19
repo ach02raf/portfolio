@@ -45,5 +45,11 @@
     "salutation": "Bonjour",
     "nom": "Je suis Safa Chaabane",
     "work": ["Freelance", "web developer", "full stack developer"]
+  },
+  "contactSection": {
+    "title": "Contact Moi",
+    "location": "tunis , Tunisie",
+    "email": "ach02raf@gmail.com",
+    "phoneNumber": "+216 94622592"
   }
 }
