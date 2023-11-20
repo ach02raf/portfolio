@@ -55,7 +55,7 @@
     "work": ["Freelance", "web developer", "full stack developer"]
   },
   "ServicesSection": {
-    "title": "My Services",
+    "title": ["My", "Services"],
     "description": "LET'S TAKE A QUICK LOOK AT MY SERVICES",
     "listServices": [
       {
@@ -95,7 +95,6 @@
         "img": "faBullhorn"
       }
     ]
-    
   }
 ,  
   "contactSection": {

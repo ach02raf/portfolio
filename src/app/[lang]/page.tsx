@@ -27,8 +27,8 @@ export default async function IndexPage({
       <section id={dictionary.header[1].url}>
         <SecondSection secondSection={dictionary.secondSection} />
       </section>
-      <section id={dictionary.header[2].url} className="vh-100">
-        <ServicesSection ServicesSection={dictionary.ServicesSection} />
+      <section id={dictionary.header[2].url}>
+      <ServicesSection ServicesSection={dictionary.ServicesSection} />
       </section>
       <section id={dictionary.header[3].url}>
         <SkillsSection skillsSection={dictionary.skillsSection} />

@@ -12,7 +12,7 @@ interface ServiceItem {
 
 interface ServicesSectionProps {
   ServicesSection: {
-    title: string;
+    title: string[];
     description: string;
     listServices: ServiceItem[];
   };
@@ -20,27 +20,25 @@ interface ServicesSectionProps {
 
 function ServicesSection(props: ServicesSectionProps) {
   return (
-    <div className="service-section">
-      <h2>{props?.ServicesSection?.title}</h2>
+    <div className="service-section text-center my-5">
+      <h2>
+        {props?.ServicesSection?.title[0]}{" "}
+        <span>{props?.ServicesSection?.title[1]}</span>
+      </h2>
       <p>{props?.ServicesSection?.description}</p>
-      <div className="row m-0">
+      <div className="row m-0 justify-content-between">
         {props?.ServicesSection?.listServices?.map((item, index) => (
           <div
-            className="col-lg-4 col-md-6 position-relative justify-content-start"
+            className="col-lg-4 col-md-5 service-section-block position-relative p-3 my-3"
             key={index}>
-            <div className="row align-items-end my-2">
-              <div className="col-3">
-                <div className="service-section-icon">
-                  <FontAwesomeIcon
-                    color="white"
-                    icon={fas[item?.img] as IconDefinition}
-                  />
-                </div>
-              </div>
-              <div className="col-9">
-                <h3>{item?.title}</h3>
-              </div>
+            <div className="service-section-block-icon my-3">
+              {" "}
+              <FontAwesomeIcon
+                color="#FEC260"
+                icon={fas[item?.img] as IconDefinition}
+              />
             </div>
+            <h3 className="w-100">{item?.title}</h3>
             <p>{item?.desc}</p>
           </div>
         ))}

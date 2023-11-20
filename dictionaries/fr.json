@@ -55,7 +55,7 @@
     "work": ["Freelance", "web developer", "full stack developer"]
   },
   "ServicesSection": {
-    "title": "Mes services",
+    "title": ["Mes", "services"],
     "description": "FAISONS UN PEU LE TOUR DE MES SERVICES",
     "listServices": [
       {
