@@ -1,3 +1,4 @@
+import Image from "next/image";
 import "./skillsSection.scss";
 
 function SkillsSection(props: {
@@ -19,10 +20,18 @@ function SkillsSection(props: {
       </h2>
       <div className="col">
         {props.skillsSection.listeSkills.map((skillsSection) => (
-          <div className="row m-0">
+          <div className="row m-0 p-2">
             <p key={skillsSection.id}>{skillsSection.title}</p>
-            {skillsSection.listeLangage.map((listeLangage) => (
-              <div className="col-2">
+            {skillsSection.listeLangage.map((listeLangage, index) => (
+              <div className="col-2 text-center m-2" key={index}>
+                <Image
+                  src={`/Images/Icons/${listeLangage}.png`}
+                  alt={listeLangage}
+                  title={listeLangage}
+                  height={512}
+                  width={512}
+                  className="skillsSection-image"
+                />
                 <p>{listeLangage}</p>
               </div>
             ))}
