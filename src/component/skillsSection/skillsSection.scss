@@ -13,5 +13,13 @@
     background-color: $violet-dark;
     border: 1px solid #f1f1f191;
     border-radius: 30px;
+    &:hover {
+      border: 1px solid $violet-dark;
+      background-color: #fece80;
+    }
+    &:hover p {
+      color: $violet-dark !important;
+      font-weight: 800;
+    }
   }
 }
