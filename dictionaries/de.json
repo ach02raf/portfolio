@@ -95,8 +95,7 @@
         "img": "faBullhorn"
       }
     ]
-  }
-,  
+  },
   "contactSection": {
     "title": "Kontaktiere Mich",
     "location": "Tunis, Tunesien",
@@ -122,7 +121,7 @@
       {
         "id": 1,
         "title": "Auszeichnungssprachen",
-        "listeLangage": ["HTML", "XML"]
+        "listeLangage": ["HTML"]
       },
       {
         "id": 2,
@@ -141,7 +140,7 @@
           "REACT NATIVE",
           "SWIFT UI",
           "IONIC",
-          ".NET CORE",
+          "DOTNET CORE",
           "BOOTSTRAP 5",
           "TAILWIND CSS"
         ]
@@ -164,7 +163,7 @@
       {
         "id": 7,
         "title": "Andere",
-        "listeLangage": ["REST", "RESTFUL", "GRAPHQL", "SOAP"]
+        "listeLangage": ["REST-RESTFUL", "GRAPHQL"]
       }
     ]
   },

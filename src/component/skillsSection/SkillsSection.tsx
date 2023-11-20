@@ -24,7 +24,7 @@ function SkillsSection(props: {
             <p key={skillsSection.id}>{skillsSection.title}</p>
             {skillsSection.listeLangage.map((listeLangage, index) => (
               <div
-                className="col-2 text-center m-2 d-flex align-items-center justify-content-center flex-column skillsSection-card"
+                className="col-2 m-2 d-flex align-items-center justify-content-center flex-column skillsSection-card p-0"
                 key={index}>
                 <Image
                   src={`/Images/Icons/${listeLangage}.png`}

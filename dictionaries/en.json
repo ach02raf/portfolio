@@ -95,8 +95,7 @@
         "img": "faBullhorn"
       }
     ]
-  }
-,  
+  },
   "contactSection": {
     "title": "Contact Me",
     "location": "Tunis, Tunisia",
@@ -122,7 +121,7 @@
       {
         "id": 1,
         "title": "Markup Languages",
-        "listeLangage": ["HTML", "XML"]
+        "listeLangage": ["HTML"]
       },
       {
         "id": 2,
@@ -138,12 +137,12 @@
           "SPRINGBOOT",
           "DJANGO",
           "ANGULAR",
-          "REACT NATIVE",
-          "SWIFT UI",
+          "REACT-NATIVE",
+          "SWIFT-UI",
           "IONIC",
-          ".NET CORE",
-          "BOOTSTRAP 5",
-          "TAILWIND CSS"
+          "DOTNET-CORE",
+          "BOOTSTRAP-5",
+          "TAILWIND-CSS"
         ]
       },
       {
@@ -164,7 +163,7 @@
       {
         "id": 7,
         "title": "Others",
-        "listeLangage": ["REST", "RESTFUL", "GRAPHQL", "SOAP"]
+        "listeLangage": ["REST-RESTFUL", "GRAPHQL"]
       }
     ]
   },

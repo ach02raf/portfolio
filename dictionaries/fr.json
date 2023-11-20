@@ -121,12 +121,12 @@
       {
         "id": 1,
         "title": "Langages de balisage",
-        "listeLangage": ["HTML", "XML"]
+        "listeLangage": ["HTML"]
       },
       {
         "id": 2,
         "title": "Langages de styles",
-        "listeLangage": ["CSS", "SCSS", "SASS"]
+        "listeLangage": ["CSS", "SCSS-SASS"]
       },
       {
         "id": 3,
@@ -137,12 +137,12 @@
           "SPRINGBOOT",
           "DJANGO",
           "ANGULAR",
-          "REACT NATIVE",
-          "SWIFT UI",
+          "REACT-NATIVE",
+          "SWIFT-UI",
           "IONIC",
-          ".NET CORE",
-          "BOOTSTRAP 5",
-          "TAILWIND CSS"
+          "DOTNET-CORE",
+          "BOOTSTRAP-5",
+          "TAILWIND-CSS"
         ]
       },
       {
@@ -163,7 +163,7 @@
       {
         "id": 7,
         "title": "Autres",
-        "listeLangage": ["REST", "RESTFUL", "GRAPHQL", "SOAP"]
+        "listeLangage": ["REST-RESTFUL", "GRAPHQL"]
       }
     ]
   },
