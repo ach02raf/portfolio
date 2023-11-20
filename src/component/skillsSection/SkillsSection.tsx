@@ -15,7 +15,7 @@ function SkillsSection(props: {
   const skillsTitle = props.skillsSection.title.split(" ");
   return (
     <div className="row m-0 skillsSection">
-      <h2>
+      <h2 className="text-center">
         {skillsTitle[0] + " "}
         <span>{skillsTitle[1]}</span>
       </h2>
@@ -25,7 +25,7 @@ function SkillsSection(props: {
             <p key={skillsSection.id}>{skillsSection.title}</p>
             {skillsSection.listeLangage.map((listeLangage, index) => (
               <div
-                className="col-2 m-2 d-flex align-items-center justify-content-center flex-column skillsSection-card p-0"
+                className="col m-2 d-flex align-items-center justify-content-center flex-column skillsSection-card p-0"
                 key={index}>
                 <Image
                   src={`/Images/Icons/${listeLangage}.png`}

@@ -13,5 +13,28 @@
     background-color: $violet-dark;
     border: 1px solid #f1f1f191;
     border-radius: 30px;
+    max-width: 200px !important;
+    min-width: 200px;
+    @media screen and ( max-width : 1000px){
+      max-width: 100px !important;
+      min-width: 100px;
+      p{
+        font-size: 0.7rem !important;
+      }
+    }
+    @media screen and ( max-width : 400px){
+      max-width: 80px !important;
+      min-width: 80px;
+      p{
+        font-size: 0.5rem !important;
+      }
+    }
+  }
+  &-card:hover{
+    background-color: $yellow;
+    p{
+      color:$violet-dark !important;
+      font-weight: 600;
+    }
   }
 }

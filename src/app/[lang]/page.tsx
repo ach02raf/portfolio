@@ -10,6 +10,7 @@ import Footer from "@/C/Footer/Footer";
 import ServicesSection from "@/C/ServicesSection/ServicesSection";
 import SkillsSection from "@/C/skillsSection/SkillsSection";
 import ExperienceEducation from "@/component/Experience/ExperienceEducation";
+import Project from "@/component/Project/Project";
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
@@ -35,7 +36,9 @@ export default async function IndexPage({
         <SkillsSection skillsSection={dictionary.skillsSection} />
         <ExperienceEducation EducationExperience={dictionary.EducationExperience}/>
       </section>
-      <section id={dictionary.header[4].url} className="vh-100"></section>
+      <section id={dictionary.header[4].url} className="vh-100">
+        <Project Project={dictionary?.Project}/>
+      </section>
       <section id={dictionary.header[5].url}>
         <ContactSection contactSection={dictionary.contactSection} />
       </section>
