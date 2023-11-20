@@ -167,5 +167,45 @@
       }
     ]
   },
+  "EducationExperience": [
+    {
+      "title": "Experience",
+      "list": [
+        {
+          "title": "Zeta Engineering",
+          "subtitle": "Développeur web",
+          "desc": ["test", "test2", "test3"],
+          "date": "2023 Présent"
+        },
+        { "title": "", "subtitle": "", "desc": [], "date": "" },
+        { "title": "", "subtitle": "", "desc": [], "date": "" },
+        { "title": "", "subtitle": "", "desc": [], "date": "" },
+        { "title": "", "subtitle": "", "desc": [], "date": "" }
+      ]
+    },
+    {
+      "title": "Education",
+      "list": [
+        {
+          "title": "Tek-Up university",
+          "subtitle": "Ingenieurie en informatique : specialité developement web, mobile et multimedia",
+          "desc": ["test", "test2", "test3"],
+          "date": "2021 Présent"
+        },
+        {
+          "title": "ISIMM | Institut Supérieur d'Informatique et de Mathématiques de Monastir",
+          "subtitle": "Licence fondamentale en informatique",
+          "desc": [],
+          "date": "2016 2020"
+        },
+        {
+          "title": "Lycée Monastir",
+          "subtitle": "",
+          "desc": [],
+          "date": "2016"
+        }
+      ]
+    }
+  ],
   "Footer": { "title": "@ 2023 ALLE RECHTE VORBEHALTEN VON ACH02RAF" }
 }
