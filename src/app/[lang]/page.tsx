@@ -39,7 +39,7 @@ export default async function IndexPage({
         />
       </section>
       <section id={dictionary.header[4].url} className="vh-100">
-        <Project Project={dictionary?.Project}/>
+        {/* <Project Project={dictionary?.Project}/> */}
       </section>
       <section id={dictionary.header[5].url}>
         <ContactSection contactSection={dictionary.contactSection} />
