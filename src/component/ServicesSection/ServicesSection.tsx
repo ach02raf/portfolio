@@ -26,9 +26,7 @@ function ServicesSection(props: ServicesSectionProps) {
       <div className='row m-0'>
         {props?.ServicesSection?.listServices?.map((item, index) => (
           <div className='col-lg-4 col-md-6 position-relative justify-content-start' key={index}>
-        <div className='row align-items-end my-2'><div className='col-3'> <div className='service-section-icon'>   <FontAwesomeIcon color='white' icon={fas[item?.img] as IconDefinition} /></div></div><div className='col-9'>  <h3>{item?.title}</h3></div></div>
-            
-          
+        <div className='row align-items-end my-2'><div className='col-3'> <div className='service-section-icon'>   <FontAwesomeIcon color='white' icon={fas[item?.img] as IconDefinition} /></div></div><div className='col-9'>  <h3>{item?.title}</h3></div></div>   
             <p>{item?.desc}</p>
           </div>
         ))}
