@@ -20,7 +20,7 @@ function SkillsSection(props: {
       </h2>
       <div className="col">
         {props.skillsSection.listeSkills.map((skillsSection) => (
-          <div className="row m-0 p-2">
+          <div className="row m-0 p-2" key={skillsSection.id}>
             <p key={skillsSection.id}>{skillsSection.title}</p>
             {skillsSection.listeLangage.map((listeLangage, index) => (
               <div
