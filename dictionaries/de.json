@@ -34,7 +34,10 @@
   "firstSection": {
     "title": "Hallo, mein Name ist ",
     "name": "BEN FREDJ Mohamed Achraf",
-    "description": "Ich bin Backend & Frontend Entwickler",
+    "description": [
+      "Je suis un ingenieur en informatique",
+      "Je suis développeur Backend & Frontend"
+    ],
     "cv": "CV herunterladen"
   },
   "secondSection": {
@@ -175,12 +178,37 @@
           "title": "Zeta Engineering",
           "subtitle": "Développeur web",
           "desc": ["test", "test2", "test3"],
-          "date": "2023 Présent"
+          "dateDeb": "juin 2023 ",
+          "dateFin": "Présent"
         },
-        { "title": "", "subtitle": "", "desc": [], "date": "" },
-        { "title": "", "subtitle": "", "desc": [], "date": "" },
-        { "title": "", "subtitle": "", "desc": [], "date": "" },
-        { "title": "", "subtitle": "", "desc": [], "date": "" }
+        {
+          "title": "",
+          "subtitle": "",
+          "desc": [],
+          "dateDeb": "juin 2023 ",
+          "dateFin": "juillest 2023"
+        },
+        {
+          "title": "",
+          "subtitle": "",
+          "desc": [],
+          "dateDeb": "juin 2023 ",
+          "dateFin": "juillest 2023"
+        },
+        {
+          "title": "",
+          "subtitle": "",
+          "desc": [],
+          "dateDeb": "juin 2023 ",
+          "dateFin": "juillest 2023"
+        },
+        {
+          "title": "",
+          "subtitle": "",
+          "desc": [],
+          "dateDeb": "juin 2023 ",
+          "dateFin": ""
+        }
       ]
     },
     {
@@ -190,19 +218,22 @@
           "title": "Tek-Up university",
           "subtitle": "Ingenieurie en informatique : specialité developement web, mobile et multimedia",
           "desc": ["test", "test2", "test3"],
-          "date": "2021 Présent"
+          "dateDeb": "2021 ",
+          "dateFin": "Présent"
         },
         {
           "title": "ISIMM | Institut Supérieur d'Informatique et de Mathématiques de Monastir",
           "subtitle": "Licence fondamentale en informatique",
           "desc": [],
-          "date": "2016 2020"
+          "dateDeb": "2016 ",
+          "dateFin": "2020"
         },
         {
           "title": "Lycée Monastir",
           "subtitle": "",
           "desc": [],
-          "date": "2016"
+          "dateDeb": "2016",
+          "dateFin": "2020"
         }
       ]
     }

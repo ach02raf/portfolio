@@ -13,13 +13,28 @@
     background-color: $violet-dark;
     border: 1px solid #f1f1f191;
     border-radius: 30px;
-    &:hover {
-      border: 1px solid $violet-dark;
-      background-color: #fece80;
+    max-width: 200px !important;
+    min-width: 200px;
+    @media screen and (max-width: 1000px) {
+      max-width: 100px !important;
+      min-width: 100px;
+      p {
+        font-size: 0.7rem !important;
+      }
     }
-    &:hover p {
+    @media screen and (max-width: 400px) {
+      max-width: 80px !important;
+      min-width: 80px;
+      p {
+        font-size: 0.5rem !important;
+      }
+    }
+  }
+  &-card:hover {
+    background-color: $yellow;
+    p {
       color: $violet-dark !important;
-      font-weight: 800;
+      font-weight: 600;
     }
   }
 }
