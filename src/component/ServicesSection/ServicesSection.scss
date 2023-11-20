@@ -25,6 +25,9 @@
       margin: auto;
     }
   }
+  &-block:hover{
+    transform: translateY(-5%);
+  }
   span {
     color: $yellow;
   }
