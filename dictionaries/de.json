@@ -126,7 +126,7 @@
       {
         "id": 2,
         "title": "Stilsprachen",
-        "listeLangage": ["CSS", "SCSS", "SASS"]
+        "listeLangage": ["CSS", "SCSS-SASS"]
       },
       {
         "id": 3,
@@ -137,12 +137,12 @@
           "SPRINGBOOT",
           "DJANGO",
           "ANGULAR",
-          "REACT NATIVE",
-          "SWIFT UI",
+          "REACT-NATIVE",
+          "SWIFT-UI",
           "IONIC",
-          "DOTNET CORE",
-          "BOOTSTRAP 5",
-          "TAILWIND CSS"
+          "DOTNET-CORE",
+          "BOOTSTRAP-5",
+          "TAILWIND-CSS"
         ]
       },
       {

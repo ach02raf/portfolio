@@ -29,11 +29,13 @@ export default async function IndexPage({
         <SecondSection secondSection={dictionary.secondSection} />
       </section>
       <section id={dictionary.header[2].url}>
-      <ServicesSection ServicesSection={dictionary.ServicesSection} />
+        <ServicesSection ServicesSection={dictionary.ServicesSection} />
       </section>
       <section id={dictionary.header[3].url}>
         <SkillsSection skillsSection={dictionary.skillsSection} />
-        <ExperienceEducation EducationExperience={dictionary.EducationExperience}/>
+        <ExperienceEducation
+          EducationExperience={dictionary.EducationExperience}
+        />
       </section>
       <section id={dictionary.header[4].url} className="vh-100"></section>
       <section id={dictionary.header[5].url}>
