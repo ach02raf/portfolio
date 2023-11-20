@@ -6,7 +6,10 @@
     color: $yellow !important;
   }
   &-image {
-    width: 80% !important;
-    height: 70% !important;
+    width: 70% !important;
+    height: 60% !important;
+  }
+  &-card {
+    background-color: $violet-dark;
   }
 }

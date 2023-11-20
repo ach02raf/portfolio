@@ -61,35 +61,43 @@
       {
         "id": 1,
         "title": "Webintegration",
-        "desc": "Entwicklung und Integration eines grafischen Designs, um es in ein konformes Webprojekt zu verwandeln. Ich lege besonderen Wert auf die Benutzererfahrung und die Optimierung (SEO & schnelles Laden) in all meinen Projekten.",
-        "img": "Integration-web"
+        "desc": "Entwicklung und Integration eines grafischen Entwurfs, um ihn in ein konformes Webprojekt zu verwandeln. Ich lege besonderen Wert auf die Benutzererfahrung und die Optimierung (SEO & Anzeigegeschwindigkeit) in all meinen Projekten.",
+        "img": "faMagic"
       },
       {
         "id": 2,
-        "title": "Entwicklung",
-        "desc": "Gelegentliche und spezifische Programmierung zur Verbesserung, Fortsetzung oder Umwandlung eines bestehenden Projekts im Rahmen einer definierten Mission. Ob allein oder im Team, ich integriere mich problemlos.",
-        "img": "Developpement"
+        "title": "E-Commerce",
+        "desc": "Erstellung einer E-Commerce-Plattform mit dem E-Commerce-CMS Magento, einer der umfassendsten Open-Source-Lösungen. Ich habe mich auf spezifische Entwicklungen spezialisiert, um Magento an Ihre Bedürfnisse und Abläufe anzupassen.",
+        "img": "faShoppingBag"
       },
       {
         "id": 3,
-        "title": "Wartung und technischer Support",
-        "desc": "Regelmäßige Updates, Fehlerbehebungen, Leistungsoptimierung und Sicherheitsverbesserungen für Anwendungen und Websites.",
-        "img": "Maintenance-et-support-technique"
+        "title": "Web- und mobile Anwendungen",
+        "desc": "Erstellung von Unternehmensanwendungen, Intranet, Extranet, Corporate- und Showcase-Websites, Web-Apps usw. Regelmäßige Updates, Fehlerbehebungen, Leistungsoptimierung und Verbesserungen der Sicherheit von Anwendungen und Websites.",
+        "img": "faGears"
       },
       {
         "id": 4,
-        "title": "SEO-Optimierung",
-        "desc": "Optimierung von Websites für Suchmaschinen (SEO).",
-        "img": "Optimisation-SEO"
+        "title": "Codeüberprüfung",
+        "desc": "Analyse und Sicherstellung, dass der Code bewährten Praktiken entspricht, und Sicherstellung seiner Qualität (Lesbarkeit, Klarheit, Konsistenz). Dadurch wird der Code wartungsfreundlicher, besser strukturiert und die Anzahl der Fehler wird reduziert.",
+        "img": "faCode"
       },
       {
         "id": 5,
-        "title": "Entwicklung von mobilen Anwendungen",
-        "desc": "Gestaltung und Entwicklung von mobilen Anwendungen für iOS- und Android-Plattformen. Erfahrung in der Erstellung von reaktiven und benutzerfreundlichen Anwendungen.",
-        "img": "Mobile-App-Development"
+        "title": "Optimierung",
+        "desc": "Durchführung einer Leistungsanalyse und Optimierung Ihrer Anwendungen durch eingehende Untersuchung des Quellcodes, der Interaktionen zwischen verschiedenen Komponenten und Datenbanken, um wirksame Maßnahmen zur Verbesserung der Anwendungsleistung zu ergreifen.",
+        "img": "faRocket"
+      },
+      {
+        "id": 6,
+        "title": "SEO - Suchmaschinenoptimierung",
+        "desc": "Optimierung für Suchmaschinen durch Anwendung einer Reihe von Techniken, Regeln und bewährten Methoden zur Verbesserung der Sichtbarkeit von Websites und ihrer Positionen in den Suchergebnissen.",
+        "img": "faBullhorn"
       }
     ]
-  },
+    
+  }
+,  
   "contactSection": {
     "title": "Kontaktiere Mich",
     "location": "Tunis, Tunesien",
