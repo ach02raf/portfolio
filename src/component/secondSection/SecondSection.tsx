@@ -12,22 +12,28 @@ function SecondSection(props: {
       <div className="col-lg-8 ">
         <div className="secondSection-div m-auto">
           <h2 className="secondSection-div-title">
-            <span>{props.secondSection.title[0]}</span>{" "}
+            <span>{props.secondSection.title[0] + " "}</span>
             <span className="secondSection-div-title-part-2">
               {props.secondSection.title[1]}
             </span>
           </h2>
           <p>
-            {props.secondSection.description[0]}{" "}
-            <Link href="http://www.isimm.rnu.tn/public/">
+            {props.secondSection.description[0]}
+            <Link
+              href="http://www.isimm.rnu.tn/public/"
+              rel="preload"
+              target="_blank">
               {props.secondSection.description[1]}
             </Link>
-            {props.secondSection.description[2]}{" "}
-            <Link href="https://tek-up.de/">
+            {props.secondSection.description[2]}
+            <Link href="https://tek-up.de/" rel="preload" target="_blank">
               {props.secondSection.description[3]}
             </Link>
-            {props.secondSection.description[4]}{" "}
-            <Link href="https://github.com/ach02raf">
+            {props.secondSection.description[4]}
+            <Link
+              href="https://github.com/ach02raf"
+              rel="preload"
+              target="_blank">
               {props.secondSection.description[5]}
             </Link>
             {props.secondSection.description[6]}

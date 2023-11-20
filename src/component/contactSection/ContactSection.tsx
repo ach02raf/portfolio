@@ -43,7 +43,6 @@ function ContactSection(props: {
           width={25}
           height={34}
         />
-
           <p className="p-3">{props.contactSection.location}</p>
         </Link>
       </div>

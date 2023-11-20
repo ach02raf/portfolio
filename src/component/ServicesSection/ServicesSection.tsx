@@ -1,31 +1,50 @@
-import React from 'react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconDefinition } from "@fortawesome/fontawesome-common-types";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import "./ServicesSection.scss";
+import React from "react";
 interface ServiceItem {
-    id: number;
-    title: string;
-    desc: string;
-    img: string;
-  }
-  
-function ServicesSection(props: {
-    ServicesSection: {
-      title: string;
-      description: string;
-      listServices:ServiceItem[],
-    };
-  }) {
-  return (
-    <div><h2>{props?.ServicesSection?.title}</h2>
-    <p>{props?.ServicesSection?.description}</p>
-  <div className='row'>  {props?.ServicesSection?.listServices?.map((item,index)=>(
-    <div className='col' key={index}>
-        <img src={`/Images/${item?.img}.jpg`} alt={item?.title} title={item?.title} />
-        <h3>{item?.title}</h3>
-        <p>{item?.desc}</p>
-    </div>
-))
-
-}</div></div>
-  )
+  id: number;
+  title: string;
+  desc: string;
+  img: string;
 }
 
-export default ServicesSection
+interface ServicesSectionProps {
+  ServicesSection: {
+    title: string[];
+    description: string;
+    listServices: ServiceItem[];
+  };
+}
+
+function ServicesSection(props: ServicesSectionProps) {
+  return (
+    <div className="service-section text-center my-5">
+      <h2>
+        {props?.ServicesSection?.title[0]}{" "}
+        <span>{props?.ServicesSection?.title[1]}</span>
+      </h2>
+      <p>{props?.ServicesSection?.description}</p>
+      <div className="row m-0 justify-content-between">
+        {props?.ServicesSection?.listServices?.map((item, index) => (
+          <div
+            className="col-lg-4 col-md-5 service-section-block position-relative p-3 my-3"
+            key={index}>
+            <div className="service-section-block-icon my-3">
+              {" "}
+              <FontAwesomeIcon
+                color="#FEC260"
+                icon={fas[item?.img] as IconDefinition}
+              />
+            </div>
+            <h3 className="w-100">{item?.title}</h3>
+            <p>{item?.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default ServicesSection;

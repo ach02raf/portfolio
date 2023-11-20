@@ -6,7 +6,7 @@ function FirstSection(props: {
   firstSection: {
     title: string;
     name: string;
-    description: string;
+    description: string[];
     cv: string;
   };
 }) {
@@ -22,9 +22,11 @@ function FirstSection(props: {
           </h2>
           <h2 className="firstSection-Typewriter">
             <Typewriter
-              text={props.firstSection.description}
+              text={[`${props.firstSection.description}`, ""]}
               loop
+              delay={3}
               speed={250}
+              cursor={true}
             />
           </h2>
           <button className="firstSection-button mb-5 p-3">
