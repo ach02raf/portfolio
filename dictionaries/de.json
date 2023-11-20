@@ -35,8 +35,8 @@
     "title": "Hallo, mein Name ist ",
     "name": "BEN FREDJ Mohamed Achraf",
     "description": [
-      "Je suis un ingenieur en informatique",
-      "Je suis développeur Backend & Frontend"
+      "Ich bin ein Informatikingenieur",
+      "Ich bin Backend & Frontend Entwickler"
     ],
     "cv": "CV herunterladen"
   },
@@ -93,7 +93,7 @@
       },
       {
         "id": 6,
-        "title": "SEO - Suchmaschinenoptimierung",
+        "title": "SEO",
         "desc": "Optimierung für Suchmaschinen durch Anwendung einer Reihe von Techniken, Regeln und bewährten Methoden zur Verbesserung der Sichtbarkeit von Websites und ihrer Positionen in den Suchergebnissen.",
         "img": "faBullhorn"
       }
