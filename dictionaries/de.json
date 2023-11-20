@@ -46,6 +46,50 @@
     "nom": "i'm Safa Chaabane",
     "work": ["Freelance", "web developer", "full stack developer"]
   },
+  "ServicesSection": {
+    "title": "Meine Dienstleistungen",
+    "description": "LASSEN SIE UNS EINEN BLICK AUF MEINE DIENSTLEISTUNGEN WERFEN",
+    "listServices": [
+      {
+        "id": 1,
+        "title": "Webintegration",
+        "desc": "Entwicklung und Integration eines grafischen Entwurfs, um ihn in ein konformes Webprojekt zu verwandeln. Ich lege besonderen Wert auf die Benutzererfahrung und die Optimierung (SEO & Anzeigegeschwindigkeit) in all meinen Projekten.",
+        "img": "faMagic"
+      },
+      {
+        "id": 2,
+        "title": "E-Commerce",
+        "desc": "Erstellung einer E-Commerce-Plattform mit dem E-Commerce-CMS Magento, einer der umfassendsten Open-Source-Lösungen. Ich habe mich auf spezifische Entwicklungen spezialisiert, um Magento an Ihre Bedürfnisse und Abläufe anzupassen.",
+        "img": "faShoppingBag"
+      },
+      {
+        "id": 3,
+        "title": "Web- und mobile Anwendungen",
+        "desc": "Erstellung von Unternehmensanwendungen, Intranet, Extranet, Corporate- und Showcase-Websites, Web-Apps usw. Regelmäßige Updates, Fehlerbehebungen, Leistungsoptimierung und Verbesserungen der Sicherheit von Anwendungen und Websites.",
+        "img": "faGears"
+      },
+      {
+        "id": 4,
+        "title": "Codeüberprüfung",
+        "desc": "Analyse und Sicherstellung, dass der Code bewährten Praktiken entspricht, und Sicherstellung seiner Qualität (Lesbarkeit, Klarheit, Konsistenz). Dadurch wird der Code wartungsfreundlicher, besser strukturiert und die Anzahl der Fehler wird reduziert.",
+        "img": "faCode"
+      },
+      {
+        "id": 5,
+        "title": "Optimierung",
+        "desc": "Durchführung einer Leistungsanalyse und Optimierung Ihrer Anwendungen durch eingehende Untersuchung des Quellcodes, der Interaktionen zwischen verschiedenen Komponenten und Datenbanken, um wirksame Maßnahmen zur Verbesserung der Anwendungsleistung zu ergreifen.",
+        "img": "faRocket"
+      },
+      {
+        "id": 6,
+        "title": "SEO - Suchmaschinenoptimierung",
+        "desc": "Optimierung für Suchmaschinen durch Anwendung einer Reihe von Techniken, Regeln und bewährten Methoden zur Verbesserung der Sichtbarkeit von Websites und ihrer Positionen in den Suchergebnissen.",
+        "img": "faBullhorn"
+      }
+    ]
+    
+  }
+,  
   "contactSection": {
     "title": "Kontaktiere Mich",
     "location": "Tunis, Tunesien",

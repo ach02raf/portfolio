@@ -46,6 +46,50 @@
     "nom": "i'm Safa Chaabane",
     "work": ["Freelance", "web developer", "full stack developer"]
   },
+  "ServicesSection": {
+    "title": "My Services",
+    "description": "LET'S TAKE A QUICK LOOK AT MY SERVICES",
+    "listServices": [
+      {
+        "id": 1,
+        "title": "Web Integration",
+        "desc": "Development and integration of a graphic design to convert it into a compliant web project. I pay special attention to user experience and optimization (SEO & display speed) across all my projects.",
+        "img": "faMagic"
+      },
+      {
+        "id": 2,
+        "title": "Ecommerce",
+        "desc": "Creation of an e-commerce platform using the Magento e-commerce CMS, which is one of the most comprehensive open-source solutions. I specialize in specific developments to adapt Magento to your needs and operations.",
+        "img": "faShoppingBag"
+      },
+      {
+        "id": 3,
+        "title": "Web & Mobile Application",
+        "desc": "Creation of business applications, Intranet, Extranet, Corporate and showcase sites, Web apps, etc. Regular updates, bug fixes, performance optimization, and improvements in the security of applications and websites.",
+        "img": "faGears"
+      },
+      {
+        "id": 4,
+        "title": "Code Review",
+        "desc": "Analyzing and ensuring that the code adheres to best practices, and ensuring its quality (readability, clarity, consistency). This makes the code more maintainable, better structured, and reduces the number of bugs.",
+        "img": "faCode"
+      },
+      {
+        "id": 5,
+        "title": "Optimization",
+        "desc": "Performing a performance analysis and optimization of your applications by delving into the source code, interactions between different components, and databases to take effective actions to improve application performance.",
+        "img": "faRocket"
+      },
+      {
+        "id": 6,
+        "title": "SEO - Search Engine Optimization",
+        "desc": "Optimizing for search engines by applying a set of techniques, rules, and best practices to improve the visibility of websites and their positions in search engine results.",
+        "img": "faBullhorn"
+      }
+    ]
+    
+  }
+,  
   "contactSection": {
     "title": "Contact Me",
     "location": "Tunis, Tunisia",
