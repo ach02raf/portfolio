@@ -62,31 +62,37 @@
         "id": 1,
         "title": "Intégration web",
         "desc": "Développement et intégration d'une maquette graphique pour la convertir en un projet web conforme. Je porte une attention particulière à l'expérience utilisateur et à l'optimisation (SEO & rapidité d'affichage) sur l'ensemble de mes projets.",
-        "img": "Integration-web"
+        "img": "faMagic"
       },
       {
         "id": 2,
-        "title": "Développement",
-        "desc": "Programmation ponctuelle et spécifique pour améliorer, poursuivre ou convertir un projet déjà existant dans le cadre d'une mission définie. Seul ou au sein d'une équipe, je m'intègre facilement.",
-        "img": "Developpement"
+        "title": "Ecommerce",
+        "desc": "Création de plateforme de commerce électronique avec le CMS e-commerce Magento, qui est l'une des solutions open-source les plus complètes. Je me suis spécialisé dans les développements spécifiques pour adapter Magento à votre besoin et fonctionnement.",
+        "img": "faShoppingBag"
       },
       {
         "id": 3,
-        "title": "Maintenance et support technique",
-        "desc": "Mises à jour régulières, correction de bogues, optimisation des performances et améliorations de la sécurité des applications et sites web.",
-        "img": "Maintenance-et-support-technique"
+        "title": "Application Web & mobile",
+        "desc": "Création d'applications métier, d'Intranet, d'Extranet, de sites Corporate et sites vitrines, de Web apps... Mises à jour régulières, correction de bogues, optimisation des performances et améliorations de la sécurité des applications et sites web.",
+        "img": "faGears"
       },
       {
         "id": 4,
-        "title": "Optimisation SEO",
-        "desc": "Optimisation des sites web pour les moteurs de recherche (SEO).",
-        "img": "Optimisation-SEO"
+        "title": "Revue de code",
+        "desc": "Analyser et vérifier que le code respect les bonnes pratiques, et veiller à sa qualité (lisibilité, clarté, consistance). Ainsi, le code devient plus maintenable, mieux architecturé et le nombre de bugs est réduit.",
+        "img": "faCode"
       },
       {
         "id": 5,
-        "title": "Développement d'applications mobiles",
-        "desc": "Conception et développement d'applications mobiles pour les plateformes iOS et Android. Expérience dans la création d'applications réactives et conviviales.",
-        "img": "Mobile-App-Development"
+        "title": "Optimisation",
+        "desc": "Effectuer une analyse de performance et une optimisation de vos applications en entrant en détail dans le code source, dans les interactions entre les différentes briques et dans les bases de données afin de mener des actions efficaces pour améliorer les performances d'une application.",
+        "img": "faRocket"
+      },
+      {
+        "id": 6,
+        "title": "SEO - Référencement naturel",
+        "desc": "Optimisation pour les moteurs de recherche en appliquant un ensemble de techniques, de règles et bonnes pratiques pour améliorer la visibilité des sites web et leurs positions dans les résultats des moteurs de recherche",
+        "img": "faBullhorn"
       }
     ]
   },

@@ -18,7 +18,7 @@ function ServicesSection(props: {
     <div>
       <h2>{props?.ServicesSection?.title}</h2>
       <p>{props?.ServicesSection?.description}</p>
-      <div className="row m-0">
+      <div className="row">
         {props?.ServicesSection?.listServices?.map((item, index) => (
           <div className="col" key={index}>
             <Image
