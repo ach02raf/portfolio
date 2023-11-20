@@ -30,11 +30,12 @@ const ScrollToTopButton = () => {
 
   return (
     <button
-      className={`position-fixed  p-2 outline-none scrollToTop ${
+      className={`position-fixed  p-0 outline-none scrollToTop ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
       onClick={scrollToTop}>
       <Image
+      className="m-2"
         src={"/Images/Icons/up.png"}
         alt="up"
         title="up"

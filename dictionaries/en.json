@@ -46,6 +46,44 @@
     "nom": "i'm Safa Chaabane",
     "work": ["Freelance", "web developer", "full stack developer"]
   },
+  "ServicesSection": {
+    "title": "My Services",
+    "description": "LET'S TAKE A QUICK LOOK AT MY SERVICES",
+    "listServices": [
+      {
+        "id": 1,
+        "title": "Web Integration",
+        "desc": "Development and integration of a graphical design to turn it into a compliant web project. I pay special attention to user experience and optimization (SEO & fast loading) across all my projects.",
+        "img": "Integration-web"
+      },
+      {
+        "id": 2,
+        "title": "Development",
+        "desc": "Occasional and specific programming to enhance, continue, or convert an existing project within a defined mission. Whether alone or within a team, I integrate easily.",
+        "img": "Development"
+      },
+      {
+        "id": 3,
+        "title": "Maintenance and Technical Support",
+        "desc": "Regular updates, bug fixes, performance optimization, and security improvements for applications and websites.",
+        "img": "Maintenance-et-support-technique"
+      },
+      {
+        "id": 4,
+        "title": "SEO Optimization",
+        "desc": "Optimizing websites for search engines (SEO).",
+        "img": "Optimisation-SEO"
+      },
+      {
+        "id": 5,
+        "title": "Mobile App Development",
+        "desc": "Design and development of mobile applications for iOS and Android platforms. Experience in creating responsive and user-friendly applications.",
+        "img": "Mobile-App-Development"
+      }
+      
+    ]
+  }
+,  
   "contactSection": {
     "title": "Contact Me",
     "location": "Tunis, Tunisia",
