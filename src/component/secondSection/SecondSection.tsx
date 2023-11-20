@@ -12,7 +12,7 @@ function SecondSection(props: {
       <div className="col-lg-8 ">
         <div className="secondSection-div m-auto">
           <h2 className="secondSection-div-title">
-            <span>{props.secondSection.title[0]}</span>
+            <span>{props.secondSection.title[0] + " "}</span>
             <span className="secondSection-div-title-part-2">
               {props.secondSection.title[1]}
             </span>

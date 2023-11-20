@@ -10,7 +10,7 @@ function Header(props: {
   const [active, setActive] = useState<number>();
   return (
     <div className="sticky-top header">
-      <div className="row m-0 p-0 py-2">
+      <div className="row m-0 p-0 py-1">
         <div className="col-lg-2 col-6">
           <Link href={"/"} className="text-decoration-none" rel="preload">
             <Image

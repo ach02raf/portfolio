@@ -1,0 +1,8 @@
+@import "@/A/global-variables.scss";
+.skillsSection {
+  padding: 5%;
+  background-color: $violet-light;
+  span {
+    color: $yellow !important;
+  }
+}

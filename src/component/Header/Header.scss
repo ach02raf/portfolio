@@ -1,10 +1,12 @@
 @import "@/A/global-variables.scss";
 .header {
   background-color: $violet-light;
-  opacity: 0.8;
-  &-logo{
+  opacity: 0.85;
+  box-shadow: 1px 6px 13px -5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 6px 13px -5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 6px 13px -5px rgba(0, 0, 0, 0.3);
+  &-logo {
     max-width: 150px;
-
   }
   &-link {
     font-size: 1rem;

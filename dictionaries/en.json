@@ -39,7 +39,15 @@
   },
   "secondSection": {
     "title": ["About", "me"],
-    "description": ["I have recently successfully completed a three-year program in fundamental computer science, specializing in software engineering, at the Higher Institute of Computer Science and Mathematics of Monastir (","ISIMM","). For more information about this institution, I invite you to visit its website. Upon completing this stage, I earned the title of computer technician, significantly enhancing my practical skills. Currently enrolled in the third year of the computer engineering program at TEK-UP University (","TEK-UP","), I am specializing in Mobile, Web, and Multimedia Development DMWM. Driven by a constant pursuit of excellence, I am actively seeking an opportunity for my final year project PFE. My professional experience has grown through multiple internships during my undergraduate studies and two internships during my engineering program. As an active member of Zeta Engineering's web development team for the past six months, I am fully engaged in concrete and stimulating projects. My portfolio, available following this text, showcases the diversity and quality of the projects I have undertaken. For a more in-depth exploration of my work, I also encourage you to check out my GitHub (","ach02raf","). There, you will find my achievements, particularly in JS/TS family technologies. My commitment to technical excellence and my ability to creatively solve problems drive me to continually reach new heights in the field of software development."]
+    "description": [
+      "I have recently successfully completed a three-year program in fundamental computer science, specializing in software engineering, at the Higher Institute of Computer Science and Mathematics of Monastir (",
+      "ISIMM",
+      "). For more information about this institution, I invite you to visit its website. Upon completing this stage, I earned the title of computer technician, significantly enhancing my practical skills. Currently enrolled in the third year of the computer engineering program at TEK-UP University (",
+      "TEK-UP",
+      "), I am specializing in Mobile, Web, and Multimedia Development DMWM. Driven by a constant pursuit of excellence, I am actively seeking an opportunity for my final year project PFE. My professional experience has grown through multiple internships during my undergraduate studies and two internships during my engineering program. As an active member of Zeta Engineering's web development team for the past six months, I am fully engaged in concrete and stimulating projects. My portfolio, available following this text, showcases the diversity and quality of the projects I have undertaken. For a more in-depth exploration of my work, I also encourage you to check out my GitHub (",
+      "ach02raf",
+      "). There, you will find my achievements, particularly in JS/TS family technologies. My commitment to technical excellence and my ability to creatively solve problems drive me to continually reach new heights in the field of software development."
+    ]
   },
   "slider": {
     "salutation": "Hello",
@@ -80,15 +88,78 @@
         "desc": "Design and development of mobile applications for iOS and Android platforms. Experience in creating responsive and user-friendly applications.",
         "img": "Mobile-App-Development"
       }
-      
     ]
-  }
-,  
+  },
   "contactSection": {
     "title": "Contact Me",
     "location": "Tunis, Tunisia",
     "email": "ach02raf@gmail.com",
     "phoneNumber": "+216 94622592"
+  },
+  "skillsSection": {
+    "title": "My Skills",
+    "listeSkills": [
+      {
+        "id": 0,
+        "title": "Programming Languages",
+        "listeLangage": [
+          "C",
+          "C#",
+          "JAVA",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "PYTHON",
+          "PHP"
+        ]
+      },
+      {
+        "id": 1,
+        "title": "Markup Languages",
+        "listeLangage": ["HTML", "XML"]
+      },
+      {
+        "id": 2,
+        "title": "Style Languages",
+        "listeLangage": ["CSS", "SCSS", "SASS"]
+      },
+      {
+        "id": 3,
+        "title": "Frameworks",
+        "listeLangage": [
+          "EXPRESS.JS",
+          "NEXT.JS",
+          "SPRINGBOOT",
+          "DJANGO",
+          "ANGULAR",
+          "REACT NATIVE",
+          "SWIFT UI",
+          "IONIC",
+          ".NET CORE",
+          "BOOTSTRAP 5",
+          "TAILWIND CSS"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "JS/TS Libraries",
+        "listeLangage": ["REACT"]
+      },
+      {
+        "id": 5,
+        "title": "DevOps",
+        "listeLangage": ["GIT", "GITHUB", "JENKINS", "HOSTINGER", "AWS"]
+      },
+      {
+        "id": 6,
+        "title": "CMS",
+        "listeLangage": ["WORDPRESS"]
+      },
+      {
+        "id": 7,
+        "title": "Others",
+        "listeLangage": ["REST", "RESTFUL", "GRAPHQL", "SOAP"]
+      }
+    ]
   },
   "Footer": { "title": "@ 2023 ALL RIGHT RESERVED BY ACH02RAF " }
 }
