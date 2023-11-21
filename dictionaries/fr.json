@@ -260,7 +260,7 @@
           "https://github.com/ach02raf/ach02raf-ALLO-DOCTOR-APP-Front",
           "https://github.com/ach02raf/ach02raf-ALLO-DOCTOR-APP-back"
         ],
-        "urlSITE": "",
+        "urlSITE": [""],
         "apk": "",
         "outils": ["REACT NATIVE", "EXPRESS.JS", "MONGO.DB"]
       },
@@ -276,7 +276,7 @@
           "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT-2",
           "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT-3"
         ],
-        "urlSITE": "",
+        "urlSITE": [""],
         "apk": "",
         "outils": ["SPIRNG BOOT", "POSTMAN"]
       },
@@ -291,7 +291,7 @@
           "https://github.com/ach02raf/GoTrip-ionic-application",
           "https://github.com/ach02raf/GoTrip-ionic-application-backend"
         ],
-        "urlSITE": "https://gotrip-ionic-application-backend.onrender.com/",
+        "urlSITE": ["https://gotrip-ionic-application-backend.onrender.com/"],
         "apk": "gotrip",
         "outils": ["IONIC framework", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
       },
@@ -307,9 +307,56 @@
           "https://github.com/ach02raf/ARTVERSE-PROJECT-API-NODEJS",
           "https://github.com/ach02raf/ARTVERSE-PROJECT-API-DJANGO"
         ],
-        "urlSITE": "https://ach02raf.github.io/ARTVERSE-PROJECT/",
+        "urlSITE": ["https://ach02raf.github.io/ARTVERSE-PROJECT/"],
         "apk": "",
         "outils": ["ANGULAR & MEAN-STACK", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
+      },
+      {
+        "id": "4",
+        "nameProject": "PACK WORDPRESS",
+        "title": "Création d'un pack de 16 sites avec le CMS WordPress",
+        "descProject": "",
+        "imgProject": "",
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": [
+          "https://1001-architectures.fr/",
+          "https://truecom.fr/",
+          "https://surf-com.fr/",
+          "https://maison-presto.com",
+          "https://escaliere.fr/",
+          "https://klass-design.fr",
+          "https://reno-deco.fr",
+          "https://mur-mur.fr/",
+          "https://global-reno.fr/",
+          "https://sopranet.fr/",
+          "https://renov-en-main.fr",
+          "https://open-mur.fr/",
+          "https://enirop.com",
+          "https://muretremie.fr/",
+          "https://architectis.fr/",
+          "https://www.agexis.com"
+        ],
+        "apk": "",
+        "outils": ["WORDPRESS", "PHP", "JS", "HTML-CSS", "HOSTINGER"]
+      },
+      ,
+      {
+        "id": "5",
+        "nameProject": "PACK NEXT.JS",
+        "title": "Création d'un pack de 4 sites avec le framework next js",
+        "descProject": "",
+        "imgProject": "",
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": [
+          "https://spacy-and-cosy.fr/",
+          "https://structural-wood.fr/",
+          "https://structural-metal.fr/",
+          "https://structural-home.fr/"
+        ],
+        "apk": "",
+        "outils": ["NEXT.JS", "BOOTSTRAP 5", "JS/TS", "HOSTINGER"]
       }
     ]
   },
