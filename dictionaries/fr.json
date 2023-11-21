@@ -123,16 +123,6 @@
       },
       {
         "id": 1,
-        "title": "Langages de balisage",
-        "listeLangage": ["HTML"]
-      },
-      {
-        "id": 2,
-        "title": "Langages de styles",
-        "listeLangage": ["CSS", "SCSS-SASS"]
-      },
-      {
-        "id": 3,
         "title": "Framework",
         "listeLangage": [
           "EXPRESS.JS",
@@ -148,6 +138,17 @@
           "TAILWIND-CSS"
         ]
       },
+      {
+        "id": 2,
+        "title": "Langages de balisage",
+        "listeLangage": ["HTML"]
+      },
+      {
+        "id": 3,
+        "title": "Langages de styles",
+        "listeLangage": ["CSS", "SCSS-SASS"]
+      },
+   
       {
         "id": 4,
         "title": "Bibliothèque JS/TS",
