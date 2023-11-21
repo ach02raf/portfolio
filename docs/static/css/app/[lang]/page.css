@@ -119,8 +119,6 @@
 }
 @media screen and (max-width: 400px) {
   .experienceEducation-card-date {
-    -webkit-clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 99%, 0 0);
-            clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 99%, 0 0);
     padding: 0.5rem !important;
   }
   .experienceEducation-card-date p {
@@ -284,8 +282,10 @@
   display: block;
   margin: auto;
 }
-.service-section-block:hover {
-  transform: translateY(-5%);
+@media screen and (min-width: 992px) {
+  .service-section-block:hover {
+    transform: translateY(-5%);
+  }
 }
 .service-section span {
   color: #fec260;
@@ -301,31 +301,37 @@
   color: #fec260 !important;
 }
 .skillsSection-image {
-  width: 40px !important;
-  height: 40px !important;
+  max-width: 25px !important;
+  max-height: 25px !important;
 }
 .skillsSection-image img {
   width: 100% !important;
   height: 100% !important;
 }
-.skillsSection-col {
-  border-bottom: 1px solid #fff;
+@media screen and (min-width: 992px) {
+  .skillsSection-col {
+    border-bottom: 1px solid #fff;
+  }
 }
-.skillsSection-pair {
-  border-right: 1px solid #fff;
-  position: relative;
+@media screen and (min-width: 992px) {
+  .skillsSection-pair {
+    border-right: 1px solid #fff;
+    position: relative;
+  }
 }
-.skillsSection-pair:after {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  background-color: #fec260;
-  box-shadow: 0px 0px 7px 0px #fec260;
-  border-radius: 50%;
-  right: -9px;
-  bottom: -9px;
-  z-index: 100;
+@media screen and (min-width: 992px) {
+  .skillsSection-pair:after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #fec260;
+    box-shadow: 0px 0px 7px 0px #fec260;
+    border-radius: 50%;
+    right: -9px;
+    bottom: -9px;
+    z-index: 100;
+  }
 }
 .skillsSection-card {
   background-color: #2b0945;

@@ -21,13 +21,13 @@ function ExperienceEducation(props: {
             <h2 className="mb-5 pb-5 pt-2">{item.title}</h2>
             {item?.list?.map((itemList, index) => (
               <div key={index} className="row experienceEducation-card my-3">
-                <div className="col-3">
+                <div className="col-lg-3">
                   <div className="experienceEducation-card-date d-flex flex-column justify-content-center px-3 py-3">
                     <p className="m-0">{itemList?.dateDeb}</p>
                     <p className="m-0">{itemList?.dateFin}</p>
                   </div>
                 </div>
-                <div className="col-9 position-relative experienceEducation-card-info">
+                <div className="col-lg-9 position-relative experienceEducation-card-info">
                   <h3>{itemList?.title}</h3>
                   <p>{itemList?.subtitle}</p>
                   {itemList?.desc && (

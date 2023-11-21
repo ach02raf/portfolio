@@ -22,8 +22,8 @@ function SkillsSection(props: {
         <span>{skillsTitle[1]}</span>
       </h2>
       <div className="col d-flex flex-wrap">
-        {props.skillsSection.listeSkills.map((skillsSection) => (
-         <div className={`col-6 skillsSection-col py-3 ${skillsSection.id%2 === 0 && "skillsSection-pair"}`}> <div className="row m-0 p-2" key={skillsSection.id}>
+        {props.skillsSection.listeSkills.map((skillsSection,index) => (
+         <div key={index} className={`col-lg-6 skillsSection-col py-3 ${skillsSection.id%2 === 0 && "skillsSection-pair"}`}> <div className="row m-0 p-2" key={skillsSection.id}>
             <p key={skillsSection.id}>{skillsSection.title}</p>
             {skillsSection.listeLangage.map((listeLangage, index) => (
               <div
@@ -37,7 +37,7 @@ function SkillsSection(props: {
                   height={512}
                   width={512}  
                 /></div>
-                <p>{listeLangage}</p>
+                <p className="text-center">{listeLangage}</p>
               </div>
             ))}
           </div></div>
