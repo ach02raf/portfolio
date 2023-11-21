@@ -30,11 +30,12 @@ function ExperienceEducation(props: {
                 <div className="col-lg-9 position-relative experienceEducation-card-info">
                   <h3>{itemList?.title}</h3>
                   <p>{itemList?.subtitle}</p>
-                  {itemList?.desc && (
+                  {itemList?.desc?.length!==0 && (
                     <div>
+                      <ul>
                       {itemList?.desc?.map((Itemdesc, index) => (
-                        <p key={index}>{Itemdesc}</p>
-                      ))}
+                        <li key={index}>{Itemdesc}</li>
+                      ))}</ul>
                     </div>
                   )}
                 </div>
