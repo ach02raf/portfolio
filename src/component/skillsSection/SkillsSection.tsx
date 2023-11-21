@@ -35,8 +35,7 @@ function SkillsSection(props: {
                   alt={listeLangage}
                   title={listeLangage}
                   height={512}
-                  width={512}
-                 
+                  width={512}  
                 /></div>
                 <p>{listeLangage}</p>
               </div>
