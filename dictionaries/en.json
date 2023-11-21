@@ -175,39 +175,49 @@
       "title": "Experience",
       "list": [
         {
-          "title": "Zeta Engineering",
-          "subtitle": "Développeur web",
-          "desc": ["test", "test2", "test3"],
-          "dateDeb": "juin 2023 ",
-          "dateFin": "Présent"
+          "title": "ZETA Engineering",
+          "subtitle": "Web Developer",
+          "desc": [
+            "Created a package of 16 websites with the WordPress CMS",
+            "Developed a package of 4 sites with the Next.js framework",
+            "Optimized SEO for the sites included in both packages"
+          ],
+          "dateDeb": "August 2023",
+          "dateFin": "Present"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "juin 2023 ",
-          "dateFin": "juillest 2023"
+          "title": "ZETA Engineering",
+          "subtitle": "Summer Internship 2023",
+          "desc": ["Training on the WordPress CMS and SEO"],
+          "dateDeb": "June 2023",
+          "dateFin": "July 2023"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "juin 2023 ",
-          "dateFin": "juillest 2023"
+          "title": "SHAREK IT",
+          "subtitle": "Summer Internship 2022",
+          "desc": [
+            "Created an e-commerce website for selling computer equipment INFO-LINA",
+            "MERN STACK, BOOTSTRAP"
+          ],
+          "dateDeb": "June 2023",
+          "dateFin": "August 2023"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "juin 2023 ",
-          "dateFin": "juillest 2023"
+          "title": "COSO-FT IT",
+          "subtitle": "Final Year Internship 2020",
+          "desc": [
+            "Created the web and mobile application for medical appointment scheduling: ALLO DOCTOR",
+            "MERN STACK, REACT-NATIVE"
+          ],
+          "dateDeb": "January 2020",
+          "dateFin": "July 2020"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "juin 2023 ",
-          "dateFin": " juillest 2023"
+          "title": "SARTEX GROUP",
+          "subtitle": "Summer Internship 2018",
+          "desc": ["IT Maintenance", "Cloud Computing"],
+          "dateDeb": "June 2018",
+          "dateFin": "July 2018"
         }
       ]
     },
@@ -215,25 +225,25 @@
       "title": "Education",
       "list": [
         {
-          "title": "Tek-Up university",
-          "subtitle": "Ingenieurie en informatique : specialité developement web, mobile et multimedia",
-          "desc": ["test", "test2", "test3"],
-          "dateDeb": "2021 ",
-          "dateFin": "Présent"
+          "title": "TEK-UP University",
+          "subtitle": "Computer Engineering",
+          "desc": ["Specialization in web, mobile, and multimedia development"],
+          "dateDeb": "2021",
+          "dateFin": "Present"
         },
         {
-          "title": "ISIMM | Institut Supérieur d'Informatique et de Mathématiques de Monastir",
-          "subtitle": "Licence fondamentale en informatique",
-          "desc": [],
-          "dateDeb": "2016 ",
-          "dateFin": "2020"
-        },
-        {
-          "title": "Lycée Monastir",
-          "subtitle": "",
-          "desc": [],
+          "title": "ISIMM | Higher Institute of Computer Science and Mathematics, Monastir",
+          "subtitle": "Bachelor's Degree in Computer Science",
+          "desc": ["Specialization in software engineering"],
           "dateDeb": "2016",
           "dateFin": "2020"
+        },
+        {
+          "title": "LKM | Ksibet El Mediouni High School",
+          "subtitle": "Technical Baccalaureate",
+          "desc": [""],
+          "dateDeb": "2015",
+          "dateFin": "2016"
         }
       ]
     }

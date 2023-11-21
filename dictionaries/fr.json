@@ -148,7 +148,7 @@
         "title": "Langages de styles",
         "listeLangage": ["CSS", "SCSS-SASS"]
       },
-   
+
       {
         "id": 4,
         "title": "Bibliothèque JS/TS",
@@ -176,43 +176,49 @@
       "title": "Experience",
       "list": [
         {
-          "title": "Zeta Engineering",
+          "title": "ZETA Engineering",
           "subtitle": "Développeur web",
           "desc": [
             "Création d'un pack de 16 sites avec le CMS WordPress",
             "Création d'un pack de 4 sites avec le framework Next.js",
             "Optimiser le SEO des sites inclus dans les deux packs"
           ],
-          "dateDeb": "Out 2023 ",
+          "dateDeb": "Août 2023 ",
           "dateFin": "Présent"
         },
         {
-          "title": "Zeta Engineering",
+          "title": "ZETA Engineering",
           "subtitle": "stage d'été 2023",
           "desc": ["Formation portant sur le CMS WordPress et le SEO"],
-          "dateDeb": "juin 2023 ",
-          "dateFin": "juillest 2023"
+          "dateDeb": "Juin 2023 ",
+          "dateFin": "Juillet 2023"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "juin 2023 ",
-          "dateFin": "juillest 2023"
+          "title": "SHAREK IT",
+          "subtitle": "stage d'été 2022",
+          "desc": [
+            "Création d'un site web e-commerce pour vente les materiels informatique INFO-LINA",
+            "MERN STACK , BOOTSTRAP"
+          ],
+          "dateDeb": "Juin 2023 ",
+          "dateFin": "Août 2023"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "juin 2023 ",
-          "dateFin": "juillest 2023"
+          "title": "COSO-FT IT",
+          "subtitle": "Stage de fin d'etude 2020",
+          "desc": [
+            "Création de l'application web et mobile pour la prise de rendez-vous médicaux : ALLO DOCTOR",
+            "MERN STACK , REACT-NATIVE"
+          ],
+          "dateDeb": "Janvier 2020",
+          "dateFin": "Juillet 2020"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "juin 2023 ",
-          "dateFin": " juillest 2023"
+          "title": "SARTEX GROUP",
+          "subtitle": "stage d'été 2018",
+          "desc": ["Maintenance informatique", "Cloud Computing"],
+          "dateDeb": "juin 2018 ",
+          "dateFin": " Juillet 2018"
         }
       ]
     },
@@ -220,25 +226,25 @@
       "title": "Education",
       "list": [
         {
-          "title": "Tek-Up university",
-          "subtitle": "Ingenieurie en informatique : specialité developement web, mobile et multimedia",
-          "desc": ["test", "test2", "test3"],
-          "dateDeb": "2021 ",
+          "title": "TEK-UP university",
+          "subtitle": "Ingenieurie en informatique",
+          "desc": ["specialité developement web, mobile et multimedia"],
+          "dateDeb": "2021",
           "dateFin": "Présent"
         },
         {
           "title": "ISIMM | Institut Supérieur d'Informatique et de Mathématiques de Monastir",
           "subtitle": "Licence fondamentale en informatique",
-          "desc": [],
-          "dateDeb": "2016 ",
+          "desc": ["specialité génie logiciel"],
+          "dateDeb": "2016",
           "dateFin": "2020"
         },
         {
-          "title": "Lycée Monastir",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "2016",
-          "dateFin": "2020"
+          "title": "LKM | Lycée secondaire Ksibet El Mediouni",
+          "subtitle": "Baccalauréat téchnique",
+          "desc": [" "],
+          "dateDeb": "2015",
+          "dateFin": "2016"
         }
       ]
     }

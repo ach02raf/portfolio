@@ -172,68 +172,80 @@
   },
   "EducationExperience": [
     {
-      "title": "Experience",
+      "title": "Erfahrung",
       "list": [
         {
-          "title": "Zeta Engineering",
-          "subtitle": "Développeur web",
-          "desc": ["test", "test2", "test3"],
-          "dateDeb": "juin 2023 ",
-          "dateFin": "Présent"
+          "title": "ZETA Engineering",
+          "subtitle": "Webentwickler",
+          "desc": [
+            "Erstellung eines Pakets mit 16 Websites mit dem WordPress-CMS",
+            "Entwicklung eines Pakets mit 4 Websites mit dem Next.js-Framework",
+            "Optimierung des SEO für die in beiden Paketen enthaltenen Websites"
+          ],
+          "dateDeb": "August 2023",
+          "dateFin": "Gegenwart"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "juin 2023 ",
-          "dateFin": "juillest 2023"
+          "title": "ZETA Engineering",
+          "subtitle": "Sommerpraktikum 2023",
+          "desc": ["Schulung zum WordPress-CMS und SEO"],
+          "dateDeb": "Juni 2023",
+          "dateFin": "Juli 2023"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "juin 2023 ",
-          "dateFin": "juillest 2023"
+          "title": "SHAREK IT",
+          "subtitle": "Sommerpraktikum 2022",
+          "desc": [
+            "Erstellung einer E-Commerce-Website zum Verkauf von Computergeräten INFO-LINA",
+            "MERN STACK, BOOTSTRAP"
+          ],
+          "dateDeb": "Juni 2023",
+          "dateFin": "August 2023"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "juin 2023 ",
-          "dateFin": "juillest 2023"
+          "title": "COSO-FT IT",
+          "subtitle": "Praktikum im Abschlussjahr 2020",
+          "desc": [
+            "Erstellung der Web- und mobilen Anwendung für die Terminvereinbarung in der Medizin: ALLO DOCTOR",
+            "MERN STACK, REACT-NATIVE"
+          ],
+          "dateDeb": "Januar 2020",
+          "dateFin": "Juli 2020"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "juin 2023 ",
-          "dateFin": ""
+          "title": "SARTEX GROUP",
+          "subtitle": "Sommerpraktikum 2018",
+          "desc": ["IT-Wartung", "Cloud Computing"],
+          "dateDeb": "Juni 2018",
+          "dateFin": "Juli 2018"
         }
       ]
     },
     {
-      "title": "Education",
+      "title": "Bildung",
       "list": [
         {
-          "title": "Tek-Up university",
-          "subtitle": "Ingenieurie en informatique : specialité developement web, mobile et multimedia",
-          "desc": ["test", "test2", "test3"],
-          "dateDeb": "2021 ",
-          "dateFin": "Présent"
+          "title": "TEK-UP Universität",
+          "subtitle": "Informatikingenieurwesen",
+          "desc": [
+            "Spezialisierung in der Entwicklung von Web-, Mobile- und Multimedia-Anwendungen"
+          ],
+          "dateDeb": "2021",
+          "dateFin": "Gegenwart"
         },
         {
-          "title": "ISIMM | Institut Supérieur d'Informatique et de Mathématiques de Monastir",
-          "subtitle": "Licence fondamentale en informatique",
-          "desc": [],
-          "dateDeb": "2016 ",
-          "dateFin": "2020"
-        },
-        {
-          "title": "Lycée Monastir",
-          "subtitle": "",
-          "desc": [],
+          "title": "ISIMM | Höheres Institut für Informatik und Mathematik, Monastir",
+          "subtitle": "Bachelor-Abschluss in Informatik",
+          "desc": ["Spezialisierung in Softwaretechnik"],
           "dateDeb": "2016",
           "dateFin": "2020"
+        },
+        {
+          "title": "LKM | Gymnasium Ksibet El Mediouni",
+          "subtitle": "Technisches Abitur",
+          "desc": [""],
+          "dateDeb": "2015",
+          "dateFin": "2016"
         }
       ]
     }
