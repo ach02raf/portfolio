@@ -245,5 +245,73 @@
       ]
     }
   ],
+
+  "Project": {
+    "title": "My Latest Projects",
+    "list": [
+      {
+        "id": "0",
+        "nameProject": "ALLO DOCTOR",
+        "title": "Creating a mobile application for scheduling medical appointments online",
+        "descProject": "ALLO DOCTOR, an innovative solution, offers the possibility to book medical appointments online through a sophisticated mobile application developed with advanced React Native technology. The robustness of our infrastructure relies on a backend developed with Express.js, supported by the power of MongoDB as a database. This approach ensures a smooth user experience, efficient data management, and a quick response to requests, thereby elevating the level of quality and professionalism of our online medical reservation service.",
+        "imgProject": "ALLO-DOCTOR",
+        "videoProject": "ALLO-DOCTOR",
+        "urlProject": [
+          "https://github.com/ach02raf/ach02raf-ALLO-DOCTOR-APP-Front",
+          "https://github.com/ach02raf/ach02raf-ALLO-DOCTOR-APP-back"
+        ],
+        "urlSITE": "",
+        "apk": "",
+        "tools": ["REACT NATIVE", "EXPRESS.JS", "MONGO.DB"]
+      },
+      {
+        "id": "1",
+        "nameProject": "API SOAP",
+        "title": "Creating a SOAP API using Spring Boot projects",
+        "descProject": "Creating a SOAP API with Spring Boot provides a powerful and efficient approach to web application development. Using this robust platform, we can design a modern and scalable SOAP API, facilitating communication between different systems. Spring Boot simplifies the process by providing default configuration and built-in features, enabling rapid implementation and optimal management of web services. This approach, combining the flexibility of Spring Boot and SOAP communication standards, ensures seamless and secure integration, meeting the most demanding API development needs.",
+        "imgProject": "",
+        "videoProject": "",
+        "urlProject": [
+          "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT",
+          "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT-2",
+          "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT-3"
+        ],
+        "urlSITE": "",
+        "apk": "",
+        "tools": ["SPRING BOOT", "POSTMAN"]
+      },
+      {
+        "id": "2",
+        "nameProject": "GoTRIP",
+        "title": "Creating a mobile application to organize and book travel and hiking with an online guide",
+        "descProject": "An innovative mobile application that allows users to select tourist routes offered by expert guides. In addition to allowing tourists to choose their favorite destinations and create personalized itineraries, the application consists of two parts: a dynamic user interface developed with the Ionic framework for the front-end, and a robust server-side infrastructure created with Express.js and MongoDB for the back-end. It also offers the functionality to choose from a list of available guides, view their profiles, and read reviews left by other tourists.",
+        "imgProject": "",
+        "videoProject": "",
+        "urlProject": [
+          "https://github.com/ach02raf/GoTrip-ionic-application",
+          "https://github.com/ach02raf/GoTrip-ionic-application-backend"
+        ],
+        "urlSITE": "https://gotrip-ionic-application-backend.onrender.com/",
+        "apk": "gotrip",
+        "tools": ["IONIC framework", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
+      },
+      {
+        "id": "3",
+        "nameProject": "ARTVERSE",
+        "title": "Creating a responsive web application for digital art: ARTIVESE",
+        "descProject": "With the rise of the Internet and social media, various online platforms have emerged, simplifying communication, information sharing, and collaboration. These spaces have opened new perspectives in artistic creation and cultural promotion, integrating the artistic domain into digital transformation. Nowadays, more and more artists are turning to digital art, including digital painting, 3D sculpture, electronic music, and virtual reality. This transition has led to the emergence of online platforms dedicated to showcasing digital art. These spaces offer artists the opportunity to present their creations to a wider audience, allowing art enthusiasts to discover unique and innovative works. Digital art platforms take various forms, from virtual galleries to digital artwork sales sites, to social networks specializing in art. Our project fits into this context, aiming to establish a dedicated digital art platform, providing artists with a specific space to showcase their talent. In this report, we will detail the various stages of the realization of our project.",
+        "imgProject": "",
+        "videoProject": "",
+        "urlProject": [
+          "https://github.com/ach02raf/ARTVERSE-PROJECT",
+          "https://github.com/ach02raf/ARTVERSE-PROJECT-API-NODEJS",
+          "https://github.com/ach02raf/ARTVERSE-PROJECT-API-DJANGO"
+        ],
+        "urlSITE": "https://ach02raf.github.io/ARTVERSE-PROJECT/",
+        "apk": "",
+        "tools": ["ANGULAR & MEAN-STACK", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
+      }
+    ]
+  },
   "Footer": { "title": "@ 2023 ALL RIGHT RESERVED BY ACH02RAF " }
 }
