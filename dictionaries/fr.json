@@ -34,10 +34,7 @@
   "firstSection": {
     "title": "Bonjour, Je m'appelle ",
     "name": "BEN FREDJ Mohamed Achraf",
-    "description": [
-      "Je suis un ingenieur en informatique",
-      "Je suis développeur Backend & Frontend"
-    ],
+    "description": ["Je suis un ingenieur en informatique"],
     "cv": "Télécharger CV"
   },
   "secondSection": {
