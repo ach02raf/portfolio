@@ -177,14 +177,18 @@
         {
           "title": "Zeta Engineering",
           "subtitle": "Développeur web",
-          "desc": ["test", "test2", "test3"],
-          "dateDeb": "juin 2023 ",
+          "desc": [
+            "Création d'un pack de 16 sites avec le CMS WordPress",
+            "Création d'un pack de 4 sites avec le framework Next.js",
+            "Optimiser le SEO des sites inclus dans les deux packs"
+          ],
+          "dateDeb": "Out 2023 ",
           "dateFin": "Présent"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
+          "title": "Zeta Engineering",
+          "subtitle": "stage d'été 2023",
+          "desc": ["Formation portant sur le CMS WordPress et le SEO"],
           "dateDeb": "juin 2023 ",
           "dateFin": "juillest 2023"
         },
