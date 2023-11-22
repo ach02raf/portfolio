@@ -19,6 +19,7 @@ export default async function IndexPage({
 }: {
   params: { lang: Locale };
 }) {
+  
   const dictionary = await getDictionary(lang);
   return (
     <div className="container-fluid gx-0 contain position-relative">
