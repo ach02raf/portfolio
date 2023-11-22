@@ -247,7 +247,7 @@
   ],
 
   "Project": {
-    "title": "My Latest Projects",
+    "title": ["My Latest", " Projects"],
     "list": [
       {
         "id": "0",

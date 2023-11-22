@@ -189,6 +189,104 @@
 .header-active {
   color: #fec260 !important;
 }
+
+.reseau-social {
+  bottom: 15%;
+  left: 2%;
+}
+.reseau-social svg {
+  fill: rgba(255, 255, 255, 0.6666666667);
+}
+.reseau-social a {
+  display: block !important;
+  margin: 20px auto !important;
+}
+.reseau-social a:hover svg {
+  fill: #fec260;
+}
+
+.reseau-social:after {
+  content: "";
+  content: "";
+  width: 2px;
+  display: block;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.6666666667);
+  position: absolute;
+  left: calc(2% + 0.9rem);
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/component/Project/ItemProject/ItemProject.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.itemProject {
+  background-color: #2b0945;
+  border-radius: 25px;
+}
+.itemProject-img {
+  max-width: 500px;
+  max-height: 300px !important;
+  position: relative;
+  cursor: pointer;
+}
+.itemProject-img img {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 300px !important;
+  object-fit: contain;
+}
+.itemProject-img video {
+  width: 100% !important;
+  height: 100% !important;
+}
+.itemProject-img:hover img {
+  border-radius: 25px;
+}
+.itemProject-img:hover:after {
+  content: "+";
+  border-radius: 25px;
+  font-size: 100px;
+  color: #44285b;
+  position: absolute;
+  background-color: rgba(254, 193, 96, 0.6156862745);
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.itemProject h3 {
+  font-size: 1.25rem !important;
+  text-transform: uppercase;
+}
+.itemProject h3:hover {
+  color: #fec260 !important;
+}
+.itemProject-link {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.itemProject a {
+  text-decoration: none;
+}
+.itemProject-popUp {
+  background-color: red;
+  z-index: 1000;
+  margin: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+  width: 80%;
+  max-width: 1000px;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/component/Project/ProjectDelails/ProjectDelails.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/component/ScrollToTopButton.scss ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -282,6 +380,10 @@
   display: block;
   margin: auto;
 }
+.service-section-block-icon-item {
+  width: 100%;
+  height: 100%;
+}
 @media screen and (min-width: 992px) {
   .service-section-block:hover {
     transform: translateY(-5%);
@@ -350,4 +452,16 @@
 .skillsSection-card:hover p {
   color: #2b0945 !important;
   font-weight: 600;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/component/Project/Project.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.project {
+  background-color: #44285b;
+}
+.project-container {
+  width: 80%;
+}
+.project-container-title span {
+  color: #fec260;
 }
