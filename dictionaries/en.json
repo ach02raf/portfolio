@@ -42,7 +42,7 @@
     "description": [
       "I have recently successfully completed a three-year program in fundamental computer science, specializing in software engineering, at the Higher Institute of Computer Science and Mathematics of Monastir (",
       "ISIMM",
-      "). For more information about this institution, I invite you to visit its website. Upon completing this stage, I earned the title of computer technician, significantly enhancing my practical skills. Currently enrolled in the third year of the computer engineering program at TEK-UP University (",
+      "). Upon completing this stage, I earned the title of computer technician, significantly enhancing my practical skills. Currently enrolled in the third year of the computer engineering program at TEK-UP University (",
       "TEK-UP",
       "), I am specializing in Mobile, Web, and Multimedia Development DMWM. Driven by a constant pursuit of excellence, I am actively seeking an opportunity for my final year project PFE. My professional experience has grown through multiple internships during my undergraduate studies and two internships during my engineering program. As an active member of Zeta Engineering's web development team for the past six months, I am fully engaged in concrete and stimulating projects. My portfolio, available following this text, showcases the diversity and quality of the projects I have undertaken. For a more in-depth exploration of my work, I also encourage you to check out my GitHub (",
       "ach02raf",
@@ -247,28 +247,29 @@
   ],
 
   "Project": {
-    "title": "My Latest Projects",
+    "title": ["Mes Dernieres", " projets"],
     "list": [
       {
         "id": "0",
         "nameProject": "ALLO DOCTOR",
-        "title": "Creating a mobile application for scheduling medical appointments online",
-        "descProject": "ALLO DOCTOR, an innovative solution, offers the possibility to book medical appointments online through a sophisticated mobile application developed with advanced React Native technology. The robustness of our infrastructure relies on a backend developed with Express.js, supported by the power of MongoDB as a database. This approach ensures a smooth user experience, efficient data management, and a quick response to requests, thereby elevating the level of quality and professionalism of our online medical reservation service.",
+        "title": "Création d'une application mobile pour réserver un rendez-vous en ligne avec un médecin",
+        "descProject": "ALLO DOCTOR, une solution novatrice, offre la possibilité de réserver des rendez-vous médicaux en ligne via une application mobile sophistiquée, développée avec la technologie avancée React Native. La robustesse de notre infrastructure repose sur une partie backend élaborée avec Express.js, soutenue par la puissance de MongoDB en tant que base de données. Cette approche garantit une expérience utilisateur fluide, une gestion efficace des données et une réponse rapide aux demandes, élevant ainsi le niveau de qualité et de professionnalisme de notre service de réservation médicale en ligne",
         "imgProject": "ALLO-DOCTOR",
         "videoProject": "ALLO-DOCTOR",
         "urlProject": [
           "https://github.com/ach02raf/ach02raf-ALLO-DOCTOR-APP-Front",
           "https://github.com/ach02raf/ach02raf-ALLO-DOCTOR-APP-back"
         ],
-        "urlSITE": "",
+        "urlSITE": [""],
         "apk": "",
-        "tools": ["REACT NATIVE", "EXPRESS.JS", "MONGO.DB"]
+        "outils": ["REACT NATIVE", "EXPRESS.JS", "MONGO.DB"]
       },
+
       {
         "id": "1",
         "nameProject": "API SOAP",
-        "title": "Creating a SOAP API using Spring Boot projects",
-        "descProject": "Creating a SOAP API with Spring Boot provides a powerful and efficient approach to web application development. Using this robust platform, we can design a modern and scalable SOAP API, facilitating communication between different systems. Spring Boot simplifies the process by providing default configuration and built-in features, enabling rapid implementation and optimal management of web services. This approach, combining the flexibility of Spring Boot and SOAP communication standards, ensures seamless and secure integration, meeting the most demanding API development needs.",
+        "title": "Création d'une API SOAP à l'aide des projets Spring Boot",
+        "descProject": "La création d'une API SOAP avec Spring Boot offre une approche puissante et efficace pour le développement d'applications web. En utilisant cette plateforme robuste, nous pouvons concevoir une API SOAP moderne et évolutive, facilitant la communication entre différents systèmes. Spring Boot simplifie le processus en fournissant une configuration par défaut et des fonctionnalités intégrées, permettant ainsi une mise en œuvre rapide et une gestion optimale des services web. Cette approche combinant la flexibilité de Spring Boot et les normes de communication SOAP assure une intégration harmonieuse et sécurisée, répondant aux besoins les plus exigeants en matière de développement d'API.",
         "imgProject": "",
         "videoProject": "",
         "urlProject": [
@@ -276,40 +277,129 @@
           "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT-2",
           "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT-3"
         ],
-        "urlSITE": "",
+        "urlSITE": [""],
         "apk": "",
-        "tools": ["SPRING BOOT", "POSTMAN"]
+        "outils": ["SPIRNG BOOT", "POSTMAN"]
       },
       {
         "id": "2",
         "nameProject": "GoTRIP",
-        "title": "Creating a mobile application to organize and book travel and hiking with an online guide",
-        "descProject": "An innovative mobile application that allows users to select tourist routes offered by expert guides. In addition to allowing tourists to choose their favorite destinations and create personalized itineraries, the application consists of two parts: a dynamic user interface developed with the Ionic framework for the front-end, and a robust server-side infrastructure created with Express.js and MongoDB for the back-end. It also offers the functionality to choose from a list of available guides, view their profiles, and read reviews left by other tourists.",
+        "title": "Création d'une application mobile permettant d'organiser, réserver des places pour des voyages et des randonnées avec un guide en ligne",
+        "descProject": "Une application mobile novatrice qui offre aux utilisateurs la possibilité de sélectionner des itinéraires touristiques proposés par des guides experts. En plus de permettre aux touristes de choisir leurs destinations préférées et de créer des itinéraires personnalisés, l'application se compose de deux parties : une interface utilisateur dynamique développée avec le framework Ionic pour le front-end, et une infrastructure robuste côté serveur réalisée avec Express.js et MongoDB pour le back-end. De plus, elle propose la fonctionnalité de choisir parmi une liste de guides disponibles, de consulter leurs profils personnels, et de lire les commentaires laissés par d'autres touristes.",
         "imgProject": "",
         "videoProject": "",
         "urlProject": [
           "https://github.com/ach02raf/GoTrip-ionic-application",
           "https://github.com/ach02raf/GoTrip-ionic-application-backend"
         ],
-        "urlSITE": "https://gotrip-ionic-application-backend.onrender.com/",
+        "urlSITE": [""],
         "apk": "gotrip",
-        "tools": ["IONIC framework", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
+        "outils": ["IONIC framework", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
       },
       {
         "id": "3",
         "nameProject": "ARTVERSE",
-        "title": "Creating a responsive web application for digital art: ARTIVESE",
-        "descProject": "With the rise of the Internet and social media, various online platforms have emerged, simplifying communication, information sharing, and collaboration. These spaces have opened new perspectives in artistic creation and cultural promotion, integrating the artistic domain into digital transformation. Nowadays, more and more artists are turning to digital art, including digital painting, 3D sculpture, electronic music, and virtual reality. This transition has led to the emergence of online platforms dedicated to showcasing digital art. These spaces offer artists the opportunity to present their creations to a wider audience, allowing art enthusiasts to discover unique and innovative works. Digital art platforms take various forms, from virtual galleries to digital artwork sales sites, to social networks specializing in art. Our project fits into this context, aiming to establish a dedicated digital art platform, providing artists with a specific space to showcase their talent. In this report, we will detail the various stages of the realization of our project.",
-        "imgProject": "",
+        "title": "Création d'une application web responsive pour l'art numérique : ARTIVESE",
+        "descProject": "Avec l'essor d'Internet et des médias sociaux, diverses plateformes en ligne ont émergé, simplifiant la communication, le partage d'informations et la collaboration. Ces espaces ont ouvert de nouvelles perspectives dans la création artistique et la promotion culturelle, intégrant également le domaine artistique à la transformation numérique. De nos jours, de plus en plus d'artistes se tournent vers l'art numérique, englobant la peinture numérique, la sculpture 3D, la musique électronique, et la réalité virtuelle. Cette transition a engendré la naissance de plateformes en ligne dédiées à la mise en avant de l'art numérique. Ces espaces offrent aux artistes l'opportunité de présenter leurs créations à un public élargi, tout en permettant aux amateurs d'art de découvrir des œuvres uniques et innovantes. Les plateformes d'art numérique prennent diverses formes, allant des galeries virtuelles aux sites de vente d'œuvres numériques, en passant par les réseaux sociaux spécialisés dans l'art.Notre projet s'inscrit dans ce contexte, visant à mettre en place une plateforme d'art numérique dédiée, offrant aux artistes un espace spécifique pour exposer leur talent. Dans le cadre de ce rapport, nous détaillerons les différentes étapes de la réalisation de notre projet.",
+        "imgProject": "artverse",
         "videoProject": "",
         "urlProject": [
           "https://github.com/ach02raf/ARTVERSE-PROJECT",
           "https://github.com/ach02raf/ARTVERSE-PROJECT-API-NODEJS",
           "https://github.com/ach02raf/ARTVERSE-PROJECT-API-DJANGO"
         ],
-        "urlSITE": "https://ach02raf.github.io/ARTVERSE-PROJECT/",
+        "urlSITE": ["https://ach02raf.github.io/ARTVERSE-PROJECT/"],
         "apk": "",
-        "tools": ["ANGULAR & MEAN-STACK", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
+        "outils": ["ANGULAR & MEAN-STACK", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
+      },
+      {
+        "id": "4",
+        "nameProject": "PACK WORDPRESS",
+        "title": "Création d'un pack de 16 sites avec le CMS WordPress",
+        "descProject": "",
+        "imgProject": "mur-mur",
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": [
+          "https://1001-architectures.fr/",
+          "https://truecom.fr/",
+          "https://surf-com.fr/",
+          "https://maison-presto.com",
+          "https://escaliere.fr/",
+          "https://klass-design.fr",
+          "https://reno-deco.fr",
+          "https://mur-mur.fr/",
+          "https://global-reno.fr/",
+          "https://sopranet.fr/",
+          "https://renov-en-main.fr",
+          "https://open-mur.fr/",
+          "https://enirop.com",
+          "https://muretremie.fr/",
+          "https://architectis.fr/",
+          "https://www.agexis.com"
+        ],
+        "apk": "",
+        "outils": ["WORDPRESS", "PHP", "JS", "HTML-CSS", "HOSTINGER"]
+      },
+      {
+        "id": "5",
+        "nameProject": "Spacy & Cosy",
+        "title": "Création d'un site vetrine avec le framework next js",
+        "descProject": "",
+        "imgProject": "spacy-and-cosy",
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://spacy-and-cosy.fr/"],
+        "apk": "",
+        "outils": ["NEXT.JS", "BOOTSTRAP 5", "JS/TS", "HOSTINGER"]
+      },
+      {
+        "id": "6",
+        "nameProject": "Structural Wood",
+        "title": "Création d'un site vetrine avec le framework next js",
+        "descProject": "",
+        "imgProject": "structural-wood",
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://structural-wood.fr/"],
+        "apk": "",
+        "outils": ["NEXT.JS", "BOOTSTRAP 5", "JS/TS", "HOSTINGER"]
+      },
+      {
+        "id": "7",
+        "nameProject": "Structural Metal",
+        "title": "Création d'un site vetrine avec le framework next js",
+        "descProject": "",
+        "imgProject": "structural-metal",
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://structural-metal.fr/"],
+        "apk": "",
+        "outils": ["NEXT.JS", "BOOTSTRAP 5", "JS/TS", "HOSTINGER"]
+      },
+      {
+        "id": "8",
+        "nameProject": "Structural Home",
+        "title": "Création d'un site vetrine avec le framework next js",
+        "descProject": "",
+        "imgProject": "structural-home",
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://structural-home.fr/"],
+        "apk": "",
+        "outils": ["NEXT.JS", "BOOTSTRAP 5", "JS/TS", "HOSTINGER"]
+      },
+      {
+        "id": "9",
+        "nameProject": "CV Maker",
+        "title": "Création d'une application web de génération de CV",
+        "descProject": "",
+        "imgProject": "cv-maker",
+        "videoProject": "",
+        "urlProject": ["https://github.com/ach02raf/CV-MAKER"],
+        "urlSITE": ["https://ach02raf.github.io/CV-MAKER/"],
+        "apk": "",
+        "outils": ["NEXT.JS", "BOOTSTRAP 5", "JS/TS", "HOSTINGER"]
       }
     ]
   },

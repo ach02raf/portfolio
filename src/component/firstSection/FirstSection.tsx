@@ -30,7 +30,7 @@ function FirstSection(props: {
             />
           </h2>
           <button className="firstSection-button mb-5 p-3">
-            <a href="/cv.pdf" download="cv">
+            <a href={`/cv-en.pdf`} download="cv">
               {props.firstSection.cv}
             </a>
           </button>

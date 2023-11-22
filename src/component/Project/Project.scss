@@ -1,1 +1,13 @@
 @import "@/A/global-variables.scss";
+.project{
+    background-color: $violet-light;
+    &-container{
+        width: 80%;
+        
+    &-title{
+span{
+    color:$yellow
+}
+    }
+}
+}

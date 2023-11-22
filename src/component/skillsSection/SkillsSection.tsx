@@ -17,7 +17,7 @@ function SkillsSection(props: {
     <div className="skillsSection">
     <div className="container">
     <div className="row m-0 ">
-      <h2 className="text-center">
+      <h2 className="text-center pb-5">
         {skillsTitle[0] + " "}
         <span>{skillsTitle[1]}</span>
       </h2>
