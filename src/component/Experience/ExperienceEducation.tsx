@@ -14,11 +14,11 @@ function ExperienceEducation(props: {
 }) {
   return (
     <div className="m-auto d-block experienceEducation">
-      <div className="row py-5">
+      <div className="row py-2">
         {props?.EducationExperience?.map((item, index) => (
           <div className="col-lg-12" key={index}>
             {" "}
-            <h2 className="mb-5 pb-5 pt-2">{item.title}</h2>
+            <h2 className="mb-5 py-5">{item.title}</h2>
             {item?.list?.map((itemList, index) => (
               <div key={index} className="row experienceEducation-card my-3">
                 <div className="col-lg-3">
