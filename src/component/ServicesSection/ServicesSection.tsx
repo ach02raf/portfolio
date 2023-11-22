@@ -34,6 +34,7 @@ function ServicesSection(props: ServicesSectionProps) {
             <div className="service-section-block-icon my-3">
               {" "}
               <FontAwesomeIcon
+              className="service-section-block-icon-item"
                 color="#FEC260"
                 icon={fas[item?.img] as IconDefinition}
               />

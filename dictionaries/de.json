@@ -34,10 +34,7 @@
   "firstSection": {
     "title": "Hallo, mein Name ist ",
     "name": "BEN FREDJ Mohamed Achraf",
-    "description": [
-      "Je suis un ingenieur en informatique",
-      "Je suis développeur Backend & Frontend"
-    ],
+    "description": ["Ich bin ein Informatikingenieur"],
     "cv": "CV herunterladen"
   },
   "secondSection": {
@@ -93,7 +90,7 @@
       },
       {
         "id": 6,
-        "title": "SEO - Suchmaschinenoptimierung",
+        "title": "SEO",
         "desc": "Optimierung für Suchmaschinen durch Anwendung einer Reihe von Techniken, Regeln und bewährten Methoden zur Verbesserung der Sichtbarkeit von Websites und ihrer Positionen in den Suchergebnissen.",
         "img": "faBullhorn"
       }
@@ -123,16 +120,6 @@
       },
       {
         "id": 1,
-        "title": "Auszeichnungssprachen",
-        "listeLangage": ["HTML"]
-      },
-      {
-        "id": 2,
-        "title": "Stilsprachen",
-        "listeLangage": ["CSS", "SCSS", "SASS"]
-      },
-      {
-        "id": 3,
         "title": "Frameworks",
         "listeLangage": [
           "EXPRESS.JS",
@@ -140,13 +127,23 @@
           "SPRINGBOOT",
           "DJANGO",
           "ANGULAR",
-          "REACT NATIVE",
-          "SWIFT UI",
+          "REACT-NATIVE",
+          "SWIFT-UI",
           "IONIC",
-          "DOTNET CORE",
-          "BOOTSTRAP 5",
-          "TAILWIND CSS"
+          "DOTNET-CORE",
+          "BOOTSTRAP-5",
+          "TAILWIND-CSS"
         ]
+      },
+      {
+        "id": 2,
+        "title": "Auszeichnungssprachen",
+        "listeLangage": ["HTML"]
+      },
+      {
+        "id": 3,
+        "title": "Stilsprachen",
+        "listeLangage": ["CSS", "SCSS-SASS"]
       },
       {
         "id": 4,
@@ -172,70 +169,151 @@
   },
   "EducationExperience": [
     {
-      "title": "Experience",
+      "title": "Erfahrung",
       "list": [
         {
-          "title": "Zeta Engineering",
-          "subtitle": "Développeur web",
-          "desc": ["test", "test2", "test3"],
-          "dateDeb": "juin 2023 ",
-          "dateFin": "Présent"
+          "title": "ZETA Engineering",
+          "subtitle": "Webentwickler",
+          "desc": [
+            "Erstellung eines Pakets mit 16 Websites mit dem WordPress-CMS",
+            "Entwicklung eines Pakets mit 4 Websites mit dem Next.js-Framework",
+            "Optimierung des SEO für die in beiden Paketen enthaltenen Websites"
+          ],
+          "dateDeb": "August 2023",
+          "dateFin": "Gegenwart"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "juin 2023 ",
-          "dateFin": "juillest 2023"
+          "title": "ZETA Engineering",
+          "subtitle": "Sommerpraktikum 2023",
+          "desc": ["Schulung zum WordPress-CMS und SEO"],
+          "dateDeb": "Juni 2023",
+          "dateFin": "Juli 2023"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "juin 2023 ",
-          "dateFin": "juillest 2023"
+          "title": "SHAREK IT",
+          "subtitle": "Sommerpraktikum 2022",
+          "desc": [
+            "Erstellung einer E-Commerce-Website zum Verkauf von Computergeräten INFO-LINA",
+            "MERN STACK, BOOTSTRAP"
+          ],
+          "dateDeb": "Juni 2023",
+          "dateFin": "August 2023"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "juin 2023 ",
-          "dateFin": "juillest 2023"
+          "title": "COSO-FT IT",
+          "subtitle": "Praktikum im Abschlussjahr 2020",
+          "desc": [
+            "Erstellung der Web- und mobilen Anwendung für die Terminvereinbarung in der Medizin: ALLO DOCTOR",
+            "MERN STACK, REACT-NATIVE"
+          ],
+          "dateDeb": "Januar 2020",
+          "dateFin": "Juli 2020"
         },
         {
-          "title": "",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "juin 2023 ",
-          "dateFin": ""
+          "title": "SARTEX GROUP",
+          "subtitle": "Sommerpraktikum 2018",
+          "desc": ["IT-Wartung", "Cloud Computing"],
+          "dateDeb": "Juni 2018",
+          "dateFin": "Juli 2018"
         }
       ]
     },
     {
-      "title": "Education",
+      "title": "Bildung",
       "list": [
         {
-          "title": "Tek-Up university",
-          "subtitle": "Ingenieurie en informatique : specialité developement web, mobile et multimedia",
-          "desc": ["test", "test2", "test3"],
-          "dateDeb": "2021 ",
-          "dateFin": "Présent"
+          "title": "TEK-UP Universität",
+          "subtitle": "Informatikingenieurwesen",
+          "desc": [
+            "Spezialisierung in der Entwicklung von Web-, Mobile- und Multimedia-Anwendungen"
+          ],
+          "dateDeb": "2021",
+          "dateFin": "Gegenwart"
         },
         {
-          "title": "ISIMM | Institut Supérieur d'Informatique et de Mathématiques de Monastir",
-          "subtitle": "Licence fondamentale en informatique",
-          "desc": [],
-          "dateDeb": "2016 ",
+          "title": "ISIMM | Höheres Institut für Informatik und Mathematik, Monastir",
+          "subtitle": "Bachelor-Abschluss in Informatik",
+          "desc": ["Spezialisierung in Softwaretechnik"],
+          "dateDeb": "2016",
           "dateFin": "2020"
         },
         {
-          "title": "Lycée Monastir",
-          "subtitle": "",
-          "desc": [],
-          "dateDeb": "2016"
+          "title": "LKM | Gymnasium Ksibet El Mediouni",
+          "subtitle": "Technisches Abitur",
+          "desc": [""],
+          "dateDeb": "2015",
+          "dateFin": "2016"
         }
       ]
     }
   ],
+  "Project": {
+    "title": ["Meine neuesten", " Projekte"],
+    "list": [
+      {
+        "id": "0",
+        "nameProject": "ALLO DOCTOR",
+        "title": "Creating a mobile application for scheduling medical appointments online",
+        "descProject": "ALLO DOCTOR, an innovative solution, offers the possibility to book medical appointments online through a sophisticated mobile application developed with advanced React Native technology. The robustness of our infrastructure relies on a backend developed with Express.js, supported by the power of MongoDB as a database. This approach ensures a smooth user experience, efficient data management, and a quick response to requests, thereby elevating the level of quality and professionalism of our online medical reservation service.",
+        "imgProject": "ALLO-DOCTOR",
+        "videoProject": "ALLO-DOCTOR",
+        "urlProject": [
+          "https://github.com/ach02raf/ach02raf-ALLO-DOCTOR-APP-Front",
+          "https://github.com/ach02raf/ach02raf-ALLO-DOCTOR-APP-back"
+        ],
+        "urlSITE": "",
+        "apk": "",
+        "tools": ["REACT NATIVE", "EXPRESS.JS", "MONGO.DB"]
+      },
+      {
+        "id": "1",
+        "nameProject": "API SOAP",
+        "title": "Creating a SOAP API using Spring Boot projects",
+        "descProject": "Creating a SOAP API with Spring Boot provides a powerful and efficient approach to web application development. Using this robust platform, we can design a modern and scalable SOAP API, facilitating communication between different systems. Spring Boot simplifies the process by providing default configuration and built-in features, enabling rapid implementation and optimal management of web services. This approach, combining the flexibility of Spring Boot and SOAP communication standards, ensures seamless and secure integration, meeting the most demanding API development needs.",
+        "imgProject": "",
+        "videoProject": "",
+        "urlProject": [
+          "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT",
+          "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT-2",
+          "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT-3"
+        ],
+        "urlSITE": "",
+        "apk": "",
+        "tools": ["SPRING BOOT", "POSTMAN"]
+      },
+      {
+        "id": "2",
+        "nameProject": "GoTRIP",
+        "title": "Creating a mobile application to organize and book travel and hiking with an online guide",
+        "descProject": "An innovative mobile application that allows users to select tourist routes offered by expert guides. In addition to allowing tourists to choose their favorite destinations and create personalized itineraries, the application consists of two parts: a dynamic user interface developed with the Ionic framework for the front-end, and a robust server-side infrastructure created with Express.js and MongoDB for the back-end. It also offers the functionality to choose from a list of available guides, view their profiles, and read reviews left by other tourists.",
+        "imgProject": "",
+        "videoProject": "",
+        "urlProject": [
+          "https://github.com/ach02raf/GoTrip-ionic-application",
+          "https://github.com/ach02raf/GoTrip-ionic-application-backend"
+        ],
+        "urlSITE": "https://gotrip-ionic-application-backend.onrender.com/",
+        "apk": "gotrip",
+        "tools": ["IONIC framework", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
+      },
+      {
+        "id": "3",
+        "nameProject": "ARTVERSE",
+        "title": "Creating a responsive web application for digital art: ARTIVESE",
+        "descProject": "With the rise of the Internet and social media, various online platforms have emerged, simplifying communication, information sharing, and collaboration. These spaces have opened new perspectives in artistic creation and cultural promotion, integrating the artistic domain into digital transformation. Nowadays, more and more artists are turning to digital art, including digital painting, 3D sculpture, electronic music, and virtual reality. This transition has led to the emergence of online platforms dedicated to showcasing digital art. These spaces offer artists the opportunity to present their creations to a wider audience, allowing art enthusiasts to discover unique and innovative works. Digital art platforms take various forms, from virtual galleries to digital artwork sales sites, to social networks specializing in art. Our project fits into this context, aiming to establish a dedicated digital art platform, providing artists with a specific space to showcase their talent. In this report, we will detail the various stages of the realization of our project.",
+        "imgProject": "",
+        "videoProject": "",
+        "urlProject": [
+          "https://github.com/ach02raf/ARTVERSE-PROJECT",
+          "https://github.com/ach02raf/ARTVERSE-PROJECT-API-NODEJS",
+          "https://github.com/ach02raf/ARTVERSE-PROJECT-API-DJANGO"
+        ],
+        "urlSITE": "https://ach02raf.github.io/ARTVERSE-PROJECT/",
+        "apk": "",
+        "tools": ["ANGULAR & MEAN-STACK", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
+      }
+    ]
+  },
+
   "Footer": { "title": "@ 2023 ALLE RECHTE VORBEHALTEN VON ACH02RAF" }
 }

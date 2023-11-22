@@ -18,7 +18,7 @@
             background-color: $violet-light;
             max-width:130px;
             @media screen and ( max-width : 400px ) {
-                clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 99%, 0 0);
+                // clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 99%, 0 0);
                 padding: 0.5rem !important;
                 p{line-height: 1rem;
                     font-size: 0.8rem !important;}

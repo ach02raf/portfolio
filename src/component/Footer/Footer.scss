@@ -4,3 +4,9 @@
     font-size: 0.7rem !important;
   }
 }
+.social-media {
+  width: 20%;
+  @media screen and (max-width: 992px) {
+    width: 70%;
+  }
+}

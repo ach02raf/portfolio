@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.scss";
-
+import Script from "next/script";
 export const metadata: Metadata = {
   title: "ach02raf",
   description:
-    "I have recently successfully completed a three-year program in fundamental computer science, specializing in software engineering, at the Higher Institute of Computer Science and Mathematics of Monastir (ISIMM). For more information about this institution, I invite you to visit its website. Upon completing this stage, I earned the title of computer technician, significantly enhancing my practical skills. Currently enrolled in the third year of the computer engineering program at TEK-UP University (TEK-UP), I am specializing in Mobile, Web, and Multimedia Development DMWM. Driven by a constant pursuit of excellence, I am actively seeking an opportunity for my final year project PFE. My professional experience has grown through multiple internships during my undergraduate studies and two internships during my engineering program. As an active member of Zeta Engineering's web development team for the past six months, I am fully engaged in concrete and stimulating projects. My portfolio, available following this text, showcases the diversity and quality of the projects I have undertaken. For a more in-depth exploration of my work, I also encourage you to check out my GitHub (ach02raf). There, you will find my achievements, particularly in JS/TS family technologies. My commitment to technical excellence and my ability to creatively solve problems drive me to continually reach new heights in the field of software development.",
+    "I have recently successfully completed a three-year program in fundamental computer science, specializing in software engineering, at the Higher Institute of Computer Science and Mathematics of Monastir (ISIMM). For more information about this institution, I invite you to visit its website. ",
   keywords: [
     "Full Stack Developer",
     "Next.js",
@@ -43,6 +43,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang={params.lang}>
+      <head>
+        <Script id="google-analytics">
+          {`(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WPGR2Z6D");`}
+        </Script>
+      </head>
       <body>{children}</body>
     </html>
   );
