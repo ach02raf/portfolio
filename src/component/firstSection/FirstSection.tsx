@@ -37,8 +37,7 @@ function FirstSection(props: {
               {props.firstSection.cv}
             </a>
           </button></div>
-          <div>
-              {/* <FontAwesomeIcon icon={faTwitter} /> */}
+          <div className="col">twitter
               </div></div>
 
         </div>
