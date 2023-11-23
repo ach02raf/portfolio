@@ -59,7 +59,7 @@ function ItemProject(props: {
                 <source src={`/${props?.ItemsProject?.videoProject}.mp4`} type="video/webm" />
                 </video>
                 } */}
-        </div>
+      
 
         {props?.ItemsProject?.urlSITE[0] && (
           <Link
@@ -108,7 +108,9 @@ function ItemProject(props: {
         <ProjectDelails ItemsProject={props?.ItemsProject} />
       </div>
     </div>
-  );
+    <div ref={PopUp} className={`itemProject-popUp position-fixed ${showPopUp ? "d-block": "d-none"}`}><ProjectDelails ItemsProject={props?.ItemsProject} /></div>
+   </div>
+  )
 }
 
 export default ItemProject;

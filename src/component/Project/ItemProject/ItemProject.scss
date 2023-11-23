@@ -60,9 +60,9 @@ cursor: pointer;
         z-index: 1000;
             margin: auto;
         left:50%;
-    top:auto;
-        transform: translateX(-50%);
-            height: 600px;
+    top:50%;
+        transform: translate(-50%,-50%);
+            height: 70%;
             width: 80%;
             max-width: 1000px;
     }
