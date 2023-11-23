@@ -1,20 +1,22 @@
 @import "@/A/global-variables.scss";
 .itemProject{
     // border: 2px solid $violet-dark;
-    background-color: $violet-dark;
-    border-radius:  25px;
+
     &-img{
-        max-width: 500px;
+       width: 95% !important;
         max-height: 300px !important;
+
         position: relative;
+      
 cursor: pointer;
 
         img{
-           
+
+            border-radius:  25px;
             width: 100% !important;
             height: 100% !important;
-            max-height: 300px !important;
-            object-fit: contain;
+            max-height: 250px !important;
+       
           
         }
         video{
@@ -56,14 +58,16 @@ cursor: pointer;
         text-decoration: none;;
     }
     &-popUp{
-        background-color: red;
-        z-index: 1000;
+        background-color: $white;
+        z-index: 100000;
             margin: auto;
         left:50%;
     top:50%;
         transform: translate(-50%,-50%);
-            height: 70%;
-            width: 80%;
+     height: 90%;
+            width: 85%;
             max-width: 1000px;
+            
+
     }
 }

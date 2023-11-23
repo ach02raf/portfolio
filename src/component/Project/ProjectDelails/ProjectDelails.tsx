@@ -1,5 +1,14 @@
 import React from "react";
 import "./ProjectDelails.scss";
+import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCode,
+  faDownload,
+  faLink,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 function ProjectDelails(props: {
   ItemsProject: {
     id: string;
@@ -11,11 +20,139 @@ function ProjectDelails(props: {
     urlProject: string[];
     urlSITE: string[];
     apk: string;
-    outils: string[];
+    usedTools: string;
+    tools: string[];
+    infoProject: string;
+    visitSites: string;
+    codeSource: string;
+    downloadAPK: string;
   };
+  setShowPopUp: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   return (
-    <div className="project-details ">{props?.ItemsProject.nameProject}</div>
+    <div className="project-details p-xl-5 p-2">
+      <div className="row mb-3 position-sticky">
+        {" "}
+        <div className="col-lg-2 col-12">
+          <button
+            className="project-details-closeBtn"
+            onClick={() => {
+              props?.setShowPopUp(false);
+            }}>
+            <FontAwesomeIcon icon={faXmark} />
+          </button>
+        </div>{" "}
+        <div className="col-lg-10 col-12 text-lg-end text-center project-details-title position-relative">
+          <h4 className="">{props?.ItemsProject.nameProject}</h4>
+        </div>
+      </div>
+      <div className="project-details-scroll">
+        <div className="row">
+          {props?.ItemsProject?.imgProject && (
+            <div
+              className={
+                props?.ItemsProject?.videoProject ? "col-xl-8 col-12" : "col-12"
+              }>
+              <Image
+                src={`/Images/${props?.ItemsProject?.imgProject}.png`}
+                alt={props?.ItemsProject?.imgProject}
+                title={props?.ItemsProject?.imgProject}
+                height={512}
+                width={512}
+              />{" "}
+            </div>
+          )}
+          {props?.ItemsProject?.videoProject && (
+            <div className="col-xl-4 col-12 py-xl-0 py-3">
+              <video width="100%" height="300px" controls>
+                <source
+                  src={`/${props?.ItemsProject?.videoProject}.mp4`}
+                  type="video/webm"
+                />
+              </video>
+            </div>
+          )}
+        </div>
+
+        <div className="row">
+          <div className="col-xl-7 ">
+            {" "}
+            <h5 className="py-3 position-relative">
+              {props?.ItemsProject?.infoProject}
+            </h5>
+            <h6>{props?.ItemsProject?.title}</h6>
+            <p className="py-2">{props?.ItemsProject?.descProject}</p>
+          </div>
+          <div className="col-xl-5">
+            <h5 className="py-3 position-relative">
+              {props?.ItemsProject?.usedTools}
+            </h5>
+            <div className="row">
+              {props?.ItemsProject?.tools?.map((item, index) => (
+                <div className="col-xl-3 col-4" key={index}>
+                  <Image
+                    src={`/Images/Icons/${item}.png`}
+                    alt={item}
+                    title={item}
+                    height={25}
+                    width={25}
+                  />
+                </div>
+              ))}
+            </div>
+            {props?.ItemsProject?.urlSITE[0] && (
+              <Link
+                href={props?.ItemsProject?.urlSITE[0]}
+                rel="preload"
+                target="blanc">
+                {" "}
+                <p className="text-center">
+                  {" "}
+                  <FontAwesomeIcon
+                    className="project-details-link"
+                    icon={faLink}
+                  />{" "}
+                  {props?.ItemsProject?.visitSites}
+                </p>
+              </Link>
+            )}
+            {props?.ItemsProject?.apk && (
+              <Link
+                href={`/${props?.ItemsProject?.apk}.apk`}
+                download="Go-Trip.apk"
+                rel="preload"
+                target="blanc">
+                {" "}
+                <p className="text-cente">
+                  {" "}
+                  <FontAwesomeIcon
+                    className="project-details-link"
+                    icon={faDownload}
+                  />{" "}
+                  {props?.ItemsProject?.downloadAPK}
+                </p>
+              </Link>
+            )}
+            {props?.ItemsProject?.urlProject[0] && (
+              <Link
+                href={props?.ItemsProject?.urlProject[0]}
+                rel="preload"
+                target="blanc">
+                {" "}
+                <p className="text-center">
+                  {" "}
+                  <FontAwesomeIcon
+                    className="project-details-link"
+                    icon={faCode}
+                  />{" "}
+                  {props?.ItemsProject?.codeSource}
+                </p>
+              </Link>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

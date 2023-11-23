@@ -32,16 +32,13 @@ function FirstSection(props: {
               cursor={true}
             />
           </h2>
-          <div className="row">
-            <div className="col">
-              <button className="firstSection-button mb-5 p-3">
-                <a href="/cv-en.pdf" download="cv">
-                  {props.firstSection.cv}
-                </a>
-              </button>
-            </div>
-            <div className="col">twitter</div>
-          </div>
+        <div className="row"><div className="col">  <button className="firstSection-button mb-5 p-3">
+            <a href="/cv.pdf" download="cv">
+              {props.firstSection.cv}
+            </a>
+          </button></div>
+        </div>
+
         </div>
       </div>
       <div className="col-lg-4">

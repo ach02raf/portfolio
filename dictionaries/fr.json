@@ -252,9 +252,13 @@
       {
         "id": "0",
         "nameProject": "ALLO DOCTOR",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "Télécharcher l'APK",
         "title": "Création d'une application mobile pour réserver un rendez-vous en ligne avec un médecin",
         "descProject": "ALLO DOCTOR, une solution novatrice, offre la possibilité de réserver des rendez-vous médicaux en ligne via une application mobile sophistiquée, développée avec la technologie avancée React Native. La robustesse de notre infrastructure repose sur une partie backend élaborée avec Express.js, soutenue par la puissance de MongoDB en tant que base de données. Cette approche garantit une expérience utilisateur fluide, une gestion efficace des données et une réponse rapide aux demandes, élevant ainsi le niveau de qualité et de professionnalisme de notre service de réservation médicale en ligne",
-        "imgProject": "ALLO-DOCTOR",
+        "imgProject": "allo-doctor",
         "videoProject": "ALLO-DOCTOR",
         "urlProject": [
           "https://github.com/ach02raf/ach02raf-ALLO-DOCTOR-APP-Front",
@@ -262,15 +266,20 @@
         ],
         "urlSITE": [""],
         "apk": "",
-        "outils": ["REACT NATIVE", "EXPRESS.JS", "MONGO.DB"]
+        "usedTools": "Les outils utilisés",
+        "tools": ["REACT-NATIVE", "EXPRESS.JS", "MONGO.DB"]
       },
 
       {
         "id": "1",
         "nameProject": "API SOAP",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "Télécharcher l'APK",
         "title": "Création d'une API SOAP à l'aide des projets Spring Boot",
         "descProject": "La création d'une API SOAP avec Spring Boot offre une approche puissante et efficace pour le développement d'applications web. En utilisant cette plateforme robuste, nous pouvons concevoir une API SOAP moderne et évolutive, facilitant la communication entre différents systèmes. Spring Boot simplifie le processus en fournissant une configuration par défaut et des fonctionnalités intégrées, permettant ainsi une mise en œuvre rapide et une gestion optimale des services web. Cette approche combinant la flexibilité de Spring Boot et les normes de communication SOAP assure une intégration harmonieuse et sécurisée, répondant aux besoins les plus exigeants en matière de développement d'API.",
-        "imgProject": "",
+        "imgProject": "api-soap",
         "videoProject": "",
         "urlProject": [
           "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT",
@@ -279,14 +288,19 @@
         ],
         "urlSITE": [""],
         "apk": "",
-        "outils": ["SPIRNG BOOT", "POSTMAN"]
+        "usedTools": "Les outils utilisés",
+        "tools": ["SPRINGBOOT", "POSTMAN"]
       },
       {
         "id": "2",
         "nameProject": "GoTRIP",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "Télécharcher l'APK",
         "title": "Création d'une application mobile permettant d'organiser, réserver des places pour des voyages et des randonnées avec un guide en ligne",
         "descProject": "Une application mobile novatrice qui offre aux utilisateurs la possibilité de sélectionner des itinéraires touristiques proposés par des guides experts. En plus de permettre aux touristes de choisir leurs destinations préférées et de créer des itinéraires personnalisés, l'application se compose de deux parties : une interface utilisateur dynamique développée avec le framework Ionic pour le front-end, et une infrastructure robuste côté serveur réalisée avec Express.js et MongoDB pour le back-end. De plus, elle propose la fonctionnalité de choisir parmi une liste de guides disponibles, de consulter leurs profils personnels, et de lire les commentaires laissés par d'autres touristes.",
-        "imgProject": "",
+        "imgProject": "allo-doctor",
         "videoProject": "",
         "urlProject": [
           "https://github.com/ach02raf/GoTrip-ionic-application",
@@ -294,13 +308,18 @@
         ],
         "urlSITE": [""],
         "apk": "gotrip",
-        "outils": ["IONIC framework", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
+        "usedTools": "Les outils utilisés",
+        "tools": ["IONIC", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
       },
       {
         "id": "3",
         "nameProject": "ARTVERSE",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "Télécharcher l'APK",
         "title": "Création d'une application web responsive pour l'art numérique : ARTIVESE",
-        "descProject": "Avec l'essor d'Internet et des médias sociaux, diverses plateformes en ligne ont émergé, simplifiant la communication, le partage d'informations et la collaboration. Ces espaces ont ouvert de nouvelles perspectives dans la création artistique et la promotion culturelle, intégrant également le domaine artistique à la transformation numérique. De nos jours, de plus en plus d'artistes se tournent vers l'art numérique, englobant la peinture numérique, la sculpture 3D, la musique électronique, et la réalité virtuelle. Cette transition a engendré la naissance de plateformes en ligne dédiées à la mise en avant de l'art numérique. Ces espaces offrent aux artistes l'opportunité de présenter leurs créations à un public élargi, tout en permettant aux amateurs d'art de découvrir des œuvres uniques et innovantes. Les plateformes d'art numérique prennent diverses formes, allant des galeries virtuelles aux sites de vente d'œuvres numériques, en passant par les réseaux sociaux spécialisés dans l'art.Notre projet s'inscrit dans ce contexte, visant à mettre en place une plateforme d'art numérique dédiée, offrant aux artistes un espace spécifique pour exposer leur talent. Dans le cadre de ce rapport, nous détaillerons les différentes étapes de la réalisation de notre projet.",
+        "descProject": "Notre projet consiste à créer une plateforme dédiée à l'art numérique, offrant aux artistes un espace pour exposer leurs créations. Cette initiative s'inscrit dans la tendance croissante des plateformes en ligne qui facilitent la communication, le partage d'informations et la collaboration dans le domaine artistique, tout en ouvrant de nouvelles perspectives pour la promotion culturelle.",
         "imgProject": "artverse",
         "videoProject": "",
         "urlProject": [
@@ -310,11 +329,16 @@
         ],
         "urlSITE": ["https://ach02raf.github.io/ARTVERSE-PROJECT/"],
         "apk": "",
-        "outils": ["ANGULAR & MEAN-STACK", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
+        "usedTools": "Les outils utilisés",
+        "tools": ["ANGULAR", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
       },
       {
         "id": "4",
         "nameProject": "PACK WORDPRESS",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "Télécharcher l'APK",
         "title": "Création d'un pack de 16 sites avec le CMS WordPress",
         "descProject": "",
         "imgProject": "mur-mur",
@@ -339,11 +363,23 @@
           "https://www.agexis.com"
         ],
         "apk": "",
-        "outils": ["WORDPRESS", "PHP", "JS", "HTML-CSS", "HOSTINGER"]
+        "usedTools": "Les outils utilisés",
+        "tools": [
+          "WORDPRESS",
+          "PHP",
+          "JAVASCRIPT",
+          "HTML",
+          "SCSS-SASS",
+          "HOSTINGER"
+        ]
       },
       {
         "id": "5",
         "nameProject": "Spacy & Cosy",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "Télécharcher l'APK",
         "title": "Création d'un site vetrine avec le framework next js",
         "descProject": "",
         "imgProject": "spacy-and-cosy",
@@ -351,11 +387,24 @@
         "urlProject": [""],
         "urlSITE": ["https://spacy-and-cosy.fr/"],
         "apk": "",
-        "outils": ["NEXT.JS", "BOOTSTRAP 5", "JS/TS", "HOSTINGER"]
+        "usedTools": "Les outils utilisés",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS",
+          "HOSTINGER"
+        ]
       },
       {
         "id": "6",
         "nameProject": "Structural Wood",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "Télécharcher l'APK",
         "title": "Création d'un site vetrine avec le framework next js",
         "descProject": "",
         "imgProject": "structural-wood",
@@ -363,11 +412,24 @@
         "urlProject": [""],
         "urlSITE": ["https://structural-wood.fr/"],
         "apk": "",
-        "outils": ["NEXT.JS", "BOOTSTRAP 5", "JS/TS", "HOSTINGER"]
+        "usedTools": "Les outils utilisés",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS",
+          "HOSTINGER"
+        ]
       },
       {
         "id": "7",
         "nameProject": "Structural Metal",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "Télécharcher l'APK",
         "title": "Création d'un site vetrine avec le framework next js",
         "descProject": "",
         "imgProject": "structural-metal",
@@ -375,11 +437,24 @@
         "urlProject": [""],
         "urlSITE": ["https://structural-metal.fr/"],
         "apk": "",
-        "outils": ["NEXT.JS", "BOOTSTRAP 5", "JS/TS", "HOSTINGER"]
+        "usedTools": "Les outils utilisés",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS",
+          "HOSTINGER"
+        ]
       },
       {
         "id": "8",
         "nameProject": "Structural Home",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "Télécharcher l'APK",
         "title": "Création d'un site vetrine avec le framework next js",
         "descProject": "",
         "imgProject": "structural-home",
@@ -387,11 +462,24 @@
         "urlProject": [""],
         "urlSITE": ["https://structural-home.fr/"],
         "apk": "",
-        "outils": ["NEXT.JS", "BOOTSTRAP 5", "JS/TS", "HOSTINGER"]
+        "usedTools": "Les outils utilisés",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS",
+          "HOSTINGER"
+        ]
       },
       {
         "id": "9",
         "nameProject": "CV Maker",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "Télécharcher l'APK",
         "title": "Création d'une application web de génération de CV",
         "descProject": "",
         "imgProject": "cv-maker",
@@ -399,9 +487,14 @@
         "urlProject": ["https://github.com/ach02raf/CV-MAKER"],
         "urlSITE": ["https://ach02raf.github.io/CV-MAKER/"],
         "apk": "",
-        "outils": ["NEXT.JS", "BOOTSTRAP 5", "JS/TS", "HOSTINGER"]
+        "usedTools": "Les outils utilisés",
+        "tools": ["ANGULAR", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT"]
       }
     ]
+  },
+  "citation": {
+    "name": "Janet Williams",
+    "citation": "L'informatique, c'est plus que des lignes de code. C'est l'expression de la créativité, la résolution de problèmes et la construction d'un avenir numérique."
   },
   "Footer": { "title": "@ 2023 TOUS DROITS RÉSERVÉS PAR ACH02RAF" }
 }

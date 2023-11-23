@@ -17,7 +17,12 @@ function ItemProject(props: {
     urlProject: string[];
     urlSITE: string[];
     apk: string;
-    outils: string[];
+    usedTools: string;
+    tools: string[];
+    infoProject: string;
+    visitSites: string;
+    codeSource: string;
+    downloadAPK: string;
   };
 }) {
   const [showPopUp, setShowPopUp] = useState(false);
@@ -40,7 +45,7 @@ function ItemProject(props: {
   }, []);
   return (
     <div>
-      <div className="row p-3  m-3 itemProject">
+      <div className="row itemProject">
         <div
           className="itemProject-img d-block m-auto p-0"
           onClick={() => {
@@ -59,58 +64,73 @@ function ItemProject(props: {
                 <source src={`/${props?.ItemsProject?.videoProject}.mp4`} type="video/webm" />
                 </video>
                 } */}
-      
 
-        {props?.ItemsProject?.urlSITE[0] && (
-          <Link
-            href={props?.ItemsProject?.urlSITE[0]}
-            rel="preload"
-            target="blanc">
-            {" "}
-            <h3 className="text-center py-3 px-2">
+          {props?.ItemsProject?.urlSITE[0] && (
+            <Link
+              href={props?.ItemsProject?.urlSITE[0]}
+              rel="preload"
+              target="blanc">
               {" "}
-              <FontAwesomeIcon
-                className="itemProject-link"
-                icon={faLink}
-              />{" "}
+              <h3 className="text-center py-3 px-2">
+                {" "}
+                <FontAwesomeIcon
+                  className="itemProject-link"
+                  icon={faLink}
+                />{" "}
+                {props?.ItemsProject?.nameProject}
+              </h3>
+            </Link>
+          )}
+          {props?.ItemsProject?.apk && (
+            <Link
+              href={`/${props?.ItemsProject?.apk}.apk`}
+              download="Go-Trip.apk"
+              rel="preload"
+              target="blanc">
+              {" "}
+              <h3 className="text-center py-3 px-2">
+                {" "}
+                <FontAwesomeIcon
+                  className="itemProject-link"
+                  icon={faDownload}
+                />{" "}
+                {props?.ItemsProject?.nameProject}
+              </h3>
+            </Link>
+          )}
+          {!props?.ItemsProject?.apk && !props?.ItemsProject?.urlSITE[0] && (
+            <h3 className="text-center py-3 px-2">
               {props?.ItemsProject?.nameProject}
             </h3>
-          </Link>
-        )}
-        {props?.ItemsProject?.apk && (
-          <Link
-            href={`/${props?.ItemsProject?.apk}.apk`}
-            download="Go-Trip.apk"
-            rel="preload"
-            target="blanc">
-            {" "}
-            <h3 className="text-center py-3 px-2">
-              {" "}
-              <FontAwesomeIcon
-                className="itemProject-link"
-                icon={faDownload}
-              />{" "}
-              {props?.ItemsProject?.nameProject}
-            </h3>
-          </Link>
-        )}
-        {!props?.ItemsProject?.apk && !props?.ItemsProject?.urlSITE[0] && (
-          <h3 className="text-center py-3 px-2">
-            {props?.ItemsProject?.nameProject}
-          </h3>
-        )}
+          )}
+        </div>
+        <div
+          ref={PopUp}
+          className={`itemProject-popUp position-absolute ${
+            showPopUp ? "d-block" : "d-none"
+          }`}>
+          <ProjectDelails
+            ItemsProject={props?.ItemsProject}
+            setShowPopUp={function (
+              value: React.SetStateAction<boolean>
+            ): void {
+              throw new Error("Function not implemented.");
+            }}
+          />
+        </div>
       </div>
       <div
         ref={PopUp}
-        className={`itemProject-popUp position-absolute ${
+        className={`itemProject-popUp position-fixed ${
           showPopUp ? "d-block" : "d-none"
         }`}>
-        <ProjectDelails ItemsProject={props?.ItemsProject} />
+        <ProjectDelails
+          ItemsProject={props?.ItemsProject}
+          setShowPopUp={setShowPopUp}
+        />
       </div>
     </div>
-    <div ref={PopUp} className={`itemProject-popUp position-fixed ${showPopUp ? "d-block": "d-none"}`}><ProjectDelails ItemsProject={props?.ItemsProject} /></div>
-   </div>
-  )
+  );
 }
 
 export default ItemProject;
