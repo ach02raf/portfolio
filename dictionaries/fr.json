@@ -496,5 +496,12 @@
     "name": "Janet Williams",
     "citation": "L'informatique, c'est plus que des lignes de code. C'est l'expression de la créativité, la résolution de problèmes et la construction d'un avenir numérique."
   },
+  "blog": {
+    "blogList": [
+      { "id": 0, "slug:": "slug1", "title": "title1", "desc": "desc1" },
+      { "id": 1, "slug:": "slug1", "title": "title1", "desc": "desc1" },
+      { "id": 3, "slug:": "slug1", "title": "title1", "desc": "desc1" }
+    ]
+  },
   "Footer": { "title": "@ 2023 TOUS DROITS RÉSERVÉS PAR ACH02RAF" }
 }
