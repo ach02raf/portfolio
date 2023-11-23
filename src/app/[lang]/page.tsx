@@ -11,6 +11,7 @@ import ServicesSection from "@/C/ServicesSection/ServicesSection";
 import SkillsSection from "@/C/skillsSection/SkillsSection";
 import ExperienceEducation from "@/component/Experience/ExperienceEducation";
 import Project from "@/component/Project/Project";
+import Citation from "@/C/Citation/citation"
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
@@ -42,6 +43,7 @@ export default async function IndexPage({
       <section id={dictionary.header[4].url} >
         <Project Project={dictionary?.Project}/>
       </section>
+      <Citation citation={dictionary.citation}/>
       <section id={dictionary.header[5].url}>
         <ContactSection contactSection={dictionary.contactSection} />
       </section>

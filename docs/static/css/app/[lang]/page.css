@@ -14,6 +14,25 @@
 .contactSection-info:hover {
   transform: scale(1.15);
 }
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/component/Citation/Citation.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.citation {
+  background-image: url(/Images/screens.jpg);
+}
+.citation-contain {
+  width: 80%;
+  max-width: 1000px;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+.citation-contain-name {
+  color: #fec260 !important;
+}
+.citation-contain svg {
+  height: 3rem;
+  color: #fec260;
+}
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/component/firstSection/firstSection.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -189,24 +208,61 @@
 .header-active {
   color: #fec260 !important;
 }
+
+.reseau-social {
+  bottom: 15%;
+  left: 2%;
+}
+@media screen and (max-width: 992px) {
+  .reseau-social {
+    left: 1%;
+  }
+}
+.reseau-social svg {
+  fill: rgba(255, 255, 255, 0.6666666667);
+}
+@media screen and (max-width: 992px) {
+  .reseau-social svg {
+    height: 1rem !important;
+  }
+}
+.reseau-social a {
+  display: block !important;
+  margin: 20px auto !important;
+}
+.reseau-social a:hover svg {
+  fill: #fec260;
+}
+
+.reseau-social:after {
+  content: "";
+  content: "";
+  width: 2px;
+  display: block;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.6666666667);
+  position: absolute;
+  left: calc(2% + 0.9rem);
+}
+@media screen and (max-width: 992px) {
+  .reseau-social:after {
+    left: calc(1% + 0.4rem);
+  }
+}
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/component/Project/ItemProject/ItemProject.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.itemProject {
-  background-color: #2b0945;
-  border-radius: 25px;
-}
 .itemProject-img {
-  max-width: 500px;
+  width: 95% !important;
   max-height: 300px !important;
   position: relative;
   cursor: pointer;
 }
 .itemProject-img img {
+  border-radius: 25px;
   width: 100% !important;
   height: 100% !important;
-  max-height: 300px !important;
-  object-fit: contain;
+  max-height: 250px !important;
 }
 .itemProject-img video {
   width: 100% !important;
@@ -247,20 +303,91 @@
   text-decoration: none;
 }
 .itemProject-popUp {
-  background-color: red;
-  z-index: 1000;
+  background-color: #fff;
+  z-index: 100000;
   margin: auto;
   left: 50%;
-  top: auto;
-  transform: translateX(-50%);
-  height: 600px;
-  width: 80%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  width: 85%;
   max-width: 1000px;
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/component/Project/ProjectDelails/ProjectDelails.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-
+.project-details img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.project-details-closeBtn {
+  background-color: #fff;
+  padding: 0.2rem 1rem;
+  border: 2px solid #44285b;
+  display: flex;
+  align-items: center;
+}
+.project-details-closeBtn svg {
+  height: 2rem;
+  color: #2b0945;
+}
+.project-details-closeBtn:hover {
+  background-color: #fec260;
+  border: 2px solid #fec260;
+}
+.project-details-closeBtn:hover svg {
+  color: #fff;
+}
+.project-details-title h4 {
+  color: #2b0945 !important;
+  font-weight: 600;
+}
+.project-details-title::after {
+  content: "";
+  border-bottom: 1px solid #44285b;
+  right: 13px;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+.project-details p {
+  color: #2b0945 !important;
+  font-size: 14px !important;
+}
+.project-details h5, .project-details h6 {
+  color: #2b0945 !important;
+  font-weight: 600;
+}
+.project-details h5:after {
+  content: "";
+  border-bottom: 1px solid #44285b;
+  left: 0px;
+  bottom: 0;
+  width: 90%;
+  position: absolute;
+}
+.project-details-link svg {
+  color: #2b0945 !important;
+}
+.project-details a {
+  border: 2px solid #44285b;
+  display: block;
+  margin: 1rem auto;
+  max-width: 200px;
+  padding: 0.8rem 1rem 0.1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.project-details a:hover {
+  border: 2px solid #fec260;
+  background-color: #fec260;
+}
+.project-details-scroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 700px;
+}
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/component/ScrollToTopButton.scss ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -438,4 +565,9 @@
 }
 .project-container-title span {
   color: #fec260;
+}
+.project-container-item {
+  height: 100%;
+  background-color: #2b0945;
+  border-radius: 25px;
 }

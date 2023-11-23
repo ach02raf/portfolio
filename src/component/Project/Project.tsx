@@ -8,6 +8,10 @@ function Project(props: {
     list: {
         id: string;
         nameProject: string;
+        infoProject: string;     
+        visitSites:string;
+        codeSource: string;
+        downloadAPK:string;
         title: string;
         descProject: string;
         imgProject: string;
@@ -15,18 +19,20 @@ function Project(props: {
         urlProject: string[];
         urlSITE: string[];
         apk: string;
+        usedTools:string,
         tools: string[];
-    }[];
+   
 
-  };
+    }[];
+}
 }) {
   return (
    <div className='project py-5'> <div className='project-container d-block m-auto'>  <h2 className="text-center project-container-title">
    {props?.Project?.title[0] + " "}
    <span>{props?.Project?.title[1]}</span>
  </h2>
- <div className='row py-3 position-relative'>{props?.Project?.list.map((ItemsProject,index)=>(
- <div className='col-xl-4 col-md-6 col-12'> <ItemProject key={index} ItemsProject={ItemsProject} /></div>
+ <div className='row py-3 '>{props?.Project?.list.map((ItemsProject,index)=>(
+ <div className='col-xl-4 col-md-6 col-12 p-3'> <div className='project-container-item position-relative' ><ItemProject key={index} ItemsProject={ItemsProject} /></div></div>
  ))}</div></div></div>
   )
 }

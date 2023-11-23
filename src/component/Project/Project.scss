@@ -9,5 +9,10 @@ span{
     color:$yellow
 }
     }
+    &-item{
+        height: 100%;
+        background-color: $violet-dark;
+        border-radius:  25px;
+    }
 }
 }
