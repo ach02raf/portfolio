@@ -1,0 +1,58 @@
+@import "@/A/global-variables.scss";
+.secondSection {
+  padding: 5%;
+  background-color: $violet-light;
+  &-div{
+    &-title {
+      color:$white ;
+      font-weight: 600;
+    }
+    &-title-part-2{
+      color:$yellow !important;
+    }
+  }
+  & img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+a{
+  color:$yellow !important;
+}
+&-illustre{
+
+  &-double{
+ 
+    &-part-1{
+      height: 50%;
+      margin-top: 10% !important;
+      margin-bottom: 10% !important;
+      display: block;
+      width: 100%;
+      max-width: 60px;
+      background-color: $yellow;
+      border-radius:30px ;
+    } 
+    &-part-2{
+      height: 10%;
+      margin-bottom: 10% !important;
+      margin-top: 10% !important;
+      display: block;
+      width: 100%;
+      max-width: 60px;
+      max-height: 60px;
+      background-color: $white;
+      border-radius:50% ;
+    } 
+  }
+  &-single{
+    height: 60% !important;
+    margin-top: 10% !important;
+    display: block;
+    width: 100%;
+    max-width: 60px;
+    border:3px solid $white;
+    border-radius:30px ;
+  }
+  
+  }
+}

@@ -1,0 +1,18 @@
+@import "@/A/global-variables.scss";
+.citation{
+    background-image: url(/Images/screens.jpg);
+    &-contain{
+        width: 80%;
+        max-width: 1000px;
+        font-weight: 600;
+        line-height: 2.5rem;
+
+        &-name{
+            color:$yellow !important;
+        }
+        svg{
+            height: 3rem;
+            color: $yellow;
+        }
+    }
+}

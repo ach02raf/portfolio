@@ -12,7 +12,6 @@ export default function LocaleSwitcher() {
     segments[1] = locale;
     return segments.join("/");
   };
-
   return (
     <ul className="lang-switcher list-unstyled d-flex justify-content-center align-items-center m-0 p-0">
       {i18n.locales.map((locale) => {

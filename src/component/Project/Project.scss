@@ -1,0 +1,18 @@
+@import "@/A/global-variables.scss";
+.project{
+    background-color: $violet-light;
+    &-container{
+        width: 80%;
+        
+    &-title{
+span{
+    color:$yellow
+}
+    }
+    &-item{
+        height: 100%;
+        background-color: $violet-dark;
+        border-radius:  25px;
+    }
+}
+}

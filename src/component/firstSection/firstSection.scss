@@ -1,5 +1,8 @@
 @import "@/A/global-variables.scss";
 .firstSection {
+  span {
+    color: $yellow;
+  }
   padding: 5%;
   &-div {
     width: 80%;
@@ -15,6 +18,17 @@
     min-height: 150px;
     span {
       color: $white !important;
+    }
+  }
+  &-button {
+    background-color: $yellow;
+
+    border-radius: 25px;
+    a {
+      color: $violet-dark !important;
+      font-weight: 800 !important;
+      font-size: 1rem !important;
+      text-decoration: none !important;
     }
   }
 }

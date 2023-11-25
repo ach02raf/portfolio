@@ -1,0 +1,60 @@
+@import "@/A/global-variables.scss";
+.skillsSection {
+  padding: 5%;
+  background-color: $violet-light;
+  span {
+    color: $yellow !important;
+  }
+  &-image {
+    max-width: 25px !important;
+    max-height: 25px !important;
+    img{
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+  &-col{
+    @media screen and (min-width : 992px) {
+    border-bottom: 1px solid $white;
+    }
+  }
+  &-pair{
+    @media screen and (min-width : 992px) {
+    border-right: 1px solid $white;
+    position: relative;
+    }
+   @media screen and (min-width : 992px) {
+    &:after{
+      content: "";
+      position: absolute;
+      width:18px;
+      height: 18px;
+      background-color: $yellow;     
+box-shadow: 0px 0px 7px 0px $yellow;
+      border-radius: 50%;
+      right: -9px;
+      bottom:-9px;
+      z-index: 100;
+    }
+   }
+  }
+  &-card {
+    background-color: $violet-dark;
+    border: 1px solid #f1f1f191;
+    border-radius: 20px;
+    max-width: 70px !important;
+    min-width: 70px;
+    height: 70px;
+    p{
+      font-size: 0.6rem !important;
+    }
+   
+  }
+  &-card:hover {
+    background-color: $yellow;
+    p {
+      color: $violet-dark !important;
+      font-weight: 600;
+    }
+  }
+}

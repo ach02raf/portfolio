@@ -1,0 +1,26 @@
+@import "@/A/global-variables.scss";
+.blog{
+    background-color: $violet-dark;
+    &-contain{
+        width: 80%;
+
+    &-img{
+        max-height: 600px;
+        img{
+            width: 100% !important;
+            height: 100% !important;
+            max-height: 600px;
+        }
+        
+    }
+
+    h1{
+      color: $yellow !important;
+      font-weight: 600;
+      font-size: 2.25rem;
+    }
+    h2{
+        font-size: 1.6rem !important;
+    }
+}
+}

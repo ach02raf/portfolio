@@ -1,0 +1,13 @@
+@import "@/A/global-variables.scss";
+
+.contactSection {
+  padding: 5%;
+  background-color: $violet-light;
+  span{color:$yellow}
+  &-info{
+    transition: all 0.3s linear;
+  &:hover{
+    transform: scale(1.15);
+  }
+  }
+}

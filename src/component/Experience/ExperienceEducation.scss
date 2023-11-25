@@ -1,0 +1,57 @@
+@import "@/A/global-variables.scss";
+.experienceEducation{
+    width:80%;
+    &-card{
+        h3{
+            font-size: 1.6rem;
+            @media screen and ( max-width : 600px ) {
+                font-size: 1.3rem;
+            }
+        }
+        p{
+            font-size: 1rem !important;
+        }
+        &-date{
+            text-align: start;
+            transform:translateY(-20px);
+            clip-path: polygon(70% 0, 100% 55%, 70% 100%, 0 99%, 0 0);
+            background-color: $violet-light;
+            max-width:130px;
+            @media screen and ( max-width : 400px ) {
+                // clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 99%, 0 0);
+                padding: 0.5rem !important;
+                p{line-height: 1rem;
+                    font-size: 0.8rem !important;}
+            }
+            p{line-height: 1rem;
+                font-size: 0.6rem !important;}
+        }
+        &-info{
+          
+        padding-left: 60px !important;
+    }
+}
+    &-card-info:after{
+content:"";
+position: absolute;
+width:18px;
+height: 18px;
+border-radius: 50%;
+background-color: $yellow;
+box-shadow: 0px 0px 7px 0px $yellow;
+top:0;
+margin-left: -40px !important;
+    }
+    &-card-info:before{
+        content:"";
+        position: absolute;
+        width:2px;
+        height: 80%;
+       top:calc(45% + 30px);
+       left:28px;
+       transform: translate(0,-50%);
+        border-radius: 50%;
+        background-color: $white;
+
+            }
+}
