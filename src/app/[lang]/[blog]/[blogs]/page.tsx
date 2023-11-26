@@ -1,0 +1,73 @@
+import Image from "next/image";
+import { getDictionary } from "../../../../../get-dictionary";
+import { Locale, i18n } from "../../../../../i18n-config";
+import "./page.scss";
+import ScrollToTopButton from "@/component/ScrollToTopButton";
+import Footer from "@/component/Footer/Footer";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
+export const dynamicParams = false;
+export async function generateStaticParams() {
+  let staticParams: { blogs: string }[] = [];
+  const a = i18n.locales.map((locale) => ({ lang: locale }));
+
+  for (let lg of a) {
+    const dictionary = await getDictionary(lg.lang);
+    const blogList = dictionary?.blog?.blogList || [];
+
+    staticParams.push(
+      ...blogList.map((itemBlog) => ({ blogs: itemBlog?.slug }))
+    );
+  }
+  console.log(staticParams);
+  return staticParams;
+}
+async function Blog({
+  params: { lang, blogs },
+}: {
+  params: { lang: Locale; blogs: string };
+}) {
+  const dictionary = await getDictionary(lang);
+  const blogContent = dictionary?.blog?.blogList?.find(
+    (itemBlog) => itemBlog?.slug === blogs
+  );
+
+  return (
+    <div className="blog m-0">
+      <div className="blog-contain d-block mx-auto py-5">
+        <div>
+          <Link
+            href={`/${lang}#${dictionary.header[5].name}`}
+            className="blog-contain-backHome my-3">
+            <FontAwesomeIcon
+              className="project-details-contain-backHome-icon"
+              icon={faArrowAltCircleLeft}
+            />
+          </Link>
+        </div>
+        <div className="blog-contain-img position-relative">
+          <Image
+            src={`/Images/${blogContent?.img}.jpg`}
+            alt="blog"
+            title={blogContent?.titleImg}
+            width={1920}
+            height={600}
+          />
+        </div>
+        <h1 className="py-3 text-center">{blogContent?.title}</h1>
+
+        {blogContent?.desc?.map((item, index) => (
+          <div key={index}>
+            <h2>{item?.title}</h2>
+            <p>{item?.description}</p>
+          </div>
+        ))}
+      </div>
+      <Footer Footer={dictionary.Footer} />
+      <ScrollToTopButton />
+    </div>
+  );
+}
+
+export default Blog;

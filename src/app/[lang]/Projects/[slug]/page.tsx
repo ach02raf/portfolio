@@ -1,28 +1,21 @@
 import { getDictionary } from "../../../../../get-dictionary";
-import { Locale } from "../../../../../i18n-config";
-import { i18n } from "../../../../../i18n-config";
+import { Locale, i18n } from "../../../../../i18n-config";
 import "./page.scss";
 import ScrollToTopButton from "@/component/ScrollToTopButton";
 import Footer from "@/component/Footer/Footer";
 import ProjectDelails from "@/component/Project/ProjectDelails/ProjectDelails";
-
 export const dynamicParams = false;
-
 export async function generateStaticParams() {
-  const languages = i18n.locales.map((locale) => ({ lang: locale }));
-  const staticParams = [];
+  let staticParams: { slug: string }[] = [];
+  const a = i18n.locales.map((locale) => ({ lang: locale }));
 
-  for (const lang of languages) {
-    const dictionary = await getDictionary(lang.lang);
-    const ProjectList = dictionary?.Project?.list || [];
+  for (let lg of a) {
+    const dictionary = await getDictionary(lg.lang);
+    const projectList = dictionary?.Project?.list || [];
 
-    staticParams.push(
-      ...ProjectList.map((item) => ({
-        params: { lang: lang.lang, slug: item?.slug },
-      }))
-    );
+    staticParams.push(...projectList.map((item) => ({ slug: item.slug })));
   }
-
+  console.log(staticParams);
   return staticParams;
 }
 
@@ -32,10 +25,9 @@ async function Blog({
   params: { lang: Locale; slug: string };
 }) {
   const dictionary = await getDictionary(lang);
-  const ItemsProject = await dictionary?.Project.list.find(
+  const ItemsProject = dictionary?.Project.list.find(
     (itemProject) => itemProject.slug === slug
   );
- 
 
   return (
     <div className="blog m-0">

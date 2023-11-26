@@ -253,6 +253,7 @@
   ],
   "Project": {
     "title": ["Mes Dernieres", " projets"],
+    "slug": "Project",
     "list": [
       {
         "id": "0",
@@ -308,7 +309,22 @@
         "downloadAPK": "Télécharcher l'APK",
         "title": "Création d'une application mobile permettant d'organiser, réserver des places pour des voyages et des randonnées avec un guide en ligne",
         "descProject": "Une application mobile novatrice qui offre aux utilisateurs la possibilité de sélectionner des itinéraires touristiques proposés par des guides experts. En plus de permettre aux touristes de choisir leurs destinations préférées et de créer des itinéraires personnalisés, l'application se compose de deux parties : une interface utilisateur dynamique développée avec le framework Ionic pour le front-end, et une infrastructure robuste côté serveur réalisée avec Express.js et MongoDB pour le back-end. De plus, elle propose la fonctionnalité de choisir parmi une liste de guides disponibles, de consulter leurs profils personnels, et de lire les commentaires laissés par d'autres touristes.",
-        "imgProject": ["gotrip","gotrip13","gotrip12","gotrip11","gotrip10","gotrip9","gotrip8","gotrip7","gotrip6","gotrip5","gotrip4","gotrip3","gotrip2","gotrip1"],
+        "imgProject": [
+          "gotrip",
+          "gotrip13",
+          "gotrip12",
+          "gotrip11",
+          "gotrip10",
+          "gotrip9",
+          "gotrip8",
+          "gotrip7",
+          "gotrip6",
+          "gotrip5",
+          "gotrip4",
+          "gotrip3",
+          "gotrip2",
+          "gotrip1"
+        ],
         "videoProject": "",
         "urlProject": [
           "https://github.com/ach02raf/GoTrip-ionic-application",
@@ -351,8 +367,25 @@
         "downloadAPK": "Télécharcher l'APK",
         "title": "Création d'un pack de 16 sites avec le CMS WordPress",
         "descProject": "",
-        "imgProject": ["all-sitewordpress","1001-architecture","surfcom","surfcom","maison-presto","escaliere","klass-design","reno-deco","mur-mur","reno-global","sopranet","renov-en-main","open-mur","enirop","muretremie","architectis","agexis"
-      ],
+        "imgProject": [
+          "all-sitewordpress",
+          "1001-architecture",
+          "surfcom",
+          "surfcom",
+          "maison-presto",
+          "escaliere",
+          "klass-design",
+          "reno-deco",
+          "mur-mur",
+          "reno-global",
+          "sopranet",
+          "renov-en-main",
+          "open-mur",
+          "enirop",
+          "muretremie",
+          "architectis",
+          "agexis"
+        ],
         "videoProject": "",
         "urlProject": [""],
         "urlSITE": [
