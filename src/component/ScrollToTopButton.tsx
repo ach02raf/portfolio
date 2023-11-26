@@ -7,19 +7,16 @@ const ScrollToTopButton = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      // if the user scrolls down, show the button
       window.scrollY > 500 ? setIsVisible(true) : setIsVisible(false);
     };
-    // listen for scroll events
+
     window.addEventListener("scroll", toggleVisibility);
 
-    // clear the listener on component unmount
     return () => {
       window.removeEventListener("scroll", toggleVisibility);
     };
   }, []);
 
-  // handles the animation when scrolling to the top
   const scrollToTop = () => {
     isVisible &&
       window.scrollTo({
@@ -35,7 +32,7 @@ const ScrollToTopButton = () => {
       }`}
       onClick={scrollToTop}>
       <Image
-      className="m-2"
+        className="m-2"
         src={"/Images/Icons/up.png"}
         alt="up"
         title="up"

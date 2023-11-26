@@ -18,17 +18,11 @@ export async function generateStaticParams() {
 
     staticParams.push(
       ...ProjectList.map((item) => ({
-        slug: [  lang?.lang, item?.slug ]
+        lang: lang?.lang,
+        slug: item?.slug,
       }))
     );
   }
-
-  //   staticParams.push(
-  //     ...ProjectList.map((item) => ({
-  //       params: { lang: lang.lang, slug: item?.slug },
-  //     }))
-  //   );
-  // }
 
   return staticParams;
 }
@@ -42,7 +36,6 @@ async function Blog({
   const ItemsProject = await dictionary?.Project.list.find(
     (itemProject) => itemProject.slug === slug
   );
- 
 
   return (
     <div className="blog m-0">
