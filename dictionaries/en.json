@@ -264,7 +264,7 @@
         "downloadAPK": "Download APK",
         "title": "Creating a mobile application for booking medical appointments online with a doctor",
         "descProject": "HELLO DOCTOR, an innovative solution, offers the possibility to book medical appointments online through a sophisticated mobile application developed with advanced React Native technology. The robustness of our infrastructure relies on a backend developed with Express.js, supported by the power of MongoDB as a database. This approach ensures a smooth user experience, efficient data management, and a quick response to requests, thus elevating the level of quality and professionalism of our online medical booking service.",
-        "imgProject": ["allo-doctor"],
+        "imgProject": ["ALLO-DOCTOR"],
         "videoProject": "ALLO-DOCTOR",
         "urlProject": [
           "https://github.com/ach02raf/ach02raf-ALLO-DOCTOR-APP-Front",

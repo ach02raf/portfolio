@@ -265,7 +265,7 @@
         "downloadAPK": "Télécharcher l'APK",
         "title": "Création d'une application mobile pour réserver un rendez-vous en ligne avec un médecin",
         "descProject": "ALLO DOCTOR, une solution novatrice, offre la possibilité de réserver des rendez-vous médicaux en ligne via une application mobile sophistiquée, développée avec la technologie avancée React Native. La robustesse de notre infrastructure repose sur une partie backend élaborée avec Express.js, soutenue par la puissance de MongoDB en tant que base de données. Cette approche garantit une expérience utilisateur fluide, une gestion efficace des données et une réponse rapide aux demandes, élevant ainsi le niveau de qualité et de professionnalisme de notre service de réservation médicale en ligne",
-        "imgProject": ["allo-doctor"],
+        "imgProject": ["ALLO-DOCTOR"],
         "videoProject": "ALLO-DOCTOR",
         "urlProject": [
           "https://github.com/ach02raf/ach02raf-ALLO-DOCTOR-APP-Front",
