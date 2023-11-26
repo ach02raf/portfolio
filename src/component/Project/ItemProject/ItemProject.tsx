@@ -13,7 +13,7 @@ function ItemProject(props: {
     slug:string;
     title: string;
     descProject: string;
-    imgProject: string;
+    imgProject: string[];
     videoProject: string;
     urlProject: string[];
     urlSITE: string[];
@@ -34,11 +34,11 @@ function ItemProject(props: {
         <div
           className="itemProject-img d-block m-auto p-0"
         >
-          {props?.ItemsProject?.imgProject && (
+          {props?.ItemsProject?.imgProject[0] && (
             <Image
-              src={`/Images/${props?.ItemsProject?.imgProject}.png`}
-              alt={props?.ItemsProject?.imgProject}
-              title={props?.ItemsProject?.imgProject}
+              src={`/Images/${props?.ItemsProject?.imgProject[0]}.png`}
+              alt={props?.ItemsProject?.imgProject[0]}
+              title={props?.ItemsProject?.imgProject[0]}
               height={512}
               width={512}
             />

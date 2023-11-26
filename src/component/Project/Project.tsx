@@ -16,7 +16,7 @@ function Project(props: {
       downloadAPK: string;
       title: string;
       descProject: string;
-      imgProject: string;
+      imgProject: string[];
       videoProject: string;
       urlProject: string[];
       urlSITE: string[];

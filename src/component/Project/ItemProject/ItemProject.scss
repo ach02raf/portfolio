@@ -4,7 +4,7 @@
 
     &-img{
        width: 95% !important;
-        max-height: 300px !important;
+
 
         position: relative;
       
@@ -44,6 +44,9 @@ cursor: pointer;
     h3{
         font-size: 1.25rem !important;
         text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
        
     }
     h3:hover{
