@@ -2,9 +2,6 @@
 import Image from "next/image";
 import "./firstSection.scss";
 import Typewriter from "react-ts-typewriter";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconDefinition } from "@fortawesome/fontawesome-common-types";
-import { fas } from "@fortawesome/free-solid-svg-icons";
 function FirstSection(props: {
   firstSection: {
     title: string;
@@ -12,6 +9,7 @@ function FirstSection(props: {
     description: string[];
     cv: string;
   };
+  cvUrl: string;
 }) {
   const name = props.firstSection.name.split(" ");
   return (
@@ -32,13 +30,15 @@ function FirstSection(props: {
               cursor={true}
             />
           </h2>
-        <div className="row"><div className="col">  <button className="firstSection-button mb-5 p-3">
-            <a href="/cv.pdf" download="cv">
-              {props.firstSection.cv}
-            </a>
-          </button></div>
-        </div>
-
+          <div className="row">
+            <div className="col">
+              <button className="firstSection-button mb-5 p-3">
+                <a href={`/cv-${props.cvUrl}.pdf`} download="cv">
+                  {props.firstSection.cv}
+                </a>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <div className="col-lg-4">

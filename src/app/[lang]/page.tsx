@@ -11,7 +11,7 @@ import ServicesSection from "@/C/ServicesSection/ServicesSection";
 import SkillsSection from "@/C/skillsSection/SkillsSection";
 import ExperienceEducation from "@/component/Experience/ExperienceEducation";
 import Project from "@/component/Project/Project";
-import Citation from "@/C/Citation/citation"
+import Citation from "@/C/Citation/citation";
 import Blog from "@/component/Blog/Blog";
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -26,8 +26,8 @@ export default async function IndexPage({
     <div className="container-fluid gx-0 contain position-relative">
       <Header header={dictionary.header} />
       <section id={dictionary.header[0].url}>
-        <FirstSection firstSection={dictionary.firstSection} />
-      </section >
+        <FirstSection firstSection={dictionary.firstSection} cvUrl={lang} />
+      </section>
       <section id={dictionary.header[1].url}>
         <SecondSection secondSection={dictionary.secondSection} />
       </section>
@@ -41,9 +41,9 @@ export default async function IndexPage({
         />
       </section>
       <section id={dictionary.header[4].url}>
-        <Project Project={dictionary?.Project} lang={lang}/>
+        <Project Project={dictionary?.Project} lang={lang} />
       </section>
-      <Citation citation={dictionary.citation}/>
+      <Citation citation={dictionary.citation} />
       <section id={dictionary.header[5].url}>
         <Blog Blog={dictionary.blog} lang={lang} />
       </section>
