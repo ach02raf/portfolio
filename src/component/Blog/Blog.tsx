@@ -27,7 +27,7 @@ function Blog(props: { Blog: {
        <Link className={`Blog-home-contain-${index}`} key={index} href={`/${props?.lang}/blog/${item?.slug}`}> <h3 className="py-3">{item?.title}</h3></Link>
     ))}  
     </div>
-    <Link className="Blog-home-link my-5 p-3" href={`/${props?.lang}/blog`}>{props?.Blog?.btnSeeAll}</Link>
+  <div className="d-flex justify-content-end">  <Link className="Blog-home-link my-5 p-3" href={`/${props?.lang}/blog`}>{props?.Blog?.btnSeeAll}</Link></div>
     </div>
   
     </div>
