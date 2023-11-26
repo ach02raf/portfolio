@@ -256,7 +256,7 @@
       {
         "id": "0",
         "nameProject": "ALLO DOCTOR",
-        "slug":"allo-doctor",
+        "slug": "allo-doctor",
         "infoProject": "INFOS PROJET",
         "visitSites": "Visiter le site",
         "codeSource": "Voir le code source",
@@ -278,7 +278,7 @@
       {
         "id": "1",
         "nameProject": "API SOAP",
-        "slug":"api-soap",
+        "slug": "api-soap",
         "infoProject": "INFOS PROJET",
         "visitSites": "Visiter le site",
         "codeSource": "Voir le code source",
@@ -300,7 +300,7 @@
       {
         "id": "2",
         "nameProject": "GoTRIP",
-        "slug":"gotrip",
+        "slug": "gotrip",
         "infoProject": "INFOS PROJET",
         "visitSites": "Visiter le site",
         "codeSource": "Voir le code source",
@@ -321,7 +321,7 @@
       {
         "id": "3",
         "nameProject": "ARTVERSE",
-        "slug":"artverse",
+        "slug": "artverse",
         "infoProject": "INFOS PROJET",
         "visitSites": "Visiter le site",
         "codeSource": "Voir le code source",
@@ -343,7 +343,7 @@
       {
         "id": "4",
         "nameProject": "PACK WORDPRESS",
-        "slug":"pack-wordpress",
+        "slug": "pack-wordpress",
         "infoProject": "INFOS PROJET",
         "visitSites": "Visiter le site",
         "codeSource": "Voir le code source",
@@ -386,7 +386,7 @@
       {
         "id": "5",
         "nameProject": "Spacy & Cosy",
-        "slug":"spacy-and-cosy",
+        "slug": "spacy-and-cosy",
         "infoProject": "INFOS PROJET",
         "visitSites": "Visiter le site",
         "codeSource": "Voir le code source",
@@ -412,7 +412,7 @@
       {
         "id": "6",
         "nameProject": "Structural Wood",
-        "slug":"structural-wood",
+        "slug": "structural-wood",
         "infoProject": "INFOS PROJET",
         "visitSites": "Visiter le site",
         "codeSource": "Voir le code source",
@@ -438,7 +438,7 @@
       {
         "id": "7",
         "nameProject": "Structural Metal",
-        "slug":"structural-metal",
+        "slug": "structural-metal",
         "infoProject": "INFOS PROJET",
         "visitSites": "Visiter le site",
         "codeSource": "Voir le code source",
@@ -464,7 +464,7 @@
       {
         "id": "8",
         "nameProject": "Structural Home",
-        "slug":"structural-home",
+        "slug": "structural-home",
         "infoProject": "INFOS PROJET",
         "visitSites": "Visiter le site",
         "codeSource": "Voir le code source",
@@ -490,7 +490,7 @@
       {
         "id": "9",
         "nameProject": "CV Maker",
-        "slug":"cv-maker",
+        "slug": "cv-maker",
         "infoProject": "INFOS PROJET",
         "visitSites": "Visiter le site",
         "codeSource": "Voir le code source",
@@ -512,31 +512,116 @@
     "citation": "L'informatique, c'est plus que des lignes de code. C'est l'expression de la créativité, la résolution de problèmes et la construction d'un avenir numérique."
   },
   "blog": {
-    "title":"Blogs",
-    "btnSeeAll":"Tous les blogs",
+    "title": "Blogs",
+    "btnSeeAll": "Tous les blogs",
     "blogList": [
-      { "id": 0, "slug": "Construire-des-Fondations-Solides-avec-les-Design-Patterns", "title": "Construire des Fondations Solides avec les Design Patterns", "img":"design-patterns","titleImg":"Construire des Fondations Solides avec les Design Patterns",
-      "desc": [{"title":"Introduction","description":"Les Design Patterns sont des solutions éprouvées aux problèmes récurrents rencontrés lors du développement logiciel. Comprendre et appliquer ces modèles peut considérablement améliorer la qualité, la maintenabilité et la flexibilité de votre code. Dans cet article, plongeons dans le monde des Design Patterns et explorons comment ils peuvent enrichir votre arsenal de développement."},
-      {"title":"Le Pattern Singleton","description":"Commençons par l'un des design patterns les plus simples et les plus couramment utilisés : le Singleton. Ce pattern garantit qu'une classe n'a qu'une seule instance et fournit un point d'accès global à cette instance. J'expliquerai comment le Singleton peut être mis en œuvre et comment il peut être utilisé pour centraliser des fonctionnalités importantes dans votre application."},
-      {"title":"Observer Pattern","description":"L'Observer Pattern est essentiel pour créer des systèmes réactifs. Dans cet article, je décrirai comment ce pattern permet à un objet, appelé le sujet, de maintenir une liste de ses dépendances, appelées observateurs, qui sont informées des changements d'état. Cela est particulièrement utile pour la gestion des événements dans une application."},
-      {"title":"Le Pattern Factory","description":"La création d'objets peut parfois devenir complexe. C'est là que le pattern Factory entre en jeu. Je discuterai de la manière dont ce pattern peut être utilisé pour déléguer la responsabilité de l'instanciation d'objets à des classes dédiées, facilitant ainsi la gestion des dépendances et la maintenance du code."},
-      {"title":"MVC (Model-View-Controller)","description":"Bien qu'il ne s'agisse pas d'un pattern en soi, le modèle MVC est une architecture fondamentale que beaucoup de design patterns complètent. Je passerai en revue les principes de base du modèle MVC et montrerai comment certains design patterns, tels que l'Observer et le Strategy, peuvent être utilisés en tandem pour construire des applications robustes."},
-      {"title":"Conclusion","description":"Les Design Patterns offrent des solutions élégantes et efficaces aux défis du développement logiciel. En comprenant quand et comment les appliquer, vous pouvez grandement améliorer la qualité et la maintenance de votre code. Explorez ces patterns, expérimentez-les, et voyez comment ils peuvent transformer votre approche du développement."}
-      ]},
-      { "id": 1, "slug": "Optimiser-les-Performances-dans-Angular", "title": "Optimiser les Performances dans Angular",  "img":"angular","titleImg":"Optimiser les Performances dans Angular","desc": [
-        {"title":"Introduction","description":"La performance est cruciale pour une expérience utilisateur exceptionnelle. Dans cet article, nous explorerons des techniques avancées pour optimiser les performances des applications Angular, du chargement initial à l'interaction utilisateur."},
-      {"title":"Lazy Loading des Modules","description":"Le lazy loading des modules est une stratégie qui consiste à charger des parties de l'application uniquement lorsque cela est nécessaire. Je partagerai des astuces sur la mise en œuvre efficace du lazy loading dans Angular pour réduire le temps de chargement initial et améliorer la réactivité de l'application."},
-      {"title":"Change Detection Strategies","description":"Angular utilise une détection des changements pour mettre à jour l'interface utilisateur en fonction des modifications de l'état de l'application. Découvrez comment choisir la stratégie de détection des changements appropriée en fonction des besoins spécifiques de votre application, pour minimiser les mises à jour inutiles et améliorer les performances."},
-      {"title":"Optimisation des Requêtes HTTP","description":"La gestion des requêtes HTTP est une partie cruciale de toute application web. Je partagerai des meilleures pratiques pour optimiser les appels HTTP, minimiser la latence réseau et gérer efficacement les données côté client."},
-      {"title":"Mesures de Performance avec Angular CLI","description":"Angular CLI propose des outils puissants pour évaluer les performances de votre application. Découvrez comment utiliser ces outils pour mesurer les temps de chargement, identifier les goulots d'étranglement et apporter des améliorations significatives à votre application."},
-      {"title":"Conclusion","description":"En adoptant ces techniques d'optimisation, vous pourrez créer des applications Angular qui offrent des performances exceptionnelles, garantissant ainsi une expérience utilisateur fluide et réactive."}]},
-      { "id": 3, "slug": "Decouvrir-ReactJs-Construire-des-Interfaces-Dynamiques-et-Reactives", "title": "Découvrir React.js : Construire des Interfaces Dynamiques et Réactives",  "img":"reactjs","titleImg":"Découvrir React.js : Construire des Interfaces Dynamiques et Réactives","desc": [{"title":"","description":"React.js, développé par Facebook, est devenu un incontournable dans le monde du développement web. Ce framework JavaScript, axé sur la création d'interfaces utilisateur interactives, offre une approche déclarative et composante pour la construction d'applications web modernes. Dans cet article, plongeons dans les fondamentaux de React et explorons comment il simplifie le développement d'applications front-end."},
-      {"title":"Le Virtual DOM","description":"Au cœur de React réside le concept puissant du Virtual DOM. Plutôt que de mettre à jour le DOM réel à chaque changement d'état, React crée une représentation virtuelle de l'interface utilisateur, puis la compare avec la version précédente. Ce processus de réconciliation minimise les manipulations du DOM réel, améliorant ainsi considérablement les performances de l'application."},
-      {"title":"Composants : Les Blocs de Construction de React","description":"Les composants sont la pierre angulaire de React. Chaque élément de votre interface utilisateur est un composant, du bouton simple à la barre de navigation complexe. Dans cet article, nous explorerons comment créer des composants réutilisables, comment ils communiquent entre eux et comment ils contribuent à une structure d'application modulaire."},
-      {"title":"Le Flux de Données Unidirectionnel avec React","description":"React adopte un flux de données unidirectionnel, ce qui signifie que les données circulent dans une seule direction à travers l'application. Cela simplifie la gestion des états et rend l'application plus prévisible. Nous examinerons comment le flux de données unidirectionnel contribue à une architecture claire et à la gestion efficace des données."},{"title":"Les Hooks : Simplifier la Gestion de l'État et des Effets","description":"Avec l'introduction des hooks dans React, la gestion de l'état et des effets a atteint un niveau supérieur. Les hooks, tels que useState et useEffect, permettent aux développeurs de gérer l'état local et d'effectuer des actions liées au cycle de vie du composant de manière plus concise. Nous plongerons dans ces hooks essentiels et discuterons de leurs cas d'utilisation."},
-      {"title":"React Router : La Navigation sans Rechargement de Page","description":"La navigation entre les pages est une nécessité dans de nombreuses applications. React Router fournit une solution élégante pour la gestion de la navigation sans le besoin de recharger la page. Nous explorerons la mise en place de la navigation dans une application React, en soulignant les fonctionnalités essentielles de React Router."},
-      {"title":"Conclusion : Pourquoi Choisir React.js ?","description":"React.js a transformé la manière dont les développeurs abordent la création d'interfaces utilisateur interactives. Sa simplicité, sa réactivité et son écosystème florissant en font un choix populaire pour une variété de projets. En adoptant les principes fondamentaux de React, vous serez prêt à construire des applications web modernes et performantes."},
-      {"title":"","description":"Que vous soyez novice ou expert, React.js offre un terrain de jeu robuste pour donner vie à vos idées web. Explorez, expérimentez et plongez dans l'univers réactif de React pour créer des expériences utilisateur exceptionnelles."}] }
+      {
+        "id": 0,
+        "slug": "Construire-des-Fondations-Solides-avec-les-Design-Patterns",
+        "title": "Construire des Fondations Solides avec les Design Patterns",
+        "img": "design-patterns",
+        "titleImg": "Construire des Fondations Solides avec les Design Patterns",
+        "desc": [
+          {
+            "title": "Introduction",
+            "description": "Les Design Patterns sont des solutions éprouvées aux problèmes récurrents rencontrés lors du développement logiciel. Comprendre et appliquer ces modèles peut considérablement améliorer la qualité, la maintenabilité et la flexibilité de votre code. Dans cet article, plongeons dans le monde des Design Patterns et explorons comment ils peuvent enrichir votre arsenal de développement."
+          },
+          {
+            "title": "Le Pattern Singleton",
+            "description": "Commençons par l'un des design patterns les plus simples et les plus couramment utilisés : le Singleton. Ce pattern garantit qu'une classe n'a qu'une seule instance et fournit un point d'accès global à cette instance. J'expliquerai comment le Singleton peut être mis en œuvre et comment il peut être utilisé pour centraliser des fonctionnalités importantes dans votre application."
+          },
+          {
+            "title": "Observer Pattern",
+            "description": "L'Observer Pattern est essentiel pour créer des systèmes réactifs. Dans cet article, je décrirai comment ce pattern permet à un objet, appelé le sujet, de maintenir une liste de ses dépendances, appelées observateurs, qui sont informées des changements d'état. Cela est particulièrement utile pour la gestion des événements dans une application."
+          },
+          {
+            "title": "Le Pattern Factory",
+            "description": "La création d'objets peut parfois devenir complexe. C'est là que le pattern Factory entre en jeu. Je discuterai de la manière dont ce pattern peut être utilisé pour déléguer la responsabilité de l'instanciation d'objets à des classes dédiées, facilitant ainsi la gestion des dépendances et la maintenance du code."
+          },
+          {
+            "title": "MVC (Model-View-Controller)",
+            "description": "Bien qu'il ne s'agisse pas d'un pattern en soi, le modèle MVC est une architecture fondamentale que beaucoup de design patterns complètent. Je passerai en revue les principes de base du modèle MVC et montrerai comment certains design patterns, tels que l'Observer et le Strategy, peuvent être utilisés en tandem pour construire des applications robustes."
+          },
+          {
+            "title": "Conclusion",
+            "description": "Les Design Patterns offrent des solutions élégantes et efficaces aux défis du développement logiciel. En comprenant quand et comment les appliquer, vous pouvez grandement améliorer la qualité et la maintenance de votre code. Explorez ces patterns, expérimentez-les, et voyez comment ils peuvent transformer votre approche du développement."
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "slug": "Optimiser-les-Performances-dans-Angular",
+        "title": "Optimiser les Performances dans Angular",
+        "img": "angular",
+        "titleImg": "Optimiser les Performances dans Angular",
+        "desc": [
+          {
+            "title": "Introduction",
+            "description": "La performance est cruciale pour une expérience utilisateur exceptionnelle. Dans cet article, nous explorerons des techniques avancées pour optimiser les performances des applications Angular, du chargement initial à l'interaction utilisateur."
+          },
+          {
+            "title": "Lazy Loading des Modules",
+            "description": "Le lazy loading des modules est une stratégie qui consiste à charger des parties de l'application uniquement lorsque cela est nécessaire. Je partagerai des astuces sur la mise en œuvre efficace du lazy loading dans Angular pour réduire le temps de chargement initial et améliorer la réactivité de l'application."
+          },
+          {
+            "title": "Change Detection Strategies",
+            "description": "Angular utilise une détection des changements pour mettre à jour l'interface utilisateur en fonction des modifications de l'état de l'application. Découvrez comment choisir la stratégie de détection des changements appropriée en fonction des besoins spécifiques de votre application, pour minimiser les mises à jour inutiles et améliorer les performances."
+          },
+          {
+            "title": "Optimisation des Requêtes HTTP",
+            "description": "La gestion des requêtes HTTP est une partie cruciale de toute application web. Je partagerai des meilleures pratiques pour optimiser les appels HTTP, minimiser la latence réseau et gérer efficacement les données côté client."
+          },
+          {
+            "title": "Mesures de Performance avec Angular CLI",
+            "description": "Angular CLI propose des outils puissants pour évaluer les performances de votre application. Découvrez comment utiliser ces outils pour mesurer les temps de chargement, identifier les goulots d'étranglement et apporter des améliorations significatives à votre application."
+          },
+          {
+            "title": "Conclusion",
+            "description": "En adoptant ces techniques d'optimisation, vous pourrez créer des applications Angular qui offrent des performances exceptionnelles, garantissant ainsi une expérience utilisateur fluide et réactive."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "slug": "Decouvrir-ReactJs-Construire-des-Interfaces-Dynamiques-et-Reactives",
+        "title": "Découvrir React.js : Construire des Interfaces Dynamiques et Réactives",
+        "img": "reactjs",
+        "titleImg": "Découvrir React.js : Construire des Interfaces Dynamiques et Réactives",
+        "desc": [
+          {
+            "title": "",
+            "description": "React.js, développé par Facebook, est devenu un incontournable dans le monde du développement web. Ce framework JavaScript, axé sur la création d'interfaces utilisateur interactives, offre une approche déclarative et composante pour la construction d'applications web modernes. Dans cet article, plongeons dans les fondamentaux de React et explorons comment il simplifie le développement d'applications front-end."
+          },
+          {
+            "title": "Le Virtual DOM",
+            "description": "Au cœur de React réside le concept puissant du Virtual DOM. Plutôt que de mettre à jour le DOM réel à chaque changement d'état, React crée une représentation virtuelle de l'interface utilisateur, puis la compare avec la version précédente. Ce processus de réconciliation minimise les manipulations du DOM réel, améliorant ainsi considérablement les performances de l'application."
+          },
+          {
+            "title": "Composants : Les Blocs de Construction de React",
+            "description": "Les composants sont la pierre angulaire de React. Chaque élément de votre interface utilisateur est un composant, du bouton simple à la barre de navigation complexe. Dans cet article, nous explorerons comment créer des composants réutilisables, comment ils communiquent entre eux et comment ils contribuent à une structure d'application modulaire."
+          },
+          {
+            "title": "Le Flux de Données Unidirectionnel avec React",
+            "description": "React adopte un flux de données unidirectionnel, ce qui signifie que les données circulent dans une seule direction à travers l'application. Cela simplifie la gestion des états et rend l'application plus prévisible. Nous examinerons comment le flux de données unidirectionnel contribue à une architecture claire et à la gestion efficace des données."
+          },
+          {
+            "title": "Les Hooks : Simplifier la Gestion de l'État et des Effets",
+            "description": "Avec l'introduction des hooks dans React, la gestion de l'état et des effets a atteint un niveau supérieur. Les hooks, tels que useState et useEffect, permettent aux développeurs de gérer l'état local et d'effectuer des actions liées au cycle de vie du composant de manière plus concise. Nous plongerons dans ces hooks essentiels et discuterons de leurs cas d'utilisation."
+          },
+          {
+            "title": "React Router : La Navigation sans Rechargement de Page",
+            "description": "La navigation entre les pages est une nécessité dans de nombreuses applications. React Router fournit une solution élégante pour la gestion de la navigation sans le besoin de recharger la page. Nous explorerons la mise en place de la navigation dans une application React, en soulignant les fonctionnalités essentielles de React Router."
+          },
+          {
+            "title": "Conclusion : Pourquoi Choisir React.js ?",
+            "description": "React.js a transformé la manière dont les développeurs abordent la création d'interfaces utilisateur interactives. Sa simplicité, sa réactivité et son écosystème florissant en font un choix populaire pour une variété de projets. En adoptant les principes fondamentaux de React, vous serez prêt à construire des applications web modernes et performantes."
+          },
+          {
+            "title": "",
+            "description": "Que vous soyez novice ou expert, React.js offre un terrain de jeu robuste pour donner vie à vos idées web. Explorez, expérimentez et plongez dans l'univers réactif de React pour créer des expériences utilisateur exceptionnelles."
+          }
+        ]
+      }
     ]
   },
   "Footer": { "title": "@ 2023 ALL RIGHT RESERVED BY ACH02RAF " }

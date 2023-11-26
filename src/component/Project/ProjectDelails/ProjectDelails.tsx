@@ -9,7 +9,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { Locale } from "../../../../i18n-config";
-import { log } from "console";
 function ProjectDelails(props: {
     ItemsProject: {
       id: string;
@@ -43,7 +42,7 @@ backToHome:string;
           <FontAwesomeIcon className="project-details-contain-backHome-icon" icon={faArrowAltCircleLeft} /></Link>
         </div>
         <div className="col-lg-10 col-12 text-lg-end text-center project-details-title position-relative">
-          <h4 className="">{props?.ItemsProject.nameProject}</h4>
+          <h4 className="">{props?.ItemsProject?.nameProject}</h4>
         </div>
       </div>
       <div className="">
