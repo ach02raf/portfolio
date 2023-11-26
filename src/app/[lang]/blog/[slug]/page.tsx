@@ -18,13 +18,10 @@ export async function generateStaticParams() {
   for (const lang of languages) {
     const dictionary = await getDictionary(lang.lang);
     const blogList = dictionary?.blog?.blogList || [];
-
-    // staticParams.push({
-    //   slug: [ { lang?.lang, itemBlog?.slug }],
-    // });
     staticParams.push(
       ...blogList.map((itemBlog) => ({
-        slug: [lang?.lang, itemBlog?.slug],
+        lang: lang?.lang,
+        slug: itemBlog?.slug,
       }))
     );
   }
@@ -38,7 +35,6 @@ async function Blog({
   params: { lang: Locale; slug: string };
 }) {
   const dictionary = await getDictionary(lang);
-  // Utilisez le dictionnaire et les paramètres pour afficher le contenu du blog
   const blogContent = dictionary?.blog?.blogList?.find(
     (itemBlog) => itemBlog?.slug === slug
   );
