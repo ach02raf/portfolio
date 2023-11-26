@@ -1,10 +1,7 @@
-import Image from "next/image";
 import { getDictionary } from "../../../../../get-dictionary";
 import { Locale } from "../../../../../i18n-config";
 import { i18n } from "../../../../../i18n-config";
 import "./page.scss";
-import style from "@/app/page.module.scss";
-import Header from "@/component/Header/Header";
 import ScrollToTopButton from "@/component/ScrollToTopButton";
 import Footer from "@/component/Footer/Footer";
 import ProjectDelails from "@/component/Project/ProjectDelails/ProjectDelails";
@@ -35,18 +32,24 @@ async function Blog({
   params: { lang: Locale; slug: string };
 }) {
   const dictionary = await getDictionary(lang);
-  // Utilisez le dictionnaire et les paramètres pour afficher le contenu du blog
-  const ItemsProject = dictionary?.Project?.list?.find(
-    (itemProject) => itemProject?.slug === slug
+  const ItemsProject = await dictionary?.Project.list.find(
+    (itemProject) => itemProject.slug === slug
   );
+  console.log(ItemsProject);
+
   return (
-    
     <div className="blog m-0">
-       {/* <Header header={dictionary.header} /> */}
-   <ProjectDelails ItemsProject={ItemsProject} lang={lang} backToHome={dictionary?.header[4].url}/>
-     <Footer Footer={dictionary.Footer} />
-    <ScrollToTopButton />
-     </div>
+      {ItemsProject ? (
+        <ProjectDelails
+          itemsProject={ItemsProject}
+          lang={lang}
+          backToHome={dictionary?.header[4].url}
+        />
+      ) : null}
+
+      <Footer Footer={dictionary.Footer} />
+      <ScrollToTopButton />
+    </div>
   );
 }
 
