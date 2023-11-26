@@ -19,9 +19,12 @@ export async function generateStaticParams() {
     const dictionary = await getDictionary(lang.lang);
     const blogList = dictionary?.blog?.blogList || [];
 
+    // staticParams.push({
+    //   slug: [ { lang?.lang, itemBlog?.slug }],
+    // });
     staticParams.push(
       ...blogList.map((itemBlog) => ({
-        params: { lang: lang.lang, slug: itemBlog?.slug },
+        slug: [  lang?.lang, itemBlog?.slug ]
       }))
     );
   }
@@ -41,6 +44,7 @@ async function Blog({
   );
 
   return (
+    
     <div className="blog m-0">
       
       <div className="blog-contain d-block mx-auto py-5">
@@ -63,11 +67,11 @@ async function Blog({
           <h2>{item?.title}</h2>
           <p>{item?.description}</p>
           </div>
-        ))}
-      </div>
-      <Footer Footer={dictionary.Footer} />
-      <ScrollToTopButton />
-    </div>
+      ))}
+     </div>
+     <Footer Footer={dictionary.Footer} />
+    <ScrollToTopButton />
+     </div>
   );
 }
 

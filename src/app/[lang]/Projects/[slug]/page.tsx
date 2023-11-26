@@ -18,10 +18,17 @@ export async function generateStaticParams() {
 
     staticParams.push(
       ...ProjectList.map((item) => ({
-        params: { lang: lang.lang, slug: item?.slug },
+        slug: [  lang?.lang, item?.slug ]
       }))
     );
   }
+
+  //   staticParams.push(
+  //     ...ProjectList.map((item) => ({
+  //       params: { lang: lang.lang, slug: item?.slug },
+  //     }))
+  //   );
+  // }
 
   return staticParams;
 }
