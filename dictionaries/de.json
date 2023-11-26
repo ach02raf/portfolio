@@ -513,7 +513,8 @@
     "citation": "L'informatique, c'est plus que des lignes de code. C'est l'expression de la créativité, la résolution de problèmes et la construction d'un avenir numérique."
   },
   "blog": {
-    "title":"blogs",
+    "title":"Last blogs",
+    "btnSeeAll":"Tous les blogs",
     "blogList": [
       { "id": 0, "slug": "Construire-des-Fondations-Solides-avec-les-Design-Patterns", "title": "Construire des Fondations Solides avec les Design Patterns", "img":"design-patterns","titleImg":"Construire des Fondations Solides avec les Design Patterns",
       "desc": [{"title":"Introduction","description":"Les Design Patterns sont des solutions éprouvées aux problèmes récurrents rencontrés lors du développement logiciel. Comprendre et appliquer ces modèles peut considérablement améliorer la qualité, la maintenabilité et la flexibilité de votre code. Dans cet article, plongeons dans le monde des Design Patterns et explorons comment ils peuvent enrichir votre arsenal de développement."},

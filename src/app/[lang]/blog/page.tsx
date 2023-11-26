@@ -1,12 +1,13 @@
 import { getDictionary } from "../../../../get-dictionary";
 import { Locale } from "../../../../i18n-config";
-import Header from "@/C/Header/Header";
 import { i18n } from "../../../../i18n-config";
 import ScrollToTopButton from "@/C/ScrollToTopButton";
 import Footer from "@/C/Footer/Footer";
 import Image from "next/image";
 import "./page.scss"
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
@@ -18,8 +19,11 @@ export default async function page({
   const dictionary = await getDictionary(lang);
   return (
     <div className="all-blog">
-      <Header header={dictionary.header} />
      <div className=" all-blog-contain d-block m-auto">
+     <div>
+          <Link href={`/${lang}#${dictionary.header[5].name}`} className="all-blog-contain-backHome my-3">
+          <FontAwesomeIcon className="project-details-contain-backHome-icon" icon={faArrowAltCircleLeft} /></Link>
+        </div>
       <h1 className="py-5">{dictionary?.blog?.title}</h1>
       <div className="row">
      {dictionary?.blog?.blogList?.map((item,index)=>(

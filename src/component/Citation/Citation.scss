@@ -1,6 +1,10 @@
 @import "@/A/global-variables.scss";
 .citation{
-    background-image: url(/Images/screens.jpg);
+    background: url(/Images/screens.jpg), $violet-dark;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    backdrop-filter:opacity(8px);
     &-contain{
         width: 80%;
         max-width: 1000px;

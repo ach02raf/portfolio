@@ -1,5 +1,3 @@
-"use client"
-import React from "react";
 import "./ProjectDelails.scss";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,7 +8,7 @@ import {
   faArrowAltCircleLeft
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import { useRouter } from 'next/navigation'
+import { Locale } from "../../../../i18n-config";
 function ProjectDelails(props: {
     ItemsProject: {
       id: string;
@@ -29,17 +27,18 @@ function ProjectDelails(props: {
       visitSites: string;
       codeSource: string;
       downloadAPK: string;
-}
+};
+lang:Locale;
+backToHome:string;
 
 }) {
-  const router = useRouter()
   return (
     <div className="project-details p-xl-5 p-2">
      <div className="project-details-contain d-block m-auto">
       <div className="row mb-3 ">
         <div className="col-lg-2 col-12">
-          <button className="project-details-contain-backHome" onClick={()=>router.back()}>
-          <FontAwesomeIcon className="project-details-contain-backHome-icon" icon={faArrowAltCircleLeft} /></button>
+          <Link href={`/${props?.lang}#${props?.backToHome}`} className="project-details-contain-backHome">
+          <FontAwesomeIcon className="project-details-contain-backHome-icon" icon={faArrowAltCircleLeft} /></Link>
         </div>
         <div className="col-lg-10 col-12 text-lg-end text-center project-details-title position-relative">
           <h4 className="">{props?.ItemsProject.nameProject}</h4>

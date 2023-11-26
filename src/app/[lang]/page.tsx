@@ -27,7 +27,7 @@ export default async function IndexPage({
       <Header header={dictionary.header} />
       <section id={dictionary.header[0].url}>
         <FirstSection firstSection={dictionary.firstSection} />
-      </section>
+      </section >
       <section id={dictionary.header[1].url}>
         <SecondSection secondSection={dictionary.secondSection} />
       </section>

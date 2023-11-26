@@ -8,7 +8,7 @@ function SecondSection(props: {
   };
 }) {
   return (
-    <div className="row justify-content-between m-0 secondSection">
+    <div className="row justify-content-between  mx-0 secondSection">
       <div className="col-lg-8 ">
         <div className="secondSection-div m-auto">
           <h2 className="secondSection-div-title">

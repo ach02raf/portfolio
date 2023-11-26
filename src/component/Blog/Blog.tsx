@@ -3,6 +3,7 @@ import { Locale } from "../../../i18n-config";
 import "./Blog.scss"
 function Blog(props: { Blog: {
     title: string;
+    btnSeeAll:string
     blogList: {
         id: number;
         slug: string;
@@ -15,15 +16,20 @@ function Blog(props: { Blog: {
         }[];
     }[];
 };
-  lang: Locale;}) {
+  lang: Locale;
+}) {
   return (
-    <div className='Blog-home p-5'>
+    <div className='Blog-home'>
 <div className='Blog-home-contain position-relative d-block py-5 m-auto'>
-    <h2>{props?.Blog?.title}</h2>
-    {props?.Blog?.blogList.map((item,index)=>(
+  <div className="Blog-home-contain-url">
+    <h2 className="container py-4">{props?.Blog?.title}</h2>
+    {props?.Blog?.blogList?.slice(0.3)?.map((item,index)=>(
        <Link className={`Blog-home-contain-${index}`} key={index} href={`/${props?.lang}/blog/${item?.slug}`}> <h3 className="py-3">{item?.title}</h3></Link>
-    ))}
+    ))}  
     </div>
+    <Link className="Blog-home-link my-5 p-3" href={`/${props?.lang}/blog`}>{props?.Blog?.btnSeeAll}</Link>
+    </div>
+  
     </div>
   )
 }

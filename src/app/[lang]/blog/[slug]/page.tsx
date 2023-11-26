@@ -3,10 +3,11 @@ import { getDictionary } from "../../../../../get-dictionary";
 import { Locale } from "../../../../../i18n-config";
 import { i18n } from "../../../../../i18n-config";
 import "./page.scss";
-import style from "@/app/page.module.scss";
-import Header from "@/component/Header/Header";
 import ScrollToTopButton from "@/component/ScrollToTopButton";
 import Footer from "@/component/Footer/Footer";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
 
 export const dynamicParams = false;
 
@@ -42,10 +43,14 @@ async function Blog({
   return (
     
     <div className="blog m-0">
-       <Header header={dictionary.header} />
       
-      <div className="blog-contain d-block mx-auto py-4">
+      <div className="blog-contain d-block mx-auto py-5">
+      <div>
+          <Link href={`/${lang}#${dictionary.header[5].name}`} className="blog-contain-backHome my-3">
+          <FontAwesomeIcon className="project-details-contain-backHome-icon" icon={faArrowAltCircleLeft} /></Link>
+        </div>
       <div className="blog-contain-img position-relative" >
+    
       <Image src={`/Images/${blogContent?.img}.jpg`}
       alt="blog"
       title={blogContent?.titleImg}

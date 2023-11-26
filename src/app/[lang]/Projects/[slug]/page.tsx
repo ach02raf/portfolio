@@ -43,7 +43,7 @@ async function Blog({
     
     <div className="blog m-0">
        {/* <Header header={dictionary.header} /> */}
-   <ProjectDelails ItemsProject={ItemsProject} />
+   <ProjectDelails ItemsProject={ItemsProject} lang={lang} backToHome={dictionary?.header[4].url}/>
      <Footer Footer={dictionary.Footer} />
     <ScrollToTopButton />
      </div>

@@ -1,10 +1,11 @@
 @import "@/A/global-variables.scss";
 .all-blog{
     background-color: $violet-dark;
-    height: 100%;
+    padding-top: 6% !important;
+    padding-bottom: 6% !important;
+    min-height: 100vh;
     &-contain{
         width: 80%;
-        margin: 7% auto !important;
         h1{
             font-weight: 600;
         }
@@ -20,5 +21,19 @@
                 object-fit: cover;
             }
         }
+        &-backHome{
+            border: none !important;
+            background-color: transparent !important;
+            position: relative;
+            text-decoration: none !important;
+            display: block !important;
+            width:50px;
+            height: 50px;
+            &-icon{
+              width:50px;
+              height: 50px !important;
+              color: $white !important;
+            }
+          }
     }
 }

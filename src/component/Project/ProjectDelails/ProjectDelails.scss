@@ -4,11 +4,10 @@ background-color: $violet-dark;
 &-contain{
   width:80%;
   &-backHome{
-    width:50px;
-    height: 50px;
-    border: none;
+    border: none !important;
     background-color: transparent !important;
     position: relative;
+    text-decoration: none !important;
     &-icon{
       width:50px;
       height: 50px;

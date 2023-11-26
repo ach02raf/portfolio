@@ -28,7 +28,7 @@ function Project(props: {
   lang: Locale;
 }) {
   return (
-    <div className="project py-5">
+    <div className="project">
       {" "}
       <div className="project-container d-block m-auto">
         {" "}

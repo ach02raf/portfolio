@@ -40,11 +40,15 @@ h2 {
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
+
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: $violet-dark;
+  border: 1px solid $white;
+  border-radius:25px ;
+
 }
 
 /* Handle on hover */
@@ -68,4 +72,41 @@ p{
   @media screen and (max-width: 767px) {
     font-size: 0.85rem !important;
   }
+}
+
+.reseau-social{
+  bottom: 15%;
+  left: 2%;
+  @media screen and (max-width : 992px ){
+    left: 1%;
+  } 
+svg{
+  fill: #ffffffaa;
+  @media screen and (max-width : 992px ){
+    height: 1rem !important;
+  } 
+
+}
+  a{
+    display: block !important;
+    margin: 20px auto !important;
+  }
+  a:hover{
+    svg{
+      fill:$yellow;
+    }
+  }
+}
+.reseau-social:after{
+content:"";
+content: "";
+width: 2px;
+display: block;
+height: 200px;
+background-color: #ffffffaa;
+position: absolute;
+left: calc(2% + 0.9rem);
+@media screen and (max-width : 992px ){
+  left: calc(1% + 0.4rem);
+} 
 }
