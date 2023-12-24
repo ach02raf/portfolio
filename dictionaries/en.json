@@ -54,11 +54,7 @@
       "). There, you will find my achievements, particularly in JS/TS family technologies. My commitment to technical excellence and my ability to creatively solve problems drive me to continually reach new heights in the field of software development."
     ]
   },
-  "slider": {
-    "salutation": "Hello",
-    "nom": "i'm Safa Chaabane",
-    "work": ["Freelance", "web developer", "full stack developer"]
-  },
+
   "ServicesSection": {
     "title": ["My", "Services"],
     "description": "LET'S TAKE A QUICK LOOK AT MY SERVICES",

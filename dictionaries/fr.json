@@ -54,11 +54,6 @@
       "). Vous y découvrirez mes réalisations, notamment dans les technologies de la famille JS/TS. Mon dévouement envers l'excellence technique et ma capacité à résoudre créativement des problèmes me stimulent à atteindre continuellement de nouveaux sommets dans le domaine du développement informatique."
     ]
   },
-  "slider": {
-    "salutation": "Bonjour",
-    "nom": "Je suis Safa Chaabane",
-    "work": ["Freelance", "web developer", "full stack developer"]
-  },
   "ServicesSection": {
     "title": ["Mes", "services"],
     "description": "FAISONS UN PEU LE TOUR DE MES SERVICES",

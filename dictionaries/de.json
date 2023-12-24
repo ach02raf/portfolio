@@ -54,11 +54,7 @@
       ") zu besuchen. Dort finden Sie meine Leistungen, insbesondere in den Technologien der JS/TS-Familie. Mein Engagement für technische Exzellenz und meine Fähigkeit, kreativ Probleme zu lösen, motivieren mich dazu, kontinuierlich neue Höhen im Bereich der Softwareentwicklung zu erreichen."
     ]
   },
-  "slider": {
-    "salutation": "Hello",
-    "nom": "i'm Safa Chaabane",
-    "work": ["Freelance", "web developer", "full stack developer"]
-  },
+
   "ServicesSection": {
     "title": ["Meine", "Dienstleistungen"],
     "description": "LASSEN SIE UNS EINEN BLICK AUF MEINE DIENSTLEISTUNGEN WERFEN",
