@@ -14,7 +14,7 @@ function FirstSection(props: {
   const name = props.firstSection.name.split(" ");
   return (
     <div className="row m-0 h-100 w-100 firstSection">
-      <div className="col-lg-8 d-block m-auto ">
+      <div className="col-lg-7 d-block m-auto ">
         <div className="firstSection-div m-auto">
           <h2>{props.firstSection.title}</h2>
           <h2>
@@ -41,16 +41,23 @@ function FirstSection(props: {
           </div>
         </div>
       </div>
-      <div className="col-lg-4">
-        <Image
+      <div className="col-lg-5 position-relative">
+      {/* <Image
           width={416}
           height={599}
           src={"/Images/profile.png"}
           alt="BEN FREDJ Mohamed Achraf"
           title="BEN FREDJ Mohamed Achraf"
-        />
+        /> */}
+<Image
+          width={416}
+          height={599}
+          src={"/achref-photo-.png"}
+          alt="BEN FREDJ Mohamed Achraf"
+          title="BEN FREDJ Mohamed Achraf"
+        /></div>
       </div>
-    </div>
+
   );
 }
 export default FirstSection;
