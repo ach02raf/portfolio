@@ -37,21 +37,23 @@
     }
   ],
   "firstSection": {
-    "title": "Bonjour, Je m'appelle ",
-    "name": "BEN FREDJ Mohamed Achraf",
-    "description": ["Je suis un étudiant en ingénierie informatique"],
+    "title": "Je suis ",
+    "name": "Mohamed Achraf BEN FREDJ,",
+    "description": [
+      "ingénieur en informatique, passionné par le développement web, mobile et l’univers DevOps."
+    ],
     "cv": "Télécharger CV"
   },
   "secondSection": {
     "title": ["À propos", "de moi"],
     "description": [
-      "Je viens de conclure avec succès un parcours de trois ans en licence fondamentale en informatique, spécialisé en génie logiciel, à l'Institut Supérieur d'Informatique et de Mathématiques de Monastir (",
-      "ISIMM",
-      ").  À l'issue de cette étape, j'ai obtenu le titre de technicien en informatique, renforçant ainsi mes compétences pratiques de manière significative. Actuellement inscrit en troisième année du cycle d'ingénierie en informatique à l'Université TEK-UP (",
+      "  Ingénieur en informatique diplômé de (",
       "TEK-UP",
-      "), je me spécialise dans le Développement Mobile, Web et Multimédia (DMWM). Animé par une quête incessante d'excellence, je suis activement à la recherche d'une opportunité de stage de fin d'études PFE . Mon expérience professionnelle s'est enrichie au fil de multiples stages réalisés pendant ma licence, ainsi que de deux stages durant mon cycle d'ingénierie. En tant que membre actif de l'équipe de Zeta Engineering depuis les six derniers mois avec le poste d'un développeur web, je m'investis pleinement dans des projets concrets et stimulants. Mon portfolio, disponible à la suite de ce texte, illustre la diversité et la qualité des projets que j'ai réalisé. Pour une exploration plus approfondie de mon travail, je vous encourage également à consulter mon GitHub (",
+      ").  spécialisé en Développement Mobile, Web et Multimédia, après une licence en informatique à (",
+      " l’ISIMM",
+      "), Mes compétences en développement full-stack ont été renforcées par plusieurs projets et stages, notamment en tant que développeur web chez Zeta Engineering. Passionné par l’écosystème JavaScript/TypeScript, je conçois des applications modernes, performantes et centrées utilisateur. Découvrez mes réalisations sur mon GitHub (",
       "ach02raf",
-      "). Vous y découvrirez mes réalisations, notamment dans les technologies de la famille JS/TS. Mon dévouement envers l'excellence technique et ma capacité à résoudre créativement des problèmes me stimulent à atteindre continuellement de nouveaux sommets dans le domaine du développement informatique."
+      "), reflet de mon engagement pour l’excellence et l’innovation dans le développement logiciel."
     ]
   },
   "ServicesSection": {
@@ -108,15 +110,7 @@
       {
         "id": 0,
         "title": "Langages de programmation",
-        "listeLangage": [
-          "C",
-          "C-SHARP",
-          "JAVA",
-          "JAVASCRIPT",
-          "TYPESCRIPT",
-          "PYTHON",
-          "PHP"
-        ]
+        "listeLangage": ["C", "C-SHARP", "JAVA", "JAVASCRIPT", "TYPESCRIPT", "PYTHON", "PHP"]
       },
       {
         "id": 1,
@@ -154,7 +148,19 @@
       {
         "id": 5,
         "title": "DevOps",
-        "listeLangage": ["GIT", "GITHUB", "JENKINS", "HOSTINGER", "AWS"]
+        "listeLangage": [
+          "GIT",
+          "GITHUB",
+          "JENKINS",
+          "HOSTINGER",
+          "AWS",
+          "DOCKER",
+          "SONARQUBE",
+          "NEXUS",
+          "OWASP",
+          "GRAFANA",
+          "PROMETHEUS"
+        ]
       },
       {
         "id": 6,
@@ -181,7 +187,7 @@
             "Optimiser le SEO des sites inclus dans les deux packs"
           ],
           "dateDeb": "Août 2023 ",
-          "dateFin": "Présent"
+          "dateFin": "Janvier 2024"
         },
         {
           "title": "ZETA Engineering",
@@ -227,7 +233,7 @@
           "subtitle": "Ingenieurie en informatique",
           "desc": ["specialité developement web, mobile et multimedia"],
           "dateDeb": "2021",
-          "dateFin": "Présent"
+          "dateFin": "2024"
         },
         {
           "title": "ISIMM | Institut Supérieur d'Informatique et de Mathématiques de Monastir",
@@ -402,14 +408,7 @@
         ],
         "apk": "",
         "usedTools": "Les outils utilisés",
-        "tools": [
-          "WORDPRESS",
-          "PHP",
-          "JAVASCRIPT",
-          "HTML",
-          "SCSS-SASS",
-          "HOSTINGER"
-        ]
+        "tools": ["WORDPRESS", "PHP", "JAVASCRIPT", "HTML", "SCSS-SASS", "HOSTINGER"]
       },
       {
         "id": "5",

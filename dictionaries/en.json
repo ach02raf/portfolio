@@ -37,21 +37,23 @@
     }
   ],
   "firstSection": {
-    "title": "Hello , My Name is ",
-    "name": "BEN FREDJ Mohamed Achraf",
-    "description": [" I am a computer engineer"],
+    "title": "I am ",
+    "name": "Mohamed Achraf BEN FREDJ,",
+    "description": [
+      "a computer science engineer, passionate about web and mobile development, and the DevOps world."
+    ],
     "cv": "Download CV"
   },
   "secondSection": {
-    "title": ["About", "me"],
+    "title": ["About", "Me"],
     "description": [
-      "I have recently successfully completed a three-year program in fundamental computer science, specializing in software engineering, at the Higher Institute of Computer Science and Mathematics of Monastir (",
-      "ISIMM",
-      "). Upon completing this stage, I earned the title of computer technician, significantly enhancing my practical skills. Currently enrolled in the third year of the computer engineering program at TEK-UP University (",
+      "  Computer engineering graduate from (",
       "TEK-UP",
-      "), I am specializing in Mobile, Web, and Multimedia Development DMWM. Driven by a constant pursuit of excellence, I am actively seeking an opportunity for my final year project PFE. My professional experience has grown through multiple internships during my undergraduate studies and two internships during my engineering program. As an active member of Zeta Engineering's web development team for the past six months, I am fully engaged in concrete and stimulating projects. My portfolio, available following this text, showcases the diversity and quality of the projects I have undertaken. For a more in-depth exploration of my work, I also encourage you to check out my GitHub (",
+      "). Specialized in Mobile, Web, and Multimedia Development, after earning a Bachelor's degree in Computer Science at (",
+      "ISIMM",
+      "), my full-stack development skills have been strengthened through various projects and internships, notably as a web developer at Zeta Engineering. Passionate about the JavaScript/TypeScript ecosystem, I design modern, high-performance, and user-centered applications. Discover my work on my GitHub (",
       "ach02raf",
-      "). There, you will find my achievements, particularly in JS/TS family technologies. My commitment to technical excellence and my ability to creatively solve problems drive me to continually reach new heights in the field of software development."
+      "), reflecting my commitment to excellence and innovation in software development."
     ]
   },
 
@@ -109,15 +111,7 @@
       {
         "id": 0,
         "title": "Programming Languages",
-        "listeLangage": [
-          "C",
-          "C-SHARP",
-          "JAVA",
-          "JAVASCRIPT",
-          "TYPESCRIPT",
-          "PYTHON",
-          "PHP"
-        ]
+        "listeLangage": ["C", "C-SHARP", "JAVA", "JAVASCRIPT", "TYPESCRIPT", "PYTHON", "PHP"]
       },
       {
         "id": 1,
@@ -154,7 +148,19 @@
       {
         "id": 5,
         "title": "DevOps",
-        "listeLangage": ["GIT", "GITHUB", "JENKINS", "HOSTINGER", "AWS"]
+        "listeLangage": [
+          "GIT",
+          "GITHUB",
+          "JENKINS",
+          "HOSTINGER",
+          "AWS",
+          "DOCKER",
+          "SONARQUBE",
+          "NEXUS",
+          "OWASP",
+          "GRAFANA",
+          "PROMETHEUS"
+        ]
       },
       {
         "id": 6,
@@ -181,7 +187,7 @@
             "Optimized SEO for the sites included in both packages"
           ],
           "dateDeb": "August 2023",
-          "dateFin": "Present"
+          "dateFin": "January 2024"
         },
         {
           "title": "ZETA Engineering",
@@ -227,7 +233,7 @@
           "subtitle": "Computer Engineering",
           "desc": ["Specialization in web, mobile, and multimedia development"],
           "dateDeb": "2021",
-          "dateFin": "Present"
+          "dateFin": "2024"
         },
         {
           "title": "ISIMM | Higher Institute of Computer Science and Mathematics, Monastir",
@@ -402,14 +408,7 @@
         ],
         "apk": "",
         "usedTools": "Tools Used",
-        "tools": [
-          "WORDPRESS",
-          "PHP",
-          "JAVASCRIPT",
-          "HTML",
-          "SCSS-SASS",
-          "HOSTINGER"
-        ]
+        "tools": ["WORDPRESS", "PHP", "JAVASCRIPT", "HTML", "SCSS-SASS", "HOSTINGER"]
       },
       {
         "id": "5",
