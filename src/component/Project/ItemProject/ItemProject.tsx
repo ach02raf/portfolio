@@ -10,7 +10,7 @@ function ItemProject(props: {
   ItemsProject: {
     id: string;
     nameProject: string;
-    slug:string;
+    slug: string;
     title: string;
     descProject: string;
     imgProject: string[];
@@ -27,13 +27,10 @@ function ItemProject(props: {
   };
   lang: Locale;
 }) {
- 
   return (
-      <div className="row itemProject">
-         <Link href={`/${props?.lang}/Projects/${props?.ItemsProject?.slug}`}>
-        <div
-          className="itemProject-img d-block m-auto p-0"
-        >
+    <div className="row itemProject">
+      <Link href={`/${props?.lang}/Projects/${props?.ItemsProject?.slug}`}>
+        <div className="itemProject-img d-block m-auto p-0">
           {props?.ItemsProject?.imgProject[0] && (
             <Image
               src={`/Images/${props?.ItemsProject?.imgProject[0]}.png`}
@@ -43,7 +40,6 @@ function ItemProject(props: {
               width={512}
             />
           )}
-        
 
           {props?.ItemsProject?.urlSITE[0] && (
             <div>
@@ -77,9 +73,8 @@ function ItemProject(props: {
             </h3>
           )}
         </div>
-        </Link>
-      </div>
-  
+      </Link>
+    </div>
   );
 }
 

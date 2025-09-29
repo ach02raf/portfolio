@@ -66,7 +66,7 @@
   color: #fff !important;
   font-weight: 600;
 }
-.project-details h5:after {
+.project-details h5::after {
   content: "";
   border-bottom: 1px solid #fff;
   left: 0px;
@@ -88,10 +88,13 @@
   padding: 0.8rem 1rem 0.1rem;
   font-weight: 600;
   text-decoration: none;
+  text-align: center;
+  color: #fff;
 }
 .project-details-url:hover {
   border: 2px solid #fec260;
   background-color: #fec260;
+  color: #111;
 }
 .project-details-other-link img {
   transition: 0.2s;

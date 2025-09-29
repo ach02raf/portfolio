@@ -64,13 +64,16 @@ function FeaturedProject(props: {
         <div className="col-md-6 info-wrapper">
           <h3 className="mb-2">{project.title}</h3>
           <p className="project-subtitle p-1">{t.subtitle}</p>
-          <p>{project.descProject}</p>
+          <p className="fs-6">{project.descProject.slice(0, 107)}...</p>
 
           <h5>{t.tech}</h5>
           <ul>
-            {project.tools.map((tool: string, index: number) => (
-              <li key={index}>{tool}</li>
-            ))}
+            {project?.tools &&
+              project?.tools?.map((tool: string, index: number) => (
+                <li className="fs-8" key={index}>
+                  {tool}
+                </li>
+              ))}
           </ul>
 
           <Link
