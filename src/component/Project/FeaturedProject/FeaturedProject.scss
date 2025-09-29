@@ -1,0 +1,140 @@
+@import "@/A/global-variables.scss";
+
+.featured-project {
+  position: relative;
+  background: linear-gradient(135deg, $violet-dark 0%, $violet-light 100%);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  color: $white;
+  overflow: hidden;
+  animation: fadeInUp 1s ease forwards;
+
+  /* Badge avec logo et texte */
+  .badge-project {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: $violet-dark;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0 30px 30px 0;
+    font-size: 0.9rem;
+    animation: badgePulse 2s infinite;
+
+    .badge-logo {
+      height: 45px;
+    }
+  }
+
+  .video-wrapper {
+    video {
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba($black, 0.4);
+      transition: transform 0.4s ease;
+    }
+  }
+  .info-wrapper {
+    background: linear-gradient(
+        135deg,
+        rgba($violet-dark, 0.85) 0%,
+        rgba($violet-light, 0.85) 100%
+      ),
+      url("/Images/Communiclogohorizontal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    position: relative;
+    color: $white;
+    &::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 5px;
+      background: $yellow;
+      margin: 0.5rem 0 0;
+      border-radius: 3px;
+      animation: slideIn 1s ease;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    li {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      transition: all 0.3s ease;
+      &:hover {
+        background: $yellow;
+        color: $violet-dark;
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  .btn-primary {
+    background-color: $yellow;
+    color: $violet-dark !important;
+    border: none;
+    padding: 0.7rem 1.7rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: lighten($yellow, 10%);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba($black, 0.3);
+    }
+  }
+}
+.project-subtitle {
+  font-size: 1rem;
+  color: rgba($white, 0.8);
+  background-color: rgba($yellow, 0.2);
+  width: fit-content;
+  border-radius: 7px;
+  animation: fadeInUp 1s ease forwards;
+}
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes badgePulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100px;
+  }
+}

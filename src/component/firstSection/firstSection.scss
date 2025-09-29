@@ -1,9 +1,16 @@
 @import "@/A/global-variables.scss";
 .firstSection {
-  background-image: linear-gradient(to right, $violet-dark, #2b0945e3, #44285b96),
+  background-image: linear-gradient(
+      to right,
+      $violet-dark,
+      #2b0945e3,
+      #44285b96
+    ),
     url(../../../public/Images/back.png);
-height:100vh;
-
+  height: 90vh;
+  max-height: 1080px;
+  @media screen and (max-width: 992px) {
+  }
   span {
     color: $yellow;
   }
@@ -18,8 +25,9 @@ height:100vh;
     width: auto !important;
     height: auto !important;
     max-height: 90vh !important;
-
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   &-Typewriter {
     min-height: 150px;

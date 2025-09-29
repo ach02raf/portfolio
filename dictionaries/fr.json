@@ -110,7 +110,15 @@
       {
         "id": 0,
         "title": "Langages de programmation",
-        "listeLangage": ["C", "C-SHARP", "JAVA", "JAVASCRIPT", "TYPESCRIPT", "PYTHON", "PHP"]
+        "listeLangage": [
+          "C",
+          "C-SHARP",
+          "JAVA",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "PYTHON",
+          "PHP"
+        ]
       },
       {
         "id": 1,
@@ -256,6 +264,32 @@
     "title": ["Mes Dernieres", " projets"],
     "list": [
       {
+        "id": "-1",
+        "nameProject": "Dashboard Organisationnel Multiniveau",
+        "slug": "dashboard-multiniveau",
+        "infoProject": "Gestion complète (RH, docs, messagerie)",
+        "visitSites": "https://communicflow.ach02raf.pro/Events",
+        "codeSource": "",
+        "downloadAPK": "",
+        "title": "Dashboard Organisationnel Multiniveau",
+        "descProject": "Développement d’un dashboard organisationnel multiniveau",
+        "imgProject": [],
+        "videoProject": "demo-communic-flow",
+        "urlProject": [],
+        "urlSITE": ["https://communicflow.ach02raf.pro/Events"],
+        "apk": "",
+        "usedTools": "React, Node.js, MySQL, Docker, Jenkins, Socket.IO, Tailwind CSS",
+        "tools": [
+          "React",
+          "Node.js",
+          "MySQL",
+          "Docker",
+          "Jenkins",
+          "Socket.IO",
+          "Tailwind CSS"
+        ]
+      },
+      {
         "id": "0",
         "nameProject": "ALLO DOCTOR",
         "slug": "allo-doctor",
@@ -370,7 +404,7 @@
         "imgProject": [
           "all-sitewordpress",
           "1001-architecture",
-          "surfcom",
+          "truecom",
           "surfcom",
           "maison-presto",
           "escaliere",
@@ -397,18 +431,25 @@
           "https://klass-design.fr",
           "https://reno-deco.fr",
           "https://mur-mur.fr/",
-          "https://global-reno.fr/",
+          "https://www.global-reno.com/",
           "https://sopranet.fr/",
           "https://renov-en-main.fr",
-          "https://open-mur.fr/",
+          "https://www.open-mur.com/",
           "https://enirop.com",
-          "https://muretremie.fr/",
+          "https://www.mur-et-tremie.com/",
           "https://architectis.fr/",
           "https://www.agexis.com"
         ],
         "apk": "",
         "usedTools": "Les outils utilisés",
-        "tools": ["WORDPRESS", "PHP", "JAVASCRIPT", "HTML", "SCSS-SASS", "HOSTINGER"]
+        "tools": [
+          "WORDPRESS",
+          "PHP",
+          "JAVASCRIPT",
+          "HTML",
+          "SCSS-SASS",
+          "HOSTINGER"
+        ]
       },
       {
         "id": "5",
@@ -423,33 +464,7 @@
         "imgProject": ["spacy-and-cosy"],
         "videoProject": "",
         "urlProject": [""],
-        "urlSITE": ["https://spacy-and-cosy.fr/"],
-        "apk": "",
-        "usedTools": "Les outils utilisés",
-        "tools": [
-          "NEXT.JS",
-          "BOOTSTRAP-5",
-          "JAVASCRIPT",
-          "TYPESCRIPT",
-          "TAILWIND-CSS",
-          "SCSS-SASS",
-          "HOSTINGER"
-        ]
-      },
-      {
-        "id": "6",
-        "nameProject": "Structural Wood",
-        "slug": "structural-wood",
-        "infoProject": "INFOS PROJET",
-        "visitSites": "Visiter le site",
-        "codeSource": "Voir le code source",
-        "downloadAPK": "Télécharcher l'APK",
-        "title": "Création d'un site vetrine avec le framework next js",
-        "descProject": "",
-        "imgProject": ["structural-wood"],
-        "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://structural-wood.fr/"],
+        "urlSITE": ["https://www.spacy-and-cosy.com/"],
         "apk": "",
         "usedTools": "Les outils utilisés",
         "tools": [
@@ -475,7 +490,7 @@
         "imgProject": ["structural-metal"],
         "videoProject": "",
         "urlProject": [""],
-        "urlSITE": ["https://structural-metal.fr/"],
+        "urlSITE": ["https://www.structural-metal.com/"],
         "apk": "",
         "usedTools": "Les outils utilisés",
         "tools": [
@@ -501,7 +516,7 @@
         "imgProject": ["structural-home"],
         "videoProject": "",
         "urlProject": [""],
-        "urlSITE": ["https://structural-home.fr/"],
+        "urlSITE": ["https://www.structural-home.com/"],
         "apk": "",
         "usedTools": "Les outils utilisés",
         "tools": [
@@ -651,5 +666,33 @@
       }
     ]
   },
-  "Footer": { "title": "@ 2023 TOUS DROITS RÉSERVÉS PAR ACH02RAF" }
+  "Footer": { "title": "@ 2023 TOUS DROITS RÉSERVÉS PAR ACH02RAF" },
+  "otherProjets": [
+    {
+      "id": "6",
+      "nameProject": "Structural Wood",
+      "slug": "structural-wood",
+      "infoProject": "INFOS PROJET",
+      "visitSites": "Visiter le site",
+      "codeSource": "Voir le code source",
+      "downloadAPK": "Télécharcher l'APK",
+      "title": "Création d'un site vetrine avec le framework next js",
+      "descProject": "",
+      "imgProject": ["structural-wood"],
+      "videoProject": "",
+      "urlProject": [""],
+      "urlSITE": ["https://structural-wood.fr/"],
+      "apk": "",
+      "usedTools": "Les outils utilisés",
+      "tools": [
+        "NEXT.JS",
+        "BOOTSTRAP-5",
+        "JAVASCRIPT",
+        "TYPESCRIPT",
+        "TAILWIND-CSS",
+        "SCSS-SASS",
+        "HOSTINGER"
+      ]
+    }
+  ]
 }

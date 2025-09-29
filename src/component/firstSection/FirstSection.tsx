@@ -41,7 +41,7 @@ function FirstSection(props: {
           </div>
         </div>
       </div>
-      <div className="col-lg-5 position-relative d-flex align-items-center">
+      <div className="col-lg-5 col-12 position-relative d-flex align-items-lg-end">
         <Image
           width={416}
           height={599}
