@@ -5,7 +5,7 @@ const nextConfig = {
   distDir: "docs",
   reactStrictMode: true,
   images: {
-    domains: ["ach02raf.com"],
+    domains: ["ach02raf.pro"],
     path: "/",
     unoptimized: true,
   },
