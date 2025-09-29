@@ -13,12 +13,13 @@ function FirstSection(props: {
 }) {
   const name = props.firstSection.name.split(" ");
   return (
-    <div className="row m-0 h-100 w-100 firstSection">
+    <div className="row m-0 firstSection w-100">
       <div className="col-lg-7 d-block m-auto ">
         <div className="firstSection-div m-auto">
           {/* <h2>{props.firstSection.title}</h2> */}
           <h2>
-            {name[0] + " " + name[1] + " "} <span>{name[2] + " " + name[3]}</span>
+            {name[0] + " " + name[1] + " "}{" "}
+            <span>{name[2] + " " + name[3]}</span>
           </h2>
           <h2 className="firstSection-Typewriter">
             <Typewriter
@@ -40,7 +41,7 @@ function FirstSection(props: {
           </div>
         </div>
       </div>
-      <div className="col-lg-5 position-relative">
+      <div className="col-lg-5 position-relative d-flex align-items-center">
         <Image
           width={416}
           height={599}
