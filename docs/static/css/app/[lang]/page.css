@@ -43,7 +43,8 @@
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .firstSection {
   background-image: linear-gradient(to right, #2b0945, rgba(43, 9, 69, 0.8901960784), rgba(68, 40, 91, 0.5882352941)), url(/_next/static/media/back.e3f7b494.png);
-  height: 100vh;
+  height: 90vh;
+  max-height: 1080px;
 }
 .firstSection span {
   color: #fec260;
@@ -62,6 +63,8 @@
   height: auto !important;
   max-height: 90vh !important;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .firstSection-Typewriter {
   min-height: 150px;
@@ -516,4 +519,132 @@
   height: 100%;
   background-color: #2b0945;
   border-radius: 25px;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/component/Project/FeaturedProject/FeaturedProject.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.featured-project {
+  position: relative;
+  background: linear-gradient(135deg, #2b0945 0%, #44285b 100%);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  color: #fff;
+  overflow: hidden;
+  animation: fadeInUp 1s ease forwards;
+  /* Badge avec logo et texte */
+}
+.featured-project .badge-project {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2b0945;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0 30px 30px 0;
+  font-size: 0.9rem;
+  animation: badgePulse 2s infinite;
+}
+.featured-project .badge-project .badge-logo {
+  height: 45px;
+}
+.featured-project .video-wrapper video {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(17, 17, 17, 0.4);
+  transition: transform 0.4s ease;
+}
+.featured-project .info-wrapper {
+  background: linear-gradient(135deg, rgba(43, 9, 69, 0.85) 0%, rgba(68, 40, 91, 0.85) 100%), url("/Images/Communiclogohorizontal.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.featured-project h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  position: relative;
+  color: #fff;
+}
+.featured-project h3::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background: #fec260;
+  margin: 0.5rem 0 0;
+  border-radius: 3px;
+  animation: slideIn 1s ease;
+}
+.featured-project ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.featured-project ul li {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+.featured-project ul li:hover {
+  background: #fec260;
+  color: #2b0945;
+  transform: translateY(-3px);
+}
+.featured-project .btn-primary {
+  background-color: #fec260;
+  color: #2b0945 !important;
+  border: none;
+  padding: 0.7rem 1.7rem;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.featured-project .btn-primary:hover {
+  background-color: rgb(254.31875, 213.44375, 146.68125);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(17, 17, 17, 0.3);
+}
+
+.project-subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(254, 194, 96, 0.2);
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 7px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes badgePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+@keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100px;
+  }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import "./Project.scss";
 import ItemProject from "./ItemProject/ItemProject";
 import { Locale } from "../../../i18n-config";
+import FeaturedProject from "./FeaturedProject/FeaturedProject";
 
 function Project(props: {
   Project: {
@@ -9,7 +10,7 @@ function Project(props: {
     list: {
       id: string;
       nameProject: string;
-      slug:string;
+      slug: string;
       infoProject: string;
       visitSites: string;
       codeSource: string;
@@ -27,6 +28,8 @@ function Project(props: {
   };
   lang: Locale;
 }) {
+  const firstProject = props.Project.list[0];
+  const remainingProjects = props.Project.list.slice(1);
   return (
     <div className="project">
       {" "}
@@ -36,12 +39,15 @@ function Project(props: {
           {props?.Project?.title[0] + " "}
           <span>{props?.Project?.title[1]}</span>
         </h2>
-        <div className="row py-3 ">
-          {props?.Project?.list.map((ItemsProject, index) => (
+        {firstProject && (
+          <FeaturedProject project={firstProject} lang={props.lang} />
+        )}
+        {/* Afficher le reste des projets */}
+        <div className="row py-3">
+          {remainingProjects.map((ItemsProject, index) => (
             <div key={index} className="col-xl-4 col-md-6 col-12 p-3">
-              {" "}
               <div className="project-container-item position-relative">
-                <ItemProject key={index} ItemsProject={ItemsProject} lang={props?.lang} />
+                <ItemProject ItemsProject={ItemsProject} lang={props.lang} />
               </div>
             </div>
           ))}
