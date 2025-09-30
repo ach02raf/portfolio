@@ -11,19 +11,42 @@ function ItemProject(props: {
     id: string;
     nameProject: string;
     slug: string;
-    title: string;
-    descProject: string;
-    imgProject: string[];
-    videoProject: string;
-    urlProject: string[];
-    urlSITE: string[];
-    apk: string;
-    usedTools: string;
-    tools: string[];
-    infoProject: string;
-    visitSites: string;
-    codeSource: string;
-    downloadAPK: string;
+    infoProject?: string;
+    visitSites?: string;
+    codeSource?: string;
+    downloadAPK?: string;
+    title?: string;
+    descProject?: string;
+    imgProject?: string[];
+    videoProject?: string;
+    urlProject?: string[];
+    urlSITE?: string[];
+    apk?: string;
+    usedTools?: string;
+    tools?: string[];
+    technologies?: {
+      title: string;
+      Développement: string[];
+      DevOps: string[];
+    };
+    description?: {
+      title: string;
+      points: string[];
+    };
+    devopsProcess?: {
+      title: string;
+      steps: string[];
+    };
+    utilisation?: {
+      title: string;
+      url: string;
+      login: string;
+      password: string;
+    };
+    rapport?: {
+      url: string;
+      label: string;
+    };
   };
   lang: Locale;
 }) {
@@ -31,17 +54,18 @@ function ItemProject(props: {
     <div className="row itemProject">
       <Link href={`/${props?.lang}/Projects/${props?.ItemsProject?.slug}`}>
         <div className="itemProject-img d-block m-auto p-0">
-          {props?.ItemsProject?.imgProject[0] && (
-            <Image
-              src={`/Images/${props?.ItemsProject?.imgProject[0]}.png`}
-              alt={props?.ItemsProject?.imgProject[0]}
-              title={props?.ItemsProject?.imgProject[0]}
-              height={512}
-              width={512}
-            />
-          )}
+          {props?.ItemsProject?.imgProject &&
+            props?.ItemsProject?.imgProject[0] && (
+              <Image
+                src={`/Images/${props?.ItemsProject?.imgProject[0]}.png`}
+                alt={props?.ItemsProject?.imgProject[0]}
+                title={props?.ItemsProject?.imgProject[0]}
+                height={512}
+                width={512}
+              />
+            )}
 
-          {props?.ItemsProject?.urlSITE[0] && (
+          {props?.ItemsProject?.urlSITE && props?.ItemsProject?.urlSITE[0] && (
             <div>
               {" "}
               <h3 className="text-center py-3 px-2">
@@ -67,11 +91,13 @@ function ItemProject(props: {
               </h3>
             </div>
           )}
-          {!props?.ItemsProject?.apk && !props?.ItemsProject?.urlSITE[0] && (
-            <h3 className="text-center py-3 px-2">
-              {props?.ItemsProject?.nameProject}
-            </h3>
-          )}
+          {!props?.ItemsProject?.apk &&
+            props?.ItemsProject.urlSITE &&
+            !props?.ItemsProject.urlSITE[0] && (
+              <h3 className="text-center py-3 px-2">
+                {props?.ItemsProject?.nameProject}
+              </h3>
+            )}
         </div>
       </Link>
     </div>

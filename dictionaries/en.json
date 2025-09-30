@@ -160,7 +160,6 @@
           "GIT",
           "GITHUB",
           "JENKINS",
-          "HOSTINGER",
           "AWS",
           "DOCKER",
           "SONARQUBE",
@@ -187,18 +186,18 @@
       "title": "Experience",
       "list": [
         {
-  "title": "ASQII",
-  "subtitle": "Final Year Internship",
-  "desc": [
-    "Development of a multi-level organizational dashboard",
-    "Modules: event management, complaints, file management, Power BI reports",
-    "Integration of real-time messaging (Socket.IO)",
-    "Setup of a CI/CD pipeline for automated deployment of applications",
-    "Technologies: React, TypeScript, Redux, Tailwind CSS, Node.js, Express.js, Socket.IO, MySQL, Docker, Jenkins, SonarQube, Nexus, OWASP, Grafana"
-  ],
-  "dateDeb": "January 2024",
-  "dateFin": "July 2024"
-},
+          "title": "ASQII",
+          "subtitle": "Final Year Internship",
+          "desc": [
+            "Development of a multi-level organizational dashboard",
+            "Modules: event management, complaints, file management, Power BI reports",
+            "Integration of real-time messaging (Socket.IO)",
+            "Setup of a CI/CD pipeline for automated deployment of applications",
+            "Technologies: React, TypeScript, Redux, Tailwind CSS, Node.js, Express.js, Socket.IO, MySQL, Docker, Jenkins, SonarQube, Nexus, OWASP, Grafana"
+          ],
+          "dateDeb": "January 2024",
+          "dateFin": "July 2024"
+        },
         {
           "title": "ZETA Engineering",
           "subtitle": "Web Developer",
@@ -276,81 +275,82 @@
 
   "Project": {
     "title": ["My Latest", "Projects"],
+    "desc": "My projects reflect a mix of independent work and team collaboration. For projects such as Communic Flow, Allow Doctor, and GoTrip, I handled the entire process: conception, design, development, and deployment. In other projects, I contributed to specific tasks, providing focused expertise within development teams. This balance allowed me to build a global vision while strengthening both my technical and collaborative skills.",
     "list": [
-       {
-      "id": "1",
-      "nameProject": "Multi-level Organizational Dashboard",
-      "slug": "dashboard-multilevel",
-      "title": "Multi-level Organizational Dashboard",
-      "descProject": "A multi-level organizational dashboard that centralizes information management and communication. Structured around a Super Administrator, each member organization has its own administrator, ensuring autonomy while remaining integrated within the global framework.",
-      "videoProject": "demo-communic-flow",
-      "imgProject": [],
-      "technologies": {
-        "title":"development",
-        "Développement": [
-          "REACT",
-          "TYPESCRIPT",
-          "TAILWIND-CSS",
-          "NEXT.JS",
-          "EXPRESS.JS",
-          "SOCKET.IO",
-          "MYSQL"
-        ],
-        "DevOps": [
-          "DOCKER",
-          "JENKINS",
-          "KUBERNETES",
-          "GRAFANA",
-          "SONARQUBE",
-          "NEXUS",
-          "OWASP"
+      {
+        "id": "1",
+        "nameProject": "Multi-level Organizational Dashboard",
+        "slug": "dashboard-multilevel",
+        "title": "Multi-level Organizational Dashboard",
+        "descProject": "A multi-level organizational dashboard that centralizes information management and communication. Structured around a Super Administrator, each member organization has its own administrator, ensuring autonomy while remaining integrated within the global framework.",
+        "videoProject": "demo-communic-flow",
+        "imgProject": [],
+        "technologies": {
+          "title": "development",
+          "Développement": [
+            "REACT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "NEXT.JS",
+            "EXPRESS.JS",
+            "SOCKET.IO",
+            "MYSQL"
+          ],
+          "DevOps": [
+            "DOCKER",
+            "JENKINS",
+            "KUBERNETES",
+            "GRAFANA",
+            "SONARQUBE",
+            "NEXUS",
+            "OWASP"
+          ]
+        },
+        "description": {
+          "title": "Main Features",
+          "points": [
+            "Centralized information management and inter-organizational communication",
+            "Hierarchical structure with a Super Administrator and autonomous member organizations",
+            "Complaint management",
+            "Real-time discussion (chat/instant messaging)",
+            "Event management",
+            "User and role management",
+            "Organization management",
+            "Sharing and visualization of reports via Power BI"
+          ]
+        },
+        "devopsProcess": {
+          "title": "DevOps Process",
+          "steps": [
+            "Implementation of a CI/CD pipeline with Jenkins for continuous deployment automation",
+            "Application containerization with Docker",
+            "Orchestration and scalability through Kubernetes",
+            "Monitoring and real-time performance tracking with Grafana",
+            "Code quality and security analysis with SonarQube and OWASP",
+            "Centralized dependency management with Nexus"
+          ]
+        },
+        "utilisation": {
+          "title": "Usage (Administrator Access)",
+          "url": "https://communicflow.ach02raf.pro/",
+          "login": "admin@admin.com",
+          "password": "admin"
+        },
+        "rapport": {
+          "url": "/Rapport_PFE.pdf",
+          "label": "Download Report"
+        },
+        "usedTools": "Tools Used",
+        "tools": [
+          "React",
+          "Node.js",
+          "MySQL",
+          "Docker",
+          "Jenkins",
+          "Socket.IO",
+          "Tailwind CSS"
         ]
       },
-      "description": {
-        "title": "Main Features",
-        "points": [
-          "Centralized information management and inter-organizational communication",
-          "Hierarchical structure with a Super Administrator and autonomous member organizations",
-          "Complaint management",
-          "Real-time discussion (chat/instant messaging)",
-          "Event management",
-          "User and role management",
-          "Organization management",
-          "Sharing and visualization of reports via Power BI"
-        ]
-      },
-      "devopsProcess": {
-        "title": "DevOps Process",
-        "steps": [
-          "Implementation of a CI/CD pipeline with Jenkins for continuous deployment automation",
-          "Application containerization with Docker",
-          "Orchestration and scalability through Kubernetes",
-          "Monitoring and real-time performance tracking with Grafana",
-          "Code quality and security analysis with SonarQube and OWASP",
-          "Centralized dependency management with Nexus"
-        ]
-      },
-      "utilisation": {
-        "title": "Usage (Administrator Access)",
-        "url": "https://communicflow.ach02raf.pro/",
-        "login": "admin@admin.com",
-        "password": "admin"
-      },
-      "rapport": {
-        "url": "/docs/rapport-stage.pdf",
-        "label": "Download Report"
-      },
-      "usedTools": "Tools Used",
-      "tools": [
-        "React",
-        "Node.js",
-        "MySQL",
-        "Docker",
-        "Jenkins",
-        "Socket.IO",
-        "Tailwind CSS"
-      ]
-    },
       {
         "id": "0",
         "nameProject": "ALLO DOCTOR",
@@ -471,15 +471,10 @@
           "escaliere",
           "klass-design",
           "reno-deco",
-          "mur-mur",
-          "reno-global",
           "sopranet",
-          "renov-en-main",
-          "open-mur",
           "enirop",
-          "muretremie",
           "architectis",
-          "agexis"
+          "reno-deco"
         ],
         "videoProject": "",
         "urlProject": [""],
@@ -491,26 +486,14 @@
           "https://escaliere.fr/",
           "https://klass-design.fr",
           "https://reno-deco.fr",
-          "https://mur-mur.fr/",
-          "https://www.global-reno.com/",
           "https://sopranet.fr/",
-          "https://renov-en-main.fr",
-          "https://www.open-mur.com/",
           "https://enirop.com",
-          "https://www.mur-et-tremie.com/",
           "https://architectis.fr/",
-          "https://www.agexis.com"
+          "https://reno-deco.fr"
         ],
         "apk": "",
         "usedTools": "Tools Used",
-        "tools": [
-          "WORDPRESS",
-          "PHP",
-          "JAVASCRIPT",
-          "HTML",
-          "SCSS-SASS",
-          "HOSTINGER"
-        ]
+        "tools": ["WORDPRESS", "PHP", "JAVASCRIPT", "HTML", "SCSS-SASS"]
       },
       {
         "id": "5",
@@ -534,8 +517,7 @@
           "JAVASCRIPT",
           "TYPESCRIPT",
           "TAILWIND-CSS",
-          "SCSS-SASS",
-          "HOSTINGER"
+          "SCSS-SASS"
         ]
       },
 
@@ -561,8 +543,7 @@
           "JAVASCRIPT",
           "TYPESCRIPT",
           "TAILWIND-CSS",
-          "SCSS-SASS",
-          "HOSTINGER"
+          "SCSS-SASS"
         ]
       },
       {
@@ -587,8 +568,7 @@
           "JAVASCRIPT",
           "TYPESCRIPT",
           "TAILWIND-CSS",
-          "SCSS-SASS",
-          "HOSTINGER"
+          "SCSS-SASS"
         ]
       },
       {
@@ -608,6 +588,156 @@
         "apk": "",
         "usedTools": "Tools Used",
         "tools": ["ANGULAR", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT"]
+      },
+      {
+        "id": "10",
+        "nameProject": "Agexis",
+        "slug": "agexis",
+        "infoProject": "PROJECT INFO",
+        "visitSites": "Visit the website",
+        "codeSource": "View source code",
+        "downloadAPK": "",
+        "title": "Creation of a showcase website with Next.js framework",
+        "descProject": "Agexis: an engineering and consulting company in France specialized in project management for buildings, construction, and infrastructure.",
+        "imgProject": ["agexis"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://www.agexis.com"],
+        "apk": "",
+        "usedTools": "Tools used",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
+      },
+      {
+        "id": "11",
+        "nameProject": "Mur et tremie",
+        "slug": "muretremie",
+        "infoProject": "PROJECT INFO",
+        "visitSites": "Visit the website",
+        "codeSource": "View source code",
+        "downloadAPK": "",
+        "title": "Creation of a showcase website with Next.js framework",
+        "descProject": "Mur et Trémie, a structural company, offers complete services for the construction and renovation of strong and durable structures.",
+        "imgProject": ["muretremie"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://www.mur-et-tremie.com/"],
+        "apk": "",
+        "usedTools": "Tools used",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
+      },
+      {
+        "id": "12",
+        "nameProject": "Open mur",
+        "slug": "open-mur",
+        "infoProject": "PROJECT INFO",
+        "visitSites": "Visit the website",
+        "codeSource": "View source code",
+        "downloadAPK": "",
+        "title": "Creation of a showcase website with Next.js framework",
+        "descProject": "OPEN MUR is a construction company specialized in opening load-bearing walls.",
+        "imgProject": ["open-mur"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://www.open-mur.com/"],
+        "apk": "",
+        "usedTools": "Tools used",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
+      },
+      {
+        "id": "13",
+        "nameProject": "Renov en main",
+        "slug": "renov-en-main",
+        "infoProject": "PROJECT INFO",
+        "visitSites": "Visit the website",
+        "codeSource": "View source code",
+        "downloadAPK": "",
+        "title": "Creation of a showcase website with Next.js framework",
+        "descProject": "Rénov en Main, a company specialized in renovation works, creating exceptional living spaces.",
+        "imgProject": ["renov-en-main"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://renov-en-main.fr"],
+        "apk": "",
+        "usedTools": "Tools used",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
+      },
+      {
+        "id": "14",
+        "nameProject": "Reno global",
+        "slug": "reno-global",
+        "infoProject": "PROJECT INFO",
+        "visitSites": "Visit the website",
+        "codeSource": "View source code",
+        "downloadAPK": "",
+        "title": "Creation of a showcase website with Next.js framework",
+        "descProject": "Reno Global: a renovation company specializing in remodeling and expansion projects in France.",
+        "imgProject": ["reno-global"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://www.global-reno.com/"],
+        "apk": "",
+        "usedTools": "Tools used",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
+      },
+      {
+        "id": "15",
+        "nameProject": "Mur Mur",
+        "slug": "mur-mur",
+        "infoProject": "PROJECT INFO",
+        "visitSites": "Visit the website",
+        "codeSource": "View source code",
+        "downloadAPK": "",
+        "title": "Creation of a showcase website with Next.js framework",
+        "descProject": "Mur Mur: a French construction company specialized in structural works.",
+        "imgProject": ["mur-mur"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://mur-mur.fr/"],
+        "apk": "",
+        "usedTools": "Tools used",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
       }
     ]
   },
@@ -754,8 +884,7 @@
         "JAVASCRIPT",
         "TYPESCRIPT",
         "TAILWIND-CSS",
-        "SCSS-SASS",
-        "HOSTINGER"
+        "SCSS-SASS"
       ]
     }
   ]

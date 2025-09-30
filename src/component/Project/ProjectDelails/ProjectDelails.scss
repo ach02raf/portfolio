@@ -47,9 +47,8 @@
     font-size: 14px !important;
   }
 
-  h5,
-  h6 {
-    color: $white !important;
+  h5 {
+    color: $white;
     font-weight: 600;
   }
 
@@ -61,7 +60,13 @@
     width: 90%;
     position: absolute;
   }
-
+  h6 {
+    background-color: rgba($yellow, 0.85);
+    width: fit-content;
+    padding: 7px;
+    font-weight: 600;
+    border-radius: 4px;
+  }
   &-link {
     height: 1rem;
 
@@ -94,5 +99,8 @@
 
   &-other-link:hover img {
     transform: scale(1.1);
+  }
+  .project-details-url ,  .project-details-link {
+    border-radius: 4px !important;
   }
 }

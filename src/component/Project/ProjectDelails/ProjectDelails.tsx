@@ -18,8 +18,8 @@ type Project = {
   nameProject: string;
   slug: string;
   title: string;
-  descProject: string;
-  imgProject: string[];
+  descProject?: string;
+  imgProject?: string[];
   videoProject?: string;
   infoProject?: string;
   visitSites?: string;
@@ -31,6 +31,7 @@ type Project = {
   usedTools?: string;
   tools?: string[];
   technologies?: {
+    title: string;
     Développement: string[];
     DevOps: string[];
   };
@@ -60,7 +61,11 @@ type Props = {
   backToHome: string;
 };
 
-const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => {
+const ProjectDetails: React.FC<Props> = ({
+  ItemsProject,
+  lang,
+  backToHome,
+}) => {
   const project = ItemsProject;
 
   return (
@@ -103,16 +108,13 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
           {project.videoProject && (
             <div
               className={
-                project.imgProject?.length > 0
+                project.imgProject && project.imgProject?.length > 0
                   ? "col-xl-4 col-12 py-xl-0 py-3"
                   : "col-12"
               }
             >
               <video width="100%" height="300px" controls loop autoPlay muted>
-                <source
-                  src={`/${project.videoProject}.mp4`}
-                  type="video/mp4"
-                />
+                <source src={`/${project.videoProject}.mp4`} type="video/mp4" />
               </video>
             </div>
           )}
@@ -122,14 +124,16 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
         <div className="row mt-4">
           <div className="col-xl-7">
             {project.infoProject && (
-              <h5 className="position-relative">{project.infoProject}</h5>
+              <h5 className="position-relative my-4 pb-3">
+                {project.infoProject}
+              </h5>
             )}
-            <h6>{project.title}</h6>
+            <h6 className="my-4">{project.title}</h6>
             <p>{project.descProject}</p>
 
             {project.description?.points && (
               <>
-                <h6>{project.description.title}</h6>
+                <h6 className="my-4 ">{project.description.title}</h6>
                 <div>
                   {project.description.points.map((point, i) => (
                     <p key={i}>✔ {point}</p>
@@ -143,7 +147,9 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
           <div className="col-xl-5">
             {project.usedTools && (
               <>
-                <h5 className="position-relative">{project.usedTools}</h5>
+                <h5 className="position-relative my-4 pb-3">
+                  {project.usedTools}
+                </h5>
 
                 {!project.technologies && (
                   <div className="row">
@@ -163,7 +169,9 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
 
                 {project.technologies && (
                   <>
-                    <h6 className="pt-2">{project?.technologies?.title}</h6>
+                    <h6 className="mt-2">
+                      {project.technologies && project?.technologies?.title}
+                    </h6>
                     <div className="row">
                       {project?.technologies?.Développement?.map((tech, i) => (
                         <div className="col-xl-3 col-4" key={i}>
@@ -178,7 +186,7 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
                       ))}
                     </div>
 
-                    <h6 className="pt-2">DevOps</h6>
+                    <h6 className="mt-2">DevOps</h6>
                     <div className="row">
                       {project.technologies.DevOps.map((tech, i) => (
                         <div className="col-xl-3 col-4" key={i}>
@@ -202,7 +210,7 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
         {/* DevOps Process */}
         {project.devopsProcess?.steps && (
           <div className="mt-4">
-            <h5 className="position-relative">
+            <h5 className="position-relative my-4 pb-3">
               <FontAwesomeIcon
                 icon={faServer}
                 className="me-2"
@@ -221,7 +229,7 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
         {/* Utilisation */}
         {project.utilisation && (
           <div className="mt-4">
-            <h5 className="position-relative">
+            <h5 className="position-relative my-4 pb-3">
               <FontAwesomeIcon
                 icon={faUserShield}
                 className="me-2"
@@ -229,18 +237,30 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
               />
               {project.utilisation.title}
             </h5>
-            <p>
-              <strong>URL :</strong>{" "}
-              <Link href={project.utilisation.url} target="_blank">
-                {project.utilisation.url}
-              </Link>
-            </p>
-            <p>
-              <strong>Login :</strong> {project.utilisation.login}
-            </p>
-            <p>
-              <strong>Mot de passe :</strong> {project.utilisation.password}
-            </p>
+            <div>
+              <p className="mb-2">
+                <strong className="me-2">🌐 URL :</strong>
+                <Link
+                  href={project.utilisation.url}
+                  target="_blank"
+                  className=" fw-semibold"
+                >
+                  {project.utilisation.url}
+                </Link>
+              </p>
+              <p className="mb-2">
+                <strong className="me-2">👤 Login :</strong>
+                <span className="badge bg-secondary px-3">
+                  {project.utilisation.login}
+                </span>
+              </p>
+              <p>
+                <strong className="me-2">🔑 Mot de passe :</strong>
+                <span className="badge bg-warning text-dark px-3">
+                  {project.utilisation.password}
+                </span>
+              </p>
+            </div>
           </div>
         )}
 
@@ -320,21 +340,38 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
         </div>
 
         {/* Other Images */}
-        {project.imgProject?.length > 1 && (
-          <div className="row mt-3">
-            {project.imgProject.slice(1).map((item, index) => (
+        <div className="row">
+          {project.imgProject &&
+            project.imgProject.length > 1 &&
+            project.imgProject.slice(1).map((item, index) => (
               <div key={index} className="col-lg-4 p-2">
-                <Image
-                  src={`/Images/${item}.png`}
-                  alt={item}
-                  title={item}
-                  height={512}
-                  width={1512}
-                />
+                {project.urlSITE && project.urlSITE.length > 1 ? (
+                  <Link
+                    className="project-details-other-link"
+                    href={project.urlSITE[index] || project.urlSITE[0]}
+                    rel="preload"
+                    target="_blank"
+                  >
+                    <Image
+                      src={`/Images/${item}.png`}
+                      alt={item}
+                      title={item}
+                      height={512}
+                      width={1512}
+                    />
+                  </Link>
+                ) : (
+                  <Image
+                    src={`/Images/${item}.png`}
+                    alt={item}
+                    title={item}
+                    height={512}
+                    width={1512}
+                  />
+                )}
               </div>
             ))}
-          </div>
-        )}
+        </div>
       </div>
     </div>
   );

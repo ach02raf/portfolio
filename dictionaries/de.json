@@ -159,7 +159,6 @@
           "GIT",
           "GITHUB",
           "JENKINS",
-          "HOSTINGER",
           "AWS",
           "DOCKER",
           "SONARQUBE",
@@ -186,18 +185,18 @@
       "title": "Erfahrung",
       "list": [
         {
-  "title": "ASQII",
-  "subtitle": "Abschlusspraktikum",
-  "desc": [
-    "Entwicklung eines mehrstufigen Organisations-Dashboards",
-    "Module: Veranstaltungsverwaltung, Beschwerden, Datei-Management, Power BI-Berichte",
-    "Integration von Echtzeit-Nachrichten (Socket.IO)",
-    "Einrichtung einer CI/CD-Pipeline für die automatisierte Bereitstellung von Anwendungen",
-    "Technologien: React, TypeScript, Redux, Tailwind CSS, Node.js, Express.js, Socket.IO, MySQL, Docker, Jenkins, SonarQube, Nexus, OWASP, Grafana"
-  ],
-  "dateDeb": "Januar 2024",
-  "dateFin": "Juli 2024"
-},
+          "title": "ASQII",
+          "subtitle": "Abschlusspraktikum",
+          "desc": [
+            "Entwicklung eines mehrstufigen Organisations-Dashboards",
+            "Module: Veranstaltungsverwaltung, Beschwerden, Datei-Management, Power BI-Berichte",
+            "Integration von Echtzeit-Nachrichten (Socket.IO)",
+            "Einrichtung einer CI/CD-Pipeline für die automatisierte Bereitstellung von Anwendungen",
+            "Technologien: React, TypeScript, Redux, Tailwind CSS, Node.js, Express.js, Socket.IO, MySQL, Docker, Jenkins, SonarQube, Nexus, OWASP, Grafana"
+          ],
+          "dateDeb": "Januar 2024",
+          "dateFin": "Juli 2024"
+        },
         {
           "title": "ZETA Engineering",
           "subtitle": "Webentwickler",
@@ -275,82 +274,83 @@
     }
   ],
   "Project": {
-    "title": ["Mes Dernieres", " projets"],
+    "title": ["Meine letzten", "Projekte"],
+    "desc": "Meine Projekte spiegeln eine Mischung aus selbstständiger Arbeit und Teamarbeit wider. Bei Projekten wie Communic Flow, Allow Doctor und GoTrip habe ich den gesamten Prozess übernommen: Konzeption, Design, Entwicklung und Deployment. In anderen Projekten habe ich an bestimmten Aufgaben mitgewirkt und gezieltes Fachwissen in Entwicklungsteams eingebracht. Diese Kombination hat mir ermöglicht, sowohl eine umfassende Sichtweise zu entwickeln als auch meine technischen und kollaborativen Fähigkeiten zu stärken.",
     "list": [
-       {
-      "id": "1",
-      "nameProject": "Mehrstufiges Organisations-Dashboard",
-      "slug": "dashboard-mehrstufig",
-      "title": "Mehrstufiges Organisations-Dashboard",
-      "descProject": "Ein mehrstufiges Organisations-Dashboard, das das Informationsmanagement und die Kommunikation zentralisiert. Es ist um einen Superadministrator herum strukturiert, wobei jede Mitgliedsorganisation ihren eigenen Administrator hat, um Autonomie zu gewährleisten und dennoch in den globalen Rahmen integriert zu bleiben.",
-      "videoProject": "demo-communic-flow",
-      "imgProject": [],
-      "technologies": {
-        "title":"Entwicklung",
-        "Développement": [
-          "REACT",
-          "TYPESCRIPT",
-          "TAILWIND-CSS",
-          "NEXT.JS",
-          "EXPRESS.JS",
-          "SOCKET.IO",
-          "MYSQL"
-        ],
-        "DevOps": [
-          "DOCKER",
-          "JENKINS",
-          "KUBERNETES",
-          "GRAFANA",
-          "SONARQUBE",
-          "NEXUS",
-          "OWASP"
+      {
+        "id": "1",
+        "nameProject": "Mehrstufiges Organisations-Dashboard",
+        "slug": "dashboard-mehrstufig",
+        "title": "Mehrstufiges Organisations-Dashboard",
+        "descProject": "Ein mehrstufiges Organisations-Dashboard, das das Informationsmanagement und die Kommunikation zentralisiert. Es ist um einen Superadministrator herum strukturiert, wobei jede Mitgliedsorganisation ihren eigenen Administrator hat, um Autonomie zu gewährleisten und dennoch in den globalen Rahmen integriert zu bleiben.",
+        "videoProject": "demo-communic-flow",
+        "imgProject": [],
+        "technologies": {
+          "title": "Entwicklung",
+          "Développement": [
+            "REACT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "NEXT.JS",
+            "EXPRESS.JS",
+            "SOCKET.IO",
+            "MYSQL"
+          ],
+          "DevOps": [
+            "DOCKER",
+            "JENKINS",
+            "KUBERNETES",
+            "GRAFANA",
+            "SONARQUBE",
+            "NEXUS",
+            "OWASP"
+          ]
+        },
+        "description": {
+          "title": "Hauptfunktionen",
+          "points": [
+            "Zentralisiertes Informationsmanagement und Kommunikation zwischen Organisationen",
+            "Hierarchische Struktur mit einem Superadministrator und autonomen Mitgliedsorganisationen",
+            "Beschwerdemanagement",
+            "Echtzeit-Diskussion (Chat/Instant Messaging)",
+            "Veranstaltungsmanagement",
+            "Benutzer- und Rollenverwaltung",
+            "Organisationsverwaltung",
+            "Teilen und Visualisieren von Berichten über Power BI"
+          ]
+        },
+        "devopsProcess": {
+          "title": "DevOps-Prozess",
+          "steps": [
+            "Einrichtung einer CI/CD-Pipeline mit Jenkins zur Automatisierung der kontinuierlichen Bereitstellung",
+            "Containerisierung der Anwendung mit Docker",
+            "Orchestrierung und Skalierbarkeit durch Kubernetes",
+            "Überwachung und Leistungs-Tracking in Echtzeit mit Grafana",
+            "Code-Qualitäts- und Sicherheitsanalyse mit SonarQube und OWASP",
+            "Zentrale Abhängigkeitsverwaltung mit Nexus"
+          ]
+        },
+        "utilisation": {
+          "title": "Nutzungsmodus (Administratorzugang)",
+          "url": "https://communicflow.ach02raf.pro/",
+          "login": "admin@admin.com",
+          "password": "admin"
+        },
+        "rapport": {
+          "url": "/Rapport_PFE.pdf",
+          "label": "Bericht herunterladen"
+        },
+        "usedTools": "Verwendete Werkzeuge",
+        "tools": [
+          "React",
+          "Node.js",
+          "MySQL",
+          "Docker",
+          "Jenkins",
+          "Socket.IO",
+          "Tailwind CSS"
         ]
       },
-      "description": {
-        "title": "Hauptfunktionen",
-        "points": [
-          "Zentralisiertes Informationsmanagement und Kommunikation zwischen Organisationen",
-          "Hierarchische Struktur mit einem Superadministrator und autonomen Mitgliedsorganisationen",
-          "Beschwerdemanagement",
-          "Echtzeit-Diskussion (Chat/Instant Messaging)",
-          "Veranstaltungsmanagement",
-          "Benutzer- und Rollenverwaltung",
-          "Organisationsverwaltung",
-          "Teilen und Visualisieren von Berichten über Power BI"
-        ]
-      },
-      "devopsProcess": {
-        "title": "DevOps-Prozess",
-        "steps": [
-          "Einrichtung einer CI/CD-Pipeline mit Jenkins zur Automatisierung der kontinuierlichen Bereitstellung",
-          "Containerisierung der Anwendung mit Docker",
-          "Orchestrierung und Skalierbarkeit durch Kubernetes",
-          "Überwachung und Leistungs-Tracking in Echtzeit mit Grafana",
-          "Code-Qualitäts- und Sicherheitsanalyse mit SonarQube und OWASP",
-          "Zentrale Abhängigkeitsverwaltung mit Nexus"
-        ]
-      },
-      "utilisation": {
-        "title": "Nutzungsmodus (Administratorzugang)",
-        "url": "https://communicflow.ach02raf.pro/",
-        "login": "admin@admin.com",
-        "password": "admin"
-      },
-      "rapport": {
-        "url": "/docs/rapport-stage.pdf",
-        "label": "Bericht herunterladen"
-      },
-      "usedTools": "Verwendete Werkzeuge",
-      "tools": [
-        "React",
-        "Node.js",
-        "MySQL",
-        "Docker",
-        "Jenkins",
-        "Socket.IO",
-        "Tailwind CSS"
-      ]
-    },
       {
         "id": "0",
         "nameProject": "ALLO DOCTOR",
@@ -449,6 +449,7 @@
         "title": "Création d'un pack de 16 sites avec le CMS WordPress",
         "descProject": "",
         "imgProject": [
+          "all-sitewordpress",
           "1001-architecture",
           "truecom",
           "surfcom",
@@ -456,15 +457,10 @@
           "escaliere",
           "klass-design",
           "reno-deco",
-          "mur-mur",
-          "reno-global",
           "sopranet",
-          "renov-en-main",
-          "open-mur",
           "enirop",
-          "muretremie",
           "architectis",
-          "agexis"
+          "reno-deco"
         ],
         "videoProject": "",
         "urlProject": [""],
@@ -476,26 +472,14 @@
           "https://escaliere.fr/",
           "https://klass-design.fr",
           "https://reno-deco.fr",
-          "https://mur-mur.fr/",
-          "https://www.global-reno.com/",
           "https://sopranet.fr/",
-          "https://renov-en-main.fr",
-          "https://www.open-mur.com/",
           "https://enirop.com",
-          "https://www.mur-et-tremie.com/",
           "https://architectis.fr/",
-          "https://www.agexis.com"
+          "https://reno-deco.fr"
         ],
         "apk": "",
         "usedTools": "Les outils utilisés",
-        "tools": [
-          "WORDPRESS",
-          "PHP",
-          "JAVASCRIPT",
-          "HTML",
-          "SCSS-SASS",
-          "HOSTINGER"
-        ]
+        "tools": ["WORDPRESS", "PHP", "JAVASCRIPT", "HTML", "SCSS-SASS"]
       },
       {
         "id": "5",
@@ -519,8 +503,7 @@
           "JAVASCRIPT",
           "TYPESCRIPT",
           "TAILWIND-CSS",
-          "SCSS-SASS",
-          "HOSTINGER"
+          "SCSS-SASS"
         ]
       },
 
@@ -546,8 +529,7 @@
           "JAVASCRIPT",
           "TYPESCRIPT",
           "TAILWIND-CSS",
-          "SCSS-SASS",
-          "HOSTINGER"
+          "SCSS-SASS"
         ]
       },
       {
@@ -572,8 +554,7 @@
           "JAVASCRIPT",
           "TYPESCRIPT",
           "TAILWIND-CSS",
-          "SCSS-SASS",
-          "HOSTINGER"
+          "SCSS-SASS"
         ]
       },
       {
@@ -593,6 +574,156 @@
         "apk": "",
         "usedTools": "Les outils utilisés",
         "tools": ["ANGULAR", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT"]
+      },
+      {
+        "id": "10",
+        "nameProject": "Agexis",
+        "slug": "agexis",
+        "infoProject": "PROJEKTINFO",
+        "visitSites": "Website besuchen",
+        "codeSource": "Quellcode ansehen",
+        "downloadAPK": "",
+        "title": "Erstellung einer Unternehmens-Website mit dem Next.js Framework",
+        "descProject": "Agexis: ein Ingenieur- und Beratungsunternehmen in Frankreich, spezialisiert auf Projektmanagement für Gebäude, Bau und Infrastruktur.",
+        "imgProject": ["agexis"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://www.agexis.com"],
+        "apk": "",
+        "usedTools": "Verwendete Tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
+      },
+      {
+        "id": "11",
+        "nameProject": "Mur et tremie",
+        "slug": "muretremie",
+        "infoProject": "PROJEKTINFO",
+        "visitSites": "Website besuchen",
+        "codeSource": "Quellcode ansehen",
+        "downloadAPK": "",
+        "title": "Erstellung einer Unternehmens-Website mit dem Next.js Framework",
+        "descProject": "Mur et Trémie, ein Bauunternehmen für Strukturen, bietet umfassende Dienstleistungen für den Bau und die Renovierung von stabilen und langlebigen Strukturen.",
+        "imgProject": ["muretremie"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://www.mur-et-tremie.com/"],
+        "apk": "",
+        "usedTools": "Verwendete Tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
+      },
+      {
+        "id": "12",
+        "nameProject": "Open mur",
+        "slug": "open-mur",
+        "infoProject": "PROJEKTINFO",
+        "visitSites": "Website besuchen",
+        "codeSource": "Quellcode ansehen",
+        "downloadAPK": "",
+        "title": "Erstellung einer Unternehmens-Website mit dem Next.js Framework",
+        "descProject": "OPEN MUR ist ein Bauunternehmen, das sich auf das Öffnen tragender Wände spezialisiert hat.",
+        "imgProject": ["open-mur"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://www.open-mur.com/"],
+        "apk": "",
+        "usedTools": "Verwendete Tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
+      },
+      {
+        "id": "13",
+        "nameProject": "Renov en main",
+        "slug": "renov-en-main",
+        "infoProject": "PROJEKTINFO",
+        "visitSites": "Website besuchen",
+        "codeSource": "Quellcode ansehen",
+        "downloadAPK": "",
+        "title": "Erstellung einer Unternehmens-Website mit dem Next.js Framework",
+        "descProject": "Rénov en Main, ein Unternehmen, das sich auf Renovierungsarbeiten spezialisiert hat und außergewöhnliche Wohnräume schafft.",
+        "imgProject": ["renov-en-main"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://renov-en-main.fr"],
+        "apk": "",
+        "usedTools": "Verwendete Tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
+      },
+      {
+        "id": "14",
+        "nameProject": "Reno global",
+        "slug": "reno-global",
+        "infoProject": "PROJEKTINFO",
+        "visitSites": "Website besuchen",
+        "codeSource": "Quellcode ansehen",
+        "downloadAPK": "",
+        "title": "Erstellung einer Unternehmens-Website mit dem Next.js Framework",
+        "descProject": "Reno Global: ein Renovierungsunternehmen, spezialisiert auf Umbau- und Erweiterungsprojekte in Frankreich.",
+        "imgProject": ["reno-global"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://www.global-reno.com/"],
+        "apk": "",
+        "usedTools": "Verwendete Tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
+      },
+      {
+        "id": "15",
+        "nameProject": "Mur Mur",
+        "slug": "mur-mur",
+        "infoProject": "PROJEKTINFO",
+        "visitSites": "Website besuchen",
+        "codeSource": "Quellcode ansehen",
+        "downloadAPK": "",
+        "title": "Erstellung einer Unternehmens-Website mit dem Next.js Framework",
+        "descProject": "Mur Mur: ein französisches Bauunternehmen, spezialisiert auf strukturelle Arbeiten.",
+        "imgProject": ["mur-mur"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://mur-mur.fr/"],
+        "apk": "",
+        "usedTools": "Verwendete Tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
       }
     ]
   },
@@ -739,8 +870,7 @@
         "JAVASCRIPT",
         "TYPESCRIPT",
         "TAILWIND-CSS",
-        "SCSS-SASS",
-        "HOSTINGER"
+        "SCSS-SASS"
       ]
     }
   ]
