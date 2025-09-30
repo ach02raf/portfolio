@@ -16,11 +16,7 @@ import Blog from "@/component/Blog/Blog";
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
-export default async function IndexPage({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
+export default async function IndexPage({ params: { lang } }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(lang);
   return (
     <div className="container-fluid gx-0 contain position-relative">
@@ -36,9 +32,7 @@ export default async function IndexPage({
       </section>
       <section id={dictionary.header[3].url}>
         <SkillsSection skillsSection={dictionary.skillsSection} />
-        <ExperienceEducation
-          EducationExperience={dictionary.EducationExperience}
-        />
+        <ExperienceEducation EducationExperience={dictionary.EducationExperience} />
       </section>
       <section id={dictionary.header[4].url}>
         <Project Project={dictionary?.Project} lang={lang} />

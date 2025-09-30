@@ -110,15 +110,7 @@
       {
         "id": 0,
         "title": "Programmiersprachen",
-        "listeLangage": [
-          "C",
-          "C-SHARP",
-          "JAVA",
-          "JAVASCRIPT",
-          "TYPESCRIPT",
-          "PYTHON",
-          "PHP"
-        ]
+        "listeLangage": ["C", "C-SHARP", "JAVA", "JAVASCRIPT", "TYPESCRIPT", "PYTHON", "PHP"]
       },
       {
         "id": 1,
@@ -185,6 +177,19 @@
     {
       "title": "Erfahrung",
       "list": [
+        {
+          "title": "ASQII",
+          "subtitle": "Abschlusspraktikum",
+          "desc": [
+            "Entwicklung eines mehrstufigen Organisations-Dashboards",
+            "Module: Veranstaltungsverwaltung, Beschwerden, Datei-Management, Power BI-Berichte",
+            "Integration von Echtzeit-Nachrichten (Socket.IO)",
+            "Einrichtung einer CI/CD-Pipeline für die automatisierte Bereitstellung von Anwendungen",
+            "Technologien: React, TypeScript, Redux, Tailwind CSS, Node.js, Express.js, Socket.IO, MySQL, Docker, Jenkins, SonarQube, Nexus, OWASP, Grafana"
+          ],
+          "dateDeb": "Januar 2024",
+          "dateFin": "Juli 2024"
+        },
         {
           "title": "ZETA Engineering",
           "subtitle": "Webentwickler",
@@ -264,6 +269,67 @@
   "Project": {
     "title": ["Mes Dernieres", " projets"],
     "list": [
+      {
+        "id": "1",
+        "nameProject": "Mehrstufiges Organisations-Dashboard",
+        "infoProject": "PROJECT INFO",
+        "slug": "dashboard-mehrstufig",
+        "title": "Mehrstufiges Organisations-Dashboard",
+        "descProject": "Ein mehrstufiges Organisations-Dashboard, das das Informationsmanagement und die Kommunikation zentralisiert. Es ist um einen Superadministrator herum strukturiert, wobei jede Mitgliedsorganisation ihren eigenen Administrator hat, um Autonomie zu gewährleisten und dennoch in den globalen Rahmen integriert zu bleiben.",
+        "videoProject": "demo-communic-flow",
+        "imgProject": [],
+        "apk": "",
+        "urlSITE": [""],
+        "technologies": {
+          "title": "Entwicklung",
+          "Développement": [
+            "REACT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "NEXT.JS",
+            "EXPRESS.JS",
+            "SOCKET.IO",
+            "MYSQL"
+          ],
+          "DevOps": ["DOCKER", "JENKINS", "KUBERNETES", "GRAFANA", "SONARQUBE", "NEXUS", "OWASP"]
+        },
+        "description": {
+          "title": "Hauptfunktionen",
+          "points": [
+            "Zentralisiertes Informationsmanagement und Kommunikation zwischen Organisationen",
+            "Hierarchische Struktur mit einem Superadministrator und autonomen Mitgliedsorganisationen",
+            "Beschwerdemanagement",
+            "Echtzeit-Diskussion (Chat/Instant Messaging)",
+            "Veranstaltungsmanagement",
+            "Benutzer- und Rollenverwaltung",
+            "Organisationsverwaltung",
+            "Teilen und Visualisieren von Berichten über Power BI"
+          ]
+        },
+        "devopsProcess": {
+          "title": "DevOps-Prozess",
+          "steps": [
+            "Einrichtung einer CI/CD-Pipeline mit Jenkins zur Automatisierung der kontinuierlichen Bereitstellung",
+            "Containerisierung der Anwendung mit Docker",
+            "Orchestrierung und Skalierbarkeit durch Kubernetes",
+            "Überwachung und Leistungs-Tracking in Echtzeit mit Grafana",
+            "Code-Qualitäts- und Sicherheitsanalyse mit SonarQube und OWASP",
+            "Zentrale Abhängigkeitsverwaltung mit Nexus"
+          ]
+        },
+        "utilisation": {
+          "title": "Nutzungsmodus (Administratorzugang)",
+          "url": "https://communicflow.ach02raf.pro/",
+          "login": "admin@admin.com",
+          "password": "admin"
+        },
+        "rapport": {
+          "url": "/docs/rapport-stage.pdf",
+          "label": "Bericht herunterladen"
+        },
+        "usedTools": "Verwendete Werkzeuge",
+        "tools": ["React", "Node.js", "MySQL", "Docker", "Jenkins", "Socket.IO", "Tailwind CSS"]
+      },
       {
         "id": "0",
         "nameProject": "ALLO DOCTOR",
@@ -401,14 +467,7 @@
         ],
         "apk": "",
         "usedTools": "Les outils utilisés",
-        "tools": [
-          "WORDPRESS",
-          "PHP",
-          "JAVASCRIPT",
-          "HTML",
-          "SCSS-SASS",
-          "HOSTINGER"
-        ]
+        "tools": ["WORDPRESS", "PHP", "JAVASCRIPT", "HTML", "SCSS-SASS", "HOSTINGER"]
       },
       {
         "id": "5",

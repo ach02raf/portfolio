@@ -11,15 +11,15 @@ function Project(props: {
       id: string;
       nameProject: string;
       slug: string;
-      infoProject: string;
-      visitSites: string;
-      codeSource: string;
-      downloadAPK: string;
+      infoProject?: string;
+      visitSites?: string;
+      codeSource?: string;
+      downloadAPK?: string;
       title: string;
       descProject: string;
       imgProject: string[];
       videoProject: string;
-      urlProject: string[];
+      urlProject?: string[];
       urlSITE: string[];
       apk: string;
       usedTools: string;
@@ -39,9 +39,7 @@ function Project(props: {
           {props?.Project?.title[0] + " "}
           <span>{props?.Project?.title[1]}</span>
         </h2>
-        {firstProject && (
-          <FeaturedProject project={firstProject} lang={props.lang} />
-        )}
+        {firstProject && <FeaturedProject project={firstProject} lang={props.lang} />}
         {/* Afficher le reste des projets */}
         <div className="row py-3">
           {remainingProjects.map((ItemsProject, index) => (

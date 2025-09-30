@@ -111,15 +111,7 @@
       {
         "id": 0,
         "title": "Programming Languages",
-        "listeLangage": [
-          "C",
-          "C-SHARP",
-          "JAVA",
-          "JAVASCRIPT",
-          "TYPESCRIPT",
-          "PYTHON",
-          "PHP"
-        ]
+        "listeLangage": ["C", "C-SHARP", "JAVA", "JAVASCRIPT", "TYPESCRIPT", "PYTHON", "PHP"]
       },
       {
         "id": 1,
@@ -186,6 +178,19 @@
     {
       "title": "Experience",
       "list": [
+        {
+          "title": "ASQII",
+          "subtitle": "Final Year Internship",
+          "desc": [
+            "Development of a multi-level organizational dashboard",
+            "Modules: event management, complaints, file management, Power BI reports",
+            "Integration of real-time messaging (Socket.IO)",
+            "Setup of a CI/CD pipeline for automated deployment of applications",
+            "Technologies: React, TypeScript, Redux, Tailwind CSS, Node.js, Express.js, Socket.IO, MySQL, Docker, Jenkins, SonarQube, Nexus, OWASP, Grafana"
+          ],
+          "dateDeb": "January 2024",
+          "dateFin": "July 2024"
+        },
         {
           "title": "ZETA Engineering",
           "subtitle": "Web Developer",
@@ -264,6 +269,70 @@
   "Project": {
     "title": ["My Latest", "Projects"],
     "list": [
+      {
+        "id": "1",
+        "nameProject": "Multi-level Organizational Dashboard",
+        "infoProject": "PROJECT INFO",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "Télécharcher l'APK",
+        "slug": "dashboard-multilevel",
+        "title": "Multi-level Organizational Dashboard",
+        "descProject": "A multi-level organizational dashboard that centralizes information management and communication. Structured around a Super Administrator, each member organization has its own administrator, ensuring autonomy while remaining integrated within the global framework.",
+        "videoProject": "demo-communic-flow",
+        "urlSITE": [""],
+        "apk": "",
+        "imgProject": [],
+        "technologies": {
+          "title": "development",
+          "Développement": [
+            "REACT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "NEXT.JS",
+            "EXPRESS.JS",
+            "SOCKET.IO",
+            "MYSQL"
+          ],
+          "DevOps": ["DOCKER", "JENKINS", "KUBERNETES", "GRAFANA", "SONARQUBE", "NEXUS", "OWASP"]
+        },
+        "description": {
+          "title": "Main Features",
+          "points": [
+            "Centralized information management and inter-organizational communication",
+            "Hierarchical structure with a Super Administrator and autonomous member organizations",
+            "Complaint management",
+            "Real-time discussion (chat/instant messaging)",
+            "Event management",
+            "User and role management",
+            "Organization management",
+            "Sharing and visualization of reports via Power BI"
+          ]
+        },
+        "devopsProcess": {
+          "title": "DevOps Process",
+          "steps": [
+            "Implementation of a CI/CD pipeline with Jenkins for continuous deployment automation",
+            "Application containerization with Docker",
+            "Orchestration and scalability through Kubernetes",
+            "Monitoring and real-time performance tracking with Grafana",
+            "Code quality and security analysis with SonarQube and OWASP",
+            "Centralized dependency management with Nexus"
+          ]
+        },
+        "utilisation": {
+          "title": "Usage (Administrator Access)",
+          "url": "https://communicflow.ach02raf.pro/",
+          "login": "admin@admin.com",
+          "password": "admin"
+        },
+        "rapport": {
+          "url": "/docs/rapport-stage.pdf",
+          "label": "Download Report"
+        },
+        "usedTools": "Tools Used",
+        "tools": ["React", "Node.js", "MySQL", "Docker", "Jenkins", "Socket.IO", "Tailwind CSS"]
+      },
       {
         "id": "0",
         "nameProject": "ALLO DOCTOR",
@@ -416,14 +485,7 @@
         ],
         "apk": "",
         "usedTools": "Tools Used",
-        "tools": [
-          "WORDPRESS",
-          "PHP",
-          "JAVASCRIPT",
-          "HTML",
-          "SCSS-SASS",
-          "HOSTINGER"
-        ]
+        "tools": ["WORDPRESS", "PHP", "JAVASCRIPT", "HTML", "SCSS-SASS", "HOSTINGER"]
       },
       {
         "id": "5",
@@ -491,6 +553,7 @@
         "imgProject": ["structural-home"],
         "videoProject": "",
         "urlProject": [""],
+
         "urlSITE": ["https://www.structural-home.com/"],
         "apk": "",
         "usedTools": "Tools Used",

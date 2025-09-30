@@ -110,15 +110,7 @@
       {
         "id": 0,
         "title": "Langages de programmation",
-        "listeLangage": [
-          "C",
-          "C-SHARP",
-          "JAVA",
-          "JAVASCRIPT",
-          "TYPESCRIPT",
-          "PYTHON",
-          "PHP"
-        ]
+        "listeLangage": ["C", "C-SHARP", "JAVA", "JAVASCRIPT", "TYPESCRIPT", "PYTHON", "PHP"]
       },
       {
         "id": 1,
@@ -186,6 +178,19 @@
     {
       "title": "Experience",
       "list": [
+        {
+          "title": "ASQII",
+          "subtitle": "Stage de fin d'études",
+          "desc": [
+            "Développement d'un tableau de bord organisationnel multiniveau",
+            "Modules : gestion des événements, réclamations, gestion des dossiers, rapports Power BI",
+            "Intégration de la messagerie en temps réel (Socket.IO)",
+            "Mise en place d'un pipeline CI/CD pour le déploiement automatisé des applications",
+            "Technologies : React, TypeScript, Redux, Tailwind CSS, Node.js, Express.js, Socket.IO, MySQL, Docker, Jenkins, SonarQube, Nexus, OWASP, Grafana"
+          ],
+          "dateDeb": "Janvier 2024",
+          "dateFin": "Juillet 2024"
+        },
         {
           "title": "ZETA Engineering",
           "subtitle": "Développeur web",
@@ -264,30 +269,67 @@
     "title": ["Mes Dernieres", " projets"],
     "list": [
       {
-        "id": "-1",
+        "id": "1",
         "nameProject": "Dashboard Organisationnel Multiniveau",
+        "infoProject": "INFOS PROJET",
         "slug": "dashboard-multiniveau",
-        "infoProject": "Gestion complète (RH, docs, messagerie)",
-        "visitSites": "https://communicflow.ach02raf.pro/Events",
-        "codeSource": "",
-        "downloadAPK": "",
         "title": "Dashboard Organisationnel Multiniveau",
-        "descProject": "Développement d’un dashboard organisationnel multiniveau",
-        "imgProject": [],
+        "visitSites": "Visiter le site",
+        "descProject": "Un dashboard organisationnel multiniveau qui centralise la gestion des informations et de la communication. Structuré autour d’un Super Administrateur, chaque organisation membre possède son propre administrateur, garantissant une autonomie tout en restant intégrée dans un cadre global.",
         "videoProject": "demo-communic-flow",
-        "urlProject": [],
-        "urlSITE": ["https://communicflow.ach02raf.pro/Events"],
+        "urlProject": [""],
+        "urlSITE": [""],
+        "imgProject": [],
         "apk": "",
-        "usedTools": "React, Node.js, MySQL, Docker, Jenkins, Socket.IO, Tailwind CSS",
-        "tools": [
-          "React",
-          "Node.js",
-          "MySQL",
-          "Docker",
-          "Jenkins",
-          "Socket.IO",
-          "Tailwind CSS"
-        ]
+        "technologies": {
+          "title": "Développement",
+          "Développement": [
+            "REACT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "NEXT.JS",
+            "EXPRESS.JS",
+            "SOCKET.IO",
+            "MYSQL"
+          ],
+          "DevOps": ["DOCKER", "JENKINS", "KUBERNETES", "GRAFANA", "SONARQUBE", "NEXUS", "OWASP"]
+        },
+        "description": {
+          "title": "Fonctionnalités principales",
+          "points": [
+            "Gestion centralisée des informations et communication inter-organisations",
+            "Structure hiérarchisée avec un Super Administrateur et des organisations membres autonomes",
+            "Gestion des réclamations",
+            "Discussion en temps réel (chat/messagerie instantanée)",
+            "Gestion des événements",
+            "Gestion des utilisateurs et des rôles",
+            "Gestion des organisations",
+            "Partage et visualisation de rapports via Power BI"
+          ]
+        },
+        "devopsProcess": {
+          "title": "Processus DevOps",
+          "steps": [
+            "Mise en place d’un pipeline CI/CD avec Jenkins pour automatiser le déploiement continu",
+            "Conteneurisation de l’application avec Docker",
+            "Orchestration et scalabilité via Kubernetes",
+            "Surveillance et suivi des performances en temps réel avec Grafana",
+            "Analyse de qualité et sécurité du code avec SonarQube et OWASP",
+            "Gestion centralisée des dépendances avec Nexus"
+          ]
+        },
+        "utilisation": {
+          "title": "Mode d’utilisation (Accès Administrateur)",
+          "url": "https://communicflow.ach02raf.pro/",
+          "login": "admin@admin.com",
+          "password": "admin"
+        },
+        "rapport": {
+          "url": "/docs/rapport-stage.pdf",
+          "label": "Télécharger le rapport"
+        },
+        "usedTools": "Les outils utilisés",
+        "tools": ["React", "Node.js", "MySQL", "Docker", "Jenkins", "Socket.IO", "Tailwind CSS"]
       },
       {
         "id": "0",
@@ -442,14 +484,7 @@
         ],
         "apk": "",
         "usedTools": "Les outils utilisés",
-        "tools": [
-          "WORDPRESS",
-          "PHP",
-          "JAVASCRIPT",
-          "HTML",
-          "SCSS-SASS",
-          "HOSTINGER"
-        ]
+        "tools": ["WORDPRESS", "PHP", "JAVASCRIPT", "HTML", "SCSS-SASS", "HOSTINGER"]
       },
       {
         "id": "5",
