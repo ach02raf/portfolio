@@ -4,31 +4,11 @@
   position: relative;
   background: linear-gradient(135deg, $violet-dark 0%, $violet-light 100%);
   border-radius: 20px;
-  padding: 3rem 2rem;
   color: $white;
   overflow: hidden;
   animation: fadeInUp 1s ease forwards;
 
   /* Badge avec logo et texte */
-  .badge-project {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: rgba(255, 255, 255, 0.9);
-    color: $violet-dark;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 0 30px 30px 0;
-    font-size: 0.9rem;
-    animation: badgePulse 2s infinite;
-
-    .badge-logo {
-      height: 45px;
-    }
-  }
 
   .video-wrapper {
     video {

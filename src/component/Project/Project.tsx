@@ -7,6 +7,7 @@ import FeaturedProject from "./FeaturedProject/FeaturedProject";
 function Project(props: {
   Project: {
     title: string[];
+    desc:string,
     list: {
       id: string;
       nameProject: string;
@@ -15,15 +16,38 @@ function Project(props: {
       visitSites?: string;
       codeSource?: string;
       downloadAPK?: string;
-      title: string;
-      descProject: string;
-      imgProject: string[];
-      videoProject: string;
+      title?: string;
+      descProject?: string;
+      imgProject?: string[];
+      videoProject?: string;
       urlProject?: string[];
-      urlSITE: string[];
-      apk: string;
-      usedTools: string;
-      tools: string[];
+      urlSITE?: string[];
+      apk?: string;
+      usedTools?: string;
+      tools?: string[];
+      technologies?: {
+        title: string;
+        Développement: string[];
+        DevOps: string[];
+      };
+      description?: {
+        title: string;
+        points: string[];
+      };
+      devopsProcess?: {
+        title: string;
+        steps: string[];
+      };
+      utilisation?: {
+        title: string;
+        url: string;
+        login: string;
+        password: string;
+      };
+      rapport?: {
+        url: string;
+        label: string;
+      };
     }[];
   };
   lang: Locale;
@@ -39,7 +63,10 @@ function Project(props: {
           {props?.Project?.title[0] + " "}
           <span>{props?.Project?.title[1]}</span>
         </h2>
-        {firstProject && <FeaturedProject project={firstProject} lang={props.lang} />}
+        <p className="fs-6 text-center pt-4">{props?.Project?.desc}</p>
+        {firstProject && (
+          <FeaturedProject project={firstProject} lang={props.lang} />
+        )}
         {/* Afficher le reste des projets */}
         <div className="row py-3">
           {remainingProjects.map((ItemsProject, index) => (

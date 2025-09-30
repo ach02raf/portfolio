@@ -10,6 +10,8 @@
   height: 90vh;
   max-height: 1080px;
   @media screen and (max-width: 992px) {
+    height: auto;
+  max-height: none;
   }
   span {
     color: $yellow;

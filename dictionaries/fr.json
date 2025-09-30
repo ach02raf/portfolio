@@ -152,7 +152,6 @@
           "GIT",
           "GITHUB",
           "JENKINS",
-          "HOSTINGER",
           "AWS",
           "DOCKER",
           "SONARQUBE",
@@ -267,6 +266,7 @@
   ],
   "Project": {
     "title": ["Mes Dernieres", " projets"],
+    "desc": "Mes projets reflètent une expérience variée entre travail en autonomie et collaboration. Sur des projets comme Communic Flow, Allow Doctor et GoTrip, j’ai assuré l’ensemble du processus : conception, design, développement et déploiement. Sur d’autres projets, j’ai contribué à des missions précises, apportant une expertise ciblée au sein d’équipes de développement. Cette combinaison m’a permis de développer une vision globale tout en renforçant mes compétences techniques et collaboratives.",
     "list": [
       {
         "id": "1",
@@ -325,7 +325,7 @@
           "password": "admin"
         },
         "rapport": {
-          "url": "/docs/rapport-stage.pdf",
+          "url": "/Rapport_PFE.pdf",
           "label": "Télécharger le rapport"
         },
         "usedTools": "Les outils utilisés",
@@ -452,15 +452,10 @@
           "escaliere",
           "klass-design",
           "reno-deco",
-          "mur-mur",
-          "reno-global",
           "sopranet",
-          "renov-en-main",
-          "open-mur",
           "enirop",
-          "muretremie",
           "architectis",
-          "agexis"
+          "reno-deco"
         ],
         "videoProject": "",
         "urlProject": [""],
@@ -472,19 +467,14 @@
           "https://escaliere.fr/",
           "https://klass-design.fr",
           "https://reno-deco.fr",
-          "https://mur-mur.fr/",
-          "https://www.global-reno.com/",
           "https://sopranet.fr/",
-          "https://renov-en-main.fr",
-          "https://www.open-mur.com/",
           "https://enirop.com",
-          "https://www.mur-et-tremie.com/",
           "https://architectis.fr/",
-          "https://www.agexis.com"
+          "https://reno-deco.fr"
         ],
         "apk": "",
         "usedTools": "Les outils utilisés",
-        "tools": ["WORDPRESS", "PHP", "JAVASCRIPT", "HTML", "SCSS-SASS", "HOSTINGER"]
+        "tools": ["WORDPRESS", "PHP", "JAVASCRIPT", "HTML", "SCSS-SASS"]
       },
       {
         "id": "5",
@@ -508,8 +498,7 @@
           "JAVASCRIPT",
           "TYPESCRIPT",
           "TAILWIND-CSS",
-          "SCSS-SASS",
-          "HOSTINGER"
+          "SCSS-SASS"
         ]
       },
       {
@@ -534,8 +523,7 @@
           "JAVASCRIPT",
           "TYPESCRIPT",
           "TAILWIND-CSS",
-          "SCSS-SASS",
-          "HOSTINGER"
+          "SCSS-SASS"
         ]
       },
       {
@@ -560,8 +548,7 @@
           "JAVASCRIPT",
           "TYPESCRIPT",
           "TAILWIND-CSS",
-          "SCSS-SASS",
-          "HOSTINGER"
+          "SCSS-SASS"
         ]
       },
       {
@@ -581,6 +568,156 @@
         "apk": "",
         "usedTools": "Les outils utilisés",
         "tools": ["ANGULAR", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT"]
+      },
+      {
+        "id": "10",
+        "nameProject": "Agexis",
+        "slug": "agexis",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "",
+        "title": "Création d'un site vetrine avec le framework next js",
+        "descProject": "Agexis : entreprise d'ingénierie et de conseil en France spécialisée dans la gestion des projet de bâtiments, de construction et d'Infrastructures.",
+        "imgProject": ["agexis"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://www.agexis.com"],
+        "apk": "",
+        "usedTools": "Les outils utilisés",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
+      },
+      {
+        "id": "11",
+        "nameProject": "Mur et tremie",
+        "slug": "muretremie",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "",
+        "title": "Création d'un site vetrine avec le framework next js",
+        "descProject": "Mur et Trémie,entreprise de structure, offre des services complets pour la construction et la rénovation de structures solides et durables.",
+        "imgProject": ["muretremie"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://www.mur-et-tremie.com/"],
+        "apk": "",
+        "usedTools": "Les outils utilisés",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
+      },
+      {
+        "id": "12",
+        "nameProject": "Open mur",
+        "slug": "open-mur",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "",
+        "title": "Création d'un site vetrine avec le framework next js",
+        "descProject": "OPEN MUR est une entreprise de bâtiment qui s'est spécialisée dans l'ouverture de mur porteur. ",
+        "imgProject": ["open-mur"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://www.open-mur.com/"],
+        "apk": "",
+        "usedTools": "Les outils utilisés",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
+      },
+      {
+        "id": "13",
+        "nameProject": "Renov en main ",
+        "slug": "renov-en-main",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "",
+        "title": "Création d'un site vetrine avec le framework next js",
+        "descProject": "Rénov en Main, une entreprise spécialisée en travaux de rénovation, de creation d'espaces de vie exceptionnels.",
+        "imgProject": ["renov-en-main"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://renov-en-main.fr"],
+        "apk": "",
+        "usedTools": "Les outils utilisés",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
+      },
+      {
+        "id": "14",
+        "nameProject": "Reno global",
+        "slug": "reno-global",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "",
+        "title": "Création d'un site vetrine avec le framework next js",
+        "descProject": "Reno Global : Entreprise de rénovation, d'aménagement et d'agrandissement des travaux en France ·",
+        "imgProject": ["reno-global"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://www.global-reno.com/"],
+        "apk": "",
+        "usedTools": "Les outils utilisés",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
+      },
+      {
+        "id": "15",
+        "nameProject": "Mur Mur",
+        "slug": "mur-mur",
+        "infoProject": "INFOS PROJET",
+        "visitSites": "Visiter le site",
+        "codeSource": "Voir le code source",
+        "downloadAPK": "",
+        "title": "Création d'un site vetrine avec le framework next js",
+        "descProject": "",
+        "imgProject": ["mur-mur"],
+        "videoProject": "",
+        "urlProject": [""],
+        "urlSITE": ["https://mur-mur.fr/"],
+        "apk": "",
+        "usedTools": "Les outils utilisés",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ]
       }
     ]
   },
@@ -725,8 +862,7 @@
         "JAVASCRIPT",
         "TYPESCRIPT",
         "TAILWIND-CSS",
-        "SCSS-SASS",
-        "HOSTINGER"
+        "SCSS-SASS"
       ]
     }
   ]
