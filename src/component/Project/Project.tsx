@@ -7,7 +7,7 @@ import FeaturedProject from "./FeaturedProject/FeaturedProject";
 function Project(props: {
   Project: {
     title: string[];
-    desc:string,
+    desc: string;
     list: {
       id: string;
       nameProject: string;
@@ -64,9 +64,7 @@ function Project(props: {
           <span>{props?.Project?.title[1]}</span>
         </h2>
         <p className="fs-6 text-center pt-4">{props?.Project?.desc}</p>
-        {firstProject && (
-          <FeaturedProject project={firstProject} lang={props.lang} />
-        )}
+        {firstProject && <FeaturedProject project={firstProject} lang={props.lang} />}
         {/* Afficher le reste des projets */}
         <div className="row py-3">
           {remainingProjects.map((ItemsProject, index) => (

@@ -11,11 +11,7 @@ import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
-export default async function page({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
+export default async function page({ params: { lang } }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(lang);
   return (
     <div className="all-blog">

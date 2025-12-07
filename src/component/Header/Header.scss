@@ -1,28 +1,57 @@
 @import "@/A/global-variables.scss";
+
 .header {
   background-color: $violet-light;
   opacity: 0.85;
   box-shadow: 1px 6px 13px -5px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 1px 6px 13px -5px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 1px 6px 13px -5px rgba(0, 0, 0, 0.3);
+
   &-logo {
     max-width: 150px;
   }
+
   &-link {
     font-size: 1rem;
     font-weight: 600;
-    &:hover {
-      color: $yellow !important;
-    }
+
+    display: inline-block;
+    max-width: 110px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+
+    color: $white;
+
+    &:hover,
     &:focus {
       color: $yellow !important;
     }
   }
-  &-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
+
   &-active {
     color: $yellow !important;
   }
 }
+
+/* ------------------------------------------------------ */
+/* 🔥 DARK MODE FOR NEXT-THEMES (class="dark")             */
+/* ------------------------------------------------------ */
+
+// .dark .header {
+//   background-color: #474646; // clean, modern dark tone
+//   opacity: 0.95;
+//   box-shadow: 1px 6px 16px -4px rgba(0, 0, 0, 0.7);
+
+//   &-link {
+//     color: #e6e6e6; // soft light grey for dark mode
+
+//     &:hover,
+//     &:focus {
+//       color: $yellow !important;
+//     }
+//   }
+
+//   &-active {
+//     color: $yellow !important;
+//   }
+// }
