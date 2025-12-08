@@ -12,26 +12,31 @@
     },
     {
       "id": 2,
-      "name": "Services",
-      "url": "Services"
-    },
-    {
-      "id": 3,
       "name": "Mes compétences",
       "url": "Mes-competences"
     },
     {
+      "id": 3,
+      "name": "Expérience & Education",
+      "url": "Experience-Education"
+    },
+    {
       "id": 4,
+      "name": "Services",
+      "url": "Services"
+    },
+    {
+      "id": 5,
       "name": "Mon travail",
       "url": "Mon-travail"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Blog",
       "url": "Blog"
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "Contactez moi",
       "url": "Contactez-moi"
     }
@@ -39,9 +44,7 @@
   "firstSection": {
     "title": "Je suis ",
     "name": "Mohamed Achraf BEN FREDJ,",
-    "description": [
-      "ingénieur en informatique, passionné par le développement web, mobile et l’univers DevOps."
-    ],
+    "description": ["Ingénieur informatique expert Web, Mobile & DevOps"],
     "cv": "Télécharger CV"
   },
   "secondSection": {
@@ -293,7 +296,7 @@
         "apk": "",
         "technologies": {
           "title": "Développement",
-          "Développement": [
+          "Developpement": [
             "REACT",
             "TYPESCRIPT",
             "TAILWIND-CSS",
@@ -678,108 +681,299 @@
     "blogList": [
       {
         "id": 0,
-        "slug": "Construire-des-Fondations-Solides-avec-les-Design-Patterns",
+        "slug": "construire-fondations-solides-design-patterns",
         "title": "Construire des Fondations Solides avec les Design Patterns",
         "img": "design-patterns",
         "titleImg": "Construire des Fondations Solides avec les Design Patterns",
         "desc": [
           {
-            "title": "Introduction",
-            "description": "Les Design Patterns sont des solutions éprouvées aux problèmes récurrents rencontrés lors du développement logiciel. Comprendre et appliquer ces modèles peut considérablement améliorer la qualité, la maintenabilité et la flexibilité de votre code. Dans cet article, plongeons dans le monde des Design Patterns et explorons comment ils peuvent enrichir votre arsenal de développement."
+            "title": "Introduction aux Design Patterns",
+            "description": "Les Design Patterns sont des solutions éprouvées aux problèmes récurrents en développement logiciel. Cet article explore leur importance pour écrire un code maintenable et performant."
           },
           {
             "title": "Le Pattern Singleton",
-            "description": "Commençons par l'un des design patterns les plus simples et les plus couramment utilisés : le Singleton. Ce pattern garantit qu'une classe n'a qu'une seule instance et fournit un point d'accès global à cette instance. J'expliquerai comment le Singleton peut être mis en œuvre et comment il peut être utilisé pour centraliser des fonctionnalités importantes dans votre application."
+            "description": "Garantit qu'une classe n'a qu'une seule instance et fournit un point d'accès global. Idéal pour centraliser des fonctionnalités importantes dans votre application."
           },
           {
             "title": "Observer Pattern",
-            "description": "L'Observer Pattern est essentiel pour créer des systèmes réactifs. Dans cet article, je décrirai comment ce pattern permet à un objet, appelé le sujet, de maintenir une liste de ses dépendances, appelées observateurs, qui sont informées des changements d'état. Cela est particulièrement utile pour la gestion des événements dans une application."
+            "description": "Permet à un objet de notifier plusieurs observateurs lors de changements d'état. Parfait pour gérer les événements dans une application réactive."
           },
           {
-            "title": "Le Pattern Factory",
-            "description": "La création d'objets peut parfois devenir complexe. C'est là que le pattern Factory entre en jeu. Je discuterai de la manière dont ce pattern peut être utilisé pour déléguer la responsabilité de l'instanciation d'objets à des classes dédiées, facilitant ainsi la gestion des dépendances et la maintenance du code."
+            "title": "Factory Pattern",
+            "description": "Délègue la création d'objets à des classes dédiées, facilitant la gestion des dépendances et la maintenance du code."
           },
           {
-            "title": "MVC (Model-View-Controller)",
-            "description": "Bien qu'il ne s'agisse pas d'un pattern en soi, le modèle MVC est une architecture fondamentale que beaucoup de design patterns complètent. Je passerai en revue les principes de base du modèle MVC et montrerai comment certains design patterns, tels que l'Observer et le Strategy, peuvent être utilisés en tandem pour construire des applications robustes."
+            "title": "Architecture MVC",
+            "description": "Le modèle MVC organise l'application en Model, View et Controller, et se combine efficacement avec les design patterns pour construire des applications robustes."
           },
           {
             "title": "Conclusion",
-            "description": "Les Design Patterns offrent des solutions élégantes et efficaces aux défis du développement logiciel. En comprenant quand et comment les appliquer, vous pouvez grandement améliorer la qualité et la maintenance de votre code. Explorez ces patterns, expérimentez-les, et voyez comment ils peuvent transformer votre approche du développement."
+            "description": "Les Design Patterns améliorent la qualité et la maintenabilité du code. Expérimentez-les pour transformer votre approche du développement."
           }
         ]
       },
       {
         "id": 1,
-        "slug": "Optimiser-les-Performances-dans-Angular",
+        "slug": "optimiser-performances-angular",
         "title": "Optimiser les Performances dans Angular",
         "img": "angular",
         "titleImg": "Optimiser les Performances dans Angular",
         "desc": [
           {
             "title": "Introduction",
-            "description": "La performance est cruciale pour une expérience utilisateur exceptionnelle. Dans cet article, nous explorerons des techniques avancées pour optimiser les performances des applications Angular, du chargement initial à l'interaction utilisateur."
+            "description": "Une application rapide améliore l'expérience utilisateur. Découvrez des techniques avancées pour optimiser Angular."
           },
           {
             "title": "Lazy Loading des Modules",
-            "description": "Le lazy loading des modules est une stratégie qui consiste à charger des parties de l'application uniquement lorsque cela est nécessaire. Je partagerai des astuces sur la mise en œuvre efficace du lazy loading dans Angular pour réduire le temps de chargement initial et améliorer la réactivité de l'application."
+            "description": "Charge uniquement les modules nécessaires pour réduire le temps de chargement initial et améliorer la réactivité."
           },
           {
             "title": "Change Detection Strategies",
-            "description": "Angular utilise une détection des changements pour mettre à jour l'interface utilisateur en fonction des modifications de l'état de l'application. Découvrez comment choisir la stratégie de détection des changements appropriée en fonction des besoins spécifiques de votre application, pour minimiser les mises à jour inutiles et améliorer les performances."
+            "description": "Choisissez la stratégie adaptée pour minimiser les mises à jour inutiles et améliorer les performances."
           },
           {
             "title": "Optimisation des Requêtes HTTP",
-            "description": "La gestion des requêtes HTTP est une partie cruciale de toute application web. Je partagerai des meilleures pratiques pour optimiser les appels HTTP, minimiser la latence réseau et gérer efficacement les données côté client."
+            "description": "Réduisez la latence et gérez efficacement les données côté client grâce à des requêtes optimisées."
           },
           {
-            "title": "Mesures de Performance avec Angular CLI",
-            "description": "Angular CLI propose des outils puissants pour évaluer les performances de votre application. Découvrez comment utiliser ces outils pour mesurer les temps de chargement, identifier les goulots d'étranglement et apporter des améliorations significatives à votre application."
+            "title": "Mesures avec Angular CLI",
+            "description": "Utilisez Angular CLI pour identifier les goulots d'étranglement et améliorer les temps de chargement."
           },
           {
             "title": "Conclusion",
-            "description": "En adoptant ces techniques d'optimisation, vous pourrez créer des applications Angular qui offrent des performances exceptionnelles, garantissant ainsi une expérience utilisateur fluide et réactive."
+            "description": "Adoptez ces techniques pour créer des applications Angular rapides et fluides."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "slug": "decouvrir-reactjs-interfaces-dynamiques",
+        "title": "Découvrir React.js : Interfaces Dynamiques et Réactives",
+        "img": "reactjs",
+        "titleImg": "Découvrir React.js : Interfaces Dynamiques et Réactives",
+        "desc": [
+          {
+            "title": "Introduction à React.js",
+            "description": "React.js facilite la création d'interfaces utilisateur interactives grâce à son approche déclarative et composante."
+          },
+          {
+            "title": "Le Virtual DOM",
+            "description": "Minimise les manipulations du DOM réel en utilisant une représentation virtuelle, améliorant les performances."
+          },
+          {
+            "title": "Composants Réutilisables",
+            "description": "Chaque interface est composée de composants modulaires, favorisant la réutilisation et la maintenabilité."
+          },
+          {
+            "title": "Flux de Données Unidirectionnel",
+            "description": "Les données circulent dans une seule direction, simplifiant la gestion des états."
+          },
+          {
+            "title": "Hooks pour gérer l'état",
+            "description": "Les hooks comme useState et useEffect permettent de gérer l'état et les effets de manière concise."
+          },
+          {
+            "title": "Navigation avec React Router",
+            "description": "Gérez la navigation sans rechargement grâce à React Router."
+          },
+          {
+            "title": "Conclusion",
+            "description": "React.js offre un terrain robuste pour créer des applications modernes et performantes."
           }
         ]
       },
       {
         "id": 3,
-        "slug": "Decouvrir-ReactJs-Construire-des-Interfaces-Dynamiques-et-Reactives",
-        "title": "Découvrir React.js : Construire des Interfaces Dynamiques et Réactives",
-        "img": "reactjs",
-        "titleImg": "Découvrir React.js : Construire des Interfaces Dynamiques et Réactives",
+        "slug": "introduction-au-devops-pratiques-essentielles",
+        "title": "Introduction au DevOps : Pratiques Essentielles pour les Développeurs",
+        "img": "devops",
+        "titleImg": "Introduction au DevOps : Pratiques Essentielles",
         "desc": [
           {
-            "title": "",
-            "description": "React.js, développé par Facebook, est devenu un incontournable dans le monde du développement web. Ce framework JavaScript, axé sur la création d'interfaces utilisateur interactives, offre une approche déclarative et composante pour la construction d'applications web modernes. Dans cet article, plongeons dans les fondamentaux de React et explorons comment il simplifie le développement d'applications front-end."
+            "title": "Qu'est-ce que DevOps ?",
+            "description": "DevOps est une culture qui combine développement et opérations pour livrer des applications plus rapidement et efficacement."
           },
           {
-            "title": "Le Virtual DOM",
-            "description": "Au cœur de React réside le concept puissant du Virtual DOM. Plutôt que de mettre à jour le DOM réel à chaque changement d'état, React crée une représentation virtuelle de l'interface utilisateur, puis la compare avec la version précédente. Ce processus de réconciliation minimise les manipulations du DOM réel, améliorant ainsi considérablement les performances de l'application."
+            "title": "Intégration Continue",
+            "description": "Automatisez les tests et les builds pour détecter rapidement les erreurs et améliorer la qualité du code."
           },
           {
-            "title": "Composants : Les Blocs de Construction de React",
-            "description": "Les composants sont la pierre angulaire de React. Chaque élément de votre interface utilisateur est un composant, du bouton simple à la barre de navigation complexe. Dans cet article, nous explorerons comment créer des composants réutilisables, comment ils communiquent entre eux et comment ils contribuent à une structure d'application modulaire."
+            "title": "Déploiement Continu",
+            "description": "Livrez des mises à jour fréquentes et fiables grâce à des pipelines de déploiement automatisés."
           },
           {
-            "title": "Le Flux de Données Unidirectionnel avec React",
-            "description": "React adopte un flux de données unidirectionnel, ce qui signifie que les données circulent dans une seule direction à travers l'application. Cela simplifie la gestion des états et rend l'application plus prévisible. Nous examinerons comment le flux de données unidirectionnel contribue à une architecture claire et à la gestion efficace des données."
+            "title": "Surveillance et Logging",
+            "description": "Suivez les performances et identifiez les problèmes avant qu'ils n'affectent les utilisateurs."
           },
           {
-            "title": "Les Hooks : Simplifier la Gestion de l'État et des Effets",
-            "description": "Avec l'introduction des hooks dans React, la gestion de l'état et des effets a atteint un niveau supérieur. Les hooks, tels que useState et useEffect, permettent aux développeurs de gérer l'état local et d'effectuer des actions liées au cycle de vie du composant de manière plus concise. Nous plongerons dans ces hooks essentiels et discuterons de leurs cas d'utilisation."
+            "title": "Outils Populaires",
+            "description": "Jenkins, Docker, Kubernetes et GitLab CI/CD sont des outils clés dans un environnement DevOps."
           },
           {
-            "title": "React Router : La Navigation sans Rechargement de Page",
-            "description": "La navigation entre les pages est une nécessité dans de nombreuses applications. React Router fournit une solution élégante pour la gestion de la navigation sans le besoin de recharger la page. Nous explorerons la mise en place de la navigation dans une application React, en soulignant les fonctionnalités essentielles de React Router."
+            "title": "Conclusion",
+            "description": "Le DevOps transforme la manière dont les équipes développent et déploient les applications."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "slug": "typescript-pour-debutants-guide-complet",
+        "title": "TypeScript pour Débutants : Guide Complet",
+        "img": "typescript",
+        "titleImg": "TypeScript pour Débutants",
+        "desc": [
+          {
+            "title": "Introduction à TypeScript",
+            "description": "TypeScript ajoute le typage statique à JavaScript, permettant d'écrire un code plus robuste et maintenable."
           },
           {
-            "title": "Conclusion : Pourquoi Choisir React.js ?",
-            "description": "React.js a transformé la manière dont les développeurs abordent la création d'interfaces utilisateur interactives. Sa simplicité, sa réactivité et son écosystème florissant en font un choix populaire pour une variété de projets. En adoptant les principes fondamentaux de React, vous serez prêt à construire des applications web modernes et performantes."
+            "title": "Types et Interfaces",
+            "description": "Apprenez à définir des types et interfaces pour améliorer la qualité et la lisibilité du code."
           },
           {
-            "title": "",
-            "description": "Que vous soyez novice ou expert, React.js offre un terrain de jeu robuste pour donner vie à vos idées web. Explorez, expérimentez et plongez dans l'univers réactif de React pour créer des expériences utilisateur exceptionnelles."
+            "title": "Classes et Héritage",
+            "description": "Découvrez comment TypeScript facilite la programmation orientée objet."
+          },
+          {
+            "title": "Fonctions et Generics",
+            "description": "Utilisez des fonctions génériques pour écrire du code flexible et réutilisable."
+          },
+          {
+            "title": "Conclusion",
+            "description": "TypeScript améliore la qualité du code et réduit les bugs, indispensable pour des projets professionnels."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "slug": "optimisation-seo-pour-portfolio-developpeur",
+        "title": "Optimisation SEO pour un Portfolio de Développeur",
+        "img": "seo",
+        "titleImg": "Optimisation SEO pour Portfolio",
+        "desc": [
+          {
+            "title": "Importance du SEO",
+            "description": "Le référencement naturel améliore la visibilité de votre portfolio et attire des recruteurs ou clients."
+          },
+          {
+            "title": "Mots-clés et Contenu",
+            "description": "Intégrez des mots-clés pertinents dans vos titres, descriptions et blogs pour un meilleur classement."
+          },
+          {
+            "title": "Performance et Accessibilité",
+            "description": "Un site rapide et accessible augmente le SEO et l'expérience utilisateur."
+          },
+          {
+            "title": "Backlinks et Partages",
+            "description": "Encouragez les backlinks et le partage sur les réseaux sociaux pour améliorer votre référencement."
+          },
+          {
+            "title": "Conclusion",
+            "description": "L'optimisation SEO est essentielle pour un portfolio professionnel et attractif."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "slug": "graphql-vs-rest-comparatif-complet",
+        "title": "GraphQL vs REST : Comparatif Complet",
+        "img": "graphql",
+        "titleImg": "GraphQL vs REST",
+        "desc": [
+          {
+            "title": "Introduction",
+            "description": "Découvrez les différences entre GraphQL et REST, leurs avantages et inconvénients."
+          },
+          {
+            "title": "REST API",
+            "description": "Architecture simple et standardisée, adaptée aux applications classiques."
+          },
+          {
+            "title": "GraphQL API",
+            "description": "Permet de récupérer uniquement les données nécessaires, réduisant la surcharge réseau."
+          },
+          {
+            "title": "Cas d'utilisation",
+            "description": "Quand utiliser REST ou GraphQL selon la taille et la complexité du projet."
+          },
+          {
+            "title": "Conclusion",
+            "description": "Choisir le bon API impacte la performance et la maintenabilité de l'application."
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "slug": "docker-pour-les-developpeurs-guide-pratique",
+        "title": "Docker pour les Développeurs : Guide Pratique",
+        "img": "docker",
+        "titleImg": "Docker pour Développeurs",
+        "desc": [
+          {
+            "title": "Introduction à Docker",
+            "description": "Docker facilite la création, le déploiement et la gestion de conteneurs pour les applications."
+          },
+          {
+            "title": "Images et Conteneurs",
+            "description": "Apprenez à construire des images et gérer les conteneurs efficacement."
+          },
+          {
+            "title": "Docker Compose",
+            "description": "Orchestrez plusieurs conteneurs et services avec un fichier YAML simple."
+          },
+          {
+            "title": "Conclusion",
+            "description": "Docker améliore la portabilité et la cohérence des environnements de développement."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "slug": "test-logiciel-essentiels-qualite",
+        "title": "Tests Logiciels : Essentiels pour la Qualité",
+        "img": "testing",
+        "titleImg": "Tests Logiciels Essentiels",
+        "desc": [
+          {
+            "title": "Pourquoi tester ?",
+            "description": "Les tests garantissent que le code fonctionne comme prévu et réduit les bugs en production."
+          },
+          {
+            "title": "Tests Unitaires",
+            "description": "Vérifiez le comportement de chaque unité de code pour assurer sa fiabilité."
+          },
+          {
+            "title": "Tests d'Intégration",
+            "description": "Assurez-vous que les différents modules fonctionnent ensemble correctement."
+          },
+          {
+            "title": "Conclusion",
+            "description": "Une stratégie de tests solide est indispensable pour un code de haute qualité."
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "slug": "progressive-web-apps-guide-complet",
+        "title": "Progressive Web Apps (PWA) : Guide Complet",
+        "img": "pwa",
+        "titleImg": "Progressive Web Apps",
+        "desc": [
+          {
+            "title": "Introduction aux PWA",
+            "description": "Les PWA offrent une expérience native sur le web avec un chargement rapide et des fonctionnalités hors ligne."
+          },
+          {
+            "title": "Service Workers",
+            "description": "Permettent le cache intelligent des ressources et la fonctionnalité hors ligne."
+          },
+          {
+            "title": "Manifest et Installation",
+            "description": "Créez un manifest pour permettre aux utilisateurs d'ajouter votre PWA à leur appareil."
+          },
+          {
+            "title": "Conclusion",
+            "description": "Les PWA combinent le meilleur du web et des applications natives pour offrir une expérience optimale."
           }
         ]
       }

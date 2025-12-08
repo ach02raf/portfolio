@@ -11,3 +11,18 @@
     width: 70%;
   }
 }
+
+/* ========== DARK MODE OVERRIDES FOR FOOTER ========== */
+.dark .footer {
+  background-color: #0b0812 !important;
+  p {
+    color: #c6c4d2;
+  }
+}
+
+.dark .social-media a {
+  color: #c6c4d2;
+  &:hover {
+    color: $yellow;
+  }
+}

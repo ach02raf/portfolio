@@ -1,43 +1,64 @@
 @import "@/A/global-variables.scss";
-.Blog-home{
-    padding-top: 6%;
-    padding-bottom: 6%;
-    &-contain{
-      
-        width: 80%;
-        a{
-            text-decoration: none;
-        }
- @media screen and ( min-width:767px) {
-  .Blog-home-contain-url{
-    a{
-        display: block;
-        margin:auto 10%;
-       width: 60% !important;
+.Blog-home {
+  padding-top: 6%;
+  padding-bottom: 6%;
+  &-contain {
+    width: 80%;
+    a {
+      text-decoration: none;
     }
-}
-    &-1{
+    @media screen and (min-width: 767px) {
+      .Blog-home-contain-url {
+        a {
+          display: block;
+          margin: auto 10%;
+          width: 60% !important;
+        }
+      }
+      &-1 {
         transform: translateX(25%) !important;
-    }
-    &-2{
+      }
+      &-2 {
         transform: translateX(50%) !important;
+      }
     }
- }
-        h3{
-            border-bottom: 2px solid $white !important;
-        }
-        a:hover h3{
-            color:$yellow !important;
-            border-bottom: 2px solid $yellow !important;
-        }
+    h3 {
+      border-bottom: 2px solid $white !important;
     }
-    &-link{
-        width: 150px !important;
-        display: block;
-        border: 2px solid $white;
-        &:hover{
-            border: 2px solid $yellow;
-            color: $yellow !important;
-        }
+    a:hover h3 {
+      color: $yellow !important;
+      border-bottom: 2px solid $yellow !important;
     }
+  }
+  &-link {
+    width: 150px !important;
+    display: block;
+    border: 2px solid $white;
+    &:hover {
+      border: 2px solid $yellow;
+      color: $yellow !important;
+    }
+  }
+}
+
+/* ========== DARK MODE OVERRIDES FOR BLOG ========== */
+.dark .Blog-home {
+  &-contain {
+    h3 {
+      border-bottom: 2px solid #c6c4d2 !important;
+      color: #c6c4d2 !important;
+    }
+    a:hover h3 {
+      color: $yellow !important;
+      border-bottom: 2px solid $yellow !important;
+    }
+  }
+  &-link {
+    border: 2px solid #c6c4d2;
+    color: #c6c4d2 !important;
+    &:hover {
+      border: 2px solid $yellow;
+      color: $yellow !important;
+    }
+  }
 }

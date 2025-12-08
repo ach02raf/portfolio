@@ -23,7 +23,7 @@ function FeaturedProject(props: {
     tools?: string[];
     technologies?: {
       title: string;
-      Développement: string[];
+      Developpement: string[];
       DevOps: string[];
     };
     description?: {
@@ -49,7 +49,6 @@ function FeaturedProject(props: {
 }) {
   const { project, lang } = props;
 
-  // Dictionnaire simple pour traduire
   const translations: Record<Locale, { subtitle: string; tech: string; button: string }> = {
     fr: {
       subtitle: "Projet de fin d’études",
@@ -68,25 +67,21 @@ function FeaturedProject(props: {
     },
   };
 
-  const t = translations[lang] || translations["en"]; // fallback anglais
+  const t = translations[lang] || translations["en"];
 
   return (
     <div className="featured-project container mt-5">
       <div className="row align-items-center animated-section">
-        {/* Colonne vidéo */}
         <div className="col-md-6 mb-3 video-wrapper">
           <video width="100%" height="370px" controls loop autoPlay muted>
             <source src={`/${project.videoProject}.mp4`} type="video/webm" />
           </video>
         </div>
 
-        {/* Colonne description */}
         <div className="col-md-6 info-wrapper  py-5">
           <h3 className="mb-4">{project.title}</h3>
           <p className="project-subtitle p-1">{t.subtitle}</p>
-          <p className="fs-6">
-            {project.descProject && project.descProject.slice(0, 107)}...
-          </p>
+          <p className="fs-6">{project.descProject && project.descProject.slice(0, 107)}...</p>
 
           <h5>{t.tech}</h5>
           <ul>

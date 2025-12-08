@@ -5,54 +5,133 @@ import "./Header.scss";
 import Image from "next/image";
 import { useState } from "react";
 import ThemeButton from "../ThemeButton";
+import { motion } from "framer-motion";
 
 function Header(props: { header: { id: number; name: string; url: string }[] }) {
   const [active, setActive] = useState<number>();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleLinkClick = (id: number, url: string) => {
+    setActive(id);
+    sessionStorage.setItem("force-section", url);
+    setMobileMenuOpen(false);
+  };
+
+  const toggleMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
-    <div className="sticky-top header">
-      <div className="row m-0 p-0 py-1">
-        <div className="col-lg-2 col-6">
-          <Link href={"/"} className="text-decoration-none" rel="preload">
+    <header className="header">
+      <div className="header-container">
+        <div className="header-logo-wrapper">
+          <Link href="/" className="text-decoration-none" rel="preload">
             <Image
-              width={150}
-              height={65}
-              className="header-logo d-block m-auto"
+              width={140}
+              height={60}
+              className="header-logo"
               src="/Images/logohorizentalwhite1.png"
               title="ACH02RAF"
               alt="logo ach02raf"
+              priority
             />
           </Link>
         </div>
-        <div className="col-6 d-block m-auto d-lg-block d-none">
-          <ul className="list-unstyled d-flex justify-content-center align-items-center p-0 m-0">
+
+        <nav className="header-nav-desktop">
+          <ul className="header-nav-list">
             {props.header.map((item) => (
-              <li className="px-2" key={item.id}>
+              <li key={item.id}>
                 <Link
                   title={item.name}
-                  className={`text-decoration-none header-link ${
-                    active === item.id ? "header-active" : ""
+                  className={`header-nav-link ${
+                    active === item.id ? "header-nav-link--active" : ""
                   }`}
                   href={`#${item.url}`}
-                  onClick={() => {
-                    setActive(item.id);
-                    sessionStorage.setItem("force-section", item.url);
-                  }}>
+                  onClick={() => handleLinkClick(item.id, item.url)}>
                   {item.name}
                 </Link>
               </li>
             ))}
           </ul>
-        </div>
-        <div className="col-lg-2 col-6 d-flex align-items-center gap-4 header-div3">
-          <div className="col-6">
+        </nav>
+
+        <div className="header-controls">
+          <div className="header-controls-item header-lang-desktop">
             <LocaleSwitcher />
           </div>
-          <div className="col-4 d-flex justify-content-end">
+
+          <div className="header-controls-item">
             <ThemeButton />
           </div>
+
+          <button
+            className={`header-burger ${mobileMenuOpen ? "header-burger--active" : ""}`}
+            onClick={toggleMenu}
+            aria-label="Toggle menu">
+            <motion.span
+              className="header-burger-line"
+              animate={mobileMenuOpen ? { rotate: 45, y: 10 } : { rotate: 0, y: 0 }}
+              transition={{ duration: 0.3 }}
+            />
+            <motion.span
+              className="header-burger-line"
+              animate={mobileMenuOpen ? { opacity: 0 } : { opacity: 1 }}
+              transition={{ duration: 0.3 }}
+            />
+            <motion.span
+              className="header-burger-line"
+              animate={mobileMenuOpen ? { rotate: -45, y: -10 } : { rotate: 0, y: 0 }}
+              transition={{ duration: 0.3 }}
+            />
+          </button>
         </div>
       </div>
-    </div>
+
+      <motion.div
+        className="header-nav-mobile-overlay"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: mobileMenuOpen ? 1 : 0 }}
+        transition={{ duration: 0.3 }}
+        onClick={closeMenu}
+        style={{ pointerEvents: mobileMenuOpen ? "auto" : "none" }}
+      />
+
+      <motion.nav
+        className={`header-nav-mobile ${mobileMenuOpen ? "header-nav-mobile--open" : ""}`}
+        initial={{ opacity: 0, y: -20 }}
+        animate={mobileMenuOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
+        transition={{ duration: 0.3 }}
+        style={{
+          display: mobileMenuOpen ? "flex" : "none",
+        }}>
+        <ul className="header-nav-mobile-list">
+          {props.header.map((item) => (
+            <li key={item.id}>
+              <Link
+                title={item.name}
+                className={`header-nav-mobile-link ${
+                  active === item.id ? "header-nav-mobile-link--active" : ""
+                }`}
+                href={`#${item.url}`}
+                onClick={() => handleLinkClick(item.id, item.url)}>
+                {item.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        <div className="header-nav-mobile-controls">
+          <div className="header-nav-mobile-control-item">
+            <LocaleSwitcher />
+          </div>
+        </div>
+      </motion.nav>
+    </header>
   );
 }
 export default Header;

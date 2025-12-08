@@ -18,11 +18,7 @@
     }
   }
   .info-wrapper {
-    background: linear-gradient(
-        135deg,
-        rgba($violet-dark, 0.85) 0%,
-        rgba($violet-light, 0.85) 100%
-      ),
+    background: linear-gradient(135deg, rgba($violet-dark, 0.85) 0%, rgba($violet-light, 0.85) 100%),
       url("/Images/Communiclogohorizontal.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,5 +112,30 @@
   }
   100% {
     width: 100px;
+  }
+}
+
+/* ========== DARK MODE OVERRIDES FOR FEATURED PROJECT ========== */
+.dark .featured-project {
+  background: linear-gradient(135deg, #140f22 0%, #1a0f22 100%);
+  color: #ffffff;
+  .info-wrapper {
+    background: linear-gradient(135deg, rgba(20, 15, 34, 0.95) 0%, rgba(26, 15, 34, 0.95) 100%),
+      url("/Images/Communiclogohorizontal.png");
+  }
+  h3 {
+    color: #ffffff;
+  }
+  ul li {
+    background: rgba(198, 196, 210, 0.15);
+    color: #c6c4d2;
+    &:hover {
+      background: $yellow;
+      color: #0b0812;
+    }
+  }
+  .project-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(199, 154, 240, 0.2);
   }
 }

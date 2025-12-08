@@ -8,98 +8,101 @@
     {
       "id": 1,
       "name": "Über mich",
-      "url": "Uber-mich"
+      "url": "Ueber-mich"
     },
     {
       "id": 2,
+      "name": "Meine Fähigkeiten",
+      "url": "Meine-Faehigkeiten"
+    },
+    {
+      "id": 3,
+      "name": "Erfahrung & Ausbildung",
+      "url": "Erfahrung-Ausbildung"
+    },
+    {
+      "id": 4,
       "name": "Dienstleistungen",
       "url": "Dienstleistungen"
     },
     {
-      "id": 3,
-      "name": "Meine Fähigkeiten",
-      "url": "Meine-Fahigkeiten"
-    },
-    {
-      "id": 4,
+      "id": 5,
       "name": "Meine Arbeit",
       "url": "Meine-Arbeit"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Blog",
       "url": "Blog"
     },
     {
-      "id": 6,
-      "name": "Kontakt",
-      "url": "Kontakt"
+      "id": 7,
+      "name": "Kontaktieren Sie mich",
+      "url": "Kontaktieren-Sie-mich"
     }
   ],
   "firstSection": {
     "title": "Ich bin ",
     "name": "Mohamed Achraf BEN FREDJ,",
-    "description": [
-      "ein Informatikingenieur, leidenschaftlich für Web- und Mobile-Entwicklung sowie die DevOps-Welt."
-    ],
+    "description": ["IT-Ingenieur, Experte für Web, Mobile & DevOps"],
     "cv": "Lebenslauf herunterladen"
   },
   "secondSection": {
     "title": ["Über", "mich"],
     "description": [
-      "  Informatikingenieur, Absolvent von (",
+      "  Informatik-Ingenieur, Abschluss von (",
       "TEK-UP",
-      "). Spezialisiert auf Mobile-, Web- und Multimedia-Entwicklung, nach einem Bachelor-Abschluss in Informatik an der (",
-      "ISIMM",
-      "), habe ich meine Full-Stack-Entwicklungsfähigkeiten durch verschiedene Projekte und Praktika gestärkt, insbesondere als Webentwickler bei Zeta Engineering. Mit großer Leidenschaft für das JavaScript/TypeScript-Ökosystem entwickle ich moderne, leistungsstarke und benutzerzentrierte Anwendungen. Entdecken Sie meine Arbeiten auf meinem GitHub (",
+      "). Spezialisiert auf Mobile, Web und Multimedia-Entwicklung, nach einem Bachelor in Informatik am (",
+      " l’ISIMM",
+      "). Meine Full-Stack-Entwicklungsfähigkeiten wurden durch mehrere Projekte und Praktika gestärkt, insbesondere als Webentwickler bei Zeta Engineering. Leidenschaftlich für das JavaScript/TypeScript-Ökosystem, konzipiere ich moderne, performante und benutzerzentrierte Anwendungen. Entdecken Sie meine Arbeiten auf meinem GitHub (",
       "ach02raf",
-      "), ein Spiegel meines Engagements für Exzellenz und Innovation in der Softwareentwicklung."
+      "), ein Spiegelbild meines Engagements für Exzellenz und Innovation in der Softwareentwicklung."
     ]
   },
   "ServicesSection": {
     "title": ["Meine", "Dienstleistungen"],
-    "description": "LASSEN SIE UNS EINEN BLICK AUF MEINE DIENSTLEISTUNGEN WERFEN",
+    "description": "WERFEN WIR EINEN BLICK AUF MEINE DIENSTLEISTUNGEN",
     "listServices": [
       {
         "id": 1,
-        "title": "Webintegration",
-        "desc": "Entwicklung und Integration eines grafischen Entwurfs, um ihn in ein konformes Webprojekt zu verwandeln. Ich lege besonderen Wert auf die Benutzererfahrung und die Optimierung (SEO & Anzeigegeschwindigkeit) in all meinen Projekten.",
+        "title": "Web-Integration",
+        "desc": "Entwicklung und Integration eines grafischen Entwurfs zur Umwandlung in ein konformes Webprojekt. Ich lege besonderen Wert auf die Benutzererfahrung und die Optimierung (SEO & Ladegeschwindigkeit) bei all meinen Projekten.",
         "img": "faMagic"
       },
       {
         "id": 2,
         "title": "E-Commerce",
-        "desc": "Erstellung einer E-Commerce-Plattform mit dem E-Commerce-CMS Magento, einer der umfassendsten Open-Source-Lösungen. Ich habe mich auf spezifische Entwicklungen spezialisiert, um Magento an Ihre Bedürfnisse und Abläufe anzupassen.",
+        "desc": "Erstellung von E-Commerce-Plattformen mit dem E-Commerce CMS Magento, einer der umfassendsten Open-Source-Lösungen. Ich bin spezialisiert auf spezifische Entwicklungen, um Magento an Ihre Bedürfnisse und Arbeitsweise anzupassen.",
         "img": "faShoppingBag"
       },
       {
         "id": 3,
-        "title": "Web- und mobile Anwendungen",
-        "desc": "Erstellung von Unternehmensanwendungen, Intranet, Extranet, Corporate- und Showcase-Websites, Web-Apps usw. Regelmäßige Updates, Fehlerbehebungen, Leistungsoptimierung und Verbesserungen der Sicherheit von Anwendungen und Websites.",
+        "title": "Web- & mobile Anwendung",
+        "desc": "Erstellung von Geschäftsanwendungen, Intranets, Extranets, Corporate Websites und Showcase-Websites, Web-Apps... Regelmäßige Updates, Fehlerbehebung, Performance-Optimierung und Verbesserung der Anwendungssicherheit und Websites.",
         "img": "faGears"
       },
       {
         "id": 4,
-        "title": "Codeüberprüfung",
-        "desc": "Analyse und Sicherstellung, dass der Code bewährten Praktiken entspricht, und Sicherstellung seiner Qualität (Lesbarkeit, Klarheit, Konsistenz). Dadurch wird der Code wartungsfreundlicher, besser strukturiert und die Anzahl der Fehler wird reduziert.",
+        "title": "Code-Review",
+        "desc": "Analyse und Überprüfung, ob der Code den Best Practices entspricht, und Sicherstellung seiner Qualität (Lesbarkeit, Klarheit, Konsistenz). Dadurch wird der Code wartbarer, besser strukturiert und die Anzahl der Bugs reduziert.",
         "img": "faCode"
       },
       {
         "id": 5,
         "title": "Optimierung",
-        "desc": "Durchführung einer Leistungsanalyse und Optimierung Ihrer Anwendungen durch eingehende Untersuchung des Quellcodes, der Interaktionen zwischen verschiedenen Komponenten und Datenbanken, um wirksame Maßnahmen zur Verbesserung der Anwendungsleistung zu ergreifen.",
+        "desc": "Durchführung einer Performance-Analyse und Optimierung Ihrer Anwendungen, indem detailliert in den Quellcode, die Interaktionen zwischen den verschiedenen Bausteinen und die Datenbanken eingegangen wird, um effektive Maßnahmen zur Verbesserung der Anwendungsleistung zu ergreifen.",
         "img": "faRocket"
       },
       {
         "id": 6,
-        "title": "SEO",
-        "desc": "Optimierung für Suchmaschinen durch Anwendung einer Reihe von Techniken, Regeln und bewährten Methoden zur Verbesserung der Sichtbarkeit von Websites und ihrer Positionen in den Suchergebnissen.",
+        "title": "SEO - Suchmaschinenoptimierung",
+        "desc": "Optimierung für Suchmaschinen durch Anwendung einer Reihe von Techniken, Regeln und Best Practices zur Verbesserung der Sichtbarkeit von Websites und ihrer Positionen in den Suchmaschinenergebnissen.",
         "img": "faBullhorn"
       }
     ]
   },
   "contactSection": {
-    "title": "Kontaktiere Mich",
+    "title": "Kontaktieren Sie mich",
     "location": "Tunis, Tunesien",
     "email": "ach02raf@gmail.com",
     "phoneNumber": "+216 94622592"
@@ -114,7 +117,7 @@
       },
       {
         "id": 1,
-        "title": "Frameworks",
+        "title": "Framework",
         "listeLangage": [
           "EXPRESS.JS",
           "NEXT.JS",
@@ -136,12 +139,13 @@
       },
       {
         "id": 3,
-        "title": "Stilsprachen",
+        "title": "Stylesprachen",
         "listeLangage": ["CSS", "SCSS-SASS"]
       },
+
       {
         "id": 4,
-        "title": "JS/TS Bibliotheken",
+        "title": "JS/TS Bibliothek",
         "listeLangage": ["REACT"]
       },
       {
@@ -167,7 +171,7 @@
       },
       {
         "id": 7,
-        "title": "Andere",
+        "title": "Sonstiges",
         "listeLangage": ["REST-RESTFUL", "GRAPHQL"]
       }
     ]
@@ -177,14 +181,24 @@
       "title": "Erfahrung",
       "list": [
         {
+          "title": "Selbstständige Arbeit (Freelance)",
+          "subtitle": "Ich bin derzeit in zwei Projekte involviert",
+          "desc": [
+            "Entwicklung eines mehrstufigen organisatorischen Dashboards: Communic Flow, verbesserte Version",
+            "Module: Hinzufügen eines Dunkelmodus (dark mode), Verwaltung von Rechnungen, Produkten, Kunden, Verbesserung des Anmeldemoduls, Hinzufügen der Zwei-Faktor-Authentifizierung (2FA), Integration der Anmeldung über Google (Google Auth), Einrichtung des Cloudflare reCAPTCHA-Schutzes, Hinzufügen und Verwaltung von Zugriffsrechten für jeden Benutzer, Hinzufügen eines To-Do-Listen-Moduls, Implementierung einer Microservices-Architektur für das Backend.",
+            "Entwicklung einer Webplattform zur Buchung von Sportplätzen und Teamverwaltung: KickOff"
+          ],
+          "dateDeb": "Gegenwärtig",
+          "dateFin": "Oktober 2024"
+        },
+        {
           "title": "ASQII",
           "subtitle": "Abschlusspraktikum",
           "desc": [
-            "Entwicklung eines mehrstufigen Organisations-Dashboards",
-            "Module: Veranstaltungsverwaltung, Beschwerden, Datei-Management, Power BI-Berichte",
-            "Integration von Echtzeit-Nachrichten (Socket.IO)",
-            "Einrichtung einer CI/CD-Pipeline für die automatisierte Bereitstellung von Anwendungen",
-            "Technologien: React, TypeScript, Redux, Tailwind CSS, Node.js, Express.js, Socket.IO, MySQL, Docker, Jenkins, SonarQube, Nexus, OWASP, Grafana"
+            "Entwicklung eines mehrstufigen organisatorischen Dashboards: Communic Flow",
+            "Module: Veranstaltungsverwaltung, Beschwerden, Aktenverwaltung, Power BI-Berichte",
+            "Echtzeit-Messaging-Integration (Socket.IO)",
+            "Einrichtung einer CI/CD-Pipeline für die automatisierte Anwendungsbereitstellung"
           ],
           "dateDeb": "Januar 2024",
           "dateFin": "Juli 2024"
@@ -193,35 +207,35 @@
           "title": "ZETA Engineering",
           "subtitle": "Webentwickler",
           "desc": [
-            "Erstellung eines Pakets mit 16 Websites mit dem WordPress-CMS",
-            "Entwicklung eines Pakets mit 4 Websites mit dem Next.js-Framework",
-            "Optimierung des SEO für die in beiden Paketen enthaltenen Websites"
+            "Erstellung eines Pakets von 16 Websites mit dem CMS WordPress",
+            "Erstellung eines Pakets von 4 Websites mit dem Framework Next.js",
+            "SEO-Optimierung der Websites, die in beiden Paketen enthalten sind"
           ],
-          "dateDeb": "August 2023",
+          "dateDeb": "August 2023 ",
           "dateFin": "Januar 2024"
         },
         {
           "title": "ZETA Engineering",
           "subtitle": "Sommerpraktikum 2023",
-          "desc": ["Schulung zum WordPress-CMS und SEO"],
-          "dateDeb": "Juni 2023",
+          "desc": ["Schulung zu CMS WordPress und SEO"],
+          "dateDeb": "Juni 2023 ",
           "dateFin": "Juli 2023"
         },
         {
           "title": "SHAREK IT",
           "subtitle": "Sommerpraktikum 2022",
           "desc": [
-            "Erstellung einer E-Commerce-Website zum Verkauf von Computergeräten INFO-LINA",
+            "Erstellung einer E-Commerce-Website für den Verkauf von Computerausrüstung INFO-LINA",
             "MERN STACK, BOOTSTRAP"
           ],
-          "dateDeb": "Juni 2022",
-          "dateFin": "August 2022"
+          "dateDeb": "Juni 2023 ",
+          "dateFin": "August 2023"
         },
         {
           "title": "COSO-FT IT",
-          "subtitle": "Praktikum im Abschlussjahr 2020",
+          "subtitle": "Abschlusspraktikum 2020",
           "desc": [
-            "Erstellung der Web- und mobilen Anwendung für die Terminvereinbarung in der Medizin: ALLO DOCTOR",
+            "Erstellung der Web- und Mobilanwendung für medizinische Terminvereinbarungen: ALLO DOCTOR",
             "MERN STACK, REACT-NATIVE"
           ],
           "dateDeb": "Januar 2020",
@@ -231,32 +245,30 @@
           "title": "SARTEX GROUP",
           "subtitle": "Sommerpraktikum 2018",
           "desc": ["IT-Wartung", "Cloud Computing"],
-          "dateDeb": "Juni 2018",
+          "dateDeb": "Juni 2018 ",
           "dateFin": "Juli 2018"
         }
       ]
     },
     {
-      "title": "Bildung",
+      "title": "Ausbildung",
       "list": [
         {
-          "title": "TEK-UP Universität",
+          "title": "TEK-UP university",
           "subtitle": "Informatikingenieurwesen",
-          "desc": [
-            "Spezialisierung in der Entwicklung von Web-, Mobile- und Multimedia-Anwendungen"
-          ],
+          "desc": ["Spezialisierung Web-, Mobile- und Multimedia-Entwicklung"],
           "dateDeb": "2021",
           "dateFin": "2024"
         },
         {
-          "title": "ISIMM | Höheres Institut für Informatik und Mathematik, Monastir",
-          "subtitle": "Bachelor-Abschluss in Informatik",
-          "desc": ["Spezialisierung in Softwaretechnik"],
+          "title": "ISIMM | Institut Supérieur d'Informatique et de Mathématiques de Monastir",
+          "subtitle": "Grundlegender Bachelor in Informatik",
+          "desc": ["Spezialisierung Software Engineering"],
           "dateDeb": "2016",
           "dateFin": "2020"
         },
         {
-          "title": "LKM | Gymnasium Ksibet El Mediouni",
+          "title": "LKM | Lycée secondaire Ksibet El Mediouni",
           "subtitle": "Technisches Abitur",
           "desc": [],
           "dateDeb": "2015",
@@ -266,20 +278,25 @@
     }
   ],
   "Project": {
-    "title": ["Meine letzten", "Projekte"],
-    "desc": "Meine Projekte spiegeln eine Mischung aus selbstständiger Arbeit und Teamarbeit wider. Bei Projekten wie Communic Flow, Allow Doctor und GoTrip habe ich den gesamten Prozess übernommen: Konzeption, Design, Entwicklung und Deployment. In anderen Projekten habe ich an bestimmten Aufgaben mitgewirkt und gezieltes Fachwissen in Entwicklungsteams eingebracht. Diese Kombination hat mir ermöglicht, sowohl eine umfassende Sichtweise zu entwickeln als auch meine technischen und kollaborativen Fähigkeiten zu stärken.",
+    "title": ["Meine letzten", " Projekte"],
+    "desc": "Meine Projekte spiegeln eine vielfältige Erfahrung zwischen autonomer Arbeit und Zusammenarbeit wider. Bei Projekten wie Communic Flow, Allow Doctor und GoTrip habe ich den gesamten Prozess verantwortet: Konzeption, Design, Entwicklung und Bereitstellung. Bei anderen Projekten habe ich zu spezifischen Aufgaben beigetragen und gezielte Expertise in Entwicklungsteams eingebracht. Diese Kombination hat es mir ermöglicht, eine globale Sichtweise zu entwickeln und gleichzeitig meine technischen und kollaborativen Fähigkeiten zu stärken.",
     "list": [
       {
         "id": "1",
-        "nameProject": "Mehrstufiges Organisations-Dashboard",
-        "slug": "dashboard-mehrstufig",
-        "title": "Mehrstufiges Organisations-Dashboard",
-        "descProject": "Ein mehrstufiges Organisations-Dashboard, das das Informationsmanagement und die Kommunikation zentralisiert. Es ist um einen Superadministrator herum strukturiert, wobei jede Mitgliedsorganisation ihren eigenen Administrator hat, um Autonomie zu gewährleisten und dennoch in den globalen Rahmen integriert zu bleiben.",
+        "nameProject": "Mehrstufiges Organisatorisches Dashboard",
+        "infoProject": "PROJEKT-INFOS",
+        "slug": "dashboard-multiniveau",
+        "title": "Mehrstufiges Organisatorisches Dashboard",
+        "visitSites": "Website besuchen",
+        "descProject": "Ein mehrstufiges organisatorisches Dashboard, das das Informations- und Kommunikationsmanagement zentralisiert. Strukturiert um einen Super-Administrator, verfügt jede Mitgliedsorganisation über einen eigenen Administrator, was Autonomie gewährleistet, während sie in einen globalen Rahmen integriert bleibt.",
         "videoProject": "demo-communic-flow",
+        "urlProject": [""],
+        "urlSITE": [""],
         "imgProject": [],
+        "apk": "",
         "technologies": {
           "title": "Entwicklung",
-          "Développement": [
+          "Developpement": [
             "REACT",
             "TYPESCRIPT",
             "TAILWIND-CSS",
@@ -288,26 +305,18 @@
             "SOCKET.IO",
             "MYSQL"
           ],
-          "DevOps": [
-            "DOCKER",
-            "JENKINS",
-            "KUBERNETES",
-            "GRAFANA",
-            "SONARQUBE",
-            "NEXUS",
-            "OWASP"
-          ]
+          "DevOps": ["DOCKER", "JENKINS", "KUBERNETES", "GRAFANA", "SONARQUBE", "NEXUS", "OWASP"]
         },
         "description": {
           "title": "Hauptfunktionen",
           "points": [
-            "Zentralisiertes Informationsmanagement und Kommunikation zwischen Organisationen",
-            "Hierarchische Struktur mit einem Superadministrator und autonomen Mitgliedsorganisationen",
-            "Beschwerdemanagement",
+            "Zentralisiertes Informationsmanagement und organisationsübergreifende Kommunikation",
+            "Hierarchische Struktur mit einem Super-Administrator und autonomen Mitgliedsorganisationen",
+            "Verwaltung von Beschwerden",
             "Echtzeit-Diskussion (Chat/Instant Messaging)",
-            "Veranstaltungsmanagement",
-            "Benutzer- und Rollenverwaltung",
-            "Organisationsverwaltung",
+            "Verwaltung von Veranstaltungen",
+            "Verwaltung von Benutzern und Rollen",
+            "Verwaltung von Organisationen",
             "Teilen und Visualisieren von Berichten über Power BI"
           ]
         },
@@ -316,10 +325,10 @@
           "steps": [
             "Einrichtung einer CI/CD-Pipeline mit Jenkins zur Automatisierung der kontinuierlichen Bereitstellung",
             "Containerisierung der Anwendung mit Docker",
-            "Orchestrierung und Skalierbarkeit durch Kubernetes",
-            "Überwachung und Leistungs-Tracking in Echtzeit mit Grafana",
+            "Orchestrierung und Skalierbarkeit über Kubernetes",
+            "Echtzeit-Überwachung und Performance-Tracking mit Grafana",
             "Code-Qualitäts- und Sicherheitsanalyse mit SonarQube und OWASP",
-            "Zentrale Abhängigkeitsverwaltung mit Nexus"
+            "Zentralisierte Abhängigkeitsverwaltung mit Nexus"
           ]
         },
         "utilisation": {
@@ -332,27 +341,19 @@
           "url": "/Rapport_PFE.pdf",
           "label": "Bericht herunterladen"
         },
-        "usedTools": "Verwendete Werkzeuge",
-        "tools": [
-          "React",
-          "Node.js",
-          "MySQL",
-          "Docker",
-          "Jenkins",
-          "Socket.IO",
-          "Tailwind CSS"
-        ]
+        "usedTools": "Verwendete Tools",
+        "tools": ["React", "Node.js", "MySQL", "Docker", "Jenkins", "Socket.IO", "Tailwind CSS"]
       },
       {
         "id": "0",
         "nameProject": "ALLO DOCTOR",
         "slug": "allo-doctor",
-        "infoProject": "INFOS PROJET",
-        "visitSites": "Visiter le site",
-        "codeSource": "Voir le code source",
-        "downloadAPK": "Télécharcher l'APK",
-        "title": "Création d'une application mobile pour réserver un rendez-vous en ligne avec un médecin",
-        "descProject": "ALLO DOCTOR, une solution novatrice, offre la possibilité de réserver des rendez-vous médicaux en ligne via une application mobile sophistiquée, développée avec la technologie avancée React Native. La robustesse de notre infrastructure repose sur une partie backend élaborée avec Express.js, soutenue par la puissance de MongoDB en tant que base de données. Cette approche garantit une expérience utilisateur fluide, une gestion efficace des données et une réponse rapide aux demandes, élevant ainsi le niveau de qualité et de professionnalisme de notre service de réservation médicale en ligne",
+        "infoProject": "PROJEKT-INFOS",
+        "visitSites": "Website besuchen",
+        "codeSource": "Quellcode anzeigen",
+        "downloadAPK": "APK herunterladen",
+        "title": "Erstellung einer mobilen Anwendung zur Online-Terminbuchung bei einem Arzt",
+        "descProject": "ALLO DOCTOR, eine innovative Lösung, bietet die Möglichkeit, medizinische Termine online über eine hochentwickelte mobile Anwendung zu buchen, die mit der fortschrittlichen React Native Technologie entwickelt wurde. Die Robustheit unserer Infrastruktur basiert auf einem Backend, das mit Express.js erstellt und durch die Leistung von MongoDB als Datenbank unterstützt wird. Dieser Ansatz gewährleistet eine reibungslose Benutzererfahrung, eine effiziente Datenverwaltung und eine schnelle Reaktion auf Anfragen, wodurch das Qualitäts- und Professionalitätsniveau unseres Online-Terminbuchungsservice angehoben wird.",
         "imgProject": ["ALLO-DOCTOR"],
         "videoProject": "ALLO-DOCTOR",
         "urlProject": [
@@ -361,7 +362,7 @@
         ],
         "urlSITE": [""],
         "apk": "",
-        "usedTools": "Les outils utilisés",
+        "usedTools": "Verwendete Tools",
         "tools": ["REACT-NATIVE", "EXPRESS.JS", "MONGO.DB"]
       },
 
@@ -369,12 +370,12 @@
         "id": "1",
         "nameProject": "API SOAP",
         "slug": "api-soap",
-        "infoProject": "INFOS PROJET",
-        "visitSites": "Visiter le site",
-        "codeSource": "Voir le code source",
-        "downloadAPK": "Télécharcher l'APK",
-        "title": "Création d'une API SOAP à l'aide des projets Spring Boot",
-        "descProject": "La création d'une API SOAP avec Spring Boot offre une approche puissante et efficace pour le développement d'applications web. En utilisant cette plateforme robuste, nous pouvons concevoir une API SOAP moderne et évolutive, facilitant la communication entre différents systèmes. Spring Boot simplifie le processus en fournissant une configuration par défaut et des fonctionnalités intégrées, permettant ainsi une mise en œuvre rapide et une gestion optimale des services web. Cette approche combinant la flexibilité de Spring Boot et les normes de communication SOAP assure une intégration harmonieuse et sécurisée, répondant aux besoins les plus exigeants en matière de développement d'API.",
+        "infoProject": "PROJEKT-INFOS",
+        "visitSites": "Website besuchen",
+        "codeSource": "Quellcode anzeigen",
+        "downloadAPK": "APK herunterladen",
+        "title": "Erstellung einer SOAP-API mit Spring Boot-Projekten",
+        "descProject": "Die Erstellung einer SOAP-API mit Spring Boot bietet einen leistungsstarken und effizienten Ansatz für die Entwicklung von Webanwendungen. Durch die Verwendung dieser robusten Plattform können wir eine moderne und skalierbare SOAP-API konzipieren, die die Kommunikation zwischen verschiedenen Systemen erleichtert. Spring Boot vereinfacht den Prozess, indem es eine Standardkonfiguration und integrierte Funktionen bereitstellt, was eine schnelle Implementierung und eine optimale Verwaltung von Webdiensten ermöglicht. Dieser Ansatz, der die Flexibilität von Spring Boot und die SOAP-Kommunikationsstandards kombiniert, gewährleistet eine harmonische und sichere Integration, die den anspruchsvollsten Anforderungen an die API-Entwicklung gerecht wird.",
         "imgProject": ["api-soap"],
         "videoProject": "",
         "urlProject": [
@@ -384,20 +385,35 @@
         ],
         "urlSITE": [""],
         "apk": "",
-        "usedTools": "Les outils utilisés",
+        "usedTools": "Verwendete Tools",
         "tools": ["SPRINGBOOT", "POSTMAN"]
       },
       {
         "id": "2",
         "nameProject": "GoTRIP",
         "slug": "gotrip",
-        "infoProject": "INFOS PROJET",
-        "visitSites": "Visiter le site",
-        "codeSource": "Voir le code source",
-        "downloadAPK": "Télécharcher l'APK",
-        "title": "Création d'une application mobile permettant d'organiser, réserver des places pour des voyages et des randonnées avec un guide en ligne",
-        "descProject": "Une application mobile novatrice qui offre aux utilisateurs la possibilité de sélectionner des itinéraires touristiques proposés par des guides experts. En plus de permettre aux touristes de choisir leurs destinations préférées et de créer des itinéraires personnalisés, l'application se compose de deux parties : une interface utilisateur dynamique développée avec le framework Ionic pour le front-end, et une infrastructure robuste côté serveur réalisée avec Express.js et MongoDB pour le back-end. De plus, elle propose la fonctionnalité de choisir parmi une liste de guides disponibles, de consulter leurs profils personnels, et de lire les commentaires laissés par d'autres touristes.",
-        "imgProject": ["allo-doctor"],
+        "infoProject": "PROJEKT-INFOS",
+        "visitSites": "Website besuchen",
+        "codeSource": "Quellcode anzeigen",
+        "downloadAPK": "APK herunterladen",
+        "title": "Erstellung einer mobilen Anwendung zur Organisation und Buchung von Reisen und Wanderungen mit einem Online-Guide",
+        "descProject": "Eine innovative mobile Anwendung, die Benutzern die Möglichkeit bietet, von erfahrenen Guides vorgeschlagene touristische Routen auszuwählen. Die Anwendung ermöglicht es Touristen nicht nur, ihre bevorzugten Ziele auszuwählen und personalisierte Routen zu erstellen, sondern besteht aus zwei Teilen: einer dynamischen Benutzeroberfläche, die mit dem Ionic Framework für das Frontend entwickelt wurde, und einer robusten serverseitigen Infrastruktur, die mit Express.js und MongoDB für das Backend realisiert wurde. Darüber hinaus bietet sie die Funktion, aus einer Liste verfügbarer Guides zu wählen, deren persönliche Profile einzusehen und Kommentare anderer Touristen zu lesen.",
+        "imgProject": [
+          "gotrip",
+          "gotrip13",
+          "gotrip12",
+          "gotrip11",
+          "gotrip10",
+          "gotrip9",
+          "gotrip8",
+          "gotrip7",
+          "gotrip6",
+          "gotrip5",
+          "gotrip4",
+          "gotrip3",
+          "gotrip2",
+          "gotrip1"
+        ],
         "videoProject": "",
         "urlProject": [
           "https://github.com/ach02raf/GoTrip-ionic-application",
@@ -405,19 +421,19 @@
         ],
         "urlSITE": [""],
         "apk": "gotrip",
-        "usedTools": "Les outils utilisés",
+        "usedTools": "Verwendete Tools",
         "tools": ["IONIC", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
       },
       {
         "id": "3",
         "nameProject": "ARTVERSE",
         "slug": "artverse",
-        "infoProject": "INFOS PROJET",
-        "visitSites": "Visiter le site",
-        "codeSource": "Voir le code source",
-        "downloadAPK": "Télécharcher l'APK",
-        "title": "Création d'une application web responsive pour l'art numérique : ARTIVESE",
-        "descProject": "Notre projet consiste à créer une plateforme dédiée à l'art numérique, offrant aux artistes un espace pour exposer leurs créations. Cette initiative s'inscrit dans la tendance croissante des plateformes en ligne qui facilitent la communication, le partage d'informations et la collaboration dans le domaine artistique, tout en ouvrant de nouvelles perspectives pour la promotion culturelle.",
+        "infoProject": "PROJEKT-INFOS",
+        "visitSites": "Website besuchen",
+        "codeSource": "Quellcode anzeigen",
+        "downloadAPK": "APK herunterladen",
+        "title": "Erstellung einer responsiven Webanwendung für digitale Kunst: ARTIVESE",
+        "descProject": "Unser Projekt besteht darin, eine Plattform für digitale Kunst zu schaffen, die Künstlern einen Raum bietet, um ihre Kreationen auszustellen. Diese Initiative passt zum wachsenden Trend von Online-Plattformen, die die Kommunikation, den Informationsaustausch und die Zusammenarbeit im künstlerischen Bereich erleichtern und gleichzeitig neue Perspektiven für die kulturelle Förderung eröffnen.",
         "imgProject": ["artverse"],
         "videoProject": "",
         "urlProject": [
@@ -427,18 +443,18 @@
         ],
         "urlSITE": ["https://ach02raf.github.io/ARTVERSE-PROJECT/"],
         "apk": "",
-        "usedTools": "Les outils utilisés",
+        "usedTools": "Verwendete Tools",
         "tools": ["ANGULAR", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
       },
       {
         "id": "4",
-        "nameProject": "PACK WORDPRESS",
+        "nameProject": "WORDPRESS PAKET",
         "slug": "pack-wordpress",
-        "infoProject": "INFOS PROJET",
-        "visitSites": "Visiter le site",
-        "codeSource": "Voir le code source",
-        "downloadAPK": "Télécharcher l'APK",
-        "title": "Création d'un pack de 16 sites avec le CMS WordPress",
+        "infoProject": "PROJEKT-INFOS",
+        "visitSites": "Website besuchen",
+        "codeSource": "Quellcode anzeigen",
+        "downloadAPK": "APK herunterladen",
+        "title": "Erstellung eines Pakets von 16 Websites mit dem CMS WordPress",
         "descProject": "",
         "imgProject": [
           "all-sitewordpress",
@@ -470,400 +486,518 @@
           "https://reno-deco.fr"
         ],
         "apk": "",
-        "usedTools": "Les outils utilisés",
+        "usedTools": "Verwendete Tools",
         "tools": ["WORDPRESS", "PHP", "JAVASCRIPT", "HTML", "SCSS-SASS"]
       },
       {
         "id": "5",
         "nameProject": "Spacy & Cosy",
         "slug": "spacy-and-cosy",
-        "infoProject": "INFOS PROJET",
-        "visitSites": "Visiter le site",
-        "codeSource": "Voir le code source",
-        "downloadAPK": "Télécharcher l'APK",
-        "title": "Création d'un site vetrine avec le framework next js",
+        "infoProject": "PROJEKT-INFOS",
+        "visitSites": "Website besuchen",
+        "codeSource": "Quellcode anzeigen",
+        "downloadAPK": "APK herunterladen",
+        "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
         "descProject": "",
         "imgProject": ["spacy-and-cosy"],
         "videoProject": "",
         "urlProject": [""],
         "urlSITE": ["https://www.spacy-and-cosy.com/"],
         "apk": "",
-        "usedTools": "Les outils utilisés",
-        "tools": [
-          "NEXT.JS",
-          "BOOTSTRAP-5",
-          "JAVASCRIPT",
-          "TYPESCRIPT",
-          "TAILWIND-CSS",
-          "SCSS-SASS"
-        ]
+        "usedTools": "Verwendete Tools",
+        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
       },
-
       {
         "id": "7",
         "nameProject": "Structural Metal",
         "slug": "structural-metal",
-        "infoProject": "INFOS PROJET",
-        "visitSites": "Visiter le site",
-        "codeSource": "Voir le code source",
-        "downloadAPK": "Télécharcher l'APK",
-        "title": "Création d'un site vetrine avec le framework next js",
+        "infoProject": "PROJEKT-INFOS",
+        "visitSites": "Website besuchen",
+        "codeSource": "Quellcode anzeigen",
+        "downloadAPK": "APK herunterladen",
+        "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
         "descProject": "",
         "imgProject": ["structural-metal"],
         "videoProject": "",
         "urlProject": [""],
         "urlSITE": ["https://www.structural-metal.com/"],
         "apk": "",
-        "usedTools": "Les outils utilisés",
-        "tools": [
-          "NEXT.JS",
-          "BOOTSTRAP-5",
-          "JAVASCRIPT",
-          "TYPESCRIPT",
-          "TAILWIND-CSS",
-          "SCSS-SASS"
-        ]
+        "usedTools": "Verwendete Tools",
+        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
       },
       {
         "id": "8",
         "nameProject": "Structural Home",
         "slug": "structural-home",
-        "infoProject": "INFOS PROJET",
-        "visitSites": "Visiter le site",
-        "codeSource": "Voir le code source",
-        "downloadAPK": "Télécharcher l'APK",
-        "title": "Création d'un site vetrine avec le framework next js",
+        "infoProject": "PROJEKT-INFOS",
+        "visitSites": "Website besuchen",
+        "codeSource": "Quellcode anzeigen",
+        "downloadAPK": "APK herunterladen",
+        "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
         "descProject": "",
         "imgProject": ["structural-home"],
         "videoProject": "",
         "urlProject": [""],
         "urlSITE": ["https://www.structural-home.com/"],
         "apk": "",
-        "usedTools": "Les outils utilisés",
-        "tools": [
-          "NEXT.JS",
-          "BOOTSTRAP-5",
-          "JAVASCRIPT",
-          "TYPESCRIPT",
-          "TAILWIND-CSS",
-          "SCSS-SASS"
-        ]
+        "usedTools": "Verwendete Tools",
+        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
       },
       {
         "id": "9",
         "nameProject": "CV Maker",
         "slug": "cv-maker",
-        "infoProject": "INFOS PROJET",
-        "visitSites": "Visiter le site",
-        "codeSource": "Voir le code source",
-        "downloadAPK": "Télécharcher l'APK",
-        "title": "Création d'une application web de génération de CV",
+        "infoProject": "PROJEKT-INFOS",
+        "visitSites": "Website besuchen",
+        "codeSource": "Quellcode anzeigen",
+        "downloadAPK": "APK herunterladen",
+        "title": "Erstellung einer Webanwendung zur CV-Generierung",
         "descProject": "",
         "imgProject": ["cv-maker"],
         "videoProject": "",
         "urlProject": ["https://github.com/ach02raf/CV-MAKER"],
         "urlSITE": ["https://ach02raf.github.io/CV-MAKER/"],
         "apk": "",
-        "usedTools": "Les outils utilisés",
+        "usedTools": "Verwendete Tools",
         "tools": ["ANGULAR", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT"]
       },
       {
         "id": "10",
         "nameProject": "Agexis",
         "slug": "agexis",
-        "infoProject": "PROJEKTINFO",
+        "infoProject": "PROJEKT-INFOS",
         "visitSites": "Website besuchen",
-        "codeSource": "Quellcode ansehen",
+        "codeSource": "Quellcode anzeigen",
         "downloadAPK": "",
-        "title": "Erstellung einer Unternehmens-Website mit dem Next.js Framework",
-        "descProject": "Agexis: ein Ingenieur- und Beratungsunternehmen in Frankreich, spezialisiert auf Projektmanagement für Gebäude, Bau und Infrastruktur.",
+        "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
+        "descProject": "Agexis: Ingenieur- und Beratungsunternehmen in Frankreich, spezialisiert auf das Management von Gebäude-, Bau- und Infrastrukturprojekten.",
         "imgProject": ["agexis"],
         "videoProject": "",
         "urlProject": [""],
         "urlSITE": ["https://www.agexis.com"],
         "apk": "",
         "usedTools": "Verwendete Tools",
-        "tools": [
-          "NEXT.JS",
-          "BOOTSTRAP-5",
-          "JAVASCRIPT",
-          "TYPESCRIPT",
-          "TAILWIND-CSS",
-          "SCSS-SASS"
-        ]
+        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
       },
       {
         "id": "11",
         "nameProject": "Mur et tremie",
         "slug": "muretremie",
-        "infoProject": "PROJEKTINFO",
+        "infoProject": "PROJEKT-INFOS",
         "visitSites": "Website besuchen",
-        "codeSource": "Quellcode ansehen",
+        "codeSource": "Quellcode anzeigen",
         "downloadAPK": "",
-        "title": "Erstellung einer Unternehmens-Website mit dem Next.js Framework",
-        "descProject": "Mur et Trémie, ein Bauunternehmen für Strukturen, bietet umfassende Dienstleistungen für den Bau und die Renovierung von stabilen und langlebigen Strukturen.",
+        "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
+        "descProject": "Mur et Trémie, ein Bauunternehmen, bietet umfassende Dienstleistungen für den Bau und die Renovierung solider und langlebiger Strukturen.",
         "imgProject": ["muretremie"],
         "videoProject": "",
         "urlProject": [""],
         "urlSITE": ["https://www.mur-et-tremie.com/"],
         "apk": "",
         "usedTools": "Verwendete Tools",
-        "tools": [
-          "NEXT.JS",
-          "BOOTSTRAP-5",
-          "JAVASCRIPT",
-          "TYPESCRIPT",
-          "TAILWIND-CSS",
-          "SCSS-SASS"
-        ]
+        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
       },
       {
         "id": "12",
         "nameProject": "Open mur",
         "slug": "open-mur",
-        "infoProject": "PROJEKTINFO",
+        "infoProject": "PROJEKT-INFOS",
         "visitSites": "Website besuchen",
-        "codeSource": "Quellcode ansehen",
+        "codeSource": "Quellcode anzeigen",
         "downloadAPK": "",
-        "title": "Erstellung einer Unternehmens-Website mit dem Next.js Framework",
-        "descProject": "OPEN MUR ist ein Bauunternehmen, das sich auf das Öffnen tragender Wände spezialisiert hat.",
+        "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
+        "descProject": "OPEN MUR ist ein Bauunternehmen, das sich auf die Öffnung tragender Wände spezialisiert hat.",
         "imgProject": ["open-mur"],
         "videoProject": "",
         "urlProject": [""],
         "urlSITE": ["https://www.open-mur.com/"],
         "apk": "",
         "usedTools": "Verwendete Tools",
-        "tools": [
-          "NEXT.JS",
-          "BOOTSTRAP-5",
-          "JAVASCRIPT",
-          "TYPESCRIPT",
-          "TAILWIND-CSS",
-          "SCSS-SASS"
-        ]
+        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
       },
       {
         "id": "13",
-        "nameProject": "Renov en main",
+        "nameProject": "Renov en main ",
         "slug": "renov-en-main",
-        "infoProject": "PROJEKTINFO",
+        "infoProject": "PROJEKT-INFOS",
         "visitSites": "Website besuchen",
-        "codeSource": "Quellcode ansehen",
+        "codeSource": "Quellcode anzeigen",
         "downloadAPK": "",
-        "title": "Erstellung einer Unternehmens-Website mit dem Next.js Framework",
-        "descProject": "Rénov en Main, ein Unternehmen, das sich auf Renovierungsarbeiten spezialisiert hat und außergewöhnliche Wohnräume schafft.",
+        "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
+        "descProject": "Rénov en Main, ein auf Renovierungsarbeiten spezialisiertes Unternehmen, schafft außergewöhnliche Lebensräume.",
         "imgProject": ["renov-en-main"],
         "videoProject": "",
         "urlProject": [""],
         "urlSITE": ["https://renov-en-main.fr"],
         "apk": "",
         "usedTools": "Verwendete Tools",
-        "tools": [
-          "NEXT.JS",
-          "BOOTSTRAP-5",
-          "JAVASCRIPT",
-          "TYPESCRIPT",
-          "TAILWIND-CSS",
-          "SCSS-SASS"
-        ]
+        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
       },
       {
         "id": "14",
         "nameProject": "Reno global",
         "slug": "reno-global",
-        "infoProject": "PROJEKTINFO",
+        "infoProject": "PROJEKT-INFOS",
         "visitSites": "Website besuchen",
-        "codeSource": "Quellcode ansehen",
+        "codeSource": "Quellcode anzeigen",
         "downloadAPK": "",
-        "title": "Erstellung einer Unternehmens-Website mit dem Next.js Framework",
-        "descProject": "Reno Global: ein Renovierungsunternehmen, spezialisiert auf Umbau- und Erweiterungsprojekte in Frankreich.",
+        "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
+        "descProject": "Reno Global: Unternehmen für Renovierung, Gestaltung und Erweiterung von Bauarbeiten in Frankreich.",
         "imgProject": ["reno-global"],
         "videoProject": "",
         "urlProject": [""],
         "urlSITE": ["https://www.global-reno.com/"],
         "apk": "",
         "usedTools": "Verwendete Tools",
-        "tools": [
-          "NEXT.JS",
-          "BOOTSTRAP-5",
-          "JAVASCRIPT",
-          "TYPESCRIPT",
-          "TAILWIND-CSS",
-          "SCSS-SASS"
-        ]
+        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
       },
       {
         "id": "15",
         "nameProject": "Mur Mur",
         "slug": "mur-mur",
-        "infoProject": "PROJEKTINFO",
+        "infoProject": "PROJEKT-INFOS",
         "visitSites": "Website besuchen",
-        "codeSource": "Quellcode ansehen",
+        "codeSource": "Quellcode anzeigen",
         "downloadAPK": "",
-        "title": "Erstellung einer Unternehmens-Website mit dem Next.js Framework",
-        "descProject": "Mur Mur: ein französisches Bauunternehmen, spezialisiert auf strukturelle Arbeiten.",
+        "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
+        "descProject": "",
         "imgProject": ["mur-mur"],
         "videoProject": "",
         "urlProject": [""],
         "urlSITE": ["https://mur-mur.fr/"],
         "apk": "",
         "usedTools": "Verwendete Tools",
-        "tools": [
-          "NEXT.JS",
-          "BOOTSTRAP-5",
-          "JAVASCRIPT",
-          "TYPESCRIPT",
-          "TAILWIND-CSS",
-          "SCSS-SASS"
-        ]
+        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
       }
     ]
   },
   "citation": {
     "name": "Janet Williams",
-    "citation": "L'informatique, c'est plus que des lignes de code. C'est l'expression de la créativité, la résolution de problèmes et la construction d'un avenir numérique."
+    "citation": "Informatik ist mehr als nur Codezeilen. Es ist der Ausdruck von Kreativität, die Lösung von Problemen und der Aufbau einer digitalen Zukunft."
   },
-
   "blog": {
     "title": "Blogs",
-    "btnSeeAll": "Alle Blogs anzeigen",
+    "btnSeeAll": "Alle Blogs",
     "blogList": [
       {
         "id": 0,
-        "slug": "Solide-Grundlagen-mit-Design-Patterns-aufbauen",
-        "title": "Solide Grundlagen mit Design Patterns aufbauen",
+        "slug": "solide-grundlagen-mit-design-patterns-bauen",
+        "title": "Solide Grundlagen mit Design Patterns bauen",
         "img": "design-patterns",
-        "titleImg": "Solide Grundlagen mit Design Patterns aufbauen",
+        "titleImg": "Solide Grundlagen mit Design Patterns bauen",
         "desc": [
           {
-            "title": "Einführung",
-            "description": "Design Patterns sind bewährte Lösungen für wiederkehrende Probleme in der Softwareentwicklung. Das Verständnis und die Anwendung dieser Muster können die Qualität, Wartbarkeit und Flexibilität Ihres Codes erheblich verbessern. Tauchen wir in diesem Artikel in die Welt der Design Patterns ein und erkunden, wie sie Ihr Entwicklungsarsenal bereichern können."
+            "title": "Einführung in Design Patterns",
+            "description": "Design Patterns sind bewährte Lösungen für wiederkehrende Probleme in der Softwareentwicklung. Dieser Artikel beleuchtet ihre Bedeutung für die Erstellung von wartbarem und leistungsstarkem Code."
           },
           {
-            "title": "Singleton Pattern",
-            "description": "Beginnen wir mit einem der einfachsten und am häufigsten verwendeten Design Patterns: dem Singleton. Dieses Pattern stellt sicher, dass eine Klasse nur eine Instanz hat und bietet einen globalen Zugriffspunkt auf diese Instanz. Ich werde erklären, wie das Singleton-Pattern implementiert werden kann und wie es verwendet werden kann, um wichtige Funktionen in Ihrer Anwendung zu zentralisieren."
+            "title": "Das Singleton Pattern",
+            "description": "Stellt sicher, dass eine Klasse nur eine einzige Instanz hat und bietet einen globalen Zugriffspunkt. Ideal zur Zentralisierung wichtiger Funktionen in Ihrer Anwendung."
           },
           {
             "title": "Observer Pattern",
-            "description": "Das Observer Pattern ist entscheidend für die Erstellung reaktiver Systeme. In diesem Artikel werde ich beschreiben, wie dieses Muster einem Objekt, das als Subjekt bezeichnet wird, ermöglicht, eine Liste seiner Abhängigkeiten, die als Beobachter bezeichnet werden, zu führen, die über Zustandsänderungen informiert werden. Dies ist besonders nützlich für das Event-Handling in einer Anwendung."
+            "description": "Ermöglicht es einem Objekt, mehrere Beobachter bei Zustandsänderungen zu benachrichtigen. Perfekt für die Verwaltung von Ereignissen in einer reaktiven Anwendung."
           },
           {
             "title": "Factory Pattern",
-            "description": "Die Erstellung von Objekten kann manchmal komplex werden. Hier kommt das Factory Pattern ins Spiel. Ich werde besprechen, wie dieses Muster verwendet werden kann, um die Verantwortung für die Instanziierung von Objekten an dedizierte Klassen zu delegieren und somit die Verwaltung von Abhängigkeiten und Code-Wartung zu erleichtern."
+            "description": "Delegiert die Objekterstellung an dedizierte Klassen, was die Verwaltung von Abhängigkeiten und die Code-Wartung vereinfacht."
           },
           {
-            "title": "MVC (Model-View-Controller)",
-            "description": "Obwohl es kein eigenständiges Muster ist, ist das MVC-Modell eine grundlegende Architektur, die viele Design Patterns ergänzt. Ich werde die Grundprinzipien des MVC-Modells überprüfen und zeigen, wie einige Design Patterns wie der Observer und der Strategy zusammen verwendet werden können, um robuste Anwendungen zu erstellen."
+            "title": "MVC-Architektur",
+            "description": "Das MVC-Modell organisiert die Anwendung in Model, View und Controller und lässt sich effektiv mit Design Patterns kombinieren, um robuste Anwendungen zu erstellen."
           },
           {
             "title": "Fazit",
-            "description": "Design Patterns bieten elegante und effektive Lösungen für die Herausforderungen der Softwareentwicklung. Durch das Verständnis, wann und wie sie anzuwenden sind, können Sie die Qualität und Wartbarkeit Ihres Codes erheblich verbessern. Erforschen Sie diese Muster, experimentieren Sie mit ihnen und sehen Sie, wie sie Ihre Herangehensweise an die Entwicklung verändern können."
+            "description": "Design Patterns verbessern die Codequalität und Wartbarkeit. Experimentieren Sie damit, um Ihren Entwicklungsansatz zu verändern."
           }
         ]
       },
       {
         "id": 1,
-        "slug": "Optimierung-der-Performance-in-Angular",
-        "title": "Optimierung der Performance in Angular",
+        "slug": "angular-leistung-optimieren",
+        "title": "Die Leistung in Angular optimieren",
         "img": "angular",
-        "titleImg": "Optimierung der Performance in Angular",
+        "titleImg": "Die Leistung in Angular optimieren",
         "desc": [
           {
             "title": "Einführung",
-            "description": "Die Leistung ist entscheidend für ein herausragendes Benutzererlebnis. In diesem Artikel werden wir fortgeschrittene Techniken zur Optimierung der Leistung von Angular-Anwendungen erkunden, vom initialen Laden bis zur Benutzerinteraktion."
+            "description": "Eine schnelle Anwendung verbessert die Benutzererfahrung. Entdecken Sie erweiterte Techniken zur Optimierung von Angular."
           },
           {
             "title": "Lazy Loading von Modulen",
-            "description": "Das Lazy Loading von Modulen ist eine Strategie, bei der Teile der Anwendung nur bei Bedarf geladen werden. Ich werde Tipps zur effektiven Implementierung des Lazy Loading in Angular teilen, um die initiale Ladezeit zu reduzieren und die Reaktionsfähigkeit der Anwendung zu verbessern."
+            "description": "Lädt nur die notwendigen Module, um die anfängliche Ladezeit zu verkürzen und die Reaktionsfähigkeit zu verbessern."
           },
           {
-            "title": "Strategien für die Änderungserkennung",
-            "description": "Angular verwendet eine Änderungserkennung, um die Benutzeroberfläche basierend auf Änderungen im Anwendungsstatus zu aktualisieren. Erfahren Sie, wie Sie die geeignete Strategie für die Änderungserkennung basierend auf den spezifischen Anforderungen Ihrer Anwendung auswählen, um unnötige Aktualisierungen zu minimieren und die Leistung zu verbessern."
+            "title": "Change Detection Strategien",
+            "description": "Wählen Sie die geeignete Strategie, um unnötige Updates zu minimieren und die Leistung zu steigern."
           },
           {
             "title": "Optimierung von HTTP-Anfragen",
-            "description": "Die Verwaltung von HTTP-Anfragen ist ein entscheidender Teil jeder Webanwendung. Ich werde bewährte Methoden teilen, um HTTP-Aufrufe zu optimieren, die Netzwerklatenz zu minimieren und Daten effektiv auf der Clientseite zu verwalten."
+            "description": "Reduzieren Sie die Latenz und verwalten Sie Client-seitige Daten effizient durch optimierte Anfragen."
           },
           {
-            "title": "Leistungsmessungen mit Angular CLI",
-            "description": "Angular CLI bietet leistungsstarke Tools zur Bewertung der Leistung Ihrer Anwendung. Erfahren Sie, wie Sie diese Tools verwenden können, um Ladezeiten zu messen, Engpässe zu identifizieren und signifikante Verbesserungen an Ihrer Anwendung vorzunehmen."
+            "title": "Messungen mit Angular CLI",
+            "description": "Verwenden Sie Angular CLI, um Engpässe zu identifizieren und die Ladezeiten zu verbessern."
           },
           {
             "title": "Fazit",
-            "description": "Durch die Anwendung dieser Optimierungstechniken können Sie Angular-Anwendungen erstellen, die herausragende Leistungen bieten und somit ein reibungsloses und reaktives Benutzererlebnis garantieren."
+            "description": "Wenden Sie diese Techniken an, um schnelle und flüssige Angular-Anwendungen zu erstellen."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "slug": "reactjs-entdecken-dynamische-reaktive-oberflaechen",
+        "title": "React.js entdecken: Dynamische und reaktive Oberflächen",
+        "img": "reactjs",
+        "titleImg": "React.js entdecken: Dynamische und reaktive Oberflächen",
+        "desc": [
+          {
+            "title": "Einführung in React.js",
+            "description": "React.js vereinfacht die Erstellung interaktiver Benutzeroberflächen durch seinen deklarativen und komponentenbasierten Ansatz."
+          },
+          {
+            "title": "Das Virtual DOM",
+            "description": "Minimiert die Manipulationen des echten DOMs durch die Verwendung einer virtuellen Darstellung, was die Leistung verbessert."
+          },
+          {
+            "title": "Wiederverwendbare Komponenten",
+            "description": "Jede Oberfläche besteht aus modularen Komponenten, was die Wiederverwendbarkeit und Wartbarkeit fördert."
+          },
+          {
+            "title": "Unidirektionaler Datenfluss",
+            "description": "Daten fließen in eine einzige Richtung, was die Zustandsverwaltung vereinfacht."
+          },
+          {
+            "title": "Hooks zur Zustandsverwaltung",
+            "description": "Hooks wie useState und useEffect ermöglichen eine prägnante Verwaltung von Zustand und Effekten."
+          },
+          {
+            "title": "Navigation mit React Router",
+            "description": "Verwalten Sie die Navigation ohne Neuladen dank React Router."
+          },
+          {
+            "title": "Fazit",
+            "description": "React.js bietet eine robuste Grundlage für die Erstellung moderner und leistungsfähiger Anwendungen."
           }
         ]
       },
       {
         "id": 3,
-        "slug": "React.js-entdecken-Dynamische-und-reaktive-Schnittstellen-entwickeln",
-        "title": "React.js entdecken: Dynamische und reaktive Schnittstellen entwickeln",
-        "img": "reactjs",
-        "titleImg": "React.js entdecken: Dynamische und reaktive Schnittstellen entwickeln",
+        "slug": "einfuehrung-in-devops-wesentliche-praktiken",
+        "title": "Einführung in DevOps: Wesentliche Praktiken für Entwickler",
+        "img": "devops",
+        "titleImg": "Einführung in DevOps: Wesentliche Praktiken",
         "desc": [
           {
-            "title": "",
-            "description": "React.js, entwickelt von Facebook, ist zu einem Muss in der Welt der Webentwicklung geworden. Dieses JavaScript-Framework, das sich auf die Erstellung interaktiver Benutzeroberflächen konzentriert, bietet einen deklarativen und komponentenbasierten Ansatz für den Bau moderner Webanwendungen. Tauchen wir in diesem Artikel in die Grundlagen von React ein und erkunden, wie es die Entwicklung von Frontend-Anwendungen vereinfacht."
+            "title": "Was ist DevOps?",
+            "description": "DevOps ist eine Kultur, die Entwicklung und Betrieb kombiniert, um Anwendungen schneller und effizienter bereitzustellen."
           },
           {
-            "title": "Virtual DOM",
-            "description": "Im Herzen von React liegt das mächtige Konzept des Virtual DOM. Anstatt den realen DOM bei jeder Zustandsänderung zu aktualisieren, erstellt React eine virtuelle Darstellung der Benutzeroberfläche und vergleicht sie dann mit der vorherigen Version. Dieser Versöhnungsprozess minimiert die Manipulationen am realen DOM und verbessert somit erheblich die Leistung der Anwendung."
+            "title": "Kontinuierliche Integration",
+            "description": "Automatisieren Sie Tests und Builds, um Fehler schnell zu erkennen und die Codequalität zu verbessern."
           },
           {
-            "title": "Komponenten: Bausteine von React",
-            "description": "Komponenten sind das Fundament von React. Jedes Element Ihrer Benutzeroberfläche ist eine Komponente, vom einfachen Button bis zur komplexen Navigationsleiste. In diesem Artikel werden wir erkunden, wie man wiederverwendbare Komponenten erstellt, wie sie miteinander kommunizieren und wie sie zu einer modularen Anwendungsstruktur beitragen."
+            "title": "Kontinuierliche Bereitstellung",
+            "description": "Liefern Sie häufige und zuverlässige Updates dank automatisierter Deployment-Pipelines."
           },
           {
-            "title": "Unidirektionaler Datenfluss mit React",
-            "description": "React verwendet einen unidirektionalen Datenfluss, was bedeutet, dass Daten in einer Richtung durch die Anwendung fließen. Dies vereinfacht das Management von Zuständen und macht die Anwendung vorhersehbarer. Wir werden untersuchen, wie der unidirektionale Datenfluss zu einer klaren Architektur und effektiven Datenverwaltung beiträgt."
+            "title": "Überwachung und Logging",
+            "description": "Verfolgen Sie die Leistung und identifizieren Sie Probleme, bevor sie Benutzer beeinträchtigen."
           },
           {
-            "title": "Hooks: Vereinfachung von Zustands- und Effektmanagement",
-            "description": "Mit der Einführung von Hooks in React hat das Management von Zustand und Effekten ein höheres Niveau erreicht. Hooks wie useState und useEffect ermöglichen es Entwicklern, den lokalen Zustand zu verwalten und Aktionen im Lebenszyklus der Komponente prägnanter durchzuführen. Wir werden in diese wesentlichen Hooks eintauchen und ihre Anwendungsfälle besprechen."
+            "title": "Beliebte Tools",
+            "description": "Jenkins, Docker, Kubernetes und GitLab CI/CD sind Schlüsselwerkzeuge in einer DevOps-Umgebung."
           },
           {
-            "title": "React Router: Navigation ohne Seitenneuladung",
-            "description": "Die Navigation zwischen Seiten ist in vielen Anwendungen notwendig. React Router bietet eine elegante Lösung für die Navigation ohne Seitenneuladung. Wir werden die Einrichtung der Navigation in einer React-Anwendung erkunden und dabei die wesentlichen Funktionen von React Router hervorheben."
+            "title": "Fazit",
+            "description": "DevOps verändert die Art und Weise, wie Teams Anwendungen entwickeln und bereitstellen."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "slug": "typescript-fuer-anfaenger-vollstaendiger-leitfaden",
+        "title": "TypeScript für Anfänger: Vollständiger Leitfaden",
+        "img": "typescript",
+        "titleImg": "TypeScript für Anfänger",
+        "desc": [
+          {
+            "title": "Einführung in TypeScript",
+            "description": "TypeScript ergänzt JavaScript um statische Typisierung und ermöglicht das Schreiben von robusterem und wartbarerem Code."
           },
           {
-            "title": "Fazit: Warum React.js wählen?",
-            "description": "React.js hat die Art und Weise, wie Entwickler interaktive Benutzeroberflächen erstellen, verändert. Seine Einfachheit, Reaktionsfähigkeit und blühendes Ökosystem machen es zu einer beliebten Wahl für eine Vielzahl von Projekten. Indem Sie die grundlegenden Prinzipien von React übernehmen, sind Sie bereit, moderne und leistungsfähige Webanwendungen zu erstellen."
+            "title": "Typen und Interfaces",
+            "description": "Lernen Sie, Typen und Interfaces zu definieren, um die Codequalität und Lesbarkeit zu verbessern."
           },
           {
-            "title": "",
-            "description": "Ob Sie Anfänger oder Experte sind, React.js bietet eine robuste Plattform, um Ihre Webideen zum Leben zu erwecken. Erforschen Sie, experimentieren Sie und tauchen Sie ein in die reaktive Welt von React, um außergewöhnliche Benutzererlebnisse zu schaffen."
+            "title": "Klassen und Vererbung",
+            "description": "Entdecken Sie, wie TypeScript die objektorientierte Programmierung vereinfacht."
+          },
+          {
+            "title": "Funktionen und Generics",
+            "description": "Verwenden Sie generische Funktionen, um flexiblen und wiederverwendbaren Code zu schreiben."
+          },
+          {
+            "title": "Fazit",
+            "description": "TypeScript verbessert die Codequalität und reduziert Fehler – unverzichtbar für professionelle Projekte."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "slug": "seo-optimierung-fuer-entwickler-portfolio",
+        "title": "SEO-Optimierung für ein Entwickler-Portfolio",
+        "img": "seo",
+        "titleImg": "SEO-Optimierung für Portfolio",
+        "desc": [
+          {
+            "title": "Bedeutung von SEO",
+            "description": "Suchmaschinenoptimierung verbessert die Sichtbarkeit Ihres Portfolios und zieht Recruiter oder Kunden an."
+          },
+          {
+            "title": "Keywords und Inhalte",
+            "description": "Integrieren Sie relevante Keywords in Ihre Titel, Beschreibungen und Blogs für ein besseres Ranking."
+          },
+          {
+            "title": "Leistung und Barrierefreiheit",
+            "description": "Eine schnelle und barrierefreie Website steigert SEO und die Benutzererfahrung."
+          },
+          {
+            "title": "Backlinks und Shares",
+            "description": "Fördern Sie Backlinks und das Teilen in sozialen Netzwerken, um Ihr Ranking zu verbessern."
+          },
+          {
+            "title": "Fazit",
+            "description": "Die SEO-Optimierung ist essenziell für ein professionelles und attraktives Portfolio."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "slug": "graphql-vs-rest-vollstaendiger-vergleich",
+        "title": "GraphQL vs. REST: Vollständiger Vergleich",
+        "img": "graphql",
+        "titleImg": "GraphQL vs REST",
+        "desc": [
+          {
+            "title": "Einführung",
+            "description": "Entdecken Sie die Unterschiede zwischen GraphQL und REST, ihre Vor- und Nachteile."
+          },
+          {
+            "title": "REST API",
+            "description": "Einfache und standardisierte Architektur, geeignet für klassische Anwendungen."
+          },
+          {
+            "title": "GraphQL API",
+            "description": "Ermöglicht das Abrufen nur der benötigten Daten, was den Netzwerk-Overhead reduziert."
+          },
+          {
+            "title": "Anwendungsfälle",
+            "description": "Wann REST oder GraphQL je nach Größe und Komplexität des Projekts verwendet werden sollte."
+          },
+          {
+            "title": "Fazit",
+            "description": "Die Wahl der richtigen API wirkt sich auf die Leistung und Wartbarkeit der Anwendung aus."
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "slug": "docker-fuer-entwickler-praktischer-leitfaden",
+        "title": "Docker für Entwickler: Praktischer Leitfaden",
+        "img": "docker",
+        "titleImg": "Docker für Entwickler",
+        "desc": [
+          {
+            "title": "Einführung in Docker",
+            "description": "Docker erleichtert die Erstellung, Bereitstellung und Verwaltung von Containern für Anwendungen."
+          },
+          {
+            "title": "Images und Container",
+            "description": "Lernen Sie, Images zu erstellen und Container effizient zu verwalten."
+          },
+          {
+            "title": "Docker Compose",
+            "description": "Orchestrieren Sie mehrere Container und Dienste mit einer einfachen YAML-Datei."
+          },
+          {
+            "title": "Fazit",
+            "description": "Docker verbessert die Portabilität und Konsistenz von Entwicklungsumgebungen."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "slug": "software-tests-wesentlich-fuer-die-qualitaet",
+        "title": "Softwaretests: Wesentlich für die Qualität",
+        "img": "testing",
+        "titleImg": "Wesentliche Softwaretests",
+        "desc": [
+          {
+            "title": "Warum testen?",
+            "description": "Tests stellen sicher, dass der Code wie erwartet funktioniert und reduzieren Fehler in der Produktion."
+          },
+          {
+            "title": "Unit Tests",
+            "description": "Überprüfen Sie das Verhalten jeder Codeeinheit, um ihre Zuverlässigkeit zu gewährleisten."
+          },
+          {
+            "title": "Integration Tests",
+            "description": "Stellen Sie sicher, dass die verschiedenen Module korrekt zusammenarbeiten."
+          },
+          {
+            "title": "Fazit",
+            "description": "Eine solide Teststrategie ist unerlässlich für Code von hoher Qualität."
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "slug": "progressive-web-apps-vollstaendiger-leitfaden",
+        "title": "Progressive Web Apps (PWA): Vollständiger Leitfaden",
+        "img": "pwa",
+        "titleImg": "Progressive Web Apps",
+        "desc": [
+          {
+            "title": "Einführung in PWAs",
+            "description": "PWAs bieten ein natives Erlebnis im Web mit schnellem Laden und Offline-Funktionen."
+          },
+          {
+            "title": "Service Workers",
+            "description": "Ermöglichen das intelligente Caching von Ressourcen und die Offline-Funktionalität."
+          },
+          {
+            "title": "Manifest und Installation",
+            "description": "Erstellen Sie ein Manifest, damit Benutzer Ihre PWA zu ihrem Gerät hinzufügen können."
+          },
+          {
+            "title": "Fazit",
+            "description": "PWAs kombinieren das Beste aus Web- und nativen Anwendungen für ein optimales Erlebnis."
           }
         ]
       }
     ]
   },
-
-  "Footer": { "title": "@ 2023 ALLE RECHTE VORBEHALTEN VON ACH02RAF" },
+  "Footer": { "title": "@ 2023 ALLE RECHTE VORBEHALTEN DURCH ACH02RAF" },
   "otherProjets": [
     {
       "id": "6",
       "nameProject": "Structural Wood",
       "slug": "structural-wood",
-      "infoProject": "INFOS PROJET",
-      "visitSites": "Visiter le site",
-      "codeSource": "Voir le code source",
-      "downloadAPK": "Télécharcher l'APK",
-      "title": "Création d'un site vetrine avec le framework next js",
+      "infoProject": "PROJEKT-INFOS",
+      "visitSites": "Website besuchen",
+      "codeSource": "Quellcode anzeigen",
+      "downloadAPK": "APK herunterladen",
+      "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
       "descProject": "",
       "imgProject": ["structural-wood"],
       "videoProject": "",
       "urlProject": [""],
       "urlSITE": ["https://structural-wood.fr/"],
       "apk": "",
-      "usedTools": "Les outils utilisés",
-      "tools": [
-        "NEXT.JS",
-        "BOOTSTRAP-5",
-        "JAVASCRIPT",
-        "TYPESCRIPT",
-        "TAILWIND-CSS",
-        "SCSS-SASS"
-      ]
+      "usedTools": "Verwendete Tools",
+      "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
     }
   ]
 }

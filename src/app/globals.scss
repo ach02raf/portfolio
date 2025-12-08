@@ -2,9 +2,59 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "./global-variables.scss";
 
+/* ========== KEYFRAME ANIMATIONS ========== */
+@keyframes lazy-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Theme CSS variables for smooth transitions */
+:root {
+  --page-bg: #ffffff;
+  --page-text: #111111;
+  --surface: #ffffff;
+  --muted: rgba(0, 0, 0, 0.6);
+  --accent: #fec260; /* $yellow */
+  --accent-2: #5a4a7a; /* $violet-dark */
+  --scroll-thumb: #5a4a7a;
+  --overlay-start: rgba(10, 8, 20, 0.65);
+  --overlay-mid: rgba(58, 26, 74, 0.28);
+}
+
+/* Smooth transition for themeable properties */
+body,
+.header,
+.firstSection,
+.card,
+.btn,
+a,
+button,
+.service-box,
+.skill-item {
+  transition: background-color 0.45s ease, color 0.45s ease, border-color 0.45s ease,
+    box-shadow 0.45s ease, fill 0.45s ease;
+}
+
+/* ========== GLOBAL STYLES ========== */
 * {
   user-select: none;
 }
+
 body {
   margin: 0 auto !important;
   font-family: "montserrat" !important;
@@ -13,10 +63,14 @@ body {
   max-width: 1920px;
   display: block;
   font-size: 17px;
+  background-color: var(--page-bg);
+  color: var(--page-text);
 }
+
 .contain {
   background-color: $violet-dark;
 }
+
 h1,
 h2,
 h3,
@@ -44,7 +98,7 @@ h2 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $violet-dark;
+  background: var(--scroll-thumb);
   border: 1px solid $white;
   border-radius: 25px;
 }
@@ -53,8 +107,11 @@ h2 {
 ::-webkit-scrollbar-thumb:hover {
   background: $violet-dark;
 }
+
+/* Typography Responsive */
 h2 {
   font-size: 2.5rem !important;
+
   @media screen and (max-width: 1200px) {
     font-size: 1.75rem !important;
   }
@@ -62,8 +119,10 @@ h2 {
     font-size: 1.25rem !important;
   }
 }
+
 p {
   font-size: 1.2rem !important;
+
   @media screen and (max-width: 1200px) {
     font-size: 1rem !important;
   }
@@ -72,41 +131,47 @@ p {
   }
 }
 
+/* SOCIAL LINK BAR */
 .reseau-social {
   bottom: 15%;
   left: 2%;
+
   @media screen and (max-width: 992px) {
     left: 1%;
   }
+
   svg {
     fill: #ffffffaa;
+
     @media screen and (max-width: 992px) {
       height: 1rem !important;
     }
   }
+
   a {
     display: block !important;
     margin: 20px auto !important;
   }
-  a:hover {
-    svg {
-      fill: $yellow;
-    }
+
+  a:hover svg {
+    fill: $yellow;
   }
 }
+
 .reseau-social:after {
-  content: "";
   content: "";
   width: 2px;
   display: block;
   height: 200px;
   background-color: #ffffffaa;
   position: absolute;
-  left: calc(2% + 0.9rem);
+  left: calc(-10% + 0.9rem);
+
   @media screen and (max-width: 992px) {
     left: calc(1% + 0.4rem);
   }
 }
+
 .fa-circle-left {
   height: 50px !important;
 }
@@ -115,9 +180,16 @@ p {
    DARK MODE — Premium purple-black theme
 ------------------------------------------ */
 
-.dark body {
-  background-color: #0b0812; // deep purple-black
-  color: #ffffff;
+.dark {
+  --page-bg: #0b0812;
+  --page-text: #ffffff;
+  --surface: #1a132b;
+  --muted: #c6c4d2;
+  --accent: #c79af0;
+  --accent-2: #5d4180;
+  --scroll-thumb: #5d4180;
+  --overlay-start: rgba(5, 4, 10, 0.78);
+  --overlay-mid: rgba(17, 8, 30, 0.65);
 }
 
 .dark .section,
@@ -148,22 +220,6 @@ p {
   color: $yellow !important; // branding
 }
 
-/* Cards */
-.dark .card,
-.dark .service-box,
-.dark .skill-item {
-  background-color: #140f22;
-  border: 1px solid #ffffff18;
-  box-shadow: 0 8px 20px #00000050;
-}
-
-/* Header */
-.dark .header {
-  background-color: #140f22d9 !important;
-  backdrop-filter: blur(6px);
-  box-shadow: 0px 5px 25px #00000070;
-}
-
 /* Buttons */
 .dark .btn,
 .dark button {
@@ -191,24 +247,4 @@ p {
   background: #5d4180;
   border: 1px solid #ffffff22;
   border-radius: 25px;
-}
-
-@keyframes lazy-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }

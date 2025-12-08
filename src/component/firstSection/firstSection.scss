@@ -1,28 +1,61 @@
 @import "@/A/global-variables.scss";
+
 .firstSection {
-  background-image: linear-gradient(
-      to right,
-      $violet-dark,
-      #2b0945e3,
-      #44285b96
-    ),
-    url(../../../public/Images/back.png);
+  position: relative;
+  overflow: hidden;
+
+  /* professional background: cover image + subtle layered gradient overlay */
+  background-image: url(../../../public/Images/back.png);
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
   height: 90vh;
   max-height: 1080px;
+  display: flex;
+  align-items: center;
+
   @media screen and (max-width: 992px) {
     height: auto;
-  max-height: none;
+    max-height: none;
+    padding: 3rem 0;
   }
+
+  /* overlay to create depth and better text contrast */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+      90deg,
+      rgba(10, 8, 20, 0.65) 0%,
+      rgba(58, 26, 74, 0.28) 45%,
+      rgba(255, 255, 255, 0.02) 100%
+    );
+    transition: background 0.45s ease, opacity 0.45s ease;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(2px);
+    z-index: 0;
+  }
+
   span {
     color: $yellow;
   }
+
   padding-top: 2%;
+
   &-div {
     width: 80%;
+    position: relative;
+    z-index: 1; /* above overlay */
   }
+
   & h2 {
     line-height: 2.5rem;
+    color: $white;
+    margin: 0 0 1rem 0;
   }
+
   & img {
     width: auto !important;
     height: auto !important;
@@ -30,22 +63,137 @@
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    position: relative;
+    z-index: 1;
   }
+
   &-Typewriter {
-    min-height: 150px;
+    min-height: auto;
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
     span {
       color: $white !important;
     }
-  }
-  &-button {
-    background-color: $yellow;
 
-    border-radius: 25px;
+    /* Professional animated text styling */
+    .animated-text {
+      display: inline;
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: $white;
+      letter-spacing: 0.5px;
+      line-height: 1.6;
+
+      .cursor {
+        margin-left: 2px;
+        display: inline-block;
+        color: $yellow;
+        font-weight: 600;
+        animation: none;
+      }
+    }
+  }
+
+  &-Typewriter {
+    min-height: auto;
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    span {
+      color: $white !important;
+    }
+
+    /* Professional animated text styling */
+    .animated-text {
+      display: inline;
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: $white;
+      letter-spacing: 0.5px;
+      line-height: 1.6;
+
+      .cursor {
+        margin-left: 2px;
+        display: inline-block;
+        color: $yellow;
+        font-weight: 600;
+        animation: none;
+      }
+    }
+  }
+
+  /* modern pill CTA button */
+  &-button {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    border-radius: 9999px;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(254, 194, 96, 1) 0%, rgba(255, 220, 120, 1) 100%);
+    box-shadow: 0 8px 24px rgba(90, 74, 122, 0.12), 0 3px 8px rgba(0, 0, 0, 0.12);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+
     a {
+      display: block;
+      width: 100%;
       color: $violet-dark !important;
       font-weight: 800 !important;
       font-size: 1rem !important;
       text-decoration: none !important;
+      padding: 0.6rem 1.25rem;
+      border-radius: 9999px;
+      box-sizing: border-box;
+      outline: none;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 36px rgba(90, 74, 122, 0.16), 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    /* focus-visible: keep focus visible but no layout shift */
+    a:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(254, 194, 96, 0.22), 0 10px 26px rgba(90, 74, 122, 0.14);
+    }
+  }
+}
+
+/* ========== DARK MODE OVERRIDES FOR FIRST SECTION ========== */
+.dark .firstSection {
+  &::before {
+    background: linear-gradient(
+      90deg,
+      rgba(5, 4, 10, 0.78) 0%,
+      rgba(17, 8, 30, 0.65) 45%,
+      rgba(0, 0, 0, 0.25) 100%
+    );
+  }
+
+  & h2 {
+    color: $white !important;
+  }
+
+  &-Typewriter span {
+    color: $white !important;
+  }
+
+  &-button {
+    background: linear-gradient(90deg, #4b2e6a 0%, #2b1340 100%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+
+    a {
+      color: $white !important;
+    }
+
+    a:focus-visible {
+      box-shadow: 0 0 0 4px rgba(75, 46, 106, 0.18), 0 10px 30px rgba(0, 0, 0, 0.6);
     }
   }
 }

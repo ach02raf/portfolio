@@ -56,3 +56,24 @@
     background-color: $white;
   }
 }
+
+/* ========== DARK MODE OVERRIDES FOR EXPERIENCE/EDUCATION ========== */
+.dark .experienceEducation {
+  &-card {
+    &-date {
+      background-color: #140f22;
+      p {
+        color: #c6c4d2;
+      }
+    }
+    h3 {
+      color: #ffffff;
+    }
+    p {
+      color: #c6c4d2 !important;
+    }
+  }
+  &-card-info:before {
+    background-color: #c6c4d2;
+  }
+}

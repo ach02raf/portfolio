@@ -27,7 +27,7 @@ function Project(props: {
       tools?: string[];
       technologies?: {
         title: string;
-        Développement: string[];
+        Developpement: string[];
         DevOps: string[];
       };
       description?: {
@@ -65,7 +65,6 @@ function Project(props: {
         </h2>
         <p className="fs-6 text-center pt-4">{props?.Project?.desc}</p>
         {firstProject && <FeaturedProject project={firstProject} lang={props.lang} />}
-        {/* Afficher le reste des projets */}
         <div className="row py-3">
           {remainingProjects.map((ItemsProject, index) => (
             <div key={index} className="col-xl-4 col-md-6 col-12 p-3">

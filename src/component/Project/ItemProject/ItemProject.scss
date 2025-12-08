@@ -69,3 +69,20 @@
     max-width: 1000px;
   }
 }
+
+/* ========== DARK MODE OVERRIDES FOR ITEM PROJECT ========== */
+.dark .itemProject {
+  h3 {
+    color: #c6c4d2;
+  }
+  h3:hover {
+    color: $yellow !important;
+  }
+  &-popUp {
+    background-color: #140f22;
+    color: #c6c4d2;
+    a {
+      color: #c79af0;
+    }
+  }
+}

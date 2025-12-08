@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function LazySection({
   children,
-  height = "100vh", // placeholder height
+  height = "100vh",
 }: {
   children: React.ReactNode;
   height?: string;
@@ -17,14 +17,13 @@ export default function LazySection({
       (entries) => {
         const entry = entries[0];
 
-        // Load only when the TOP of the placeholder enters viewport
         if (entry.isIntersecting && entry.intersectionRatio > 0) {
           setIsVisible(true);
           observer.disconnect();
         }
       },
       {
-        threshold: 0.25, // load when 25% visible
+        threshold: 0.25,
       }
     );
 
@@ -33,7 +32,6 @@ export default function LazySection({
     return () => observer.disconnect();
   }, []);
 
-  // ⚠ Placeholder to prevent premature loading on bottom refresh
   if (!isVisible) {
     return <div ref={ref} style={{ minHeight: height }} />;
   }

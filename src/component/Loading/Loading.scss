@@ -32,3 +32,11 @@
     transform: translate(0px, 0px) rotate(-45deg);
   }
 }
+
+/* ========== DARK MODE OVERRIDES FOR LOADER ========== */
+.dark .loader {
+  background-color: #140f22;
+  &:after {
+    background: #1a0f22;
+  }
+}

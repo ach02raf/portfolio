@@ -1,22 +1,31 @@
 @import "@/A/global-variables.scss";
-.citation{
-    background: url(/Images/screens.jpg), $violet-dark;
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    backdrop-filter:opacity(8px);
-    &-contain{
-        width: 80%;
-        max-width: 1000px;
-        font-weight: 600;
-        line-height: 2.5rem;
+.citation {
+  background: url(/Images/screens.jpg), $violet-dark;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  backdrop-filter: opacity(8px);
+  &-contain {
+    width: 80%;
+    max-width: 1000px;
+    font-weight: 600;
+    line-height: 2.5rem;
 
-        &-name{
-            color:$yellow !important;
-        }
-        svg{
-            height: 3rem;
-            color: $yellow;
-        }
+    &-name {
+      color: $yellow !important;
     }
+    svg {
+      height: 3rem;
+      color: $yellow;
+    }
+  }
+}
+
+/* ========== DARK MODE OVERRIDES FOR CITATION ========== */
+.dark .citation {
+  background: url(/Images/screens.jpg), #140f22;
+  background-blend-mode: multiply;
+  &-contain {
+    color: #c6c4d2;
+  }
 }

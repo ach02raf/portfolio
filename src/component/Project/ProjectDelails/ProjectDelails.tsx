@@ -32,7 +32,7 @@ type Project = {
   tools?: string[];
   technologies?: {
     title: string;
-    Développement: string[];
+    Developpement: string[];
     DevOps: string[];
   };
   description?: {
@@ -61,11 +61,7 @@ type Props = {
   backToHome: string;
 };
 
-const ProjectDetails: React.FC<Props> = ({
-  ItemsProject,
-  lang,
-  backToHome,
-}) => {
+const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => {
   const project = ItemsProject;
 
   return (
@@ -106,8 +102,7 @@ const ProjectDetails: React.FC<Props> = ({
                 project.imgProject && project.imgProject?.length > 0
                   ? "col-xl-4 col-12 py-xl-0 py-3"
                   : "col-12"
-              }
-            >
+              }>
               <video width="100%" height="300px" controls loop autoPlay muted>
                 <source src={`/${project.videoProject}.mp4`} type="video/mp4" />
               </video>
@@ -119,9 +114,7 @@ const ProjectDetails: React.FC<Props> = ({
         <div className="row mt-4">
           <div className="col-xl-7">
             {project.infoProject && (
-              <h5 className="position-relative my-4 pb-3">
-                {project.infoProject}
-              </h5>
+              <h5 className="position-relative my-4 pb-3">{project.infoProject}</h5>
             )}
             <h6 className="my-4">{project.title}</h6>
             <p>{project.descProject}</p>
@@ -142,9 +135,7 @@ const ProjectDetails: React.FC<Props> = ({
           <div className="col-xl-5">
             {project.usedTools && (
               <>
-                <h5 className="position-relative my-4 pb-3">
-                  {project.usedTools}
-                </h5>
+                <h5 className="position-relative my-4 pb-3">{project.usedTools}</h5>
 
                 {!project.technologies && (
                   <div className="row">
@@ -164,11 +155,9 @@ const ProjectDetails: React.FC<Props> = ({
 
                 {project.technologies && (
                   <>
-                    <h6 className="mt-2">
-                      {project.technologies && project?.technologies?.title}
-                    </h6>
+                    <h6 className="mt-2">{project.technologies && project?.technologies?.title}</h6>
                     <div className="row">
-                      {project?.technologies?.Développement?.map((tech, i) => (
+                      {project?.technologies?.Developpement?.map((tech, i) => (
                         <div className="col-xl-3 col-4" key={i}>
                           <Image
                             src={`/Images/Icons/${tech}.png`}
@@ -206,11 +195,7 @@ const ProjectDetails: React.FC<Props> = ({
         {project.devopsProcess?.steps && (
           <div className="mt-4">
             <h5 className="position-relative my-4 pb-3">
-              <FontAwesomeIcon
-                icon={faServer}
-                className="me-2"
-                style={{ width: 20 }}
-              />
+              <FontAwesomeIcon icon={faServer} className="me-2" style={{ width: 20 }} />
               {project.devopsProcess.title}
             </h5>
             <div>
@@ -225,29 +210,19 @@ const ProjectDetails: React.FC<Props> = ({
         {project.utilisation && (
           <div className="mt-4">
             <h5 className="position-relative my-4 pb-3">
-              <FontAwesomeIcon
-                icon={faUserShield}
-                className="me-2"
-                style={{ width: 20 }}
-              />
+              <FontAwesomeIcon icon={faUserShield} className="me-2" style={{ width: 20 }} />
               {project.utilisation.title}
             </h5>
             <div>
               <p className="mb-2">
                 <strong className="me-2">🌐 URL :</strong>
-                <Link
-                  href={project.utilisation.url}
-                  target="_blank"
-                  className=" fw-semibold"
-                >
+                <Link href={project.utilisation.url} target="_blank" className=" fw-semibold">
                   {project.utilisation.url}
                 </Link>
               </p>
               <p className="mb-2">
                 <strong className="me-2">👤 Login :</strong>
-                <span className="badge bg-secondary px-3">
-                  {project.utilisation.login}
-                </span>
+                <span className="badge bg-secondary px-3">{project.utilisation.login}</span>
               </p>
               <p>
                 <strong className="me-2">🔑 Mot de passe :</strong>
@@ -319,8 +294,7 @@ const ProjectDetails: React.FC<Props> = ({
                     className="project-details-other-link"
                     href={project.urlSITE[index] || project.urlSITE[0]}
                     rel="preload"
-                    target="_blank"
-                  >
+                    target="_blank">
                     <Image
                       src={`/Images/${item}.png`}
                       alt={item}

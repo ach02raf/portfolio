@@ -100,7 +100,35 @@
   &-other-link:hover img {
     transform: scale(1.1);
   }
-  .project-details-url ,  .project-details-link {
+  .project-details-url,
+  .project-details-link {
     border-radius: 4px !important;
+  }
+}
+
+/* ========== DARK MODE OVERRIDES FOR PROJECT DETAILS ========== */
+.dark .project-details {
+  background-color: #140f22;
+  &-title::after {
+    border-bottom-color: #c6c4d2;
+  }
+  h5::after {
+    border-bottom-color: #c6c4d2;
+  }
+  p {
+    color: #c6c4d2 !important;
+  }
+  h6 {
+    background-color: rgba($yellow, 0.85);
+    color: #0b0812;
+  }
+  &-url {
+    border: 2px solid #c6c4d2;
+    color: #c6c4d2;
+    &:hover {
+      border: 2px solid $yellow;
+      background-color: $yellow;
+      color: #0b0812;
+    }
   }
 }

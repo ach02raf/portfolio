@@ -1,57 +1,343 @@
 @import "@/A/global-variables.scss";
 
+/* ========== HEADER ========== */
 .header {
-  background-color: $violet-light;
-  opacity: 0.85;
-  box-shadow: 1px 6px 13px -5px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #5a4a7a 0%, #3a2a5a 100%);
+  opacity: 0.95;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(254, 194, 96, 0.1);
+  transition: background 0.3s ease;
+}
 
-  &-logo {
-    max-width: 150px;
+/* Dark Mode */
+.dark .header {
+  background: #140f22d9 !important;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  @media (max-width: 991px) {
+    padding: 0.75rem 1rem;
   }
 
-  &-link {
-    font-size: 1rem;
-    font-weight: 600;
-
-    display: inline-block;
-    max-width: 110px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    vertical-align: middle;
-
-    color: $white;
-
-    &:hover,
-    &:focus {
-      color: $yellow !important;
-    }
-  }
-
-  &-active {
-    color: $yellow !important;
+  @media (max-width: 576px) {
+    padding: 0.75rem 0.75rem;
   }
 }
 
-/* ------------------------------------------------------ */
-/* 🔥 DARK MODE FOR NEXT-THEMES (class="dark")             */
-/* ------------------------------------------------------ */
+.header-logo-wrapper {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
 
-// .dark .header {
-//   background-color: #474646; // clean, modern dark tone
-//   opacity: 0.95;
-//   box-shadow: 1px 6px 16px -4px rgba(0, 0, 0, 0.7);
+  &:hover {
+    transform: scale(1.05);
+  }
 
-//   &-link {
-//     color: #e6e6e6; // soft light grey for dark mode
+  a {
+    display: flex;
+    align-items: center;
+  }
+}
 
-//     &:hover,
-//     &:focus {
-//       color: $yellow !important;
-//     }
-//   }
+.header-logo {
+  height: auto;
+  width: auto;
+  max-width: 140px;
 
-//   &-active {
-//     color: $yellow !important;
-//   }
-// }
+  @media (max-width: 768px) {
+    max-width: 120px;
+  }
+
+  @media (max-width: 576px) {
+    max-width: 100px;
+  }
+}
+
+.header-nav-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.header-nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    position: relative;
+    flex-shrink: 0;
+  }
+}
+
+.header-nav-link {
+  display: inline-block;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: $white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  white-space: nowrap;
+  max-width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+
+  @media (max-width: 1200px) {
+    padding: 0.6rem 0.65rem;
+    font-size: 0.7rem;
+  }
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: $yellow;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+  }
+
+  &:hover,
+  &:focus {
+    color: $yellow;
+
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &--active {
+    color: $yellow;
+
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+
+  @media (max-width: 576px) {
+    gap: 0.75rem;
+  }
+}
+
+.header-controls-desktop {
+  @media (max-width: 991px) {
+    display: none !important;
+  }
+}
+
+.header-lang-desktop {
+  @media (max-width: 991px) {
+    display: none !important;
+  }
+}
+
+.header-controls-item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+/* ========== BURGER MENU ========== */
+.header-burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  position: relative;
+
+  @media (max-width: 991px) {
+    display: flex;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.header-burger-line {
+  width: 24px;
+  height: 2.5px;
+  background-color: $white;
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+}
+
+/* ========== MOBILE MENU OVERLAY ========== */
+.header-nav-mobile-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  backdrop-filter: blur(2px);
+
+  @media (max-width: 991px) {
+    display: block;
+  }
+}
+
+/* ========== MOBILE NAVIGATION ========== */
+.header-nav-mobile {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, rgba(42, 31, 61, 0.98) 0%, rgba(26, 15, 46, 0.98) 100%);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(254, 194, 96, 0.1);
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+/* Removed - animation handled by framer-motion */
+
+.header-nav-mobile-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+  gap: 0;
+  flex: 1;
+
+  li {
+    border-bottom: 1px solid rgba(254, 194, 96, 0.05);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.header-nav-mobile-link {
+  display: block;
+  padding: 1rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: $white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+
+  @media (max-width: 576px) {
+    padding: 0.875rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  &:hover {
+    background-color: rgba(254, 194, 96, 0.1);
+    color: $yellow;
+    padding-left: 2rem;
+  }
+
+  &--active {
+    background-color: rgba(254, 194, 96, 0.15);
+    color: $yellow;
+    border-left: 3px solid $yellow;
+    padding-left: calc(1.5rem - 3px);
+
+    @media (max-width: 576px) {
+      padding-left: calc(1rem - 3px);
+    }
+  }
+}
+
+.header-nav-mobile-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(254, 194, 96, 0.1);
+
+  @media (max-width: 576px) {
+    padding: 0.75rem 0;
+  }
+}
+
+.header-nav-mobile-control-item {
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 576px) {
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* ========== ADJUST MAIN CONTENT ========== */
+main {
+  @media (max-width: 991px) {
+    padding-bottom: 150px;
+  }
+}
+
+/* ========== SCROLLBAR FOR SIDEBAR ========== */
+.sidebar-nav::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-nav::-webkit-scrollbar-track {
+  background: rgba(254, 194, 96, 0.05);
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb {
+  background: rgba(254, 194, 96, 0.3);
+  border-radius: 3px;
+
+  &:hover {
+    background: rgba(254, 194, 96, 0.5);
+  }
+}

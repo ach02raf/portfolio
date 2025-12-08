@@ -26,7 +26,7 @@ function ItemProject(props: {
     tools?: string[];
     technologies?: {
       title: string;
-      Développement: string[];
+      Developpement?: string[];
       DevOps: string[];
     };
     description?: {
@@ -54,16 +54,15 @@ function ItemProject(props: {
     <div className="row itemProject">
       <Link href={`/${props?.lang}/Projects/${props?.ItemsProject?.slug}`}>
         <div className="itemProject-img d-block m-auto p-0">
-          {props?.ItemsProject?.imgProject &&
-            props?.ItemsProject?.imgProject[0] && (
-              <Image
-                src={`/Images/${props?.ItemsProject?.imgProject[0]}.png`}
-                alt={props?.ItemsProject?.imgProject[0]}
-                title={props?.ItemsProject?.imgProject[0]}
-                height={512}
-                width={512}
-              />
-            )}
+          {props?.ItemsProject?.imgProject && props?.ItemsProject?.imgProject[0] && (
+            <Image
+              src={`/Images/${props?.ItemsProject?.imgProject[0]}.png`}
+              alt={props?.ItemsProject?.imgProject[0]}
+              title={props?.ItemsProject?.imgProject[0]}
+              height={512}
+              width={512}
+            />
+          )}
 
           {props?.ItemsProject?.urlSITE && props?.ItemsProject?.urlSITE[0] && (
             <div>
@@ -88,9 +87,7 @@ function ItemProject(props: {
           {!props?.ItemsProject?.apk &&
             props?.ItemsProject.urlSITE &&
             !props?.ItemsProject.urlSITE[0] && (
-              <h3 className="text-center py-3 px-2">
-                {props?.ItemsProject?.nameProject}
-              </h3>
+              <h3 className="text-center py-3 px-2">{props?.ItemsProject?.nameProject}</h3>
             )}
         </div>
       </Link>

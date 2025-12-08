@@ -18,3 +18,9 @@
 .lang-switcher-icon.active-lang img {
   transform: scale(1.1);
 }
+
+/* ========== DARK MODE OVERRIDES FOR LANGUAGE SWITCHER ========== */
+.dark .lang-switcher-icon.active-lang {
+  background: rgba(198, 196, 210, 0.2);
+  box-shadow: 0 0 12px rgba(199, 154, 240, 0.6);
+}

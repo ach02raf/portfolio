@@ -1,20 +1,32 @@
 @import "@/A/global-variables.scss";
-.project{
-    background-color: $violet-light;
-    padding-top: 6%;
-    padding-bottom: 6%;
-    &-container{
-        width: 80%;
-        
-    &-title{
-span{
-    color:$yellow
-}
+.project {
+  background-color: $violet-light;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  &-container {
+    width: 80%;
+
+    &-title {
+      span {
+        color: $yellow;
+      }
     }
-    &-item{
-        height: 100%;
-        background-color: $violet-dark;
-        border-radius:  25px;
+    &-item {
+      height: 100%;
+      background-color: $violet-dark;
+      border-radius: 25px;
     }
+  }
 }
+
+/* ========== DARK MODE OVERRIDES FOR PROJECT ========== */
+.dark .project {
+  background-color: #1a0f22;
+  &-container {
+    &-item {
+      background-color: #140f22;
+      border: 1px solid #c6c4d2;
+      color: #c6c4d2;
+    }
+  }
 }

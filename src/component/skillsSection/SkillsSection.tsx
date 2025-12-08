@@ -1,6 +1,5 @@
 import Image from "next/image";
 import "./skillsSection.scss";
-import ExperienceEducation from "../Experience/ExperienceEducation";
 
 function SkillsSection(props: {
   skillsSection: {

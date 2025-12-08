@@ -1,6 +1,7 @@
 @import "@/A/global-variables.scss";
 .skillsSection {
   padding: 5%;
+  width: 100%;
   background-color: $violet-light;
   span {
     color: $yellow !important;
@@ -54,6 +55,38 @@
     p {
       color: $violet-dark !important;
       font-weight: 600;
+    }
+  }
+}
+
+/* ========== DARK MODE OVERRIDES FOR SKILLS SECTION ========== */
+.dark .skillsSection {
+  background-color: #1a0f22 !important;
+
+  .container {
+    background-color: #1a0f22 !important;
+  }
+  &-col {
+    @media screen and (min-width: 992px) {
+      border-bottom-color: #c6c4d2;
+    }
+  }
+  &-pair {
+    @media screen and (min-width: 992px) {
+      border-right-color: #c6c4d2;
+    }
+  }
+  &-card {
+    background-color: #140f22;
+    border-color: #c6c4d2;
+    p {
+      color: #c6c4d2 !important;
+    }
+  }
+  &-card:hover {
+    background-color: $yellow;
+    p {
+      color: #0b0812 !important;
     }
   }
 }
