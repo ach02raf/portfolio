@@ -15,10 +15,8 @@ function AnimatedText({ text }: { text: string }) {
     const fullText = text;
 
     if (!isDeleting && displayText === fullText) {
-      // Pause at the end before deleting
       timer = setTimeout(() => setIsDeleting(true), 3000);
     } else if (isDeleting && displayText === "") {
-      // Pause at the beginning before typing
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setTypingSpeed(150);
@@ -88,7 +86,7 @@ function FirstSection(props: {
           </div>
         </div>
       </div>
-      <div className="col-lg-5 col-12 position-relative d-flex align-items-lg-end">
+      <div className="col-lg-5 col-12 position-relative d-flex align-items-lg-end justify-content-center h-100">
         <Image
           width={416}
           height={599}

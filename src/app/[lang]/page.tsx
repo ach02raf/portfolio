@@ -15,6 +15,8 @@ import ContactSection from "@/C/contactSection/ContactSection";
 import Footer from "@/C/Footer/Footer";
 import ScrollToTopButton from "@/C/ScrollToTopButton";
 
+import SocialLinks from "@/component/SocialLinks";
+
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
@@ -25,7 +27,6 @@ export default async function IndexPage({ params: { lang } }: { params: { lang: 
   return (
     <div className="container-fluid gx-0 contain position-relative">
       <Header header={dictionary.header} />
-
       <section id={dictionary.header[0].url}>
         <FirstSection firstSection={dictionary.firstSection} cvUrl={lang} />
       </section>
@@ -62,6 +63,7 @@ export default async function IndexPage({ params: { lang } }: { params: { lang: 
       <Footer Footer={dictionary.Footer} />
 
       <ScrollToTopButton />
+      <SocialLinks />
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import Script from "next/script";
-import SocialLinks from "@/component/SocialLinks";
 import ThemeWrapper from "@/component/ThemeWrapper";
 
 export const metadata: Metadata = {
@@ -59,10 +58,7 @@ export default function RootLayout({
       </head>
 
       <body>
-        <ThemeWrapper>
-          {children}
-          <SocialLinks />
-        </ThemeWrapper>
+        <ThemeWrapper>{children}</ThemeWrapper>
       </body>
     </html>
   );

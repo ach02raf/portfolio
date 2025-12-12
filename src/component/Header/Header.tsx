@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import LocaleSwitcher from "../locale-switcher";
+import SocialLinks from "../SocialLinks";
 import "./Header.scss";
 import Image from "next/image";
 import { useState } from "react";
@@ -128,6 +129,9 @@ function Header(props: { header: { id: number; name: string; url: string }[] }) 
         <div className="header-nav-mobile-controls">
           <div className="header-nav-mobile-control-item">
             <LocaleSwitcher />
+          </div>
+          <div className="header-nav-mobile-control-item header-nav-mobile-socials">
+            <SocialLinks />
           </div>
         </div>
       </motion.nav>

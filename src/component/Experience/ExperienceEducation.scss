@@ -1,79 +1,205 @@
 @import "@/A/global-variables.scss";
+
 .experienceEducation {
   width: 80%;
-  &-card {
-    h3 {
-      font-size: 1.6rem;
-      @media screen and (max-width: 600px) {
-        font-size: 1.3rem;
+
+  /* === SECTION TITLE & ICON HEADER === */
+  .section-header {
+    gap: 0.75rem;
+
+    .section-icon-white {
+      color: white;
+      font-size: 2rem;
+    }
+
+    .section-title {
+      color: $yellow;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    @media (max-width: 1190px) {
+      .section-icon-white {
+        font-size: 1.75rem;
+      }
+      .section-title {
+        font-size: 2rem;
       }
     }
-    p {
-      font-size: 1rem !important;
+
+    @media (max-width: 576px) {
+      align-items: flex-start;
+
+      .section-icon-white {
+        font-size: 1.5rem;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+      }
     }
-    &-date {
-      text-align: start;
-      transform: translateY(-20px);
-      clip-path: polygon(70% 0, 100% 55%, 70% 100%, 0 99%, 0 0);
-      background-color: $violet-light;
-      max-width: 130px;
-      @media screen and (max-width: 400px) {
-        padding: 0.5rem !important;
-        p {
-          line-height: 1rem;
-          font-size: 0.8rem !important;
+  }
+
+  /* === TIMELINE STRUCTURE === */
+  .timeline {
+    position: relative;
+  }
+
+  .timeline-item {
+    position: relative;
+    cursor: pointer;
+
+    /* Timeline line */
+    .timeline-line {
+      width: 3px;
+      background: white;
+      height: 100%;
+      position: relative;
+      transition: background 0.5s ease;
+    }
+
+    /* Timeline dot */
+    .timeline-dot {
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      margin-top: -8px;
+      box-shadow: 0 0 10px $yellow;
+      transition: background 0.5s ease, box-shadow 0.5s ease, transform 0.3s ease;
+    }
+
+    /* Date badge */
+    .date-badge {
+      color: white;
+      transition: color 0.5s ease;
+
+      .dates,
+      .location {
+        span {
+          transition: color 0.5s ease;
+        }
+
+        .icon-white {
+          transition: color 0.5s ease;
         }
       }
-      p {
-        line-height: 1rem;
-        font-size: 0.6rem !important;
+    }
+
+    /* Card */
+    .timeline-card {
+      background: #44285b;
+      border: 2px solid white;
+      padding: 2rem;
+      border-radius: 20px;
+      color: white;
+      transition: all 0.5s ease;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+      margin-bottom: 2rem !important;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+      }
+
+      .subtitle {
+        opacity: 0.8;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        padding-left: 1.3rem;
+
+        li {
+          margin-bottom: 7px;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
       }
     }
-    &-info {
-      padding-left: 60px !important;
+
+    &.last-item {
+      .timeline-line {
+        display: none;
+      }
+    }
+
+    /* === Hover on desktop only === */
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        .icon-white {
+          color: $yellow;
+        }
+        .timeline-line {
+          background: $yellow;
+        }
+        .timeline-dot {
+          background: $yellow;
+          box-shadow: 0 0 15px $yellow;
+        }
+        .date-badge {
+          color: $yellow;
+
+          .dates span,
+          .location span {
+            color: $yellow;
+          }
+
+          .icon-white {
+            color: $yellow;
+          }
+        }
+        .timeline-card {
+          border-color: $yellow;
+        }
+        .timeline-card h3 {
+          color: $yellow !important;
+        }
+      }
     }
   }
-  &-card-info:after {
-    content: "";
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: $yellow;
-    box-shadow: 0px 0px 7px 0px $yellow;
-    top: 0;
-    margin-left: -40px !important;
-  }
-  &-card-info:before {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 80%;
-    top: calc(45% + 30px);
-    left: 28px;
-    transform: translate(0, -50%);
-    border-radius: 50%;
-    background-color: $white;
+
+  /* ==== MOBILE FIXES ==== */
+  @media (max-width: 991px) {
+    .timeline-line,
+    .timeline-dot {
+      display: none;
+    }
   }
 }
 
-/* ========== DARK MODE OVERRIDES FOR EXPERIENCE/EDUCATION ========== */
+/* === DARK MODE === */
 .dark .experienceEducation {
-  &-card {
-    &-date {
-      background-color: #140f22;
-      p {
-        color: #c6c4d2;
-      }
-    }
-    h3 {
-      color: #ffffff;
-    }
-    p {
-      color: #c6c4d2 !important;
-    }
+  .timeline-card {
+    background: #1b1628;
+    color: #ccc;
   }
-  &-card-info:before {
-    background-color: #c6c4d2;
+}
+
+.section-icon-white.fixed-icon {
+  color: white;
+  font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 1190px) {
+  .section-icon-white.fixed-icon {
+    font-size: 1.75rem;
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-icon-white.fixed-icon {
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }

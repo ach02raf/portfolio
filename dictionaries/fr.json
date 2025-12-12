@@ -176,103 +176,111 @@
       }
     ]
   },
+
   "EducationExperience": [
     {
       "title": "Experience",
+      "iconCard": "faBuilding",
+
       "list": [
         {
-          "title": "Travail Indépendant (Freelance)",
-          "subtitle": "Je suis actuellement engagé dans deux projets",
+          "title": "Freelance – Full-Stack Developer",
+          "subtitle": "Intervention sur deux projets en parallèle",
           "desc": [
-            "Développement d'un tableau de bord organisationnel multiniveau: Communic Flow, Version améliorée",
-            "Modules : Ajout d’un mode sombre (dark mode), gestion des factures, produit, client, Amélioration du module de connexion, Ajout de l’authentification à deux facteurs (2FA), Intégration de la connexion via Google (Google Auth), Mise en place de la protection Cloudflare reCAPTCHA, Ajout et gestion des droits d’accès pour chaque utilisateur, Ajout d’un module de to-do list, Mise en place d’une architecture microservices pour le backend.",
-            "Développement d’une plateforme web de réservation de terrains sportifs et gestion d’équipes: KickOff"
+            "Amélioration et développement de Communic Flow (version 2) — tableau de bord organisationnel multiniveau.",
+            "Participation au développement de KickOff — plateforme de réservation de terrains sportifs et gestion d'équipes."
           ],
-          "dateDeb": "Present",
-          "dateFin": "Octobre 2024"
+          "dateDeb": "Oct. 2024",
+          "dateFin": "Présent",
+          "location": "Monastir, Tunisie"
         },
         {
           "title": "ASQII",
           "subtitle": "Stage de fin d'études",
-          "desc": [
-            "Développement d'un tableau de bord organisationnel multiniveau: Communic Flow",
-            "Modules : gestion des événements, réclamations, gestion des dossiers, rapports Power BI",
-            "Intégration de la messagerie en temps réel (Socket.IO)",
-            "Mise en place d'un pipeline CI/CD pour le déploiement automatisé des applications"
-          ],
-          "dateDeb": "Janvier 2024",
-          "dateFin": "Juillet 2024"
+          "desc": ["Développement de Communic Flow (version 1)."],
+          "dateDeb": "Janv. 2024",
+          "dateFin": "Juil. 2024",
+          "location": "Le Kram, Tunis, Tunisie"
         },
         {
           "title": "ZETA Engineering",
           "subtitle": "Développeur web",
           "desc": [
-            "Création d'un pack de 16 sites avec le CMS WordPress",
-            "Création d'un pack de 4 sites avec le framework Next.js",
-            "Optimiser le SEO des sites inclus dans les deux packs"
+            "Réalisation d’un pack de 16 sites WordPress et 4 sites Next.js.",
+            "Optimisation SEO sur l’ensemble des sites créés."
           ],
-          "dateDeb": "Août 2023 ",
-          "dateFin": "Janvier 2024"
+          "dateDeb": "Août 2023",
+          "dateFin": "Janv. 2024",
+          "location": "Al Zahra, Ben Arous, Tunisie"
         },
         {
           "title": "ZETA Engineering",
-          "subtitle": "stage d'été 2023",
-          "desc": ["Formation portant sur le CMS WordPress et le SEO"],
-          "dateDeb": "Juin 2023 ",
-          "dateFin": "Juillet 2023"
+          "subtitle": "Stage d'été",
+          "desc": ["Formation et travaux pratiques autour du CMS WordPress et du SEO."],
+          "dateDeb": "Juin 2023",
+          "dateFin": "Juil. 2023",
+          "location": "Al Zahra, Ben Arous, Tunisie"
         },
         {
           "title": "SHAREK IT",
-          "subtitle": "stage d'été 2022",
+          "subtitle": "Stage d'été",
           "desc": [
-            "Création d'un site web e-commerce pour vente les materiels informatique INFO-LINA",
-            "MERN STACK , BOOTSTRAP"
+            "Développement d’un site e-commerce pour la vente de matériel informatique.",
+            "Stack utilisée : MERN + Bootstrap."
           ],
-          "dateDeb": "Juin 2023 ",
-          "dateFin": "Août 2023"
+          "dateDeb": "Juin 2022",
+          "dateFin": "Août 2022",
+          "location": "Al Ghazala, Ariana, Tunisie"
         },
         {
           "title": "COSO-FT IT",
-          "subtitle": "Stage de fin d'etude 2020",
+          "subtitle": "Stage de fin d'étude",
           "desc": [
-            "Création de l'application web et mobile pour la prise de rendez-vous médicaux : ALLO DOCTOR",
-            "MERN STACK , REACT-NATIVE"
+            "Création d’une application web et mobile de prise de rendez-vous médicaux (ALLO DOCTOR).",
+            "Stack utilisée : MERN + React Native."
           ],
-          "dateDeb": "Janvier 2020",
-          "dateFin": "Juillet 2020"
+          "dateDeb": "Janv. 2020",
+          "dateFin": "Juil. 2020",
+          "location": "Monastir, Tunisie"
         },
         {
           "title": "SARTEX GROUP",
-          "subtitle": "stage d'été 2018",
-          "desc": ["Maintenance informatique", "Cloud Computing"],
-          "dateDeb": "juin 2018 ",
-          "dateFin": " Juillet 2018"
+          "subtitle": "Stage d'été",
+          "desc": ["Maintenance informatique et initiation au Cloud Computing."],
+          "dateDeb": "Juin 2018",
+          "dateFin": "Juil. 2018",
+          "location": "Ksar Hlel, Monastir, Tunisie"
         }
       ]
     },
     {
       "title": "Education",
+      "iconCard": "faUniversity",
+
       "list": [
         {
-          "title": "TEK-UP university",
-          "subtitle": "Ingenieurie en informatique",
-          "desc": ["specialité developement web, mobile et multimedia"],
+          "title": "TEK-UP University",
+          "subtitle": "Ingénierie en informatique",
+          "desc": ["Spécialité développement web, mobile et multimédia."],
           "dateDeb": "2021",
-          "dateFin": "2024"
+          "dateFin": "2024",
+          "location": "Ariana Soghra, Ariana, Tunisie"
         },
         {
-          "title": "ISIMM | Institut Supérieur d'Informatique et de Mathématiques de Monastir",
+          "title": "ISIMM",
           "subtitle": "Licence fondamentale en informatique",
-          "desc": ["specialité génie logiciel"],
+          "desc": ["Spécialité génie logiciel."],
           "dateDeb": "2016",
-          "dateFin": "2020"
+          "dateFin": "2020",
+          "location": "Monastir, Tunisie"
         },
         {
-          "title": "LKM | Lycée secondaire Ksibet El Mediouni",
-          "subtitle": "Baccalauréat téchnique",
+          "title": "LKM – Lycée Ksibet El Mediouni",
+          "subtitle": "Baccalauréat technique",
           "desc": [],
           "dateDeb": "2015",
-          "dateFin": "2016"
+          "dateFin": "2016",
+          "location": "Ksibet EL Madouini, Monastir, Tunisie"
         }
       ]
     }

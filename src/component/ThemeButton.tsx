@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
 
@@ -10,16 +10,25 @@ interface ThemeButtonProps {
 
 const ThemeButton: React.FC<ThemeButtonProps> = ({ className = "" }) => {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  // Only render on client to avoid hydration issues
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
+
+  if (!mounted) return null; // Prevent SSR mismatch
+
   return (
     <button
       onClick={toggleTheme}
       aria-label="Toggle theme"
       className={`
-        btn d-flex align-items-center justify-content-center rounded-circle shadow-sm 
+        btn d-flex align-items-center justify-content-center rounded-circle shadow-sm
         ${theme === "dark" ? "btn-dark text-warning" : "btn-light text-dark"}
         ${className}
       `}

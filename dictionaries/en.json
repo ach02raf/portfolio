@@ -178,100 +178,106 @@
   "EducationExperience": [
     {
       "title": "Experience",
+      "iconCard": "faBuilding",
+
       "list": [
         {
-          "title": "Freelance Work",
+          "title": "Freelance – Full-Stack Developer",
           "subtitle": "Currently engaged in two projects",
           "desc": [
-            "Development of a multi-level organizational dashboard: Communic Flow, Enhanced Version",
-            "Modules: Adding dark mode, invoice management, product, customer, Login module improvement, Two-factor authentication (2FA) addition, Google login integration (Google Auth), Cloudflare reCAPTCHA protection implementation, Access rights management for each user, To-do list module addition, Microservices architecture implementation for backend.",
-            "Development of a sports field booking and team management web platform: KickOff"
+            "Improvement and development of Communic Flow (version 2) — multi-level organizational dashboard.",
+            "Participation in the development of KickOff — platform for booking sports fields and team management."
           ],
-          "dateDeb": "Present",
-          "dateFin": "October 2024"
+          "dateDeb": "Oct. 2024",
+          "dateFin": "Present",
+          "location": "Monastir, Tunisia"
         },
         {
           "title": "ASQII",
           "subtitle": "Final year internship",
-          "desc": [
-            "Development of a multi-level organizational dashboard: Communic Flow",
-            "Modules: event management, complaints, file management, Power BI reports",
-            "Real-time messaging integration (Socket.IO)",
-            "CI/CD pipeline setup for automated application deployment"
-          ],
-          "dateDeb": "January 2024",
-          "dateFin": "July 2024"
+          "desc": ["Development of Communic Flow (version 1)."],
+          "dateDeb": "Jan. 2024",
+          "dateFin": "Jul. 2024",
+          "location": "Le Kram, Tunis, Tunisia"
         },
         {
           "title": "ZETA Engineering",
           "subtitle": "Web Developer",
           "desc": [
-            "Creation of a pack of 16 websites with WordPress CMS",
-            "Creation of a pack of 4 websites with Next.js framework",
-            "SEO optimization of websites included in both packs"
+            "Creation of a pack of 16 WordPress websites and 4 Next.js websites.",
+            "SEO optimization on all created websites."
           ],
-          "dateDeb": "August 2023",
-          "dateFin": "January 2024"
+          "dateDeb": "Aug. 2023",
+          "dateFin": "Jan. 2024",
+          "location": "Al Zahra, Ben Arous, Tunisia"
         },
         {
           "title": "ZETA Engineering",
-          "subtitle": "Summer internship 2023",
-          "desc": ["Training on WordPress CMS and SEO"],
-          "dateDeb": "June 2023",
-          "dateFin": "July 2023"
+          "subtitle": "Summer internship",
+          "desc": ["Training and practical work on WordPress CMS and SEO."],
+          "dateDeb": "Jun. 2023",
+          "dateFin": "Jul. 2023",
+          "location": "Al Zahra, Ben Arous, Tunisia"
         },
         {
           "title": "SHAREK IT",
-          "subtitle": "Summer internship 2022",
+          "subtitle": "Summer internship",
           "desc": [
-            "Creation of an e-commerce website for selling computer equipment INFO-LINA",
-            "MERN STACK, BOOTSTRAP"
+            "Development of an e-commerce website for selling IT equipment.",
+            "Used stack: MERN + Bootstrap."
           ],
-          "dateDeb": "June 2022",
-          "dateFin": "August 2022"
+          "dateDeb": "Jun. 2022",
+          "dateFin": "Aug. 2022",
+          "location": "Al Ghazala, Ariana, Tunisia"
         },
         {
           "title": "COSO-FT IT",
-          "subtitle": "Final year internship 2020",
+          "subtitle": "Final year internship",
           "desc": [
-            "Creation of web and mobile application for medical appointment booking: ALLO DOCTOR",
-            "MERN STACK, REACT-NATIVE"
+            "Creation of a web and mobile application for medical appointments (ALLO DOCTOR).",
+            "Used stack: MERN + React Native."
           ],
-          "dateDeb": "January 2020",
-          "dateFin": "July 2020"
+          "dateDeb": "Jan. 2020",
+          "dateFin": "Jul. 2020",
+          "location": "Monastir, Tunisia"
         },
         {
           "title": "SARTEX GROUP",
-          "subtitle": "Summer internship 2018",
-          "desc": ["IT Maintenance", "Cloud Computing"],
-          "dateDeb": "June 2018",
-          "dateFin": "July 2018"
+          "subtitle": "Summer internship",
+          "desc": ["IT maintenance and introduction to Cloud Computing."],
+          "dateDeb": "Jun. 2018",
+          "dateFin": "Jul. 2018",
+          "location": "Ksar Hlel, Monastir, Tunisia"
         }
       ]
     },
     {
       "title": "Education",
+      "iconCard": "faUniversity",
       "list": [
         {
           "title": "TEK-UP University",
-          "subtitle": "Computer Science Engineering",
-          "desc": ["Specialization in Web, Mobile and Multimedia Development"],
+          "subtitle": "Computer Engineering",
+          "desc": ["Specialized in web, mobile and multimedia development."],
           "dateDeb": "2021",
-          "dateFin": "2024"
+          "dateFin": "2024",
+          "location": "Ariana Soghra, Ariana, Tunisia"
         },
         {
-          "title": "ISIMM | Higher Institute of Computer Science and Mathematics of Monastir",
+          "title": "ISIMM",
           "subtitle": "Bachelor's degree in Computer Science",
-          "desc": ["Specialization in Software Engineering"],
+          "desc": ["Specialized in software engineering."],
           "dateDeb": "2016",
-          "dateFin": "2020"
+          "dateFin": "2020",
+          "location": "Monastir, Tunisia"
         },
         {
-          "title": "LKM | Secondary School Ksibet El Mediouni",
+          "title": "LKM – Lycée Ksibet El Mediouni",
           "subtitle": "Technical Baccalaureate",
           "desc": [],
           "dateDeb": "2015",
-          "dateFin": "2016"
+          "dateFin": "2016",
+          "location": "Ksibet EL Madouini, Monastir, Tunisia"
         }
       ]
     }
