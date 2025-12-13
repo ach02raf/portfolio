@@ -77,8 +77,8 @@ function FirstSection(props: {
           </h2>
           <div className="row">
             <div className="col">
-              <button className="firstSection-button mb-5 p-3">
-                <a href={`/cv-${props.cvUrl}.pdf`} download="cv">
+              <button className="firstSection-button mb-5">
+                <a href={`/cv-${props.cvUrl}.pdf`} download="cv" className="p-4">
                   {props.firstSection.cv}
                 </a>
               </button>

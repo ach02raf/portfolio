@@ -22,8 +22,7 @@ function ServicesSection(props: ServicesSectionProps) {
   return (
     <div className="service-section text-center my-5">
       <h2>
-        {props?.ServicesSection?.title[0]}{" "}
-        <span>{props?.ServicesSection?.title[1]}</span>
+        {props?.ServicesSection?.title[0]} <span>{props?.ServicesSection?.title[1]}</span>
       </h2>
       <p>{props?.ServicesSection?.description}</p>
       <div className="row m-0 justify-content-between">
@@ -32,9 +31,8 @@ function ServicesSection(props: ServicesSectionProps) {
             className="col-lg-4 col-md-5 service-section-block position-relative p-3 my-3"
             key={index}>
             <div className="service-section-block-icon my-3">
-              {" "}
               <FontAwesomeIcon
-              className="service-section-block-icon-item"
+                className="service-section-block-icon-item"
                 color="#FEC260"
                 icon={fas[item?.img] as IconDefinition}
               />

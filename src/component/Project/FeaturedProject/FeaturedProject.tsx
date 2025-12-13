@@ -44,46 +44,61 @@ function FeaturedProject(props: {
       url: string;
       label: string;
     };
+    featuredProject?: {
+      subtitle: string;
+      tech: string;
+      button: string;
+      comingSoon?: {
+        badge: string;
+        title: string;
+        subtitle: string;
+        placeholder: string;
+      };
+    };
   };
   lang: Locale;
+  isSecond?: boolean;
 }) {
-  const { project, lang } = props;
-
-  const translations: Record<Locale, { subtitle: string; tech: string; button: string }> = {
-    fr: {
-      subtitle: "Projet de fin d’études",
-      tech: "Technologies utilisées :",
-      button: "Voir le projet",
-    },
-    en: {
-      subtitle: "Final Year Project",
-      tech: "Technologies used:",
-      button: "View Project",
-    },
-    de: {
-      subtitle: "Abschlussprojekt",
-      tech: "Verwendete Technologien:",
-      button: "Projekt ansehen",
-    },
-  };
-
-  const t = translations[lang] || translations["en"];
+  const { project, lang, isSecond } = props;
+  const t = project.featuredProject;
+  const comingSoon = t?.comingSoon;
 
   return (
     <div className="featured-project container mt-5">
       <div className="row align-items-center animated-section">
         <div className="col-md-6 mb-3 video-wrapper">
-          <video width="100%" height="370px" controls loop autoPlay muted>
-            <source src={`/${project.videoProject}.mp4`} type="video/webm" />
-          </video>
+          {isSecond ? (
+            <div className="coming-soon-card">
+              <div className="coming-soon-badge">{comingSoon?.badge}</div>
+              <div className="coming-soon-text">
+                <p className="title">{comingSoon?.title}</p>
+                <p className="subtitle">{comingSoon?.subtitle}</p>
+              </div>
+              <div className="coming-soon-media">
+                {project.imgProject && project.imgProject.length > 0 ? (
+                  <img
+                    src={`/Images/Projects/${project.imgProject[0]}.png`}
+                    alt={project.title ?? "Project cover"}
+                    className="coming-soon-image"
+                  />
+                ) : (
+                  <span className="placeholder-text">{comingSoon?.placeholder}</span>
+                )}
+              </div>
+            </div>
+          ) : (
+            <video width="100%" height="370px" controls loop autoPlay muted>
+              <source src={`/${project.videoProject}.mp4`} type="video/webm" />
+            </video>
+          )}
         </div>
 
         <div className="col-md-6 info-wrapper  py-5">
           <h3 className="mb-4">{project.title}</h3>
-          <p className="project-subtitle p-1">{t.subtitle}</p>
+          <p className="project-subtitle p-1">{t?.subtitle}</p>
           <p className="fs-6">{project.descProject && project.descProject.slice(0, 107)}...</p>
 
-          <h5>{t.tech}</h5>
+          <h5>{t?.tech}</h5>
           <ul>
             {project?.tools &&
               project?.tools?.map((tool: string, index: number) => (
@@ -94,7 +109,7 @@ function FeaturedProject(props: {
           </ul>
 
           <Link href={`/${lang}/Projects/${project.slug}`} className="btn btn-primary mt-3">
-            {t.button}
+            {t?.button}
           </Link>
         </div>
       </div>

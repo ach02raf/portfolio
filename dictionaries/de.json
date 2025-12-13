@@ -95,7 +95,7 @@
       },
       {
         "id": 6,
-        "title": "SEO - Suchmaschinenoptimierung",
+        "title": "SEO",
         "desc": "Optimierung für Suchmaschinen durch Anwendung einer Reihe von Techniken, Regeln und Best Practices zur Verbesserung der Sichtbarkeit von Websites und ihrer Positionen in den Suchmaschinenergebnissen.",
         "img": "faBullhorn"
       }
@@ -289,12 +289,12 @@
     "list": [
       {
         "id": "1",
-        "nameProject": "Mehrstufiges Organisatorisches Dashboard",
-        "infoProject": "PROJEKT-INFOS",
-        "slug": "dashboard-multiniveau",
-        "title": "Mehrstufiges Organisatorisches Dashboard",
+        "nameProject": "Communic Flow",
+        "infoProject": "PROJEKTINFORMATIONEN",
+        "slug": "communic-flow",
+        "title": "Communic Flow",
         "visitSites": "Website besuchen",
-        "descProject": "Ein mehrstufiges organisatorisches Dashboard, das das Informations- und Kommunikationsmanagement zentralisiert. Strukturiert um einen Super-Administrator, verfügt jede Mitgliedsorganisation über einen eigenen Administrator, was Autonomie gewährleistet, während sie in einen globalen Rahmen integriert bleibt.",
+        "descProject": "Communic Flow ist ein mehrstufiges Organisations-Dashboard, das die institutionelle Kommunikation modernisiert. Es verbindet Organisationen, ihre angeschlossenen Einheiten und Mitglieder über eine zentrale Plattform, die Informationsverwaltung, rollenbasierte Zugriffskontrolle, Ereignisplanung, Beschwerdemanagement, Echtzeit-Messaging sowie Power-BI-Berichte bietet. Die Anwendung wurde ursprünglich für die Nationale Kammer der Pharmaindustrie (CNIP) entwickelt und erfüllt reale Anforderungen an Koordination, Transparenz und schnellen Informationsfluss in komplexen Ökosystemen.",
         "videoProject": "demo-communic-flow",
         "urlProject": [""],
         "urlSITE": [""],
@@ -316,25 +316,27 @@
         "description": {
           "title": "Hauptfunktionen",
           "points": [
-            "Zentralisiertes Informationsmanagement und organisationsübergreifende Kommunikation",
-            "Hierarchische Struktur mit einem Super-Administrator und autonomen Mitgliedsorganisationen",
-            "Verwaltung von Beschwerden",
-            "Echtzeit-Diskussion (Chat/Instant Messaging)",
-            "Verwaltung von Veranstaltungen",
-            "Verwaltung von Benutzern und Rollen",
-            "Verwaltung von Organisationen",
-            "Teilen und Visualisieren von Berichten über Power BI"
+            "Zentralisierte Verwaltung institutioneller Informationen zwischen Organisationen und ihren Einheiten",
+            "Vollständige hierarchische Struktur: Superadministrator → Organisationen → Mitglieder",
+            "Erweitertes Beschwerdemanagement: Erstellung, Nachverfolgung und Antworten",
+            "Echtzeit-Nachrichten mit Socket.IO (Gruppen- und Einzelchats)",
+            "Planung und Verwaltung von Veranstaltungen",
+            "Erweiterte Verwaltung von Benutzern, Rollen und Berechtigungen",
+            "Verwaltung von Organisationen und deren angeschlossenen Einheiten",
+            "Power-BI-Integration für interaktive Analysen und fundierte Entscheidungen"
           ]
         },
         "devopsProcess": {
           "title": "DevOps-Prozess",
           "steps": [
-            "Einrichtung einer CI/CD-Pipeline mit Jenkins zur Automatisierung der kontinuierlichen Bereitstellung",
-            "Containerisierung der Anwendung mit Docker",
-            "Orchestrierung und Skalierbarkeit über Kubernetes",
-            "Echtzeit-Überwachung und Performance-Tracking mit Grafana",
-            "Code-Qualitäts- und Sicherheitsanalyse mit SonarQube und OWASP",
-            "Zentralisierte Abhängigkeitsverwaltung mit Nexus"
+            "Aufbau einer vollständigen CI/CD-Architektur mit Jenkins",
+            "Automatisierte Continuous Integration für Frontend und Backend",
+            "Containerisierung der Anwendungen mit Docker und Speicherung der Images im Nexus Repository",
+            "Automatisierte Codequalitätsanalyse mit SonarQube und strengen Quality Gates",
+            "Sicherheits- und Schwachstellenanalyse mit OWASP Dependency-Check",
+            "Überwachung der Anwendungen und Pipelines durch Prometheus",
+            "Visualisierung von Leistungsmetriken mit Grafana",
+            "Automatisierte Deployment-Pipeline auf den VPS mit Artefaktverwaltung"
           ]
         },
         "utilisation": {
@@ -347,8 +349,120 @@
           "url": "/Rapport_PFE.pdf",
           "label": "Bericht herunterladen"
         },
-        "usedTools": "Verwendete Tools",
-        "tools": ["React", "Node.js", "MySQL", "Docker", "Jenkins", "Socket.IO", "Tailwind CSS"]
+        "usedTools": "Verwendete Technologien",
+        "tools": ["React", "Node.js", "MySQL", "Docker", "Jenkins", "Socket.IO", "Tailwind CSS"],
+        "featuredProject": {
+          "subtitle": "Abschlussprojekt",
+          "tech": "Verwendete Technologien:",
+          "button": "Projekt ansehen",
+          "comingSoon": {
+            "badge": "Bald verfügbar",
+            "title": "Video bald verfügbar",
+            "subtitle": "Eine ausgearbeitete Demo wird vorbereitet.",
+            "placeholder": "Keine Vorschau verfügbar"
+          }
+        }
+      },
+      {
+        "id": "2",
+        "nameProject": "Communic Flow v2",
+        "infoProject": "PROJEKTINFORMATIONEN",
+        "slug": "communic-flow-v2",
+        "title": "Communic Flow — Version 2",
+        "visitSites": "Website besuchen",
+        "descProject": "Communic Flow v2 ist die neu gestaltete und modernisierte Version der mehrstufigen Organisationsplattform, jetzt vollständig auf einer Microservices-Architektur aufgebaut. Der Messaging-Dienst wurde vollständig isoliert und nutzt GraphQL und Redis für die interne Kommunikation. Das Authentifizierungssystem wurde verstärkt: sichere HTTP-Only-Cookies für Tokens, ein neuer Google OAuth 2.0 Login, Cloudflare Turnstile zum Schutz vor Spam sowie ein vollständiges Zwei-Faktor-Authentifizierungssystem (2FA). Die Unternehmensregistrierung wurde optimiert durch automatische VIES-Validierung für EU-Firmen sowie automatische Adressvervollständigung über die Postleitzahl. Die Sicherheit des Backends wurde erheblich verbessert, das Echtzeit-Messaging optimiert und Sprach- und Videoanruffunktionen befinden sich bereits in Entwicklung.",
+        "videoProject": "demo-communic-flow",
+        "urlProject": [""],
+        "urlSITE": [""],
+        "imgProject": [],
+        "apk": "",
+        "technologies": {
+          "title": "Entwicklung",
+          "Developpement": [
+            "REACT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "NEXT.JS",
+            "EXPRESS.JS",
+            "GRAPHQL",
+            "REDIS",
+            "MYSQL"
+          ],
+          "DevOps": [
+            "DOCKER",
+            "JENKINS",
+            "KUBERNETES",
+            "GRAFANA",
+            "SONARQUBE",
+            "NEXUS",
+            "OWASP",
+            "CLOUDFLARE"
+          ]
+        },
+        "description": {
+          "title": "Hauptfunktionen",
+          "points": [
+            "Microservices-Architektur mit isoliertem Messaging-Dienst",
+            "Messaging-Engine auf Basis von GraphQL für optimierte Abfragen",
+            "Redis für Interservice-Kommunikation und Event-Streaming",
+            "Sichere Authentifizierung über HTTP-Only-Cookies für Tokens",
+            "Neuer Google OAuth 2.0 Login",
+            "Anti-Spam-Schutz durch Cloudflare Turnstile",
+            "Vollständiges Zwei-Faktor-Authentifizierungssystem (2FA)",
+            "Optimierte Firmenerstellung mit automatischer VIES-Validierung (EU)",
+            "Automatische Adressvervollständigung über Postleitzahl",
+            "Erhöhte Backend-Sicherheit durch verbesserte Validierungen und Token-Schutz",
+            "Optimiertes Echtzeit-Messaging mit höherer Leistung und Skalierbarkeit",
+            "Sprach- und Videoanrufe befinden sich in Entwicklung",
+            "Zukünftige Optimierung der Benutzerverbindungen zwischen Organisationen",
+            "Neuer Dark Mode für die Benutzeroberfläche"
+          ]
+        },
+        "devopsProcess": {
+          "title": "DevOps-Prozess",
+          "steps": [
+            "Umstellung auf Microservices-Deployment mit Docker und Kubernetes",
+            "Dedizierte CI/CD-Pipelines für jeden Microservice über Jenkins",
+            "Optimiertes Artefaktmanagement und Versionierungsstrategie mit Nexus",
+            "Erweiterte Codequalitäts- und Sicherheitsanalysen mit SonarQube und OWASP",
+            "Integration von Cloudflare-Diensten zur Reduzierung der Angriffsfläche",
+            "Verbessertes Redis-Monitoring für Echtzeit-Messaging",
+            "Aktualisierte Grafana-Dashboards für Microservices und Logs",
+            "Stufenweise Deployment-Strategie für neue Messaging-Funktionen"
+          ]
+        },
+        "utilisation": {
+          "title": "Nutzungsmodus (Administratorzugang)",
+          "url": "https://communicflow.ach02raf.pro/",
+          "login": "admin@admin.com",
+          "password": "admin"
+        },
+        "rapport": {
+          "url": "/Rapport_PFE.pdf",
+          "label": "Bericht herunterladen"
+        },
+        "usedTools": "Verwendete Technologien",
+        "tools": [
+          "React",
+          "Node.js",
+          "MySQL",
+          "Docker",
+          "Jenkins",
+          "Redis",
+          "GraphQL",
+          "Tailwind CSS"
+        ],
+        "featuredProject": {
+          "subtitle": "Freelance-Projekt",
+          "tech": "Verwendete Technologien:",
+          "button": "Projekt ansehen",
+          "comingSoon": {
+            "badge": "Bald verfügbar",
+            "title": "Video bald verfügbar",
+            "subtitle": "Eine ausgearbeitete Demo wird vorbereitet.",
+            "placeholder": "Keine Vorschau verfügbar"
+          }
+        }
       },
       {
         "id": "0",

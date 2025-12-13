@@ -16,6 +16,67 @@
       box-shadow: 0 8px 20px rgba($black, 0.4);
       transition: transform 0.4s ease;
     }
+
+    .coming-soon-card {
+      height: 370px;
+      border-radius: 15px;
+      padding: 1.75rem;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.04));
+      border: 1px solid rgba($white, 0.14);
+      box-shadow: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+
+      .coming-soon-badge {
+        align-self: flex-start;
+        padding: 0.35rem 0.8rem;
+        border-radius: 999px;
+        background: rgba($yellow, 0.18);
+        color: $yellow;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+      }
+
+      .coming-soon-text {
+        .title {
+          margin: 0;
+          font-weight: 700;
+          font-size: 1.2rem;
+          color: $white;
+        }
+        .subtitle {
+          margin: 0.15rem 0 0;
+          color: rgba($white, 0.8);
+          font-size: 0.95rem;
+        }
+      }
+
+      .coming-soon-media {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        background: rgba($white, 0.06);
+        border: 1px dashed rgba($white, 0.25);
+        overflow: hidden;
+
+        .coming-soon-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .placeholder-text {
+          color: rgba($white, 0.6);
+          font-size: 0.95rem;
+        }
+      }
+    }
   }
   .info-wrapper {
     background: linear-gradient(135deg, rgba($violet-dark, 0.85) 0%, rgba($violet-light, 0.85) 100%),
@@ -137,5 +198,47 @@
   .project-subtitle {
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(199, 154, 240, 0.2);
+  }
+
+  .coming-soon-card {
+    background: linear-gradient(135deg, rgba(20, 15, 34, 0.9), rgba(26, 15, 34, 0.85));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: none;
+
+    .coming-soon-badge {
+      background: rgba($yellow, 0.22);
+      color: $yellow;
+    }
+
+    .coming-soon-text {
+      .title {
+        color: #ffffff;
+      }
+      .subtitle {
+        color: rgba(255, 255, 255, 0.72);
+      }
+    }
+
+    .coming-soon-media {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(255, 255, 255, 0.16);
+
+      .placeholder-text {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .featured-project {
+    .video-wrapper {
+      .coming-soon-card {
+        margin-top: 0.75rem;
+        padding: 1.25rem;
+        height: auto;
+        min-height: 320px;
+      }
+    }
   }
 }

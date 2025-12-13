@@ -53,6 +53,17 @@ type Project = {
     url: string;
     label: string;
   };
+  featuredProject?: {
+    subtitle: string;
+    tech: string;
+    button: string;
+    comingSoon?: {
+      badge: string;
+      title: string;
+      subtitle: string;
+      placeholder: string;
+    };
+  };
 };
 
 type Props = {
@@ -68,16 +79,19 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
     <div className="project-details p-xl-5 p-2">
       <div className="project-details-contain d-block m-auto">
         {/* Header */}
-        <div className="row mb-3">
-          <div className="col-lg-2 col-12">
-            <Link href={`/${lang}#${backToHome}`} className="project-details-contain-backHome">
+        <div className="row mb-3 d-flex align-items-center">
+          <div className="col-auto d-flex align-items-center justify-content-center">
+            <Link
+              href={`/${lang}#My-Work`}
+              className="project-details-contain-backHome"
+              aria-label="Back to Projects">
               <FontAwesomeIcon
                 className="project-details-contain-backHome-icon"
                 icon={faArrowAltCircleLeft}
               />
             </Link>
           </div>
-          <div className="col-lg-10 col-12 text-lg-end text-center project-details-title position-relative">
+          <div className="flex-grow-1 text-lg-end text-center project-details-title position-relative">
             <h4>{project.nameProject}</h4>
           </div>
         </div>
@@ -96,17 +110,50 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
             </div>
           )}
 
-          {project.videoProject && (
+          {/* Show Coming Soon only for the second project (communic-flow-v2); keep video for others */}
+          {project.slug === "communic-flow-v2" ? (
             <div
               className={
                 project.imgProject && project.imgProject?.length > 0
                   ? "col-xl-4 col-12 py-xl-0 py-3"
                   : "col-12"
               }>
-              <video width="100%" height="300px" controls loop autoPlay muted>
-                <source src={`/${project.videoProject}.mp4`} type="video/mp4" />
-              </video>
+              <div className="coming-soon-card p-3 border rounded-3">
+                <div className="coming-soon-badge mb-2">
+                  {project.featuredProject?.comingSoon?.badge}
+                </div>
+                <h5 className="mb-1">{project.featuredProject?.comingSoon?.title}</h5>
+                <p className="text-muted mb-3">{project.featuredProject?.comingSoon?.subtitle}</p>
+                <div className="coming-soon-media d-flex align-items-center justify-content-center border rounded-2 p-3">
+                  {project.imgProject && project.imgProject.length > 0 ? (
+                    <Image
+                      src={`/Images/${project.imgProject[0]}.png`}
+                      alt={project.imgProject[0]}
+                      title={project.imgProject[0]}
+                      height={180}
+                      width={320}
+                    />
+                  ) : (
+                    <span className="placeholder-text">
+                      {project.featuredProject?.comingSoon?.placeholder}
+                    </span>
+                  )}
+                </div>
+              </div>
             </div>
+          ) : (
+            project.videoProject && (
+              <div
+                className={
+                  project.imgProject && project.imgProject?.length > 0
+                    ? "col-xl-4 col-12 py-xl-0 py-3"
+                    : "col-12"
+                }>
+                <video width="100%" height="300px" controls loop autoPlay muted>
+                  <source src={`/${project.videoProject}.mp4`} type="video/mp4" />
+                </video>
+              </div>
+            )
           )}
         </div>
 

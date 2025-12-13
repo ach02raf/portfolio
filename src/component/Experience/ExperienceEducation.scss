@@ -100,8 +100,12 @@
       box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
       margin-bottom: 2rem !important;
 
+      .card-icon {
+        font-size: 1.1rem;
+      }
+
       h3 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         margin-bottom: 5px;
       }
 
@@ -169,6 +173,24 @@
     .timeline-line,
     .timeline-dot {
       display: none;
+    }
+
+    .timeline-card .card-icon {
+      font-size: 1rem;
+    }
+
+    .timeline-card h3 {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .timeline-card .card-icon {
+      font-size: 0.9rem;
+    }
+
+    .timeline-card h3 {
+      font-size: 0.9rem !important;
     }
   }
 }

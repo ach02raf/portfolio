@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "./ItemProject.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faLink } from "@fortawesome/free-solid-svg-icons";
@@ -52,7 +52,9 @@ function ItemProject(props: {
 }) {
   return (
     <div className="row itemProject">
-      <Link href={`/${props?.lang}/Projects/${props?.ItemsProject?.slug}`}>
+      <Link
+        href={`/${props?.lang}/Projects/${props?.ItemsProject?.slug}`}
+        aria-label={`Open ${props?.ItemsProject?.nameProject} details`}>
         <div className="itemProject-img d-block m-auto p-0">
           {props?.ItemsProject?.imgProject && props?.ItemsProject?.imgProject[0] && (
             <Image
@@ -66,19 +68,15 @@ function ItemProject(props: {
 
           {props?.ItemsProject?.urlSITE && props?.ItemsProject?.urlSITE[0] && (
             <div>
-              {" "}
               <h3 className="text-center py-3 px-2">
-                {" "}
-                <FontAwesomeIcon className="itemProject-link" icon={faLink} />{" "}
+                <FontAwesomeIcon className="itemProject-link" icon={faLink} />
                 {props?.ItemsProject?.nameProject}
               </h3>
             </div>
           )}
           {props?.ItemsProject?.apk && (
             <div>
-              {" "}
               <h3 className="text-center py-3 px-2">
-                {" "}
                 <FontAwesomeIcon className="itemProject-link" icon={faDownload} />{" "}
                 {props?.ItemsProject?.nameProject}
               </h3>

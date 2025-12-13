@@ -8,8 +8,16 @@
   }
   &-info {
     transition: all 0.3s linear;
-    &:hover {
-      transform: scale(1.15);
+  }
+}
+
+/* Desktop-only hover effects for Contact Section */
+@media (min-width: 769px) {
+  .contactSection {
+    &-info {
+      &:hover {
+        transform: scale(1.15);
+      }
     }
   }
 }

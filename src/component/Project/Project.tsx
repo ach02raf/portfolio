@@ -53,17 +53,18 @@ function Project(props: {
   lang: Locale;
 }) {
   const firstProject = props.Project.list[0];
-  const remainingProjects = props.Project.list.slice(1);
+  const secondProject = props.Project.list[1];
+
+  const remainingProjects = props.Project.list.slice(2);
   return (
     <div className="project">
-      {" "}
       <div className="project-container d-block m-auto">
-        {" "}
         <h2 className="text-center project-container-title">
           {props?.Project?.title[0] + " "}
           <span>{props?.Project?.title[1]}</span>
         </h2>
         <p className="fs-6 text-center pt-4">{props?.Project?.desc}</p>
+        {secondProject && <FeaturedProject project={secondProject} lang={props.lang} isSecond />}
         {firstProject && <FeaturedProject project={firstProject} lang={props.lang} />}
         <div className="row py-3">
           {remainingProjects.map((ItemsProject, index) => (

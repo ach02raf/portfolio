@@ -13,8 +13,8 @@
       text-decoration: none !important;
 
       &-icon {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         color: $white !important;
       }
     }
@@ -104,6 +104,43 @@
   .project-details-link {
     border-radius: 4px !important;
   }
+
+  /* Professional Coming Soon card styling aligned with FeaturedProject */
+  .coming-soon-card {
+    border: 1px solid rgba($white, 0.14) !important;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-height: 280px;
+  }
+
+  .coming-soon-badge {
+    align-self: flex-start;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    background: rgba($yellow, 0.2);
+    color: $yellow;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    font-size: 0.78rem;
+  }
+
+  .coming-soon-media {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba($white, 0.06);
+    border: 1px dashed rgba($white, 0.22);
+  }
+
+  .placeholder-text {
+    color: rgba($white, 0.7);
+    font-size: 0.95rem;
+  }
 }
 
 /* ========== DARK MODE OVERRIDES FOR PROJECT DETAILS ========== */
@@ -130,5 +167,30 @@
       background-color: $yellow;
       color: #0b0812;
     }
+  }
+
+  /* Dark mode refinement for Coming Soon */
+  .coming-soon-card {
+    border-color: rgba(255, 255, 255, 0.08) !important;
+    background: linear-gradient(135deg, rgba(20, 15, 34, 0.92), rgba(26, 15, 34, 0.86));
+  }
+  .coming-soon-badge {
+    background: rgba($yellow, 0.22);
+    color: $yellow;
+  }
+  .coming-soon-media {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.16);
+  }
+  .placeholder-text {
+    color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+/* Mobile tweaks for back icon centering and sizing */
+@media (max-width: 576px) {
+  .project-details-contain-backHome-icon {
+    width: 32px;
+    height: 32px;
   }
 }
