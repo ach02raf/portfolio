@@ -110,8 +110,8 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
             </div>
           )}
 
-          {/* Show Coming Soon only for the second project (communic-flow-v2); keep video for others */}
-          {project.slug === "communic-flow-v2" ? (
+          {/* Show Coming Soon for communic-flow-v2 and kickoff-sports; keep video for others */}
+          {project.slug === "communic-flow-v2" || project.slug === "kickoff-sports" ? (
             <div
               className={
                 project.imgProject && project.imgProject?.length > 0

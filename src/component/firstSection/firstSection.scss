@@ -1,8 +1,65 @@
 @import "@/A/global-variables.scss";
 
+/* ========== WINTER SNOW ANIMATION - REALISTIC CITY SCENE ========== */
+@keyframes snowfall {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(15px) rotate(360deg);
+    opacity: 0.4;
+  }
+}
+
+@keyframes snowfall-2 {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(100vh) translateX(-12px) rotate(-360deg);
+    opacity: 0.3;
+  }
+}
+
+@keyframes snowfall-3 {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translateY(100vh) translateX(8px) rotate(180deg);
+    opacity: 0.35;
+  }
+}
+
+@keyframes snowfall-slow {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(100vh) translateX(10px) rotate(90deg);
+    opacity: 0.2;
+  }
+}
+
+@keyframes snowfall-fast {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(100vh) translateX(-8px) rotate(-180deg);
+    opacity: 0.25;
+  }
+}
+
 .firstSection {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   /* professional background: cover image + subtle layered gradient overlay */
   background-image: url(../../../public/Images/back.png);
@@ -66,36 +123,7 @@
     font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 2rem;
-    span {
-      color: $white !important;
-    }
 
-    /* Professional animated text styling */
-    .animated-text {
-      display: inline;
-      font-weight: 500;
-      font-size: 1.1rem;
-      color: $white;
-      letter-spacing: 0.5px;
-      line-height: 1.6;
-
-      .cursor {
-        margin-left: 2px;
-        display: inline-block;
-        color: $yellow;
-        font-weight: 600;
-        animation: none;
-      }
-    }
-  }
-
-  &-Typewriter {
-    min-height: auto;
-    position: relative;
-    z-index: 1;
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
     span {
       color: $white !important;
     }
@@ -152,6 +180,57 @@
     a:focus-visible {
       outline: none;
       box-shadow: 0 0 0 4px rgba(254, 194, 96, 0.22), 0 10px 26px rgba(90, 74, 122, 0.14);
+    }
+  }
+
+  /* Snow particles - SCSS Loop Generated (50 snowflakes) */
+  .snowflake {
+    position: absolute;
+    top: 0;
+    color: rgba(255, 255, 255, 0.95);
+    user-select: none;
+    pointer-events: none;
+    z-index: 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 18px rgba(200, 220, 255, 0.5);
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.7));
+    will-change: transform, opacity;
+  }
+
+  /* Generate 50 unique snowflakes with SCSS loop */
+  @for $i from 1 through 50 {
+    .snowflake:nth-child(#{$i}) {
+      // Even distribution across full width (0-98%)
+      left: ($i * 2%) - 2%;
+
+      // Animation selection (cycle through 5 variants)
+      @if $i % 5 == 1 {
+        animation: snowfall #{7 + ($i % 8)}s linear infinite;
+      } @else if $i % 5 == 2 {
+        animation: snowfall-2 #{9 + ($i % 7)}s linear infinite;
+      } @else if $i % 5 == 3 {
+        animation: snowfall-3 #{8 + ($i % 6)}s linear infinite;
+      } @else if $i % 5 == 4 {
+        animation: snowfall-slow #{15 + ($i % 6)}s linear infinite;
+      } @else {
+        animation: snowfall-fast #{7 + ($i % 6)}s linear infinite;
+      }
+
+      // Size and depth layers
+      @if $i <= 15 or $i > 45 {
+        // Background layer (far away)
+        font-size: #{0.6 + ($i % 5) * 0.1}em;
+        opacity: #{0.5 + ($i % 3) * 0.05};
+      } @else if $i <= 30 {
+        // Foreground layer (close)
+        font-size: #{1.4 + ($i % 4) * 0.1}em;
+        @if $i % 3 == 0 {
+          filter: blur(0.5px);
+        }
+      } @else {
+        // Middle layer
+        font-size: #{0.85 + ($i % 6) * 0.1}em;
+        opacity: #{0.7 + ($i % 4) * 0.075};
+      }
     }
   }
 }

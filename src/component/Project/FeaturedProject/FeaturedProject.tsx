@@ -58,16 +58,23 @@ function FeaturedProject(props: {
   };
   lang: Locale;
   isSecond?: boolean;
+  isThird?: boolean;
 }) {
-  const { project, lang, isSecond } = props;
+  const { project, lang, isSecond, isThird } = props;
   const t = project.featuredProject;
   const comingSoon = t?.comingSoon;
 
+  const projectClass = isThird
+    ? "featured-project--third"
+    : isSecond
+    ? "featured-project--second"
+    : "featured-project--first";
+
   return (
-    <div className="featured-project container mt-5">
+    <div className={`featured-project container mt-5 ${projectClass}`}>
       <div className="row align-items-center animated-section">
         <div className="col-md-6 mb-3 video-wrapper">
-          {isSecond ? (
+          {isSecond || isThird ? (
             <div className="coming-soon-card">
               <div className="coming-soon-badge">{comingSoon?.badge}</div>
               <div className="coming-soon-text">

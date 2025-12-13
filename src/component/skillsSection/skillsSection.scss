@@ -1,27 +1,51 @@
 @import "@/A/global-variables.scss";
+
 .skillsSection {
   padding: 5%;
   width: 100%;
-  background-color: $violet-light;
+  background: linear-gradient(135deg, $violet-light 0%, lighten($violet-light, 5%) 100%);
+
+  h2 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 2.5rem;
+  }
+
   span {
     color: $yellow !important;
+    text-shadow: 0 2px 8px rgba($yellow, 0.3);
   }
   &-image {
     max-width: 50px !important;
     max-height: 50px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+
     img {
       width: 100% !important;
       height: 100% !important;
+      object-fit: contain;
     }
   }
   &-col {
     @media screen and (min-width: 992px) {
-      border-bottom: 1px solid $white;
+      border-bottom: 2px solid rgba($white, 0.15);
+      transition: border-color 0.3s ease;
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: $white;
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
     }
   }
+
   &-pair {
     @media screen and (min-width: 992px) {
-      border-right: 1px solid $white;
+      border-right: 2px solid rgba($white, 0.15);
       position: relative;
     }
     @media screen and (min-width: 992px) {
@@ -30,61 +54,109 @@
         position: absolute;
         width: 18px;
         height: 18px;
-        background-color: $yellow;
-        box-shadow: 0px 0px 7px 0px $yellow;
+        background: linear-gradient(135deg, $yellow 0%, lighten($yellow, 10%) 100%);
+        box-shadow: 0 0 0 4px rgba($yellow, 0.2), 0 0 12px rgba($yellow, 0.6);
         border-radius: 50%;
         right: -9px;
         bottom: -9px;
         z-index: 100;
+        border: 2px solid rgba(255, 255, 255, 0.2);
       }
     }
   }
   &-card {
-    background-color: $violet-dark;
-    border: 1px solid #f1f1f191;
+    background: linear-gradient(
+      135deg,
+      rgba($violet-dark, 0.95) 0%,
+      rgba(darken($violet-dark, 5%), 0.9) 100%
+    );
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     max-width: 100px !important;
     min-width: 100px;
     height: 100px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), 0 2px 4px rgba($violet-dark, 0.3);
+    backdrop-filter: blur(10px);
+
     p {
-      font-size: 0.6rem !important;
+      font-size: 0.65rem !important;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      margin-top: 0.5rem;
     }
   }
+
   &-card:hover {
-    background-color: $yellow;
+    background: linear-gradient(135deg, $yellow 0%, lighten($yellow, 8%) 100%);
+    border-color: rgba($yellow, 0.6);
+    box-shadow: 0 8px 24px rgba($yellow, 0.3), 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px) scale(1.02);
+
     p {
       color: $violet-dark !important;
-      font-weight: 600;
+      font-weight: 700;
+    }
+
+    .skillsSection-image {
+      transform: scale(1.1);
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
     }
   }
 }
 
 /* ========== DARK MODE OVERRIDES FOR SKILLS SECTION ========== */
 .dark .skillsSection {
-  background-color: #1a0f22 !important;
+  background: linear-gradient(135deg, #1a0f22 0%, darken(#1a0f22, 3%) 100%) !important;
 
   .container {
-    background-color: #1a0f22 !important;
+    background: transparent !important;
   }
+
+  h2 {
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
   &-col {
     @media screen and (min-width: 992px) {
-      border-bottom-color: #c6c4d2;
+      border-bottom-color: rgba(198, 196, 210, 0.15);
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.9);
     }
   }
+
   &-pair {
     @media screen and (min-width: 992px) {
-      border-right-color: #c6c4d2;
+      border-right-color: rgba(198, 196, 210, 0.15);
+    }
+
+    @media screen and (min-width: 992px) {
+      &:after {
+        background: linear-gradient(135deg, $yellow 0%, lighten($yellow, 10%) 100%);
+        box-shadow: 0 0 0 4px rgba($yellow, 0.15), 0 0 12px rgba($yellow, 0.5);
+        border-color: rgba(255, 255, 255, 0.15);
+      }
     }
   }
+
   &-card {
-    background-color: #140f22;
-    border-color: #c6c4d2;
+    background: linear-gradient(135deg, rgba(20, 15, 34, 0.95) 0%, rgba(15, 10, 25, 0.9) 100%);
+    border-color: rgba(198, 196, 210, 0.15);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+
     p {
-      color: #c6c4d2 !important;
+      color: rgba(198, 196, 210, 0.9) !important;
     }
   }
+
   &-card:hover {
-    background-color: $yellow;
+    background: linear-gradient(135deg, $yellow 0%, lighten($yellow, 8%) 100%);
+    border-color: rgba($yellow, 0.5);
+    box-shadow: 0 8px 24px rgba($yellow, 0.25), 0 4px 12px rgba(0, 0, 0, 0.3);
+
     p {
       color: #0b0812 !important;
     }

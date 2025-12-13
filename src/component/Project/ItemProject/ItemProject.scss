@@ -4,32 +4,54 @@
 
   &-img {
     width: 100% !important;
-
     position: relative;
-
     cursor: pointer;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: linear-gradient(
+      135deg,
+      rgba($violet-dark, 0.02) 0%,
+      rgba($violet-light, 0.02) 100%
+    );
 
     img {
       border-radius: 25px 25px 0 0;
       width: 100% !important;
       height: 250px !important;
       object-fit: cover;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
     video {
       width: 100% !important;
       height: 100% !important;
     }
   }
-  &-img:hover img {
-    border-radius: 25px;
+  &-img:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25), 0 4px 16px rgba($yellow, 0.15);
+    transform: translateY(-4px);
+
+    img {
+      border-radius: 25px;
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
   }
+
   &-img:hover:after {
     content: "+";
     border-radius: 25px;
     font-size: 100px;
-    color: $violet-light;
+    font-weight: 300;
+    color: $white;
     position: absolute;
-    background-color: #fec1609d;
+    background: linear-gradient(
+      135deg,
+      rgba($yellow, 0.35) 0%,
+      rgba(lighten($yellow, 10%), 0.4) 100%
+    );
+    backdrop-filter: blur(2px);
     width: 100%;
     height: 100%;
     left: 0%;
@@ -38,27 +60,59 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.15);
+    animation: overlayFadeIn 0.3s ease;
+  }
+
+  @keyframes overlayFadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
   h3 {
     font-size: 1.25rem !important;
+    font-weight: 600;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 0.02em;
+    transition: all 0.3s ease;
+    padding: 1.25rem 0.75rem !important;
+    background: linear-gradient(
+      135deg,
+      rgba($violet-dark, 0.03) 0%,
+      rgba($violet-light, 0.03) 100%
+    );
+    border-radius: 0 0 25px 25px;
   }
+
   h3:hover {
     color: $yellow !important;
+    text-shadow: 0 2px 8px rgba($yellow, 0.3);
+    background: linear-gradient(135deg, rgba($yellow, 0.08) 0%, rgba($yellow, 0.12) 100%);
   }
   &-link {
     margin-right: 10px;
     width: 20px;
     height: 20px;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
   }
   a {
     text-decoration: none;
   }
   &-popUp {
-    background-color: $white;
+    background: linear-gradient(135deg, rgba($white, 0.98) 0%, rgba($white, 0.95) 100%);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
     z-index: 100000;
     margin: auto;
     left: 50%;
@@ -72,17 +126,39 @@
 
 /* ========== DARK MODE OVERRIDES FOR ITEM PROJECT ========== */
 .dark .itemProject {
-  h3 {
-    color: #c6c4d2;
+  &-img {
+    background: linear-gradient(135deg, rgba(20, 15, 34, 0.05) 0%, rgba(26, 15, 34, 0.05) 100%);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6), 0 4px 16px rgba($yellow, 0.2);
+    }
   }
+
+  h3 {
+    color: rgba(198, 196, 210, 0.95);
+    background: linear-gradient(135deg, rgba(20, 15, 34, 0.4) 0%, rgba(26, 15, 34, 0.4) 100%);
+  }
+
   h3:hover {
     color: $yellow !important;
+    background: linear-gradient(135deg, rgba($yellow, 0.1) 0%, rgba($yellow, 0.15) 100%);
   }
+
   &-popUp {
-    background-color: #140f22;
-    color: #c6c4d2;
+    background: linear-gradient(135deg, rgba(20, 15, 34, 0.98) 0%, rgba(26, 15, 34, 0.95) 100%);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 8px 24px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(198, 196, 210, 0.15);
+    color: rgba(198, 196, 210, 0.95);
+
     a {
-      color: #c79af0;
+      color: lighten(#c79af0, 5%);
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $yellow;
+      }
     }
   }
 }

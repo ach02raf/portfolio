@@ -387,6 +387,7 @@
             "NEXT.JS",
             "EXPRESS.JS",
             "GRAPHQL",
+            "SOCKET.IO",
             "REDIS",
             "MYSQL"
           ],
@@ -448,6 +449,7 @@
           "React",
           "Node.js",
           "MySQL",
+          "SOCKET.IO",
           "Docker",
           "Jenkins",
           "Redis",
@@ -462,6 +464,69 @@
             "badge": "Bientôt disponible",
             "title": "Vidéo bientôt disponible",
             "subtitle": "Une démo soignée est en préparation.",
+            "placeholder": "Aucun aperçu disponible"
+          }
+        }
+      },
+      {
+        "id": "3",
+        "nameProject": "Kickoff Sports",
+        "infoProject": "INFOS PROJET",
+        "slug": "kickoff-sports",
+        "title": "Plateforme Kickoff Sports",
+        "visitSites": "Visiter l'app Client",
+        "codeSource": "Visiter l'app Stade",
+        "descProject": "Kickoff Sports est un système de gestion d'infrastructures sportives à double plateforme reliant les propriétaires de stades aux passionnés de football. La plateforme se compose de deux applications spécialisées : une application client pour les joueurs permettant de découvrir et réserver des terrains de sport, et une application de gestion de stade pour les propriétaires d'installations gérant leurs sites, horaires et réservations. Construite avec des technologies web modernes, elle simplifie l'ensemble du processus, de la découverte du terrain à la confirmation de la réservation.",
+        "videoProject": "demo-kickoff-sports",
+        "urlProject": ["https://stade.kickoff-sports.tn/"],
+        "urlSITE": ["https://app.kickoff-sports.tn/"],
+        "imgProject": [],
+        "apk": "",
+        "technologies": {
+          "title": "Développement",
+          "Developpement": ["REACT", "TYPESCRIPT", "SOCKET.IO", "TAILWIND-CSS", "NEST.JS", "MySQL"],
+          "DevOps": ["DOCKER", "JENKINS", "KUBERNETES", "GRAFANA", "SONARQUBE", "NEXUS", "OWASP"]
+        },
+        "description": {
+          "title": "Fonctionnalités principales",
+          "points": [
+            "Architecture à double plateforme : App Client pour joueurs et App Stade pour propriétaires",
+            "Disponibilité des terrains en temps réel et système de réservation instantanée",
+            "Tableau de bord de gestion de stade avec calendrier de réservation et analyses de revenus",
+            "Support de sites multi-terrains avec planification individuelle par terrain",
+            "Intégration de paiement sécurisé pour les réservations en ligne",
+            "Confirmations de réservation et notifications automatisées",
+            "Gestion de compte utilisateur avec historique des réservations",
+            "Personnalisation de profil de stade avec photos, équipements et tarifs",
+            "Recherche géolocalisée pour trouver les installations sportives à proximité",
+            "Système de notes et avis pour les stades",
+            "Design responsive optimisé pour ordinateur et appareils mobiles"
+          ]
+        },
+        "devopsProcess": {
+          "title": "Processus DevOps",
+          "steps": [
+            "Implémentation complète d'un pipeline CI/CD avec Jenkins",
+            "Workflows automatisés de tests et d'assurance qualité",
+            "Conteneurisation Docker pour les deux applications frontend et l'API backend",
+            "Stockage et versioning des artefacts avec Nexus Repository",
+            "Analyse de qualité du code et scan de sécurité via SonarQube et OWASP",
+            "Orchestration Kubernetes pour un déploiement multi-app scalable",
+            "Monitoring de l'application avec Prometheus et Grafana",
+            "Migrations automatisées de base de données et stratégies de sauvegarde",
+            "Couche de cache Redis pour améliorer les performances et la gestion de sessions"
+          ]
+        },
+        "usedTools": "Technologies utilisées",
+        "tools": ["React", "NestJS", "MySQL", "SOCKET.IO", "Docker", "Jenkins", "Tailwind CSS"],
+        "featuredProject": {
+          "subtitle": "Projet Freelance",
+          "tech": "Technologies utilisées :",
+          "button": "Voir le projet",
+          "comingSoon": {
+            "badge": "Bientôt disponible",
+            "title": "Vidéo bientôt disponible",
+            "subtitle": "Une démo complète est en préparation.",
             "placeholder": "Aucun aperçu disponible"
           }
         }

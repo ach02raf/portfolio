@@ -62,12 +62,11 @@ function Header(props: { header: { id: number; name: string; url: string }[] }) 
         </nav>
 
         <div className="header-controls">
-          <div className="header-controls-item header-lang-desktop">
-            <LocaleSwitcher />
-          </div>
-
           <div className="header-controls-item">
             <ThemeButton />
+          </div>
+          <div className="header-controls-item header-lang-desktop">
+            <LocaleSwitcher />
           </div>
 
           <button

@@ -137,6 +137,72 @@
     }
   }
 }
+
+/* ========== THIRD FEATURED PROJECT (Kickoff Sports) STYLING ========== */
+.featured-project--third {
+  /* Respect portfolio palette: deep violets with warm accent, no blue */
+  background: linear-gradient(135deg, rgba($violet-dark, 0.94) 0%, rgba($violet-light, 0.9) 100%);
+
+  .info-wrapper {
+    background: linear-gradient(135deg, rgba($violet-dark, 0.94) 0%, rgba($violet-light, 0.88) 100%),
+      radial-gradient(circle at 18% 48%, rgba($yellow, 0.1), transparent 58%),
+      url("/Images/kickoff.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: cover, cover, 90%;
+    background-position: center, center, 85% center;
+  }
+
+  .project-subtitle {
+    background-color: rgba($yellow, 0.24);
+  }
+
+  .coming-soon-card {
+    background: linear-gradient(135deg, rgba($violet-dark, 0.14), rgba($violet-light, 0.12));
+    border: 1px solid rgba($white, 0.18);
+  }
+}
+
+/* ========== FIRST FEATURED PROJECT (Communic Flow v1) STYLING ========== */
+.featured-project--first {
+  background: linear-gradient(135deg, rgba($violet-dark, 0.94) 0%, rgba($violet-light, 0.9) 100%);
+
+  .info-wrapper {
+    background: linear-gradient(135deg, rgba(43, 9, 69, 0.85), rgba(68, 40, 91, 0.85)),
+      url(/Images/Communiclogohorizontal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project-subtitle {
+    background-color: rgba($yellow, 0.24);
+  }
+
+  .coming-soon-card {
+    background: linear-gradient(135deg, rgba($violet-dark, 0.14), rgba($violet-light, 0.12));
+    border: 1px solid rgba($white, 0.18);
+  }
+}
+
+/* ========== SECOND FEATURED PROJECT (Communic Flow v2) STYLING ========== */
+.featured-project--second {
+  background: linear-gradient(135deg, rgba($violet-dark, 0.94) 0%, rgba($violet-light, 0.9) 100%);
+  .info-wrapper {
+    background: linear-gradient(135deg, rgba(43, 9, 69, 0.85), rgba(68, 40, 91, 0.85)),
+      url(/Images/Communiclogohorizontal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project-subtitle {
+    background-color: rgba($yellow, 0.24);
+  }
+
+  .coming-soon-card {
+    background: linear-gradient(135deg, rgba($violet-dark, 0.14), rgba($violet-light, 0.12));
+    border: 1px solid rgba($white, 0.18);
+  }
+}
+
 .project-subtitle {
   font-size: 1rem;
   color: rgba($white, 0.8);
@@ -183,6 +249,8 @@
   .info-wrapper {
     background: linear-gradient(135deg, rgba(20, 15, 34, 0.95) 0%, rgba(26, 15, 34, 0.95) 100%),
       url("/Images/Communiclogohorizontal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   h3 {
     color: #ffffff;
@@ -227,6 +295,73 @@
         color: rgba(255, 255, 255, 0.7);
       }
     }
+  }
+}
+
+/* Dark mode for third project (Kickoff) — force logo and sizing after generic dark styles) */
+.dark .featured-project--third {
+  background: linear-gradient(135deg, #0f0a19 0%, rgba(43, 22, 71, 0.95) 100%);
+
+  .info-wrapper {
+    background: linear-gradient(135deg, rgba(15, 10, 25, 0.96) 0%, rgba(43, 22, 71, 0.9) 100%),
+      radial-gradient(circle at 18% 48%, rgba($yellow, 0.08), transparent 58%),
+      url("/Images/kickoff.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: cover, cover, 90%;
+    background-position: center, center, 85% center;
+  }
+
+  .project-subtitle {
+    background-color: rgba($yellow, 0.22);
+  }
+
+  .coming-soon-card {
+    background: linear-gradient(135deg, rgba(15, 10, 25, 0.92), rgba(43, 22, 71, 0.86));
+    border: 1px solid rgba($white, 0.08);
+  }
+}
+
+/* Dark mode for first project (Communic Flow v1) */
+.dark .featured-project--first {
+  background: linear-gradient(135deg, #0f0a19 0%, rgba(43, 22, 71, 0.95) 100%);
+
+  .info-wrapper {
+    background: linear-gradient(135deg, rgba(15, 10, 25, 0.96) 0%, rgba(43, 22, 71, 0.9) 100%),
+      radial-gradient(circle at 18% 48%, rgba($yellow, 0.08), transparent 58%),
+      url("/Images/Communiclogohorizontal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project-subtitle {
+    background-color: rgba($yellow, 0.22);
+  }
+
+  .coming-soon-card {
+    background: linear-gradient(135deg, rgba(15, 10, 25, 0.92), rgba(43, 22, 71, 0.86));
+    border: 1px solid rgba($white, 0.08);
+  }
+}
+
+/* Dark mode for second project (Communic Flow v2) */
+.dark .featured-project--second {
+  background: linear-gradient(135deg, #0f0a19 0%, rgba(43, 22, 71, 0.95) 100%);
+
+  .info-wrapper {
+    background: linear-gradient(135deg, rgba(15, 10, 25, 0.96) 0%, rgba(43, 22, 71, 0.9) 100%),
+      radial-gradient(circle at 18% 48%, rgba($yellow, 0.08), transparent 58%),
+      url("/Images/Communiclogohorizontal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project-subtitle {
+    background-color: rgba($yellow, 0.22);
+  }
+
+  .coming-soon-card {
+    background: linear-gradient(135deg, rgba(15, 10, 25, 0.92), rgba(43, 22, 71, 0.86));
+    border: 1px solid rgba($white, 0.08);
   }
 }
 

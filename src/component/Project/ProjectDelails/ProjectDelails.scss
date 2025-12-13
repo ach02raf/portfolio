@@ -31,6 +31,7 @@
       color: $white !important;
       font-weight: 600;
     }
+    position: relative;
   }
 
   &-title::after {
@@ -50,6 +51,7 @@
   h5 {
     color: $white;
     font-weight: 600;
+    position: relative;
   }
 
   h5::after {
@@ -135,6 +137,12 @@
     border-radius: 10px;
     background: rgba($white, 0.06);
     border: 1px dashed rgba($white, 0.22);
+  }
+
+  /* Remove the default h5 underline inside the coming-soon card */
+  .coming-soon-card h5::after {
+    display: none;
+    content: none;
   }
 
   .placeholder-text {

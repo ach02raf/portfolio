@@ -465,6 +465,77 @@
         }
       },
       {
+        "id": "3",
+        "nameProject": "Kickoff Sports",
+        "infoProject": "PROJEKTINFO",
+        "slug": "kickoff-sports",
+        "title": "Kickoff Sports Plattform",
+        "visitSites": "Client-App besuchen",
+        "codeSource": "Stadion-App besuchen",
+        "descProject": "Kickoff Sports ist ein duales Sportstätten-Verwaltungssystem, das Stadionbesitzer mit Fußballenthusiasten verbindet. Die Plattform besteht aus zwei spezialisierten Anwendungen: einer Client-App für Spieler zur Entdeckung und Buchung von Sportplätzen und einer Stadion-Management-App für Anlagenbetreiber zur Verwaltung ihrer Standorte, Zeitpläne und Buchungen. Mit modernen Webtechnologien entwickelt, vereinfacht sie den gesamten Prozess von der Platzsuche bis zur Reservierungsbestätigung.",
+        "videoProject": "demo-kickoff-sports",
+        "urlProject": ["https://stade.kickoff-sports.tn/"],
+        "urlSITE": ["https://app.kickoff-sports.tn/"],
+        "imgProject": [],
+        "apk": "",
+        "technologies": {
+          "title": "Entwicklung",
+          "Developpement": [
+            "REACT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "NEXT.JS",
+            "NEST.JS",
+            "POSTGRESQL",
+            "REDIS"
+          ],
+          "DevOps": ["DOCKER", "JENKINS", "KUBERNETES", "GRAFANA", "SONARQUBE", "NEXUS", "OWASP"]
+        },
+        "description": {
+          "title": "Hauptfunktionen",
+          "points": [
+            "Duale Plattform-Architektur: Client-App für Spieler und Stadion-App für Betreiber",
+            "Echtzeit-Platzverfügbarkeit und sofortiges Buchungssystem",
+            "Stadion-Management-Dashboard mit Buchungskalender und Umsatzanalysen",
+            "Multi-Platz-Unterstützung mit individueller Platzplanung",
+            "Sichere Zahlungsintegration für Online-Reservierungen",
+            "Automatisierte Buchungsbestätigungen und Benachrichtigungen",
+            "Benutzerkontoverwaltung mit Buchungshistorie",
+            "Stadionprofil-Anpassung mit Fotos, Ausstattung und Preisen",
+            "Standortbasierte Suche nach nahegelegenen Sporteinrichtungen",
+            "Bewertungs- und Rezensionssystem für Stadien",
+            "Responsive Design optimiert für Desktop und mobile Geräte"
+          ]
+        },
+        "devopsProcess": {
+          "title": "DevOps-Prozess",
+          "steps": [
+            "Vollständige CI/CD-Pipeline-Implementierung mit Jenkins",
+            "Automatisierte Test- und Qualitätssicherungs-Workflows",
+            "Docker-Containerisierung für beide Frontend-Anwendungen und Backend-API",
+            "Artefakt-Speicherung und Versionierung mit Nexus Repository",
+            "Code-Qualitätsanalyse und Sicherheitsscanning via SonarQube und OWASP",
+            "Kubernetes-Orchestrierung für skalierbares Multi-App-Deployment",
+            "Anwendungsüberwachung mit Prometheus und Grafana",
+            "Automatisierte Datenbank-Migrationen und Backup-Strategien",
+            "Redis-Caching-Schicht für verbesserte Leistung und Sitzungsverwaltung"
+          ]
+        },
+        "usedTools": "Verwendete Technologien",
+        "tools": ["React", "NestJS", "PostgreSQL", "Docker", "Jenkins", "Redis", "Tailwind CSS"],
+        "featuredProject": {
+          "subtitle": "Freelance-Projekt",
+          "tech": "Verwendete Technologien:",
+          "button": "Projekt ansehen",
+          "comingSoon": {
+            "badge": "Demnächst",
+            "title": "Video demnächst verfügbar",
+            "subtitle": "Eine umfassende Demo wird vorbereitet.",
+            "placeholder": "Keine Vorschau verfügbar"
+          }
+        }
+      },
+      {
         "id": "0",
         "nameProject": "ALLO DOCTOR",
         "slug": "allo-doctor",

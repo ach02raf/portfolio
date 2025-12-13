@@ -54,8 +54,9 @@ function Project(props: {
 }) {
   const firstProject = props.Project.list[0];
   const secondProject = props.Project.list[1];
+  const thirdProject = props.Project.list[2];
 
-  const remainingProjects = props.Project.list.slice(2);
+  const remainingProjects = props.Project.list.slice(3);
   return (
     <div className="project">
       <div className="project-container d-block m-auto">
@@ -64,6 +65,7 @@ function Project(props: {
           <span>{props?.Project?.title[1]}</span>
         </h2>
         <p className="fs-6 text-center pt-4">{props?.Project?.desc}</p>
+        {thirdProject && <FeaturedProject project={thirdProject} lang={props.lang} isThird />}
         {secondProject && <FeaturedProject project={secondProject} lang={props.lang} isSecond />}
         {firstProject && <FeaturedProject project={firstProject} lang={props.lang} />}
         <div className="row py-3">

@@ -1,22 +1,141 @@
 @import "@/A/global-variables.scss";
+
+/* ========== KEYFRAME ANIMATIONS FOR DYNAMIC ILLUSTRATIONS ========== */
+@keyframes float-up-down {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes float-down-up {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 0 3px rgba($yellow, 0.2);
+  }
+  50% {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25), 0 0 0 5px rgba($yellow, 0.4);
+  }
+}
+
+@keyframes pulse-border {
+  0%,
+  100% {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), inset 0 2px 8px rgba($white, 0.1);
+  }
+  50% {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18), inset 0 2px 12px rgba($white, 0.15),
+      0 0 0 2px rgba($yellow, 0.3);
+  }
+}
+
+@keyframes scale-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes yellow-bar-pulse {
+  0%,
+  100% {
+    box-shadow: 0 4px 16px rgba($yellow, 0.3), 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 0 6px 24px rgba($yellow, 0.5), 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
 .secondSection {
   padding: 10%;
-  background-color: $violet-light;
+  background: linear-gradient(135deg, $violet-light 0%, lighten($violet-light, 5%) 100%);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, rgba($yellow, 0.05), transparent 50%);
+    pointer-events: none;
+  }
+  
   &-div {
+    position: relative;
+    z-index: 1;
+
     &-title {
       color: $white;
-      font-weight: 600;
+      font-weight: 700;
+      font-size: 2.5rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      line-height: 1.2;
     }
+
     &-title-part-2 {
       color: $yellow !important;
+      text-shadow: 0 2px 8px rgba($yellow, 0.3);
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: rgba($white, 0.95);
+      font-weight: 400;
     }
   }
   & img {
     width: 100% !important;
     height: 100% !important;
   }
+
   a {
     color: $yellow !important;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+    text-shadow: 0 1px 3px rgba($yellow, 0.2);
+
+    &:hover {
+      color: lighten($yellow, 10%) !important;
+      text-shadow: 0 2px 8px rgba($yellow, 0.4);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, $yellow 0%, lighten($yellow, 10%) 100%);
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
   }
   &-illustre {
     &-double {
@@ -27,9 +146,19 @@
         display: block;
         width: 100%;
         max-width: 60px;
-        background-color: $yellow;
+        background: linear-gradient(180deg, $yellow 0%, lighten($yellow, 8%) 100%);
         border-radius: 30px;
+        box-shadow: 0 4px 16px rgba($yellow, 0.3), 0 2px 8px rgba(0, 0, 0, 0.15);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        animation: float-up-down 3s ease-in-out infinite, yellow-bar-pulse 2s ease-in-out infinite;
+
+        &:hover {
+          animation-play-state: paused;
+          transform: translateY(-4px) scale(1.02);
+          box-shadow: 0 8px 24px rgba($yellow, 0.4), 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
       }
+
       &-part-2 {
         height: 10%;
         margin-bottom: 10% !important;
@@ -38,8 +167,18 @@
         width: 100%;
         max-width: 60px;
         max-height: 60px;
-        background-color: $white;
+        background: linear-gradient(135deg, $white 0%, rgba($white, 0.95) 100%);
         border-radius: 50%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 0 3px rgba($yellow, 0.2);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        animation: scale-pulse 2.5s ease-in-out infinite, pulse-glow 2s ease-in-out infinite;
+        animation-delay: 0.5s, 0.3s;
+
+        &:hover {
+          animation-play-state: paused;
+          transform: scale(1.1);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 0 0 4px rgba($yellow, 0.3);
+        }
       }
     }
     &-single {
@@ -50,29 +189,222 @@
       max-width: 60px;
       border: 3px solid $white;
       border-radius: 30px;
+      background: linear-gradient(180deg, rgba($white, 0.08) 0%, rgba($white, 0.03) 100%);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), inset 0 2px 8px rgba($white, 0.1);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      animation: float-down-up 3.5s ease-in-out infinite, pulse-border 2.8s ease-in-out infinite;
+      animation-delay: 0.8s, 0.2s;
+
+      &:hover {
+        animation-play-state: paused;
+        transform: translateY(-4px) scale(1.02);
+        border-color: rgba($yellow, 0.6);
+        background: linear-gradient(180deg, rgba($yellow, 0.12) 0%, rgba($yellow, 0.05) 100%);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18), 0 0 0 2px rgba($yellow, 0.2);
+      }
+    }
+  }
+
+  /* Snow particles */
+  .snowflake {
+    position: absolute;
+    top: -10vh;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1em;
+    user-select: none;
+    pointer-events: none;
+    z-index: 2;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+
+    &:nth-child(1) {
+      left: 5%;
+      animation: snowfall 12s linear infinite;
+      animation-delay: 0s;
+      font-size: 0.8em;
+    }
+    &:nth-child(2) {
+      left: 15%;
+      animation: snowfall-2 15s linear infinite;
+      animation-delay: 2s;
+      font-size: 1.2em;
+    }
+    &:nth-child(3) {
+      left: 25%;
+      animation: snowfall-3 11s linear infinite;
+      animation-delay: 4s;
+      font-size: 0.9em;
+    }
+    &:nth-child(4) {
+      left: 35%;
+      animation: snowfall 14s linear infinite;
+      animation-delay: 1s;
+      font-size: 1.1em;
+    }
+    &:nth-child(5) {
+      left: 45%;
+      animation: snowfall-2 13s linear infinite;
+      animation-delay: 5s;
+      font-size: 0.7em;
+    }
+    &:nth-child(6) {
+      left: 55%;
+      animation: snowfall-3 16s linear infinite;
+      animation-delay: 3s;
+      font-size: 1.3em;
+    }
+    &:nth-child(7) {
+      left: 65%;
+      animation: snowfall 10s linear infinite;
+      animation-delay: 6s;
+      font-size: 0.85em;
+    }
+    &:nth-child(8) {
+      left: 75%;
+      animation: snowfall-2 17s linear infinite;
+      animation-delay: 1.5s;
+      font-size: 1.15em;
+    }
+    &:nth-child(9) {
+      left: 85%;
+      animation: snowfall-3 12s linear infinite;
+      animation-delay: 4.5s;
+      font-size: 0.95em;
+    }
+    &:nth-child(10) {
+      left: 95%;
+      animation: snowfall 14s linear infinite;
+      animation-delay: 2.5s;
+      font-size: 1.05em;
+    }
+    &:nth-child(11) {
+      left: 10%;
+      animation: snowfall-2 13s linear infinite;
+      animation-delay: 7s;
+      font-size: 0.75em;
+    }
+    &:nth-child(12) {
+      left: 20%;
+      animation: snowfall-3 15s linear infinite;
+      animation-delay: 3.5s;
+      font-size: 1.25em;
+    }
+    &:nth-child(13) {
+      left: 30%;
+      animation: snowfall 11s linear infinite;
+      animation-delay: 5.5s;
+      font-size: 0.9em;
+    }
+    &:nth-child(14) {
+      left: 40%;
+      animation: snowfall-2 16s linear infinite;
+      animation-delay: 1.2s;
+      font-size: 1.1em;
+    }
+    &:nth-child(15) {
+      left: 50%;
+      animation: snowfall-3 12s linear infinite;
+      animation-delay: 6.5s;
+      font-size: 0.8em;
+    }
+    &:nth-child(16) {
+      left: 60%;
+      animation: snowfall 14s linear infinite;
+      animation-delay: 2.8s;
+      font-size: 1.2em;
+    }
+    &:nth-child(17) {
+      left: 70%;
+      animation: snowfall-2 13s linear infinite;
+      animation-delay: 4.2s;
+      font-size: 0.85em;
+    }
+    &:nth-child(18) {
+      left: 80%;
+      animation: snowfall-3 15s linear infinite;
+      animation-delay: 0.5s;
+      font-size: 1.15em;
+    }
+    &:nth-child(19) {
+      left: 90%;
+      animation: snowfall 11s linear infinite;
+      animation-delay: 7.5s;
+      font-size: 0.95em;
+    }
+    &:nth-child(20) {
+      left: 98%;
+      animation: snowfall-2 17s linear infinite;
+      animation-delay: 3.8s;
+      font-size: 1.05em;
     }
   }
 }
 
 /* ========== DARK MODE OVERRIDES FOR SECOND SECTION ========== */
 .dark .secondSection {
-  background-color: #1a0f22;
+  background: linear-gradient(135deg, #1a0f22 0%, darken(#1a0f22, 3%) 100%);
+
+  &::before {
+    background: radial-gradient(circle at 20% 80%, rgba($yellow, 0.03), transparent 50%);
+  }
+
   &-div {
     &-title {
-      color: #ffffff;
+      color: rgba(255, 255, 255, 0.95);
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.85);
     }
   }
+
   a {
     color: $yellow !important;
+
+    &:hover {
+      color: lighten($yellow, 12%) !important;
+    }
   }
+
   &-illustre {
     &-double {
+      &-part-1 {
+        background: linear-gradient(180deg, $yellow 0%, lighten($yellow, 8%) 100%);
+        box-shadow: 0 4px 16px rgba($yellow, 0.25), 0 2px 8px rgba(0, 0, 0, 0.3);
+
+        &:hover {
+          box-shadow: 0 8px 24px rgba($yellow, 0.35), 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+      }
+
       &-part-2 {
-        background-color: #c6c4d2;
+        background: linear-gradient(
+          135deg,
+          rgba(198, 196, 210, 0.95) 0%,
+          rgba(198, 196, 210, 0.9) 100%
+        );
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 0 3px rgba($yellow, 0.15);
+
+        &:hover {
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4), 0 0 0 4px rgba($yellow, 0.25);
+        }
       }
     }
+
     &-single {
-      border: 3px solid #c6c4d2;
+      border: 3px solid rgba(198, 196, 210, 0.5);
+      background: linear-gradient(
+        180deg,
+        rgba(198, 196, 210, 0.05) 0%,
+        rgba(198, 196, 210, 0.02) 100%
+      );
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3), inset 0 2px 8px rgba(198, 196, 210, 0.08);
+
+      &:hover {
+        border-color: rgba($yellow, 0.5);
+        background: linear-gradient(180deg, rgba($yellow, 0.1) 0%, rgba($yellow, 0.04) 100%);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba($yellow, 0.15);
+      }
     }
   }
 }
