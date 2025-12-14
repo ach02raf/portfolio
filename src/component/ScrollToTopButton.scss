@@ -1,17 +1,130 @@
 @import "@/A/global-variables.scss";
-.scrollToTop {
-  bottom: 2%;
-  right: 1%;
 
-  border: 3px solid $yellow !important;
-  border-radius: 50% !important;
-  background-color: transparent !important;
+/* ========== ANIMATIONS ========== */
+@keyframes float-smooth {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
 }
 
-/* ========== DARK MODE OVERRIDES FOR SCROLL TO TOP ========== */
-.dark .scrollToTop {
-  border: 3px solid $yellow !important;
-  svg {
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 8px 25px rgba($yellow, 0.3), inset 0 0 15px rgba($yellow, 0.1);
+  }
+  50% {
+    box-shadow: 0 12px 35px rgba($yellow, 0.45), inset 0 0 25px rgba($yellow, 0.15);
+  }
+}
+
+/* ========== SCROLL TO TOP BUTTON ========== */
+.scroll-to-top {
+  /* Positioning */
+  position: fixed;
+  bottom: 2.5%;
+  right: 2%;
+  z-index: 9999;
+
+  /* Layout */
+  width: 54px;
+  height: 54px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Style */
+  background: linear-gradient(
+    145deg,
+    rgba($violet-dark, 0.92),
+    rgba(darken($violet-dark, 8%), 0.95)
+  );
+  backdrop-filter: blur(10px);
+  border: 2.5px solid $yellow;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 8px 25px rgba($yellow, 0.3), inset 0 0 15px rgba($yellow, 0.1);
+
+  /* State */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(80px) scale(0.6);
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Visible state */
+  &--visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translateY(0) scale(1);
+    animation: float-smooth 3.5s ease-in-out infinite, pulse-glow 3s ease-in-out infinite;
+  }
+
+  /* Icon */
+  &__icon {
+    width: 24px;
+    height: 24px;
     color: $yellow;
+    filter: drop-shadow(0 0 6px rgba($yellow, 0.6));
+    transition: all 0.3s ease;
+  }
+}
+
+/* ========== HOVER EFFECTS (Desktop Only) ========== */
+@media (hover: hover) and (pointer: fine) {
+  .scroll-to-top:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba($yellow, 0.5), 0 0 20px rgba($yellow, 0.3),
+      inset 0 0 30px rgba($yellow, 0.2);
+    border-color: lighten($yellow, 8%);
+
+    .scroll-to-top__icon {
+      color: lighten($yellow, 12%);
+      filter: drop-shadow(0 0 12px $yellow);
+      transform: translateY(-2px) scale(1.05);
+    }
+  }
+}
+
+/* ========== MOBILE TOUCH ========== */
+@media (hover: none) {
+  .scroll-to-top:active {
+    transform: scale(0.94);
+    box-shadow: 0 5px 18px rgba($yellow, 0.4), inset 0 0 20px rgba($yellow, 0.15);
+  }
+}
+
+/* ========== RESPONSIVE ========== */
+@media screen and (max-width: 768px) {
+  .scroll-to-top {
+    width: 48px;
+    height: 48px;
+    bottom: 4%;
+    right: 4%;
+
+    &__icon {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+
+/* ========== DARK MODE ========== */
+.dark .scroll-to-top {
+  background: linear-gradient(145deg, rgba(#0a0612, 0.95), rgba(#140f22, 0.92));
+  border-color: $yellow;
+  box-shadow: 0 8px 25px rgba($yellow, 0.35), inset 0 0 15px rgba($yellow, 0.12);
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      box-shadow: 0 15px 40px rgba($yellow, 0.55), 0 0 20px rgba($yellow, 0.4),
+        inset 0 0 30px rgba($yellow, 0.25);
+    }
   }
 }

@@ -1,64 +1,483 @@
 @import "@/A/global-variables.scss";
+
+/* ========== ANIMATIONS ========== */
+@keyframes float-subtle {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes rotate-glow {
+  0% {
+    filter: hue-rotate(0deg) brightness(1);
+  }
+  50% {
+    filter: hue-rotate(10deg) brightness(1.1);
+  }
+  100% {
+    filter: hue-rotate(0deg) brightness(1);
+  }
+}
+
+@keyframes pulse-shadow {
+  0%,
+  100% {
+    box-shadow: 0 10px 30px rgba($yellow, 0.3), 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 15px 45px rgba($yellow, 0.5), 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* ========== MAIN SECTION ========== */
 .Blog-home {
-  padding-top: 6%;
-  padding-bottom: 6%;
+  padding: 6% 0;
+  background: var(--section-bg);
+  position: relative;
+  overflow: hidden;
+
+  /* Background gradient overlay */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 15% 25%, var(--overlay-mid), transparent 50%),
+      radial-gradient(circle at 85% 75%, #{rgba($violet-light, 0.35)}, transparent 55%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Container */
   &-contain {
-    width: 80%;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+
+    /* Section title */
+    h2 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: $white;
+      margin-bottom: 1rem;
+      letter-spacing: -0.5px;
+
+      @media screen and (max-width: 767px) {
+        font-size: 2.2rem;
+      }
+    }
+
+    /* Subtitle */
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: rgba($white, 0.7);
+      margin-bottom: 4rem;
+      font-weight: 400;
+    }
+
+    /* Grid layout */
+    &-url {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+      margin-bottom: 4rem;
+
+      @media screen and (max-width: 992px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      @media screen and (min-width: 993px) and (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Card link */
     a {
       text-decoration: none;
-    }
-    @media screen and (min-width: 767px) {
-      .Blog-home-contain-url {
-        a {
-          display: block;
-          margin: auto 10%;
-          width: 60% !important;
-        }
-      }
-      &-1 {
-        transform: translateX(25%) !important;
-      }
-      &-2 {
-        transform: translateX(50%) !important;
-      }
-    }
-    h3 {
-      border-bottom: 2px solid $white !important;
-    }
-    a:hover h3 {
-      color: $yellow !important;
-      border-bottom: 2px solid $yellow !important;
+      display: block;
+      position: relative;
+      height: 100%;
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
   }
+
+  /* ========== BLOG CARD ========== */
+  &-contain .blog-card {
+    background: linear-gradient(145deg, lighten($violet-dark, 5%), $violet-dark);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba($white, 0.08);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+
+    /* Image */
+    &__image {
+      width: 100%;
+      height: 200px;
+      border-radius: 20px 20px 0 0;
+      background: linear-gradient(135deg, $violet-light, darken($violet-light, 10%));
+      position: relative;
+      overflow: hidden;
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, transparent 0%, rgba($violet-dark, 0.8) 100%);
+        opacity: 0.6;
+        transition: opacity 0.4s ease;
+        z-index: 2;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background: rgba($yellow, 0.15);
+        border-radius: 50%;
+        z-index: 3;
+        animation: float-subtle 4s ease-in-out infinite;
+      }
+
+      > span {
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        inset: 0 !important;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease, filter 0.4s ease;
+        position: absolute;
+        inset: 0;
+      }
+    }
+
+    /* Content */
+    &__content {
+      flex: 1;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: rgba($violet-dark, 0.95);
+      backdrop-filter: blur(10px);
+      position: relative;
+      transition: background 0.3s ease;
+    }
+
+    /* Category badge */
+    &__category {
+      position: absolute;
+      top: -12px;
+      left: 2rem;
+      background: linear-gradient(135deg, $yellow, lighten($yellow, 10%));
+      color: $violet-dark;
+      padding: 0.4rem 1.2rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 12px rgba($yellow, 0.3);
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+
+    /* Title */
+    &__title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: $white;
+      line-height: 1.4;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      transition: all 0.3s ease;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Excerpt */
+    &__excerpt {
+      font-size: 0.95rem;
+      color: rgba($white, 0.65);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Footer */
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem;
+      border-top: 1px solid rgba($white, 0.1);
+    }
+
+    &__read-more {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: $yellow;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    &__icon {
+      font-size: 1.2rem;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    &__date {
+      font-size: 0.85rem;
+      color: rgba($white, 0.5);
+    }
+  }
+
+  /* ========== CTA BUTTON ========== */
   &-link {
-    width: 150px !important;
-    display: block;
-    border: 2px solid $white;
-    &:hover {
-      border: 2px solid $yellow;
-      color: $yellow !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1.2rem 3rem;
+    border-radius: 50px;
+    background: linear-gradient(135deg, $yellow 0%, lighten($yellow, 8%) 100%);
+    color: $violet-dark !important;
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba($yellow, 0.3), 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba($white, 0.3), transparent);
+      transition: left 0.6s ease;
+    }
+
+    &::after {
+      content: "→";
+      font-size: 1.3rem;
+      transition: transform 0.3s ease;
     }
   }
 }
 
-/* ========== DARK MODE OVERRIDES FOR BLOG ========== */
-.dark .Blog-home {
-  &-contain {
-    h3 {
-      border-bottom: 2px solid #c6c4d2 !important;
-      color: #c6c4d2 !important;
-    }
-    a:hover h3 {
-      color: $yellow !important;
-      border-bottom: 2px solid $yellow !important;
+/* ========== HOVER EFFECTS (Desktop Only) ========== */
+@media (hover: hover) and (pointer: fine) {
+  .Blog-home-contain a:hover {
+    transform: translateY(-12px) rotate(-1deg);
+
+    .blog-card {
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.5), 0 0 0 3px $yellow, 0 0 30px rgba($yellow, 0.4);
+      animation: rotate-glow 2s ease-in-out infinite;
+
+      &__image {
+        &::after {
+          opacity: 0.2;
+        }
+        img {
+          transform: scale(1.15) rotate(2deg);
+          filter: brightness(1.1);
+        }
+      }
+
+      &__content {
+        background: rgba($violet-dark, 0.98);
+      }
+
+      &__title {
+        color: $yellow;
+        transform: translateX(8px);
+        text-shadow: 0 0 20px rgba($yellow, 0.3);
+      }
+
+      &__icon {
+        transform: translate(8px, -8px) rotate(45deg) scale(1.2);
+        color: $yellow;
+      }
+
+      &__category {
+        animation: gradient-shift 3s ease infinite;
+        background-size: 200% 200%;
+      }
     }
   }
-  &-link {
-    border: 2px solid #c6c4d2;
-    color: #c6c4d2 !important;
-    &:hover {
-      border: 2px solid $yellow;
-      color: $yellow !important;
+
+  .Blog-home-link:hover {
+    transform: translateY(-4px) rotate(1deg);
+    box-shadow: 0 18px 50px rgba($yellow, 0.6), 0 10px 30px rgba(0, 0, 0, 0.4);
+    border-color: $white;
+    animation: pulse-shadow 1.5s ease-in-out infinite;
+
+    &::before {
+      left: 100%;
+    }
+    &::after {
+      transform: translateX(8px) rotate(-15deg);
+    }
+  }
+}
+
+/* ========== MOBILE TOUCH STATES ========== */
+@media (hover: none) {
+  .Blog-home-contain a:active .blog-card {
+    transform: scale(0.98);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4), 0 0 0 2px $yellow;
+  }
+
+  .Blog-home-link:active {
+    transform: scale(0.96);
+    box-shadow: 0 8px 20px rgba($yellow, 0.4), 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* ========== DARK MODE ========== */
+.dark .Blog-home {
+  background: var(--section-bg);
+  &-link:hover {
+    color: $violet-dark !important;
+  }
+  &::before {
+    background: radial-gradient(circle at 15% 25%, var(--overlay-mid), transparent 50%),
+      radial-gradient(circle at 85% 75%, rgba(#1a0f22, 0.55), transparent 55%);
+  }
+
+  &-contain {
+    a {
+      color: $violet-dark !important;
+    }
+    h2 {
+      color: #f0eef5;
+    }
+    .section-subtitle {
+      color: rgba(#c6c4d2, 0.7);
+    }
+
+    .blog-card {
+      background: linear-gradient(145deg, #140f22, #0f0a18);
+      border-color: rgba(#c6c4d2, 0.1);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+
+      &__image {
+        background: linear-gradient(135deg, #1a0f22, #0f0a18);
+        &::after {
+          background: linear-gradient(180deg, transparent 0%, rgba(#0a0612, 0.9) 100%);
+        }
+      }
+
+      &__content {
+        background: rgba(#0f0a18, 0.95);
+      }
+      &__title {
+        color: #e8e6f0;
+      }
+      &__excerpt {
+        color: rgba(#c6c4d2, 0.6);
+      }
+      &__footer {
+        border-top-color: rgba(#c6c4d2, 0.1);
+      }
+      &__date {
+        color: rgba(#c6c4d2, 0.45);
+      }
+    }
+  }
+
+  /* Dark mode hover - identical to light mode */
+  @media (hover: hover) and (pointer: fine) {
+    &-contain a:hover {
+      transform: translateY(-12px) rotate(-1deg);
+
+      .blog-card {
+        box-shadow: 0 25px 70px rgba(0, 0, 0, 0.7), 0 0 0 3px $yellow, 0 0 40px rgba($yellow, 0.5);
+        animation: rotate-glow 2s ease-in-out infinite;
+
+        &__image {
+          &::after {
+            opacity: 0.2;
+          }
+          img {
+            transform: scale(1.15) rotate(2deg);
+            filter: brightness(1.1);
+          }
+        }
+
+        &__content {
+          background: rgba(#140f22, 0.98);
+        }
+
+        &__title {
+          color: $yellow;
+          transform: translateX(8px);
+          text-shadow: 0 0 20px rgba($yellow, 0.3);
+        }
+
+        &__icon {
+          transform: translate(8px, -8px) rotate(45deg) scale(1.2);
+          color: $yellow;
+        }
+
+        &__category {
+          animation: gradient-shift 3s ease infinite;
+          background-size: 200% 200%;
+        }
+      }
+    }
+  }
+
+  /* Mobile touch states - identical to light mode */
+  @media (hover: none) {
+    &-contain a:active .blog-card {
+      transform: scale(0.98);
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4), 0 0 0 2px $yellow;
+    }
+
+    .Blog-home-link:active {
+      transform: scale(0.96);
+      box-shadow: 0 8px 20px rgba($yellow, 0.4), 0 4px 10px rgba(0, 0, 0, 0.3);
     }
   }
 }

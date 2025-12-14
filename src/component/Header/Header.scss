@@ -4,7 +4,7 @@
 .header {
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 10000; /* Above snow (9999) */
   background: linear-gradient(135deg, #5a4a7a 0%, #3a2a5a 100%);
   opacity: 0.95;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);

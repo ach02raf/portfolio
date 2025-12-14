@@ -1,44 +1,47 @@
 "use client";
 import { useEffect, useState } from "react";
 import "./ScrollToTopButton.scss";
-import Image from "next/image";
+
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const toggleVisibility = () => {
-      window.scrollY > 500 ? setIsVisible(true) : setIsVisible(false);
+      setIsVisible(window.scrollY > 500);
     };
 
-    window.addEventListener("scroll", toggleVisibility);
-
-    return () => {
-      window.removeEventListener("scroll", toggleVisibility);
-    };
+    window.addEventListener("scroll", toggleVisibility, { passive: true });
+    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   const scrollToTop = () => {
-    isVisible &&
-      window.scrollTo({
-        top: 0,
-        behavior: "auto",
-      });
+    if (!isVisible) return;
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
     <button
-      className={`position-fixed  p-0 outline-none scrollToTop ${
-        isVisible ? "opacity-100" : "opacity-0"
-      }`}
-      onClick={scrollToTop}>
-      <Image
-        className="m-2"
-        src={"/Images/Icons/up.png"}
-        alt="up"
-        title="up"
-        width={20}
-        height={20}
-      />
+      className={`scroll-to-top ${isVisible ? "scroll-to-top--visible" : ""}`}
+      onClick={scrollToTop}
+      aria-label="Scroll to top"
+      type="button">
+      <svg
+        className="scroll-to-top__icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M12 4L12 20M12 4L7 9M12 4L17 9"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
     </button>
   );
 };

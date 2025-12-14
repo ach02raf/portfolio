@@ -866,6 +866,7 @@
   },
   "blog": {
     "title": "Blogs",
+    "category": "Article",
     "btnSeeAll": "All Blogs",
     "blogList": [
       {

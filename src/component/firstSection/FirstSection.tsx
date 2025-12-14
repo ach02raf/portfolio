@@ -119,12 +119,14 @@ function FirstSection(props: {
 
   return (
     <div className="row m-0 firstSection w-100">
-      {/* Snow particles */}
-      {[...Array(50)].map((_, i) => (
-        <div key={i} className="snowflake">
-          ❄
-        </div>
-      ))}
+      {/* Snow effect in first section background */}
+      <div className="firstSection-snow-container">
+        {Array.from({ length: 30 }).map((_, i) => (
+          <span key={i} className="snowflake">
+            ❄
+          </span>
+        ))}
+      </div>
 
       <div className="col-lg-7 d-block m-auto ">
         <div className="firstSection-div m-auto">

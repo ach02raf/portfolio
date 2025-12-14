@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "./secondSection.scss";
 import Link from "next/link";
 function SecondSection(props: {

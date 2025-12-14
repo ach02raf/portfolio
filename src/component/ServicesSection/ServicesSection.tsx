@@ -1,48 +1,48 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconDefinition } from "@fortawesome/fontawesome-common-types";
-import { fas } from "@fortawesome/free-solid-svg-icons";
-import "./ServicesSection.scss";
 import React from "react";
-interface ServiceItem {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { IconDefinition } from "@fortawesome/fontawesome-common-types";
+import "./ServicesSection.scss";
+
+type ServiceItem = {
   id: number;
   title: string;
   desc: string;
   img: string;
-}
+};
 
-interface ServicesSectionProps {
+type ServicesSectionProps = {
   ServicesSection: {
     title: string[];
     description: string;
     listServices: ServiceItem[];
   };
-}
+};
 
-function ServicesSection(props: ServicesSectionProps) {
+function ServicesSection({ ServicesSection }: ServicesSectionProps) {
+  const { title = [], description = "", listServices = [] } = ServicesSection || {};
+
   return (
-    <div className="service-section text-center my-5">
-      <h2>
-        {props?.ServicesSection?.title[0]} <span>{props?.ServicesSection?.title[1]}</span>
-      </h2>
-      <p>{props?.ServicesSection?.description}</p>
-      <div className="row m-0 justify-content-between">
-        {props?.ServicesSection?.listServices?.map((item, index) => (
-          <div
-            className="col-lg-4 col-md-5 service-section-block position-relative p-3 my-3"
-            key={index}>
-            <div className="service-section-block-icon my-3">
-              <FontAwesomeIcon
-                className="service-section-block-icon-item"
-                color="#FEC260"
-                icon={fas[item?.img] as IconDefinition}
-              />
-            </div>
-            <h3 className="w-100">{item?.title}</h3>
-            <p>{item?.desc}</p>
-          </div>
-        ))}
+    <section className="service-section">
+      <div className="service-section__container">
+        <h2>
+          {title?.[0]} <span>{title?.[1]}</span>
+        </h2>
+        <p className="service-section__subtitle">{description}</p>
+
+        <div className="service-section__grid">
+          {listServices.map((item) => (
+            <article className="service-card" key={item.id}>
+              <div className="service-card__icon">
+                <FontAwesomeIcon icon={fas[item.img] as IconDefinition} />
+              </div>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </article>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

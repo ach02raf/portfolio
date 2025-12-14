@@ -1,6 +1,7 @@
 import Image from "next/image";
 import "./contactSection.scss";
 import Link from "next/link";
+
 function ContactSection(props: {
   contactSection: {
     title: string;
@@ -10,58 +11,72 @@ function ContactSection(props: {
   };
 }) {
   const title = props.contactSection.title.split(" ");
+
   return (
-    <div className="row m-0 text-center contactSection align-items-end">
-      <h2 className="pb-5">
-        {title[0] + " "}
-        <span>{title[1]}</span>
-      </h2>
-      <div className="col-lg-4 contactSection-info">
-      <Link
-          className="text-decoration-none"
-          href={`Mailto:${props.contactSection.email}`}>
-        <Image
-          src={"/Images/Icons/mail.png"}
-          alt="mail"
-          title="mail"
-          width={40}
-          height={30}
-        />
-       
-          <p className="p-3">{props.contactSection.email}</p>
-        </Link>
+    <section className="contact-section">
+      <div className="contact-section__container">
+        <h2 className="contact-section__title">
+          {title[0]} <span>{title[1]}</span>
+        </h2>
+
+        <div className="contact-section__grid">
+          {/* Email Card */}
+          <Link className="contact-card" href={`mailto:${props.contactSection.email}`}>
+            <div className="contact-card__icon-wrapper">
+              <Image
+                src="/Images/Icons/mail.png"
+                alt="Email"
+                width={32}
+                height={32}
+                className="contact-card__icon"
+              />
+            </div>
+            <div className="contact-card__content">
+              <span className="contact-card__label">Email</span>
+              <p className="contact-card__value">{props.contactSection.email}</p>
+            </div>
+          </Link>
+
+          {/* Location Card */}
+          <Link
+            className="contact-card"
+            href="https://maps.app.goo.gl/4SopmJdRtngpBhL68"
+            target="_blank"
+            rel="noopener noreferrer">
+            <div className="contact-card__icon-wrapper">
+              <Image
+                src="/Images/Icons/pin.png"
+                alt="Location"
+                width={28}
+                height={32}
+                className="contact-card__icon"
+              />
+            </div>
+            <div className="contact-card__content">
+              <span className="contact-card__label">Location</span>
+              <p className="contact-card__value">{props.contactSection.location}</p>
+            </div>
+          </Link>
+
+          {/* Phone Card */}
+          <Link className="contact-card" href={`tel:${props.contactSection.phoneNumber}`}>
+            <div className="contact-card__icon-wrapper">
+              <Image
+                src="/Images/Icons/smartphone.png"
+                alt="Phone"
+                width={24}
+                height={32}
+                className="contact-card__icon"
+              />
+            </div>
+            <div className="contact-card__content">
+              <span className="contact-card__label">Phone</span>
+              <p className="contact-card__value">{props.contactSection.phoneNumber}</p>
+            </div>
+          </Link>
+        </div>
       </div>
-      <div className="col-lg-4 contactSection-info">
-      <Link
-          className="text-decoration-none"
-          href={`https://maps.app.goo.gl/4SopmJdRtngpBhL68`}
-          target="_blank">
-        <Image
-          src={"/Images/Icons/pin.png"}
-          alt="location"
-          title="location"
-          width={25}
-          height={34}
-        />
-          <p className="p-3">{props.contactSection.location}</p>
-        </Link>
-      </div>
-      <div className="col-lg-4 contactSection-info">
-      <Link
-          className="text-decoration-none"
-          href={`tel:${props.contactSection.phoneNumber}`}>
-        <Image
-          src={"/Images/Icons/smartphone.png"}
-          alt="smartphone"
-          title="smartphone"
-          width={20}
-          height={40}
-        />
-      
-          <p className="p-3">{props.contactSection.phoneNumber}</p>
-        </Link>
-      </div>
-    </div>
+    </section>
   );
 }
 

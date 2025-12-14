@@ -3,7 +3,7 @@
 .skillsSection {
   padding: 5%;
   width: 100%;
-  background: linear-gradient(135deg, $violet-light 0%, lighten($violet-light, 5%) 100%);
+  background: var(--section-bg);
 
   h2 {
     font-weight: 700;
@@ -107,7 +107,7 @@
 
 /* ========== DARK MODE OVERRIDES FOR SKILLS SECTION ========== */
 .dark .skillsSection {
-  background: linear-gradient(135deg, #1a0f22 0%, darken(#1a0f22, 3%) 100%) !important;
+  background: var(--section-bg) !important;
 
   .container {
     background: transparent !important;

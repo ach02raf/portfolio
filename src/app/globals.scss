@@ -2,6 +2,34 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "./global-variables.scss";
 
+/* ========== WINTER SNOW ANIMATION - OPTIMIZED ========== */
+@keyframes snowfall {
+  0% {
+    transform: translate3d(0, -10%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(15px, 100vh, 0) rotate(360deg);
+  }
+}
+
+@keyframes snowfall-drift {
+  0% {
+    transform: translate3d(0, -10%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-12px, 100vh, 0) rotate(-270deg);
+  }
+}
+
+@keyframes snowfall-gentle {
+  0% {
+    transform: translate3d(0, -10%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(8px, 100vh, 0) rotate(180deg);
+  }
+}
+
 /* ========== KEYFRAME ANIMATIONS ========== */
 @keyframes lazy-spin {
   from {
@@ -34,6 +62,18 @@
   --scroll-thumb: #5a4a7a;
   --overlay-start: rgba(10, 8, 20, 0.65);
   --overlay-mid: rgba(58, 26, 74, 0.28);
+  /* Harmonized section and card backgrounds */
+  --section-bg: linear-gradient(
+    135deg,
+    #{lighten($violet-light, 8%)} 0%,
+    #{lighten($violet-light, 2%)} 100%
+  );
+  --card-surface: linear-gradient(
+    145deg,
+    #{rgba($violet-dark, 0.06)} 0%,
+    #{rgba($violet-dark, 0.02)} 100%
+  );
+  --border-subtle: #{rgba($violet-dark, 0.16)};
 }
 
 /* Smooth transition for themeable properties */
@@ -196,6 +236,9 @@ p {
   --scroll-thumb: #5d4180;
   --overlay-start: rgba(5, 4, 10, 0.78);
   --overlay-mid: rgba(17, 8, 30, 0.65);
+  --section-bg: linear-gradient(135deg, #0a0612 0%, #140f22 100%);
+  --card-surface: linear-gradient(145deg, rgba(20, 15, 34, 0.9) 0%, rgba(15, 10, 25, 0.86) 100%);
+  --border-subtle: rgba(198, 196, 210, 0.15);
 }
 
 .dark .section,
@@ -253,4 +296,54 @@ p {
   background: #5d4180;
   border: 1px solid #ffffff22;
   border-radius: 25px;
+}
+
+/* ========== SNOW EFFECT - First Section (Performance Optimized) ========== */
+.firstSection-snow-container .snowflake {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.85);
+  user-select: none;
+  pointer-events: none;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+  font-size: 1em;
+  contain: layout style;
+}
+
+/* Generate 30 optimized snowflakes (reduced from 35 for better performance) */
+@for $i from 1 through 30 {
+  .firstSection-snow-container .snowflake:nth-child(#{$i}) {
+    // Even distribution across viewport width
+    left: #{$i * 3.33% - 1.5%};
+
+    // Optimized negative delays for instant vertical distribution
+    // Each snowflake appears mid-animation on page load
+    animation-delay: -#{$i * 3.6 + ($i % 11) * 3.5}s;
+
+    // Cycle through 3 optimized animation variants
+    @if $i % 3 == 1 {
+      animation: snowfall #{13 + ($i % 4)}s linear infinite;
+    } @else if $i % 3 == 2 {
+      animation: snowfall-drift #{15 + ($i % 3)}s linear infinite;
+    } @else {
+      animation: snowfall-gentle #{17 + ($i % 2)}s linear infinite;
+    }
+
+    // Simplified depth layers with cleaner calculations
+    @if $i <= 10 {
+      // Background layer
+      font-size: #{0.7 + ($i % 3) * 0.1}em;
+      opacity: 0.7;
+    } @else if $i <= 20 {
+      // Middle layer
+      font-size: #{0.95 + ($i % 4) * 0.1}em;
+      opacity: 0.8;
+    } @else {
+      // Foreground layer
+      font-size: #{1.2 + ($i % 3) * 0.12}em;
+      opacity: 0.9;
+    }
+  }
 }

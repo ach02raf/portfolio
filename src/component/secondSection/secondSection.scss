@@ -64,7 +64,7 @@
 
 .secondSection {
   padding: 10%;
-  background: linear-gradient(135deg, $violet-light 0%, lighten($violet-light, 5%) 100%);
+  background: var(--section-bg);
   position: relative;
 
   &::before {
@@ -74,10 +74,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 20% 80%, rgba($yellow, 0.05), transparent 50%);
+    background: radial-gradient(circle at 20% 80%, var(--overlay-mid), transparent 55%);
     pointer-events: none;
   }
-  
+
   &-div {
     position: relative;
     z-index: 1;
@@ -341,7 +341,7 @@
 
 /* ========== DARK MODE OVERRIDES FOR SECOND SECTION ========== */
 .dark .secondSection {
-  background: linear-gradient(135deg, #1a0f22 0%, darken(#1a0f22, 3%) 100%);
+  background: var(--section-bg);
 
   &::before {
     background: radial-gradient(circle at 20% 80%, rgba($yellow, 0.03), transparent 50%);

@@ -1,31 +1,264 @@
 @import "@/A/global-variables.scss";
 
-.contactSection {
-  padding: 5%;
-  background-color: $violet-light;
-  span {
-    color: $yellow;
+/* ========== ANIMATIONS ========== */
+@keyframes icon-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  &-info {
-    transition: all 0.3s linear;
+  50% {
+    transform: translateY(-5px);
   }
 }
 
-/* Desktop-only hover effects for Contact Section */
-@media (min-width: 769px) {
-  .contactSection {
-    &-info {
-      &:hover {
-        transform: scale(1.15);
+/* ========== CONTACT SECTION ========== */
+.contact-section {
+  padding: 6% 0;
+  background: var(--section-bg);
+  position: relative;
+  overflow: hidden;
+
+  /* Background decoration */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 30%, var(--overlay-mid), transparent 55%),
+      radial-gradient(circle at 80% 70%, #{rgba($violet-dark, 0.12)}, transparent 55%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Container */
+  &__container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Title */
+  &__title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: $violet-dark;
+    text-align: center;
+    margin-bottom: 4rem;
+    letter-spacing: -0.5px;
+
+    span {
+      color: $yellow;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, $yellow, transparent);
+        border-radius: 2px;
       }
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 2.2rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  /* Grid */
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
     }
   }
 }
 
-/* ========== DARK MODE OVERRIDES FOR CONTACT SECTION ========== */
-.dark .contactSection {
-  background-color: #1a0f22;
-  &-info {
-    color: #c6c4d2;
+/* ========== CONTACT CARDS (Light Mode) ========== */
+.contact-card {
+  background: linear-gradient(145deg, lighten($violet-light, 14%), lighten($violet-light, 2%));
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba($violet-dark, 0.16);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+
+  /* Decorative glow */
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba($violet-dark, 0.06), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  /* Icon wrapper */
+  &__icon-wrapper {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: rgba($violet-light, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba($violet-dark, 0.2);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08), inset 0 0 8px rgba($white, 0.06);
+  }
+
+  &__icon {
+    filter: none;
+    transition: all 0.3s ease;
+  }
+
+  /* Content */
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba($violet-dark, 0.65);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+
+  &__value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $violet-dark;
+    margin: 0;
+    transition: all 0.3s ease;
+    word-break: break-word;
+  }
+}
+
+/* ========== HOVER EFFECTS (Desktop Only) ========== */
+@media (hover: hover) and (pointer: fine) {
+  .contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22), 0 6px 16px rgba($violet-dark, 0.08);
+    border-color: rgba($violet-dark, 0.28);
+
+    &::before {
+      opacity: 1;
+    }
+
+    .contact-card__icon-wrapper {
+      background: lighten($violet-light, 4%);
+      border-width: 1px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16), inset 0 0 10px rgba($white, 0.08);
+      animation: icon-bounce 1.5s ease-in-out infinite;
+    }
+
+    .contact-card__icon {
+      filter: none;
+      transform: scale(1.05);
+    }
+
+    .contact-card__label {
+      color: rgba($violet-dark, 0.8);
+    }
+
+    .contact-card__value {
+      color: $violet-dark;
+      text-shadow: none;
+    }
+  }
+}
+
+/* ========== MOBILE TOUCH ========== */
+@media (hover: none) {
+  .contact-card:active {
+    transform: scale(0.98);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18), inset 0 0 12px rgba($white, 0.06);
+  }
+}
+
+/* ========== DARK MODE ========== */
+.dark .contact-section {
+  background: var(--section-bg);
+
+  &::before {
+    background: radial-gradient(circle at 20% 30%, var(--overlay-mid), transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(#1a0f22, 0.5), transparent 55%);
+  }
+
+  &__title {
+    color: #f0eef5;
+  }
+
+  .contact-card {
+    background: linear-gradient(145deg, #140f22, #0f0a18);
+    border-color: rgba($violet-light, 0.18);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 16px rgba($white, 0.04);
+
+    &__icon-wrapper {
+      background: rgba($violet-dark, 0.85);
+      border-color: rgba($violet-light, 0.25);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), inset 0 0 8px rgba($white, 0.05);
+    }
+
+    &__icon {
+      filter: brightness(0) invert(1);
+    }
+
+    &__label {
+      color: rgba(#c6c4d2, 0.6);
+    }
+
+    &__value {
+      color: #e8e6f0;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 6px 16px rgba($violet-light, 0.08);
+
+        .contact-card__icon-wrapper {
+          background: rgba($violet-dark, 0.95);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.24), inset 0 0 10px rgba($white, 0.06);
+        }
+
+        .contact-card__icon {
+          filter: brightness(0) invert(1);
+        }
+
+        .contact-card__label {
+          color: rgba(#c6c4d2, 0.75);
+        }
+
+        .contact-card__value {
+          color: #e8e6f0;
+          text-shadow: none;
+        }
+      }
+    }
   }
 }
