@@ -872,298 +872,344 @@
       {
         "id": 0,
         "slug": "build-solid-foundations-design-patterns",
-        "title": "Building Solid Foundations with Design Patterns",
+        "title": "Design Patterns in Practice: SOLID, Testable Architecture",
         "img": "design-patterns",
-        "titleImg": "Building Solid Foundations with Design Patterns",
+        "titleImg": "Design Patterns in Practice",
         "desc": [
           {
-            "title": "Introduction to Design Patterns",
-            "description": "Design Patterns are proven solutions to recurring problems in software development. This article explores their importance for writing maintainable and performant code."
+            "title": "Why patterns — and when not to",
+            "description": "Use patterns to reduce coupling and improve clarity, not as cargo‑cult. Prefer simple composition unless a pattern measurably improves testability or changeability."
           },
           {
-            "title": "The Singleton Pattern",
-            "description": "Ensures a class has only one instance and provides a global access point. Ideal for centralizing important features in your application."
+            "title": "SOLID and composition first",
+            "description": "Apply SRP and DIP to keep modules small and replaceable. Compose behaviors via interfaces; isolate I/O at boundaries to enable pure, unit‑testable cores."
           },
           {
-            "title": "Observer Pattern",
-            "description": "Allows an object to notify multiple observers of state changes. Perfect for managing events in a reactive application."
+            "title": "Dependency Inversion with DI",
+            "description": "Depend on abstractions. Inject collaborators (factories, strategies, adapters) to swap implementations in tests and production without touching consumers."
           },
           {
-            "title": "Factory Pattern",
-            "description": "Delegates object creation to dedicated classes, facilitating dependency management and code maintenance."
+            "title": "Selecting patterns pragmatically",
+            "description": "Prefer Strategy over if/else trees, Adapter to integrate legacy APIs, Factory to centralize creation with validation and caching. Avoid global Singletons."
           },
           {
-            "title": "MVC Architecture",
-            "description": "The MVC model organizes the application into Model, View, and Controller, and combines effectively with design patterns to build robust applications."
+            "title": "Smells to avoid",
+            "description": "God objects, deep inheritance, over‑abstraction and premature patterning. Measure impact: fewer defects, simpler diffs, faster reviews."
           },
           {
-            "title": "Conclusion",
-            "description": "Design Patterns improve code quality and maintainability. Experiment with them to transform your development approach."
+            "title": "Takeaways",
+            "description": "Patterns are tools. Start with clear boundaries, enforce interfaces, and document decisions. Fewer surprises, easier onboarding, better uptime."
           }
         ]
       },
       {
         "id": 1,
         "slug": "optimize-angular-performance",
-        "title": "Optimizing Performance in Angular",
+        "title": "Angular Performance: Measurable Wins in the Real World",
         "img": "angular",
-        "titleImg": "Optimizing Performance in Angular",
+        "titleImg": "Angular Performance: Measurable Wins",
         "desc": [
           {
-            "title": "Introduction",
-            "description": "A fast application improves user experience. Discover advanced techniques for optimizing Angular."
+            "title": "Profile before you tune",
+            "description": "Use Chrome Performance, Lighthouse, and Angular DevTools to locate slow change detection, heavy zones, and chatty network calls."
           },
           {
-            "title": "Lazy Loading Modules",
-            "description": "Loads only the necessary modules to reduce initial loading time and improve responsiveness."
+            "title": "Change detection + rendering",
+            "description": "Adopt OnPush + `trackBy` for lists, prefer pure pipes, memoize derived state, and split views with `*ngIf` to defer cost."
           },
           {
-            "title": "Change Detection Strategies",
-            "description": "Choose the appropriate strategy to minimize unnecessary updates and enhance performance."
+            "title": "Network and data flow",
+            "description": "Batch HTTP requests, cache with RxJS `shareReplay`, debounce user input, and stream incremental data for faster First Interaction."
           },
           {
-            "title": "Optimizing HTTP Requests",
-            "description": "Reduce latency and efficiently manage client-side data with optimized requests."
+            "title": "Bundles and delivery",
+            "description": "Lazy‑load routes, leverage standalone components, audit with `source-map-explorer`, and use image compression + HTTP/2."
           },
           {
-            "title": "Measurements with Angular CLI",
-            "description": "Use Angular CLI to identify bottlenecks and improve load times."
-          },
-          {
-            "title": "Conclusion",
-            "description": "Adopt these techniques to create fast and fluid Angular applications."
+            "title": "Guardrails",
+            "description": "Set CI budgets, watch Core Web Vitals, and fail builds on regressions. Performance is a product requirement, not an afterthought."
           }
         ]
       },
       {
         "id": 2,
         "slug": "discover-reactjs-dynamic-reactive-interfaces",
-        "title": "Discovering React.js: Dynamic and Reactive Interfaces",
+        "title": "Modern React: Hooks, Performance and Clean State",
         "img": "reactjs",
-        "titleImg": "Discovering React.js: Dynamic and Reactive Interfaces",
+        "titleImg": "Modern React: Hooks & Performance",
         "desc": [
           {
-            "title": "Introduction to React.js",
-            "description": "React.js facilitates the creation of interactive user interfaces through its declarative and component-based approach."
+            "title": "Design for simplicity",
+            "description": "Prefer local state with hooks, lift state only when needed, and co‑locate logic with UI. Small components, clear props contracts."
           },
           {
-            "title": "The Virtual DOM",
-            "description": "Minimizes real DOM manipulations by using a virtual representation, improving performance."
+            "title": "Rendering performance",
+            "description": "Use `memo`, `useMemo`, `useCallback` judiciously; key lists correctly; virtualize large tables; split bundles with dynamic import."
           },
           {
-            "title": "Reusable Components",
-            "description": "Every interface is composed of modular components, promoting reusability and maintainability."
+            "title": "Data fetching patterns",
+            "description": "Stale‑while‑revalidate with SWR/React Query, optimistic updates, and error boundaries for resilient UX."
           },
           {
-            "title": "Unidirectional Data Flow",
-            "description": "Data flows in a single direction, simplifying state management."
+            "title": "Testing and accessibility",
+            "description": "Test with React Testing Library (user‑centric). Ship ARIA‑aware components and verify with axe and keyboard navigation."
           },
           {
-            "title": "Hooks for State Management",
-            "description": "Hooks like useState and useEffect allow for concise state and effect management."
-          },
-          {
-            "title": "Navigation with React Router",
-            "description": "Manage navigation without reloading using React Router."
-          },
-          {
-            "title": "Conclusion",
-            "description": "React.js offers a robust platform for creating modern and high-performing applications."
+            "title": "Maintainability",
+            "description": "Type with TypeScript, enforce ESLint + Prettier, and document props and invariants."
           }
         ]
       },
       {
         "id": 3,
         "slug": "introduction-to-devops-essential-practices",
-        "title": "Introduction to DevOps: Essential Practices for Developers",
+        "title": "Practical DevOps: CI/CD, Observability, and Reliability",
         "img": "devops",
-        "titleImg": "Introduction to DevOps: Essential Practices",
+        "titleImg": "Practical DevOps",
         "desc": [
           {
-            "title": "What is DevOps?",
-            "description": "DevOps is a culture that combines development and operations to deliver applications faster and more efficiently."
+            "title": "Trunk‑based CI/CD",
+            "description": "Short‑lived branches, automated tests, and canary releases keep deploys boring. Enforce quality gates with coverage and lint checks."
           },
           {
-            "title": "Continuous Integration",
-            "description": "Automate tests and builds to quickly detect errors and improve code quality."
+            "title": "Infrastructure as Code",
+            "description": "Provision reproducibly with Terraform/Pulumi. Version everything; review changes like code; tag releases and roll back fast."
           },
           {
-            "title": "Continuous Deployment",
-            "description": "Deliver frequent and reliable updates through automated deployment pipelines."
+            "title": "Observability that matters",
+            "description": "Define SLOs, collect RED/USE metrics, add structured logs with correlation IDs, and trace user journeys."
           },
           {
-            "title": "Monitoring and Logging",
-            "description": "Track performance and identify issues before they affect users."
+            "title": "Security in the pipeline",
+            "description": "SAST/DAST, image scanning, SBOMs, and signed artifacts. Least privilege for runners and secrets management."
           },
           {
-            "title": "Popular Tools",
-            "description": "Jenkins, Docker, Kubernetes, and GitLab CI/CD are key tools in a DevOps environment."
-          },
-          {
-            "title": "Conclusion",
-            "description": "DevOps transforms how teams develop and deploy applications."
+            "title": "Runbooks and readiness",
+            "description": "Health checks, graceful shutdown, and documented incident playbooks. Practice failure injection to build confidence."
           }
         ]
       },
       {
         "id": 4,
         "slug": "typescript-for-beginners-complete-guide",
-        "title": "TypeScript for Beginners: Complete Guide",
+        "title": "Effective TypeScript: Types that Scale with Teams",
         "img": "typescript",
-        "titleImg": "TypeScript for Beginners",
+        "titleImg": "Effective TypeScript",
         "desc": [
           {
-            "title": "Introduction to TypeScript",
-            "description": "TypeScript adds static typing to JavaScript, allowing for writing more robust and maintainable code."
+            "title": "Start strict, stay strict",
+            "description": "Enable `strict` and incremental builds. Prefer explicit types at boundaries; let inference work inside functions."
           },
           {
-            "title": "Types and Interfaces",
-            "description": "Learn to define types and interfaces to improve code quality and readability."
+            "title": "Modeling with unions",
+            "description": "Use discriminated unions over flags. Encode invariants in the type system and eliminate whole classes of runtime checks."
           },
           {
-            "title": "Classes and Inheritance",
-            "description": "Discover how TypeScript facilitates object-oriented programming."
+            "title": "APIs and contracts",
+            "description": "Define DTOs and use `zod`/`io-ts` for runtime validation. Generate types from schemas to avoid drift."
           },
           {
-            "title": "Functions and Generics",
-            "description": "Use generic functions to write flexible and reusable code."
+            "title": "Utilities and generics",
+            "description": "Leverage utility types (`Partial`, `Pick`, `Extract`) and thoughtful generics for reusable, readable APIs."
           },
           {
-            "title": "Conclusion",
-            "description": "TypeScript improves code quality and reduces bugs, essential for professional projects."
+            "title": "Tooling",
+            "description": "ESLint + Prettier + TS path aliases; enforce no‑any, no‑implicit‑any, and unused checks in CI."
           }
         ]
       },
       {
         "id": 5,
         "slug": "seo-optimization-for-developer-portfolio",
-        "title": "SEO Optimization for a Developer Portfolio",
+        "title": "Portfolio SEO: Technical Wins that Recruiters Notice",
         "img": "seo",
-        "titleImg": "SEO Optimization for Portfolio",
+        "titleImg": "Portfolio SEO: Technical Wins",
         "desc": [
           {
-            "title": "Importance of SEO",
-            "description": "Search engine optimization improves the visibility of your portfolio and attracts recruiters or clients."
+            "title": "Foundation",
+            "description": "Unique titles, meta descriptions, canonical URLs, sitemap.xml and robots.txt. Add JSON‑LD (Person, Project) for rich results."
           },
           {
-            "title": "Keywords and Content",
-            "description": "Integrate relevant keywords into your titles, descriptions, and blogs for better ranking."
+            "title": "Speed and vitals",
+            "description": "Optimize images, preconnect critical origins, lazy‑load below‑the‑fold, and monitor LCP/CLS/INP in production."
           },
           {
-            "title": "Performance and Accessibility",
-            "description": "A fast and accessible site boosts SEO and user experience."
+            "title": "Content that signals expertise",
+            "description": "Write case studies with problem → approach → measurable outcome. Link to code, demos, and metrics."
           },
           {
-            "title": "Backlinks and Sharing",
-            "description": "Encourage backlinks and social media sharing to improve your referencing."
+            "title": "Internationalization",
+            "description": "Use `hreflang` and consistent slugs across locales. Keep translations accurate and in sync."
           },
           {
-            "title": "Conclusion",
-            "description": "SEO optimization is essential for a professional and attractive portfolio."
+            "title": "Tracking and iteration",
+            "description": "Set up GA4 + Search Console; review queries and improve pages that already rank on page 2."
           }
         ]
       },
       {
         "id": 6,
         "slug": "graphql-vs-rest-complete-comparison",
-        "title": "GraphQL vs REST: Complete Comparison",
+        "title": "GraphQL vs REST: Choose by Constraints, Not Hype",
         "img": "graphql",
         "titleImg": "GraphQL vs REST",
         "desc": [
           {
-            "title": "Introduction",
-            "description": "Discover the differences between GraphQL and REST, their advantages and disadvantages."
+            "title": "When REST wins",
+            "description": "Simple resources, CDN caching, and long‑lived clients. Version via new representations; keep endpoints stable."
           },
           {
-            "title": "REST API",
-            "description": "Simple and standardized architecture, suitable for classic applications."
+            "title": "When GraphQL shines",
+            "description": "Mobile/low‑latency apps and complex graphs. Fetch exactly what you need; evolve schemas without breaking clients."
           },
           {
-            "title": "GraphQL API",
-            "description": "Allows retrieving only the necessary data, reducing network overhead."
+            "title": "Performance reality",
+            "description": "Guard against N+1 with dataloaders; enforce pagination and depth limits; cache persisted queries."
           },
           {
-            "title": "Use Cases",
-            "description": "When to use REST or GraphQL depending on the size and complexity of the project."
+            "title": "Operational concerns",
+            "description": "Observability, timeouts, and error budgets matter more than style. Document with OpenAPI/SDL and provide examples."
           },
           {
-            "title": "Conclusion",
-            "description": "Choosing the right API impacts application performance and maintainability."
+            "title": "Decision rubric",
+            "description": "Pick the simplest option that meets SLAs. Hybrid backends are common; measure, don’t guess."
           }
         ]
       },
       {
         "id": 7,
         "slug": "docker-for-developers-practical-guide",
-        "title": "Docker for Developers: Practical Guide",
+        "title": "Docker Done Right: Small Images, Fast Deploys",
         "img": "docker",
-        "titleImg": "Docker for Developers",
+        "titleImg": "Docker Done Right",
         "desc": [
           {
-            "title": "Introduction to Docker",
-            "description": "Docker facilitates the creation, deployment, and management of containers for applications."
+            "title": "Build for production",
+            "description": "Use multi‑stage builds, pin versions, and minimize layers. Add healthchecks and non‑root users."
           },
           {
-            "title": "Images and Containers",
-            "description": "Learn to build images and manage containers efficiently."
+            "title": "Smaller, safer images",
+            "description": "Leverage distroless/alpine when appropriate, `.dockerignore` aggressively, and scan images in CI."
           },
           {
-            "title": "Docker Compose",
-            "description": "Orchestrate multiple containers and services with a simple YAML file."
+            "title": "Local dev ergonomics",
+            "description": "Compose for services, bind mounts for hot reload, and named volumes for state."
           },
           {
-            "title": "Conclusion",
-            "description": "Docker improves the portability and consistency of development environments."
+            "title": "Operational tips",
+            "description": "Expose minimal ports, set resource limits, and emit structured logs. Document run commands for on‑call."
           }
         ]
       },
       {
         "id": 8,
         "slug": "software-testing-essentials-for-quality",
-        "title": "Software Testing: Essentials for Quality",
+        "title": "Testing that Prevents Incidents: A Practical Pyramid",
         "img": "testing",
-        "titleImg": "Essential Software Testing",
+        "titleImg": "Practical Testing Pyramid",
         "desc": [
           {
-            "title": "Why Test?",
-            "description": "Testing ensures the code works as expected and reduces bugs in production."
+            "title": "Test the contract",
+            "description": "Favor fast unit tests and contract tests at service boundaries. Mock only what you own."
           },
           {
-            "title": "Unit Tests",
-            "description": "Verify the behavior of each unit of code to ensure its reliability."
+            "title": "Integration > E2E for most cases",
+            "description": "A few critical E2E flows are enough. Focus on integration tests for realistic coverage with maintainable speed."
           },
           {
-            "title": "Integration Tests",
-            "description": "Make sure different modules work together correctly."
+            "title": "Data and determinism",
+            "description": "Use seed data, freeze time, and isolate external effects. Flaky tests destroy trust and velocity."
           },
           {
-            "title": "Conclusion",
-            "description": "A solid testing strategy is essential for high-quality code."
+            "title": "Coverage as a guide",
+            "description": "Track mutation coverage where possible and require thresholds in CI; quality over raw percentages."
           }
         ]
       },
       {
         "id": 9,
         "slug": "progressive-web-apps-complete-guide",
-        "title": "Progressive Web Apps (PWA): Complete Guide",
+        "title": "PWAs that Feel Native: Offline‑First by Design",
         "img": "pwa",
-        "titleImg": "Progressive Web Apps",
+        "titleImg": "PWAs that Feel Native",
         "desc": [
           {
-            "title": "Introduction to PWAs",
-            "description": "PWAs offer a native experience on the web with fast loading and offline features."
+            "title": "Core capabilities",
+            "description": "Add installability (Web App Manifest), offline caching, and background sync. Respect user prompts; don’t hijack."
           },
           {
-            "title": "Service Workers",
-            "description": "Enable intelligent resource caching and offline functionality."
+            "title": "Caching strategy",
+            "description": "Precache shell, runtime cache data, and version aggressively. Plan for invalidation and migrations."
           },
           {
-            "title": "Manifest and Installation",
-            "description": "Create a manifest to allow users to add your PWA to their device."
+            "title": "UX considerations",
+            "description": "Design explicit offline states, queue writes, and surface sync status. Keep interactions responsive under poor networks."
           },
           {
-            "title": "Conclusion",
-            "description": "PWAs combine the best of the web and native applications to offer an optimal experience."
+            "title": "Measuring success",
+            "description": "Track install rate, offline sessions served, and crash‑free users. Iterate based on real usage."
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "slug": "secure-authentication-http-only-cookies-oauth2-2fa-turnstile",
+        "title": "Secure Authentication: Cookies, OAuth2 + PKCE, 2FA, Turnstile",
+        "img": "auth-blueprint",
+        "titleImg": "Secure Authentication Blueprint",
+        "desc": [
+          {
+            "title": "Why this matters",
+            "description": "Most auth incidents stem from session handling and weak flows, not cryptography. Use a pragmatic design that is secure, scalable, and user‑friendly."
+          },
+          {
+            "title": "Cookie sessions over localStorage",
+            "description": "Prefer HTTP‑only, Secure, SameSite cookies with short TTL and rotation. Avoid storing tokens in localStorage to reduce XSS token theft risk."
+          },
+          {
+            "title": "OAuth 2.0 + PKCE",
+            "description": "Use Authorization Code with PKCE for third‑party login (e.g., Google). Enforce exact redirect URIs, narrow scopes, and validate the state parameter."
+          },
+          {
+            "title": "Add Two‑Factor Authentication",
+            "description": "Start with TOTP and backup codes; add WebAuthn for phishing resistance. Require step‑up auth for sensitive actions (admin, payouts)."
+          },
+          {
+            "title": "Block automated abuse",
+            "description": "Protect signup/login and recovery forms with Cloudflare Turnstile; always verify on the server. Combine with rate limiting and anomaly detection."
+          },
+          {
+            "title": "Production checklist",
+            "description": "CSRF protection, session rotation, token revocation, rate limits, device/IP reputation, structured logging without secrets, and security tests in CI (OWASP ASVS)."
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "slug": "graphql-subscriptions-redis-streams-chat-microservice-architecture",
+        "title": "Real‑Time Messaging with GraphQL Subscriptions + Redis",
+        "img": "graphql-redis",
+        "titleImg": "GraphQL + Redis Messaging",
+        "desc": [
+          {
+            "title": "Why isolate messaging",
+            "description": "Real‑time workloads have unique scaling, ordering, and reliability needs. A dedicated microservice improves performance and team velocity."
+          },
+          {
+            "title": "Core architecture",
+            "description": "GraphQL over HTTP for queries/mutations; Subscriptions (WebSockets) for realtime. Redis Pub/Sub for live fanout; Redis Streams + DB for durable history."
+          },
+          {
+            "title": "Pub/Sub vs Streams",
+            "description": "Pub/Sub is low latency and ephemeral; Streams are ordered and durable with backpressure and replay. Use both: Streams for persistence, Pub/Sub for online fanout."
+          },
+          {
+            "title": "Backpressure and ordering",
+            "description": "Persist first, ack after durable write. Use Stream IDs for per‑conversation order and idempotency keys to prevent duplicates."
+          },
+          {
+            "title": "Security and abuse controls",
+            "description": "Authorize on subscribe/publish, rate‑limit sends, encrypt in transit/at rest, and apply quotas per user/org."
           }
         ]
       }
@@ -1189,5 +1235,20 @@
       "usedTools": "Tools Used",
       "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
     }
-  ]
+  ],
+  "feedbackPopup": {
+    "title": "Share Your Feedback",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "advicePlaceholder": "Your advice or suggestions...",
+    "submitButton": "Send Feedback",
+    "successMessage": "Thank you for your feedback!",
+    "errorMessage": "Failed to send feedback. Please try again.",
+    "ratingLabel": "Rate your experience"
+  },
+  "feedbackInvite": {
+    "title": "Could you help me with your advice?",
+    "text": "Your feedback helps me improve this portfolio. If you have a suggestion or a tiny idea, I’m all ears!",
+    "button": "Share your advice"
+  }
 }

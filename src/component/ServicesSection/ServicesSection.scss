@@ -30,9 +30,11 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /* Enforce exactly 3 items per row on desktop */
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     width: 100%;
+    justify-items: stretch; /* cards fill column width */
   }
 
   /* header */
@@ -114,6 +116,29 @@
 
   span {
     color: $yellow;
+  }
+}
+
+/* Mobile layout: full-width single column and tighter side padding */
+@media screen and (max-width: 576px) {
+  .service-section__container {
+    padding: 0 16px;
+  }
+
+  .service-section__grid {
+    grid-template-columns: 1fr;
+    justify-items: stretch; /* cards fill width */
+  }
+
+  .service-section .service-card {
+    width: 100%;
+  }
+}
+
+/* Tablet: 2 items per row */
+@media screen and (max-width: 992px) and (min-width: 577px) {
+  .service-section__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

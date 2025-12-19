@@ -1,0 +1,54 @@
+@import "../../app/global-variables.scss";
+
+.feedback-invite {
+  padding: 64px 16px;
+  background: var(--section-bg);
+}
+
+.feedback-invite__container {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feedback-invite__title {
+  color: $yellow;
+  font-weight: 800;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.feedback-invite__text {
+  color: var(--page-text);
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.feedback-invite__btn {
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: 2px solid rgba($yellow, 0.4);
+  background: linear-gradient(135deg, $yellow 0%, darken($yellow, 8%) 100%);
+  color: $violet-dark;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba($yellow, 0.25);
+}
+
+.dark .feedback-invite {
+  background: linear-gradient(135deg, rgba($violet-dark, 0.35) 0%, rgba($violet-dark, 0.25) 100%);
+}
+
+/* Defeat global .dark button override */
+.dark .feedback-invite__btn {
+  background: linear-gradient(135deg, $yellow 0%, darken($yellow, 8%) 100%) !important;
+  color: $violet-dark !important;
+  border: 2px solid rgba($yellow, 0.4) !important;
+}
+
+@media (max-width: 576px) {
+  .feedback-invite__title {
+    font-size: 24px;
+  }
+}

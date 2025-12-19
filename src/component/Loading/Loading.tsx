@@ -7,13 +7,17 @@ function Loading() {
   const [loading, setLoading] = useState(false);
   const route = useRouter();
   useEffect(() => {
-    setTimeout(() => {
+    const t = setTimeout(() => {
       setLoading(true);
     }, 1500);
+    return () => clearTimeout(t);
+  }, []);
+
+  useEffect(() => {
     if (loading === true) {
       route.push("/fr");
     }
-  }, [loading]);
+  }, [loading, route]);
   return <div className="loader"></div>;
 }
 export default Loading;

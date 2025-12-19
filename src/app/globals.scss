@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "./global-variables.scss";
 
@@ -123,8 +123,13 @@ li {
   color: $white !important;
 }
 
-h2 {
-  font-weight: 800 !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800 !important; /* Montserrat Bold ("gras") for headings */
 }
 
 ::-webkit-scrollbar {

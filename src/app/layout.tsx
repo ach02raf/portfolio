@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Suspense } from "react";
 import "./globals.scss";
 import Script from "next/script";
@@ -8,24 +8,34 @@ import AnalyticsProvider from "@/component/AnalyticsProvider";
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-905040Q7WL";
 
 export const metadata: Metadata = {
-  title: "ach02raf",
+  title: "ach02raf - Full Stack Developer | Portfolio",
   description:
-    "I have recently successfully completed a three-year program in fundamental computer science, specializing in software engineering, at the Higher Institute of Computer Science and Mathematics of Monastir (ISIMM).",
+    "Full Stack Developer specialized in Next.js, React, Angular, Node.js, and Spring Boot. ISIMM graduate with expertise in frontend, backend, and mobile development.",
   keywords: [
     "Full Stack Developer",
-    "Next.js",
+    "Next.js Developer",
+    "React Developer",
+    "Angular Developer",
+    "Node.js Developer",
     "Backend Development",
     "Frontend Development",
+    "Web Developer",
+    "Software Engineer",
     "ach02raf",
     "React",
     "Angular",
     "Node.js",
     "React Native",
-    "Spring boot",
+    "Spring Boot",
     "JAVA",
     "JavaScript",
-    "typescript",
+    "TypeScript",
+    "Web Development",
+    "Software Development",
   ],
+  authors: [{ name: "ach02raf", url: "https://ach02raf.pro" }],
+  creator: "ach02raf",
+  publisher: "ach02raf",
   metadataBase: new URL("https://ach02raf.pro"),
   alternates: {
     canonical: "https://ach02raf.pro",
@@ -33,31 +43,56 @@ export const metadata: Metadata = {
       fr: "https://ach02raf.pro",
       en: "https://ach02raf.pro/en",
       de: "https://ach02raf.pro/de",
+      "x-default": "https://ach02raf.pro",
     },
   },
   openGraph: {
-    title: "ach02raf",
-    description: "Full Stack Developer",
-    images: `/Images/ach02raf1.png`,
+    title: "ach02raf - Full Stack Developer",
+    description:
+      "Explore my portfolio of full stack development projects. Specializing in Next.js, React, Angular, and backend technologies.",
+    images: [
+      {
+        url: "https://ach02raf.pro/Images/ach02raf1.png",
+        width: 1200,
+        height: 630,
+        alt: "ach02raf - Full Stack Developer",
+      },
+    ],
     locale: "fr_FR",
     type: "website",
     url: "https://ach02raf.pro",
+    siteName: "ach02raf Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     site: "@ach02raf",
-    title: "ach02raf",
-    description: "Full Stack Developer",
-    images: "/Images/ach02raf1.png",
+    creator: "@ach02raf",
+    title: "ach02raf - Full Stack Developer",
+    description:
+      "Full Stack Developer portfolio showcasing projects in Next.js, React, Angular, Node.js, and more.",
+    images: ["https://ach02raf.pro/Images/ach02raf1.png"],
   },
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
     },
   },
+  formatDetection: {
+    telephone: false,
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
@@ -71,18 +106,23 @@ export default function RootLayout({
     <html lang={params.lang} suppressHydrationWarning>
       <head>
         {/* Consent Mode default before gtag loads */}
-        <Script id="ga-consent-default" strategy="beforeInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);} 
-            gtag('consent', 'default', {
-              ad_storage: 'granted',
-              analytics_storage: 'granted',
-              functionality_storage: 'granted',
-              security_storage: 'granted'
-            });
-          `}
-        </Script>
+        <script
+          id="ga-consent-default"
+          // Using a plain script tag in App Router head to avoid the
+          // eslint rule about beforeInteractive outside _document.
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);} 
+              gtag('consent', 'default', {
+                ad_storage: 'granted',
+                analytics_storage: 'granted',
+                functionality_storage: 'granted',
+                security_storage: 'granted'
+              });
+            `,
+          }}
+        />
         {/* GA4 base script */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}

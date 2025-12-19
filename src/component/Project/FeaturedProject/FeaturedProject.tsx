@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import "./FeaturedProject.scss";
 import { Locale } from "../../../../i18n-config";
 import Link from "next/link";
@@ -83,10 +84,13 @@ function FeaturedProject(props: {
               </div>
               <div className="coming-soon-media">
                 {project.imgProject && project.imgProject.length > 0 ? (
-                  <img
+                  <Image
                     src={`/Images/Projects/${project.imgProject[0]}.png`}
                     alt={project.title ?? "Project cover"}
+                    width={800}
+                    height={450}
                     className="coming-soon-image"
+                    priority
                   />
                 ) : (
                   <span className="placeholder-text">{comingSoon?.placeholder}</span>

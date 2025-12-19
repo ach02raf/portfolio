@@ -10,12 +10,14 @@ import SkillsSection from "@/C/skillsSection/SkillsSection";
 import ExperienceEducation from "@/component/Experience/ExperienceEducation";
 import Project from "@/component/Project/Project";
 import Citation from "@/C/Citation/citation";
+import FeedbackInvite from "@/component/FeedbackInvite/FeedbackInvite";
 import Blog from "@/component/Blog/Blog";
 import ContactSection from "@/C/contactSection/ContactSection";
 import Footer from "@/C/Footer/Footer";
 import ScrollToTopButton from "@/C/ScrollToTopButton";
 
 import SocialLinks from "@/component/SocialLinks";
+import FeedbackPopup from "@/component/FeedbackPopup/FeedbackPopup";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -51,6 +53,7 @@ export default async function IndexPage({ params: { lang } }: { params: { lang: 
       </section>
 
       <Citation citation={dictionary.citation} />
+      <FeedbackInvite copy={dictionary.feedbackInvite} />
 
       <section id={dictionary.header[6].url}>
         <Blog Blog={dictionary.blog} lang={lang} />
@@ -64,6 +67,14 @@ export default async function IndexPage({ params: { lang } }: { params: { lang: 
 
       <ScrollToTopButton />
       <SocialLinks />
+      <FeedbackPopup
+        translations={dictionary.feedbackPopup}
+        triggerOnScroll={false}
+        triggerOnExitIntent={false}
+        triggerAfterMs={undefined}
+        triggerOnSectionId={dictionary.header[7].url}
+        triggerSectionThreshold={0.35}
+      />
     </div>
   );
 }

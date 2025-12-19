@@ -146,7 +146,10 @@ function FirstSection(props: {
           <div className="row">
             <div className="col">
               <button className="firstSection-button mb-5">
-                <a href={`/cv-${props.cvUrl}.pdf`} download="cv" className="p-4">
+                <a
+                  href={`/cv-${props.cvUrl}.pdf`}
+                  download={`mohamed-achraf-ben-fredj-${props.cvUrl}`}
+                  className="p-4">
                   {props.firstSection.cv}
                 </a>
               </button>
