@@ -2,14 +2,22 @@
 module.exports = {
   siteUrl: "https://ach02raf.pro",
   generateRobotsTxt: true,
+  robotsTxtOptions: {
+    policies: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/api/", "/.next/"],
+      },
+    ],
+  },
   outDir: "docs",
   changefreq: "weekly",
   priority: 0.7,
   trailingSlash: false,
-  // i18n alternates for primary pages
-  alternateRefs: [
-    { href: "https://ach02raf.pro", hreflang: "fr" },
-    { href: "https://ach02raf.pro/en", hreflang: "en" },
-    { href: "https://ach02raf.pro/de", hreflang: "de" },
-  ],
+  // Use Next-sitemap i18n option so xhtml:link and xmlns:xhtml are generated
+  i18n: {
+    locales: ["fr", "en", "de"],
+    defaultLocale: "fr",
+  },
 };

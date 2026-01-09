@@ -1,16 +1,11 @@
-# robots.txt for ach02raf.pro
-# Allow all crawlers
+# *
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /.next/
 
-# Specify sitemap locations for all language versions
+# Host
+Host: https://ach02raf.pro
+
+# Sitemaps
 Sitemap: https://ach02raf.pro/sitemap.xml
-Sitemap: https://ach02raf.pro/sitemap-0.xml
-
-# Crawl delay (optional, in seconds)
-Crawl-delay: 1
-
-# Request rate (optional)
-Request-rate: 1/1s
