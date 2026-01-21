@@ -1,4 +1,4 @@
-export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || "G-905040Q7WL";
+export const GA_MEASUREMENT_ID = "GTM-WBGMXPK6";
 
 type EventParams = {
   category?: string;

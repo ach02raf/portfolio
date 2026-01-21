@@ -5,7 +5,7 @@ import Script from "next/script";
 import ThemeWrapper from "@/component/ThemeWrapper";
 import AnalyticsProvider from "@/component/AnalyticsProvider";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-905040Q7WL";
+const GA_ID = "GTM-WBGMXPK6";
 
 export const metadata: Metadata = {
   title: "ach02raf - Full Stack Developer | Portfolio",
@@ -105,6 +105,15 @@ export default function RootLayout({
   return (
     <html lang={params.lang} suppressHydrationWarning>
       <head>
+        {/* Google Tag Manager (head) */}
+        <Script id="gtm-head" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WBGMXPK6');`}
+        </Script>
+
         {/* Consent Mode default before gtag loads */}
         <script
           id="ga-consent-default"
@@ -165,6 +174,13 @@ export default function RootLayout({
       </head>
 
       <body>
+        {/* Google Tag Manager (noscript) */}
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html:
+              '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBGMXPK6" height="0" width="0" style="display:none;visibility:hidden"></iframe>',
+          }}
+        />
         <ThemeWrapper>
           <Suspense fallback={null}>
             <AnalyticsProvider />

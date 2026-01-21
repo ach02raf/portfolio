@@ -22,22 +22,16 @@ export async function generateStaticParams() {
       ...blogList.map((itemBlog) => ({
         lang: lang?.lang,
         slug: itemBlog?.slug,
-      }))
+      })),
     );
   }
 
   return staticParams;
 }
 
-async function Blog({
-  params: { lang, slug },
-}: {
-  params: { lang: Locale; slug: string };
-}) {
+async function Blog({ params: { lang, slug } }: { params: { lang: Locale; slug: string } }) {
   const dictionary = await getDictionary(lang);
-  const blogContent = dictionary?.blog?.blogList?.find(
-    (itemBlog) => itemBlog?.slug === slug
-  );
+  const blogContent = dictionary?.blog?.blogList?.find((itemBlog) => itemBlog?.slug === slug);
 
   return (
     <div className="blog m-0">
@@ -74,6 +68,26 @@ async function Blog({
       <ScrollToTopButton />
     </div>
   );
+}
+
+export async function generateMetadata({
+  params: { lang, slug },
+}: {
+  params: { lang: Locale; slug: string };
+}) {
+  const dictionary = await getDictionary(lang);
+  const blogContent = dictionary?.blog?.blogList?.find((itemBlog) => itemBlog?.slug === slug);
+  const title = blogContent?.title || dictionary?.blog?.title || "Blog - ach02raf";
+  const description = blogContent?.desc?.[0]?.description || "Blog post";
+  const image = blogContent?.img
+    ? `https://ach02raf.pro/Images/${blogContent.img}.jpg`
+    : "https://ach02raf.pro/Images/ach02raf1.png";
+
+  return {
+    title,
+    description,
+    openGraph: { title, description, images: [image] },
+  };
 }
 
 export default Blog;

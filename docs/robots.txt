@@ -1,11 +1,3 @@
-# *
-User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /.next/
-
-# Host
-Host: https://ach02raf.pro
-
-# Sitemaps
+# Specify sitemap locations for all language versions
 Sitemap: https://ach02raf.pro/sitemap.xml
+Sitemap: https://ach02raf.pro/sitemap-0.xml

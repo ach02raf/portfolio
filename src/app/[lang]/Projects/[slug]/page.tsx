@@ -20,21 +20,17 @@ export async function generateStaticParams() {
       ...ProjectList.map((item) => ({
         lang: lang?.lang,
         slug: item?.slug,
-      }))
+      })),
     );
   }
 
   return staticParams;
 }
 
-async function Blog({
-  params: { lang, slug },
-}: {
-  params: { lang: Locale; slug: string };
-}) {
+async function Blog({ params: { lang, slug } }: { params: { lang: Locale; slug: string } }) {
   const dictionary = await getDictionary(lang);
   const ItemsProject = await dictionary?.Project.list.find(
-    (itemProject) => itemProject.slug === slug
+    (itemProject) => itemProject.slug === slug,
   );
 
   return (
@@ -51,6 +47,24 @@ async function Blog({
       <ScrollToTopButton />
     </div>
   );
+}
+
+export async function generateMetadata({
+  params: { lang, slug },
+}: {
+  params: { lang: Locale; slug: string };
+}) {
+  const dictionary = await getDictionary(lang);
+  const ItemsProject = await dictionary?.Project?.list?.find(
+    (itemProject) => itemProject?.slug === slug,
+  );
+  const title = ItemsProject?.title || "Project - ach02raf";
+  const description = ItemsProject?.description || "Project details";
+  const image = ItemsProject?.imgProject
+    ? `https://ach02raf.pro/Images/${ItemsProject.imgProject}.jpg`
+    : "https://ach02raf.pro/Images/ach02raf1.png";
+
+  return { title, description, openGraph: { title, description, images: [image] } };
 }
 
 export default Blog;
