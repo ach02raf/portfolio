@@ -1,4 +1,4 @@
-export const GA_MEASUREMENT_ID = "GTM-WBGMXPK6";
+export const GA_MEASUREMENT_ID = "G-G67M26FKKV";
 
 type EventParams = {
   category?: string;
