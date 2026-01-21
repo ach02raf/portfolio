@@ -5,7 +5,7 @@ import Script from "next/script";
 import ThemeWrapper from "@/component/ThemeWrapper";
 import AnalyticsProvider from "@/component/AnalyticsProvider";
 
-const GA_ID = "G-G67M26FKKV";
+const GA_ID = "G-905040Q7WL";
 
 export const metadata: Metadata = {
   title: "ach02raf - Full Stack Developer | Portfolio",
