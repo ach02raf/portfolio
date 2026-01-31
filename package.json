@@ -18,7 +18,7 @@
     "bootstrap": "^5.3.2",
     "framer-motion": "^12.23.25",
     "negotiator": "^0.6.3",
-    "next": "^14.2.33",
+    "next": "^16.1.6",
     "next-themes": "^0.4.6",
     "react": "^18",
     "react-dom": "^18",
