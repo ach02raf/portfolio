@@ -20,18 +20,6 @@
     max-height: none;
   }
 
-  /* Snow container inside first section */
-  &-snow-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 0; /* Behind all content */
-    overflow: hidden;
-  }
-
   /* overlay to create depth and better text contrast */
   &::before {
     content: "";
@@ -59,7 +47,7 @@
   &-div {
     width: 80%;
     position: relative;
-    z-index: 2; /* above snow and overlay */
+    z-index: 2; /* above the overlay */
   }
 
   & h2 {
