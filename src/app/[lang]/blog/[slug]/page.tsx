@@ -1,93 +1,101 @@
+import { translatedPaths } from "@/lib/locale-routes";
 import Image from "next/image";
-import { getDictionary } from "../../../../../get-dictionary";
-import { Locale } from "../../../../../i18n-config";
-import { i18n } from "../../../../../i18n-config";
-import "./page.scss";
-import ScrollToTopButton from "@/component/ScrollToTopButton";
-import Footer from "@/component/Footer/Footer";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
-
+import { notFound } from "next/navigation";
+import { getDictionary } from "../../../../../get-dictionary";
+import { i18n, type Locale } from "../../../../../i18n-config";
+import Header from "@/component/Header/Header";
+import Footer from "@/component/portfolio/Footer";
 export const dynamicParams = false;
-
 export async function generateStaticParams() {
-  const languages = i18n.locales.map((locale) => ({ lang: locale }));
-  const staticParams = [];
-
-  for (const lang of languages) {
-    const dictionary = await getDictionary(lang.lang);
-    const blogList = dictionary?.blog?.blogList || [];
-    staticParams.push(
-      ...blogList.map((itemBlog) => ({
-        lang: lang?.lang,
-        slug: itemBlog?.slug,
-      })),
-    );
-  }
-
-  return staticParams;
-}
-
-async function Blog({ params: { lang, slug } }: { params: { lang: Locale; slug: string } }) {
-  const dictionary = await getDictionary(lang);
-  const blogContent = dictionary?.blog?.blogList?.find((itemBlog) => itemBlog?.slug === slug);
-
   return (
-    <div className="blog m-0">
-      <div className="blog-contain d-block mx-auto py-5">
-        <div>
-          <Link
-            href={`/${lang}#${dictionary.header[5].name}`}
-            className="blog-contain-backHome my-3">
-            <FontAwesomeIcon
-              className="project-details-contain-backHome-icon"
-              icon={faArrowAltCircleLeft}
-            />
-          </Link>
-        </div>
-        <div className="blog-contain-img position-relative">
-          <Image
-            src={`/Images/${blogContent?.img}.jpg`}
-            alt="blog"
-            title={blogContent?.titleImg}
-            width={1920}
-            height={600}
-          />
-        </div>
-        <h1 className="py-3 text-center">{blogContent?.title}</h1>
-
-        {blogContent?.desc?.map((item, index) => (
-          <div key={index}>
-            <h2>{item?.title}</h2>
-            <p>{item?.description}</p>
-          </div>
-        ))}
-      </div>
-      <Footer Footer={dictionary.Footer} />
-      <ScrollToTopButton />
-    </div>
-  );
+    await Promise.all(
+      i18n.locales.map(async (lang) =>
+        (await getDictionary(lang)).blog.blogList.map((post) => ({
+          lang,
+          slug: post.slug,
+        })),
+      ),
+    )
+  ).flat();
 }
-
 export async function generateMetadata({
   params: { lang, slug },
 }: {
   params: { lang: Locale; slug: string };
 }) {
-  const dictionary = await getDictionary(lang);
-  const blogContent = dictionary?.blog?.blogList?.find((itemBlog) => itemBlog?.slug === slug);
-  const title = blogContent?.title || dictionary?.blog?.title || "Blog - ach02raf";
-  const description = blogContent?.desc?.[0]?.description || "Blog post";
-  const image = blogContent?.img
-    ? `https://ach02raf.pro/Images/${blogContent.img}.jpg`
-    : "https://ach02raf.pro/Images/ach02raf1.png";
-
+  const d = await getDictionary(lang);
+  const post = d.blog.blogList.find((post) => post.slug === slug);
+  if (!post) notFound();
+  const alternates = await translatedPaths("article", post.id);
   return {
-    title,
-    description,
-    openGraph: { title, description, images: [image] },
+    title: `${post.title} — ach02raf`,
+    description: post.desc[0]?.description,
+    alternates: { canonical: alternates[lang], languages: alternates },
+    openGraph: {
+      title: post.title,
+      description: post.desc[0]?.description,
+      images: [`/media/${post.img}.webp`],
+    },
   };
 }
-
-export default Blog;
+export default async function Article({
+  params: { lang, slug },
+}: {
+  params: { lang: Locale; slug: string };
+}) {
+  const d = await getDictionary(lang);
+  const ui = d.engineering;
+  const post = d.blog.blogList.find((post) => post.slug === slug);
+  if (!post) notFound();
+  const alternatePaths = await translatedPaths("article", post.id);
+  const minutes = Math.max(
+    1,
+    Math.ceil(
+      post.desc
+        .map((part) => part.description)
+        .join(" ")
+        .split(/\s+/).length / 200,
+    ),
+  );
+  return (
+    <>
+      <Header lang={lang} labels={ui.nav} alternatePaths={alternatePaths} />
+      <main id="main-content" tabIndex={-1} className="shell article-page">
+        <Link className="back-link" href={`/${lang}/blog`}>
+          <span aria-hidden="true">←</span>
+          {ui.backWriting}
+        </Link>
+        <article>
+          <header className="article-header">
+            <p className="eyebrow">
+              {d.blog.category} <span aria-hidden="true">/</span> {minutes}{" "}
+              {ui.readTime}
+            </p>
+            <h1>{post.title}</h1>
+            <p>Mohamed Achraf Ben Fredj</p>
+          </header>
+          <div className="article-cover">
+            <Image
+              src={`/media/${post.img}.webp`}
+              alt={post.titleImg}
+              width={1200}
+              height={750}
+              sizes="(max-width: 1100px) 100vw, 1100px"
+              priority
+            />
+          </div>
+          <div className="article-body">
+            {post.desc.map((part, index) => (
+              <section key={index}>
+                <h2>{part.title}</h2>
+                <p>{part.description}</p>
+              </section>
+            ))}
+          </div>
+        </article>
+      </main>
+      <Footer lang={lang} note={ui.footer} />
+    </>
+  );
+}

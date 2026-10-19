@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next-sitemap && node scripts/sync-docs.mjs",
     "start": "next start",
     "lint": "next lint",
-    "sitemap": "next-sitemap"
+    "sitemap": "next-sitemap",
+    "prepare:media": "node scripts/prepare-media.mjs",
+    "check:export": "node scripts/check-export.mjs"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.2",
@@ -41,6 +43,11 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.2",
     "next-sitemap": "^4.2.3",
+    "sharp": "0.34.5",
     "typescript": "^5"
+  },
+  "packageManager": "npm@11.9.0",
+  "engines": {
+    "node": ">=22"
   }
 }

@@ -1,3 +1,10 @@
-# Specify sitemap locations for all language versions
+# *
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Host
+Host: https://ach02raf.pro
+
+# Sitemaps
 Sitemap: https://ach02raf.pro/sitemap.xml
-Sitemap: https://ach02raf.pro/sitemap-0.xml

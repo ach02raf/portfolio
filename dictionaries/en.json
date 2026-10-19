@@ -1250,5 +1250,130 @@
     "title": "Could you help me with your advice?",
     "text": "Your feedback helps me improve this portfolio. If you have a suggestion or a tiny idea, I’m all ears!",
     "button": "Share your advice"
+  },
+  "engineering": {
+    "nav": {
+      "work": "Work",
+      "experience": "Experience",
+      "about": "About",
+      "contact": "Let’s talk",
+      "writing": "Writing",
+      "menu": "Open navigation",
+      "close": "Close navigation",
+      "theme": "Change color theme",
+      "language": "Language",
+      "home": "Home",
+      "skip": "Skip to content"
+    },
+    "role": "Software engineer · Tunis, Tunisia",
+    "heroTitle": "Thoughtful software.",
+    "heroAccent": "From idea to production.",
+    "heroDescription": "I’m Mohamed Achraf Ben Fredj. I build full-stack web and mobile applications, connecting intuitive interfaces with the systems behind them.",
+    "viewWork": "Explore my work",
+    "cv": "Download CV",
+    "portraitCaption": "Interfaces. Systems. Everything in between.",
+    "focusLabel": "My focus",
+    "focus": [
+      "Web & mobile development",
+      "Full-stack architecture",
+      "CI/CD & infrastructure"
+    ],
+    "workEyebrow": "01 / Selected work",
+    "workTitle": "Engineering, in practice.",
+    "workIntro": "A closer look at the applications I’ve built, the problems they solve, and the technology behind them.",
+    "caseStudy": "Explore case study",
+    "allProjects": "More projects",
+    "otherWork": "A broader collection of web, mobile, and client work.",
+    "inProgress": "In development",
+    "experienceEyebrow": "02 / Experience",
+    "experienceTitle": "Built on real experience.",
+    "experienceIntro": "From internships to freelance projects, learning by shipping useful software.",
+    "education": "Education",
+    "earlier": "Earlier experience",
+    "aboutEyebrow": "03 / About & capabilities",
+    "aboutTitle": "The whole picture matters.",
+    "aboutText": "I’m a computer engineering graduate of TEK-UP, with a computer science degree from ISIMM. I enjoy working across the product: shaping an interface, designing an API, and making deployment repeatable.",
+    "aboutText2": "My work spans organizational platforms, healthcare, travel, and client websites. I care about clear interfaces, maintainable code, and understanding how the pieces fit together.",
+    "capabilities": [
+      {
+        "title": "Interfaces that make sense",
+        "description": "Responsive web experiences and mobile applications, with usability at the center.",
+        "tools": [
+          "React",
+          "Next.js",
+          "Angular",
+          "React Native",
+          "TypeScript"
+        ]
+      },
+      {
+        "title": "Systems that connect",
+        "description": "APIs, real-time communication, and data models that support the product.",
+        "tools": [
+          "Node.js",
+          "Express",
+          "Spring Boot",
+          "MySQL",
+          "MongoDB"
+        ]
+      },
+      {
+        "title": "Delivery with intention",
+        "description": "Repeatable builds, containerized applications, and visibility into running systems.",
+        "tools": [
+          "Docker",
+          "Jenkins",
+          "Kubernetes",
+          "SonarQube",
+          "Grafana"
+        ]
+      }
+    ],
+    "writingEyebrow": "04 / Notes on engineering",
+    "writingTitle": "A little thinking out loud.",
+    "writingIntro": "Notes on architecture, performance, and building better software.",
+    "allWriting": "All articles",
+    "readArticle": "Read article",
+    "contactEyebrow": "05 / Get in touch",
+    "contactTitle": "Have something in mind?",
+    "contactDescription": "For an engineering opportunity, a project, or a conversation about software — my inbox is open.",
+    "emailLabel": "Send me an email",
+    "location": "Based in Tunis, Tunisia",
+    "footer": "Built with care. Designed to keep things clear.",
+    "backWork": "Back to selected work",
+    "overview": "The project",
+    "implementation": "What it does",
+    "stack": "The technology",
+    "delivery": "How it ships",
+    "walkthrough": "Product walkthrough",
+    "screenshots": "A closer look",
+    "openSite": "Open website",
+    "source": "Source code",
+    "download": "Download app",
+    "nextProject": "Next project",
+    "backWriting": "Back to writing",
+    "projectNote": "Project context",
+    "caseIntro": "A look at the product, its capabilities, and the implementation behind it.",
+    "demoAccount": "Demo account",
+    "demoPassword": "Password",
+    "readTime": "min read",
+    "decision": "Engineering focus",
+    "projectContext": {
+      "communic-flow": {
+        "role": "Final-year engineering project · ASQII",
+        "focus": "Connecting organizational workflows with real-time communication and a repeatable delivery pipeline.",
+        "summary": "A centralized platform for institutional communication, role-based access, and coordination across organizations."
+      },
+      "allo-doctor": {
+        "role": "Final-year project · COSO-FT IT",
+        "focus": "Connecting a mobile experience with a shared API for medical appointment workflows.",
+        "summary": "A web and mobile application that connects patients and healthcare professionals for medical appointments."
+      },
+      "gotrip": {
+        "role": "Web & mobile application",
+        "focus": "Making a travel application work across a mobile interface and a shared backend.",
+        "summary": "A travel application built with Ionic, Express, and MongoDB."
+      }
+    }
   }
 }

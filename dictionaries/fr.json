@@ -1248,5 +1248,130 @@
     "title": "Vous pourriez m’aider avec votre avis ?",
     "text": "Vos retours m’aident à améliorer ce portfolio. Si vous avez une suggestion ou une petite idée, je suis preneur !",
     "button": "Partager un avis"
+  },
+  "engineering": {
+    "nav": {
+      "work": "Projets",
+      "experience": "Parcours",
+      "about": "À propos",
+      "contact": "Discutons",
+      "writing": "Articles",
+      "menu": "Ouvrir la navigation",
+      "close": "Fermer la navigation",
+      "theme": "Changer de thème",
+      "language": "Langue",
+      "home": "Accueil",
+      "skip": "Aller au contenu"
+    },
+    "role": "Ingénieur logiciel · Tunis, Tunisie",
+    "heroTitle": "Des logiciels bien pensés.",
+    "heroAccent": "De l’idée à la production.",
+    "heroDescription": "Je suis Mohamed Achraf Ben Fredj. Je développe des applications web et mobiles complètes, en reliant des interfaces intuitives aux systèmes qui les font fonctionner.",
+    "viewWork": "Découvrir mes projets",
+    "cv": "Télécharger mon CV",
+    "portraitCaption": "Interfaces. Systèmes. Et tout ce qui les relie.",
+    "focusLabel": "Mes domaines",
+    "focus": [
+      "Développement web & mobile",
+      "Architecture full-stack",
+      "CI/CD & infrastructure"
+    ],
+    "workEyebrow": "01 / Projets sélectionnés",
+    "workTitle": "L’ingénierie, en pratique.",
+    "workIntro": "Les applications que j’ai développées, les besoins auxquels elles répondent et les technologies qui les font fonctionner.",
+    "caseStudy": "Explorer le projet",
+    "allProjects": "Autres projets",
+    "otherWork": "Une sélection plus large de projets web, mobiles et clients.",
+    "inProgress": "En développement",
+    "experienceEyebrow": "02 / Parcours",
+    "experienceTitle": "L’expérience du terrain.",
+    "experienceIntro": "Des stages aux projets freelance, apprendre en livrant des logiciels utiles.",
+    "education": "Formation",
+    "earlier": "Expériences précédentes",
+    "aboutEyebrow": "03 / À propos & compétences",
+    "aboutTitle": "Comprendre l’ensemble.",
+    "aboutText": "Ingénieur diplômé de TEK-UP et titulaire d’une licence en informatique de l’ISIMM, j’aime intervenir sur l’ensemble du produit : concevoir une interface, développer une API et rendre le déploiement reproductible.",
+    "aboutText2": "Mes projets touchent à la communication institutionnelle, à la santé, au voyage et aux sites clients. Je privilégie les interfaces claires, le code maintenable et la cohérence entre les composants.",
+    "capabilities": [
+      {
+        "title": "Des interfaces intuitives",
+        "description": "Des expériences web responsives et des applications mobiles centrées sur l’usage.",
+        "tools": [
+          "React",
+          "Next.js",
+          "Angular",
+          "React Native",
+          "TypeScript"
+        ]
+      },
+      {
+        "title": "Des systèmes connectés",
+        "description": "Des API, des échanges en temps réel et des modèles de données adaptés au produit.",
+        "tools": [
+          "Node.js",
+          "Express",
+          "Spring Boot",
+          "MySQL",
+          "MongoDB"
+        ]
+      },
+      {
+        "title": "Une livraison maîtrisée",
+        "description": "Des builds reproductibles, des applications conteneurisées et des systèmes observables.",
+        "tools": [
+          "Docker",
+          "Jenkins",
+          "Kubernetes",
+          "SonarQube",
+          "Grafana"
+        ]
+      }
+    ],
+    "writingEyebrow": "04 / Notes d’ingénierie",
+    "writingTitle": "Quelques réflexions, partagées.",
+    "writingIntro": "Des notes sur l’architecture, la performance et la conception logicielle.",
+    "allWriting": "Tous les articles",
+    "readArticle": "Lire l’article",
+    "contactEyebrow": "05 / Contact",
+    "contactTitle": "Une idée en tête ?",
+    "contactDescription": "Pour une opportunité, un projet ou une discussion autour du logiciel : échangeons.",
+    "emailLabel": "Envoyez-moi un email",
+    "location": "Basé à Tunis, Tunisie",
+    "footer": "Conçu avec soin. Pensé pour la clarté.",
+    "backWork": "Retour aux projets",
+    "overview": "Le projet",
+    "implementation": "Les fonctionnalités",
+    "stack": "Les technologies",
+    "delivery": "La mise en production",
+    "walkthrough": "Démonstration du produit",
+    "screenshots": "En images",
+    "openSite": "Voir le site",
+    "source": "Code source",
+    "download": "Télécharger l’application",
+    "nextProject": "Projet suivant",
+    "backWriting": "Retour aux articles",
+    "projectNote": "Contexte du projet",
+    "caseIntro": "Le produit, ses fonctionnalités et les choix de mise en œuvre.",
+    "demoAccount": "Compte de démonstration",
+    "demoPassword": "Mot de passe",
+    "readTime": "min de lecture",
+    "decision": "Focus technique",
+    "projectContext": {
+      "communic-flow": {
+        "role": "Projet de fin d’études · ASQII",
+        "focus": "Relier les processus des organisations à la communication en temps réel et à une chaîne de livraison reproductible.",
+        "summary": "Une plateforme centralisée de communication institutionnelle, de gestion des accès et de coordination entre organisations."
+      },
+      "allo-doctor": {
+        "role": "Projet de fin d’études · COSO-FT IT",
+        "focus": "Relier une expérience mobile à une API commune pour la gestion des rendez-vous médicaux.",
+        "summary": "Une application web et mobile qui met en relation patients et professionnels de santé pour les rendez-vous médicaux."
+      },
+      "gotrip": {
+        "role": "Application web & mobile",
+        "focus": "Relier une interface mobile de voyage à un backend commun.",
+        "summary": "Une application de voyage développée avec Ionic, Express et MongoDB."
+      }
+    }
   }
 }
