@@ -1,67 +1,53 @@
-import Image from "next/image";
-import Link from "next/link";
 import { getDictionary } from "../../../../get-dictionary";
-import { i18n, type Locale } from "../../../../i18n-config";
-import Header from "@/component/Header/Header";
-import Footer from "@/component/portfolio/Footer";
-import { Arrow } from "@/component/portfolio/Icons";
-import { routeMetadata } from "@/lib/portfolio";
-export function generateStaticParams() {
-  return i18n.locales.map((lang) => ({ lang }));
+import { Locale } from "../../../../i18n-config";
+import { i18n } from "../../../../i18n-config";
+import ScrollToTopButton from "@/C/ScrollToTopButton";
+import Footer from "@/C/Footer/Footer";
+import Image from "next/image";
+import "./page.scss";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
+export async function generateStaticParams() {
+  return i18n.locales.map((locale) => ({ lang: locale }));
 }
-export async function generateMetadata({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
-  const { engineering: ui } = await getDictionary(lang);
-  return {
-    title: `${ui.nav.writing} — Mohamed Achraf Ben Fredj`,
-    description: ui.writingIntro,
-    alternates: routeMetadata(lang, "/blog"),
-  };
-}
-export default async function Writing({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
-  const d = await getDictionary(lang);
-  const ui = d.engineering;
+export default async function page({ params: { lang } }: { params: { lang: Locale } }) {
+  const dictionary = await getDictionary(lang);
   return (
-    <>
-      <Header lang={lang} labels={ui.nav} />
-      <main id="main-content" tabIndex={-1} className="shell writing-index">
-        <header className="page-heading">
-          <p className="eyebrow">{ui.writingEyebrow}</p>
-          <h1>{ui.writingTitle}</h1>
-          <p>{ui.writingIntro}</p>
-        </header>
-        <div className="writing-grid">
-          {d.blog.blogList.map((post) => (
-            <article className="writing-card" key={post.slug}>
-              <Link href={`/${lang}/blog/${post.slug}`}>
-                <div className="writing-image">
+    <div className="all-blog">
+      <div className=" all-blog-contain d-block m-auto">
+        <div>
+          <Link
+            href={`/${lang}#${dictionary.header[5].name}`}
+            className="all-blog-contain-backHome my-3">
+            <FontAwesomeIcon
+              className="project-details-contain-backHome-icon"
+              icon={faArrowAltCircleLeft}
+            />
+          </Link>
+        </div>
+        <h1 className="py-5">{dictionary?.blog?.title}</h1>
+        <div className="row">
+          {dictionary?.blog?.blogList?.map((item, index) => (
+            <div className="col-lg-4" key={index}>
+              <Link href={`/${lang}/blog/${item?.slug}`}>
+                <div className="all-blog-contain-img position-relative">
                   <Image
-                    src={`/media/${post.img}.webp`}
-                    alt=""
-                    width={768}
-                    height={480}
-                    sizes="(max-width: 760px) 100vw, 33vw"
+                    src={`/Images/${item?.img}.jpg`}
+                    alt="blog"
+                    title={item?.titleImg}
+                    width={920}
+                    height={600}
                   />
                 </div>
-                <p className="eyebrow">{d.blog.category}</p>
-                <h2>{post.title}</h2>
-                <span className="text-link">
-                  {ui.readArticle}
-                  <Arrow diagonal />
-                </span>
+                <h2 className="py-3">{item?.title}</h2>{" "}
               </Link>
-            </article>
+            </div>
           ))}
         </div>
-      </main>
-      <Footer lang={lang} note={ui.footer} />
-    </>
+      </div>
+      <Footer Footer={dictionary.Footer} />
+      <ScrollToTopButton />
+    </div>
   );
 }
