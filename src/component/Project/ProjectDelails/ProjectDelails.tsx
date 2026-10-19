@@ -72,6 +72,12 @@ type Props = {
   backToHome: string;
 };
 
+function TechnologyIcon({ name }: { name: string }) {
+  const filename = name.toUpperCase();
+  if (filename === "POSTGRESQL") return <span className="technology-label">PostgreSQL</span>;
+  return <Image src={`/Images/optimized/icon-${filename}.webp`} alt={name} title={name} height={100} width={100} />;
+}
+
 const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => {
   const project = ItemsProject;
 
@@ -149,7 +155,7 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
                     ? "col-xl-4 col-12 py-xl-0 py-3"
                     : "col-12"
                 }>
-                <video width="100%" height="300px" controls loop autoPlay muted>
+                <video width="100%" height="300px" controls playsInline preload="none" aria-label={project.nameProject}>
                   <source src={`/${project.videoProject}.mp4`} type="video/mp4" />
                 </video>
               </div>
@@ -188,13 +194,7 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
                   <div className="row">
                     {project.tools?.map((tool, i) => (
                       <div className="col-xl-3 col-4" key={i}>
-                        <Image
-                          src={`/Images/Icons/${tool}.png`}
-                          alt={tool}
-                          title={tool}
-                          height={100}
-                          width={100}
-                        />
+                        <TechnologyIcon name={tool} />
                       </div>
                     ))}
                   </div>
@@ -206,13 +206,7 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
                     <div className="row">
                       {project?.technologies?.Developpement?.map((tech, i) => (
                         <div className="col-xl-3 col-4" key={i}>
-                          <Image
-                            src={`/Images/Icons/${tech}.png`}
-                            alt={tech}
-                            title={tech}
-                            height={100}
-                            width={100}
-                          />
+                          <TechnologyIcon name={tech} />
                         </div>
                       ))}
                     </div>
@@ -221,13 +215,7 @@ const ProjectDetails: React.FC<Props> = ({ ItemsProject, lang, backToHome }) => 
                     <div className="row">
                       {project.technologies.DevOps.map((tech, i) => (
                         <div className="col-xl-3 col-4" key={i}>
-                          <Image
-                            src={`/Images/Icons/${tech}.png`}
-                            alt={tech}
-                            title={tech}
-                            height={100}
-                            width={100}
-                          />
+                          <TechnologyIcon name={tech} />
                         </div>
                       ))}
                     </div>

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import "./firstSection.scss";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 // Hook to detect mobile viewport
@@ -21,15 +21,24 @@ function useIsMobile() {
   return isMobile;
 }
 
+// Keep the server and first client render identical before reading media preferences.
+function useClientReducedMotion() {
+  const requested = useReducedMotion();
+  const [reduceMotion, setReduceMotion] = useState(false);
+  useEffect(() => setReduceMotion(Boolean(requested)), [requested]);
+  return reduceMotion;
+}
+
 function AnimatedText({ text, isMobile }: { text: string; isMobile: boolean }) {
-  const [displayText, setDisplayText] = useState(isMobile ? text : "");
+  const reduceMotion = useClientReducedMotion();
+  const [displayText, setDisplayText] = useState(text);
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   useEffect(() => {
     // On mobile, show full text immediately - no typewriter
-    if (isMobile) {
+    if (isMobile || reduceMotion) {
       setDisplayText(text);
       return;
     }
@@ -57,43 +66,17 @@ function AnimatedText({ text, isMobile }: { text: string; isMobile: boolean }) {
     }
 
     return () => clearTimeout(timer);
-  }, [displayText, isDeleting, text, typingSpeed, loopNum, isMobile]);
+  }, [displayText, isDeleting, text, typingSpeed, loopNum, isMobile, reduceMotion]);
 
-  // Mobile: word-by-word animation with full text visible
-  if (isMobile) {
-    const words = text.split(" ");
-    return (
-      <span className="animated-text">
-        {words.map((word, index) => (
-          <motion.span
-            key={index}
-            initial={{ opacity: 0, filter: "blur(8px)" }}
-            animate={{
-              opacity: [0, 1, 1, 0.85, 1],
-              filter: ["blur(8px)", "blur(0px)", "blur(0px)", "blur(0px)", "blur(0px)"],
-              y: [0, 0, -2, 0, -2, 0],
-            }}
-            transition={{
-              duration: 3,
-              delay: index * 0.08,
-              ease: "easeInOut",
-              repeat: Infinity,
-              repeatDelay: 0.5,
-            }}
-            style={{ display: "inline-block", marginRight: "0.3em" }}>
-            {word}
-          </motion.span>
-        ))}
-      </span>
-    );
-  }
+  // Preserve desktop typing; mobile and reduced-motion users get stable text.
+  if (isMobile || reduceMotion) return <span className="animated-text">{text}</span>;
 
   return (
     <motion.span
-      initial={{ opacity: 0 }}
+      initial={false}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
-      className="animated-text">
+      className="animated-text" aria-hidden="true">
       {displayText}
       <motion.span
         animate={{ opacity: [1, 0, 1] }}
@@ -116,34 +99,36 @@ function FirstSection(props: {
 }) {
   const name = props.firstSection.name.split(" ");
   const isMobile = useIsMobile();
+  const reduceMotion = useClientReducedMotion();
 
   return (
     <div className="row m-0 firstSection w-100">
       <div className="col-lg-7 d-block m-auto ">
         <div className="firstSection-div m-auto">
-          <motion.h2
-            initial={isMobile ? { opacity: 0, y: 30, scale: 0.95 } : { opacity: 0, x: -30 }}
+          <motion.h1
+            initial={false}
             animate={isMobile ? { opacity: 1, y: 0, scale: 1 } : { opacity: 1, x: 0 }}
             transition={
               isMobile
                 ? { duration: 0.8, ease: [0.25, 0.1, 0.25, 1] as any }
                 : { duration: 0.6, ease: "easeOut" }
             }>
-            {name[0] + " " + name[1] + " "} <span>{name[2] + " " + name[3]}</span>
-          </motion.h2>
-          <h2 className="firstSection-Typewriter">
+            {name[0] + " " + name[1] + " "} <span>{name.slice(2).join(" ").replace(/,$/, "")}</span>
+          </motion.h1>
+          <p className="firstSection-Typewriter">
+            {!isMobile && !reduceMotion && <span className="visually-hidden">{props.firstSection.description.join(" ")}</span>}
             <AnimatedText text={`${props.firstSection.description}`} isMobile={isMobile} />
-          </h2>
+          </p>
           <div className="row">
             <div className="col">
-              <button className="firstSection-button mb-5">
+              <div className="firstSection-button mb-5">
                 <a
                   href={`/cv-${props.cvUrl}.pdf`}
                   download={`mohamed-achraf-ben-fredj-${props.cvUrl}`}
                   className="p-4">
                   {props.firstSection.cv}
                 </a>
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -152,9 +137,11 @@ function FirstSection(props: {
         <Image
           width={416}
           height={599}
-          src={"/Images/profile.png"}
+          src={"/Images/optimized/profile.webp"}
           alt="BEN FREDJ Mohamed Achraf"
           title="BEN FREDJ Mohamed Achraf"
+          priority
+          sizes="(max-width: 991px) 100vw, 42vw"
         />
       </div>
     </div>

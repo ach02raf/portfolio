@@ -38,7 +38,7 @@ async function Blog({ params: { lang, slug } }: { params: { lang: Locale; slug: 
       <div className="blog-contain d-block mx-auto py-5">
         <div>
           <Link
-            href={`/${lang}#${dictionary.header[5].name}`}
+            href={`/${lang}#${dictionary.header[6].url}`}
             className="blog-contain-backHome my-3">
             <FontAwesomeIcon
               className="project-details-contain-backHome-icon"

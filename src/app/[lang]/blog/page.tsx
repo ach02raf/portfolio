@@ -18,7 +18,7 @@ export default async function page({ params: { lang } }: { params: { lang: Local
       <div className=" all-blog-contain d-block m-auto">
         <div>
           <Link
-            href={`/${lang}#${dictionary.header[5].name}`}
+            href={`/${lang}#${dictionary.header[6].url}`}
             className="all-blog-contain-backHome my-3">
             <FontAwesomeIcon
               className="project-details-contain-backHome-icon"

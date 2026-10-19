@@ -9,13 +9,13 @@ function Loading() {
   useEffect(() => {
     const t = setTimeout(() => {
       setLoading(true);
-    }, 1500);
+    }, 0);
     return () => clearTimeout(t);
   }, []);
 
   useEffect(() => {
     if (loading === true) {
-      route.push("/fr");
+      route.replace("/fr");
     }
   }, [loading, route]);
   return <div className="loader"></div>;

@@ -28,7 +28,8 @@ export default async function IndexPage({ params: { lang } }: { params: { lang: 
 
   return (
     <div className="container-fluid gx-0 contain position-relative">
-      <Header header={dictionary.header} />
+      <Header header={dictionary.header} lang={lang} />
+      <main id="main-content" tabIndex={-1}>
       <section id={dictionary.header[0].url}>
         <FirstSection firstSection={dictionary.firstSection} cvUrl={lang} />
       </section>
@@ -63,6 +64,7 @@ export default async function IndexPage({ params: { lang } }: { params: { lang: 
         <ContactSection contactSection={dictionary.contactSection} />
       </section>
 
+      </main>
       <Footer Footer={dictionary.Footer} />
 
       <ScrollToTopButton />

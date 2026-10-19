@@ -202,3 +202,8 @@
     height: 32px;
   }
 }
+
+.technology-label {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 100px; color: $white; text-align: center; font-size: 0.8rem;
+}

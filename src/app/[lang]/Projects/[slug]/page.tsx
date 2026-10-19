@@ -59,9 +59,9 @@ export async function generateMetadata({
     (itemProject) => itemProject?.slug === slug,
   );
   const title = ItemsProject?.title || "Project - ach02raf";
-  const description = ItemsProject?.description || "Project details";
-  const image = ItemsProject?.imgProject
-    ? `https://ach02raf.pro/Images/${ItemsProject.imgProject}.jpg`
+  const description = ItemsProject?.descProject || "Project details";
+  const image = ItemsProject?.imgProject?.[0]
+    ? `https://ach02raf.pro/Images/${ItemsProject.imgProject[0]}.png`
     : "https://ach02raf.pro/Images/ach02raf1.png";
 
   return { title, description, openGraph: { title, description, images: [image] } };

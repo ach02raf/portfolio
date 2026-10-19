@@ -330,3 +330,9 @@ Replace `<owner>/<repo>` with your GitHub org/repo name:
 - 🔗 Follow for updates
 
 **Happy coding! 🚀**
+
+### Optimized existing artwork
+
+The original design and media are retained. Compressed copies used by the hero and technology icons live in `public/Images/optimized`; regenerate them with `python3 scripts/optimize-images.py` (Python with Pillow required). Portrait and icon copies use lossless WebP. The hero background uses WebP at the original dimensions. The video poster is an actual frame from the existing Communic Flow demo; videos load when played.
+
+Montserrat remains the site font and is now hosted locally in `public/fonts`, sourced from `@fontsource-variable/montserrat` 5.3.0. Its OFL license is included there.

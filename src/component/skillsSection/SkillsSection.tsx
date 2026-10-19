@@ -36,7 +36,7 @@ function SkillsSection(props: {
                       key={index}>
                       <div className="position-relative skillsSection-image">
                         <Image
-                          src={`/Images/Icons/${listeLangage}.png`}
+                          src={`/Images/optimized/icon-${listeLangage}.webp`}
                           alt={listeLangage}
                           title={listeLangage}
                           height={512}

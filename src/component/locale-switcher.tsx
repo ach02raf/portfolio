@@ -27,7 +27,10 @@ export default function LocaleSwitcher() {
           <li className="lang-switcher-li px-2" key={locale}>
             <Link
               className="lang-switcher-li-a text-decoration-none"
-              href={redirectedPathName(locale)}>
+              href={redirectedPathName(locale)}
+              hrefLang={locale}
+              aria-label={({ en: "English", fr: "Français", de: "Deutsch" })[locale]}
+              aria-current={isActive ? "true" : undefined}>
               <motion.div
                 className={`lang-switcher-icon ${isActive ? "active-lang" : ""}`}
                 whileHover={{ scale: 1.2 }}>

@@ -6,10 +6,11 @@ import { useTheme } from "next-themes";
 
 interface ThemeButtonProps {
   className?: string;
+  label?: string;
 }
 
-const ThemeButton: React.FC<ThemeButtonProps> = ({ className = "" }) => {
-  const { theme, setTheme } = useTheme();
+const ThemeButton: React.FC<ThemeButtonProps> = ({ className = "", label = "Toggle theme" }) => {
+  const { resolvedTheme: theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   // Only render on client to avoid hydration issues
@@ -21,18 +22,19 @@ const ThemeButton: React.FC<ThemeButtonProps> = ({ className = "" }) => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
-  if (!mounted) return null; // Prevent SSR mismatch
+  if (!mounted) return <span aria-hidden="true" style={{ display: "inline-block", width: 44, height: 44 }} />; // Prevent SSR mismatch
 
   return (
     <button
       onClick={toggleTheme}
-      aria-label="Toggle theme"
+      aria-label={label}
+      aria-pressed={theme === "dark"}
       className={`
         btn d-flex align-items-center justify-content-center rounded-circle shadow-sm
         ${theme === "dark" ? "btn-dark text-warning" : "btn-light text-dark"}
         ${className}
       `}
-      style={{ width: "2.2em", height: "2.2em" }}>
+      style={{ width: 44, height: 44 }}>
       <AnimatePresence mode="wait" initial={false}>
         {theme === "dark" ? (
           <motion.div

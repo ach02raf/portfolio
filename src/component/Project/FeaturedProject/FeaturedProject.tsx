@@ -85,12 +85,11 @@ function FeaturedProject(props: {
               <div className="coming-soon-media">
                 {project.imgProject && project.imgProject.length > 0 ? (
                   <Image
-                    src={`/Images/Projects/${project.imgProject[0]}.png`}
+                    src={`/Images/${project.imgProject[0]}.png`}
                     alt={project.title ?? "Project cover"}
                     width={800}
                     height={450}
                     className="coming-soon-image"
-                    priority
                   />
                 ) : (
                   <span className="placeholder-text">{comingSoon?.placeholder}</span>
@@ -98,8 +97,10 @@ function FeaturedProject(props: {
               </div>
             </div>
           ) : (
-            <video width="100%" height="370px" controls loop autoPlay muted>
-              <source src={`/${project.videoProject}.mp4`} type="video/webm" />
+            <video width="100%" height="370px" controls playsInline preload="none"
+              poster={project.slug === "communic-flow" ? "/Images/optimized/communic-flow-poster.webp" : undefined}
+              aria-label={project.title ?? project.nameProject}>
+              <source src={`/${project.videoProject}.mp4`} type="video/mp4" />
             </video>
           )}
         </div>

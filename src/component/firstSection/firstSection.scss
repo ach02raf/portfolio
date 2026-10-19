@@ -6,7 +6,7 @@
   overflow-y: hidden;
 
   /* professional background: cover image + subtle layered gradient overlay */
-  background-image: url(../../../public/Images/back.png);
+  background-image: url(../../../public/Images/optimized/back.webp);
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -50,6 +50,7 @@
     z-index: 2; /* above the overlay */
   }
 
+  & h1,
   & h2 {
     line-height: 2.5rem;
     color: $white;
@@ -139,6 +140,7 @@
     );
   }
 
+  & h1,
   & h2 {
     color: $white !important;
   }
@@ -159,4 +161,18 @@
       box-shadow: 0 0 0 4px rgba(75, 46, 106, 0.18), 0 10px 30px rgba(0, 0, 0, 0.6);
     }
   }
+}
+
+/* Semantic heading, with the existing hero typography preserved. */
+.firstSection h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  @media (max-width: 1200px) { font-size: 1.75rem; }
+  @media (max-width: 767px) { font-size: 1.25rem; }
+}
+.firstSection .firstSection-Typewriter {
+  min-height: 2.5rem;
+  line-height: 2.5rem;
+  margin: 0 0 1rem;
+  @media (max-width: 991px) { min-height: 5rem; }
 }

@@ -27,7 +27,7 @@
   align-items: center;
   gap: 2rem;
 
-  @media (max-width: 1075px) {
+  @media (max-width: 1279px) {
     padding: 0.75rem 1rem;
   }
 
@@ -72,7 +72,7 @@
   justify-content: center;
   flex: 1;
 
-  @media (max-width: 1075px) {
+  @media (max-width: 1279px) {
     display: none;
   }
 }
@@ -116,7 +116,7 @@
     padding: 0.5rem 0.55rem;
     font-size: 0.6rem;
   }
-  @media (max-width: 1075px) {
+  @media (max-width: 1279px) {
     display: none;
   }
 
@@ -163,7 +163,7 @@
 
 .header-controls-desktop,
 .header-lang-desktop {
-  @media (max-width: 1075px) {
+  @media (max-width: 1279px) {
     display: none !important;
   }
 }
@@ -190,7 +190,7 @@
   z-index: 1001;
   position: relative;
 
-  @media (max-width: 1075px) {
+  @media (max-width: 1279px) {
     display: flex;
   }
 
@@ -216,11 +216,13 @@
   left: 0;
   right: 0;
   bottom: 0;
+  width: 100vw;
+  height: 100dvh;
   background: rgba(0, 0, 0, 0.5);
   z-index: 998;
   backdrop-filter: blur(2px);
 
-  @media (max-width: 1075px) {
+  @media (max-width: 1279px) {
     display: block;
   }
 }
@@ -228,14 +230,14 @@
 /* ========== MOBILE NAVIGATION ========== */
 .header-nav-mobile {
   position: fixed;
-  top: 60px;
+  top: var(--header-height, 76px);
   left: 0;
   right: 0;
   background: linear-gradient(135deg, rgba(42, 31, 61, 0.98) 0%, rgba(26, 15, 46, 0.98) 100%);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(254, 194, 96, 0.1);
-  max-height: calc(100vh - 60px);
-  overflow-y: hidden;
+  max-height: calc(100dvh - var(--header-height, 76px));
+  overflow-y: auto;
   z-index: 1000;
   flex-direction: column;
 }
@@ -358,13 +360,6 @@
   content: none !important;
 }
 
-/* ========== ADJUST MAIN CONTENT ========== */
-main {
-  @media (max-width: 1075px) {
-    padding-bottom: 150px;
-  }
-}
-
 /* ========== SCROLLBAR FOR SIDEBAR ========== */
 .sidebar-nav::-webkit-scrollbar {
   width: 6px;
@@ -382,3 +377,6 @@ main {
     background: rgba(254, 194, 96, 0.5);
   }
 }
+
+.header .lang-switcher-li-a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; }
+@media (min-width: 1280px) { .header-nav-mobile, .header-nav-mobile-overlay { display: none !important; } }

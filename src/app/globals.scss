@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import "./fonts.scss";
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "./global-variables.scss";
 
@@ -63,13 +63,10 @@ button,
 }
 
 /* ========== GLOBAL STYLES ========== */
-* {
-  user-select: none;
-}
 
 body {
   margin: 0 auto !important;
-  font-family: "montserrat" !important;
+  font-family: "Montserrat", system-ui, sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: 1920px;
@@ -144,7 +141,7 @@ p {
     font-size: 1rem !important;
   }
   @media screen and (max-width: 767px) {
-    font-size: 0.85rem !important;
+    font-size: 1rem !important;
   }
 }
 
@@ -273,4 +270,22 @@ p {
   background: #5d4180;
   border: 1px solid #ffffff22;
   border-radius: 25px;
+}
+
+/* Keyboard and touch improvements, using the existing brand colors. */
+:focus-visible { outline: 3px solid $yellow; outline-offset: 4px; }
+section[id] { scroll-margin-top: 100px; }
+.skip-link {
+  position: fixed; z-index: 11000; top: 8px; left: 12px;
+  padding: 12px 18px; background: $violet-dark; border: 2px solid $yellow;
+  transform: translateY(-150%);
+  &:focus { transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
