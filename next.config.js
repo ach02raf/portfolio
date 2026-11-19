@@ -2,7 +2,7 @@
 
 const nextConfig = {
   output: "export",
-  distDir: "docs",
+  distDir: process.env.NEXT_DIST_DIR || "docs",
   reactStrictMode: true,
   images: {
     domains: ["ach02raf.pro"],

@@ -12,31 +12,36 @@
     },
     {
       "id": 2,
-      "name": "Meine Fähigkeiten",
-      "url": "Meine-Faehigkeiten"
-    },
-    {
-      "id": 3,
-      "name": "Erfahrung & Ausbildung",
-      "url": "Erfahrung-Ausbildung"
-    },
-    {
-      "id": 4,
       "name": "Dienstleistungen",
       "url": "Dienstleistungen"
     },
     {
-      "id": 5,
+      "id": 3,
       "name": "Meine Arbeit",
       "url": "Meine-Arbeit"
     },
     {
+      "id": 4,
+      "name": "Ablauf",
+      "url": "Ablauf"
+    },
+    {
+      "id": 5,
+      "name": "Meine Fähigkeiten",
+      "url": "Meine-Faehigkeiten"
+    },
+    {
       "id": 6,
+      "name": "Erfahrung & Ausbildung",
+      "url": "Erfahrung-Ausbildung"
+    },
+    {
+      "id": 7,
       "name": "Blog",
       "url": "Blog"
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Kontaktieren Sie mich",
       "url": "Kontaktieren-Sie-mich"
     }
@@ -44,60 +49,68 @@
   "firstSection": {
     "title": "Ich bin ",
     "name": "Mohamed Achraf BEN FREDJ,",
-    "description": ["IT-Ingenieur, Experte für Web, Mobile & DevOps"],
+    "description": [
+      "Full-Stack-Entwickler · Web / Mobile / DevOps / KI"
+    ],
     "cv": "Lebenslauf herunterladen"
   },
   "secondSection": {
-    "title": ["Über", "mich"],
+    "title": [
+      "Über",
+      "mich"
+    ],
     "description": [
-      "  Informatik-Ingenieur, Abschluss von (",
+      "Informatik-Ingenieur der ",
       "TEK-UP",
-      "). Spezialisiert auf Mobile, Web und Multimedia-Entwicklung, nach einem Bachelor in Informatik am (",
-      " l’ISIMM",
-      "). Meine Full-Stack-Entwicklungsfähigkeiten wurden durch mehrere Projekte und Praktika gestärkt, insbesondere als Webentwickler bei Zeta Engineering. Leidenschaftlich für das JavaScript/TypeScript-Ökosystem, konzipiere ich moderne, performante und benutzerzentrierte Anwendungen. Entdecken Sie meine Arbeiten auf meinem GitHub (",
+      ", freiberuflicher Full-Stack-Entwickler seit Oktober 2024 und Softwareentwickler mit Ausbildung an der ",
+      "ISIMM",
+      ". Ich entwickle Web- und Mobile-Produkte, DevOps-Pipelines und verankerte KI-Systeme — von RAG-Assistenten bis zu Multi-Service-Plattformen. Mir liegen testbare Architekturen, Observability und saubere Delivery am Herzen. Meine Projekte finden Sie auf GitHub (",
       "ach02raf",
-      "), ein Spiegelbild meines Engagements für Exzellenz und Innovation in der Softwareentwicklung."
+      "), von Mobile-Apps bis zu plattformübergreifenden Kollaborationssystemen."
     ]
   },
   "ServicesSection": {
-    "title": ["Meine", "Dienstleistungen"],
-    "description": "WERFEN WIR EINEN BLICK AUF MEINE DIENSTLEISTUNGEN",
+    "title": [
+      "Meine",
+      "Dienstleistungen"
+    ],
+    "description": "VON WEB & MOBILE BIS DEVOPS & KI",
     "listServices": [
       {
         "id": 1,
-        "title": "Web-Integration",
-        "desc": "Entwicklung und Integration eines grafischen Entwurfs zur Umwandlung in ein konformes Webprojekt. Ich lege besonderen Wert auf die Benutzererfahrung und die Optimierung (SEO & Ladegeschwindigkeit) bei all meinen Projekten.",
+        "title": "GenAI-/LLM-Systeme",
+        "desc": "RAG-Pipelines, KI-Agenten, Function Calling, MCP, Guardrails und Evaluation. Ich verwandle LLM-Prototypen in verlässliche, beobachtbare Funktionen mit klaren Fallbacks und Kontrolle der Kosten.",
         "img": "faMagic"
       },
       {
         "id": 2,
-        "title": "E-Commerce",
-        "desc": "Erstellung von E-Commerce-Plattformen mit dem E-Commerce CMS Magento, einer der umfassendsten Open-Source-Lösungen. Ich bin spezialisiert auf spezifische Entwicklungen, um Magento an Ihre Bedürfnisse und Arbeitsweise anzupassen.",
-        "img": "faShoppingBag"
-      },
-      {
-        "id": 3,
-        "title": "Web- & mobile Anwendung",
-        "desc": "Erstellung von Geschäftsanwendungen, Intranets, Extranets, Corporate Websites und Showcase-Websites, Web-Apps... Regelmäßige Updates, Fehlerbehebung, Performance-Optimierung und Verbesserung der Anwendungssicherheit und Websites.",
+        "title": "Full-Stack-Produktentwicklung",
+        "desc": "End-to-End-Lieferung von der Anforderung bis zur Produktion: React-/Next.js-Oberflächen, REST- oder GraphQL-APIs, relationale Daten und wartbare Echtzeit-Workflows.",
         "img": "faGears"
       },
       {
+        "id": 3,
+        "title": "Plattform & DevOps",
+        "desc": "Multi-Service-Deployments mit Docker Compose, GitHub-Actions- und Jenkins-Pipelines, Health Checks, Rollback-Strategien und pragmatische Observability auf schlanker Infrastruktur.",
+        "img": "faRocket"
+      },
+      {
         "id": 4,
-        "title": "Code-Review",
-        "desc": "Analyse und Überprüfung, ob der Code den Best Practices entspricht, und Sicherstellung seiner Qualität (Lesbarkeit, Klarheit, Konsistenz). Dadurch wird der Code wartbarer, besser strukturiert und die Anzahl der Bugs reduziert.",
+        "title": "Sicherheit & Qualität",
+        "desc": "OWASP-orientiertes Design: HTTP-only-Cookies, Token-Rotation, 2FA, Turnstile, Rollen- und Organisations-Scoping, Vertragstests und Quality Gates vor dem Release.",
         "img": "faCode"
       },
       {
         "id": 5,
-        "title": "Optimierung",
-        "desc": "Durchführung einer Performance-Analyse und Optimierung Ihrer Anwendungen, indem detailliert in den Quellcode, die Interaktionen zwischen den verschiedenen Bausteinen und die Datenbanken eingegangen wird, um effektive Maßnahmen zur Verbesserung der Anwendungsleistung zu ergreifen.",
-        "img": "faRocket"
+        "title": "SEO & Performance",
+        "desc": "Technisches SEO, Core Web Vitals, Internationalisierung und strukturierte Daten für Produkte, die schnell sind, gefunden werden und für Recruiter verständlich bleiben.",
+        "img": "faBullhorn"
       },
       {
         "id": 6,
-        "title": "SEO",
-        "desc": "Optimierung für Suchmaschinen durch Anwendung einer Reihe von Techniken, Regeln und Best Practices zur Verbesserung der Sichtbarkeit von Websites und ihrer Positionen in den Suchmaschinenergebnissen.",
-        "img": "faBullhorn"
+        "title": "Web- & Mobile-Delivery",
+        "desc": "Geschäftsanwendungen für Web und Mobile, E-Commerce und interne Tools mit pragmatischer UX, barrierearmen Oberflächen und reproduzierbaren Deployments.",
+        "img": "faShoppingBag"
       }
     ]
   },
@@ -112,51 +125,75 @@
     "listeSkills": [
       {
         "id": 0,
-        "title": "Programmiersprachen",
-        "listeLangage": ["C", "C-SHARP", "JAVA", "JAVASCRIPT", "TYPESCRIPT", "PYTHON", "PHP"]
+        "title": "GenAI / LLM",
+        "listeLangage": [
+          "PYTHON",
+          "LANGCHAIN",
+          "LANGGRAPH",
+          "OPENAI",
+          "OLLAMA",
+          "FASTAPI",
+          "RAG",
+          "PGVECTOR",
+          "EVALUATION"
+        ]
       },
       {
         "id": 1,
-        "title": "Framework",
+        "title": "Programmiersprachen",
         "listeLangage": [
-          "EXPRESS.JS",
-          "NEXT.JS",
-          "SPRINGBOOT",
-          "DJANGO",
-          "ANGULAR",
-          "REACT-NATIVE",
-          "SWIFT-UI",
-          "IONIC",
-          "DOTNET-CORE",
-          "BOOTSTRAP-5",
-          "TAILWIND-CSS"
+          "TYPESCRIPT",
+          "JAVASCRIPT",
+          "PYTHON",
+          "SQL",
+          "C-SHARP",
+          "JAVA",
+          "PHP"
         ]
       },
       {
         "id": 2,
-        "title": "Auszeichnungssprachen",
-        "listeLangage": ["HTML"]
+        "title": "Frontend",
+        "listeLangage": [
+          "REACT",
+          "NEXT.JS",
+          "ANGULAR",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "REDUX",
+          "HTML",
+          "CSS",
+          "SCSS-SASS"
+        ]
       },
       {
         "id": 3,
-        "title": "Stylesprachen",
-        "listeLangage": ["CSS", "SCSS-SASS"]
+        "title": "Backend & Daten",
+        "listeLangage": [
+          "EXPRESS.JS",
+          "NEST.JS",
+          "DOTNET-CORE",
+          "REST-RESTFUL",
+          "GRAPHQL",
+          "SOCKET.IO",
+          "REDIS",
+          "MYSQL",
+          "POSTGRESQL",
+          "MONGO.DB"
+        ]
       },
-
       {
         "id": 4,
-        "title": "JS/TS Bibliothek",
-        "listeLangage": ["REACT"]
-      },
-      {
-        "id": 5,
-        "title": "DevOps",
+        "title": "DevOps & Cloud",
         "listeLangage": [
           "GIT",
           "GITHUB",
-          "JENKINS",
-          "AWS",
           "DOCKER",
+          "KUBERNETES",
+          "JENKINS",
+          "GITHUB-ACTIONS",
+          "AWS",
+          "NGINX",
           "SONARQUBE",
           "NEXUS",
           "OWASP",
@@ -165,14 +202,16 @@
         ]
       },
       {
-        "id": 6,
-        "title": "CMS",
-        "listeLangage": ["WORDPRESS"]
-      },
-      {
-        "id": 7,
-        "title": "Sonstiges",
-        "listeLangage": ["REST-RESTFUL", "GRAPHQL"]
+        "id": 5,
+        "title": "Qualität & Methoden",
+        "listeLangage": [
+          "UNIT TESTING",
+          "XUNIT",
+          "DESIGN PATTERNS",
+          "CODE REVIEW",
+          "AGILE / SCRUM",
+          "SEO"
+        ]
       }
     ]
   },
@@ -180,23 +219,27 @@
     {
       "title": "Berufserfahrung",
       "iconCard": "faBuilding",
-
       "list": [
         {
-          "title": "Freelance – Full-Stack Developer",
-          "subtitle": "Arbeiten an zwei Projekten gleichzeitig",
+          "title": "Freelance — Full-Stack / GenAI Engineer",
+          "subtitle": "Selbstständig · KI und Produktlieferung",
           "desc": [
-            "Verbesserung und Entwicklung von Communic Flow (Version 2) — mehrstufiges Organisations-Dashboard.",
-            "Teilnahme an der Entwicklung von KickOff — Plattform zur Buchung von Sportplätzen und Teammanagement."
+            "CommunicFlow v2 zu einem Multi-Service-Workspace mit eigener GraphQL-/Socket.IO-Messenger, gehärteten Cookie-Sessions, 2FA und Turnstile ausgebaut.",
+            "Lokalen RAG-Dokumentassistenten mit FastAPI, pgvector, Reranking, Streaming-Antworten und Quellenangaben entwickelt.",
+            "TraceFlow, ein Echtzeit-Dashboard für Produktionsrückverfolgung mit SignalR, Operator-/Supervisor-Rollen und xUnit-Tests, geliefert.",
+            "Docker, GitHub Actions und Jenkins mit health-gated Releases eingerichtet."
           ],
           "dateDeb": "Okt. 2024",
-          "dateFin": "Gegenwart",
-          "location": "Monastir, Tunesien"
+          "dateFin": "Heute",
+          "location": "Tunis, Tunesien"
         },
         {
           "title": "ASQII",
-          "subtitle": "Abschlusspraktikum",
-          "desc": ["Entwicklung von Communic Flow (Version 1)."],
+          "subtitle": "Full-Stack-Entwickler · Abschlusspraktikum",
+          "desc": [
+            "CommunicFlow V1 entwickelt: multilevel Organisations-Dashboard mit Hierarchie, Rollenrechten, Veranstaltungsplanung, Beschwerden und Echtzeit-Messaging.",
+            "CI/CD-Pipeline mit Code-Quality- und Sicherheitsanalyse eingerichtet."
+          ],
           "dateDeb": "Jan. 2024",
           "dateFin": "Jul. 2024",
           "location": "Le Kram, Tunis, Tunesien"
@@ -205,50 +248,33 @@
           "title": "ZETA Engineering",
           "subtitle": "Webentwickler",
           "desc": [
-            "Erstellung eines Pakets von 16 WordPress-Websites und 4 Next.js-Websites.",
-            "SEO-Optimierung aller erstellten Websites."
+            "SEO-optimierte Websites mit React, Next.js, TypeScript, Tailwind CSS und WordPress erstellt und optimiert.",
+            "End-to-End-Deployments verantwortet und in Agile/Scrum mit GitHub, GitLab, Pull Requests und Daily Stand-ups gearbeitet."
           ],
-          "dateDeb": "Aug. 2023",
-          "dateFin": "Jan. 2024",
-          "location": "Al Zahra, Ben Arous, Tunesien"
-        },
-        {
-          "title": "ZETA Engineering",
-          "subtitle": "Sommerpraktikum",
-          "desc": ["Schulung und praktische Arbeit an WordPress CMS und SEO."],
           "dateDeb": "Jun. 2023",
-          "dateFin": "Jul. 2023",
-          "location": "Al Zahra, Ben Arous, Tunesien"
+          "dateFin": "Jan. 2024",
+          "location": "Ben Arous, Tunesien"
         },
         {
           "title": "SHAREK IT",
-          "subtitle": "Sommerpraktikum",
+          "subtitle": "Praktikant Full-Stack-Webentwicklung",
           "desc": [
-            "Entwicklung einer E-Commerce-Website für den Verkauf von IT-Geräten.",
-            "Verwendeter Stack: MERN + Bootstrap."
+            "MERN-E-Commerce-Plattform für IT-Hardware entwickelt.",
+            "Stack: React, Express.js, MongoDB und Tailwind CSS."
           ],
           "dateDeb": "Jun. 2022",
           "dateFin": "Aug. 2022",
-          "location": "Al Ghazala, Ariana, Tunesien"
+          "location": "Ariana, Tunesien"
         },
         {
           "title": "COSO-FT IT",
-          "subtitle": "Abschlusspraktikum",
+          "subtitle": "Praktikant Mobile & Web",
           "desc": [
-            "Erstellung einer Web- und Mobile-App für Arzttermine (ALLO DOCTOR).",
-            "Verwendeter Stack: MERN + React Native."
+            "Hybride App für medizinische Termine mit React Native, React, Express.js und MongoDB erstellt."
           ],
           "dateDeb": "Jan. 2020",
           "dateFin": "Jul. 2020",
           "location": "Monastir, Tunesien"
-        },
-        {
-          "title": "SARTEX GROUP",
-          "subtitle": "Sommerpraktikum",
-          "desc": ["IT-Wartung und Einführung in Cloud Computing."],
-          "dateDeb": "Jun. 2018",
-          "dateFin": "Jul. 2018",
-          "location": "Ksar Hlel, Monastir, Tunesien"
         }
       ]
     },
@@ -259,210 +285,213 @@
         {
           "title": "TEK-UP University",
           "subtitle": "Informatikingenieurwesen",
-          "desc": ["Spezialisierung auf Web-, Mobile- und Multimedia-Entwicklung."],
+          "desc": [
+            "Schwerpunkt Web-, Mobile- und Multimedia-Entwicklung."
+          ],
           "dateDeb": "2021",
           "dateFin": "2024",
-          "location": "Ariana Soghra, Ariana, Tunesien"
+          "location": "Ariana, Tunesien"
         },
         {
           "title": "ISIMM",
-          "subtitle": "Bachelor in Informatik",
-          "desc": ["Spezialisierung auf Software Engineering."],
+          "subtitle": "Bachelor of Science in Informatik",
+          "desc": [
+            "Schwerpunkt Software Engineering."
+          ],
           "dateDeb": "2016",
           "dateFin": "2020",
           "location": "Monastir, Tunesien"
         },
         {
-          "title": "LKM – Lycée Ksibet El Mediouni",
+          "title": "Lycée Ksibet El Mediouni",
           "subtitle": "Technisches Abitur",
           "desc": [],
           "dateDeb": "2015",
           "dateFin": "2016",
-          "location": "Ksibet EL Madouini, Monastir, Tunesien"
+          "location": "Ksibet El Mediouni, Tunesien"
         }
       ]
     }
   ],
   "Project": {
-    "title": ["Meine letzten", " Projekte"],
-    "desc": "Meine Projekte spiegeln eine vielfältige Erfahrung zwischen autonomer Arbeit und Zusammenarbeit wider. Bei Projekten wie Communic Flow, Allow Doctor und GoTrip habe ich den gesamten Prozess verantwortet: Konzeption, Design, Entwicklung und Bereitstellung. Bei anderen Projekten habe ich zu spezifischen Aufgaben beigetragen und gezielte Expertise in Entwicklungsteams eingebracht. Diese Kombination hat es mir ermöglicht, eine globale Sichtweise zu entwickeln und gleichzeitig meine technischen und kollaborativen Fähigkeiten zu stärken.",
+    "title": [
+      "Ausgewählte",
+      "Projekte"
+    ],
+    "desc": "Fallstudien zu Web, Mobile, DevOps und angewandter KI – von Dokumentenassistenten bis zu produktionsnahen Multi-Service-Plattformen.",
     "list": [
       {
-        "id": "1",
-        "nameProject": "Communic Flow",
-        "infoProject": "PROJEKTINFORMATIONEN",
-        "slug": "communic-flow",
-        "title": "Communic Flow",
-        "visitSites": "Website besuchen",
-        "descProject": "Communic Flow ist ein mehrstufiges Organisations-Dashboard, das die institutionelle Kommunikation modernisiert. Es verbindet Organisationen, ihre angeschlossenen Einheiten und Mitglieder über eine zentrale Plattform, die Informationsverwaltung, rollenbasierte Zugriffskontrolle, Ereignisplanung, Beschwerdemanagement, Echtzeit-Messaging sowie Power-BI-Berichte bietet. Die Anwendung wurde ursprünglich für die Nationale Kammer der Pharmaindustrie (CNIP) entwickelt und erfüllt reale Anforderungen an Koordination, Transparenz und schnellen Informationsfluss in komplexen Ökosystemen.",
-        "videoProject": "demo-communic-flow",
-        "urlProject": [""],
-        "urlSITE": [""],
-        "imgProject": [],
+        "id": "16",
+        "nameProject": "RAG Document Assistant",
+        "infoProject": "PROJECT INFO",
+        "slug": "rag-document-assistant",
+        "title": "RAG Document Assistant",
+        "visitSites": "Visit the website",
+        "descProject": "Ein dokumentenbasierter Assistent mit Next.js, FastAPI und PostgreSQL/pgvector. Er extrahiert Text aus PDF-, DOCX-, TXT- und MD-Dateien, zerlegt ihn seitenweise, indexiert ihn mit OpenAI text-embedding-3-small und liefert über eine dokumentierte REST-API strukturierte Antworten mit prüfbaren Seitenquellen.",
+        "videoProject": "",
+        "urlProject": [
+          "https://github.com/ach02raf/rag-document-assistant"
+        ],
+        "urlSITE": [
+          "https://doc.ach02raf.pro"
+        ],
+        "imgProject": [
+          "rag-document-assistant"
+        ],
         "apk": "",
         "technologies": {
-          "title": "Entwicklung",
+          "title": "Technologie-Stack",
           "Developpement": [
-            "REACT",
-            "TYPESCRIPT",
-            "TAILWIND-CSS",
+            "PYTHON",
+            "FASTAPI",
+            "LANGCHAIN",
+            "LANGCHAIN-OPENAI",
+            "OPENAI API",
             "NEXT.JS",
-            "EXPRESS.JS",
-            "SOCKET.IO",
-            "MYSQL"
+            "TYPESCRIPT"
           ],
-          "DevOps": ["DOCKER", "JENKINS", "KUBERNETES", "GRAFANA", "SONARQUBE", "NEXUS", "OWASP"]
+          "DevOps": [
+            "POSTGRESQL 16",
+            "PGVECTOR",
+            "HNSW-INDEX",
+            "DOCKER",
+            "DOCKER COMPOSE",
+            "PYDANTIC",
+            "CORS"
+          ]
         },
         "description": {
-          "title": "Hauptfunktionen",
+          "title": "Was ich gebaut habe",
           "points": [
-            "Zentralisierte Verwaltung institutioneller Informationen zwischen Organisationen und ihren Einheiten",
-            "Vollständige hierarchische Struktur: Superadministrator → Organisationen → Mitglieder",
-            "Erweitertes Beschwerdemanagement: Erstellung, Nachverfolgung und Antworten",
-            "Echtzeit-Nachrichten mit Socket.IO (Gruppen- und Einzelchats)",
-            "Planung und Verwaltung von Veranstaltungen",
-            "Erweiterte Verwaltung von Benutzern, Rollen und Berechtigungen",
-            "Verwaltung von Organisationen und deren angeschlossenen Einheiten",
-            "Power-BI-Integration für interaktive Analysen und fundierte Entscheidungen"
+            "Akzeptiert PDF-, DOCX-, TXT- und MD-Uploads mit 50-MB-Grenze und expliziter Formatvalidierung.",
+            "Behält exakte Seitennummern bei pypdf/python-docx-Extraktion und RecursiveCharacterTextSplitter-Zerlegung.",
+            "Vektorisiert Chunks in Batches von 100 mit text-embedding-3-small und speichert sie in einem pgvector-HNSW-Cosine-Index.",
+            "Ruft 20 Kandidaten ab, bewertet sie mit strukturiertem gpt-4o-mini-Scoring und übergibt die besten 5 Passagen an das Antwortmodell.",
+            "Liefert strukturierte Antworten mit deduplizierten Quellen (Dokument, Seite, Auszug, Score); bei unzureichendem Kontext bleiben Quellen leer und das Modell sagt es.",
+            "Stellt /health, Dokumentenliste/-upload/-löschung und /api/chat bereit – mit Next.js-14-Chat-UI und Dokumentenauswahl."
           ]
         },
         "devopsProcess": {
-          "title": "DevOps-Prozess",
+          "title": "Delivery & Prüfungen",
           "steps": [
-            "Aufbau einer vollständigen CI/CD-Architektur mit Jenkins",
-            "Automatisierte Continuous Integration für Frontend und Backend",
-            "Containerisierung der Anwendungen mit Docker und Speicherung der Images im Nexus Repository",
-            "Automatisierte Codequalitätsanalyse mit SonarQube und strengen Quality Gates",
-            "Sicherheits- und Schwachstellenanalyse mit OWASP Dependency-Check",
-            "Überwachung der Anwendungen und Pipelines durch Prometheus",
-            "Visualisierung von Leistungsmetriken mit Grafana",
-            "Automatisierte Deployment-Pipeline auf den VPS mit Artefaktverwaltung"
+            "Betreibt PostgreSQL/pgvector, das FastAPI-Backend und das Next.js-Frontend als drei Docker-Compose-Dienste.",
+            "Erstellt beim Start die Vektor-Erweiterung, Tabellen und den HNSW-Index mit einem begrenzten psycopg-Verbindungspool.",
+            "Hält Modellwahl, Chunk-Größe, Retrieval-Tiefe, Reranking, CORS und Upload-Grenze in einer dokumentierten .env-Vorlage.",
+            "Nutzt Pydantic-Settings und Response-Schemas, damit Konfigurations- und API-Vertragsfehler früh auffallen.",
+            "Ergänzt Healthcheck, Upload-Größenvalidierung und explizite 400/413/500-Fehlerpfade für klaren Betrieb.",
+            "Dokumentiert lokalen und Docker-Workflow, curl-Beispiele und Fehlerbehebung in der Repository-README."
           ]
         },
-        "utilisation": {
-          "title": "Nutzungsmodus (Administratorzugang)",
-          "url": "https://communicflow.ach02raf.pro/",
-          "login": "admin@admin.com",
-          "password": "admin"
-        },
-        "rapport": {
-          "url": "/Rapport_PFE.pdf",
-          "label": "Bericht herunterladen"
-        },
-        "usedTools": "Verwendete Technologien",
-        "tools": ["React", "Node.js", "MySQL", "Docker", "Jenkins", "Socket.IO", "Tailwind CSS"],
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "Python",
+          "FastAPI",
+          "OpenAI",
+          "LangChain",
+          "pgvector",
+          "Next.js",
+          "Docker"
+        ],
         "featuredProject": {
-          "subtitle": "Abschlussprojekt",
-          "tech": "Verwendete Technologien:",
-          "button": "Projekt ansehen",
-          "comingSoon": {
-            "badge": "Bald verfügbar",
-            "title": "Video bald verfügbar",
-            "subtitle": "Eine ausgearbeitete Demo wird vorbereitet.",
-            "placeholder": "Keine Vorschau verfügbar"
-          }
-        }
+          "subtitle": "Web / KI",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "summary": "Dokumentenbasierter RAG-Assistent mit Seitenquellen, LLM-Reranking und FastAPI + Next.js.",
+        "mediaLabel": "Pipeline + Antwort mit Seitenquellen"
       },
       {
         "id": "2",
-        "nameProject": "Communic Flow v2",
+        "nameProject": "CommunicFlow v2",
         "infoProject": "PROJEKTINFORMATIONEN",
         "slug": "communic-flow-v2",
-        "title": "Communic Flow — Version 2",
+        "title": "CommunicFlow v2",
         "visitSites": "Website besuchen",
-        "descProject": "Communic Flow v2 ist die neu gestaltete und modernisierte Version der mehrstufigen Organisationsplattform, jetzt vollständig auf einer Microservices-Architektur aufgebaut. Der Messaging-Dienst wurde vollständig isoliert und nutzt GraphQL und Redis für die interne Kommunikation. Das Authentifizierungssystem wurde verstärkt: sichere HTTP-Only-Cookies für Tokens, ein neuer Google OAuth 2.0 Login, Cloudflare Turnstile zum Schutz vor Spam sowie ein vollständiges Zwei-Faktor-Authentifizierungssystem (2FA). Die Unternehmensregistrierung wurde optimiert durch automatische VIES-Validierung für EU-Firmen sowie automatische Adressvervollständigung über die Postleitzahl. Die Sicherheit des Backends wurde erheblich verbessert, das Echtzeit-Messaging optimiert und Sprach- und Videoanruffunktionen befinden sich bereits in Entwicklung.",
-        "videoProject": "demo-communic-flow",
-        "urlProject": [""],
-        "urlSITE": [""],
-        "imgProject": [],
+        "descProject": "CommunicFlow v2 ist ein mandantenfähiger Kollaborations-Workspace und deutlich mehr als eine Chat-App. Eine React-/Vite-SPA spricht mit einer Express-REST-API und einem separaten GraphQL-/Socket.IO-Messenger. Organisations-Scoping, gehärtete Cookie-Sessions, 2FA, Turnstile, ein interner Service-Key, ein verwalteter Drive, wiederkehrende Termine, Beschwerden mit SLA, eine Benachrichtigungs-Engine und WebRTC-Call-Signalling machen v2 zu einem produktionsnahen System.",
+        "videoProject": "",
+        "urlProject": [],
+        "urlSITE": [
+          "https://communicflow.ach02raf.pro/"
+        ],
+        "imgProject": [
+          "communic-flow-v2"
+        ],
         "apk": "",
         "technologies": {
-          "title": "Entwicklung",
+          "title": "Technologie-Stack",
           "Developpement": [
             "REACT",
             "TYPESCRIPT",
-            "TAILWIND-CSS",
-            "NEXT.JS",
+            "VITE",
+            "APOLLO GRAPHQL",
             "EXPRESS.JS",
             "GRAPHQL",
+            "SOCKET.IO",
             "REDIS",
             "MYSQL"
           ],
           "DevOps": [
             "DOCKER",
+            "DOCKER COMPOSE",
             "JENKINS",
-            "KUBERNETES",
-            "GRAFANA",
-            "SONARQUBE",
-            "NEXUS",
-            "OWASP",
+            "NGINX",
+            "COTURN",
+            "OLLAMA",
             "CLOUDFLARE"
           ]
         },
         "description": {
-          "title": "Hauptfunktionen",
+          "title": "Was ich gebaut habe",
           "points": [
-            "Microservices-Architektur mit isoliertem Messaging-Dienst",
-            "Messaging-Engine auf Basis von GraphQL für optimierte Abfragen",
-            "Redis für Interservice-Kommunikation und Event-Streaming",
-            "Sichere Authentifizierung über HTTP-Only-Cookies für Tokens",
-            "Neuer Google OAuth 2.0 Login",
-            "Anti-Spam-Schutz durch Cloudflare Turnstile",
-            "Vollständiges Zwei-Faktor-Authentifizierungssystem (2FA)",
-            "Optimierte Firmenerstellung mit automatischer VIES-Validierung (EU)",
-            "Automatische Adressvervollständigung über Postleitzahl",
-            "Erhöhte Backend-Sicherheit durch verbesserte Validierungen und Token-Schutz",
-            "Optimiertes Echtzeit-Messaging mit höherer Leistung und Skalierbarkeit",
-            "Sprach- und Videoanrufe befinden sich in Entwicklung",
-            "Zukünftige Optimierung der Benutzerverbindungen zwischen Organisationen",
-            "Neuer Dark Mode für die Benutzeroberfläche"
+            "Mandantenfähiges Scope-Resolver mit aktiver Organisation pro Session und Super-Admin-Ausnahmen.",
+            "HS512-Access-/Refresh-Cookies mit festgelegten Algorithmen, Rotation, Datenbank-Revocation, TOTP-2FA, Backup-Codes und Turnstile.",
+            "Eigener Messenger-Service mit GraphQL-Reads/Mutations, Socket.IO-Räumen, Präsenz, Tippstatus, Lesebestätigungen und begrenzt paginierter Historie.",
+            "WebRTC-Call-Signalling mit STUN und kurzlebigen HMAC-TURN-Zugangsdaten, gesteuert durch Organisationsrichtlinie und Diskussionsrolle.",
+            "Verwalteter Drive mit berechtigungsgeprüftem Ausliefern, Papierkorb/Wiederherstellung/Bereinigung, Versionshistorie, Aktivitätsprotokoll, Token-Links und ZIP-Export.",
+            "Benachrichtigungskatalog mit Präferenzen, 30-Minuten-Gruppierung, Selbstausschluss des Akteurs, Sammel-Einfügungen und Realtime-Delivery.",
+            "Rekurrenz als Regeln gespeichert und bei Lesen mit 366-Tage-Horizont und 1.500-Termin-Limit expandiert; Beschwerden werden über einen SLA-Job verarbeitet.",
+            "Default-Deny-Demo-Modus mit einstündigem Token und Read-Only-Middleware für sichere Produktdemonstrationen."
           ]
         },
         "devopsProcess": {
-          "title": "DevOps-Prozess",
+          "title": "Delivery & Prüfungen",
           "steps": [
-            "Umstellung auf Microservices-Deployment mit Docker und Kubernetes",
-            "Dedizierte CI/CD-Pipelines für jeden Microservice über Jenkins",
-            "Optimiertes Artefaktmanagement und Versionierungsstrategie mit Nexus",
-            "Erweiterte Codequalitäts- und Sicherheitsanalysen mit SonarQube und OWASP",
-            "Integration von Cloudflare-Diensten zur Reduzierung der Angriffsfläche",
-            "Verbessertes Redis-Monitoring für Echtzeit-Messaging",
-            "Aktualisierte Grafana-Dashboards für Microservices und Logs",
-            "Stufenweise Deployment-Strategie für neue Messaging-Funktionen"
+            "Drei Anwendungsdienste hinter nginx bereitgestellt: React-SPA, Express-REST-API und GraphQL-Messenger.",
+            "Health Checks und eine achtstufige Jenkins-Pipeline mit Compose-Validierung, Image-Snapshots, Health-Polling, Smoke-Checks und aufbewahrten Rollback-Images ergänzt.",
+            "Edge-Konfiguration mit Security-Headers, TLS, Cloudflare-Real-IP-Verarbeitung und WebSocket-Unterstützung gehärtet.",
+            "Redis-gestützten Session-Cookie zwischen API und Messenger geteilt und interne Aufrufe mit constant-time key check authentifiziert.",
+            "Geplante Jobs für Benachrichtigungsbereinigung, Terminerinnerungen, Beschwerden-SLA und Drive-Papierkorb-Bereinigung ergänzt.",
+            "Lokalen CPU-dimensionierten Ollama-Assistenten mit Redis-Rate-Limiting, in Produktion deaktivierten externen Providern und FAQ-Fallback betrieben."
           ]
         },
-        "utilisation": {
-          "title": "Nutzungsmodus (Administratorzugang)",
-          "url": "https://communicflow.ach02raf.pro/",
-          "login": "admin@admin.com",
-          "password": "admin"
-        },
-        "rapport": {
-          "url": "/Rapport_PFE.pdf",
-          "label": "Bericht herunterladen"
-        },
-        "usedTools": "Verwendete Technologien",
+        "usedTools": "Kern-Tools",
         "tools": [
           "React",
-          "Node.js",
+          "TypeScript",
+          "GraphQL",
+          "Socket.IO",
+          "Redis",
           "MySQL",
           "Docker",
-          "Jenkins",
-          "Redis",
-          "GraphQL",
-          "Tailwind CSS"
+          "Jenkins"
         ],
         "featuredProject": {
-          "subtitle": "Freelance-Projekt",
-          "tech": "Verwendete Technologien:",
-          "button": "Projekt ansehen",
+          "subtitle": "Plattform / v2",
+          "tech": "Technologien:",
           "comingSoon": {
             "badge": "Bald verfügbar",
             "title": "Video bald verfügbar",
             "subtitle": "Eine ausgearbeitete Demo wird vorbereitet.",
             "placeholder": "Keine Vorschau verfügbar"
-          }
-        }
+          },
+          "button": "Fallstudie ansehen"
+        },
+        "summary": "Mandantenfähiger Kollaborations-Workspace mit eigenem GraphQL-/Socket.IO-Messenger, gehärteter Authentifizierung und verwaltetem Dateiaustausch.",
+        "rapport": {
+          "url": "https://communicflow.ach02raf.pro/technical-overview",
+          "label": "Technischer Überblick"
+        },
+        "mediaLabel": "v2-Oberfläche · Live-Produkt"
       },
       {
         "id": "3",
@@ -472,14 +501,20 @@
         "title": "Kickoff Sports Plattform",
         "visitSites": "Client-App besuchen",
         "codeSource": "Stadion-App besuchen",
-        "descProject": "Kickoff Sports ist ein duales Sportstätten-Verwaltungssystem, das Stadionbesitzer mit Fußballenthusiasten verbindet. Die Plattform besteht aus zwei spezialisierten Anwendungen: einer Client-App für Spieler zur Entdeckung und Buchung von Sportplätzen und einer Stadion-Management-App für Anlagenbetreiber zur Verwaltung ihrer Standorte, Zeitpläne und Buchungen. Mit modernen Webtechnologien entwickelt, vereinfacht sie den gesamten Prozess von der Platzsuche bis zur Reservierungsbestätigung.",
-        "videoProject": "demo-kickoff-sports",
-        "urlProject": ["https://stade.kickoff-sports.tn/"],
-        "urlSITE": ["https://app.kickoff-sports.tn/"],
-        "imgProject": [],
+        "descProject": "Kickoff Sports verbindet Spieler mit Betreibern von Sportanlagen. Eine Client-App deckt Entdeckung, Verfügbarkeit und Buchung ab; ein Stadion-Backoffice verwaltet Plätze, Kalender, Preise und Reservierungen. Gebaut mit React, NestJS, PostgreSQL und Redis.",
+        "videoProject": "",
+        "urlProject": [
+          "https://stade.kickoff-sports.tn/"
+        ],
+        "urlSITE": [
+          "https://app.kickoff-sports.tn/"
+        ],
+        "imgProject": [
+          "kickoff-sports"
+        ],
         "apk": "",
         "technologies": {
-          "title": "Entwicklung",
+          "title": "Technologie-Stack",
           "Developpement": [
             "REACT",
             "TYPESCRIPT",
@@ -489,51 +524,139 @@
             "POSTGRESQL",
             "REDIS"
           ],
-          "DevOps": ["DOCKER", "JENKINS", "KUBERNETES", "GRAFANA", "SONARQUBE", "NEXUS", "OWASP"]
+          "DevOps": [
+            "DOCKER",
+            "JENKINS",
+            "KUBERNETES",
+            "GRAFANA",
+            "SONARQUBE",
+            "NEXUS",
+            "OWASP"
+          ]
         },
         "description": {
-          "title": "Hauptfunktionen",
+          "title": "Was ich gebaut habe",
           "points": [
-            "Duale Plattform-Architektur: Client-App für Spieler und Stadion-App für Betreiber",
-            "Echtzeit-Platzverfügbarkeit und sofortiges Buchungssystem",
-            "Stadion-Management-Dashboard mit Buchungskalender und Umsatzanalysen",
-            "Multi-Platz-Unterstützung mit individueller Platzplanung",
-            "Sichere Zahlungsintegration für Online-Reservierungen",
-            "Automatisierte Buchungsbestätigungen und Benachrichtigungen",
-            "Benutzerkontoverwaltung mit Buchungshistorie",
-            "Stadionprofil-Anpassung mit Fotos, Ausstattung und Preisen",
-            "Standortbasierte Suche nach nahegelegenen Sporteinrichtungen",
-            "Bewertungs- und Rezensionssystem für Stadien",
-            "Responsive Design optimiert für Desktop und mobile Geräte"
+            "Spieler-App zur Entdeckung nahegelegener Anlagen, Live-Verfügbarkeit und Buchungsbestätigung.",
+            "Stadion-Backoffice für mehrere Plätze, Kalender, Preise, Ausstattung und Inhalte.",
+            "Buchungskalender mit kollisionsfreien Slots, Historie und automatischen Bestätigungen.",
+            "Standortsuche, Bewertungen und Rezensionen zur Auswahl der passenden Anlage.",
+            "Getrennte Konten für Spieler und Betreiber mit passenden Dashboards.",
+            "Responsive React-Oberfläche für Desktop und Mobilgeräte."
           ]
         },
         "devopsProcess": {
-          "title": "DevOps-Prozess",
+          "title": "Delivery & Prüfungen",
           "steps": [
-            "Vollständige CI/CD-Pipeline-Implementierung mit Jenkins",
-            "Automatisierte Test- und Qualitätssicherungs-Workflows",
-            "Docker-Containerisierung für beide Frontend-Anwendungen und Backend-API",
-            "Artefakt-Speicherung und Versionierung mit Nexus Repository",
-            "Code-Qualitätsanalyse und Sicherheitsscanning via SonarQube und OWASP",
-            "Kubernetes-Orchestrierung für skalierbares Multi-App-Deployment",
-            "Anwendungsüberwachung mit Prometheus und Grafana",
-            "Automatisierte Datenbank-Migrationen und Backup-Strategien",
-            "Redis-Caching-Schicht für verbesserte Leistung und Sitzungsverwaltung"
+            "Client-Apps und NestJS-API mit Docker containerisiert und Deployments über Jenkins angebunden.",
+            "Automatisierte Tests, SonarQube-Quality-Gates und OWASP-Prüfungen vor dem Release ergänzt.",
+            "Build-Artefakte und Versionen in Nexus für reproduzierbare Rollbacks gespeichert.",
+            "Redis für Caching und Session-State genutzt, um Verfügbarkeitsabfragen schnell zu halten.",
+            "Dienste mit Kubernetes orchestriert und Verfügbarkeit mit Prometheus/Grafana überwacht.",
+            "Datenbankmigrationen und Backups in den Delivery-Workflow integriert."
           ]
         },
-        "usedTools": "Verwendete Technologien",
-        "tools": ["React", "NestJS", "PostgreSQL", "Docker", "Jenkins", "Redis", "Tailwind CSS"],
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "React",
+          "NestJS",
+          "PostgreSQL",
+          "Docker",
+          "Jenkins",
+          "Redis",
+          "Tailwind CSS"
+        ],
         "featuredProject": {
-          "subtitle": "Freelance-Projekt",
-          "tech": "Verwendete Technologien:",
-          "button": "Projekt ansehen",
+          "subtitle": "Marktplatz / Buchung",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen",
           "comingSoon": {
             "badge": "Demnächst",
             "title": "Video demnächst verfügbar",
             "subtitle": "Eine umfassende Demo wird vorbereitet.",
             "placeholder": "Keine Vorschau verfügbar"
           }
-        }
+        },
+        "summary": "Zweiseitige Sportanlagen-Plattform: Spieler finden und buchen Plätze, Betreiber verwalten Kalender, Verfügbarkeit und Reservierungen.",
+        "mediaLabel": "Zweiseitige Buchungsplattform · Kunden- & Stadion-App"
+      },
+      {
+        "id": "1",
+        "nameProject": "CommunicFlow V1",
+        "infoProject": "PROJEKTINFORMATIONEN",
+        "slug": "communic-flow",
+        "title": "CommunicFlow V1",
+        "visitSites": "Website besuchen",
+        "descProject": "Das ursprüngliche Organisations-Dashboard für die Nationale Kammer der Pharmaindustrie (CNIP). Es zentralisierte institutionelle Informationen zwischen Organisationen, Tochtergesellschaften und Mitgliedern mit hierarchischer Verwaltung, Rollenrechten, Veranstaltungsplanung, Beschwerden und Echtzeit-Messaging.",
+        "videoProject": "demo-communic-flow",
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          ""
+        ],
+        "imgProject": [
+          "communic-flow"
+        ],
+        "apk": "",
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "REACT",
+            "TYPESCRIPT",
+            "EXPRESS.JS",
+            "SOCKET.IO",
+            "MYSQL"
+          ],
+          "DevOps": [
+            "DOCKER",
+            "JENKINS"
+          ]
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "Hierarchische Organisationen, Tochtergesellschaften und Mitglieder",
+            "Rollenbasierte Zugriffskontrolle und Administrationsabläufe",
+            "Veranstaltungsplanung und Terminkalender",
+            "Erstellung, Verfolgung und Beantwortung von Beschwerden",
+            "Gruppen- und Direktnachrichten mit Socket.IO"
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "Frontend und Backend mit Docker containerisiert.",
+            "Releases über Jenkins-CI/CD-Pipelines ausgeliefert.",
+            "Abschlussbericht und Deployment-Ablauf dokumentiert."
+          ]
+        },
+        "rapport": {
+          "url": "/Rapport_PFE.pdf",
+          "label": "Bericht herunterladen"
+        },
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "React",
+          "Node.js",
+          "MySQL",
+          "Socket.IO",
+          "Docker",
+          "Jenkins"
+        ],
+        "featuredProject": {
+          "subtitle": "Abschlussprojekt",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen",
+          "comingSoon": {
+            "badge": "Bald verfügbar",
+            "title": "Video bald verfügbar",
+            "subtitle": "Eine ausgearbeitete Demo wird vorbereitet.",
+            "placeholder": "Keine Vorschau verfügbar"
+          }
+        },
+        "summary": "Institutionelles Dashboard für die CNIP, das Organisationen, Mitglieder, Veranstaltungen, Beschwerden und Echtzeit-Messaging zentralisiert.",
+        "mediaLabel": "v1-Demo · ursprüngliche Plattform"
       },
       {
         "id": "0",
@@ -544,19 +667,59 @@
         "codeSource": "Quellcode anzeigen",
         "downloadAPK": "APK herunterladen",
         "title": "Erstellung einer mobilen Anwendung zur Online-Terminbuchung bei einem Arzt",
-        "descProject": "ALLO DOCTOR, eine innovative Lösung, bietet die Möglichkeit, medizinische Termine online über eine hochentwickelte mobile Anwendung zu buchen, die mit der fortschrittlichen React Native Technologie entwickelt wurde. Die Robustheit unserer Infrastruktur basiert auf einem Backend, das mit Express.js erstellt und durch die Leistung von MongoDB als Datenbank unterstützt wird. Dieser Ansatz gewährleistet eine reibungslose Benutzererfahrung, eine effiziente Datenverwaltung und eine schnelle Reaktion auf Anfragen, wodurch das Qualitäts- und Professionalitätsniveau unseres Online-Terminbuchungsservice angehoben wird.",
-        "imgProject": ["ALLO-DOCTOR"],
-        "videoProject": "ALLO-DOCTOR",
+        "descProject": "ALLO DOCTOR ist eine Termin-App für Patienten und Ärzte. Nutzer können verfügbare Ärzte sehen, einen Slot wählen und kommende Konsultationen verwalten, während eine Express.js-API die Termine in MongoDB konsistent hält.",
+        "imgProject": [
+          "ALLO-DOCTOR"
+        ],
+        "videoProject": "ALLO-DOCTOR.webm",
         "urlProject": [
           "https://github.com/ach02raf/ach02raf-ALLO-DOCTOR-APP-Front",
           "https://github.com/ach02raf/ach02raf-ALLO-DOCTOR-APP-back"
         ],
-        "urlSITE": [""],
+        "urlSITE": [
+          ""
+        ],
         "apk": "",
-        "usedTools": "Verwendete Tools",
-        "tools": ["REACT-NATIVE", "EXPRESS.JS", "MONGO.DB"]
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "REACT-NATIVE",
+          "EXPRESS.JS",
+          "MONGO.DB"
+        ],
+        "summary": "Cross-Platform-App für Arzttermine, gestützt auf einen Express.js-/MongoDB-Dienst.",
+        "featuredProject": {
+          "subtitle": "Gesundheit / Mobile",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "Patientenflow mit Arztprofilen und verfügbaren Terminen.",
+            "Cross-Platform-React-Native-Oberfläche für Android und iOS.",
+            "Express.js-API für Termine, Verfügbarkeit und Patientendaten.",
+            "MongoDB-Persistenz für Planung und Konsultationshistorie."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "React-Native-Client gebaut, der die REST-API konsumiert.",
+            "Express.js-Dienst mit MongoDB-Collections für Termine implementiert.",
+            "Produktdemo aufgezeichnet und den Buchungsablauf dokumentiert."
+          ]
+        },
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "REACT-NATIVE",
+            "EXPRESS.JS",
+            "MONGO.DB"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "App-Demo · Buchungsablauf"
       },
-
       {
         "id": "1",
         "nameProject": "API SOAP",
@@ -566,18 +729,57 @@
         "codeSource": "Quellcode anzeigen",
         "downloadAPK": "APK herunterladen",
         "title": "Erstellung einer SOAP-API mit Spring Boot-Projekten",
-        "descProject": "Die Erstellung einer SOAP-API mit Spring Boot bietet einen leistungsstarken und effizienten Ansatz für die Entwicklung von Webanwendungen. Durch die Verwendung dieser robusten Plattform können wir eine moderne und skalierbare SOAP-API konzipieren, die die Kommunikation zwischen verschiedenen Systemen erleichtert. Spring Boot vereinfacht den Prozess, indem es eine Standardkonfiguration und integrierte Funktionen bereitstellt, was eine schnelle Implementierung und eine optimale Verwaltung von Webdiensten ermöglicht. Dieser Ansatz, der die Flexibilität von Spring Boot und die SOAP-Kommunikationsstandards kombiniert, gewährleistet eine harmonische und sichere Integration, die den anspruchsvollsten Anforderungen an die API-Entwicklung gerecht wird.",
-        "imgProject": ["api-soap"],
+        "descProject": "Ein contract-first SOAP-Dienst mit Spring Boot für die Systemintegration. Die API bietet typisierte Operationen mit WSDL-Verträgen, Validierung und strukturierter Fehlerbehandlung, damit Legacy- und moderne Clients einfacher verbunden werden können.",
+        "imgProject": [
+          "api-soap"
+        ],
         "videoProject": "",
         "urlProject": [
           "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT",
           "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT-2",
           "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT-3"
         ],
-        "urlSITE": [""],
+        "urlSITE": [
+          ""
+        ],
         "apk": "",
-        "usedTools": "Verwendete Tools",
-        "tools": ["SPRINGBOOT", "POSTMAN"]
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "SPRINGBOOT",
+          "POSTMAN"
+        ],
+        "summary": "Spring-Boot-SOAP-API für contract-first-Integrationen zwischen Unternehmenssystemen.",
+        "featuredProject": {
+          "subtitle": "Backend / Integration",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "WSDL-Verträge mit stark typisierten Requests und Responses.",
+            "Spring-Boot-Konfiguration für schnellen Start und externalisierte Einstellungen.",
+            "Request-Validierung und strukturierte SOAP-Fault-Antworten.",
+            "Endpoint-Tests und Dokumentation mit Postman-Collections."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "Servicevertrag definiert und SOAP-Skelett mit Spring Boot erzeugt.",
+            "Endpoints, Validierung und Fehler-Mapping implementiert.",
+            "Request-/Response-Verträge vor der Übergabe mit Postman geprüft."
+          ]
+        },
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "SPRINGBOOT",
+            "POSTMAN"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "WSDL-Vertrag · SOAP-Service mit Spring Boot"
       },
       {
         "id": "2",
@@ -588,7 +790,7 @@
         "codeSource": "Quellcode anzeigen",
         "downloadAPK": "APK herunterladen",
         "title": "Erstellung einer mobilen Anwendung zur Organisation und Buchung von Reisen und Wanderungen mit einem Online-Guide",
-        "descProject": "Eine innovative mobile Anwendung, die Benutzern die Möglichkeit bietet, von erfahrenen Guides vorgeschlagene touristische Routen auszuwählen. Die Anwendung ermöglicht es Touristen nicht nur, ihre bevorzugten Ziele auszuwählen und personalisierte Routen zu erstellen, sondern besteht aus zwei Teilen: einer dynamischen Benutzeroberfläche, die mit dem Ionic Framework für das Frontend entwickelt wurde, und einer robusten serverseitigen Infrastruktur, die mit Express.js und MongoDB für das Backend realisiert wurde. Darüber hinaus bietet sie die Funktion, aus einer Liste verfügbarer Guides zu wählen, deren persönliche Profile einzusehen und Kommentare anderer Touristen zu lesen.",
+        "descProject": "GoTRIP ist ein mobiler Reisebegleiter für touristische Routen, individuelle itineraries und Buchungen mit erfahrenen Guides. Ein Ionic-Frontend spricht mit einem Express.js-/MongoDB-Backend, das Routen, Guides, Reservierungen und Bewertungen speichert.",
         "imgProject": [
           "gotrip",
           "gotrip13",
@@ -610,10 +812,52 @@
           "https://github.com/ach02raf/GoTrip-ionic-application",
           "https://github.com/ach02raf/GoTrip-ionic-application-backend"
         ],
-        "urlSITE": [""],
+        "urlSITE": [
+          ""
+        ],
         "apk": "gotrip",
-        "usedTools": "Verwendete Tools",
-        "tools": ["IONIC", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "IONIC",
+          "EXPRESS.JS",
+          "MONGO.DB",
+          "POSTMAN"
+        ],
+        "summary": "Ionic-Reise-App für Routenplanung, Platzbuchungen sowie Guide-Profile und Bewertungen.",
+        "featuredProject": {
+          "subtitle": "Reise / Mobile",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "Kuratierte Routen entdecken und individuelle Reisepläne erstellen.",
+            "Platzbuchung für Reisen und Wanderungen.",
+            "Guide-Profile mit Bewertungen und Rezensionen anderer Reisender.",
+            "Ionic-Frontend für eine konsistente Mobile-Erfahrung.",
+            "Express.js-/MongoDB-Backend für Routen, Buchungen und Bewertungen."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "Ionic-Client gebaut, der Express.js-REST-Endpoints konsumiert.",
+            "Routen, Guides, Reservierungen und Bewertungen in MongoDB modelliert.",
+            "API-Flows mit Postman validiert und Buchungsstrecke dokumentiert."
+          ]
+        },
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "IONIC",
+            "EXPRESS.JS",
+            "MONGO.DB",
+            "POSTMAN"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Mobile Screens · Routen, Guides & Buchung"
       },
       {
         "id": "3",
@@ -624,18 +868,61 @@
         "codeSource": "Quellcode anzeigen",
         "downloadAPK": "APK herunterladen",
         "title": "Erstellung einer responsiven Webanwendung für digitale Kunst: ARTIVESE",
-        "descProject": "Unser Projekt besteht darin, eine Plattform für digitale Kunst zu schaffen, die Künstlern einen Raum bietet, um ihre Kreationen auszustellen. Diese Initiative passt zum wachsenden Trend von Online-Plattformen, die die Kommunikation, den Informationsaustausch und die Zusammenarbeit im künstlerischen Bereich erleichtern und gleichzeitig neue Perspektiven für die kulturelle Förderung eröffnen.",
-        "imgProject": ["artverse"],
+        "descProject": "ARTVERSE ist eine responsive Plattform für digitale Kunst. Sie gibt Künstlern Raum für ihre Arbeiten und Besuchern eine einfache Möglichkeit, Werke nach Künstler und Kategorie zu durchstöbern.",
+        "imgProject": [
+          "artverse"
+        ],
         "videoProject": "",
         "urlProject": [
           "https://github.com/ach02raf/ARTVERSE-PROJECT",
           "https://github.com/ach02raf/ARTVERSE-PROJECT-API-NODEJS",
           "https://github.com/ach02raf/ARTVERSE-PROJECT-API-DJANGO"
         ],
-        "urlSITE": ["https://ach02raf.github.io/ARTVERSE-PROJECT/"],
+        "urlSITE": [
+          "https://ach02raf.github.io/ARTVERSE-PROJECT/"
+        ],
         "apk": "",
-        "usedTools": "Verwendete Tools",
-        "tools": ["ANGULAR", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "ANGULAR",
+          "EXPRESS.JS",
+          "MONGO.DB",
+          "POSTMAN"
+        ],
+        "summary": "Responsive Angular-Galerie, in der digitale Künstler Werke veröffentlichen und entdecken können.",
+        "featuredProject": {
+          "subtitle": "Digitale Kunst / Web",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "Künstlerprofile und Galerieansichten für digitale Werke.",
+            "Responsive Angular-Oberfläche für Desktop und Mobilgeräte.",
+            "Express.js-API für Werke, Künstler und Kategorien.",
+            "MongoDB-Collections für Inhalte und Metadaten."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "Angular-Client mit wiederverwendbaren Galerie- und Profilkomponenten gebaut.",
+            "Express.js-API und MongoDB-Datenmodelle implementiert.",
+            "Wichtige Endpoints mit Postman geprüft und Content-Flow dokumentiert."
+          ]
+        },
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "ANGULAR",
+            "EXPRESS.JS",
+            "MONGO.DB",
+            "POSTMAN"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Responsive Galerie · digitale Kunst"
       },
       {
         "id": "4",
@@ -646,7 +933,7 @@
         "codeSource": "Quellcode anzeigen",
         "downloadAPK": "APK herunterladen",
         "title": "Erstellung eines Pakets von 16 Websites mit dem CMS WordPress",
-        "descProject": "",
+        "descProject": "Eine gebündelte Lieferung von 16 WordPress-Websites für Kunden aus Architektur, Sanierung und Bau. Geteilte Vorlagen und SCSS-Muster sorgten für eine konsistente Bildsprache, während jede Site eigene Inhalte, Medien und eine Launch-Checkliste erhielt.",
         "imgProject": [
           "all-sitewordpress",
           "1001-architecture",
@@ -658,11 +945,12 @@
           "reno-deco",
           "sopranet",
           "enirop",
-          "architectis",
-          "reno-deco"
+          "architectis"
         ],
         "videoProject": "",
-        "urlProject": [""],
+        "urlProject": [
+          ""
+        ],
         "urlSITE": [
           "https://1001-architectures.fr/",
           "https://truecom.fr/",
@@ -673,12 +961,53 @@
           "https://reno-deco.fr",
           "https://sopranet.fr/",
           "https://enirop.com",
-          "https://architectis.fr/",
-          "https://reno-deco.fr"
+          "https://architectis.fr/"
         ],
         "apk": "",
-        "usedTools": "Verwendete Tools",
-        "tools": ["WORDPRESS", "PHP", "JAVASCRIPT", "HTML", "SCSS-SASS"]
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "WORDPRESS",
+          "PHP",
+          "JAVASCRIPT",
+          "HTML",
+          "SCSS-SASS"
+        ],
+        "summary": "Lieferung von 16 WordPress-Websites für Architektur-, Sanierungs- und Bauunternehmen mit wiederverwendbaren Vorlagen.",
+        "featuredProject": {
+          "subtitle": "Web / CMS",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "Sechzehn Launchs in den Bereichen Architektur, Sanierung und Bau.",
+            "Wiederverwendbare WordPress-Vorlagen und redaktionell nutzbare Inhaltsblöcke.",
+            "SCSS-Designsystem für konsistente Abstände, Typografie und Farben.",
+            "Onpage-SEO-Grundlagen: Metadaten, saubere URLs, Bild-Alt-Texte und Sitemaps.",
+            "Kundenspezifische Galerien, Leistungsseiten und Kontaktstrecken."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "Gemeinsames Theme-Scaffold und Deployment-Checkliste eingerichtet.",
+            "Inhalte, Menüs und Medien pro Website konfiguriert.",
+            "Responsives Verhalten und SEO-Metadaten vor dem Launch geprüft."
+          ]
+        },
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "WORDPRESS",
+            "PHP",
+            "JAVASCRIPT",
+            "HTML",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "16 gelieferte WordPress-Sites · ausgewählte Screens"
       },
       {
         "id": "5",
@@ -689,14 +1018,63 @@
         "codeSource": "Quellcode anzeigen",
         "downloadAPK": "APK herunterladen",
         "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
-        "descProject": "",
-        "imgProject": ["spacy-and-cosy"],
+        "descProject": "Eine moderne Showcase-Seite für ein französisches Bauunternehmen. Ziel war es, Leistungen und Referenzen klar zu präsentieren, auf Mobilgeräten schnell zu laden und Kontakt einfach zu machen.",
+        "imgProject": [
+          "spacy-and-cosy"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://www.spacy-and-cosy.com/"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://www.spacy-and-cosy.com/"
+        ],
         "apk": "",
-        "usedTools": "Verwendete Tools",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js-Showcase-Seite für ein französisches Bauunternehmen, optimiert auf Speed, Klarheit und Lead-Generierung.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "Leistungs- und Projektbereiche zugeschnitten auf ein französisches Bauunternehmen.",
+            "Responsives Layout mit Tailwind CSS, Bootstrap 5 und SCSS.",
+            "Wiederverwendbare TypeScript-Komponenten für konsistente Seiten.",
+            "Kontakt-CTAs und Metadaten für lokale Auffindbarkeit."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "Wiederverwendbare Seitensektionen mit Next.js und TypeScript gebaut.",
+            "Designsystem mit Tailwind CSS, Bootstrap 5 und SCSS umgesetzt.",
+            "Responsives Verhalten, Metadaten und Kontaktwege vor dem Launch geprüft."
+          ]
+        },
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Website · Bauleistungen"
       },
       {
         "id": "7",
@@ -707,14 +1085,63 @@
         "codeSource": "Quellcode anzeigen",
         "downloadAPK": "APK herunterladen",
         "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
-        "descProject": "",
-        "imgProject": ["structural-metal"],
+        "descProject": "Eine moderne Showcase-Seite für ein Unternehmen für Metallkonstruktionen. Ziel war es, Leistungen und Referenzen klar zu präsentieren, auf Mobilgeräten schnell zu laden und Kontakt einfach zu machen.",
+        "imgProject": [
+          "structural-metal"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://www.structural-metal.com/"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://www.structural-metal.com/"
+        ],
         "apk": "",
-        "usedTools": "Verwendete Tools",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js-Showcase-Seite für ein Unternehmen für Metallkonstruktionen, optimiert auf Speed, Klarheit und Lead-Generierung.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "Leistungs- und Projektbereiche zugeschnitten auf ein Unternehmen für Metallkonstruktionen.",
+            "Responsives Layout mit Tailwind CSS, Bootstrap 5 und SCSS.",
+            "Wiederverwendbare TypeScript-Komponenten für konsistente Seiten.",
+            "Kontakt-CTAs und Metadaten für lokale Auffindbarkeit."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "Wiederverwendbare Seitensektionen mit Next.js und TypeScript gebaut.",
+            "Designsystem mit Tailwind CSS, Bootstrap 5 und SCSS umgesetzt.",
+            "Responsives Verhalten, Metadaten und Kontaktwege vor dem Launch geprüft."
+          ]
+        },
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Website · Metallstrukturen"
       },
       {
         "id": "8",
@@ -725,14 +1152,63 @@
         "codeSource": "Quellcode anzeigen",
         "downloadAPK": "APK herunterladen",
         "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
-        "descProject": "",
-        "imgProject": ["structural-home"],
+        "descProject": "Eine moderne Showcase-Seite für ein Unternehmen für Hochbau und Struktursanierung. Ziel war es, Leistungen und Referenzen klar zu präsentieren, auf Mobilgeräten schnell zu laden und Kontakt einfach zu machen.",
+        "imgProject": [
+          "structural-home"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://www.structural-home.com/"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://www.structural-home.com/"
+        ],
         "apk": "",
-        "usedTools": "Verwendete Tools",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js-Showcase-Seite für ein Unternehmen für Hochbau und Struktursanierung, optimiert auf Speed, Klarheit und Lead-Generierung.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "Leistungs- und Projektbereiche zugeschnitten auf ein Unternehmen für Hochbau und Struktursanierung.",
+            "Responsives Layout mit Tailwind CSS, Bootstrap 5 und SCSS.",
+            "Wiederverwendbare TypeScript-Komponenten für konsistente Seiten.",
+            "Kontakt-CTAs und Metadaten für lokale Auffindbarkeit."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "Wiederverwendbare Seitensektionen mit Next.js und TypeScript gebaut.",
+            "Designsystem mit Tailwind CSS, Bootstrap 5 und SCSS umgesetzt.",
+            "Responsives Verhalten, Metadaten und Kontaktwege vor dem Launch geprüft."
+          ]
+        },
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Website · Strukturbau"
       },
       {
         "id": "9",
@@ -743,14 +1219,59 @@
         "codeSource": "Quellcode anzeigen",
         "downloadAPK": "APK herunterladen",
         "title": "Erstellung einer Webanwendung zur CV-Generierung",
-        "descProject": "",
-        "imgProject": ["cv-maker"],
+        "descProject": "CV Maker ist eine kleine Anwendung, die strukturierte Formulareingaben in einen sauberen, druckbaren Lebenslauf verwandelt. Der Fokus liegt auf einer geführten Eingabe und einem Layout, das auch beim Export gut lesbar bleibt.",
+        "imgProject": [
+          "cv-maker"
+        ],
         "videoProject": "",
-        "urlProject": ["https://github.com/ach02raf/CV-MAKER"],
-        "urlSITE": ["https://ach02raf.github.io/CV-MAKER/"],
+        "urlProject": [
+          "https://github.com/ach02raf/CV-MAKER"
+        ],
+        "urlSITE": [
+          "https://ach02raf.github.io/CV-MAKER/"
+        ],
         "apk": "",
-        "usedTools": "Verwendete Tools",
-        "tools": ["ANGULAR", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT"]
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "ANGULAR",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT"
+        ],
+        "summary": "Angular-CV-Generator, der strukturierte Formulareingaben in einen sauberen, druckbaren Lebenslauf verwandelt.",
+        "featuredProject": {
+          "subtitle": "Produktivität / Web",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "Geführte Formulare für Erfahrung, Ausbildung, Fähigkeiten und Kontaktdaten.",
+            "Live-Vorschau des fertigen Lebenslaufs während der Eingabe.",
+            "Druck- und PDF-freundliches Layout mit konsistenter Typografie.",
+            "TypeScript-Modelle für typisierte CV-Daten."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "Angular-Formularflow und typisierte Datenmodelle gebaut.",
+            "Vorschau mit Bootstrap 5 und responsivem CSS gestaltet.",
+            "Drucklayout und Generierungsablauf geprüft."
+          ]
+        },
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "ANGULAR",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Geführter Editor · druckfertiger Lebenslauf"
       },
       {
         "id": "10",
@@ -761,14 +1282,63 @@
         "codeSource": "Quellcode anzeigen",
         "downloadAPK": "",
         "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
-        "descProject": "Agexis: Ingenieur- und Beratungsunternehmen in Frankreich, spezialisiert auf das Management von Gebäude-, Bau- und Infrastrukturprojekten.",
-        "imgProject": ["agexis"],
+        "descProject": "Eine moderne Showcase-Seite für ein französisches Ingenieur- und Projektmanagementbüro. Ziel war es, Leistungen und Referenzen klar zu präsentieren, auf Mobilgeräten schnell zu laden und Kontakt einfach zu machen.",
+        "imgProject": [
+          "agexis"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://www.agexis.com"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://www.agexis.com"
+        ],
         "apk": "",
-        "usedTools": "Verwendete Tools",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js-Showcase-Seite für ein französisches Ingenieur- und Projektmanagementbüro, optimiert auf Speed, Klarheit und Lead-Generierung.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "Leistungs- und Projektbereiche zugeschnitten auf ein französisches Ingenieur- und Projektmanagementbüro.",
+            "Responsives Layout mit Tailwind CSS, Bootstrap 5 und SCSS.",
+            "Wiederverwendbare TypeScript-Komponenten für konsistente Seiten.",
+            "Kontakt-CTAs und Metadaten für lokale Auffindbarkeit."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "Wiederverwendbare Seitensektionen mit Next.js und TypeScript gebaut.",
+            "Designsystem mit Tailwind CSS, Bootstrap 5 und SCSS umgesetzt.",
+            "Responsives Verhalten, Metadaten und Kontaktwege vor dem Launch geprüft."
+          ]
+        },
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Website · Ingenieurberatung"
       },
       {
         "id": "11",
@@ -779,14 +1349,63 @@
         "codeSource": "Quellcode anzeigen",
         "downloadAPK": "",
         "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
-        "descProject": "Mur et Trémie, ein Bauunternehmen, bietet umfassende Dienstleistungen für den Bau und die Renovierung solider und langlebiger Strukturen.",
-        "imgProject": ["muretremie"],
+        "descProject": "Eine moderne Showcase-Seite für ein Unternehmen für Hochbau und Struktursanierung. Ziel war es, Leistungen und Referenzen klar zu präsentieren, auf Mobilgeräten schnell zu laden und Kontakt einfach zu machen.",
+        "imgProject": [
+          "muretremie"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://www.mur-et-tremie.com/"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://www.mur-et-tremie.com/"
+        ],
         "apk": "",
-        "usedTools": "Verwendete Tools",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js-Showcase-Seite für ein Unternehmen für Hochbau und Struktursanierung, optimiert auf Speed, Klarheit und Lead-Generierung.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "Leistungs- und Projektbereiche zugeschnitten auf ein Unternehmen für Hochbau und Struktursanierung.",
+            "Responsives Layout mit Tailwind CSS, Bootstrap 5 und SCSS.",
+            "Wiederverwendbare TypeScript-Komponenten für konsistente Seiten.",
+            "Kontakt-CTAs und Metadaten für lokale Auffindbarkeit."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "Wiederverwendbare Seitensektionen mit Next.js und TypeScript gebaut.",
+            "Designsystem mit Tailwind CSS, Bootstrap 5 und SCSS umgesetzt.",
+            "Responsives Verhalten, Metadaten und Kontaktwege vor dem Launch geprüft."
+          ]
+        },
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Website · Strukturarbeiten"
       },
       {
         "id": "12",
@@ -797,14 +1416,63 @@
         "codeSource": "Quellcode anzeigen",
         "downloadAPK": "",
         "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
-        "descProject": "OPEN MUR ist ein Bauunternehmen, das sich auf die Öffnung tragender Wände spezialisiert hat.",
-        "imgProject": ["open-mur"],
+        "descProject": "Eine moderne Showcase-Seite für einen Spezialisten für Öffnungen in tragenden Wänden. Ziel war es, Leistungen und Referenzen klar zu präsentieren, auf Mobilgeräten schnell zu laden und Kontakt einfach zu machen.",
+        "imgProject": [
+          "open-mur"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://www.open-mur.com/"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://www.open-mur.com/"
+        ],
         "apk": "",
-        "usedTools": "Verwendete Tools",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js-Showcase-Seite für einen Spezialisten für Öffnungen in tragenden Wänden, optimiert auf Speed, Klarheit und Lead-Generierung.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "Leistungs- und Projektbereiche zugeschnitten auf einen Spezialisten für Öffnungen in tragenden Wänden.",
+            "Responsives Layout mit Tailwind CSS, Bootstrap 5 und SCSS.",
+            "Wiederverwendbare TypeScript-Komponenten für konsistente Seiten.",
+            "Kontakt-CTAs und Metadaten für lokale Auffindbarkeit."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "Wiederverwendbare Seitensektionen mit Next.js und TypeScript gebaut.",
+            "Designsystem mit Tailwind CSS, Bootstrap 5 und SCSS umgesetzt.",
+            "Responsives Verhalten, Metadaten und Kontaktwege vor dem Launch geprüft."
+          ]
+        },
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Website · Maueröffnungen"
       },
       {
         "id": "13",
@@ -815,14 +1483,63 @@
         "codeSource": "Quellcode anzeigen",
         "downloadAPK": "",
         "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
-        "descProject": "Rénov en Main, ein auf Renovierungsarbeiten spezialisiertes Unternehmen, schafft außergewöhnliche Lebensräume.",
-        "imgProject": ["renov-en-main"],
+        "descProject": "Eine moderne Showcase-Seite für ein Renovierungsunternehmen für maßgeschneiderte Wohnräume. Ziel war es, Leistungen und Referenzen klar zu präsentieren, auf Mobilgeräten schnell zu laden und Kontakt einfach zu machen.",
+        "imgProject": [
+          "renov-en-main"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://renov-en-main.fr"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://renov-en-main.fr"
+        ],
         "apk": "",
-        "usedTools": "Verwendete Tools",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js-Showcase-Seite für ein Renovierungsunternehmen für maßgeschneiderte Wohnräume, optimiert auf Speed, Klarheit und Lead-Generierung.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "Leistungs- und Projektbereiche zugeschnitten auf ein Renovierungsunternehmen für maßgeschneiderte Wohnräume.",
+            "Responsives Layout mit Tailwind CSS, Bootstrap 5 und SCSS.",
+            "Wiederverwendbare TypeScript-Komponenten für konsistente Seiten.",
+            "Kontakt-CTAs und Metadaten für lokale Auffindbarkeit."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "Wiederverwendbare Seitensektionen mit Next.js und TypeScript gebaut.",
+            "Designsystem mit Tailwind CSS, Bootstrap 5 und SCSS umgesetzt.",
+            "Responsives Verhalten, Metadaten und Kontaktwege vor dem Launch geprüft."
+          ]
+        },
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Website · individuelle Renovierung"
       },
       {
         "id": "14",
@@ -833,14 +1550,63 @@
         "codeSource": "Quellcode anzeigen",
         "downloadAPK": "",
         "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
-        "descProject": "Reno Global: Unternehmen für Renovierung, Gestaltung und Erweiterung von Bauarbeiten in Frankreich.",
-        "imgProject": ["reno-global"],
+        "descProject": "Eine moderne Showcase-Seite für einen Spezialisten für Sanierung und Erweiterung in Frankreich. Ziel war es, Leistungen und Referenzen klar zu präsentieren, auf Mobilgeräten schnell zu laden und Kontakt einfach zu machen.",
+        "imgProject": [
+          "reno-global"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://www.global-reno.com/"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://www.global-reno.com/"
+        ],
         "apk": "",
-        "usedTools": "Verwendete Tools",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js-Showcase-Seite für einen Spezialisten für Sanierung und Erweiterung in Frankreich, optimiert auf Speed, Klarheit und Lead-Generierung.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "Leistungs- und Projektbereiche zugeschnitten auf einen Spezialisten für Sanierung und Erweiterung in Frankreich.",
+            "Responsives Layout mit Tailwind CSS, Bootstrap 5 und SCSS.",
+            "Wiederverwendbare TypeScript-Komponenten für konsistente Seiten.",
+            "Kontakt-CTAs und Metadaten für lokale Auffindbarkeit."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "Wiederverwendbare Seitensektionen mit Next.js und TypeScript gebaut.",
+            "Designsystem mit Tailwind CSS, Bootstrap 5 und SCSS umgesetzt.",
+            "Responsives Verhalten, Metadaten und Kontaktwege vor dem Launch geprüft."
+          ]
+        },
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Website · Renovierung & Anbauten"
       },
       {
         "id": "15",
@@ -851,14 +1617,63 @@
         "codeSource": "Quellcode anzeigen",
         "downloadAPK": "",
         "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
-        "descProject": "",
-        "imgProject": ["mur-mur"],
+        "descProject": "Eine moderne Showcase-Seite für ein französisches Unternehmen für Strukturarbeiten. Ziel war es, Leistungen und Referenzen klar zu präsentieren, auf Mobilgeräten schnell zu laden und Kontakt einfach zu machen.",
+        "imgProject": [
+          "mur-mur"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://mur-mur.fr/"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://mur-mur.fr/"
+        ],
         "apk": "",
-        "usedTools": "Verwendete Tools",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Kern-Tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js-Showcase-Seite für ein französisches Unternehmen für Strukturarbeiten, optimiert auf Speed, Klarheit und Lead-Generierung.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologien:",
+          "button": "Fallstudie ansehen"
+        },
+        "description": {
+          "title": "Was ich gebaut habe",
+          "points": [
+            "Leistungs- und Projektbereiche zugeschnitten auf ein französisches Unternehmen für Strukturarbeiten.",
+            "Responsives Layout mit Tailwind CSS, Bootstrap 5 und SCSS.",
+            "Wiederverwendbare TypeScript-Komponenten für konsistente Seiten.",
+            "Kontakt-CTAs und Metadaten für lokale Auffindbarkeit."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & Prüfungen",
+          "steps": [
+            "Wiederverwendbare Seitensektionen mit Next.js und TypeScript gebaut.",
+            "Designsystem mit Tailwind CSS, Bootstrap 5 und SCSS umgesetzt.",
+            "Responsives Verhalten, Metadaten und Kontaktwege vor dem Launch geprüft."
+          ]
+        },
+        "technologies": {
+          "title": "Technologie-Stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Website · Strukturarbeiten"
       }
     ]
   },
@@ -902,6 +1717,13 @@
             "title": "Merksätze",
             "description": "Patterns sind Werkzeuge. Grenzen klären, Interfaces erzwingen, Entscheidungen dokumentieren. Weniger Überraschungen, höhere Verfügbarkeit."
           }
+        ],
+        "date": "2025-01-12",
+        "tags": [
+          "Design Patterns",
+          "SOLID",
+          "Architektur",
+          "Tests"
         ]
       },
       {
@@ -931,6 +1753,13 @@
             "title": "Leitplanken",
             "description": "CI‑Budgets setzen, Core Web Vitals beobachten und Builds bei Regressionen failen. Performance ist ein Produktkriterium."
           }
+        ],
+        "date": "2025-02-18",
+        "tags": [
+          "Angular",
+          "Performance",
+          "Core Web Vitals",
+          "Frontend"
         ]
       },
       {
@@ -960,6 +1789,13 @@
             "title": "Wartbarkeit",
             "description": "TypeScript, ESLint + Prettier, Props und Invarianten dokumentieren."
           }
+        ],
+        "date": "2025-03-25",
+        "tags": [
+          "React",
+          "TypeScript",
+          "State-Management",
+          "Frontend"
         ]
       },
       {
@@ -989,6 +1825,13 @@
             "title": "Betriebsbereitschaft",
             "description": "Healthchecks, Graceful Shutdown und Incident‑Runbooks. Ausfälle üben, um Resilienz zu steigern."
           }
+        ],
+        "date": "2025-04-14",
+        "tags": [
+          "DevOps",
+          "CI/CD",
+          "Observability",
+          "Reliability"
         ]
       },
       {
@@ -1018,6 +1861,13 @@
             "title": "Tooling",
             "description": "ESLint + Prettier + TS‑Aliases; no‑any, no‑implicit‑any und Unused‑Checks in der CI."
           }
+        ],
+        "date": "2025-05-20",
+        "tags": [
+          "TypeScript",
+          "API-Design",
+          "Validierung",
+          "Tooling"
         ]
       },
       {
@@ -1047,6 +1897,13 @@
             "title": "Messen und iterieren",
             "description": "GA4 + Search Console einrichten; Seiten verbessern, die bereits auf Seite 2 ranken."
           }
+        ],
+        "date": "2025-06-11",
+        "tags": [
+          "SEO",
+          "Portfolio",
+          "Core Web Vitals",
+          "Internationalisierung"
         ]
       },
       {
@@ -1076,6 +1933,13 @@
             "title": "Entscheidungsraster",
             "description": "Die einfachste Option wählen, die SLAs erfüllt. Hybrid‑Backends sind üblich; messen statt raten."
           }
+        ],
+        "date": "2025-07-09",
+        "tags": [
+          "GraphQL",
+          "REST",
+          "API-Design",
+          "Backend"
         ]
       },
       {
@@ -1101,6 +1965,13 @@
             "title": "Betriebstipps",
             "description": "Nur nötige Ports, Ressourcenlimits, strukturierte Logs. Run‑Kommandos für Rufbereitschaft dokumentieren."
           }
+        ],
+        "date": "2025-08-16",
+        "tags": [
+          "Docker",
+          "Container",
+          "Deployment",
+          "DevOps"
         ]
       },
       {
@@ -1126,6 +1997,13 @@
             "title": "Coverage als Kompass",
             "description": "Wo möglich Mutations‑Coverage, Schwellen in CI. Qualität vor rohem Prozentsatz."
           }
+        ],
+        "date": "2025-09-02",
+        "tags": [
+          "Testing",
+          "Qualität",
+          "CI/CD",
+          "Reliability"
         ]
       },
       {
@@ -1151,6 +2029,13 @@
             "title": "Erfolg messen",
             "description": "Install‑Rate, Offline‑Sessions und crash‑freie Nutzer tracken. Nach realer Nutzung iterieren."
           }
+        ],
+        "date": "2025-10-21",
+        "tags": [
+          "PWA",
+          "Offline",
+          "Web-Performance",
+          "Frontend"
         ]
       },
       {
@@ -1184,6 +2069,13 @@
             "title": "Produktions‑Checkliste",
             "description": "CSRF-Schutz, Sitzungsrotation, Token‑Widerruf, Rate Limits, Geräte/IP‑Reputation, strukturierte Logs ohne Geheimnisse, Security‑Tests in CI (OWASP ASVS)."
           }
+        ],
+        "date": "2026-01-15",
+        "tags": [
+          "Sicherheit",
+          "Authentifizierung",
+          "OAuth2",
+          "2FA"
         ]
       },
       {
@@ -1213,11 +2105,360 @@
             "title": "Sicherheit und Missbrauchsschutz",
             "description": "Autorisierung bei Subscribe/Publish, Sende‑Rate begrenzen, Verschlüsselung im Transit/at rest, Quoten pro Nutzer/Organisation."
           }
+        ],
+        "date": "2026-02-24",
+        "tags": [
+          "GraphQL",
+          "Redis",
+          "Echtzeit",
+          "Architektur"
+        ]
+      },
+      {
+        "id": 12,
+        "slug": "ki-agenten-rag-guardrails-kosten-produktion",
+        "title": "KI-Agenten in der Produktion: RAG, Guardrails und Kostenkontrolle",
+        "img": "ai-agents",
+        "titleImg": "KI-Agenten in der Produktion",
+        "date": "2026-11-14",
+        "tags": [
+          "KI",
+          "LLM",
+          "RAG",
+          "KI-Agenten",
+          "MLOps"
+        ],
+        "desc": [
+          {
+            "title": "Warum Agenten in der Produktion scheitern",
+            "description": "Die meisten Prototypen scheitern an mehrdeutiger Absicht, veralteten Kontexten und unbegrenzten Tool-Aufrufen. Behandle einen Agenten als Workflow mit explizitem Zustand, nicht als magischen Prompt."
+          },
+          {
+            "title": "RAG, das echten Fragen standhält",
+            "description": "Segmentiere nach Bedeutung, behalte Metadata-Filter und reranke vor der Generierung. Begründe Antworten in gefundenen Quellen und zeige Zitate, damit Nutzer Behauptungen prüfen können."
+          },
+          {
+            "title": "Guardrails und Tool-Grenzen",
+            "description": "Gib jedem Tool einen engen Vertrag, validiere Eingaben mit Schemas, begrenze Iterationen und verlange menschliche Freigabe für irreversible Aktionen."
+          },
+          {
+            "title": "Kosten und Latenz steuern",
+            "description": "Cache Embeddings, route einfache Anfragen an kleinere Modelle, streame Antworten und erfasse Token pro Aufgabe. Ein Budget ist eine Produktvorgabe, kein Nachgedanke."
+          },
+          {
+            "title": "Evaluation vor dem Launch",
+            "description": "Baue ein Eval-Set aus echten Tickets, bewerte Begründung und Aufgabenerfolg und spiele Fehler in der CI erneut ab. Modell-Updates müssen messbar sein."
+          },
+          {
+            "title": "Fazit",
+            "description": "Starte mit einem deterministischen Workflow, ergänze Retrieval dort, wo Kontext zählt, und erst dann Autonomie. Observability macht aus einer Demo ein verlässliches Feature."
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "slug": "platform-engineering-interne-plattform-2026",
+        "title": "Platform Engineering 2026: Eine interne Entwicklerplattform bauen",
+        "img": "platform-engineering",
+        "titleImg": "Platform Engineering",
+        "date": "2026-10-28",
+        "tags": [
+          "Platform Engineering",
+          "DevOps",
+          "Interne Plattform",
+          "DORA",
+          "DX"
+        ],
+        "desc": [
+          {
+            "title": "Warum Plattformen Ticket-Operationen ersetzen",
+            "description": "Wenn jedes Team seine eigene Pipeline bastelt, verlangsamt sich die Auslieferung und Sicherheit wird uneinheitlich. Eine Plattform macht wiederholte Einrichtung zum Self-Service-Produkt."
+          },
+          {
+            "title": "Mit dem Golden Path beginnen",
+            "description": "Veröffentliche meinungsstarke Vorlagen für Services, Jobs und Infrastruktur. Ein neues Repository sollte eine getestete App mit Observability und Richtlinien liefern."
+          },
+          {
+            "title": "Idempotente Infrastruktur",
+            "description": "Nutze Terraform- oder Pulumi-Module mit versionierten Schnittstellen. Stelle Umgebungen über einen Katalog bereit, nie über manuell bearbeitete Consolen."
+          },
+          {
+            "title": "Developer Experience messen",
+            "description": "Verfolge Lead Time, Deployment-Frequenz, Change-Failure-Rate und Wiederherstellungszeit. Frag Entwickler, wo sie warten, und entferne genau diesen Schritt."
+          },
+          {
+            "title": "Die Plattform-Falle vermeiden",
+            "description": "Baue keine Ticketwarteschlange mit UI. Lass Escape Hatches zu, dokumentiere Verantwortlichkeiten und behandle die Plattform wie jedes andere Produkt mit Roadmap."
+          },
+          {
+            "title": "Fazit",
+            "description": "Eine gute Plattform reduziert kognitive Last, nicht Auswahl. Standardisiere die langweiligen Teile und lass Teams dort innovieren, wo es zählt."
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "slug": "software-supply-chain-sbom-signing-zero-trust",
+        "title": "Software-Supply-Chain-Sicherheit: SBOM, Signing und Zero-Trust-CI",
+        "img": "supply-chain-security",
+        "titleImg": "Supply-Chain-Sicherheit",
+        "date": "2026-10-06",
+        "tags": [
+          "Sicherheit",
+          "Supply Chain",
+          "SBOM",
+          "DevSecOps",
+          "Zero Trust"
+        ],
+        "desc": [
+          {
+            "title": "Die Angriffsfläche ist der Build",
+            "description": "Abhängigkeiten, Runner und Release-Artefakte sind heute primäre Ziele. Sichere den Weg von der Quelle bis zur Produktion mit verifizierten Schritten."
+          },
+          {
+            "title": "SBOM standardmäßig erzeugen",
+            "description": "Erzeuge bei jedem Build CycloneDX oder SPDX. Speichere es mit dem Release, damit du in Minuten statt Tagen antworten kannst: Sind wir betroffen?"
+          },
+          {
+            "title": "Artefakte signieren und prüfen",
+            "description": "Nutze Sigstore oder cosign für Images und Pakete. Admission-Richtlinien sollten alles ohne gültige Signatur und Herkunft ablehnen."
+          },
+          {
+            "title": "CI-Runner härten",
+            "description": "Verwende kurzlebige Tokens, minimale Rechte, gepinnte Actions und isolierte Builds. Platziere niemals langlebige Secrets in einem gemeinsamen Runner."
+          },
+          {
+            "title": "Mit Evidenz patchen",
+            "description": "Kopple Dependency-Scanning mit Reichweitenanalyse und klaren SLAs. Führe risikoarme Updates automatisch zusammen, prüfe breaking changes und dokumentiere Ausnahmen."
+          },
+          {
+            "title": "Fazit",
+            "description": "Supply-Chain-Sicherheit ist kein Scanner. Sie ist eine Kette prüfbarer Aussagen: was du gebaut hast, woraus, und wer es freigegeben hat."
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "slug": "core-web-vitals-inp-rum-2026",
+        "title": "Core Web Vitals 2026: INP, LCP und Real User Monitoring meistern",
+        "img": "web-vitals",
+        "titleImg": "Core Web Vitals 2026",
+        "date": "2026-09-18",
+        "tags": [
+          "SEO",
+          "Core Web Vitals",
+          "INP",
+          "Performance",
+          "RUM"
+        ],
+        "desc": [
+          {
+            "title": "Lab-Werte reichen nicht",
+            "description": "Lighthouse hilft beim Debuggen, aber Ranking und Erlebnis hängen von Felddaten ab. Instrumentiere echte Nutzer mit der web-vitals-Bibliothek."
+          },
+          {
+            "title": "INP an der Interaktion fixen",
+            "description": "Zerlege lange Tasks, gib dem Hauptthread Zeit und verschiebe schwere Arbeit aus dem kritischen Pfad. Entpreffe Eingaben und vermeide synchrone Layout-Lesevorgänge."
+          },
+          {
+            "title": "LCP verbessern, nicht nur das Bundle",
+            "description": "Preloade das Hero-Bild, nutze moderne Formate und entferne renderblockierendes CSS. Eine schnelle Serverantwort zählt mehr als Mikrooptimierungen."
+          },
+          {
+            "title": "Layout stabilisieren",
+            "description": "Reserviere Platz für Bilder, Ads und dynamische Texte. CLS entsteht meist durch spät nachrückende Inhalte, nicht durch CSS-Animationen."
+          },
+          {
+            "title": "Performance-Budget definieren",
+            "description": "Setze CI-Schwellenwerte für LCP, INP und CLS pro Route. Lass den Build bei einer Regression über dem Budget scheitern."
+          },
+          {
+            "title": "Fazit",
+            "description": "Miss nach Route und Gerät, behebe zuerst die schlechteste Interaktion und halte ein Budget ein. Performance ist ein Feature, das man pflegt."
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "slug": "finops-entwickler-cloudkosten-senken",
+        "title": "FinOps für Entwickler: Cloud-Kosten senken ohne Delivery zu bremsen",
+        "img": "finops",
+        "titleImg": "FinOps für Entwickler",
+        "date": "2026-08-27",
+        "tags": [
+          "FinOps",
+          "Cloud",
+          "Kosten",
+          "DevOps",
+          "AWS"
+        ],
+        "desc": [
+          {
+            "title": "Kosten sind eine Engineering-Metrik",
+            "description": "Cloud-Ausgaben folgen Architekturentscheidungen. Behandle sie wie Latenz: sichtbar, budgetiert und gemeinsam mit Zuverlässigkeit geprüft."
+          },
+          {
+            "title": "Alles taggen",
+            "description": "Verlange Owner-, Umgebungs- und Service-Tags beim Provisioning. Ungetaggte Ressourcen sollten isoliert oder automatisch gestoppt werden."
+          },
+          {
+            "title": "Erst richtig dimensionieren",
+            "description": "Der meiste Abfall ist ungenutzte Kapazität. Plane Abschaltzeiten für Non-Prod, nutze Autoscaling und starte mit kleinen, gemessenen Instanzen."
+          },
+          {
+            "title": "Storage explizit machen",
+            "description": "Definiere Lifecycle-Regeln für Logs und Backups, nutze gestaffelte Objektspeicher und lösche verwaiste Volumes und Snapshots."
+          },
+          {
+            "title": "Kosten im Pull Request zeigen",
+            "description": "Schätze die Infrastruktur-Differenz in der CI und hänge sie an den PR. Entwickler ändern Verhalten, wenn Feedback vor dem Deploy kommt."
+          },
+          {
+            "title": "Fazit",
+            "description": "FinOps ist ein Kreislauf: zuordnen, messen, optimieren, prüfen. Opfere nie Zuverlässigkeit für eine kurzfristige Ersparnis, die du nicht beobachten kannst."
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "slug": "edge-serverless-architektur-2026",
+        "title": "Edge und Serverless 2026: Muster, Kosten und harte Grenzen",
+        "img": "edge-serverless",
+        "titleImg": "Edge & Serverless",
+        "date": "2026-07-30",
+        "tags": [
+          "Serverless",
+          "Edge Computing",
+          "Cloud-Architektur",
+          "Performance",
+          "DevOps"
+        ],
+        "desc": [
+          {
+            "title": "Nach Constraints entscheiden",
+            "description": "Edge gewinnt bei Latenz nah am Nutzer; Serverless bei Lastspitzen und geringem Betriebsaufwand. Keines von beiden ist eine Standardarchitektur."
+          },
+          {
+            "title": "Funktionen klein und pur halten",
+            "description": "Packe Geschäftslogik in testbare Module und halte Handler dünn. Cold Starts bestrafen große Bundles und versteckte E/A."
+          },
+          {
+            "title": "Für Idempotenz entwerfen",
+            "description": "Retries sind normal. Nutze Idempotenz-Keys, dauerhafte Queues und das Outbox-Pattern, damit doppelte Events keinen Zustand zerstören."
+          },
+          {
+            "title": "Die echte Kostenkurve beobachten",
+            "description": "Request-Preise sind günstig, bis der Traffic stabil und hoch ist. Vergleiche mit Containern, bevor du dich für eine Dauerlast festlegst."
+          },
+          {
+            "title": "Grenzen einplanen",
+            "description": "Laufzeit, Speicher, Payload-Größe und regionale Datenvorgaben prägen das Design. Teste Fehlerfälle lokal mit Emulatoren und Contract Tests."
+          },
+          {
+            "title": "Fazit",
+            "description": "Nutze Edge für Personalisierung und Redirects, Serverless für spikey APIs und Container für stabile Dienste. Miss vor der Migration."
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "slug": "lokaler-rag-dokumentassistent-bauen",
+        "title": "Einen RAG-Dokumentassistenten mit pgvector und Seitenquellen bauen",
+        "img": "ai-agents",
+        "titleImg": "Lokales RAG",
+        "date": "2026-11-16",
+        "tags": [
+          "RAG",
+          "OpenAI",
+          "pgvector",
+          "FastAPI",
+          "Next.js",
+          "LangChain",
+          "Quellen"
+        ],
+        "desc": [
+          {
+            "title": "Eine klare Grenze ziehen",
+            "description": "Der Assistent antwortet ausschließlich aus vom Nutzer hochgeladenen Dokumenten: PDF, DOCX, TXT und MD. Es ist ein Einzelplatz-Werkzeug ohne Anmeldung und ohne Multi-Tenancy, das einen OpenAI-API-Schlüssel benötigt. Diese Grenze hielt das Produkt ehrlich: der Wert liegt in fundiertem Retrieval mit sichtbaren Quellen, nicht in einer Enterprise-Suchplattform."
+          },
+          {
+            "title": "Die Ingestion bestimmt die Qualität",
+            "description": "pypdf und python-docx extrahieren seitenbezogenen Text, RecursiveCharacterTextSplitter zerlegt jede Seite unter Beibehaltung der exakten Seitennummer. Chunks werden in Batches von 100 mit text-embedding-3-small vektorisiert und in PostgreSQL mit pgvector gespeichert. Format- und Größenvalidierung verhindern, dass fehlerhafte Eingaben den Index verschmutzen."
+          },
+          {
+            "title": "Zuerst abrufen, dann neu sortieren",
+            "description": "Die Vektorsuche nutzt einen HNSW-Cosine-Index und liefert 20 Kandidaten. Ein strukturierter gpt-4o-mini-Aufruf bewertet jede Passage von 0 bis 10, die besten 5 gehen an das Antwortmodell. Scheitert das Reranking, fällt die Pipeline auf die Vektorreihenfolge zurück, statt die Anfrage zu brechen."
+          },
+          {
+            "title": "Fundierung sichtbar machen",
+            "description": "Das Antwortschema enthält die Antwort und die tatsächlich genutzten Passagen-Nummern. Quellen werden nach Dokument und Seite dedupliziert und mit Auszug und Score zurückgegeben. Reicht der Kontext nicht aus, lässt das Modell die Quellen leer und sagt, dass die Information nicht in den Dokumenten steht."
+          },
+          {
+            "title": "Eine fokussierte Oberfläche bauen",
+            "description": "Die Next.js-14-Oberfläche bleibt einfach: Dokumente hochladen, die durchsuchten Dokumente auswählen, eine Frage stellen und die Quellen neben der Antwort lesen. Der FastAPI-Dienst stellt /health, Dokumentenliste/-upload/-löschung und /api/chat bereit, sodass die Oberfläche ersetzt werden kann, ohne die Retrieval-Logik zu ändern."
+          },
+          {
+            "title": "Wie ein Dienst ausliefern",
+            "description": "Docker Compose betreibt PostgreSQL/pgvector, Backend und Frontend als drei Dienste. Schema und HNSW-Index werden beim Start erstellt, Pydantic-Settings validieren die Konfiguration, und eine dokumentierte .env-Vorlage deckt Modelle, Chunking, Retrieval, CORS und Upload-Grenzen ab."
+          },
+          {
+            "title": "Ehrliche nächste Schritte",
+            "description": "Es gibt noch keinen eigenen Evaluationsdatensatz. Die nächste Iteration würde einen Gold-Fragenkatalog, Retrieval-Metriken, hybride lexikalisch/vektorielle Suche, optionale Authentifizierung und OCR für gescannte PDFs ergänzen. Die aktuelle Pipeline ist gerade deshalb nützlich, weil ihre Grenzen explizit sind."
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "slug": "communicflow-v2-mikroservices-architektur",
+        "title": "CommunicFlow v2: Die Messenger trennen, ohne das Produkt neu zu schreiben",
+        "img": "graphql-redis",
+        "titleImg": "Plattform v2",
+        "date": "2026-11-17",
+        "tags": [
+          "Architektur",
+          "GraphQL",
+          "Redis",
+          "Sicherheit",
+          "Socket.IO",
+          "Docker",
+          "Jenkins"
+        ],
+        "desc": [
+          {
+            "title": "Die Ausgangslage",
+            "description": "CommunicFlow V1 trug bereits die Geschäftsbereiche: Organisationen, Mitglieder, Veranstaltungen, Beschwerden und Messaging. Der Echtzeitverkehr verdiente eine eigene Grenze. Ziel von v2 war es nicht, alles aus Modegründen in Microservices zu zerlegen, sondern den Messenger so zu isolieren, dass Chat-Last, WebRTC-Signalling und Präsenz die zentrale REST-Anwendung nicht destabilisieren."
+          },
+          {
+            "title": "Eine Grenze, die man ausrollen kann",
+            "description": "Eine React-/Vite-SPA spricht mit einer Express-REST-API und einem separaten GraphQL-/Socket.IO-Messenger. GraphQL übernimmt typisierte Reads und Mutations; Socket.IO bleibt der primäre Echtzeit-Transport. Redis stützt den gemeinsamen Session-Cookie, interne Aufrufe werden mit einem constant-time Service-Key authentifiziert. Drei Dienste, jeweils eine klare Verantwortung."
+          },
+          {
+            "title": "Sicherheit ist die Architektur",
+            "description": "Access- und Refresh-Tokens liegen in HTTP-only-Cookies mit festgelegten HS512-Algorithmen, Rotation und Datenbank-Revocation. TOTP-2FA, Backup-Codes und Cloudflare Turnstile schützen vor Kontenübernahme und missbräuchlichen Registrierungen. Eine aktive Organisation pro Session und eine Super-Admin-Ausnahme machen den Mandanten-Scope explizit."
+          },
+          {
+            "title": "Echtzeit mit Regeln",
+            "description": "Der Messenger bietet Räume, Präsenz, Tippstatus, Lesebestätigungen und begrenzt paginierte Historie. Call-Signalling nutzt STUN und kurzlebige HMAC-TURN-Zugangsdaten über coturn, gesteuert durch Organisationsrichtlinie und Diskussionsrolle. Echtzeit-Produktentwicklung bedeutet nicht nur Latenz, sondern auch die Frage, wer sehen, senden oder anrufen darf."
+          },
+          {
+            "title": "Fachmodule zählen weiter",
+            "description": "v2 ergänzt einen verwalteten Drive mit berechtigungsgeprüftem Ausliefern, Papierkorb, Versionshistorie, Aktivitätsprotokoll, Token-Links und ZIP-Export. Veranstaltungen speichern Rekurrenzregeln und expandieren sie beim Lesen mit definiertem Horizont und Limit. Beschwerden laufen über einen SLA-Job, Benachrichtigungen unterstützen Präferenzen, Gruppierung und Realtime-Delivery."
+          },
+          {
+            "title": "Delivery-Gates",
+            "description": "Docker Compose betreibt den Stack hinter nginx mit TLS, Security-Headers, Real-IP-Verarbeitung und WebSocket-Unterstützung. Eine achtstufige Jenkins-Pipeline validiert die Compose-Konfiguration, erstellt Image-Snapshots, prüft Health Checks, führt Smoke-Tests aus und behält Rollback-Images. Es gibt kein Kubernetes und kein Prometheus-Setup: Das System ist bewusst für einen VPS dimensioniert."
+          },
+          {
+            "title": "Was die Trennung gebracht hat",
+            "description": "Der Messenger kann ausfallen, neu starten oder skalieren, ohne den Kern-Workspace mitzureißen. Authentifizierung und Scope werden bewusst geteilt statt dupliziert. Die schwierigste Aufgabe war nicht die Framework-Wahl, sondern Berechtigungen, Benachrichtigungen und Deployment-Disziplin über die neue Grenze hinweg konsistent zu halten."
+          }
         ]
       }
     ]
   },
-  "Footer": { "title": "@ 2023 ALLE RECHTE VORBEHALTEN DURCH ACH02RAF" },
+  "Footer": {
+    "title": "@ 2023 ALLE RECHTE VORBEHALTEN DURCH ACH02RAF"
+  },
   "otherProjets": [
     {
       "id": "6",
@@ -1229,28 +2470,26 @@
       "downloadAPK": "APK herunterladen",
       "title": "Erstellung einer Showcase-Website mit dem Next.js Framework",
       "descProject": "",
-      "imgProject": ["structural-wood"],
+      "imgProject": [
+        "structural-wood"
+      ],
       "videoProject": "",
-      "urlProject": [""],
-      "urlSITE": ["https://structural-wood.fr/"],
+      "urlProject": [
+        ""
+      ],
+      "urlSITE": [
+        "https://structural-wood.fr/"
+      ],
       "apk": "",
       "usedTools": "Verwendete Tools",
-      "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+      "tools": [
+        "NEXT.JS",
+        "BOOTSTRAP-5",
+        "JAVASCRIPT",
+        "TYPESCRIPT",
+        "TAILWIND-CSS",
+        "SCSS-SASS"
+      ]
     }
-  ],
-  "feedbackPopup": {
-    "title": "Teilen Sie Ihr Feedback",
-    "namePlaceholder": "Ihr Name",
-    "emailPlaceholder": "Ihre E-Mail",
-    "advicePlaceholder": "Ihre Ratschläge oder Vorschläge...",
-    "submitButton": "Feedback Senden",
-    "successMessage": "Vielen Dank für Ihr Feedback!",
-    "errorMessage": "Fehler beim Senden. Bitte versuchen Sie es erneut.",
-    "ratingLabel": "Bewerten Sie Ihre Erfahrung"
-  },
-  "feedbackInvite": {
-    "title": "Würden Sie mir mit Ihrem Rat helfen?",
-    "text": "Ihr Feedback hilft mir, dieses Portfolio zu verbessern. Wenn Sie einen Vorschlag oder eine kleine Idee haben, ich freue mich darauf!",
-    "button": "Rat teilen"
-  }
+  ]
 }

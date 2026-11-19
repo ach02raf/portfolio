@@ -1,0 +1,36 @@
+﻿changelog:
+  exclude:
+    labels:
+      - ignore-for-release
+      - duplicate
+      - invalid
+      - wontfix
+    authors:
+      - dependabot
+  categories:
+    - title: Highlights
+      labels:
+        - release-highlight
+        - enhancement
+        - feature
+    - title: Fixes
+      labels:
+        - bug
+        - fix
+    - title: Performance & Accessibility
+      labels:
+        - performance
+        - accessibility
+        - seo
+    - title: Documentation
+      labels:
+        - documentation
+        - docs
+    - title: Maintenance
+      labels:
+        - chore
+        - dependencies
+        - ci
+    - title: Other changes
+      labels:
+        - "*"

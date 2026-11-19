@@ -1,332 +1,110 @@
-# 🎨 Portfolio (Next.js)
+﻿# Mohamed Achraf Ben Fredj — Portfolio
 
-> A sleek, multi-language personal portfolio with dark/light themes, animations, and SEO-ready deployment.
-
-[![Next.js 14](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)](https://nextjs.org)
-[![React 18](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
-[![Sass](https://img.shields.io/badge/Sass-1.69-CC6699?style=flat-square&logo=sass)](https://sass-lang.com)
+[![CI & GitHub Pages](https://github.com/ach02raf/portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/ach02raf/portfolio/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/ach02raf/portfolio/actions/workflows/codeql.yml/badge.svg)](https://github.com/ach02raf/portfolio/actions/workflows/codeql.yml)
+[![Next.js 14](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-Apache--2.0-green?style=flat-square)](LICENSE)
 
----
+A static, multilingual personal portfolio showcasing projects, writing, experience, and services across **Web, Mobile, DevOps, and AI**.
 
-## ✨ Features
+**Live:** [ach02raf.pro](https://ach02raf.pro)
 
-- 🌍 **i18n Support**: English, French, German with dynamic locale routing
-- 🎭 **Theme Toggle**: Light/dark mode with smooth transitions (powered by `next-themes`)
-- 📊 **Analytics Ready**: Google Analytics hooks for tracking engagement
-- ✨ **Animations**: Framer Motion + custom Sass animations (snowfall, fade-ins)
-- 📱 **Responsive Design**: Mobile-first approach with Bootstrap 5
-- 🔍 **SEO Optimized**: Automatic sitemap generation (`next-sitemap`)
-- ⚡ **Performance**: Next.js 14 with static generation and optimized builds
+## Highlights
 
-## 🎬 Live Demo
+- **Multilingual:** French, English, and German (`/fr`, `/en`, `/de`) with localized content dictionaries and locale-aware routing.
+- **Static export:** built with Next.js (App Router) and exported for GitHub Pages (`docs/`), no backend or database.
+- **Project case studies:** dedicated project pages with media, links, and technical details, plus a writing/blog section.
+- **SEO & accessibility minded:** metadata, Open Graph/Twitter cards, structured data, sitemap/robots generation, and responsive UI with theme support.
+- **Direct contact:** email/phone/location links only — no forms, no server-side message handling.
 
-👉 **[Deploy your portfolio](https://vercel.com)** on Vercel or your preferred hosting platform
+## Tech stack
 
----
+| Area | Details |
+| --- | --- |
+| Framework | Next.js 14 (App Router), React 18 |
+| Language | TypeScript |
+| Styling | Sass (SCSS modules/files), CSS variables, light/dark theme (`next-themes`) |
+| Content/i18n | JSON dictionaries (`dictionaries/`), locale config (`i18n-config.ts`, `get-dictionary.ts`) |
+| SEO | `next-sitemap` (postbuild), metadata/structured data in app/lib |
+| CI/CD | GitHub Actions (lint/build, Pages deploy, CodeQL, release automation) |
 
-## 🛠️ Tech Stack & Key Packages
+## Project structure
 
-| Layer | Tech |
-|-------|------|
-| **Framework** | Next.js 14, React 18, TypeScript |
-| **Styling** | Sass, Bootstrap 5, Framer Motion |
-| **Icons & UI** | Font Awesome, custom animations |
-| **Theming** | `next-themes` with CSS variables |
-| **i18n** | `@formatjs/intl-localematcher`, `negotiator` |
-| **Analytics** | [src/lib/gtag.ts](src/lib/gtag.ts) (Google Analytics) |
-| **SEO** | `next-sitemap` for dynamic sitemaps |
-
-## 🎨 Color & Theme System
-
-The portfolio uses a **premium violet + yellow** color scheme with smooth theme transitions.
-
-### Base Palette (see [src/app/global-variables.scss](src/app/global-variables.scss))
-
-```scss
-$violet-dark:  #2b0945  // Main dark background
-$violet-light: #44285b  // Secondary surfaces
-$yellow:       #fec260  // Accent / highlights
-$white:        #fff     // Light text
-$black:        #111     // Dark text
-```
-
-### CSS Theme Variables
-
-| Variable | Light | Dark |
-|----------|-------|------|
-| `--page-bg` | `#ffffff` | `#0b0812` |
-| `--page-text` | `#111111` | `#ffffff` |
-| `--accent` | `#fec260` | `#c79af0` |
-| `--section-bg` | Light gradient | Dark gradient |
-
-👉 **Edit** [src/app/globals.scss](src/app/globals.scss) and [src/app/global-variables.scss](src/app/global-variables.scss) to customize colors. Changes apply instantly with CSS variable transitions.
-
-## 📂 Project Structure
-
-```
+```text
 portfolio/
-├── src/
-│   ├── app/                    # Next.js app directory
-│   │   ├── [lang]/             # Dynamic locale routes
-│   │   ├── globals.scss        # Theme variables & animations
-│   │   └── global-variables.scss # Color palette
-│   ├── component/              # Reusable UI components
-│   │   ├── Header/             # Navigation & locale switcher
-│   │   ├── Footer/             # Footer section
-│   │   ├── ThemeButton.tsx     # Light/dark toggle
-│   │   └── ...
-│   └── lib/
-│       └── gtag.ts             # Google Analytics helpers
-├── dictionaries/               # i18n translation files
-│   ├── en.json
-│   ├── fr.json
-│   └── de.json
-├── public/Images/              # Static assets
-├── get-dictionary.ts           # i18n server loader
-├── i18n-config.ts              # Locale configuration
-├── .github/workflows/ci.yml    # CI/CD pipeline
-└── package.json
+├─ src/
+│  ├─ app/                 # App Router routes, layouts, global styles
+│  │  ├─ (landing)/        # Root landing
+│  │  └─ (site)/[lang]/    # Localized site, projects, blog
+│  ├─ components/          # UI components
+│  ├─ content/             # UI/search content helpers
+│  └─ lib/                 # Utilities (SEO, media, locale, metadata, etc.)
+├─ dictionaries/           # Localized content (fr.json, en.json, de.json)
+├─ public/                 # Static assets (images, media, CVs, icons)
+├─ docs/                   # Static export output (GitHub Pages distDir)
+├─ .github/workflows/      # CI, Pages deploy, CodeQL, releases
+├─ next.config.js          # output: "export", distDir: "docs"
+└─ next-sitemap.config.js  # Sitemap/robots config
 ```
 
-## 🚀 Quick Start
+## Getting started
 
 ### Prerequisites
 
-- **Node.js** 18+ and **npm** (or yarn)
+- Node.js 20+ recommended
+- npm
 
-### Installation & Development
+### Install & run
 
 ```bash
-# Clone and install
-git clone <your-repo-url>
-cd portfolio
-npm install
-
-# Start dev server (http://localhost:3000)
+npm ci
 npm run dev
-
-# Build for production
-npm run build
-
-# Run production server
-npm run start
-
-# Run linter
-npm run lint
-
-# Generate sitemap
-npm run sitemap
 ```
 
-## 🌐 Environment Variables
+Open [http://localhost:3000](http://localhost:3000).
 
-Create a `.env.local` file in the root:
+### Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start development server |
+| `npm run lint` | Run ESLint |
+| `npm run build` | Build static export to `docs/` (runs `next-sitemap` via postbuild) |
+| `npm run sitemap` | Generate sitemap/robots manually |
+| `npm run start` | Start Next.js server (not used for static Pages hosting) |
+
+## Environment variables
+
+Optional (analytics only), e.g. in `.env.local`:
 
 ```env
-# Google Analytics (optional)
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 ```
 
-| Variable | Type | Default | Notes |
-|----------|------|---------|-------|
-| `NEXT_PUBLIC_GA_ID` | string | (optional) | Your Google Analytics measurement ID |
+No API keys, SMTP credentials, or backend services are required.
 
-## 🌍 Internationalization (i18n)
+## Deployment
 
-Dictionaries live in [dictionaries](dictionaries): [en.json](dictionaries/en.json), [fr.json](dictionaries/fr.json), [de.json](dictionaries/de.json).
+The site is a **static export** (`output: "export"`, `distDir: "docs"`).
 
-### Add a New Language
+- **GitHub Actions:** pushes to `main` run lint/build and deploy to GitHub Pages (see [ci.yml](.github/workflows/ci.yml)).
+- **Manual/local:** `npm run build` produces the deployable site in `docs/`.
 
-1. **Create** a new dictionary file:
-   ```bash
-   cp dictionaries/en.json dictionaries/es.json
-   # Edit es.json with Spanish translations
-   ```
+## Releases & versioning
 
-2. **Register** the locale in [i18n-config.ts](i18n-config.ts):
-   ```typescript
-   export const i18n = {
-     defaultLocale: 'fr',
-     locales: ['en', 'fr', 'de', 'es'],  // ← Add 'es'
-   } as const
-   ```
+- Semantic Versioning with tags like `v4.0.0` (see [CHANGELOG.md](CHANGELOG.md)).
+- Pushing a `v*` tag triggers the [Release workflow](.github/workflows/release.yml) to create a GitHub Release with generated notes (configured via [.github/release.yml](.github/release.yml)).
 
-3. **Create** route folder:
-   ```bash
-   mkdir -p src/app/es
-   # Create es-specific pages as needed
-   ```
+## Contributing & security
 
-✅ Your new locale is live!
+- Contribution guide: [CONTRIBUTING.md](CONTRIBUTING.md)
+- Security policy: [SECURITY.md](SECURITY.md)
 
-## 🎯 Customization Guide
+## License
 
-### Update Colors & Theme
+[Apache-2.0](LICENSE)
 
-Edit the Sass files to match your brand:
+## Author
 
-```scss
-// src/app/global-variables.scss
-$violet-dark:  #2b0945;   // Change to your primary color
-$violet-light: #44285b;   // Change to your secondary
-$yellow:       #fec260;   // Change to your accent
-```
-
-### Update Content
-
-| What | Where |
-|------|-------|
-| Hero section | [src/app/[lang]/page.tsx](src/app/%5Blang%5D/page.tsx) |
-| Components | [src/component/](src/component) |
-| Styles | `src/app/*.scss` and component `.scss` files |
-| Images | [public/Images/](public/Images) |
-| Fonts | [src/app/globals.scss](src/app/globals.scss) (Google Fonts import) |
-
-### Add Animations
-
-Use Framer Motion in your components:
-
-```tsx
-import { motion } from 'framer-motion';
-
-export default function Card() {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-    >
-      Your content here
-    </motion.div>
-  );
-}
-```
-
-## 📸 Screenshots & Gallery
-
-Store project images and screenshots under [public/Images](public/Images):
-
-```
-public/Images/
-├── cover.png        # Hero image
-├── mobile.png       # Mobile preview
-├── dark-theme.png   # Dark mode screenshot
-└── Icons/
-    ├── logo.svg
-    └── ...
-```
-
-Reference in pages:
-
-```tsx
-<img src="/Images/cover.png" alt="Portfolio cover" className="w-100" />
-```
-
-Or use Next.js Image for optimization:
-
-```tsx
-import Image from 'next/image';
-
-<Image
-  src="/Images/cover.png"
-  alt="Portfolio"
-  width={1200}
-  height={600}
-  priority
-/>
-```
-
-## 🚢 Deployment
-
-### Vercel (Recommended ⭐)
-
-Vercel is the creator of Next.js and provides seamless deployment:
-
-1. Push code to GitHub
-2. Connect repo to [Vercel](https://vercel.com)
-3. Add env variables (optional: `NEXT_PUBLIC_GA_ID`)
-4. Deploy with one click — automatic builds & preview URLs
-
-### Other Node Hosts
-
-```bash
-# Build
-npm run build
-
-# Deploy (adjust for your host)
-npm run start
-```
-
-Set env variables in your host dashboard. Node.js 18+ required.
-
-**Example: AWS, DigitalOcean, Render, Railway, Heroku**
-
-## ⚠️ Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| **Missing translations** | Check [dictionaries/](dictionaries) files exist and [i18n-config.ts](i18n-config.ts) has the locale |
-| **No analytics events** | Set `NEXT_PUBLIC_GA_ID` in `.env.local` and verify GA tag is loaded |
-| **Styling looks broken** | Confirm [src/app/globals.scss](src/app/globals.scss) imports are correct and Sass is installed |
-| **Build fails** | Run `npm run build` locally, check stack trace, clear `.next` folder |
-| **Theme toggle not working** | Ensure `ThemeWrapper` provider wraps your app in [src/app/layout.tsx](src/app/layout.tsx) |
-
-**Need help?** Open an issue or check the [docs](https://nextjs.org/docs).
-
-## 📋 CI/CD with GitHub Actions
-
-Automatic checks on every push and PR:
-
-**Workflow:** [.github/workflows/ci.yml](.github/workflows/ci.yml)
-
-- ✔️ Install dependencies
-- ✔️ Run ESLint (`npm run lint`)
-- ✔️ Build production bundle (`npm run build`)
-- 🔄 Node 18 with npm caching for speed
-
-### Add CI Badge to Readme
-
-Replace `<owner>/<repo>` with your GitHub org/repo name:
-
-```markdown
-[![CI](https://github.com/<owner>/<repo>/actions/workflows/ci.yml/badge.svg)](https://github.com/<owner>/<repo>/actions)
-```
-
----
-
-## 🔒 Security & License
-
-| File | Purpose |
-|------|---------|
-| [SECURITY.md](SECURITY.md) | Vulnerability reporting & response policy |
-| [LICENSE](LICENSE) | Apache-2.0 open-source license |
-
-### Report Security Issues
-
-📧 Email: `your-email@example.com` (Update with your contact)
-
-**Do not open public issues for unpatched vulnerabilities!**
-
----
-
-## 👨‍💻 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/my-feature`
-3. Make changes and commit: `git commit -m 'Add my feature'`
-4. Push and open a pull request
-5. CI will automatically run checks
-
----
-
-## 💬 Contact & Support
-
-**Author:** Update with your name and GitHub profile
-
-- ⭐ Star this repo if you find it useful!
-- 💬 Open issues for bugs or feature requests
-- 🔗 Follow for updates
-
-**Happy coding! 🚀**
+**Mohamed Achraf Ben Fredj** — [ach02raf.pro](https://ach02raf.pro) · [github.com/ach02raf](https://github.com/ach02raf)

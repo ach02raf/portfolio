@@ -12,31 +12,36 @@
     },
     {
       "id": 2,
-      "name": "Skills",
-      "url": "Skills"
-    },
-    {
-      "id": 3,
-      "name": "Experience & Education",
-      "url": "Experience-Education"
-    },
-    {
-      "id": 4,
       "name": "Services",
       "url": "Services"
     },
     {
-      "id": 5,
+      "id": 3,
       "name": "My Work",
       "url": "My-Work"
     },
     {
+      "id": 4,
+      "name": "Process",
+      "url": "Process"
+    },
+    {
+      "id": 5,
+      "name": "Skills",
+      "url": "Skills"
+    },
+    {
       "id": 6,
+      "name": "Experience & Education",
+      "url": "Experience-Education"
+    },
+    {
+      "id": 7,
       "name": "Blog",
       "url": "Blog"
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Contact Me",
       "url": "Contact-Me"
     }
@@ -44,60 +49,68 @@
   "firstSection": {
     "title": "I am ",
     "name": "Mohamed Achraf BEN FREDJ,",
-    "description": ["A computer science engineer expert in Web, Mobile & DevOps"],
+    "description": [
+      "Full-stack engineer · Web / Mobile / DevOps / AI"
+    ],
     "cv": "Download CV"
   },
   "secondSection": {
-    "title": ["About", "Me"],
+    "title": [
+      "About",
+      "Me"
+    ],
     "description": [
-      "  Computer science engineer graduated from (",
+      "Computer science engineer from ",
       "TEK-UP",
-      "). Specialized in Mobile, Web and Multimedia Development, after a degree in computer science at (",
+      ", freelance full-stack developer since October 2024 and software engineer trained at ",
       "ISIMM",
-      "), My full-stack development skills have been strengthened by several projects and internships, notably as a web developer at Zeta Engineering. Passionate about the JavaScript/TypeScript ecosystem, I design modern, high-performance and user-centered applications. Discover my work on my GitHub (",
+      ". I build web and mobile products, DevOps pipelines and grounded AI systems — from RAG assistants to multi-service platforms. I care about testable architecture, observability and clean delivery. My work lives on GitHub (",
       "ach02raf",
-      "), a reflection of my commitment to excellence and innovation in software development."
+      "), from mobile apps to multi-service collaboration platforms."
     ]
   },
   "ServicesSection": {
-    "title": ["My", "Services"],
-    "description": "LET'S TAKE A QUICK LOOK AT MY SERVICES",
+    "title": [
+      "My",
+      "Services"
+    ],
+    "description": "FROM WEB & MOBILE TO DEVOPS & AI",
     "listServices": [
       {
         "id": 1,
-        "title": "Web Integration",
-        "desc": "Development and integration of a graphic design to convert it into a compliant web project. I pay special attention to user experience and optimization (SEO & display speed) across all my projects.",
+        "title": "GenAI / LLM Systems",
+        "desc": "RAG pipelines, AI agents, function calling, MCP, guardrails and evaluation. I turn LLM prototypes into grounded, observable features with clear fallbacks and cost controls.",
         "img": "faMagic"
       },
       {
         "id": 2,
-        "title": "E-Commerce",
-        "desc": "Creation of an e-commerce platform using the Magento e-commerce CMS, which is one of the most comprehensive open-source solutions. I specialize in specific developments to adapt Magento to your needs and operations.",
-        "img": "faShoppingBag"
-      },
-      {
-        "id": 3,
-        "title": "Web & Mobile Application",
-        "desc": "Creation of business applications, Intranet, Extranet, Corporate and showcase sites, Web apps, etc. Regular updates, bug fixes, performance optimization, and improvements in the security of applications and websites.",
+        "title": "Full-Stack Product Engineering",
+        "desc": "End-to-end delivery from requirements to production: React / Next.js interfaces, REST or GraphQL APIs, relational data and real-time workflows that stay maintainable.",
         "img": "faGears"
       },
       {
+        "id": 3,
+        "title": "Platform & DevOps",
+        "desc": "Docker Compose and multi-service deployments, GitHub Actions and Jenkins pipelines, health checks, rollback strategies and practical observability on lean infrastructure.",
+        "img": "faRocket"
+      },
+      {
         "id": 4,
-        "title": "Code Review",
-        "desc": "Analyzing and ensuring that the code adheres to best practices, and ensuring its quality (readability, clarity, consistency). This makes the code more maintainable, better structured, and reduces the number of bugs.",
+        "title": "Security & Quality",
+        "desc": "OWASP-minded design: HTTP-only cookies, refresh rotation, 2FA, Turnstile, role and organisation scoping, contract tests and quality gates before release.",
         "img": "faCode"
       },
       {
         "id": 5,
-        "title": "Optimization",
-        "desc": "Performing a performance analysis and optimization of your applications by delving into the source code, interactions between different components, and databases to take effective actions to improve application performance.",
-        "img": "faRocket"
+        "title": "SEO & Performance",
+        "desc": "Technical SEO, Core Web Vitals, internationalisation and structured data for products that are fast, discoverable and easy for recruiters to understand.",
+        "img": "faBullhorn"
       },
       {
         "id": 6,
-        "title": "SEO - Search Engine Optimization",
-        "desc": "Optimizing for search engines by applying a set of techniques, rules, and best practices to improve the visibility of websites and their positions in search engine results.",
-        "img": "faBullhorn"
+        "title": "Web & Mobile Delivery",
+        "desc": "Business web and mobile applications, e-commerce and internal tools, with pragmatic UX, accessible interfaces and deployments that are easy to repeat.",
+        "img": "faShoppingBag"
       }
     ]
   },
@@ -112,50 +125,75 @@
     "listeSkills": [
       {
         "id": 0,
-        "title": "Programming Languages",
-        "listeLangage": ["C", "C-SHARP", "JAVA", "JAVASCRIPT", "TYPESCRIPT", "PYTHON", "PHP"]
+        "title": "GenAI / LLM",
+        "listeLangage": [
+          "PYTHON",
+          "LANGCHAIN",
+          "LANGGRAPH",
+          "OPENAI",
+          "OLLAMA",
+          "FASTAPI",
+          "RAG",
+          "PGVECTOR",
+          "EVALUATION"
+        ]
       },
       {
         "id": 1,
-        "title": "Frameworks",
+        "title": "Programming Languages",
         "listeLangage": [
-          "EXPRESS.JS",
-          "NEXT.JS",
-          "SPRINGBOOT",
-          "DJANGO",
-          "ANGULAR",
-          "REACT-NATIVE",
-          "SWIFT-UI",
-          "IONIC",
-          "DOTNET-CORE",
-          "BOOTSTRAP-5",
-          "TAILWIND-CSS"
+          "TYPESCRIPT",
+          "JAVASCRIPT",
+          "PYTHON",
+          "SQL",
+          "C-SHARP",
+          "JAVA",
+          "PHP"
         ]
       },
       {
         "id": 2,
-        "title": "Markup Languages",
-        "listeLangage": ["HTML"]
+        "title": "Frontend",
+        "listeLangage": [
+          "REACT",
+          "NEXT.JS",
+          "ANGULAR",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "REDUX",
+          "HTML",
+          "CSS",
+          "SCSS-SASS"
+        ]
       },
       {
         "id": 3,
-        "title": "Style Languages",
-        "listeLangage": ["CSS", "SCSS-SASS"]
+        "title": "Backend & Data",
+        "listeLangage": [
+          "EXPRESS.JS",
+          "NEST.JS",
+          "DOTNET-CORE",
+          "REST-RESTFUL",
+          "GRAPHQL",
+          "SOCKET.IO",
+          "REDIS",
+          "MYSQL",
+          "POSTGRESQL",
+          "MONGO.DB"
+        ]
       },
       {
         "id": 4,
-        "title": "JS/TS Libraries",
-        "listeLangage": ["REACT"]
-      },
-      {
-        "id": 5,
-        "title": "DevOps",
+        "title": "DevOps & Cloud",
         "listeLangage": [
           "GIT",
           "GITHUB",
-          "JENKINS",
-          "AWS",
           "DOCKER",
+          "KUBERNETES",
+          "JENKINS",
+          "GITHUB-ACTIONS",
+          "AWS",
+          "NGINX",
           "SONARQUBE",
           "NEXUS",
           "OWASP",
@@ -164,14 +202,16 @@
         ]
       },
       {
-        "id": 6,
-        "title": "CMS",
-        "listeLangage": ["WORDPRESS"]
-      },
-      {
-        "id": 7,
-        "title": "Others",
-        "listeLangage": ["REST-RESTFUL", "GRAPHQL"]
+        "id": 5,
+        "title": "Quality & Methods",
+        "listeLangage": [
+          "UNIT TESTING",
+          "XUNIT",
+          "DESIGN PATTERNS",
+          "CODE REVIEW",
+          "AGILE / SCRUM",
+          "SEO"
+        ]
       }
     ]
   },
@@ -179,23 +219,27 @@
     {
       "title": "Experience",
       "iconCard": "faBuilding",
-
       "list": [
         {
-          "title": "Freelance – Full-Stack Developer",
-          "subtitle": "Currently engaged in two projects",
+          "title": "Freelance — Full-Stack / GenAI Engineer",
+          "subtitle": "Independent · AI and product delivery",
           "desc": [
-            "Improvement and development of Communic Flow (version 2) — multi-level organizational dashboard.",
-            "Participation in the development of KickOff — platform for booking sports fields and team management."
+            "Extended CommunicFlow v2 into a multi-service workspace with a dedicated GraphQL/Socket.IO messenger, hardened cookie auth, 2FA and Turnstile.",
+            "Built a local RAG document assistant with FastAPI, pgvector, reranking, streamed answers and source citations.",
+            "Delivered TraceFlow, a real-time production traceability dashboard with SignalR, operator/supervisor roles and xUnit tests.",
+            "Set up Docker, GitHub Actions and Jenkins delivery with health-gated releases."
           ],
           "dateDeb": "Oct. 2024",
           "dateFin": "Present",
-          "location": "Monastir, Tunisia"
+          "location": "Tunis, Tunisia"
         },
         {
           "title": "ASQII",
-          "subtitle": "Final year internship",
-          "desc": ["Development of Communic Flow (version 1)."],
+          "subtitle": "Full-Stack Engineer · Final-year internship",
+          "desc": [
+            "Developed CommunicFlow V1: a multi-level organisational dashboard with hierarchy, role permissions, event planning, reclamations and real-time messaging.",
+            "Set up a CI/CD pipeline with code-quality and security analysis."
+          ],
           "dateDeb": "Jan. 2024",
           "dateFin": "Jul. 2024",
           "location": "Le Kram, Tunis, Tunisia"
@@ -204,50 +248,33 @@
           "title": "ZETA Engineering",
           "subtitle": "Web Developer",
           "desc": [
-            "Creation of a pack of 16 WordPress websites and 4 Next.js websites.",
-            "SEO optimization on all created websites."
+            "Built and optimised SEO-focused websites with React, Next.js, TypeScript, Tailwind CSS and WordPress.",
+            "Managed end-to-end deployments and worked in Agile/Scrum with GitHub, GitLab, pull requests and daily stand-ups."
           ],
-          "dateDeb": "Aug. 2023",
-          "dateFin": "Jan. 2024",
-          "location": "Al Zahra, Ben Arous, Tunisia"
-        },
-        {
-          "title": "ZETA Engineering",
-          "subtitle": "Summer internship",
-          "desc": ["Training and practical work on WordPress CMS and SEO."],
           "dateDeb": "Jun. 2023",
-          "dateFin": "Jul. 2023",
-          "location": "Al Zahra, Ben Arous, Tunisia"
+          "dateFin": "Jan. 2024",
+          "location": "Ben Arous, Tunisia"
         },
         {
           "title": "SHAREK IT",
-          "subtitle": "Summer internship",
+          "subtitle": "Full-Stack Web Intern",
           "desc": [
-            "Development of an e-commerce website for selling IT equipment.",
-            "Used stack: MERN + Bootstrap."
+            "Developed an MERN e-commerce platform for IT equipment.",
+            "Stack: React, Express.js, MongoDB and Tailwind CSS."
           ],
           "dateDeb": "Jun. 2022",
           "dateFin": "Aug. 2022",
-          "location": "Al Ghazala, Ariana, Tunisia"
+          "location": "Ariana, Tunisia"
         },
         {
           "title": "COSO-FT IT",
-          "subtitle": "Final year internship",
+          "subtitle": "Mobile & Web Intern",
           "desc": [
-            "Creation of a web and mobile application for medical appointments (ALLO DOCTOR).",
-            "Used stack: MERN + React Native."
+            "Built a hybrid medical appointment application with React Native, React, Express.js and MongoDB."
           ],
           "dateDeb": "Jan. 2020",
           "dateFin": "Jul. 2020",
           "location": "Monastir, Tunisia"
-        },
-        {
-          "title": "SARTEX GROUP",
-          "subtitle": "Summer internship",
-          "desc": ["IT maintenance and introduction to Cloud Computing."],
-          "dateDeb": "Jun. 2018",
-          "dateFin": "Jul. 2018",
-          "location": "Ksar Hlel, Monastir, Tunisia"
         }
       ]
     },
@@ -258,210 +285,213 @@
         {
           "title": "TEK-UP University",
           "subtitle": "Computer Engineering",
-          "desc": ["Specialized in web, mobile and multimedia development."],
+          "desc": [
+            "Specialised in web, mobile and multimedia development."
+          ],
           "dateDeb": "2021",
           "dateFin": "2024",
-          "location": "Ariana Soghra, Ariana, Tunisia"
+          "location": "Ariana, Tunisia"
         },
         {
           "title": "ISIMM",
           "subtitle": "Bachelor's degree in Computer Science",
-          "desc": ["Specialized in software engineering."],
+          "desc": [
+            "Software engineering specialisation."
+          ],
           "dateDeb": "2016",
           "dateFin": "2020",
           "location": "Monastir, Tunisia"
         },
         {
-          "title": "LKM – Lycée Ksibet El Mediouni",
+          "title": "Lycée Ksibet El Mediouni",
           "subtitle": "Technical Baccalaureate",
           "desc": [],
           "dateDeb": "2015",
           "dateFin": "2016",
-          "location": "Ksibet EL Madouini, Monastir, Tunisia"
+          "location": "Ksibet El Mediouni, Tunisia"
         }
       ]
     }
   ],
   "Project": {
-    "title": ["My Latest", "Projects"],
-    "desc": "My projects reflect a varied experience between autonomous work and collaboration. On projects like Communic Flow, Allow Doctor and GoTrip, I ensured the entire process: conception, design, development and deployment. On other projects, I contributed to specific missions, providing targeted expertise within development teams. This combination allowed me to develop a global vision while strengthening my technical and collaborative skills.",
+    "title": [
+      "Selected",
+      "Work"
+    ],
+    "desc": "Case studies across web, mobile, DevOps and applied AI — from document-grounded assistants to deployable multi-service platforms.",
     "list": [
       {
-        "id": "1",
-        "nameProject": "Communic Flow",
+        "id": "16",
+        "nameProject": "RAG Document Assistant",
         "infoProject": "PROJECT INFO",
-        "slug": "communic-flow",
-        "title": "Communic Flow",
+        "slug": "rag-document-assistant",
+        "title": "RAG Document Assistant",
         "visitSites": "Visit the website",
-        "descProject": "Communic Flow is a multi-level organizational dashboard designed to modernize institutional communication. It connects organizations, their affiliates, and members through a centralized platform offering information management, role-based access control, event planning, claim management, real-time messaging, and Power BI reporting. Initially developed for the National Chamber of the Pharmaceutical Industry (CNIP), the application addresses real needs for coordination, transparency, and rapid information flow across complex ecosystems.",
-        "videoProject": "demo-communic-flow",
-        "urlProject": [""],
-        "urlSITE": [""],
-        "imgProject": [],
+        "descProject": "A document-grounded assistant built with Next.js, FastAPI and PostgreSQL/pgvector. It extracts text from PDF, DOCX, TXT and MD files, splits it page by page, embeds it with OpenAI text-embedding-3-small, then retrieves, LLM-reranks and answers with deduplicated page-level sources through a documented REST API.",
+        "videoProject": "",
+        "urlProject": [
+          "https://github.com/ach02raf/rag-document-assistant"
+        ],
+        "urlSITE": [
+          "https://doc.ach02raf.pro"
+        ],
+        "imgProject": [
+          "rag-document-assistant"
+        ],
         "apk": "",
         "technologies": {
-          "title": "Development",
+          "title": "Tech stack",
           "Developpement": [
-            "REACT",
-            "TYPESCRIPT",
-            "TAILWIND-CSS",
+            "PYTHON",
+            "FASTAPI",
+            "LANGCHAIN",
+            "LANGCHAIN-OPENAI",
+            "OPENAI API",
             "NEXT.JS",
-            "EXPRESS.JS",
-            "SOCKET.IO",
-            "MYSQL"
+            "TYPESCRIPT"
           ],
-          "DevOps": ["DOCKER", "JENKINS", "KUBERNETES", "GRAFANA", "SONARQUBE", "NEXUS", "OWASP"]
+          "DevOps": [
+            "POSTGRESQL 16",
+            "PGVECTOR",
+            "HNSW INDEX",
+            "DOCKER",
+            "DOCKER COMPOSE",
+            "PYDANTIC",
+            "CORS"
+          ]
         },
         "description": {
-          "title": "Main Features",
+          "title": "What I built",
           "points": [
-            "Centralized institutional information across organizations and affiliates",
-            "Complete hierarchical structure: Super Administrator → Organizations → Members",
-            "Advanced claim management: creation, tracking, and responses",
-            "Real-time messaging with Socket.IO (groups and individual chats)",
-            "Event planning and scheduling",
-            "Advanced user, role, and permission management",
-            "Management of organizations and their affiliates",
-            "Power BI integration for interactive analytics and decision-making"
+            "Accepts PDF, DOCX, TXT and MD uploads with a 50 MB limit and explicit format validation.",
+            "Preserves exact page numbers during pypdf/python-docx extraction and RecursiveCharacterTextSplitter chunking.",
+            "Embeds chunks in batches of 100 with text-embedding-3-small and stores them in a pgvector HNSW cosine index.",
+            "Retrieves 20 candidates, reranks them with gpt-4o-mini structured scoring, then sends the top 5 passages to the answer model.",
+            "Returns structured answers with deduplicated document, page, excerpt and similarity-score sources; when context is insufficient, the model leaves sources empty and says so.",
+            "Exposes /health, document list/upload/delete and /api/chat endpoints with a Next.js 14 chat UI and document selector."
           ]
         },
         "devopsProcess": {
-          "title": "DevOps Process",
+          "title": "Delivery & checks",
           "steps": [
-            "Implementation of a complete CI/CD architecture using Jenkins",
-            "Automated continuous integration for both frontend and backend",
-            "Application containerization using Docker with image storage in Nexus Repository",
-            "Automated code quality analysis with SonarQube and strict Quality Gates",
-            "Security and vulnerability scanning using OWASP Dependency-Check",
-            "Application and pipeline monitoring via Prometheus",
-            "Performance metrics visualization using Grafana",
-            "Automated deployment pipeline to the VPS with artifact management"
+            "Runs PostgreSQL/pgvector, the FastAPI backend and the Next.js frontend as three Docker Compose services.",
+            "Creates the vector extension, tables and HNSW index on startup with a bounded psycopg connection pool.",
+            "Keeps model choice, chunk size, retrieval depth, reranking, CORS and upload limit in a documented .env template.",
+            "Uses Pydantic settings and response schemas so configuration errors and API contracts fail early.",
+            "Adds health checks, upload-size validation and explicit 400/413/500 error paths for operational clarity.",
+            "Documents local and Docker workflows, curl examples and troubleshooting steps in the repository README."
           ]
         },
-        "utilisation": {
-          "title": "Usage Mode (Administrator Access)",
-          "url": "https://communicflow.ach02raf.pro/",
-          "login": "admin@admin.com",
-          "password": "admin"
-        },
-        "rapport": {
-          "url": "/Rapport_PFE.pdf",
-          "label": "Download the report"
-        },
-        "usedTools": "Technologies Used",
-        "tools": ["React", "Node.js", "MySQL", "Docker", "Jenkins", "Socket.IO", "Tailwind CSS"],
+        "usedTools": "Core tools",
+        "tools": [
+          "Python",
+          "FastAPI",
+          "OpenAI",
+          "LangChain",
+          "pgvector",
+          "Next.js",
+          "Docker"
+        ],
         "featuredProject": {
-          "subtitle": "Final Year Project",
-          "tech": "Technologies used:",
-          "button": "View Project",
-          "comingSoon": {
-            "badge": "Coming soon",
-            "title": "Video coming soon",
-            "subtitle": "A polished walkthrough is being prepared.",
-            "placeholder": "No preview available"
-          }
-        }
+          "subtitle": "Web / AI",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "summary": "Document-grounded RAG assistant with page-level citations, LLM reranking and a FastAPI + Next.js stack.",
+        "mediaLabel": "Pipeline + answer with page sources"
       },
       {
         "id": "2",
-        "nameProject": "Communic Flow v2",
+        "nameProject": "CommunicFlow v2",
         "infoProject": "PROJECT INFO",
         "slug": "communic-flow-v2",
-        "title": "Communic Flow — Version 2",
+        "title": "CommunicFlow v2",
         "visitSites": "Visit the website",
-        "descProject": "Communic Flow v2 represents the redesigned and upgraded version of the multi-level organizational platform, now rebuilt with a modern microservices architecture. Messaging is fully isolated as an independent service powered by GraphQL and Redis for inter-service communication. The authentication system has been enhanced with secure HTTP-Only cookies, Google OAuth 2.0, Cloudflare Turnstile to block spam, and a complete two-factor authentication flow. Company creation is optimized with automated VIES validation for EU companies and ZIP-based address autofill. Backend security has been significantly reinforced, and real-time messaging performance has been improved to support future features such as voice and video calling.",
-        "videoProject": "demo-communic-flow",
-        "urlProject": [""],
-        "urlSITE": [""],
-        "imgProject": [],
+        "descProject": "The upgraded CommunicFlow platform is a multi-tenant collaboration workspace rather than a single chat app. A React/Vite SPA talks to an Express REST API and a separate GraphQL/Socket.IO messenger. Organisation-scoped access, hardened cookie sessions, 2FA, Turnstile, an internal-service key, a governed Drive, recurrence-based events, SLA-backed reclamations, a notification engine and WebRTC call signalling make v2 a production-oriented system.",
+        "videoProject": "",
+        "urlProject": [],
+        "urlSITE": [
+          "https://communicflow.ach02raf.pro/"
+        ],
+        "imgProject": [
+          "communic-flow-v2"
+        ],
         "apk": "",
         "technologies": {
-          "title": "Development",
+          "title": "Tech stack",
           "Developpement": [
             "REACT",
             "TYPESCRIPT",
-            "TAILWIND-CSS",
-            "NEXT.JS",
+            "VITE",
+            "APOLLO GRAPHQL",
             "EXPRESS.JS",
             "GRAPHQL",
+            "SOCKET.IO",
             "REDIS",
             "MYSQL"
           ],
           "DevOps": [
             "DOCKER",
+            "DOCKER COMPOSE",
             "JENKINS",
-            "KUBERNETES",
-            "GRAFANA",
-            "SONARQUBE",
-            "NEXUS",
-            "OWASP",
+            "NGINX",
+            "COTURN",
+            "OLLAMA",
             "CLOUDFLARE"
           ]
         },
         "description": {
-          "title": "Main Features",
+          "title": "What I built",
           "points": [
-            "Microservices-based architecture with isolated real-time messaging service",
-            "GraphQL-powered messaging engine for optimized queries and subscriptions",
-            "Redis used for inter-service communication and event streaming",
-            "Secure authentication using HTTP-Only cookies for JWT tokens",
-            "New Google OAuth 2.0 login flow",
-            "Cloudflare Turnstile anti-spam protection",
-            "Full two-factor authentication (2FA) system",
-            "Improved company creation process with VIES automatic EU validation",
-            "ZIP code based automatic address detection",
-            "Enhanced backend security with stricter validations and improved token handling",
-            "Optimized instant messaging with better performance and scalability",
-            "Voice call and video call features under development",
-            "Upcoming improvements for user-interaction linkage across organizations",
-            "New UI experience including Dark Mode"
+            "Multi-tenant scope resolution with session-level active organisation and super-admin exception handling.",
+            "HS512 access/refresh cookies with pinned algorithms, rotation, database revocation, TOTP 2FA, backup codes and Turnstile.",
+            "Dedicated messenger service with GraphQL reads/mutations, Socket.IO rooms, presence, typing, read receipts and bounded history pagination.",
+            "WebRTC call signalling with STUN and short-lived HMAC TURN credentials, gated by organisation policy and discussion roles.",
+            "Governed Drive with access-checked serving, trash/restore/purge, version history, activity trail, tokenised links and ZIP export.",
+            "Notification catalogue with preferences, 30-minute grouping, actor self-exclusion, bulk audience inserts and realtime delivery.",
+            "Recurrence stored as rules and expanded at read time with a 366-day horizon and 1,500-occurrence cap; reclamations processed by an SLA job.",
+            "Default-deny demo mode with a one-hour token and read-only middleware for safe product demonstrations."
           ]
         },
         "devopsProcess": {
-          "title": "DevOps Process",
+          "title": "Delivery & checks",
           "steps": [
-            "Migration towards microservices deployment using Docker and Kubernetes",
-            "Dedicated CI/CD pipelines for each microservice via Jenkins",
-            "Improved artifact management and tagging strategy with Nexus",
-            "Advanced code quality and security checks through SonarQube and OWASP",
-            "Integration of Cloudflare services to improve security and reduce attack surface",
-            "Redis monitoring and logging enhancements for messaging events",
-            "Grafana dashboards updated for microservices metrics and real-time logs",
-            "Progressive rollout strategy to support new messaging features like voice and video"
+            "Deployed three application services behind nginx: React SPA, Express REST API and GraphQL messenger.",
+            "Added health checks and a eight-stage Jenkins pipeline with Compose validation, image snapshots, health polling, smoke verification and retained rollback images.",
+            "Hardened edge configuration with security headers, TLS, Cloudflare real-IP handling and WebSocket support.",
+            "Shared a Redis-backed session cookie between API and messenger while authenticating internal calls with a constant-time key check.",
+            "Added scheduled jobs for notification purge, event reminders, reclamation SLA processing and Drive trash purge.",
+            "Ran a local CPU-sized Ollama assistant with Redis rate limiting, production-disabled external providers and a FAQ fallback."
           ]
         },
-        "utilisation": {
-          "title": "Usage Mode (Administrator Access)",
-          "url": "https://communicflow.ach02raf.pro/",
-          "login": "admin@admin.com",
-          "password": "admin"
-        },
-        "rapport": {
-          "url": "/Rapport_PFE.pdf",
-          "label": "Download the report"
-        },
-        "usedTools": "Technologies Used",
+        "usedTools": "Core tools",
         "tools": [
           "React",
-          "Node.js",
+          "TypeScript",
+          "GraphQL",
+          "Socket.IO",
+          "Redis",
           "MySQL",
           "Docker",
-          "Jenkins",
-          "Redis",
-          "GraphQL",
-          "Tailwind CSS"
+          "Jenkins"
         ],
         "featuredProject": {
-          "subtitle": "Freelance Project",
-          "tech": "Technologies used:",
-          "button": "View Project",
+          "subtitle": "Platform / v2",
+          "tech": "Technologies:",
           "comingSoon": {
             "badge": "Coming soon",
             "title": "Video coming soon",
             "subtitle": "A polished walkthrough is being prepared.",
             "placeholder": "No preview available"
-          }
-        }
+          },
+          "button": "View case study"
+        },
+        "summary": "Multi-tenant collaboration workspace with a dedicated GraphQL/Socket.IO messenger, hardened auth and governed file sharing.",
+        "rapport": {
+          "url": "https://communicflow.ach02raf.pro/technical-overview",
+          "label": "Technical overview"
+        },
+        "mediaLabel": "v2 interface · live product"
       },
       {
         "id": "3",
@@ -471,14 +501,20 @@
         "title": "Kickoff Sports Platform",
         "visitSites": "Visit Client App",
         "codeSource": "Visit Stadium App",
-        "descProject": "Kickoff Sports is a dual-platform sports facility management system connecting stadium owners with football enthusiasts. The platform consists of two specialized applications: a client app for players to discover and book sports fields, and a stadium management app for facility owners to manage their venues, schedules, and bookings. Built with modern web technologies, it streamlines the entire process from field discovery to reservation confirmation.",
-        "videoProject": "demo-kickoff-sports",
-        "urlProject": ["https://stade.kickoff-sports.tn/"],
-        "urlSITE": ["https://app.kickoff-sports.tn/"],
-        "imgProject": [],
+        "descProject": "Kickoff Sports is a two-sided sports facility platform connecting players with stadium owners. A client app covers discovery, availability and booking; a stadium back office covers venues, calendars, pricing and reservations. Built with React, NestJS, PostgreSQL and Redis, it streamlines the full journey from search to confirmation.",
+        "videoProject": "",
+        "urlProject": [
+          "https://stade.kickoff-sports.tn/"
+        ],
+        "urlSITE": [
+          "https://app.kickoff-sports.tn/"
+        ],
+        "imgProject": [
+          "kickoff-sports"
+        ],
         "apk": "",
         "technologies": {
-          "title": "Development",
+          "title": "Tech stack",
           "Developpement": [
             "REACT",
             "TYPESCRIPT",
@@ -488,51 +524,139 @@
             "POSTGRESQL",
             "REDIS"
           ],
-          "DevOps": ["DOCKER", "JENKINS", "KUBERNETES", "GRAFANA", "SONARQUBE", "NEXUS", "OWASP"]
+          "DevOps": [
+            "DOCKER",
+            "JENKINS",
+            "KUBERNETES",
+            "GRAFANA",
+            "SONARQUBE",
+            "NEXUS",
+            "OWASP"
+          ]
         },
         "description": {
-          "title": "Main Features",
+          "title": "What I built",
           "points": [
-            "Dual-platform architecture: Client app for players and Stadium app for venue owners",
-            "Real-time field availability and instant booking system",
-            "Stadium management dashboard with booking calendar and revenue analytics",
-            "Multi-field venue support with individual field scheduling",
-            "Secure payment integration for online reservations",
-            "Automated booking confirmations and notifications",
-            "User account management with booking history",
-            "Stadium profile customization with photos, amenities, and pricing",
-            "Location-based search for nearby sports facilities",
-            "Rating and review system for stadiums",
-            "Responsive design optimized for desktop and mobile devices"
+            "Client app for discovering nearby venues, checking live availability and confirming bookings.",
+            "Stadium back office for multi-field schedules, pricing, amenities and profile content.",
+            "Booking calendar with conflict-aware slots, reservation history and automated confirmations.",
+            "Location-based search, ratings and reviews to help players choose the right facility.",
+            "Role-separated accounts for players and venue owners with tailored dashboards.",
+            "Responsive React interface for desktop and mobile use."
           ]
         },
         "devopsProcess": {
-          "title": "DevOps Process",
+          "title": "Delivery & checks",
           "steps": [
-            "Complete CI/CD pipeline implementation using Jenkins",
-            "Automated testing and quality assurance workflows",
-            "Docker containerization for both frontend applications and backend API",
-            "Artifact storage and versioning with Nexus Repository",
-            "Code quality analysis and security scanning via SonarQube and OWASP",
-            "Kubernetes orchestration for scalable multi-app deployment",
-            "Application monitoring using Prometheus and Grafana",
-            "Automated database migrations and backup strategies",
-            "Redis caching layer for improved performance and session management"
+            "Containerised the client apps and NestJS API with Docker and wired deployment through Jenkins.",
+            "Added automated tests, SonarQube quality gates and OWASP checks before release.",
+            "Stored build artifacts and versions in Nexus for repeatable rollbacks.",
+            "Used Redis for caching and session state to keep availability checks fast.",
+            "Orchestrated the services with Kubernetes and monitored availability with Prometheus and Grafana.",
+            "Ran database migrations and backups as part of the delivery workflow."
           ]
         },
-        "usedTools": "Technologies Used",
-        "tools": ["React", "NestJS", "PostgreSQL", "Docker", "Jenkins", "Redis", "Tailwind CSS"],
+        "usedTools": "Core tools",
+        "tools": [
+          "React",
+          "NestJS",
+          "PostgreSQL",
+          "Docker",
+          "Jenkins",
+          "Redis",
+          "Tailwind CSS"
+        ],
         "featuredProject": {
-          "subtitle": "Freelance Project",
-          "tech": "Technologies used:",
-          "button": "View Project",
+          "subtitle": "Marketplace / Booking",
+          "tech": "Technologies:",
+          "button": "View case study",
           "comingSoon": {
             "badge": "Coming soon",
             "title": "Video coming soon",
             "subtitle": "A comprehensive demo is in preparation.",
             "placeholder": "No preview available"
           }
-        }
+        },
+        "summary": "Two-sided sports facility platform: players discover and book pitches while venue owners manage schedules, availability and reservations.",
+        "mediaLabel": "Two-sided booking platform · client & stadium apps"
+      },
+      {
+        "id": "1",
+        "nameProject": "CommunicFlow V1",
+        "infoProject": "PROJECT INFO",
+        "slug": "communic-flow",
+        "title": "CommunicFlow V1",
+        "visitSites": "Visit the website",
+        "descProject": "The original organisational dashboard built for the National Chamber of the Pharmaceutical Industry (CNIP). It centralised institutional information across organisations, affiliates and members with hierarchical administration, role-based permissions, event planning, reclamations and real-time messaging.",
+        "videoProject": "demo-communic-flow",
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          ""
+        ],
+        "imgProject": [
+          "communic-flow"
+        ],
+        "apk": "",
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "REACT",
+            "TYPESCRIPT",
+            "EXPRESS.JS",
+            "SOCKET.IO",
+            "MYSQL"
+          ],
+          "DevOps": [
+            "DOCKER",
+            "JENKINS"
+          ]
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "Hierarchical organisations, affiliates and members",
+            "Role-based access control and administration workflows",
+            "Event planning and scheduling",
+            "Reclamation creation, tracking and responses",
+            "Socket.IO group and direct messaging"
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Containerised the frontend and backend with Docker.",
+            "Delivered releases through Jenkins CI/CD pipelines.",
+            "Documented the final-year report and deployment workflow."
+          ]
+        },
+        "rapport": {
+          "url": "/Rapport_PFE.pdf",
+          "label": "Download the report"
+        },
+        "usedTools": "Core tools",
+        "tools": [
+          "React",
+          "Node.js",
+          "MySQL",
+          "Socket.IO",
+          "Docker",
+          "Jenkins"
+        ],
+        "featuredProject": {
+          "subtitle": "Final-year project",
+          "tech": "Technologies:",
+          "button": "View case study",
+          "comingSoon": {
+            "badge": "Coming soon",
+            "title": "Video coming soon",
+            "subtitle": "A polished walkthrough is being prepared.",
+            "placeholder": "No preview available"
+          }
+        },
+        "summary": "Institutional dashboard for CNIP that centralised organisations, members, events, reclamations and real-time messaging.",
+        "mediaLabel": "v1 demo footage · original platform"
       },
       {
         "id": "0",
@@ -543,17 +667,58 @@
         "codeSource": "View source code",
         "downloadAPK": "Download APK",
         "title": "Creation of a mobile application for booking medical appointments online with a doctor",
-        "descProject": "ALLO DOCTOR, an innovative solution, offers the possibility to book medical appointments online through a sophisticated mobile application developed with advanced React Native technology. The robustness of our infrastructure relies on a backend developed with Express.js, supported by the power of MongoDB as a database. This approach ensures a smooth user experience, efficient data management, and a quick response to requests, thus elevating the level of quality and professionalism of our online medical booking service.",
-        "imgProject": ["ALLO-DOCTOR"],
-        "videoProject": "ALLO-DOCTOR",
+        "descProject": "ALLO DOCTOR is a cross-platform appointment app for patients and doctors. It lets users browse available doctors, choose a slot and manage upcoming consultations, while an Express.js API keeps appointments consistent in MongoDB.",
+        "imgProject": [
+          "ALLO-DOCTOR"
+        ],
+        "videoProject": "ALLO-DOCTOR.webm",
         "urlProject": [
           "https://github.com/ach02raf/ach02raf-ALLO-DOCTOR-APP-Front",
           "https://github.com/ach02raf/ach02raf-ALLO-DOCTOR-APP-back"
         ],
-        "urlSITE": [""],
+        "urlSITE": [
+          ""
+        ],
         "apk": "",
-        "usedTools": "Tools Used",
-        "tools": ["REACT-NATIVE", "EXPRESS.JS", "MONGO.DB"]
+        "usedTools": "Core tools",
+        "tools": [
+          "REACT-NATIVE",
+          "EXPRESS.JS",
+          "MONGO.DB"
+        ],
+        "summary": "Cross-platform mobile app for booking medical appointments, backed by an Express.js and MongoDB service.",
+        "featuredProject": {
+          "subtitle": "Healthcare / Mobile",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "Patient-facing appointment flow with doctor profiles and available slots.",
+            "Cross-platform React Native interface for Android and iOS.",
+            "Express.js API for appointments, availability and patient records.",
+            "MongoDB persistence for scheduling and consultation history."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Built the mobile client with React Native and consumed the REST API.",
+            "Implemented the Express.js service with MongoDB collections for appointments.",
+            "Recorded a product demo and documented the end-to-end booking flow."
+          ]
+        },
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "REACT-NATIVE",
+            "EXPRESS.JS",
+            "MONGO.DB"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Cross-platform app demo · booking flow"
       },
       {
         "id": "1",
@@ -564,18 +729,57 @@
         "codeSource": "View source code",
         "downloadAPK": "Download APK",
         "title": "Creation of a SOAP API using Spring Boot projects",
-        "descProject": "Creating a SOAP API with Spring Boot provides a powerful and efficient approach to web application development. Using this robust platform, we can design a modern and scalable SOAP API, facilitating communication between different systems. Spring Boot simplifies the process by providing default configuration and built-in features, enabling rapid implementation and optimal management of web services. This approach, combining the flexibility of Spring Boot and SOAP communication standards, ensures seamless and secure integration, meeting the most demanding API development needs.",
-        "imgProject": ["api-soap"],
+        "descProject": "A contract-first SOAP service built with Spring Boot for system-to-system integration. The API exposes typed operations with WSDL contracts, validation and predictable fault handling, making it easier to connect legacy and modern clients.",
+        "imgProject": [
+          "api-soap"
+        ],
         "videoProject": "",
         "urlProject": [
           "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT",
           "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT-2",
           "https://github.com/ach02raf/Project-SOAP-SPRING-BOOT-3"
         ],
-        "urlSITE": [""],
+        "urlSITE": [
+          ""
+        ],
         "apk": "",
-        "usedTools": "Tools Used",
-        "tools": ["SPRINGBOOT", "POSTMAN"]
+        "usedTools": "Core tools",
+        "tools": [
+          "SPRINGBOOT",
+          "POSTMAN"
+        ],
+        "summary": "Spring Boot SOAP API designed for contract-first integration between enterprise systems.",
+        "featuredProject": {
+          "subtitle": "Backend / Integration",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "WSDL-first service contracts with strongly typed requests and responses.",
+            "Spring Boot configuration for rapid startup and externalised settings.",
+            "Request validation and structured SOAP fault responses.",
+            "Endpoint testing and documentation with Postman collections."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Defined the service contract and generated the SOAP skeleton with Spring Boot.",
+            "Implemented endpoints, validation and error mapping.",
+            "Verified request and response contracts with Postman before handover."
+          ]
+        },
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "SPRINGBOOT",
+            "POSTMAN"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "WSDL contract · Spring Boot SOAP service"
       },
       {
         "id": "2",
@@ -586,7 +790,7 @@
         "codeSource": "View source code",
         "downloadAPK": "Download APK",
         "title": "Creation of a mobile application for organizing, booking seats for trips and hikes with an online guide",
-        "descProject": "An innovative mobile application that allows users to select tourist routes offered by expert guides. In addition to allowing tourists to choose their favorite destinations and create custom itineraries, the application consists of two parts: a dynamic user interface developed with the Ionic framework for the front end, and a robust server-side infrastructure created with Express.js and MongoDB for the back end. It also features the ability to choose from a list of available guides, view their personal profiles, and read reviews left by other tourists.",
+        "descProject": "GoTRIP is a mobile travel companion for discovering tourist routes, building custom itineraries and reserving places with expert guides. An Ionic front end talks to an Express.js and MongoDB backend that stores routes, guides, reservations and reviews.",
         "imgProject": [
           "gotrip",
           "gotrip13",
@@ -608,10 +812,52 @@
           "https://github.com/ach02raf/GoTrip-ionic-application",
           "https://github.com/ach02raf/GoTrip-ionic-application-backend"
         ],
-        "urlSITE": [""],
+        "urlSITE": [
+          ""
+        ],
         "apk": "gotrip",
-        "usedTools": "Tools Used",
-        "tools": ["IONIC", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
+        "usedTools": "Core tools",
+        "tools": [
+          "IONIC",
+          "EXPRESS.JS",
+          "MONGO.DB",
+          "POSTMAN"
+        ],
+        "summary": "Ionic travel app for planning trips, booking seats and browsing guided routes with guide profiles and reviews.",
+        "featuredProject": {
+          "subtitle": "Travel / Mobile",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "Browse curated tourist routes and build custom itineraries.",
+            "Seat and place reservation flow for trips and hikes.",
+            "Guide profiles with ratings and reviews from other travellers.",
+            "Ionic front end for a consistent mobile experience.",
+            "Express.js and MongoDB backend for routes, bookings and reviews."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Built the Ionic client and consumed Express.js REST endpoints.",
+            "Modelled routes, guides, reservations and reviews in MongoDB.",
+            "Validated API flows with Postman and documented the booking journey."
+          ]
+        },
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "IONIC",
+            "EXPRESS.JS",
+            "MONGO.DB",
+            "POSTMAN"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Mobile app screens · routes, guides & booking"
       },
       {
         "id": "3",
@@ -622,18 +868,61 @@
         "codeSource": "View source code",
         "downloadAPK": "Download APK",
         "title": "Creation of a responsive web application for digital art: ARTVERSE",
-        "descProject": "Our project is to create a platform dedicated to digital art, providing artists with a space to showcase their creations. This initiative aligns with the growing trend of online platforms that facilitate communication, information sharing, and collaboration in the artistic field, while opening new perspectives for cultural promotion.",
-        "imgProject": ["artverse"],
+        "descProject": "ARTVERSE is a responsive platform dedicated to digital art. It gives artists a space to showcase their creations and gives visitors a simple way to browse work by artist and category.",
+        "imgProject": [
+          "artverse"
+        ],
         "videoProject": "",
         "urlProject": [
           "https://github.com/ach02raf/ARTVERSE-PROJECT",
           "https://github.com/ach02raf/ARTVERSE-PROJECT-API-NODEJS",
           "https://github.com/ach02raf/ARTVERSE-PROJECT-API-DJANGO"
         ],
-        "urlSITE": ["https://ach02raf.github.io/ARTVERSE-PROJECT/"],
+        "urlSITE": [
+          "https://ach02raf.github.io/ARTVERSE-PROJECT/"
+        ],
         "apk": "",
-        "usedTools": "Tools Used",
-        "tools": ["ANGULAR", "EXPRESS.JS", "MONGO.DB", "POSTMAN"]
+        "usedTools": "Core tools",
+        "tools": [
+          "ANGULAR",
+          "EXPRESS.JS",
+          "MONGO.DB",
+          "POSTMAN"
+        ],
+        "summary": "Responsive Angular gallery for digital artists to publish and discover creative work.",
+        "featuredProject": {
+          "subtitle": "Digital art / Web",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "Artist profiles and gallery views for showcasing digital work.",
+            "Responsive Angular interface across desktop and mobile.",
+            "Express.js API for artworks, artists and category data.",
+            "MongoDB collections for content and metadata."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Built the Angular client with reusable gallery and profile components.",
+            "Implemented the Express.js API and MongoDB data models.",
+            "Validated key endpoints with Postman and documented the content flow."
+          ]
+        },
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "ANGULAR",
+            "EXPRESS.JS",
+            "MONGO.DB",
+            "POSTMAN"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Responsive gallery · digital art showcase"
       },
       {
         "id": "4",
@@ -644,7 +933,7 @@
         "codeSource": "View source code",
         "downloadAPK": "Download APK",
         "title": "Creation of a pack of 16 sites with the WordPress CMS",
-        "descProject": "",
+        "descProject": "A batch delivery of 16 WordPress websites for architecture, renovation and construction clients. Shared templates and SCSS patterns kept the visual language consistent, while each site received its own content structure, imagery and launch checklist.",
         "imgProject": [
           "all-sitewordpress",
           "1001-architecture",
@@ -656,11 +945,12 @@
           "reno-deco",
           "sopranet",
           "enirop",
-          "architectis",
-          "reno-deco"
+          "architectis"
         ],
         "videoProject": "",
-        "urlProject": [""],
+        "urlProject": [
+          ""
+        ],
         "urlSITE": [
           "https://1001-architectures.fr/",
           "https://truecom.fr/",
@@ -671,12 +961,53 @@
           "https://reno-deco.fr",
           "https://sopranet.fr/",
           "https://enirop.com",
-          "https://architectis.fr/",
-          "https://reno-deco.fr"
+          "https://architectis.fr/"
         ],
         "apk": "",
-        "usedTools": "Tools Used",
-        "tools": ["WORDPRESS", "PHP", "JAVASCRIPT", "HTML", "SCSS-SASS"]
+        "usedTools": "Core tools",
+        "tools": [
+          "WORDPRESS",
+          "PHP",
+          "JAVASCRIPT",
+          "HTML",
+          "SCSS-SASS"
+        ],
+        "summary": "Delivery of 16 client WordPress sites with reusable templates, SCSS styling and editorial handover.",
+        "featuredProject": {
+          "subtitle": "Web / CMS",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "Sixteen launches across architecture, renovation and construction sectors.",
+            "Reusable WordPress templates and editor-friendly content blocks.",
+            "SCSS-based design system for consistent spacing, type and colour.",
+            "On-page SEO basics: metadata, clean URLs, image alt text and sitemaps.",
+            "Client-specific galleries, service pages and contact flows."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Set up a shared theme scaffold and deployment checklist.",
+            "Configured content, menus and media per client site.",
+            "Validated responsiveness and SEO metadata before launch."
+          ]
+        },
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "WORDPRESS",
+            "PHP",
+            "JAVASCRIPT",
+            "HTML",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "16 delivered WordPress sites · selected screens"
       },
       {
         "id": "5",
@@ -687,14 +1018,63 @@
         "codeSource": "View source code",
         "downloadAPK": "Download APK",
         "title": "Creation of a showcase site with the Next.js framework",
-        "descProject": "",
-        "imgProject": ["spacy-and-cosy"],
+        "descProject": "A modern showcase site for a French construction company. The brief was to present services and completed work clearly, load fast on mobile, and make it easy for visitors to get in touch.",
+        "imgProject": [
+          "spacy-and-cosy"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://www.spacy-and-cosy.com/"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://www.spacy-and-cosy.com/"
+        ],
         "apk": "",
-        "usedTools": "Tools Used",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Core tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js showcase site for a French construction company, built for speed, clarity and lead capture.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "Service and project sections tailored to a French construction company.",
+            "Responsive layout with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Reusable TypeScript components for consistent pages.",
+            "Contact calls-to-action and metadata for local discoverability."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Built reusable page sections with Next.js and TypeScript.",
+            "Styled the system with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Checked responsive behaviour, metadata and contact flows before launch."
+          ]
+        },
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Showcase site · construction services"
       },
       {
         "id": "7",
@@ -705,14 +1085,63 @@
         "codeSource": "View source code",
         "downloadAPK": "Download APK",
         "title": "Creation of a showcase site with the Next.js framework",
-        "descProject": "",
-        "imgProject": ["structural-metal"],
+        "descProject": "A modern showcase site for a metal-structure engineering company. The brief was to present services and completed work clearly, load fast on mobile, and make it easy for visitors to get in touch.",
+        "imgProject": [
+          "structural-metal"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://www.structural-metal.com/"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://www.structural-metal.com/"
+        ],
         "apk": "",
-        "usedTools": "Tools Used",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Core tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js showcase site for a metal-structure engineering company, built for speed, clarity and lead capture.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "Service and project sections tailored to a metal-structure engineering company.",
+            "Responsive layout with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Reusable TypeScript components for consistent pages.",
+            "Contact calls-to-action and metadata for local discoverability."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Built reusable page sections with Next.js and TypeScript.",
+            "Styled the system with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Checked responsive behaviour, metadata and contact flows before launch."
+          ]
+        },
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Showcase site · metal structures"
       },
       {
         "id": "8",
@@ -723,14 +1152,63 @@
         "codeSource": "View source code",
         "downloadAPK": "Download APK",
         "title": "Creation of a showcase site with the Next.js framework",
-        "descProject": "",
-        "imgProject": ["structural-home"],
+        "descProject": "A modern showcase site for a structural construction and renovation company. The brief was to present services and completed work clearly, load fast on mobile, and make it easy for visitors to get in touch.",
+        "imgProject": [
+          "structural-home"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://www.structural-home.com/"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://www.structural-home.com/"
+        ],
         "apk": "",
-        "usedTools": "Tools Used",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Core tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js showcase site for a structural construction and renovation company, built for speed, clarity and lead capture.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "Service and project sections tailored to a structural construction and renovation company.",
+            "Responsive layout with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Reusable TypeScript components for consistent pages.",
+            "Contact calls-to-action and metadata for local discoverability."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Built reusable page sections with Next.js and TypeScript.",
+            "Styled the system with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Checked responsive behaviour, metadata and contact flows before launch."
+          ]
+        },
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Showcase site · structural construction"
       },
       {
         "id": "9",
@@ -741,14 +1219,59 @@
         "codeSource": "View source code",
         "downloadAPK": "Download APK",
         "title": "Creation of a web application for CV generation",
-        "descProject": "",
-        "imgProject": ["cv-maker"],
+        "descProject": "CV Maker is a small product app that turns structured form input into a clean, printable CV. It focuses on a guided editing flow and a layout that stays readable when exported or printed.",
+        "imgProject": [
+          "cv-maker"
+        ],
         "videoProject": "",
-        "urlProject": ["https://github.com/ach02raf/CV-MAKER"],
-        "urlSITE": ["https://ach02raf.github.io/CV-MAKER/"],
+        "urlProject": [
+          "https://github.com/ach02raf/CV-MAKER"
+        ],
+        "urlSITE": [
+          "https://ach02raf.github.io/CV-MAKER/"
+        ],
         "apk": "",
-        "usedTools": "Tools Used",
-        "tools": ["ANGULAR", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT"]
+        "usedTools": "Core tools",
+        "tools": [
+          "ANGULAR",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT"
+        ],
+        "summary": "Angular CV builder that turns structured form input into a clean, printable résumé.",
+        "featuredProject": {
+          "subtitle": "Productivity / Web",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "Guided forms for experience, education, skills and contact details.",
+            "Live preview of the finished résumé while editing.",
+            "Print and PDF-friendly layout with consistent typography.",
+            "TypeScript models for typed CV data."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Built the Angular form flow and typed data models.",
+            "Styled the preview with Bootstrap 5 and responsive CSS.",
+            "Checked the print layout and validated the generation flow."
+          ]
+        },
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "ANGULAR",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Guided editor · printable CV output"
       },
       {
         "id": "10",
@@ -759,14 +1282,63 @@
         "codeSource": "View source code",
         "downloadAPK": "",
         "title": "Creation of a showcase website with Next.js framework",
-        "descProject": "Agexis: an engineering and consulting company in France specialized in project management for buildings, construction, and infrastructure.",
-        "imgProject": ["agexis"],
+        "descProject": "A modern showcase site for a French engineering and project-management consultancy. The brief was to present services and completed work clearly, load fast on mobile, and make it easy for visitors to get in touch.",
+        "imgProject": [
+          "agexis"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://www.agexis.com"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://www.agexis.com"
+        ],
         "apk": "",
-        "usedTools": "Tools used",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Core tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js showcase site for a French engineering and project-management consultancy, built for speed, clarity and lead capture.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "Service and project sections tailored to a French engineering and project-management consultancy.",
+            "Responsive layout with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Reusable TypeScript components for consistent pages.",
+            "Contact calls-to-action and metadata for local discoverability."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Built reusable page sections with Next.js and TypeScript.",
+            "Styled the system with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Checked responsive behaviour, metadata and contact flows before launch."
+          ]
+        },
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Showcase site · engineering consultancy"
       },
       {
         "id": "11",
@@ -777,14 +1349,63 @@
         "codeSource": "View source code",
         "downloadAPK": "",
         "title": "Creation of a showcase website with Next.js framework",
-        "descProject": "Mur et Trémie, a structural company, offers complete services for the construction and renovation of strong and durable structures.",
-        "imgProject": ["muretremie"],
+        "descProject": "A modern showcase site for a structural construction and renovation company. The brief was to present services and completed work clearly, load fast on mobile, and make it easy for visitors to get in touch.",
+        "imgProject": [
+          "muretremie"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://www.mur-et-tremie.com/"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://www.mur-et-tremie.com/"
+        ],
         "apk": "",
-        "usedTools": "Tools used",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Core tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js showcase site for a structural construction and renovation company, built for speed, clarity and lead capture.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "Service and project sections tailored to a structural construction and renovation company.",
+            "Responsive layout with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Reusable TypeScript components for consistent pages.",
+            "Contact calls-to-action and metadata for local discoverability."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Built reusable page sections with Next.js and TypeScript.",
+            "Styled the system with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Checked responsive behaviour, metadata and contact flows before launch."
+          ]
+        },
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Showcase site · structural works"
       },
       {
         "id": "12",
@@ -795,14 +1416,63 @@
         "codeSource": "View source code",
         "downloadAPK": "",
         "title": "Creation of a showcase website with Next.js framework",
-        "descProject": "OPEN MUR is a construction company specialized in opening load-bearing walls.",
-        "imgProject": ["open-mur"],
+        "descProject": "A modern showcase site for a specialist in load-bearing wall openings. The brief was to present services and completed work clearly, load fast on mobile, and make it easy for visitors to get in touch.",
+        "imgProject": [
+          "open-mur"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://www.open-mur.com/"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://www.open-mur.com/"
+        ],
         "apk": "",
-        "usedTools": "Tools used",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Core tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js showcase site for a specialist in load-bearing wall openings, built for speed, clarity and lead capture.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "Service and project sections tailored to a specialist in load-bearing wall openings.",
+            "Responsive layout with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Reusable TypeScript components for consistent pages.",
+            "Contact calls-to-action and metadata for local discoverability."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Built reusable page sections with Next.js and TypeScript.",
+            "Styled the system with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Checked responsive behaviour, metadata and contact flows before launch."
+          ]
+        },
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Showcase site · wall openings"
       },
       {
         "id": "13",
@@ -813,14 +1483,63 @@
         "codeSource": "View source code",
         "downloadAPK": "",
         "title": "Creation of a showcase website with Next.js framework",
-        "descProject": "Rénov en Main, a company specialized in renovation works, creating exceptional living spaces.",
-        "imgProject": ["renov-en-main"],
+        "descProject": "A modern showcase site for a renovation company creating custom living spaces. The brief was to present services and completed work clearly, load fast on mobile, and make it easy for visitors to get in touch.",
+        "imgProject": [
+          "renov-en-main"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://renov-en-main.fr"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://renov-en-main.fr"
+        ],
         "apk": "",
-        "usedTools": "Tools used",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Core tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js showcase site for a renovation company creating custom living spaces, built for speed, clarity and lead capture.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "Service and project sections tailored to a renovation company creating custom living spaces.",
+            "Responsive layout with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Reusable TypeScript components for consistent pages.",
+            "Contact calls-to-action and metadata for local discoverability."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Built reusable page sections with Next.js and TypeScript.",
+            "Styled the system with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Checked responsive behaviour, metadata and contact flows before launch."
+          ]
+        },
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Showcase site · custom renovation"
       },
       {
         "id": "14",
@@ -831,14 +1550,63 @@
         "codeSource": "View source code",
         "downloadAPK": "",
         "title": "Creation of a showcase website with Next.js framework",
-        "descProject": "Reno Global: a renovation company specializing in remodeling and expansion projects in France.",
-        "imgProject": ["reno-global"],
+        "descProject": "A modern showcase site for a renovation and extension specialist in France. The brief was to present services and completed work clearly, load fast on mobile, and make it easy for visitors to get in touch.",
+        "imgProject": [
+          "reno-global"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://www.global-reno.com/"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://www.global-reno.com/"
+        ],
         "apk": "",
-        "usedTools": "Tools used",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Core tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js showcase site for a renovation and extension specialist in France, built for speed, clarity and lead capture.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "Service and project sections tailored to a renovation and extension specialist in France.",
+            "Responsive layout with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Reusable TypeScript components for consistent pages.",
+            "Contact calls-to-action and metadata for local discoverability."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Built reusable page sections with Next.js and TypeScript.",
+            "Styled the system with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Checked responsive behaviour, metadata and contact flows before launch."
+          ]
+        },
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Showcase site · renovation & extensions"
       },
       {
         "id": "15",
@@ -849,14 +1617,63 @@
         "codeSource": "View source code",
         "downloadAPK": "",
         "title": "Creation of a showcase website with Next.js framework",
-        "descProject": "Mur Mur: a French construction company specialized in structural works.",
-        "imgProject": ["mur-mur"],
+        "descProject": "A modern showcase site for a French structural works company. The brief was to present services and completed work clearly, load fast on mobile, and make it easy for visitors to get in touch.",
+        "imgProject": [
+          "mur-mur"
+        ],
         "videoProject": "",
-        "urlProject": [""],
-        "urlSITE": ["https://mur-mur.fr/"],
+        "urlProject": [
+          ""
+        ],
+        "urlSITE": [
+          "https://mur-mur.fr/"
+        ],
         "apk": "",
-        "usedTools": "Tools used",
-        "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+        "usedTools": "Core tools",
+        "tools": [
+          "NEXT.JS",
+          "BOOTSTRAP-5",
+          "JAVASCRIPT",
+          "TYPESCRIPT",
+          "TAILWIND-CSS",
+          "SCSS-SASS"
+        ],
+        "summary": "Next.js showcase site for a French structural works company, built for speed, clarity and lead capture.",
+        "featuredProject": {
+          "subtitle": "Showcase / Next.js",
+          "tech": "Technologies:",
+          "button": "View case study"
+        },
+        "description": {
+          "title": "What I built",
+          "points": [
+            "Service and project sections tailored to a French structural works company.",
+            "Responsive layout with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Reusable TypeScript components for consistent pages.",
+            "Contact calls-to-action and metadata for local discoverability."
+          ]
+        },
+        "devopsProcess": {
+          "title": "Delivery & checks",
+          "steps": [
+            "Built reusable page sections with Next.js and TypeScript.",
+            "Styled the system with Tailwind CSS, Bootstrap 5 and SCSS.",
+            "Checked responsive behaviour, metadata and contact flows before launch."
+          ]
+        },
+        "technologies": {
+          "title": "Tech stack",
+          "Developpement": [
+            "NEXT.JS",
+            "BOOTSTRAP-5",
+            "JAVASCRIPT",
+            "TYPESCRIPT",
+            "TAILWIND-CSS",
+            "SCSS-SASS"
+          ],
+          "DevOps": []
+        },
+        "mediaLabel": "Showcase site · structural works"
       }
     ]
   },
@@ -900,6 +1717,13 @@
             "title": "Takeaways",
             "description": "Patterns are tools. Start with clear boundaries, enforce interfaces, and document decisions. Fewer surprises, easier onboarding, better uptime."
           }
+        ],
+        "date": "2025-01-12",
+        "tags": [
+          "Design Patterns",
+          "SOLID",
+          "Architecture",
+          "Testing"
         ]
       },
       {
@@ -929,6 +1753,13 @@
             "title": "Guardrails",
             "description": "Set CI budgets, watch Core Web Vitals, and fail builds on regressions. Performance is a product requirement, not an afterthought."
           }
+        ],
+        "date": "2025-02-18",
+        "tags": [
+          "Angular",
+          "Performance",
+          "Core Web Vitals",
+          "Frontend"
         ]
       },
       {
@@ -958,6 +1789,13 @@
             "title": "Maintainability",
             "description": "Type with TypeScript, enforce ESLint + Prettier, and document props and invariants."
           }
+        ],
+        "date": "2025-03-25",
+        "tags": [
+          "React",
+          "TypeScript",
+          "State Management",
+          "Frontend"
         ]
       },
       {
@@ -987,6 +1825,13 @@
             "title": "Runbooks and readiness",
             "description": "Health checks, graceful shutdown, and documented incident playbooks. Practice failure injection to build confidence."
           }
+        ],
+        "date": "2025-04-14",
+        "tags": [
+          "DevOps",
+          "CI/CD",
+          "Observability",
+          "Reliability"
         ]
       },
       {
@@ -1016,6 +1861,13 @@
             "title": "Tooling",
             "description": "ESLint + Prettier + TS path aliases; enforce no‑any, no‑implicit‑any, and unused checks in CI."
           }
+        ],
+        "date": "2025-05-20",
+        "tags": [
+          "TypeScript",
+          "API Design",
+          "Validation",
+          "Tooling"
         ]
       },
       {
@@ -1045,6 +1897,13 @@
             "title": "Tracking and iteration",
             "description": "Set up GA4 + Search Console; review queries and improve pages that already rank on page 2."
           }
+        ],
+        "date": "2025-06-11",
+        "tags": [
+          "SEO",
+          "Portfolio",
+          "Core Web Vitals",
+          "Internationalization"
         ]
       },
       {
@@ -1074,6 +1933,13 @@
             "title": "Decision rubric",
             "description": "Pick the simplest option that meets SLAs. Hybrid backends are common; measure, don’t guess."
           }
+        ],
+        "date": "2025-07-09",
+        "tags": [
+          "GraphQL",
+          "REST",
+          "API Design",
+          "Backend"
         ]
       },
       {
@@ -1099,6 +1965,13 @@
             "title": "Operational tips",
             "description": "Expose minimal ports, set resource limits, and emit structured logs. Document run commands for on‑call."
           }
+        ],
+        "date": "2025-08-16",
+        "tags": [
+          "Docker",
+          "Containers",
+          "Deployment",
+          "DevOps"
         ]
       },
       {
@@ -1124,6 +1997,13 @@
             "title": "Coverage as a guide",
             "description": "Track mutation coverage where possible and require thresholds in CI; quality over raw percentages."
           }
+        ],
+        "date": "2025-09-02",
+        "tags": [
+          "Testing",
+          "Quality",
+          "CI/CD",
+          "Reliability"
         ]
       },
       {
@@ -1149,6 +2029,13 @@
             "title": "Measuring success",
             "description": "Track install rate, offline sessions served, and crash‑free users. Iterate based on real usage."
           }
+        ],
+        "date": "2025-10-21",
+        "tags": [
+          "PWA",
+          "Offline",
+          "Web Performance",
+          "Frontend"
         ]
       },
       {
@@ -1182,6 +2069,13 @@
             "title": "Production checklist",
             "description": "CSRF protection, session rotation, token revocation, rate limits, device/IP reputation, structured logging without secrets, and security tests in CI (OWASP ASVS)."
           }
+        ],
+        "date": "2026-01-15",
+        "tags": [
+          "Security",
+          "Authentication",
+          "OAuth2",
+          "2FA"
         ]
       },
       {
@@ -1211,11 +2105,360 @@
             "title": "Security and abuse controls",
             "description": "Authorize on subscribe/publish, rate‑limit sends, encrypt in transit/at rest, and apply quotas per user/org."
           }
+        ],
+        "date": "2026-02-24",
+        "tags": [
+          "GraphQL",
+          "Redis",
+          "Real-time",
+          "Architecture"
+        ]
+      },
+      {
+        "id": 12,
+        "slug": "ai-agents-rag-guardrails-production",
+        "title": "AI Agents in Production: RAG, Guardrails and Cost Control",
+        "img": "ai-agents",
+        "titleImg": "AI Agents in Production",
+        "date": "2026-11-14",
+        "tags": [
+          "AI",
+          "LLM",
+          "RAG",
+          "AI Agents",
+          "MLOps"
+        ],
+        "desc": [
+          {
+            "title": "Why agents fail in production",
+            "description": "Most agent prototypes break on ambiguous intent, stale context, and unbounded tool calls. Treat an agent as a workflow with explicit state, not a magic prompt."
+          },
+          {
+            "title": "RAG that survives real questions",
+            "description": "Chunk by meaning, keep metadata filters, and rerank before generation. Ground answers in retrieved sources and show citations so users can verify claims."
+          },
+          {
+            "title": "Guardrails and tool boundaries",
+            "description": "Give each tool a narrow contract, validate inputs with schemas, cap iterations, and require human approval for irreversible actions."
+          },
+          {
+            "title": "Cost and latency control",
+            "description": "Cache embeddings, route simple turns to smaller models, stream responses, and track tokens per task. A budget is a product constraint, not an afterthought."
+          },
+          {
+            "title": "Evaluation before launch",
+            "description": "Build an eval set from real support tickets, score groundedness and task success, and replay failures in CI. Model upgrades should be measurable."
+          },
+          {
+            "title": "Takeaways",
+            "description": "Start with a deterministic workflow, add retrieval where context matters, and only then add autonomy. Observability turns a demo into a dependable feature."
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "slug": "platform-engineering-idp-blueprint",
+        "title": "Platform Engineering in 2026: Build an Internal Developer Platform",
+        "img": "platform-engineering",
+        "titleImg": "Platform Engineering Blueprint",
+        "date": "2026-10-28",
+        "tags": [
+          "Platform Engineering",
+          "DevOps",
+          "IDP",
+          "DORA",
+          "Developer Experience"
+        ],
+        "desc": [
+          {
+            "title": "Why platforms replace ticket ops",
+            "description": "When every team assembles its own pipeline, delivery slows and security becomes inconsistent. A platform turns repeated setup into a self-service product."
+          },
+          {
+            "title": "Start with the golden path",
+            "description": "Publish opinionated templates for services, jobs, and infrastructure. A new repository should ship a tested app with observability and policy already wired in."
+          },
+          {
+            "title": "Idempotent infrastructure",
+            "description": "Use Terraform or Pulumi modules with versioned interfaces. Expose environments through a catalog, never through hand-edited consoles."
+          },
+          {
+            "title": "Measure developer experience",
+            "description": "Track lead time, deployment frequency, change failure rate and recovery time. Ask developers where they wait; remove that step first."
+          },
+          {
+            "title": "Avoid the platform trap",
+            "description": "Do not build a ticket queue with a UI. Keep escape hatches, document ownership, and treat the platform like any other product with a roadmap."
+          },
+          {
+            "title": "Takeaways",
+            "description": "A good IDP reduces cognitive load, not choice. Standardize the boring parts and let teams innovate where it matters."
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "slug": "software-supply-chain-security-sbom-signing",
+        "title": "Software Supply Chain Security: SBOM, Signing and Zero Trust CI",
+        "img": "supply-chain-security",
+        "titleImg": "Supply Chain Security",
+        "date": "2026-10-06",
+        "tags": [
+          "Security",
+          "Supply Chain",
+          "SBOM",
+          "DevSecOps",
+          "Zero Trust"
+        ],
+        "desc": [
+          {
+            "title": "The attack surface is the build",
+            "description": "Dependencies, runners, and release artefacts are now primary targets. Lock the path from source to production with verified steps."
+          },
+          {
+            "title": "Generate an SBOM by default",
+            "description": "Produce CycloneDX or SPDX in every build. Store it with the release so you can answer 'are we affected?' in minutes, not days."
+          },
+          {
+            "title": "Sign and verify artefacts",
+            "description": "Use Sigstore or cosign to sign images and packages. Admission policies should reject anything without a valid signature and provenance."
+          },
+          {
+            "title": "Harden CI runners",
+            "description": "Use short-lived tokens, least-privilege roles, pinned actions, and isolated builds. Never place long-lived secrets in a shared runner."
+          },
+          {
+            "title": "Patch with evidence",
+            "description": "Pair dependency scanning with reachability analysis and a clear SLA. Auto-merge low-risk updates, review breaking ones, and record exceptions."
+          },
+          {
+            "title": "Takeaways",
+            "description": "Supply chain security is not a scanner. It is a chain of verifiable claims: what you built, from what, and who approved it."
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "slug": "core-web-vitals-inp-rum-guide",
+        "title": "Core Web Vitals in 2026: Master INP, LCP and Real User Monitoring",
+        "img": "web-vitals",
+        "titleImg": "Core Web Vitals 2026",
+        "date": "2026-09-18",
+        "tags": [
+          "SEO",
+          "Core Web Vitals",
+          "INP",
+          "Performance",
+          "RUM"
+        ],
+        "desc": [
+          {
+            "title": "Lab scores are not enough",
+            "description": "Lighthouse is useful for debugging, but search ranking and user experience depend on field data. Instrument real users with the web-vitals library."
+          },
+          {
+            "title": "Fix INP at the interaction",
+            "description": "Break long tasks, yield to the main thread, and move heavy work off the critical path. Debounce input and avoid synchronous layout reads."
+          },
+          {
+            "title": "Improve LCP, not just bundle size",
+            "description": "Preload the hero image, serve modern formats, and remove render-blocking CSS. A fast server response still matters more than micro-optimisations."
+          },
+          {
+            "title": "Stabilise layout",
+            "description": "Reserve space for images, ads, and dynamic text. CLS usually comes from late content shifting the page, not from CSS animation."
+          },
+          {
+            "title": "Build a performance budget",
+            "description": "Set thresholds in CI for LCP, INP and CLS per route. Fail the build when a regression crosses the budget."
+          },
+          {
+            "title": "Takeaways",
+            "description": "Measure by route and device, fix the worst interaction first, and keep a budget. Performance is a feature you maintain."
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "slug": "finops-cloud-cost-optimization-developers",
+        "title": "FinOps for Developers: Cut Cloud Costs Without Slowing Delivery",
+        "img": "finops",
+        "titleImg": "FinOps for Developers",
+        "date": "2026-08-27",
+        "tags": [
+          "FinOps",
+          "Cloud",
+          "Cost Optimization",
+          "DevOps",
+          "AWS"
+        ],
+        "desc": [
+          {
+            "title": "Cost is an engineering metric",
+            "description": "Cloud spend follows architecture decisions. Treat it like latency: visible, budgeted, and reviewed alongside reliability."
+          },
+          {
+            "title": "Tag everything",
+            "description": "Require owner, environment, and service tags at provisioning. Untagged resources should be quarantined or stopped automatically."
+          },
+          {
+            "title": "Right-size before optimising",
+            "description": "Most waste is idle capacity. Schedule non-prod shutdowns, use autoscaling, and start with smaller instances backed by metrics."
+          },
+          {
+            "title": "Make storage explicit",
+            "description": "Set lifecycle policies for logs and backups, use tiered object storage, and delete orphaned volumes and snapshots."
+          },
+          {
+            "title": "Show cost in the pull request",
+            "description": "Estimate infrastructure delta in CI and attach it to the PR. Engineers change behaviour when feedback arrives before deploy."
+          },
+          {
+            "title": "Takeaways",
+            "description": "FinOps is a loop: allocate, measure, optimise, verify. Never trade reliability for a short-term saving you cannot observe."
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "slug": "edge-serverless-architecture-patterns",
+        "title": "Edge and Serverless in 2026: Patterns, Costs and Hard Limits",
+        "img": "edge-serverless",
+        "titleImg": "Edge & Serverless",
+        "date": "2026-07-30",
+        "tags": [
+          "Serverless",
+          "Edge Computing",
+          "Cloud Architecture",
+          "Performance",
+          "DevOps"
+        ],
+        "desc": [
+          {
+            "title": "Choose by constraint",
+            "description": "Edge wins on latency near users; serverless wins on elastic burst and low operations. Neither is a default architecture."
+          },
+          {
+            "title": "Keep functions small and pure",
+            "description": "Put business logic in testable modules and keep handlers thin. Cold starts punish huge bundles and hidden I/O."
+          },
+          {
+            "title": "Design for idempotency",
+            "description": "Retries are normal. Use idempotency keys, durable queues, and outbox patterns so duplicate events cannot corrupt state."
+          },
+          {
+            "title": "Watch the real cost curve",
+            "description": "Request pricing is cheap until traffic is steady and high. Compare with containers before committing to a long-lived workload."
+          },
+          {
+            "title": "Plan for limits",
+            "description": "Execution time, memory, payload size and regional data rules shape the design. Test failure modes locally with emulators and contract tests."
+          },
+          {
+            "title": "Takeaways",
+            "description": "Use edge for personalisation and redirects, serverless for spiky APIs, and containers for steady services. Measure before migrating."
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "slug": "building-local-rag-document-assistant",
+        "title": "Building a RAG Document Assistant with pgvector and Citations",
+        "img": "ai-agents",
+        "titleImg": "Local RAG",
+        "date": "2026-11-16",
+        "tags": [
+          "RAG",
+          "OpenAI",
+          "pgvector",
+          "FastAPI",
+          "Next.js",
+          "LangChain",
+          "Citations"
+        ],
+        "desc": [
+          {
+            "title": "Start with a clear boundary",
+            "description": "The assistant answers only from documents uploaded by the user: PDF, DOCX, TXT and MD. It is a single-user tool with no application login or multi-tenancy, and it needs an OpenAI API key. Naming that boundary early kept the product honest: the value is grounded retrieval with visible sources, not an enterprise search platform."
+          },
+          {
+            "title": "Ingestion decides answer quality",
+            "description": "pypdf and python-docx extract page-aware text, and RecursiveCharacterTextSplitter splits each page while keeping its exact page number. Chunks are embedded in batches of 100 with text-embedding-3-small and stored in PostgreSQL with pgvector. Format and size validation stop bad inputs before they pollute the index."
+          },
+          {
+            "title": "Retrieve, then rerank",
+            "description": "Vector search uses an HNSW cosine index and returns 20 candidates. A structured gpt-4o-mini call scores each passage from 0 to 10, and the top 5 passages go to the answer model. If reranking fails, the pipeline falls back to vector order instead of breaking the request."
+          },
+          {
+            "title": "Make grounding visible",
+            "description": "The answer schema contains the response and the passage numbers actually used. Sources are deduplicated by document and page, then returned with an excerpt and similarity score. When the context is insufficient, the model leaves sources empty and says the information is not in the documents."
+          },
+          {
+            "title": "Build a focused interface",
+            "description": "The Next.js 14 UI keeps the interaction simple: upload documents, select which ones to search, ask a question and read the sources beside the answer. The FastAPI service exposes /health, document list/upload/delete and /api/chat, so the interface stays replaceable without rewriting the retrieval logic."
+          },
+          {
+            "title": "Ship it like a service",
+            "description": "Docker Compose runs PostgreSQL/pgvector, the backend and the frontend as three services. Schema and HNSW index are created on startup, Pydantic settings validate configuration, and a documented .env template covers models, chunking, retrieval, CORS and upload limits."
+          },
+          {
+            "title": "Honest next steps",
+            "description": "There is no dedicated evaluation dataset yet. The next iteration would add a gold question set, retrieval metrics, hybrid lexical/vector search, optional authentication for shared deployments and OCR for scanned PDFs. The current pipeline is useful precisely because its limits are explicit."
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "slug": "communicflow-v2-microservices-architecture",
+        "title": "CommunicFlow v2: Separating the Messenger Without Rewriting the Product",
+        "img": "graphql-redis",
+        "titleImg": "Platform v2",
+        "date": "2026-11-17",
+        "tags": [
+          "Architecture",
+          "GraphQL",
+          "Redis",
+          "Security",
+          "Socket.IO",
+          "Docker",
+          "Jenkins"
+        ],
+        "desc": [
+          {
+            "title": "The constraint",
+            "description": "CommunicFlow V1 already carried the business domains: organisations, members, events, reclamations and messaging. Real-time traffic was the part that deserved its own boundary. The v2 goal was not to split everything into microservices for fashion, but to isolate the messenger so chat load, WebRTC signalling and presence would not destabilise the main REST application."
+          },
+          {
+            "title": "A boundary you can deploy",
+            "description": "The result is a React/Vite SPA talking to an Express REST API plus a separate GraphQL/Socket.IO messenger service. GraphQL handles typed reads and mutations; Socket.IO remains the primary realtime transport. Redis backs the shared session cookie, and internal calls are authenticated with a constant-time service-key check. Three services, one clear responsibility each."
+          },
+          {
+            "title": "Security is the design",
+            "description": "Access and refresh tokens live in HTTP-only cookies with pinned HS512 algorithms, rotation and database revocation. TOTP 2FA, backup codes and Cloudflare Turnstile cover account takeover and abusive sign-ups. A session-level active organisation and a super-admin exception make multi-tenant scope explicit instead of relying on every query to remember it."
+          },
+          {
+            "title": "Realtime with rules",
+            "description": "The messenger provides rooms, presence, typing indicators, read receipts and bounded history pagination. Call signalling uses STUN and short-lived HMAC TURN credentials through coturn, gated by organisation policy and discussion role. This is realtime product engineering: who may see, send or call matters as much as latency."
+          },
+          {
+            "title": "Business modules still matter",
+            "description": "v2 also added a governed Drive with access-checked serving, trash and version history, activity trail, tokenised share links and ZIP export. Events store recurrence rules and expand them at read time with a defined horizon and occurrence cap. Reclamations run through an SLA job, while notifications support preferences, grouping and realtime delivery."
+          },
+          {
+            "title": "Delivery gates",
+            "description": "Docker Compose runs the stack behind nginx with TLS, security headers, real-IP handling and WebSocket support. A eight-stage Jenkins pipeline validates Compose config, snapshots images, polls health checks, runs smoke verification and retains rollback images. There is no Kubernetes or Prometheus stack here; the system is sized for a VPS and operated with the tools it actually has."
+          },
+          {
+            "title": "What the split bought",
+            "description": "The messenger can fail, restart or scale without taking the core workspace down. Authentication and scope are shared deliberately, not duplicated. The hardest part was not the framework choice but keeping permissions, notifications and deployment discipline consistent across the new boundary."
+          }
         ]
       }
     ]
   },
-  "Footer": { "title": "@ 2023 ALL RIGHTS RESERVED BY ACH02RAF" },
+  "Footer": {
+    "title": "@ 2023 ALL RIGHTS RESERVED BY ACH02RAF"
+  },
   "otherProjets": [
     {
       "id": "6",
@@ -1227,28 +2470,26 @@
       "downloadAPK": "Download APK",
       "title": "Creation of a showcase site with the Next.js framework",
       "descProject": "",
-      "imgProject": ["structural-wood"],
+      "imgProject": [
+        "structural-wood"
+      ],
       "videoProject": "",
-      "urlProject": [""],
-      "urlSITE": ["https://structural-wood.fr/"],
+      "urlProject": [
+        ""
+      ],
+      "urlSITE": [
+        "https://structural-wood.fr/"
+      ],
       "apk": "",
       "usedTools": "Tools Used",
-      "tools": ["NEXT.JS", "BOOTSTRAP-5", "JAVASCRIPT", "TYPESCRIPT", "TAILWIND-CSS", "SCSS-SASS"]
+      "tools": [
+        "NEXT.JS",
+        "BOOTSTRAP-5",
+        "JAVASCRIPT",
+        "TYPESCRIPT",
+        "TAILWIND-CSS",
+        "SCSS-SASS"
+      ]
     }
-  ],
-  "feedbackPopup": {
-    "title": "Share Your Feedback",
-    "namePlaceholder": "Your Name",
-    "emailPlaceholder": "Your Email",
-    "advicePlaceholder": "Your advice or suggestions...",
-    "submitButton": "Send Feedback",
-    "successMessage": "Thank you for your feedback!",
-    "errorMessage": "Failed to send feedback. Please try again.",
-    "ratingLabel": "Rate your experience"
-  },
-  "feedbackInvite": {
-    "title": "Could you help me with your advice?",
-    "text": "Your feedback helps me improve this portfolio. If you have a suggestion or a tiny idea, I’m all ears!",
-    "button": "Share your advice"
-  }
+  ]
 }

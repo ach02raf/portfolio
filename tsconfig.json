@@ -20,11 +20,11 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "P/*": ["./public/*"],
-      "@/C/*": ["./src/component/*"],
-      "@/A/*": ["./src/app/*"]
+      "@/get-dictionary": ["./get-dictionary.ts"],
+      "@/i18n-config": ["./i18n-config.ts"],
+      "P/*": ["./public/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "docs/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "docs"]
 }
