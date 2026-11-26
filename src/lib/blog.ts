@@ -1,5 +1,13 @@
 import type { Locale } from "@/i18n-config";
 
+export type BlogSection = {
+  title: string;
+  description: string;
+  code?: { language: string; content: string };
+  list?: string[];
+  note?: string;
+};
+
 export type BlogPostLike = {
   slug: string;
   title: string;
@@ -7,7 +15,7 @@ export type BlogPostLike = {
   titleImg?: string;
   date: string;
   tags: string[];
-  desc: { title: string; description: string }[];
+  desc: BlogSection[];
   /** Runtime articles use a query route instead of a pre-rendered slug page. */
   href?: string;
 };
@@ -17,7 +25,16 @@ export function sortedBlogPosts<T extends BlogPostLike>(posts: T[]): T[] {
 }
 
 export function wordCount(post: BlogPostLike): number {
-  const text = [post.title, ...post.desc.flatMap((section) => [section.title, section.description])].join(" ");
+  const text = [
+    post.title,
+    ...post.desc.flatMap((section) => [
+      section.title,
+      section.description,
+      section.note ?? "",
+      ...(section.list ?? []),
+      section.code?.content ?? "",
+    ]),
+  ].join(" ");
   return text.trim().split(/\s+/).filter(Boolean).length;
 }
 

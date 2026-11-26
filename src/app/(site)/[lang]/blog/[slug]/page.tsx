@@ -143,7 +143,25 @@ export default async function BlogPost({ params: { lang, slug } }: { params: { l
                 <section id={`section-${index}`} key={index}>
                   <span className="article__section-index mono">{String(index + 1).padStart(2, "0")}</span>
                   <h2>{section.title}</h2>
-                  <p>{section.description}</p>
+                  {section.description.split(/\n\n+/).map((paragraph, i) => (
+                    <p key={i}>{paragraph}</p>
+                  ))}
+                  {section.list && section.list.length > 0 && (
+                    <ul className="article__list">
+                      {section.list.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                  {section.code && (
+                    <figure className="article__code">
+                      <figcaption className="mono">{section.code.language}</figcaption>
+                      <pre>
+                        <code>{section.code.content}</code>
+                      </pre>
+                    </figure>
+                  )}
+                  {section.note && <p className="article__note">{section.note}</p>}
                 </section>
               ))}
             </div>

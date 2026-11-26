@@ -1687,723 +1687,55 @@
     "btnSeeAll": "All Blogs",
     "blogList": [
       {
-        "id": 0,
-        "slug": "build-solid-foundations-design-patterns",
-        "title": "Design Patterns in Practice: SOLID, Testable Architecture",
-        "img": "design-patterns",
-        "titleImg": "Design Patterns in Practice",
-        "desc": [
-          {
-            "title": "Why patterns — and when not to",
-            "description": "Use patterns to reduce coupling and improve clarity, not as cargo‑cult. Prefer simple composition unless a pattern measurably improves testability or changeability."
-          },
-          {
-            "title": "SOLID and composition first",
-            "description": "Apply SRP and DIP to keep modules small and replaceable. Compose behaviors via interfaces; isolate I/O at boundaries to enable pure, unit‑testable cores."
-          },
-          {
-            "title": "Dependency Inversion with DI",
-            "description": "Depend on abstractions. Inject collaborators (factories, strategies, adapters) to swap implementations in tests and production without touching consumers."
-          },
-          {
-            "title": "Selecting patterns pragmatically",
-            "description": "Prefer Strategy over if/else trees, Adapter to integrate legacy APIs, Factory to centralize creation with validation and caching. Avoid global Singletons."
-          },
-          {
-            "title": "Smells to avoid",
-            "description": "God objects, deep inheritance, over‑abstraction and premature patterning. Measure impact: fewer defects, simpler diffs, faster reviews."
-          },
-          {
-            "title": "Takeaways",
-            "description": "Patterns are tools. Start with clear boundaries, enforce interfaces, and document decisions. Fewer surprises, easier onboarding, better uptime."
-          }
-        ],
-        "date": "2025-01-12",
-        "tags": [
-          "Design Patterns",
-          "SOLID",
-          "Architecture",
-          "Testing"
-        ]
-      },
-      {
-        "id": 1,
-        "slug": "optimize-angular-performance",
-        "title": "Angular Performance: Measurable Wins in the Real World",
-        "img": "angular",
-        "titleImg": "Angular Performance: Measurable Wins",
-        "desc": [
-          {
-            "title": "Profile before you tune",
-            "description": "Use Chrome Performance, Lighthouse, and Angular DevTools to locate slow change detection, heavy zones, and chatty network calls."
-          },
-          {
-            "title": "Change detection + rendering",
-            "description": "Adopt OnPush + `trackBy` for lists, prefer pure pipes, memoize derived state, and split views with `*ngIf` to defer cost."
-          },
-          {
-            "title": "Network and data flow",
-            "description": "Batch HTTP requests, cache with RxJS `shareReplay`, debounce user input, and stream incremental data for faster First Interaction."
-          },
-          {
-            "title": "Bundles and delivery",
-            "description": "Lazy‑load routes, leverage standalone components, audit with `source-map-explorer`, and use image compression + HTTP/2."
-          },
-          {
-            "title": "Guardrails",
-            "description": "Set CI budgets, watch Core Web Vitals, and fail builds on regressions. Performance is a product requirement, not an afterthought."
-          }
-        ],
-        "date": "2025-02-18",
-        "tags": [
-          "Angular",
-          "Performance",
-          "Core Web Vitals",
-          "Frontend"
-        ]
-      },
-      {
-        "id": 2,
-        "slug": "discover-reactjs-dynamic-reactive-interfaces",
-        "title": "Modern React: Hooks, Performance and Clean State",
-        "img": "reactjs",
-        "titleImg": "Modern React: Hooks & Performance",
-        "desc": [
-          {
-            "title": "Design for simplicity",
-            "description": "Prefer local state with hooks, lift state only when needed, and co‑locate logic with UI. Small components, clear props contracts."
-          },
-          {
-            "title": "Rendering performance",
-            "description": "Use `memo`, `useMemo`, `useCallback` judiciously; key lists correctly; virtualize large tables; split bundles with dynamic import."
-          },
-          {
-            "title": "Data fetching patterns",
-            "description": "Stale‑while‑revalidate with SWR/React Query, optimistic updates, and error boundaries for resilient UX."
-          },
-          {
-            "title": "Testing and accessibility",
-            "description": "Test with React Testing Library (user‑centric). Ship ARIA‑aware components and verify with axe and keyboard navigation."
-          },
-          {
-            "title": "Maintainability",
-            "description": "Type with TypeScript, enforce ESLint + Prettier, and document props and invariants."
-          }
-        ],
-        "date": "2025-03-25",
-        "tags": [
-          "React",
-          "TypeScript",
-          "State Management",
-          "Frontend"
-        ]
-      },
-      {
-        "id": 3,
-        "slug": "introduction-to-devops-essential-practices",
-        "title": "Practical DevOps: CI/CD, Observability, and Reliability",
-        "img": "devops",
-        "titleImg": "Practical DevOps",
-        "desc": [
-          {
-            "title": "Trunk‑based CI/CD",
-            "description": "Short‑lived branches, automated tests, and canary releases keep deploys boring. Enforce quality gates with coverage and lint checks."
-          },
-          {
-            "title": "Infrastructure as Code",
-            "description": "Provision reproducibly with Terraform/Pulumi. Version everything; review changes like code; tag releases and roll back fast."
-          },
-          {
-            "title": "Observability that matters",
-            "description": "Define SLOs, collect RED/USE metrics, add structured logs with correlation IDs, and trace user journeys."
-          },
-          {
-            "title": "Security in the pipeline",
-            "description": "SAST/DAST, image scanning, SBOMs, and signed artifacts. Least privilege for runners and secrets management."
-          },
-          {
-            "title": "Runbooks and readiness",
-            "description": "Health checks, graceful shutdown, and documented incident playbooks. Practice failure injection to build confidence."
-          }
-        ],
-        "date": "2025-04-14",
-        "tags": [
-          "DevOps",
-          "CI/CD",
-          "Observability",
-          "Reliability"
-        ]
-      },
-      {
-        "id": 4,
-        "slug": "typescript-for-beginners-complete-guide",
-        "title": "Effective TypeScript: Types that Scale with Teams",
-        "img": "typescript",
-        "titleImg": "Effective TypeScript",
-        "desc": [
-          {
-            "title": "Start strict, stay strict",
-            "description": "Enable `strict` and incremental builds. Prefer explicit types at boundaries; let inference work inside functions."
-          },
-          {
-            "title": "Modeling with unions",
-            "description": "Use discriminated unions over flags. Encode invariants in the type system and eliminate whole classes of runtime checks."
-          },
-          {
-            "title": "APIs and contracts",
-            "description": "Define DTOs and use `zod`/`io-ts` for runtime validation. Generate types from schemas to avoid drift."
-          },
-          {
-            "title": "Utilities and generics",
-            "description": "Leverage utility types (`Partial`, `Pick`, `Extract`) and thoughtful generics for reusable, readable APIs."
-          },
-          {
-            "title": "Tooling",
-            "description": "ESLint + Prettier + TS path aliases; enforce no‑any, no‑implicit‑any, and unused checks in CI."
-          }
-        ],
-        "date": "2025-05-20",
-        "tags": [
-          "TypeScript",
-          "API Design",
-          "Validation",
-          "Tooling"
-        ]
-      },
-      {
-        "id": 5,
-        "slug": "seo-optimization-for-developer-portfolio",
-        "title": "Portfolio SEO: Technical Wins that Recruiters Notice",
-        "img": "seo",
-        "titleImg": "Portfolio SEO: Technical Wins",
-        "desc": [
-          {
-            "title": "Foundation",
-            "description": "Unique titles, meta descriptions, canonical URLs, sitemap.xml and robots.txt. Add JSON‑LD (Person, Project) for rich results."
-          },
-          {
-            "title": "Speed and vitals",
-            "description": "Optimize images, preconnect critical origins, lazy‑load below‑the‑fold, and monitor LCP/CLS/INP in production."
-          },
-          {
-            "title": "Content that signals expertise",
-            "description": "Write case studies with problem → approach → measurable outcome. Link to code, demos, and metrics."
-          },
-          {
-            "title": "Internationalization",
-            "description": "Use `hreflang` and consistent slugs across locales. Keep translations accurate and in sync."
-          },
-          {
-            "title": "Tracking and iteration",
-            "description": "Set up GA4 + Search Console; review queries and improve pages that already rank on page 2."
-          }
-        ],
-        "date": "2025-06-11",
-        "tags": [
-          "SEO",
-          "Portfolio",
-          "Core Web Vitals",
-          "Internationalization"
-        ]
-      },
-      {
-        "id": 6,
-        "slug": "graphql-vs-rest-complete-comparison",
-        "title": "GraphQL vs REST: Choose by Constraints, Not Hype",
-        "img": "graphql",
-        "titleImg": "GraphQL vs REST",
-        "desc": [
-          {
-            "title": "When REST wins",
-            "description": "Simple resources, CDN caching, and long‑lived clients. Version via new representations; keep endpoints stable."
-          },
-          {
-            "title": "When GraphQL shines",
-            "description": "Mobile/low‑latency apps and complex graphs. Fetch exactly what you need; evolve schemas without breaking clients."
-          },
-          {
-            "title": "Performance reality",
-            "description": "Guard against N+1 with dataloaders; enforce pagination and depth limits; cache persisted queries."
-          },
-          {
-            "title": "Operational concerns",
-            "description": "Observability, timeouts, and error budgets matter more than style. Document with OpenAPI/SDL and provide examples."
-          },
-          {
-            "title": "Decision rubric",
-            "description": "Pick the simplest option that meets SLAs. Hybrid backends are common; measure, don’t guess."
-          }
-        ],
-        "date": "2025-07-09",
-        "tags": [
-          "GraphQL",
-          "REST",
-          "API Design",
-          "Backend"
-        ]
-      },
-      {
-        "id": 7,
-        "slug": "docker-for-developers-practical-guide",
-        "title": "Docker Done Right: Small Images, Fast Deploys",
-        "img": "docker",
-        "titleImg": "Docker Done Right",
-        "desc": [
-          {
-            "title": "Build for production",
-            "description": "Use multi‑stage builds, pin versions, and minimize layers. Add healthchecks and non‑root users."
-          },
-          {
-            "title": "Smaller, safer images",
-            "description": "Leverage distroless/alpine when appropriate, `.dockerignore` aggressively, and scan images in CI."
-          },
-          {
-            "title": "Local dev ergonomics",
-            "description": "Compose for services, bind mounts for hot reload, and named volumes for state."
-          },
-          {
-            "title": "Operational tips",
-            "description": "Expose minimal ports, set resource limits, and emit structured logs. Document run commands for on‑call."
-          }
-        ],
-        "date": "2025-08-16",
-        "tags": [
-          "Docker",
-          "Containers",
-          "Deployment",
-          "DevOps"
-        ]
-      },
-      {
-        "id": 8,
-        "slug": "software-testing-essentials-for-quality",
-        "title": "Testing that Prevents Incidents: A Practical Pyramid",
-        "img": "testing",
-        "titleImg": "Practical Testing Pyramid",
-        "desc": [
-          {
-            "title": "Test the contract",
-            "description": "Favor fast unit tests and contract tests at service boundaries. Mock only what you own."
-          },
-          {
-            "title": "Integration > E2E for most cases",
-            "description": "A few critical E2E flows are enough. Focus on integration tests for realistic coverage with maintainable speed."
-          },
-          {
-            "title": "Data and determinism",
-            "description": "Use seed data, freeze time, and isolate external effects. Flaky tests destroy trust and velocity."
-          },
-          {
-            "title": "Coverage as a guide",
-            "description": "Track mutation coverage where possible and require thresholds in CI; quality over raw percentages."
-          }
-        ],
-        "date": "2025-09-02",
-        "tags": [
-          "Testing",
-          "Quality",
-          "CI/CD",
-          "Reliability"
-        ]
-      },
-      {
-        "id": 9,
-        "slug": "progressive-web-apps-complete-guide",
-        "title": "PWAs that Feel Native: Offline‑First by Design",
-        "img": "pwa",
-        "titleImg": "PWAs that Feel Native",
-        "desc": [
-          {
-            "title": "Core capabilities",
-            "description": "Add installability (Web App Manifest), offline caching, and background sync. Respect user prompts; don’t hijack."
-          },
-          {
-            "title": "Caching strategy",
-            "description": "Precache shell, runtime cache data, and version aggressively. Plan for invalidation and migrations."
-          },
-          {
-            "title": "UX considerations",
-            "description": "Design explicit offline states, queue writes, and surface sync status. Keep interactions responsive under poor networks."
-          },
-          {
-            "title": "Measuring success",
-            "description": "Track install rate, offline sessions served, and crash‑free users. Iterate based on real usage."
-          }
-        ],
-        "date": "2025-10-21",
-        "tags": [
-          "PWA",
-          "Offline",
-          "Web Performance",
-          "Frontend"
-        ]
-      },
-      {
-        "id": 10,
-        "slug": "secure-authentication-http-only-cookies-oauth2-2fa-turnstile",
-        "title": "Secure Authentication: Cookies, OAuth2 + PKCE, 2FA, Turnstile",
-        "img": "auth-blueprint",
-        "titleImg": "Secure Authentication Blueprint",
-        "desc": [
-          {
-            "title": "Why this matters",
-            "description": "Most auth incidents stem from session handling and weak flows, not cryptography. Use a pragmatic design that is secure, scalable, and user‑friendly."
-          },
-          {
-            "title": "Cookie sessions over localStorage",
-            "description": "Prefer HTTP‑only, Secure, SameSite cookies with short TTL and rotation. Avoid storing tokens in localStorage to reduce XSS token theft risk."
-          },
-          {
-            "title": "OAuth 2.0 + PKCE",
-            "description": "Use Authorization Code with PKCE for third‑party login (e.g., Google). Enforce exact redirect URIs, narrow scopes, and validate the state parameter."
-          },
-          {
-            "title": "Add Two‑Factor Authentication",
-            "description": "Start with TOTP and backup codes; add WebAuthn for phishing resistance. Require step‑up auth for sensitive actions (admin, payouts)."
-          },
-          {
-            "title": "Block automated abuse",
-            "description": "Protect signup/login and recovery forms with Cloudflare Turnstile; always verify on the server. Combine with rate limiting and anomaly detection."
-          },
-          {
-            "title": "Production checklist",
-            "description": "CSRF protection, session rotation, token revocation, rate limits, device/IP reputation, structured logging without secrets, and security tests in CI (OWASP ASVS)."
-          }
-        ],
-        "date": "2026-01-15",
-        "tags": [
-          "Security",
-          "Authentication",
-          "OAuth2",
-          "2FA"
-        ]
-      },
-      {
-        "id": 11,
-        "slug": "graphql-subscriptions-redis-streams-chat-microservice-architecture",
-        "title": "Real‑Time Messaging with GraphQL Subscriptions + Redis",
-        "img": "graphql-redis",
-        "titleImg": "GraphQL + Redis Messaging",
-        "desc": [
-          {
-            "title": "Why isolate messaging",
-            "description": "Real‑time workloads have unique scaling, ordering, and reliability needs. A dedicated microservice improves performance and team velocity."
-          },
-          {
-            "title": "Core architecture",
-            "description": "GraphQL over HTTP for queries/mutations; Subscriptions (WebSockets) for realtime. Redis Pub/Sub for live fanout; Redis Streams + DB for durable history."
-          },
-          {
-            "title": "Pub/Sub vs Streams",
-            "description": "Pub/Sub is low latency and ephemeral; Streams are ordered and durable with backpressure and replay. Use both: Streams for persistence, Pub/Sub for online fanout."
-          },
-          {
-            "title": "Backpressure and ordering",
-            "description": "Persist first, ack after durable write. Use Stream IDs for per‑conversation order and idempotency keys to prevent duplicates."
-          },
-          {
-            "title": "Security and abuse controls",
-            "description": "Authorize on subscribe/publish, rate‑limit sends, encrypt in transit/at rest, and apply quotas per user/org."
-          }
-        ],
-        "date": "2026-02-24",
-        "tags": [
-          "GraphQL",
-          "Redis",
-          "Real-time",
-          "Architecture"
-        ]
-      },
-      {
-        "id": 12,
-        "slug": "ai-agents-rag-guardrails-production",
-        "title": "AI Agents in Production: RAG, Guardrails and Cost Control",
+        "id": 20,
+        "slug": "model-context-protocol-agentic-interoperability-2026",
+        "title": "MCP and Agentic Interoperability in 2026: Connecting Models to Real Tools Safely",
         "img": "ai-agents",
-        "titleImg": "AI Agents in Production",
-        "date": "2026-11-14",
+        "titleImg": "MCP and agentic interoperability",
+        "date": "2026-11-18",
         "tags": [
           "AI",
-          "LLM",
-          "RAG",
+          "MCP",
           "AI Agents",
-          "MLOps"
-        ],
-        "desc": [
-          {
-            "title": "Why agents fail in production",
-            "description": "Most agent prototypes break on ambiguous intent, stale context, and unbounded tool calls. Treat an agent as a workflow with explicit state, not a magic prompt."
-          },
-          {
-            "title": "RAG that survives real questions",
-            "description": "Chunk by meaning, keep metadata filters, and rerank before generation. Ground answers in retrieved sources and show citations so users can verify claims."
-          },
-          {
-            "title": "Guardrails and tool boundaries",
-            "description": "Give each tool a narrow contract, validate inputs with schemas, cap iterations, and require human approval for irreversible actions."
-          },
-          {
-            "title": "Cost and latency control",
-            "description": "Cache embeddings, route simple turns to smaller models, stream responses, and track tokens per task. A budget is a product constraint, not an afterthought."
-          },
-          {
-            "title": "Evaluation before launch",
-            "description": "Build an eval set from real support tickets, score groundedness and task success, and replay failures in CI. Model upgrades should be measurable."
-          },
-          {
-            "title": "Takeaways",
-            "description": "Start with a deterministic workflow, add retrieval where context matters, and only then add autonomy. Observability turns a demo into a dependable feature."
-          }
-        ]
-      },
-      {
-        "id": 13,
-        "slug": "platform-engineering-idp-blueprint",
-        "title": "Platform Engineering in 2026: Build an Internal Developer Platform",
-        "img": "platform-engineering",
-        "titleImg": "Platform Engineering Blueprint",
-        "date": "2026-10-28",
-        "tags": [
-          "Platform Engineering",
-          "DevOps",
-          "IDP",
-          "DORA",
-          "Developer Experience"
-        ],
-        "desc": [
-          {
-            "title": "Why platforms replace ticket ops",
-            "description": "When every team assembles its own pipeline, delivery slows and security becomes inconsistent. A platform turns repeated setup into a self-service product."
-          },
-          {
-            "title": "Start with the golden path",
-            "description": "Publish opinionated templates for services, jobs, and infrastructure. A new repository should ship a tested app with observability and policy already wired in."
-          },
-          {
-            "title": "Idempotent infrastructure",
-            "description": "Use Terraform or Pulumi modules with versioned interfaces. Expose environments through a catalog, never through hand-edited consoles."
-          },
-          {
-            "title": "Measure developer experience",
-            "description": "Track lead time, deployment frequency, change failure rate and recovery time. Ask developers where they wait; remove that step first."
-          },
-          {
-            "title": "Avoid the platform trap",
-            "description": "Do not build a ticket queue with a UI. Keep escape hatches, document ownership, and treat the platform like any other product with a roadmap."
-          },
-          {
-            "title": "Takeaways",
-            "description": "A good IDP reduces cognitive load, not choice. Standardize the boring parts and let teams innovate where it matters."
-          }
-        ]
-      },
-      {
-        "id": 14,
-        "slug": "software-supply-chain-security-sbom-signing",
-        "title": "Software Supply Chain Security: SBOM, Signing and Zero Trust CI",
-        "img": "supply-chain-security",
-        "titleImg": "Supply Chain Security",
-        "date": "2026-10-06",
-        "tags": [
+          "Tool Use",
           "Security",
-          "Supply Chain",
-          "SBOM",
-          "DevSecOps",
-          "Zero Trust"
+          "Architecture"
         ],
         "desc": [
           {
-            "title": "The attack surface is the build",
-            "description": "Dependencies, runners, and release artefacts are now primary targets. Lock the path from source to production with verified steps."
+            "title": "Why interoperability became the agent problem",
+            "description": "As AI agents moved from chat to action, the bottleneck shifted from model capability to integration. Every tool had its own API, auth model, schema, and failure behavior. The Model Context Protocol (MCP) emerged as an open way to expose tools, resources, and prompts through a consistent interface. In 2026, the value is not hype: it is reducing bespoke glue code while making tool boundaries explicit.",
+            "list": [
+              "Tools: callable actions with typed inputs and outputs.",
+              "Resources: readable context such as docs, tickets, or records.",
+              "Prompts/workflows: reusable task templates exposed by servers.",
+              "Permissions: user and host control over what an agent can access."
+            ]
           },
           {
-            "title": "Generate an SBOM by default",
-            "description": "Produce CycloneDX or SPDX in every build. Store it with the release so you can answer 'are we affected?' in minutes, not days."
+            "title": "A simple MCP mental model",
+            "description": "An MCP host runs the agent experience. It connects to MCP servers, discovers capabilities, and calls them with structured input. The model decides when to use a capability, but the host and server enforce boundaries. This separation is important: model reasoning is probabilistic; authorization and data access must be deterministic.",
+            "code": {
+              "language": "json",
+              "content": "{\n  \"name\": \"search_docs\",\n  \"description\": \"Search internal documentation\",\n  \"inputSchema\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"query\": { \"type\": \"string\" },\n      \"limit\": { \"type\": \"integer\", \"minimum\": 1, \"maximum\": 20 }\n    },\n    \"required\": [\"query\"]\n  }\n}"
+            }
           },
           {
-            "title": "Sign and verify artefacts",
-            "description": "Use Sigstore or cosign to sign images and packages. Admission policies should reject anything without a valid signature and provenance."
+            "title": "Security boundaries still matter",
+            "description": "A standard protocol does not remove security work. MCP servers should authenticate callers, scope access, validate inputs, log audits, and avoid exposing overly broad tools. Hosts should require user confirmation for sensitive actions and isolate untrusted tool output from system instructions. Prompt injection through retrieved content remains a real threat model in 2026.",
+            "note": "Treat tool descriptions and external content as untrusted data. The model can read them, but your policy layer should decide what actions are allowed."
           },
           {
-            "title": "Harden CI runners",
-            "description": "Use short-lived tokens, least-privilege roles, pinned actions, and isolated builds. Never place long-lived secrets in a shared runner."
+            "title": "Where MCP fits in real architectures",
+            "description": "MCP is useful when multiple clients or agents need the same internal capabilities: documentation search, issue tracking, CI status, database read models, or cloud operations. It is less useful when a single app needs one private API call. Good engineering chooses protocols for interoperability and governance, not because they are new.",
+            "code": {
+              "language": "ts",
+              "content": "// Host-side policy before calling a tool\nasync function callMcpTool(name: string, input: unknown, ctx: Ctx) {\n  const tool = await registry.get(name);\n  assertAllowed(ctx, tool);\n  const parsed = tool.inputSchema.parse(input);\n  const result = await tool.invoke(parsed, { timeoutMs: 10_000 });\n  audit({ name, userId: ctx.userId, input: redact(parsed) });\n  return result;\n}"
+            }
           },
           {
-            "title": "Patch with evidence",
-            "description": "Pair dependency scanning with reachability analysis and a clear SLA. Auto-merge low-risk updates, review breaking ones, and record exceptions."
-          },
-          {
-            "title": "Takeaways",
-            "description": "Supply chain security is not a scanner. It is a chain of verifiable claims: what you built, from what, and who approved it."
-          }
-        ]
-      },
-      {
-        "id": 15,
-        "slug": "core-web-vitals-inp-rum-guide",
-        "title": "Core Web Vitals in 2026: Master INP, LCP and Real User Monitoring",
-        "img": "web-vitals",
-        "titleImg": "Core Web Vitals 2026",
-        "date": "2026-09-18",
-        "tags": [
-          "SEO",
-          "Core Web Vitals",
-          "INP",
-          "Performance",
-          "RUM"
-        ],
-        "desc": [
-          {
-            "title": "Lab scores are not enough",
-            "description": "Lighthouse is useful for debugging, but search ranking and user experience depend on field data. Instrument real users with the web-vitals library."
-          },
-          {
-            "title": "Fix INP at the interaction",
-            "description": "Break long tasks, yield to the main thread, and move heavy work off the critical path. Debounce input and avoid synchronous layout reads."
-          },
-          {
-            "title": "Improve LCP, not just bundle size",
-            "description": "Preload the hero image, serve modern formats, and remove render-blocking CSS. A fast server response still matters more than micro-optimisations."
-          },
-          {
-            "title": "Stabilise layout",
-            "description": "Reserve space for images, ads, and dynamic text. CLS usually comes from late content shifting the page, not from CSS animation."
-          },
-          {
-            "title": "Build a performance budget",
-            "description": "Set thresholds in CI for LCP, INP and CLS per route. Fail the build when a regression crosses the budget."
-          },
-          {
-            "title": "Takeaways",
-            "description": "Measure by route and device, fix the worst interaction first, and keep a budget. Performance is a feature you maintain."
-          }
-        ]
-      },
-      {
-        "id": 16,
-        "slug": "finops-cloud-cost-optimization-developers",
-        "title": "FinOps for Developers: Cut Cloud Costs Without Slowing Delivery",
-        "img": "finops",
-        "titleImg": "FinOps for Developers",
-        "date": "2026-08-27",
-        "tags": [
-          "FinOps",
-          "Cloud",
-          "Cost Optimization",
-          "DevOps",
-          "AWS"
-        ],
-        "desc": [
-          {
-            "title": "Cost is an engineering metric",
-            "description": "Cloud spend follows architecture decisions. Treat it like latency: visible, budgeted, and reviewed alongside reliability."
-          },
-          {
-            "title": "Tag everything",
-            "description": "Require owner, environment, and service tags at provisioning. Untagged resources should be quarantined or stopped automatically."
-          },
-          {
-            "title": "Right-size before optimising",
-            "description": "Most waste is idle capacity. Schedule non-prod shutdowns, use autoscaling, and start with smaller instances backed by metrics."
-          },
-          {
-            "title": "Make storage explicit",
-            "description": "Set lifecycle policies for logs and backups, use tiered object storage, and delete orphaned volumes and snapshots."
-          },
-          {
-            "title": "Show cost in the pull request",
-            "description": "Estimate infrastructure delta in CI and attach it to the PR. Engineers change behaviour when feedback arrives before deploy."
-          },
-          {
-            "title": "Takeaways",
-            "description": "FinOps is a loop: allocate, measure, optimise, verify. Never trade reliability for a short-term saving you cannot observe."
-          }
-        ]
-      },
-      {
-        "id": 17,
-        "slug": "edge-serverless-architecture-patterns",
-        "title": "Edge and Serverless in 2026: Patterns, Costs and Hard Limits",
-        "img": "edge-serverless",
-        "titleImg": "Edge & Serverless",
-        "date": "2026-07-30",
-        "tags": [
-          "Serverless",
-          "Edge Computing",
-          "Cloud Architecture",
-          "Performance",
-          "DevOps"
-        ],
-        "desc": [
-          {
-            "title": "Choose by constraint",
-            "description": "Edge wins on latency near users; serverless wins on elastic burst and low operations. Neither is a default architecture."
-          },
-          {
-            "title": "Keep functions small and pure",
-            "description": "Put business logic in testable modules and keep handlers thin. Cold starts punish huge bundles and hidden I/O."
-          },
-          {
-            "title": "Design for idempotency",
-            "description": "Retries are normal. Use idempotency keys, durable queues, and outbox patterns so duplicate events cannot corrupt state."
-          },
-          {
-            "title": "Watch the real cost curve",
-            "description": "Request pricing is cheap until traffic is steady and high. Compare with containers before committing to a long-lived workload."
-          },
-          {
-            "title": "Plan for limits",
-            "description": "Execution time, memory, payload size and regional data rules shape the design. Test failure modes locally with emulators and contract tests."
-          },
-          {
-            "title": "Takeaways",
-            "description": "Use edge for personalisation and redirects, serverless for spiky APIs, and containers for steady services. Measure before migrating."
-          }
-        ]
-      },
-      {
-        "id": 18,
-        "slug": "building-local-rag-document-assistant",
-        "title": "Building a RAG Document Assistant with pgvector and Citations",
-        "img": "ai-agents",
-        "titleImg": "Local RAG",
-        "date": "2026-11-16",
-        "tags": [
-          "RAG",
-          "OpenAI",
-          "pgvector",
-          "FastAPI",
-          "Next.js",
-          "LangChain",
-          "Citations"
-        ],
-        "desc": [
-          {
-            "title": "Start with a clear boundary",
-            "description": "The assistant answers only from documents uploaded by the user: PDF, DOCX, TXT and MD. It is a single-user tool with no application login or multi-tenancy, and it needs an OpenAI API key. Naming that boundary early kept the product honest: the value is grounded retrieval with visible sources, not an enterprise search platform."
-          },
-          {
-            "title": "Ingestion decides answer quality",
-            "description": "pypdf and python-docx extract page-aware text, and RecursiveCharacterTextSplitter splits each page while keeping its exact page number. Chunks are embedded in batches of 100 with text-embedding-3-small and stored in PostgreSQL with pgvector. Format and size validation stop bad inputs before they pollute the index."
-          },
-          {
-            "title": "Retrieve, then rerank",
-            "description": "Vector search uses an HNSW cosine index and returns 20 candidates. A structured gpt-4o-mini call scores each passage from 0 to 10, and the top 5 passages go to the answer model. If reranking fails, the pipeline falls back to vector order instead of breaking the request."
-          },
-          {
-            "title": "Make grounding visible",
-            "description": "The answer schema contains the response and the passage numbers actually used. Sources are deduplicated by document and page, then returned with an excerpt and similarity score. When the context is insufficient, the model leaves sources empty and says the information is not in the documents."
-          },
-          {
-            "title": "Build a focused interface",
-            "description": "The Next.js 14 UI keeps the interaction simple: upload documents, select which ones to search, ask a question and read the sources beside the answer. The FastAPI service exposes /health, document list/upload/delete and /api/chat, so the interface stays replaceable without rewriting the retrieval logic."
-          },
-          {
-            "title": "Ship it like a service",
-            "description": "Docker Compose runs PostgreSQL/pgvector, the backend and the frontend as three services. Schema and HNSW index are created on startup, Pydantic settings validate configuration, and a documented .env template covers models, chunking, retrieval, CORS and upload limits."
-          },
-          {
-            "title": "Honest next steps",
-            "description": "There is no dedicated evaluation dataset yet. The next iteration would add a gold question set, retrieval metrics, hybrid lexical/vector search, optional authentication for shared deployments and OCR for scanned PDFs. The current pipeline is useful precisely because its limits are explicit."
+            "title": "2026 takeaway",
+            "description": "Agentic interoperability is becoming infrastructure. Protocols like MCP help, but the science and engineering challenge remains the same: reliable tool use, clear permissions, observable traces, and robust evaluation under real workloads."
           }
         ]
       },
@@ -2426,32 +1758,1259 @@
         "desc": [
           {
             "title": "The constraint",
-            "description": "CommunicFlow V1 already carried the business domains: organisations, members, events, reclamations and messaging. Real-time traffic was the part that deserved its own boundary. The v2 goal was not to split everything into microservices for fashion, but to isolate the messenger so chat load, WebRTC signalling and presence would not destabilise the main REST application."
+            "description": "CommunicFlow V1 already carried core business domains: organisations, members, events, reclamations, and messaging. Realtime traffic was the pressure point. The v2 goal was pragmatic: isolate the messenger so chat load, WebRTC signaling, and presence would not destabilize the main REST application.",
+            "list": [
+              "Keep business domains stable.",
+              "Isolate realtime concerns.",
+              "Share auth deliberately, not by duplication.",
+              "Operate on a VPS with simple, reliable tooling."
+            ]
           },
           {
-            "title": "A boundary you can deploy",
-            "description": "The result is a React/Vite SPA talking to an Express REST API plus a separate GraphQL/Socket.IO messenger service. GraphQL handles typed reads and mutations; Socket.IO remains the primary realtime transport. Redis backs the shared session cookie, and internal calls are authenticated with a constant-time service-key check. Three services, one clear responsibility each."
+            "title": "A deployable boundary",
+            "description": "v2 uses a React/Vite SPA, an Express REST API, and a separate GraphQL/Socket.IO messenger service. GraphQL handles typed reads/mutations; Socket.IO handles primary realtime transport. Redis backs shared session state; internal service calls use constant-time service-key checks.",
+            "code": {
+              "language": "yaml",
+              "content": "services:\n  web: { build: ./web }\n  api: { build: ./api }\n  messenger: { build: ./messenger }\n  redis: { image: redis:7-alpine }\n  nginx: { image: nginx:alpine }"
+            }
           },
           {
-            "title": "Security is the design",
-            "description": "Access and refresh tokens live in HTTP-only cookies with pinned HS512 algorithms, rotation and database revocation. TOTP 2FA, backup codes and Cloudflare Turnstile cover account takeover and abusive sign-ups. A session-level active organisation and a super-admin exception make multi-tenant scope explicit instead of relying on every query to remember it."
+            "title": "Security as design",
+            "description": "Access and refresh tokens live in HTTP-only cookies with HS512, rotation, and DB revocation. TOTP 2FA, backup codes, and Cloudflare Turnstile protect sensitive flows. A session-level active organisation and super-admin exception make multi-tenant scope explicit.",
+            "note": "Security controls were part of architecture decisions, not post-launch patches."
           },
           {
             "title": "Realtime with rules",
-            "description": "The messenger provides rooms, presence, typing indicators, read receipts and bounded history pagination. Call signalling uses STUN and short-lived HMAC TURN credentials through coturn, gated by organisation policy and discussion role. This is realtime product engineering: who may see, send or call matters as much as latency."
+            "description": "The messenger supports rooms, presence, typing indicators, read receipts, and bounded history pagination. Call signaling uses STUN and short-lived HMAC TURN credentials through coturn, gated by organisation policy and discussion role. Realtime features are permissioned product behavior, not just sockets.",
+            "code": {
+              "language": "ts",
+              "content": "socket.on('room:join', async ({ roomId }) => {\n  await authorizeMembership(userId, roomId);\n  socket.join(roomId);\n  io.to(roomId).emit('presence:joined', { userId, at: Date.now() });\n});"
+            }
           },
           {
             "title": "Business modules still matter",
-            "description": "v2 also added a governed Drive with access-checked serving, trash and version history, activity trail, tokenised share links and ZIP export. Events store recurrence rules and expand them at read time with a defined horizon and occurrence cap. Reclamations run through an SLA job, while notifications support preferences, grouping and realtime delivery."
+            "description": "v2 also shipped a governed Drive with access-checked serving, trash, versions, activity trail, tokenized share links, and ZIP export. Events store recurrence rules and expand on read with defined horizon/cap. Reclamations run through an SLA job; notifications support preferences, grouping, and realtime delivery."
           },
           {
             "title": "Delivery gates",
-            "description": "Docker Compose runs the stack behind nginx with TLS, security headers, real-IP handling and WebSocket support. A eight-stage Jenkins pipeline validates Compose config, snapshots images, polls health checks, runs smoke verification and retains rollback images. There is no Kubernetes or Prometheus stack here; the system is sized for a VPS and operated with the tools it actually has."
+            "description": "Docker Compose runs behind nginx with TLS, security headers, real-IP handling, and WebSocket support. An eight-stage Jenkins pipeline validates Compose config, snapshots images, polls health checks, runs smoke verification, and retains rollback images. No Kubernetes/Prometheus stack was required for the target VPS scale.",
+            "list": [
+              "Compose config validation.",
+              "Image build and snapshot.",
+              "Health checks and smoke tests.",
+              "Rollback image retention."
+            ]
           },
           {
             "title": "What the split bought",
-            "description": "The messenger can fail, restart or scale without taking the core workspace down. Authentication and scope are shared deliberately, not duplicated. The hardest part was not the framework choice but keeping permissions, notifications and deployment discipline consistent across the new boundary."
+            "description": "The messenger can fail, restart, or scale without taking the core workspace down. Auth and scope are shared deliberately. The hard part was not framework choice but keeping permissions, notifications, and deployment discipline consistent across the boundary."
           }
+        ]
+      },
+      {
+        "id": 18,
+        "slug": "building-local-rag-document-assistant",
+        "title": "Building a Local RAG Document Assistant: Ingestion, Retrieval, and Citations",
+        "img": "ai-agents",
+        "titleImg": "Local RAG",
+        "date": "2026-11-16",
+        "tags": [
+          "RAG",
+          "FastAPI",
+          "Next.js",
+          "pgvector",
+          "OpenAI",
+          "Citations",
+          "AI"
+        ],
+        "desc": [
+          {
+            "title": "Why local-first RAG matters",
+            "description": "A document assistant is only useful when answers are traceable. Local-first RAG keeps sensitive documents under control while using models for synthesis. The core product rule: every answer should point to evidence, and missing evidence should be reported clearly.",
+            "list": [
+              "Ingest and normalize documents.",
+              "Chunk with structure and metadata.",
+              "Embed and index for retrieval.",
+              "Generate answers with citations and refusal behavior."
+            ]
+          },
+          {
+            "title": "Ingestion pipeline",
+            "description": "Parse PDFs/DOCX/Markdown into clean text. Preserve headings, page numbers, document IDs, and access control metadata. Bad parsing creates bad retrieval no matter how good the model is. For scanned PDFs, OCR quality becomes part of system quality.",
+            "code": {
+              "language": "python",
+              "content": "def chunk_text(text: str, size=900, overlap=150):\n    i = 0\n    while i < len(text):\n        chunk = text[i:i+size].strip()\n        if chunk:\n            yield chunk\n        i += max(1, size - overlap)"
+            }
+          },
+          {
+            "title": "Retrieval: vector + filters + reranking",
+            "description": "Use embeddings for semantic recall, but combine with metadata filters and optionally keyword search. Retrieve a candidate set, rerank, then pass only the most relevant chunks to the model. Always keep tenant/document access control in the retrieval query.",
+            "code": {
+              "language": "sql",
+              "content": "SELECT id, doc_id, page, text\nFROM document_chunks\nWHERE tenant_id = $1\nORDER BY embedding <=> $2\nLIMIT 8;"
+            },
+            "note": "The most common RAG bug is retrieving plausible but unauthorized or irrelevant context."
+          },
+          {
+            "title": "Citations and prompt discipline",
+            "description": "Ask the model to answer only from provided context and include source IDs. Render citations in UI so users can verify. When context is insufficient, the assistant should say so and suggest what document is missing.",
+            "code": {
+              "language": "ts",
+              "content": "const prompt = [\n  'Answer using only the provided context.',\n  'Cite sources as [source_id].',\n  'If context is insufficient, say what is missing.',\n].join(' ');"
+            }
+          },
+          {
+            "title": "Evaluation and production concerns",
+            "description": "Evaluate retrieval and generation separately. Track recall@k, groundedness, citation accuracy, latency, and cost. Log source IDs and model versions. Protect against prompt injection inside documents by treating retrieved text as data, not instructions."
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "slug": "ai-agents-rag-guardrails-production",
+        "title": "AI Agents in Production in 2026: RAG, Tool Use, Evals, and Guardrails",
+        "img": "ai-agents",
+        "titleImg": "AI Agents in Production",
+        "date": "2026-11-14",
+        "tags": [
+          "AI",
+          "LLM",
+          "RAG",
+          "AI Agents",
+          "Evals",
+          "MLOps"
+        ],
+        "desc": [
+          {
+            "title": "From demo agents to dependable systems",
+            "description": "The 2026 agent landscape has moved from prompt demos to workflow systems. The useful question is no longer \"can the model call a tool?\" but \"can the system complete a bounded task reliably, safely, and at a predictable cost?\" Production agents work best when the model is one component inside a deterministic workflow: explicit state, typed tools, retrieval, policy checks, and human escalation paths.",
+            "list": [
+              "Model: reasoning and language generation, not the source of truth.",
+              "Tools: narrow contracts with schemas, idempotency, and audit logs.",
+              "State: persisted task state so retries and handoffs are observable.",
+              "Policy: authorization and data boundaries enforced outside the prompt."
+            ],
+            "note": "A practical rule: give the agent autonomy only where you can measure correctness and reverse or contain mistakes."
+          },
+          {
+            "title": "RAG is a retrieval system, not a vector database",
+            "description": "Retrieval-Augmented Generation works when retrieval quality is treated as an engineering problem. Chunking, metadata, filters, reranking, and citation rendering matter as much as the embedding model. For enterprise or documentation assistants, the answer should be grounded in retrieved passages and expose where each claim came from.",
+            "code": {
+              "language": "python",
+              "content": "from pydantic import BaseModel\n\nclass RetrievedChunk(BaseModel):\n    source_id: str\n    uri: str\n    text: str\n    score: float\n\ndef build_prompt(question: str, chunks: list[RetrievedChunk]) -> str:\n    context = \"\n\n\".join(\n        f\"[{c.source_id}] {c.uri}\n{c.text}\" for c in chunks\n    )\n    return (\n        \"Answer using only the context. \"\n        \"Cite sources as [source_id]. \"\n        \"If context is insufficient, say what is missing.\n\n\"\n        f\"Context:\n{context}\n\nQuestion:\n{question}\"\n    )"
+            }
+          },
+          {
+            "title": "Tool contracts and guardrails",
+            "description": "Every tool exposed to an agent should have a schema, permission model, timeout, and side-effect classification. Read-only tools can be broader; mutating tools should be narrow and auditable. Guardrails are not just prompt text — they are validation, allowlists, rate limits, and approval gates before irreversible actions.",
+            "code": {
+              "language": "typescript",
+              "content": "type Tool = {\n  name: string;\n  sideEffect: \"read\" | \"write\" | \"destructive\";\n  inputSchema: unknown;\n  authorize: (ctx: { userId: string }) => Promise<boolean>;\n  execute: (input: unknown) => Promise<unknown>;\n};\n\nasync function runTool(tool: Tool, ctx: { userId: string }, input: unknown) {\n  if (!(await tool.authorize(ctx))) throw new Error(\"Forbidden\");\n  if (tool.sideEffect === \"destructive\") {\n    await requireHumanApproval({ tool: tool.name, input });\n  }\n  return tool.execute(validate(tool.inputSchema, input));\n}"
+            }
+          },
+          {
+            "title": "Evaluation is the release gate",
+            "description": "In 2026, teams that ship agents responsibly run offline evals before every model, prompt, or retrieval change. An eval set should include real user tasks, adversarial inputs, tool failures, and stale-context cases. Score task success, groundedness, citation accuracy, refusal quality, and cost/latency. Traces from production should feed new eval cases.",
+            "list": [
+              "Task success: did the workflow produce the expected outcome?",
+              "Groundedness: are claims supported by retrieved sources?",
+              "Safety: did the agent respect permissions and refusal policies?",
+              "Efficiency: tokens, tool calls, latency, and cost per successful task."
+            ]
+          },
+          {
+            "title": "Cost, latency, and observability",
+            "description": "Agent cost is multiplicative: retrieval, model calls, tool calls, retries, and long contexts add up. Use model routing for simple steps, cache embeddings and retrieval results where valid, cap iterations, and stream user-visible progress. Observability should capture prompts, tool inputs/outputs, retrieved source IDs, token usage, and final decisions — with redaction for sensitive data.",
+            "note": "The best production metric is not \"agent answered\" but \"user completed a verified task within budget and policy\"."
+          },
+          {
+            "title": "2026 takeaway",
+            "description": "The scientific and engineering direction is clear: agentic systems improve when they are constrained by retrieval, evaluation, and policy. The winning pattern is hybrid — deterministic software for control, models for language and planning, and humans for high-risk decisions."
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "slug": "ai-assisted-software-engineering-quality-security-2026",
+        "title": "AI-Assisted Software Engineering in 2026: Productivity, Code Quality, and Security",
+        "img": "testing",
+        "titleImg": "AI-assisted software engineering",
+        "date": "2026-11-12",
+        "tags": [
+          "AI",
+          "Developer Experience",
+          "Testing",
+          "Security",
+          "Code Review",
+          "DevOps"
+        ],
+        "desc": [
+          {
+            "title": "The shift from autocomplete to agentic development",
+            "description": "By 2026, AI coding tools are no longer just autocomplete. They can draft tests, refactor modules, explain failures, generate migration scripts, and propose pull requests. The productivity gain is real when tasks are well-scoped, but the engineering responsibility does not move. Teams still own correctness, security, maintainability, and operational behavior.",
+            "list": [
+              "Good fit: boilerplate, tests, refactors, documentation, migrations.",
+              "Risky fit: auth, cryptography, billing, concurrency, security boundaries.",
+              "Best practice: small diffs, strong tests, and human review."
+            ]
+          },
+          {
+            "title": "A review checklist for AI-generated code",
+            "description": "Generated code should pass the same bar as human code, plus extra skepticism. Reviewers should check assumptions, missing edge cases, dependency choices, and whether the code matches existing project conventions. AI often produces plausible code; plausibility is not correctness.",
+            "code": {
+              "language": "markdown",
+              "content": "## AI diff review checklist\n- [ ] Does it solve the reported problem?\n- [ ] Are inputs validated and errors handled?\n- [ ] Does it follow existing patterns and naming?\n- [ ] Are tests meaningful, not just passing?\n- [ ] Any new dependency, secret, or permission?\n- [ ] Any security, privacy, or performance regression?"
+            }
+          },
+          {
+            "title": "Testing as the safety net",
+            "description": "AI-assisted development increases the value of tests. Unit tests catch local regressions, integration tests verify contracts, and end-to-end tests protect user flows. When an agent generates code, ask it to generate tests too — then review the tests critically. A weak test suite can create false confidence.",
+            "code": {
+              "language": "ts",
+              "content": "import { describe, expect, it } from 'vitest';\nimport { normalizeSlug } from './slug';\n\ndescribe('normalizeSlug', () => {\n  it('removes unsafe characters', () => {\n    expect(normalizeSlug('Hello, World!')).toBe('hello-world');\n  });\n  it('keeps unicode letters', () => {\n    expect(normalizeSlug('Crème Brûlée')).toBe('creme-brulee');\n  });\n});"
+            }
+          },
+          {
+            "title": "Security and provenance",
+            "description": "AI tools can accidentally introduce vulnerable patterns, copy insecure defaults, or suggest packages with weak maintenance. Combine AI use with SAST, dependency scanning, secret scanning, and SBOM/provenance practices. For sensitive domains, require threat modeling and explicit human approval.",
+            "note": "The right metric is not lines generated. It is validated outcomes delivered safely."
+          },
+          {
+            "title": "2026 takeaway",
+            "description": "AI-assisted engineering is a multiplier for disciplined teams. The science is in evaluation and human factors; the craft is in code review, testing, and secure delivery. Teams that invest in guardrails get speed without trading away quality."
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "slug": "browser-ai-webgpu-local-inference-2026",
+        "title": "Browser AI in 2026: WebGPU, Local Inference, and Privacy-Preserving UX",
+        "img": "edge-serverless",
+        "titleImg": "Browser AI and WebGPU",
+        "date": "2026-11-10",
+        "tags": [
+          "AI",
+          "WebGPU",
+          "Frontend",
+          "Performance",
+          "Privacy",
+          "Edge"
+        ],
+        "desc": [
+          {
+            "title": "Why local inference is back on the table",
+            "description": "Cloud LLMs are powerful, but not every AI feature needs a remote round trip. In 2026, browser and on-device inference are practical for selected tasks: classification, embeddings, speech features, image preprocessing, summarization of small local content, and assistive UI. The benefits are latency, offline resilience, and better privacy boundaries when data stays on device.",
+            "list": [
+              "Low-latency interactions for small models.",
+              "Reduced data transfer for sensitive content.",
+              "Offline or degraded-network capability.",
+              "Hybrid fallback to cloud models for heavy tasks."
+            ]
+          },
+          {
+            "title": "WebGPU and the browser runtime",
+            "description": "WebGPU gives web applications more direct access to modern GPU capabilities than WebGL-era compute hacks. It enables better performance for ML workloads, graphics, and parallel compute. The engineering challenge is capability detection, fallback paths, memory limits, and thermal/mobile constraints.",
+            "code": {
+              "language": "ts",
+              "content": "async function canUseWebGPU() {\n  if (!('gpu' in navigator)) return false;\n  try {\n    const adapter = await navigator.gpu.requestAdapter();\n    return Boolean(adapter);\n  } catch {\n    return false;\n  }\n}\n\nconst mode = (await canUseWebGPU()) ? 'webgpu' : 'wasm-fallback';"
+            }
+          },
+          {
+            "title": "Hybrid AI UX patterns",
+            "description": "The best browser AI features are often hybrid. Use local inference for instant feedback, redaction, or drafting; escalate to a server model for complex reasoning or large context. Be transparent in the UI about where processing happens, especially for sensitive data.",
+            "note": "Privacy-preserving UX is not just a backend decision. Users should understand whether text, audio, or files leave their device."
+          },
+          {
+            "title": "Performance and model selection",
+            "description": "Small models require careful product design. Define the task narrowly, measure quality against a baseline, and budget for startup/download time. Quantized models can reduce size, but you must evaluate accuracy loss. For scientific and production use, publish eval criteria, not just demos.",
+            "code": {
+              "language": "js",
+              "content": "const budget = {\n  maxModelDownloadMB: 150,\n  maxFirstInferenceMs: 2000,\n  minTaskAccuracy: 0.92,\n};\n\nfunction acceptable(result) {\n  return result.downloadMB <= budget.maxModelDownloadMB\n    && result.firstInferenceMs <= budget.maxFirstInferenceMs\n    && result.accuracy >= budget.minTaskAccuracy;\n}"
+            }
+          },
+          {
+            "title": "2026 takeaway",
+            "description": "Browser AI is not replacing cloud AI; it is expanding the design space. The winning products choose the right runtime per task, measure quality, and make privacy/performance tradeoffs visible."
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "slug": "responsible-ai-engineering-eu-ai-act-2026",
+        "title": "Responsible AI Engineering in 2026: EU AI Act, Risk Management, and Technical Controls",
+        "img": "supply-chain-security",
+        "titleImg": "Responsible AI engineering",
+        "date": "2026-11-08",
+        "tags": [
+          "AI",
+          "Responsible AI",
+          "EU AI Act",
+          "Security",
+          "Governance",
+          "MLOps"
+        ],
+        "desc": [
+          {
+            "title": "Regulation meets engineering practice",
+            "description": "In 2026, responsible AI is no longer only a policy document. The EU AI Act phased timeline and global AI governance frameworks push teams to translate principles into technical controls. For engineers, this means data provenance, model documentation, human oversight, logging, evaluation, and clear user communication become product requirements.",
+            "list": [
+              "Classify the AI use case and risk level early.",
+              "Document data sources, intended use, and limits.",
+              "Design human oversight for high-impact decisions.",
+              "Log decisions and monitor for drift or misuse."
+            ]
+          },
+          {
+            "title": "Technical controls developers can implement",
+            "description": "Responsible AI starts in the architecture. Limit data collection, redact sensitive inputs, separate system prompts from untrusted content, and keep audit trails. For RAG and agents, store source IDs and tool traces. For user-facing AI, label outputs as AI-generated where appropriate and provide feedback channels.",
+            "code": {
+              "language": "ts",
+              "content": "type AiAuditEvent = {\n          taskId: string;\n          model: string;\n          sources: string[];\n          toolCalls: string[];\n          userIdHash: string;\n          createdAt: string;\n        };\n\n        function recordAudit(event: AiAuditEvent) {\n          // Store minimal necessary data; redact prompts/PII by policy.\n          return db.aiAudit.create({ data: event });\n        }"
+            }
+          },
+          {
+            "title": "Evaluation beyond accuracy",
+            "description": "Scientific evaluation for AI systems should include robustness, bias where relevant, prompt-injection resilience, privacy leakage, and failure behavior. A model can score well on benchmark accuracy and still be unsafe in a real workflow. Use red-team tests, domain eval sets, and production monitoring.",
+            "note": "For high-impact systems, \"unknown failure mode\" is itself a risk to document and mitigate."
+          },
+          {
+            "title": "Human oversight and product UX",
+            "description": "Human-in-the-loop is not a checkbox. The interface must make review possible: show evidence, confidence limits, source citations, and an easy correction path. Users should know when they are interacting with AI and what the system can and cannot do.",
+            "code": {
+              "language": "yaml",
+              "content": "ai_feature:\n  name: support_reply_draft\n  risk: limited\n  human_review: required_before_send\n  data:\n    pii_redaction: enabled\n    retention_days: 30\n  monitoring:\n    - hallucination_reports\n    - unsafe_output_flags\n    - user_feedback_rate"
+            }
+          },
+          {
+            "title": "2026 takeaway",
+            "description": "Responsible AI is an engineering discipline: governance translated into systems. Teams that build provenance, evaluation, and oversight into the lifecycle will move faster because they avoid costly trust failures later."
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "slug": "platform-engineering-idp-blueprint",
+        "title": "Platform Engineering in 2026: Building an Internal Developer Platform That Teams Actually Use",
+        "img": "platform-engineering",
+        "titleImg": "Platform Engineering Blueprint",
+        "date": "2026-10-28",
+        "tags": [
+          "Platform Engineering",
+          "DevOps",
+          "IDP",
+          "Golden Paths",
+          "Developer Experience"
+        ],
+        "desc": [
+          {
+            "title": "Why platform engineering became a 2026 priority",
+            "description": "As systems grew into microservices, cloud accounts, Kubernetes clusters, observability stacks, and AI workloads, cognitive load became a delivery bottleneck. Platform engineering addresses this by productizing infrastructure: an Internal Developer Platform (IDP) provides paved roads so product teams can ship without reinventing CI/CD, deployment, secrets, and observability for every service.",
+            "list": [
+              "Golden paths for common service types.",
+              "Self-service environments and deployments.",
+              "Built-in security, observability, and cost controls.",
+              "Documentation and support treated as product features."
+            ]
+          },
+          {
+            "title": "Golden paths over golden cages",
+            "description": "A good platform makes the right thing easy, not the only thing possible. Provide templates for common workloads — web API, worker, frontend, scheduled job — with sensible defaults. Teams should be able to extend or escape the path when they have a real need, but the default should cover most cases.",
+            "code": {
+              "language": "yaml",
+              "content": "# service.yaml - developer-facing platform contract\nname: billing-api\nowner: team-payments\nruntime: node20\ntype: web\nexposure: internal\nresources:\n  postgres: true\n  redis: false\nobservability:\n  logs: true\n  metrics: true\n  traces: true\ndeploy:\n  strategy: rolling\n  environments: [staging, production]"
+            }
+          },
+          {
+            "title": "The platform as a product",
+            "description": "Internal platforms fail when they are built as a side project with no users. Treat developers as customers: measure onboarding time, deployment frequency, lead time, change failure rate, and time to restore. Collect feedback, maintain docs, and version platform APIs. A platform that is technically impressive but hard to use will be bypassed.",
+            "note": "Adoption is the main KPI. A paved road nobody takes is technical debt with branding."
+          },
+          {
+            "title": "Security and policy by default",
+            "description": "The IDP should embed policy: secret scanning, dependency scanning, SAST, image provenance, least-privilege IAM, and environment guardrails. Developers should get secure defaults without filing tickets. Policy-as-code makes these controls reviewable and testable.",
+            "code": {
+              "language": "rego",
+              "content": "package deploy\n\ndeny[msg] {\n  input.image.tag == \"latest\"\n  msg := \"image tag 'latest' is not allowed; use an immutable version\"\n}\n\ndeny[msg] {\n  not input.resources.cpu_limit\n  msg := \"cpu_limit is required for production workloads\"\n}"
+            }
+          },
+          {
+            "title": "AI workloads change the platform",
+            "description": "In 2026, IDPs increasingly need to support model gateways, vector stores, GPU scheduling, prompt/eval pipelines, and data governance. The platform should provide approved model endpoints, logging/redaction, cost quotas, and evaluation hooks so teams can build AI features without each team creating its own shadow AI stack.",
+            "list": [
+              "Model gateway with auth, rate limits, and usage tracking.",
+              "Secrets and PII redaction in prompt/response logs.",
+              "Evaluation pipeline for prompts, RAG, and agents.",
+              "Cost budgets per team or feature."
+            ]
+          },
+          {
+            "title": "Takeaway",
+            "description": "Platform engineering is not about adding another tool. It is about reducing cognitive load while increasing reliability, security, and speed. The best IDP is boring in the right places: predictable deployments, visible ownership, and safe defaults."
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "slug": "software-supply-chain-security-sbom-signing",
+        "title": "Software Supply Chain Security in 2026: SBOMs, Signing, Provenance, and CI Controls",
+        "img": "supply-chain-security",
+        "titleImg": "Supply Chain Security",
+        "date": "2026-10-06",
+        "tags": [
+          "Security",
+          "Supply Chain",
+          "SBOM",
+          "DevSecOps",
+          "SLSA",
+          "CI/CD"
+        ],
+        "desc": [
+          {
+            "title": "Why supply chain security is now baseline engineering",
+            "description": "Modern applications depend on hundreds of direct and transitive dependencies, container base images, GitHub Actions, package registries, and build systems. Supply chain security is no longer a specialist concern; it is part of normal software delivery. The 2026 baseline is: know what you ship, verify where it came from, and detect tampering before deployment.",
+            "list": [
+              "SBOM generation for applications and containers.",
+              "Dependency and vulnerability scanning in CI.",
+              "Artifact signing and provenance attestations.",
+              "Least-privilege CI tokens and protected release workflows."
+            ]
+          },
+          {
+            "title": "SBOMs make dependencies visible",
+            "description": "A Software Bill of Materials lists components, versions, licenses, and relationships. It does not fix vulnerabilities by itself, but it makes response possible. When a new CVE is disclosed, teams with SBOMs can quickly answer: are we affected, where, and in which deployed artifact?",
+            "code": {
+              "language": "bash",
+              "content": "# Generate an SBOM for a container image\nsyft ghcr.io/acme/api:1.4.2 -o spdx-json > sbom.spdx.json\n\n# Scan the SBOM for known vulnerabilities\ngrype sbom:sbom.spdx.json --fail-on high"
+            },
+            "note": "Treat SBOM generation as a build artifact, not a one-time audit document."
+          },
+          {
+            "title": "Signing and provenance",
+            "description": "Signing proves that an artifact was produced by a trusted identity. Provenance proves how it was built: which repo, commit, workflow, and builder produced it. Together they reduce the risk of tampered images or packages reaching production. Use immutable digests in deployment manifests, not floating tags.",
+            "code": {
+              "language": "bash",
+              "content": "# Sign a container image by digest\ncosign sign ghcr.io/acme/api@sha256:3f...\n\n# Verify signature before deployment\ncosign verify ghcr.io/acme/api@sha256:3f...   --certificate-identity-regexp \"https://github.com/acme/api/.*\"   --certificate-oidc-issuer \"https://token.actions.githubusercontent.com\""
+            }
+          },
+          {
+            "title": "CI/CD hardening",
+            "description": "Many supply chain incidents enter through CI. Pin action versions by SHA, restrict workflow permissions, separate build and deploy credentials, and protect release branches/tags. Pull request workflows should not expose production secrets. Dependency updates should be reviewed like code, especially for packages with install scripts or broad permissions.",
+            "list": [
+              "Pin GitHub Actions to full commit SHAs.",
+              "Use `permissions:` with least privilege in workflows.",
+              "Require reviews for dependency and workflow changes.",
+              "Keep build provenance and logs for incident response."
+            ]
+          },
+          {
+            "title": "AI-generated code and dependency risk",
+            "description": "AI coding assistants accelerate delivery, but they can also suggest outdated packages, insecure defaults, or nonexistent dependencies. In 2026, secure teams pair AI-assisted development with policy checks: dependency allowlists where appropriate, SAST, secret scanning, and human review for security-sensitive changes.",
+            "note": "Speed from AI is real; so is the need for verification. Treat generated code as untrusted until reviewed and tested."
+          },
+          {
+            "title": "Takeaway",
+            "description": "Supply chain security is a system property. SBOMs provide visibility, signing provides integrity, provenance provides trust, and CI hardening reduces the attack surface. The goal is not zero dependencies — it is controlled, observable dependencies."
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "slug": "core-web-vitals-inp-rum-guide",
+        "title": "Core Web Vitals in 2026: INP, RUM, and Performance Engineering That Users Feel",
+        "img": "web-vitals",
+        "titleImg": "Core Web Vitals 2026",
+        "date": "2026-09-18",
+        "tags": [
+          "Performance",
+          "Core Web Vitals",
+          "INP",
+          "RUM",
+          "Frontend",
+          "SEO"
+        ],
+        "desc": [
+          {
+            "title": "Why INP changed frontend priorities",
+            "description": "Interaction to Next Paint (INP) made responsiveness a first-class metric. It captures interaction latency across the page lifecycle, not only the first input. In 2026, frontend performance means fast initial render, fast response to input, and visual stability under real conditions.",
+            "list": [
+              "LCP: main content appears quickly.",
+              "INP: UI responds quickly to interactions.",
+              "CLS: layout remains stable.",
+              "TTFB/latency: backend still matters."
+            ]
+          },
+          {
+            "title": "Lab + field measurement",
+            "description": "Use Lighthouse/DevTools for diagnosis and RUM for reality. Field data varies by device class, browser, extensions, network, and user behavior. Prioritize by real-user impact, not just local scores.",
+            "code": {
+              "language": "ts",
+              "content": "import {onCLS,onINP,onLCP} from 'web-vitals/attribution';\nfunction send(metric){ navigator.sendBeacon('/analytics/vitals', JSON.stringify(metric)); }\nonCLS(send); onINP(send); onLCP(send);"
+            }
+          },
+          {
+            "title": "How to improve INP",
+            "description": "Long tasks block interaction. Break heavy work into chunks, defer third-party scripts, avoid unnecessary rerenders, and use virtualization for large lists. Profile interactions that users actually perform: filter, open modal, submit form, switch tab.",
+            "code": {
+              "language": "ts",
+              "content": "async function yieldToMain() {\n  return new Promise<void>(resolve => setTimeout(resolve, 0));\n}\nfor (const item of largeArray) {\n  handle(item);\n  if (shouldYield()) await yieldToMain();\n}"
+            },
+            "note": "Optimizing a metric without improving user-perceived flow is wasted effort. Measure before and after with the same interaction."
+          },
+          {
+            "title": "LCP and CLS fundamentals",
+            "description": "Optimize LCP by serving critical images efficiently, reducing render-blocking resources, and caching HTML/data where possible. Prevent CLS by reserving space for images, embeds, fonts, and dynamic banners. Avoid inserting content above existing content after load.",
+            "list": [
+              "Set width/height or aspect-ratio for media.",
+              "Use font-display and limit font variants.",
+              "Preload truly critical assets only.",
+              "Avoid layout-shifting ads/banners."
+            ]
+          },
+          {
+            "title": "Performance budgets in CI",
+            "description": "Make performance regressions visible. Add bundle budgets, Lighthouse CI for key pages, and RUM dashboards with alerts. Performance is not a one-time sprint; it is an engineering habit tied to product quality and SEO."
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "slug": "finops-cloud-cost-optimization-developers",
+        "title": "FinOps for Developers in 2026: Cloud Cost as an Engineering Metric",
+        "img": "finops",
+        "titleImg": "FinOps for Developers",
+        "date": "2026-08-27",
+        "tags": [
+          "FinOps",
+          "Cloud",
+          "Cost Optimization",
+          "DevOps",
+          "Architecture"
+        ],
+        "desc": [
+          {
+            "title": "Why FinOps is engineering work",
+            "description": "Cloud cost is not just a finance report - it is the result of architecture, scaling policies, data retention, and feature design. In 2026, AI workloads, observability pipelines, and always-on environments make cost visibility critical. FinOps aligns engineering, product, and finance around measurable tradeoffs.",
+            "list": [
+              "Make cost visible by team, service, and environment.",
+              "Tie spend to business outcomes.",
+              "Detect anomalies early.",
+              "Optimize continuously, not once a quarter."
+            ]
+          },
+          {
+            "title": "Tagging and allocation",
+            "description": "You cannot optimize what you cannot attribute. Enforce resource tagging for owner, service, environment, and cost center. For shared platforms, define allocation rules. Without allocation, cost discussions become political instead of technical.",
+            "code": {
+              "language": "yaml",
+              "content": "tags:\n  service: billing-api\n  team: payments\n  env: production\n  cost_center: eng-platform\n  managed_by: terraform"
+            }
+          },
+          {
+            "title": "Architecture levers",
+            "description": "Right-size compute, use autoscaling, schedule non-prod environments, and choose storage classes intentionally. Avoid over-fetching logs/metrics with no retention plan. For AI features, track token usage, context size, caching hit rate, and model choice per task.",
+            "code": {
+              "language": "ts",
+              "content": "type AiCostEvent = {\n  feature: string;\n  model: string;\n  inputTokens: number;\n  outputTokens: number;\n  cacheHit: boolean;\n  costUsd: number;\n};\n\nfunction trackAiCost(e: AiCostEvent) {\n  metrics.increment('ai.cost.usd', e.costUsd, { feature: e.feature, model: e.model });\n}"
+            },
+            "note": "The cheapest model is not always the lowest total cost if it causes retries, bad answers, or human rework."
+          },
+          {
+            "title": "Budgets, alerts, and governance",
+            "description": "Set budgets per team or product area and alert on forecasted overrun, not only month-end totals. Use guardrails: instance size limits, idle resource cleanup, and approval for expensive resources. Make cost part of design reviews.",
+            "list": [
+              "Budget alerts at 50/80/100%.",
+              "Anomaly detection for sudden spend spikes.",
+              "Cleanup policies for orphaned volumes/snapshots.",
+              "Cost review in architecture decision records."
+            ]
+          },
+          {
+            "title": "2026 takeaway",
+            "description": "FinOps maturity means engineers understand the cost impact of their decisions. The goal is not minimal spend; it is efficient spend that supports reliability, speed, and user value."
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "slug": "edge-serverless-architecture-patterns",
+        "title": "Edge and Serverless in 2026: Choosing the Right Execution Model",
+        "img": "edge-serverless",
+        "titleImg": "Edge & Serverless",
+        "date": "2026-07-30",
+        "tags": [
+          "Serverless",
+          "Edge Computing",
+          "Cloud Architecture",
+          "Performance",
+          "DevOps"
+        ],
+        "desc": [
+          {
+            "title": "No single runtime wins everywhere",
+            "description": "Edge functions, serverless platforms, containers, and long-running services are tools with different constraints. The right choice depends on latency, state, cold starts, execution duration, data locality, cost, and team operations. In 2026, hybrid architectures are normal.",
+            "list": [
+              "Edge: close to users, limited runtime/APIs.",
+              "Serverless: elastic, event-driven, possible cold starts.",
+              "Containers: portable and predictable for long-running workloads.",
+              "Managed services: reduce ops when constraints fit."
+            ]
+          },
+          {
+            "title": "When edge makes sense",
+            "description": "Use edge for latency-sensitive, stateless logic: auth gating, routing, A/B flags, personalization headers, simple cache decisions. Keep it close to data sources where possible; edge compute far from its database can negate latency gains.",
+            "code": {
+              "language": "ts",
+              "content": "export const config = { runtime: 'edge' };\n\nexport function middleware(req: Request) {\n  const url = new URL(req.url);\n  const country = req.headers.get('x-vercel-ip-country') || 'US';\n  url.searchParams.set('country', country);\n  return Response.rewrite(url);\n}"
+            }
+          },
+          {
+            "title": "When serverless makes sense",
+            "description": "Serverless is strong for bursty workloads: webhooks, image processing, scheduled jobs, async pipelines. Watch cold starts, concurrency limits, timeout limits, and observability. Package size and initialization code directly affect startup latency.",
+            "note": "Serverless removes server management, not system design. You still need idempotency, retries, dead-letter queues, and monitoring."
+          },
+          {
+            "title": "Containers and long-running services",
+            "description": "Use containers/services for stateful connections, long-running workers, heavy dependencies, custom networking, or predictable high throughput. Kubernetes is powerful but operationally expensive; choose it when workload complexity justifies it.",
+            "code": {
+              "language": "yaml",
+              "content": "apiVersion: apps/v1\nkind: Deployment\nmetadata: { name: worker }\nspec:\n  replicas: 2\n  template:\n    spec:\n      containers:\n        - name: worker\n          image: ghcr.io/acme/worker:1.8.0\n          resources:\n            requests: { cpu: \"200m\", memory: \"256Mi\" }\n            limits: { cpu: \"1\", memory: \"512Mi\" }"
+            }
+          },
+          {
+            "title": "Decision checklist",
+            "description": "Choose by constraints: latency target, data locality, execution time, statefulness, traffic pattern, team maturity, and cost model. Measure with realistic load. The best architecture is the simplest one that meets SLOs and can be operated by your team."
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "slug": "graphql-subscriptions-redis-streams-chat-microservice-architecture",
+        "title": "Realtime Architecture with GraphQL Subscriptions, Redis, and Socket.IO",
+        "img": "graphql-redis",
+        "titleImg": "GraphQL + Redis Messaging",
+        "desc": [
+          {
+            "title": "Realtime features need explicit boundaries",
+            "description": "Chat, notifications, presence, and collaboration features look simple in demos but become complex at scale. You need clear contracts for event names, payloads, ordering, delivery expectations, and authorization. Start by defining which events must be durable, which can be ephemeral, and which require acknowledgment.",
+            "list": [
+              "Ephemeral: typing indicators, presence heartbeats.",
+              "Durable: messages, notifications, audit-relevant events.",
+              "Ordered per room/channel: chat messages.",
+              "Idempotent consumers: handle duplicate deliveries safely."
+            ]
+          },
+          {
+            "title": "GraphQL subscriptions and transport",
+            "description": "GraphQL subscriptions are great for typed realtime data, but transport and scaling matter. WebSockets keep persistent connections; you need heartbeats, backpressure awareness, and reconnect logic. In some systems, Socket.IO handles realtime transport while GraphQL handles typed queries/mutations.",
+            "code": {
+              "language": "graphql",
+              "content": "subscription MessageAdded($roomId: ID!) {\n  messageAdded(roomId: $roomId) {\n    id\n    roomId\n    author { id name }\n    body\n    createdAt\n  }\n}"
+            }
+          },
+          {
+            "title": "Redis as the realtime backbone",
+            "description": "Redis Pub/Sub is useful for fanout across instances; Streams or durable queues are better when you need replay or delivery tracking. Use Redis to coordinate presence, rate limits, and transient state, but persist source-of-truth data in a database.",
+            "code": {
+              "language": "ts",
+              "content": "// Publisher\nawait redis.publish('room:42', JSON.stringify({\n  type: 'message.created',\n  id: msg.id,\n  roomId: '42',\n}));\n\n// Subscriber\nsub.on('message', (channel, payload) => {\n  const event = JSON.parse(payload);\n  io.to(event.roomId).emit(event.type, event);\n});"
+            },
+            "note": "Pub/Sub does not guarantee durable delivery to offline consumers. Use Streams/queues when missed events matter."
+          },
+          {
+            "title": "Authorization and scale",
+            "description": "Every subscription/room join must be authorized at connect and at event time. Do not trust client-provided room IDs blindly. Plan for horizontal scaling with sticky sessions or shared adapters, and observe connection count, event lag, dropped messages, and memory usage.",
+            "list": [
+              "Authenticate socket on handshake.",
+              "Authorize room membership per event.",
+              "Rate limit noisy events (typing, presence).",
+              "Set payload size limits and timeouts."
+            ]
+          },
+          {
+            "title": "2026 takeaway",
+            "description": "Realtime architecture is about correctness under concurrency. Choose the right durability model, enforce authorization on every boundary, and make event flows observable. Simple, explicit event contracts beat clever but opaque abstractions."
+          }
+        ],
+        "date": "2026-02-24",
+        "tags": [
+          "GraphQL",
+          "Redis",
+          "Socket.IO",
+          "Realtime",
+          "Architecture"
+        ]
+      },
+      {
+        "id": 10,
+        "slug": "secure-authentication-http-only-cookies-oauth2-2fa-turnstile",
+        "title": "Secure Authentication in 2026: HTTP-only Cookies, OAuth2, 2FA, and Abuse Protection",
+        "img": "auth-blueprint",
+        "titleImg": "Secure Authentication Blueprint",
+        "desc": [
+          {
+            "title": "Authentication is a system, not a login form",
+            "description": "Secure authentication combines credential handling, session lifecycle, MFA, abuse prevention, and recovery flows. Most breaches come from weak defaults: long-lived tokens, missing rate limits, poor recovery, or tokens exposed to JavaScript. Design auth as a threat-modeled system.",
+            "list": [
+              "Use HTTPS everywhere; secure cookies in production.",
+              "Short-lived access tokens, rotating refresh tokens.",
+              "MFA for sensitive accounts/actions.",
+              "Rate limit, audit, and monitor auth events."
+            ]
+          },
+          {
+            "title": "HTTP-only cookies and token lifecycle",
+            "description": "Storing tokens in HTTP-only, Secure, SameSite cookies reduces XSS token theft risk compared to localStorage. Access tokens should be short-lived; refresh tokens should rotate and be revocable server-side. On refresh reuse or anomaly, revoke the session family.",
+            "code": {
+              "language": "ts",
+              "content": "res.cookie('access_token', accessToken, {\n  httpOnly: true,\n  secure: true,\n  sameSite: 'lax',\n  path: '/',\n  maxAge: 15 * 60 * 1000,\n});\nres.cookie('refresh_token', refreshToken, {\n  httpOnly: true,\n  secure: true,\n  sameSite: 'strict',\n  path: '/auth/refresh',\n  maxAge: 30 * 24 * 60 * 60 * 1000,\n});"
+            },
+            "note": "Cookie flags reduce risk; they do not replace CSRF protection, input validation, or XSS prevention."
+          },
+          {
+            "title": "OAuth2/OIDC for delegated identity",
+            "description": "Use OAuth2/OIDC when users authenticate through an identity provider. Validate state, nonce, issuer, audience, signature, and token expiry. Never trust frontend-only identity claims. Map external identities to local users carefully to avoid account-linking vulnerabilities.",
+            "code": {
+              "language": "ts",
+              "content": "const params = new URLSearchParams({\n  client_id: CLIENT_ID,\n  redirect_uri: REDIRECT_URI,\n  response_type: 'code',\n  scope: 'openid profile email',\n  state,\n  nonce,\n  code_challenge: challenge,\n  code_challenge_method: 'S256',\n});"
+            }
+          },
+          {
+            "title": "2FA, recovery, and abuse protection",
+            "description": "TOTP-based 2FA improves account security, but recovery flows are often the weakest link. Backup codes must be hashed, one-time, and auditable. Protect login/signup/reset endpoints with rate limits, bot protection (e.g., Turnstile), and anomaly detection.",
+            "list": [
+              "Hash backup codes; show once; allow regeneration.",
+              "Notify users on password/MFA/email changes.",
+              "Apply step-up auth for sensitive actions.",
+              "Log auth events with privacy-aware metadata."
+            ]
+          },
+          {
+            "title": "2026 takeaway",
+            "description": "Modern auth is defense in depth. Choose boring, proven primitives; validate every token; monitor abuse; and make recovery secure. The best auth UX is clear and safe, not clever."
+          }
+        ],
+        "date": "2026-01-15",
+        "tags": [
+          "Security",
+          "Authentication",
+          "OAuth2",
+          "2FA",
+          "Web Security"
+        ]
+      },
+      {
+        "id": 9,
+        "slug": "progressive-web-apps-complete-guide",
+        "title": "Progressive Web Apps in 2026: Offline, Installability, and Performance Tradeoffs",
+        "img": "pwa",
+        "titleImg": "PWAs that Feel Native",
+        "desc": [
+          {
+            "title": "What a PWA is - and is not",
+            "description": "A Progressive Web App is a web application that uses modern browser capabilities to deliver a reliable, installable, app-like experience. It is not a replacement for every native app. PWAs shine when reach, instant updates, and web distribution matter; native apps still win for deep OS integration, advanced background tasks, or heavy device-specific capabilities.",
+            "list": [
+              "Reliable: loads with poor network or offline when cached.",
+              "Fast: optimized rendering and interaction.",
+              "Installable: manifest + service worker criteria met.",
+              "Engaging: can use push/notifications where appropriate and permitted."
+            ]
+          },
+          {
+            "title": "The web app manifest",
+            "description": "The manifest declares how the app appears when installed: name, icons, theme color, display mode, and start URL. Keep icons complete and ensure the start URL works offline or degrades gracefully.",
+            "code": {
+              "language": "json",
+              "content": "{\n  \"name\": \"Acme Dashboard\",\n  \"short_name\": \"Acme\",\n  \"start_url\": \"/\",\n  \"display\": \"standalone\",\n  \"background_color\": \"#0b0812\",\n  \"theme_color\": \"#0b0812\",\n  \"icons\": [\n    { \"src\": \"/icons/icon-192.png\", \"sizes\": \"192x192\", \"type\": \"image/png\" },\n    { \"src\": \"/icons/icon-512.png\", \"sizes\": \"512x512\", \"type\": \"image/png\" }\n  ]\n}"
+            }
+          },
+          {
+            "title": "Service worker caching strategies",
+            "description": "Service workers sit between the app and network. The right caching strategy depends on the resource type. Static assets can be cache-first; API requests often need network-first or stale-while-revalidate with clear freshness rules. Cache invalidation must be planned - stale assets are a common PWA failure mode.",
+            "code": {
+              "language": "js",
+              "content": "self.addEventListener('fetch', (event) => {\n  if (event.request.mode === 'navigate') {\n    event.respondWith(networkFirst(event.request));\n    return;\n  }\n  if (event.request.destination === 'image') {\n    event.respondWith(cacheFirst(event.request));\n  }\n});\n\nasync function networkFirst(req) {\n  try {\n    const res = await fetch(req);\n    const cache = await caches.open('pages-v1');\n    cache.put(req, res.clone());\n    return res;\n  } catch {\n    return caches.match(req);\n  }\n}"
+            }
+          },
+          {
+            "title": "Offline UX and data sync",
+            "description": "Offline support is more than caching a shell. Decide what users can read, edit, or queue while offline. For forms and mutations, store intent locally and sync when connectivity returns. Be explicit in the UI about sync state to avoid data-loss surprises.",
+            "note": "Do not promise offline behavior you cannot guarantee. A clear 'saved locally, will sync' state is better than silent failure."
+          },
+          {
+            "title": "Performance, security, and 2026 reality",
+            "description": "PWAs still require HTTPS, careful permission use, and performance discipline. In 2026, installability criteria and platform support vary by browser/OS, so test on target devices. Pair PWA features with Core Web Vitals, accessibility, and normal web security practices."
+          }
+        ],
+        "date": "2025-10-21",
+        "tags": [
+          "PWA",
+          "Service Worker",
+          "Offline",
+          "Web Performance",
+          "Frontend"
+        ]
+      },
+      {
+        "id": 8,
+        "slug": "software-testing-essentials-for-quality",
+        "title": "Software Testing Essentials: Strategy, Automation, and Confidence in 2026",
+        "img": "testing",
+        "titleImg": "Practical Testing Pyramid",
+        "desc": [
+          {
+            "title": "Testing is a risk strategy",
+            "description": "The purpose of testing is not 100% coverage. It is confidence that important behaviors work and regressions are caught early. Good test suites balance speed, signal, and maintenance cost."
+          },
+          {
+            "title": "The practical test pyramid",
+            "description": "Use many fast unit tests for pure logic, fewer integration tests for boundaries, and a small number of end-to-end tests for critical user journeys. Contract tests are valuable when services evolve independently.",
+            "list": [
+              "Unit: fast, isolated, deterministic.",
+              "Integration: DB, API, queue, filesystem boundaries.",
+              "E2E: login, checkout, publish, critical flows.",
+              "Contract: provider/consumer compatibility."
+            ]
+          },
+          {
+            "title": "Make tests deterministic",
+            "description": "Flaky tests destroy trust. Control time, randomness, network, and external dependencies. In CI, rerun flakiness detection but treat flaky tests as bugs, not normal noise.",
+            "code": {
+              "language": "ts",
+              "content": "test('expires token after TTL', () => {\n  vi.useFakeTimers();\n  vi.setSystemTime(new Date('2026-01-01T00:00:00Z'));\n  const token = issueToken({ ttlSeconds: 60 });\n  vi.advanceTimersByTime(61_000);\n  expect(isExpired(token)).toBe(true);\n  vi.useRealTimers();\n});"
+            }
+          },
+          {
+            "title": "CI as a quality gate",
+            "description": "Run tests on every pull request, keep feedback fast, and publish artifacts like coverage and test reports. For AI-assisted code, tests are even more important because generated code can be plausible but subtly wrong.",
+            "note": "A failing test should explain behavior. Prefer clear assertions over clever abstractions."
+          },
+          {
+            "title": "2026 perspective",
+            "description": "AI can generate tests, but humans must review intent. The best teams use AI to expand coverage quickly, then curate tests for business meaning and maintainability."
+          }
+        ],
+        "date": "2025-09-02",
+        "tags": [
+          "Testing",
+          "Quality",
+          "CI/CD",
+          "TDD",
+          "E2E"
+        ]
+      },
+      {
+        "id": 7,
+        "slug": "docker-for-developers-practical-guide",
+        "title": "Docker for Developers: Images, Compose, Security, and Production Habits",
+        "img": "docker",
+        "titleImg": "Docker Done Right",
+        "desc": [
+          {
+            "title": "Containers solve environment drift",
+            "description": "Docker packages an app with its runtime dependencies so it runs consistently across developer machines, CI, and servers. The container is not a VM; it shares the host kernel and should be treated as an immutable runtime unit."
+          },
+          {
+            "title": "A good Dockerfile is small and predictable",
+            "description": "Use minimal base images, pin versions, leverage layer caching, and run as a non-root user. Multi-stage builds keep build tools out of runtime images.",
+            "code": {
+              "language": "dockerfile",
+              "content": "FROM node:20-alpine AS build\nWORKDIR /app\nCOPY package*.json ./\nRUN npm ci\nCOPY . .\nRUN npm run build\n\nFROM node:20-alpine\nWORKDIR /app\nENV NODE_ENV=production\nUSER node\nCOPY --from=build /app/dist ./dist\nCOPY --from=build /app/node_modules ./node_modules\nCMD [\"node\", \"dist/server.js\"]"
+            }
+          },
+          {
+            "title": "Compose for local integration",
+            "description": "Docker Compose is ideal for local stacks: app, database, cache, and observability tools. Keep it close to production topology, but do not confuse local convenience with production orchestration.",
+            "code": {
+              "language": "yaml",
+              "content": "services:\n  api:\n    build: .\n    ports: [\"3000:3000\"]\n    env_file: [.env]\n    depends_on: [db]\n  db:\n    image: postgres:16-alpine\n    volumes: [db_data:/var/lib/postgresql/data]\nvolumes:\n  db_data:"
+            }
+          },
+          {
+            "title": "Security basics",
+            "description": "Scan images, avoid secrets in layers, pin base image digests where possible, and limit capabilities. Containers improve packaging, not trust boundaries by default.",
+            "note": "Never put API keys in Dockerfile ARG/ENV for production images; inject them at runtime through a secret manager or environment injection."
+          },
+          {
+            "title": "2026 perspective",
+            "description": "Containers remain foundational, but supply chain controls are now expected: SBOMs, signed images, provenance, and vulnerability gates in CI."
+          }
+        ],
+        "date": "2025-08-16",
+        "tags": [
+          "Docker",
+          "Containers",
+          "DevOps",
+          "Security",
+          "Deployment"
+        ]
+      },
+      {
+        "id": 6,
+        "slug": "graphql-vs-rest-complete-comparison",
+        "title": "GraphQL vs REST: A Practical Decision Guide for Modern APIs",
+        "img": "graphql",
+        "titleImg": "GraphQL vs REST",
+        "desc": [
+          {
+            "title": "The real question is not 'which is better'",
+            "description": "GraphQL and REST solve overlapping but different problems. REST models resources through URLs and HTTP semantics; GraphQL models a typed schema and lets clients query exactly the fields they need. The right choice depends on client diversity, caching needs, team maturity, and operational constraints.",
+            "list": [
+              "REST: simple, cache-friendly, excellent HTTP tooling.",
+              "GraphQL: flexible queries, strong typing, single endpoint.",
+              "Hybrid: common in real systems - REST for simple resources, GraphQL for composition."
+            ]
+          },
+          {
+            "title": "REST strengths",
+            "description": "REST works well when resources are clear and HTTP semantics map naturally: GET for reads, POST for creation, PUT/PATCH for updates, DELETE for removal. CDNs, browser caches, proxies, and observability tools understand REST patterns out of the box.",
+            "code": {
+              "language": "http",
+              "content": "GET /v1/projects/42 HTTP/1.1\nHost: api.example.com\nAccept: application/json\n\nHTTP/1.1 200 OK\nCache-Control: public, max-age=60\nETag: \"p42-v3\""
+            }
+          },
+          {
+            "title": "GraphQL strengths",
+            "description": "GraphQL reduces over-fetching and under-fetching when multiple clients need different views of the same domain. It is especially useful for dashboards, mobile apps, and aggregation layers. But flexibility shifts complexity to the server: query cost, N+1 problems, and authorization per field.",
+            "code": {
+              "language": "graphql",
+              "content": "query ProjectCard($id: ID!) {\n  project(id: $id) {\n    id\n    title\n    status\n    owner { name avatarUrl }\n    tasks(first: 5, state: OPEN) {\n      totalCount\n      nodes { id title }\n    }\n  }\n}"
+            }
+          },
+          {
+            "title": "Security and performance pitfalls",
+            "description": "REST endpoints can be rate-limited by route; GraphQL needs query depth/complexity limits because one request can be expensive. Both need authentication, authorization, input validation, and audit logging. In GraphQL, never rely on hiding fields in the UI - enforce authorization in resolvers/data loaders.",
+            "code": {
+              "language": "js",
+              "content": "const validationRules = [\n  depthLimit(8),\n  createComplexityLimitRule(1200, {\n    onCost: (cost) => console.log('query cost', cost),\n  }),\n];"
+            },
+            "note": "Authorize by business object/field, not by query shape. A flexible query language increases the need for strict server-side rules."
+          },
+          {
+            "title": "2026 recommendation",
+            "description": "Use REST by default for simple, cacheable resource APIs and public integrations. Use GraphQL when client composition is the main pain and you have the tooling for schema governance, query cost control, and observability. Many mature platforms use both."
+          }
+        ],
+        "date": "2025-07-09",
+        "tags": [
+          "GraphQL",
+          "REST",
+          "API Design",
+          "Backend",
+          "Architecture"
+        ]
+      },
+      {
+        "id": 5,
+        "slug": "seo-optimization-for-developer-portfolio",
+        "title": "SEO for Developer Portfolios in 2026: Technical Foundations, Content, and Credibility",
+        "img": "seo",
+        "titleImg": "Portfolio SEO: Technical Wins",
+        "desc": [
+          {
+            "title": "SEO starts with technical correctness",
+            "description": "For developer portfolios, SEO is less about tricks and more about making your work understandable to crawlers and useful to humans. Crawlable pages, clean URLs, canonical tags, proper metadata, sitemap/robots, and fast rendering are the baseline. If search engines cannot reliably discover and render your pages, content quality won't matter.",
+            "list": [
+              "Unique title/description per page.",
+              "Canonical URL and hreflang for multilingual sites.",
+              "XML sitemap + robots.txt.",
+              "No accidental noindex on production."
+            ]
+          },
+          {
+            "title": "Structured data and entity clarity",
+            "description": "Schema.org helps search engines understand who you are and what a page represents. For a portfolio, Person, WebSite, ProfilePage, Article, and BreadcrumbList are useful. Keep data truthful and consistent with visible page content.",
+            "code": {
+              "language": "json",
+              "content": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Person\",\n  \"name\": \"Mohamed Achraf Ben Fredj\",\n  \"url\": \"https://ach02raf.pro/en\",\n  \"sameAs\": [\n    \"https://github.com/ach02raf\",\n    \"https://www.linkedin.com/in/ach02raf/\"\n  ],\n  \"jobTitle\": \"Web, Mobile, DevOps & AI Engineer\"\n}"
+            }
+          },
+          {
+            "title": "Performance and Core Web Vitals",
+            "description": "Search systems consider page experience signals. Fast LCP, responsive INP, and stable CLS improve user experience and reduce bounce. Optimize images, fonts, JS payload, and rendering strategy. Static generation is excellent for portfolio/blog pages when content is known at build time.",
+            "note": "Don't chase a perfect Lighthouse score at the expense of real user experience. Use lab tools for debugging and field data for decisions."
+          },
+          {
+            "title": "Content that demonstrates expertise",
+            "description": "A portfolio ranks better when it proves competence. Write case studies with problem, constraints, architecture, tradeoffs, and outcomes. For blogs, prefer specific technical depth over generic AI-generated summaries. Show code, diagrams in text form, decisions, and lessons learned.",
+            "list": [
+              "Case studies: context, role, stack, decisions, impact.",
+              "Blogs: practical problem, explanation, code, pitfalls.",
+              "Projects: live/demo/source links when available.",
+              "Keep content updated when tech or your role changes."
+            ]
+          },
+          {
+            "title": "International SEO for FR/EN/DE",
+            "description": "Multilingual portfolios need consistent language mapping. Use `hreflang`, localized metadata, and language-specific URLs. Avoid automatic redirects that prevent crawlers/users from choosing language. Ensure each locale has meaningful content, not just machine-translated labels."
+          }
+        ],
+        "date": "2025-06-11",
+        "tags": [
+          "SEO",
+          "Next.js",
+          "Core Web Vitals",
+          "Structured Data",
+          "Content Strategy"
+        ]
+      },
+      {
+        "id": 4,
+        "slug": "typescript-for-beginners-complete-guide",
+        "title": "TypeScript for Professional Teams: Types, Validation, and Maintainable APIs",
+        "img": "typescript",
+        "titleImg": "Effective TypeScript",
+        "desc": [
+          {
+            "title": "TypeScript is a design tool, not just syntax",
+            "description": "TypeScript's value is not adding colons everywhere. It makes contracts explicit: function inputs, API responses, domain models, and component props. Used well, it reduces runtime bugs and improves refactoring confidence. Used poorly, it creates fake safety through `any`, unsafe casts, and duplicated types.",
+            "list": [
+              "Model domain types close to business concepts.",
+              "Prefer unknown over any at boundaries.",
+              "Validate external data at runtime.",
+              "Keep types simple and composable."
+            ]
+          },
+          {
+            "title": "Types at boundaries, validation at runtime",
+            "description": "TypeScript types disappear at runtime. Any data from HTTP, files, env vars, localStorage, or user input must be validated. Use schema validation (Zod, Valibot, etc.) to parse unknown input into trusted typed data.",
+            "code": {
+              "language": "ts",
+              "content": "import { z } from \"zod\";\n\nconst UserSchema = z.object({\n  id: z.string().uuid(),\n  email: z.string().email(),\n  role: z.enum([\"admin\", \"member\"]),\n});\n\ntype User = z.infer<typeof UserSchema>;\n\nexport async function fetchUser(id: string): Promise<User> {\n  const res = await fetch(`/api/users/${id}`);\n  const data: unknown = await res.json();\n  return UserSchema.parse(data); // throws if invalid\n}"
+            }
+          },
+          {
+            "title": "API contracts and discriminated unions",
+            "description": "Discriminated unions model states clearly: loading/success/error, payment states, workflow steps. They force exhaustive handling and make illegal states harder to represent.",
+            "code": {
+              "language": "ts",
+              "content": "type AsyncState<T> =\n  | { status: \"idle\" }\n  | { status: \"loading\" }\n  | { status: \"success\"; data: T }\n  | { status: \"error\"; error: string };\n\nfunction render(state: AsyncState<User>) {\n  switch (state.status) {\n    case \"idle\": return \"Idle\";\n    case \"loading\": return \"Loading\";\n    case \"success\": return state.data.email;\n    case \"error\": return state.error;\n    default: {\n      const _exhaustive: never = state;\n      return _exhaustive;\n    }\n  }\n}"
+            }
+          },
+          {
+            "title": "Team practices that keep TS healthy",
+            "description": "Enable strict mode, avoid broad type assertions, and lint for unsafe patterns. Prefer generated types from OpenAPI/GraphQL schemas when possible. Keep DTOs separate from domain models when external contracts differ from internal behavior.",
+            "note": "A `as SomeType` cast is often a smell at system boundaries. Parse, don't assert."
+          },
+          {
+            "title": "2026 perspective",
+            "description": "TypeScript remains the default for large JavaScript codebases. The trend is stronger runtime validation, better type inference, schema-driven contracts, and AI-assisted refactors guarded by tests and strict typing."
+          }
+        ],
+        "date": "2025-05-20",
+        "tags": [
+          "TypeScript",
+          "API Design",
+          "Validation",
+          "Tooling",
+          "Frontend"
+        ]
+      },
+      {
+        "id": 3,
+        "slug": "introduction-to-devops-essential-practices",
+        "title": "DevOps in 2026: CI/CD, Observability, Platform Thinking, and Reliable Delivery",
+        "img": "devops",
+        "titleImg": "Practical DevOps",
+        "desc": [
+          {
+            "title": "DevOps as an operating model",
+            "description": "DevOps is not a toolchain; it is the practice of reducing friction between building software and running it. In 2026, strong DevOps teams combine CI/CD, infrastructure as code, observability, security checks, and clear ownership. The goal is fast delivery with controlled risk.",
+            "list": [
+              "Small, frequent changes.",
+              "Automated build/test/deploy pipelines.",
+              "Observable systems with actionable alerts.",
+              "Shared ownership of reliability."
+            ]
+          },
+          {
+            "title": "CI/CD with quality gates",
+            "description": "A pipeline should do more than deploy. It should validate formatting, tests, security scans, and build artifacts before release. Promotion between environments should be traceable to a commit and artifact.",
+            "code": {
+              "language": "yaml",
+              "content": "name: ci\non: [pull_request]\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-node@v4\n        with: { node-version: 20 }\n      - run: npm ci\n      - run: npm run lint\n      - run: npm test\n      - run: npm run build"
+            }
+          },
+          {
+            "title": "Observability: logs, metrics, traces",
+            "description": "You cannot operate what you cannot see. Logs explain events, metrics show trends, and traces connect requests across services. Alert on symptoms users feel — error rate, latency, saturation — before paging on every internal cause.",
+            "note": "An alert without a runbook is often just noise."
+          },
+          {
+            "title": "Infrastructure as Code and GitOps",
+            "description": "Manage infrastructure through reviewed code. IaC makes environments reproducible; GitOps makes desired state visible in version control. This improves auditability and rollback confidence.",
+            "code": {
+              "language": "hcl",
+              "content": "resource \"aws_s3_bucket\" \"logs\" {\n  bucket = \"acme-app-logs\"\n  tags = {\n    owner = \"platform\"\n    env   = \"prod\"\n  }\n}"
+            }
+          },
+          {
+            "title": "2026 direction",
+            "description": "DevOps is converging with platform engineering and AI-assisted operations. Teams use AI for incident summaries, anomaly detection, and runbook drafting, but keep humans and deterministic controls in the loop for risky changes."
+          }
+        ],
+        "date": "2025-04-14",
+        "tags": [
+          "DevOps",
+          "CI/CD",
+          "Observability",
+          "Platform Engineering",
+          "Reliability"
+        ]
+      },
+      {
+        "id": 2,
+        "slug": "discover-reactjs-dynamic-reactive-interfaces",
+        "title": "React in 2026: Component Architecture, State, and Performance at Scale",
+        "img": "reactjs",
+        "titleImg": "Modern React: Hooks & Performance",
+        "desc": [
+          {
+            "title": "Modern React is about boundaries",
+            "description": "React is no longer just components and hooks. Professional React apps require clear boundaries: server vs client responsibilities, UI state vs server state, reusable primitives vs business components. The goal is predictable rendering, simple data flow, and maintainable code.",
+            "list": [
+              "Keep components small and purpose-driven.",
+              "Separate data fetching/caching from presentation.",
+              "Colocate state where it is used.",
+              "Use TypeScript for prop and API contracts."
+            ]
+          },
+          {
+            "title": "State management: choose by state type",
+            "description": "Not all state is equal. Local UI state belongs in component state; shared UI state may need context or a small store; server state should use a data-fetching/cache layer. Overusing global stores creates coupling and rerender noise.",
+            "code": {
+              "language": "tsx",
+              "content": "function ProductFilters() {\n  const [query, setQuery] = useState('');\n  const { data, isLoading } = useQuery({\n    queryKey: ['products', query],\n    queryFn: () => searchProducts(query),\n    staleTime: 30_000,\n  });\n\n  if (isLoading) return <Spinner />;\n  return <ProductList items={data ?? []} />;\n}"
+            }
+          },
+          {
+            "title": "Performance: measure before memoizing",
+            "description": "React performance issues usually come from unnecessary renders, heavy computations on the main thread, or oversized bundles. Use profiling tools first. Apply `memo`, `useMemo`, and `useCallback` where they solve a measured problem; premature memoization adds complexity.",
+            "code": {
+              "language": "tsx",
+              "content": "const visibleRows = useMemo(() => {\n  return rows.filter(row => row.status === filter).slice(0, 200);\n}, [rows, filter]);\n\nconst onSelect = useCallback((id: string) => {\n  setSelectedId(id);\n}, []);"
+            },
+            "note": "Memoization has a cost. It helps when it prevents expensive work or unstable props in hot paths."
+          },
+          {
+            "title": "Component design for maintainability",
+            "description": "Design components around clear contracts. Prefer composition over prop explosion. Keep side effects in hooks or boundaries, and avoid hiding business rules deep in UI trees. Accessibility and keyboard behavior should be part of component design, not a late fix."
+          },
+          {
+            "title": "2026 perspective",
+            "description": "React ecosystems increasingly blend server rendering, streaming, islands/partial hydration patterns, and AI-assisted UI workflows. The fundamentals still win: clear state ownership, accessible UI, measured performance, and tested behavior."
+          }
+        ],
+        "date": "2025-03-25",
+        "tags": [
+          "React",
+          "TypeScript",
+          "State Management",
+          "Performance",
+          "Frontend"
+        ]
+      },
+      {
+        "id": 1,
+        "slug": "optimize-angular-performance",
+        "title": "Angular Performance in 2026: Change Detection, Rendering, and Real-User Metrics",
+        "img": "angular",
+        "titleImg": "Angular Performance: Measurable Wins",
+        "desc": [
+          {
+            "title": "Performance starts with measurement",
+            "description": "Angular apps become slow for predictable reasons: too much change detection, large bundles, expensive templates, and unoptimized data flows. Before changing architecture, measure. Use Angular DevTools, browser performance traces, and Core Web Vitals field data to identify real bottlenecks.",
+            "list": [
+              "Profile change detection and component render cost.",
+              "Measure LCP/INP/CLS in real users.",
+              "Audit bundle size and route-level loading.",
+              "Check API latency - frontend cannot fix slow backends alone."
+            ]
+          },
+          {
+            "title": "Change detection strategy",
+            "description": "Use `OnPush` where possible so components check only when inputs, async pipe emissions, or explicit signals/events require it. Prefer immutable data patterns or clear observable streams. Avoid expensive template functions; compute values in the component or via pure pipes.",
+            "code": {
+              "language": "ts",
+              "content": "@Component({\n  selector: 'app-user-card',\n  standalone: true,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  template: `\n    <article class=\"card\">\n      <h3>{{ user.name }}</h3>\n      <p>{{ user.role }}</p>\n    </article>\n  `\n})\nexport class UserCardComponent {\n  @Input({ required: true }) user!: User;\n}"
+            }
+          },
+          {
+            "title": "Routing, lazy loading, and defer",
+            "description": "Split large areas by route and load them only when needed. Angular standalone APIs and lazy routes reduce initial JS. For below-the-fold heavy UI, defer rendering until viewport or interaction when appropriate.",
+            "code": {
+              "language": "ts",
+              "content": "export const routes: Routes = [\n  { path: '', loadComponent: () => import('./home.page').then(m => m.HomePage) },\n  { path: 'admin', loadChildren: () => import('./admin/routes').then(m => m.ADMIN_ROUTES) },\n];"
+            }
+          },
+          {
+            "title": "Data flow and rendering discipline",
+            "description": "Use RxJS intentionally: avoid nested subscriptions, unsubscribe through async pipe or takeUntilDestroyed, and share expensive streams. Virtualize large lists, paginate server data, and keep templates simple. For forms and dashboards, debounce user-driven requests.",
+            "note": "A fast framework cannot compensate for rendering 5,000 DOM nodes on every keystroke."
+          },
+          {
+            "title": "2026 perspective",
+            "description": "Angular's modern direction - standalone components, signals, improved hydration and control flow - rewards teams that adopt explicit reactivity and clean boundaries. Performance is a product feature: budget it, monitor it, and regressions should fail CI where possible."
+          }
+        ],
+        "date": "2025-02-18",
+        "tags": [
+          "Angular",
+          "Performance",
+          "Core Web Vitals",
+          "Frontend",
+          "Architecture"
+        ]
+      },
+      {
+        "id": 0,
+        "slug": "build-solid-foundations-design-patterns",
+        "title": "Design Patterns in Practice: SOLID, Composition, and Testable Architecture",
+        "img": "design-patterns",
+        "titleImg": "Design Patterns in Practice",
+        "desc": [
+          {
+            "title": "Why patterns should reduce complexity",
+            "description": "Design patterns are communication tools, not trophies. A pattern is useful when it makes change cheaper: adding a new payment provider, swapping storage, testing business logic without infrastructure. If a pattern adds indirection without reducing real complexity, it is accidental architecture.",
+            "list": [
+              "Use patterns to isolate change points.",
+              "Prefer composition over inheritance.",
+              "Name abstractions after domain behavior.",
+              "Delete patterns that no longer pay for themselves."
+            ]
+          },
+          {
+            "title": "SOLID as practical guardrails",
+            "description": "SOLID works best as a smell detector. Single Responsibility keeps modules focused. Open/Closed encourages extension points around volatility. Liskov warns against broken substitutability. Interface Segregation avoids fat contracts. Dependency Inversion keeps business rules independent from frameworks and I/O.",
+            "code": {
+              "language": "ts",
+              "content": "interface InvoiceExporter {\n  export(invoice: Invoice): Promise<Buffer>;\n}\n\nclass PdfInvoiceExporter implements InvoiceExporter {\n  async export(invoice: Invoice) { /* ... */ return Buffer.from('pdf'); }\n}\n\nclass SendInvoiceUseCase {\n  constructor(private readonly exporter: InvoiceExporter) {}\n  async execute(invoice: Invoice) {\n    const file = await this.exporter.export(invoice);\n    return file;\n  }\n}"
+            }
+          },
+          {
+            "title": "Strategy, Adapter, and Factory in real code",
+            "description": "Strategy replaces brittle conditionals when behavior varies by rule. Adapter isolates third-party APIs behind your contract. Factory centralizes creation when construction involves validation or environment selection. Avoid introducing them preemptively; refactor toward them when duplication or coupling appears.",
+            "code": {
+              "language": "ts",
+              "content": "type PricingStrategy = (base: number, ctx: { country: string }) => number;\n\nconst strategies: Record<string, PricingStrategy> = {\n  eu: (base) => base * 1.2,\n  us: (base) => base * 1.08,\n  default: (base) => base,\n};\n\nconst price = (strategies[country] ?? strategies.default)(base, { country });"
+            }
+          },
+          {
+            "title": "Testing the architecture",
+            "description": "Patterns should improve testability. Business rules can be unit tested with fake adapters. Integration tests verify real DB/HTTP boundaries. If tests require complex mocking of internals, the boundary may be wrong. Prefer testing behavior and contracts over implementation details.",
+            "note": "A good abstraction makes the fake implementation trivial."
+          },
+          {
+            "title": "2026 perspective",
+            "description": "With AI-generated code becoming common, architectural boundaries matter even more. Clear interfaces, domain naming, and tests help teams review generated changes safely. Patterns remain relevant when they make systems understandable to humans and verifiable by tools."
+          }
+        ],
+        "date": "2025-01-12",
+        "tags": [
+          "Design Patterns",
+          "SOLID",
+          "Architecture",
+          "Testing",
+          "Clean Code"
         ]
       }
     ]
